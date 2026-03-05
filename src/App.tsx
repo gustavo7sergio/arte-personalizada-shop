@@ -6,9 +6,11 @@ import { BrowserRouter, Routes, Route, useEffect } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import Index from "./pages/Index";
 import CategoryPage from "./pages/CategoryPage";
+import CartPage from "./pages/CartPage";
 import NotFound from "./pages/NotFound";
 import { CartProvider } from "@/contexts/CartContext";
-import { Cart } from "@/components/Cart";
+import { CartButton } from "@/components/CartButton";
+
 
 const queryClient = new QueryClient();
 
@@ -33,10 +35,11 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/categoria/:categorySlug" element={<CategoryPage />} />
+            <Route path="/carrinho" element={<CartPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
-          <Cart />
+          <CartButton />
         </BrowserRouter>
       </TooltipProvider>
     </CartProvider>
