@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { useCart } from "@/contexts/CartContext";
+// Cart is managed globally via window.cartItems
 
 const formatCurrency = (value: number) =>
   value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -15,7 +15,6 @@ const formatCurrency = (value: number) =>
 function PriceSelector({ product }: { product: Product }) {
   const [activeVariant, setActiveVariant] = useState(0);
   const [selectedQtyIndex, setSelectedQtyIndex] = useState(0);
-  const { addItem, setIsOpen } = useCart();
   const variant = product.variants[activeVariant];
   const selected = variant.prices[selectedQtyIndex];
 
@@ -25,19 +24,26 @@ function PriceSelector({ product }: { product: Product }) {
   };
 
   const handleAddToCart = () => {
+    if (typeof window === "undefined") return;
+    
+    // Initialize cart if it doesn't exist
+    if (!window.cartItems) {
+      window.cartItems = [];
+    }
+    
     const cartItem = {
-      productId: product.id,
+      id: `${product.id}-${activeVariant}-${selectedQtyIndex}`,
       productName: product.name,
       subtitle: product.subtitle,
       variantLabel: variant.label,
       qty: selected.qty,
       cashPrice: selected.cash,
       installmentPrice: selected.installment,
-      unitPrice: selected.unitPrice,
       image: productImages[product.id],
     };
-    addItem(cartItem);
-    setIsOpen(true);
+    
+    window.cartItems.push(cartItem);
+    window.dispatchEvent(new Event("cartUpdated"));
   };
 
   return (
