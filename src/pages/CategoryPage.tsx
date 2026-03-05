@@ -26,14 +26,11 @@ function PriceSelector({ product }: { product: Product }) {
 
   const handleAddToCart = () => {
     const cartItem = {
-      productId: product.id,
-      productName: product.name,
-      subtitle: product.subtitle,
-      variantLabel: variant.label,
-      qty: selected.qty,
-      cashPrice: selected.cash,
-      installmentPrice: selected.installment,
-      image: productImages[product.id],
+      id: `${product.id}-${activeVariant}`,
+      name: `${product.name} - ${variant.label}`,
+      quantity: selected.qty,
+      price: selected.cash,
+      selectedQuantity: 1,
     };
     addItem(cartItem);
   };
