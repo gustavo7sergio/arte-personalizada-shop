@@ -14,7 +14,8 @@ export default defineConfig(({ mode }) => ({
       }
     },
     minify: false,
-    sourcemap: false
+    sourcemap: false,
+    assetsInlineLimit: 0
   },
   server: {
     host: "::",
@@ -29,4 +30,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  assetsInclude: ['**/*.jpg', '**/*.jpeg', '**/*.png', '**/*.gif', '**/*.svg'],
 }));
