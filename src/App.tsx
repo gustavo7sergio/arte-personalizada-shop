@@ -8,9 +8,8 @@ import Index from "./pages/Index";
 import CategoryPage from "./pages/CategoryPage";
 import CartPage from "./pages/CartPage";
 import NotFound from "./pages/NotFound";
-import { CartProvider } from "@/contexts/CartContext";
-import { FloatingCart } from "@/components/FloatingCart";
-
+import CartPanel from "@/components/CartPanel";
+import { CartButton } from "@/components/CartButton";
 
 const queryClient = new QueryClient();
 
@@ -26,23 +25,22 @@ function ScrollToTop() {
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <CartProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <ScrollToTop />
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/categoria/:categorySlug" element={<CategoryPage />} />
-            <Route path="/carrinho" element={<CartPage />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-          <FloatingCart />
-        </BrowserRouter>
-      </TooltipProvider>
-    </CartProvider>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <ScrollToTop />
+        <CartPanel />
+        <CartButton />
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/categoria/:categorySlug" element={<CategoryPage />} />
+          <Route path="/carrinho" element={<CartPage />} />
+          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </TooltipProvider>
   </QueryClientProvider>
 );
 
