@@ -8,8 +8,7 @@ import Index from "./pages/Index";
 import CategoryPage from "./pages/CategoryPage";
 import NotFound from "./pages/NotFound";
 import { CartProvider } from "@/contexts/CartContext";
-import CartModal from "@/components/CartModal";
-import FloatingCartButton from "@/components/FloatingCartButton";
+import { SimpleCart } from "@/components/SimpleCart";
 
 const queryClient = new QueryClient();
 
@@ -37,8 +36,7 @@ const App = () => (
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
-          <CartModal />
-          <FloatingCartButton />
+          <SimpleCart />
         </BrowserRouter>
       </TooltipProvider>
     </CartProvider>
