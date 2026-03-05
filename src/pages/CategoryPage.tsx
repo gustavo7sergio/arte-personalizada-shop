@@ -7,15 +7,15 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { useSimpleCart } from "@/contexts/SimpleCartContext";
+import { CartItem } from "@/App";
 
 const formatCurrency = (value: number) =>
   value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 
-function PriceSelector({ product }: { product: Product }) {
+function PriceSelector({ product, onAddToCart }: { product: Product; onAddToCart: (item: CartItem) => void }) {
   const [activeVariant, setActiveVariant] = useState(0);
   const [selectedQtyIndex, setSelectedQtyIndex] = useState(0);
-  const { addItem } = useSimpleCart();
+  // onAddToCart will be called when adding to cart
   const variant = product.variants[activeVariant];
   const selected = variant.prices[selectedQtyIndex];
 
@@ -28,11 +28,10 @@ function PriceSelector({ product }: { product: Product }) {
     const cartItem = {
       id: `${product.id}-${activeVariant}`,
       name: `${product.name} - ${variant.label}`,
-      quantity: selected.qty,
+      quantity: 1,
       price: selected.cash,
-      selectedQuantity: 1,
     };
-    addItem(cartItem);
+    onAddToCart(cartItem);
   };
 
   return (
@@ -224,13 +223,13 @@ function ProductCard({ product }: { product: Product }) {
       )}
 
       <div className="p-6">
-        <PriceSelector product={product} />
+        <PriceSelector product={product} onAddToCart={onAddToCart} />
       </div>
     </div>
   );
 }
 
-const CategoryPage = () => {
+const CategoryPage = ({ onAddToCart }: { onAddToCart: (item: CartItem) => void }) => {
   const { categorySlug } = useParams<{ categorySlug: string }>();
 
   const slugToCategory: Record<string, string> = {
