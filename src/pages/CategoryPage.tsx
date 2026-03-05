@@ -223,11 +223,13 @@ const CategoryPage = () => {
   const { categorySlug } = useParams<{ categorySlug: string }>();
 
   const slugToCategory: Record<string, string> = {
-    tags: "Tags",
+    "tags-de-acessorios": "Tags de Acessórios",
     cartoes: "Cartões",
     sacolinhas: "Sacolinhas",
-    caixinhas: "Caixinhas",
     adesivos: "Adesivos",
+    "tags-de-lacos-e-tiaras": "Tags de Laços e Tiaras",
+    "etiquetas-de-roupas": "Etiquetas de Roupas",
+    kits: "Kits",
     outros: "Outros",
   };
 

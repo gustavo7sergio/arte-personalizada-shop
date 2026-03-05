@@ -149,7 +149,7 @@ export const products: Product[] = [
     id: "caixinha-acessorios-p",
     name: "Caixinha para Acessórios",
     subtitle: "Tamanho P",
-    category: "Caixinhas",
+    category: "Sacolinhas",
     material: "Papel cartão 300g",
     specs: [
       "Papel cartão 300g",
@@ -175,7 +175,7 @@ export const products: Product[] = [
     id: "caixinha-acessorios-m",
     name: "Caixinha para Acessórios",
     subtitle: "Tamanho M",
-    category: "Caixinhas",
+    category: "Sacolinhas",
     material: "Papel cartão 300g",
     specs: [
       "Papel cartão 300g",
@@ -201,7 +201,7 @@ export const products: Product[] = [
     id: "caixinha-acessorios-maleta",
     name: "Caixinha para Acessórios",
     subtitle: "Modelo Maleta",
-    category: "Caixinhas",
+    category: "Sacolinhas",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -233,7 +233,7 @@ export const products: Product[] = [
     id: "tag-brincos-g",
     name: "Tag de Brincos",
     subtitle: "Tamanho G",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -260,7 +260,7 @@ export const products: Product[] = [
     id: "tag-trio-brincos-m",
     name: "Tag de Trio de Brincos",
     subtitle: "5,5 × 4,8 cm",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -286,7 +286,7 @@ export const products: Product[] = [
     id: "tag-trio-brincos-p",
     name: "Tag de Trio de Brincos",
     subtitle: "4,8 × 4,1 cm",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -312,7 +312,7 @@ export const products: Product[] = [
     id: "tag-trio-brincos-g",
     name: "Tag de Trio de Brincos",
     subtitle: "8 × 6,5 cm",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -338,7 +338,7 @@ export const products: Product[] = [
     id: "tag-trio-brincos-88x48",
     name: "Tag de Trio de Brincos",
     subtitle: "8,8 × 4,8 cm",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -364,7 +364,7 @@ export const products: Product[] = [
     id: "tag-semaninha",
     name: "Tag Semaninha",
     subtitle: "8,8 × 4,8 cm",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -390,7 +390,7 @@ export const products: Product[] = [
     id: "tag-brincos-colar-g",
     name: "Tag de Brincos e Colar",
     subtitle: "9,94 × 6 cm",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -417,7 +417,7 @@ export const products: Product[] = [
     id: "tag-brincos-colar-p",
     name: "Tag de Brincos e Colar",
     subtitle: "8,8 × 4,8 cm",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -444,7 +444,7 @@ export const products: Product[] = [
     id: "tag-brincos-colar-especial",
     name: "Tag de Brincos e Colar",
     subtitle: "Formato Especial",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Escolha qualquer formato dentro das medidas de até 8,8 × 4,8 cm",
@@ -472,7 +472,7 @@ export const products: Product[] = [
     id: "tag-trio-brincos-colar-g",
     name: "Tag Trio de Brincos e Colar",
     subtitle: "9 × 6,5 cm",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -498,7 +498,7 @@ export const products: Product[] = [
     id: "tag-trio-brincos-colar-p",
     name: "Tag Trio de Brincos e Colar",
     subtitle: "8,8 × 4,8 cm",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -523,7 +523,7 @@ export const products: Product[] = [
   {
     id: "mini-tag-anel",
     name: "Mini Tag de Anel",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -549,7 +549,7 @@ export const products: Product[] = [
   {
     id: "tag-anel",
     name: "Tag de Anel",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -575,7 +575,7 @@ export const products: Product[] = [
   {
     id: "tag-acessorios",
     name: "Tag de Acessórios",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -640,7 +640,7 @@ export const products: Product[] = [
     id: "mini-tag-brincos-p",
     name: "Mini Tag de Brincos",
     subtitle: "Tamanho P",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -668,7 +668,7 @@ export const products: Product[] = [
     id: "tag-brincos-p",
     name: "Tag de Brincos",
     subtitle: "Tamanho P",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -699,7 +699,7 @@ export const products: Product[] = [
     id: "tag-brincos-m",
     name: "Tag de Brincos",
     subtitle: "Tamanho M",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -796,7 +796,7 @@ export const products: Product[] = [
     id: "tag-acessorios-grande",
     name: "Tag de Acessórios",
     subtitle: "Formato Grande – 8,8 × 9,94 cm",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -829,7 +829,7 @@ export const products: Product[] = [
     id: "tag-acessorios-redonda",
     name: "Tag de Acessórios",
     subtitle: "Formato Redondo – 8,4 × 9,8 cm",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -862,7 +862,7 @@ export const products: Product[] = [
     id: "tag-acessorios-dupla",
     name: "Tag de Acessórios",
     subtitle: "Dupla – 13 × 4,8 cm",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -895,7 +895,7 @@ export const products: Product[] = [
     id: "tag-acessorios-padronizada-p",
     name: "Tag de Acessórios",
     subtitle: "Formato Padronizado Pequeno",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -925,7 +925,7 @@ export const products: Product[] = [
     id: "tag-acessorios-padronizada-m",
     name: "Tag de Acessórios",
     subtitle: "Formato Padronizado Médio",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -956,7 +956,7 @@ export const products: Product[] = [
     id: "tag-anel-padronizada-pequena",
     name: "Tag de Anel",
     subtitle: "Formato Padronizado – 3,9 × 1,7 cm",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -985,7 +985,7 @@ export const products: Product[] = [
     id: "tag-anel-padronizada-media",
     name: "Tag de Anel",
     subtitle: "Formato Padronizado – 6,5 × 2,3 cm",
-    category: "Tags",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -1010,7 +1010,7 @@ export const products: Product[] = [
     id: "kit-600-tags",
     name: "Kit de 600 Tags",
     subtitle: "Formatos Padronizados",
-    category: "Tags",
+    category: "Kits",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -1037,7 +1037,7 @@ export const products: Product[] = [
     id: "kit-800-materiais-g",
     name: "Kit de 800 Materiais G.",
     subtitle: "Formatos Padronizados",
-    category: "Tags",
+    category: "Kits",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -1062,7 +1062,7 @@ export const products: Product[] = [
     id: "kit-5000-tags",
     name: "Kit de 5 Mil Tags",
     subtitle: "Formatos Padronizados",
-    category: "Tags",
+    category: "Kits",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -1087,7 +1087,7 @@ export const products: Product[] = [
     id: "kit-6000-materiais-g",
     name: "Kit de 6 Mil Materiais G.",
     subtitle: "Formatos Padronizados",
-    category: "Tags",
+    category: "Kits",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -1316,7 +1316,7 @@ export const products: Product[] = [
   {
     id: "etiqueta-roupas",
     name: "Etiqueta de Roupas",
-    category: "Tags",
+    category: "Etiquetas de Roupas",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -1347,7 +1347,7 @@ export const products: Product[] = [
   {
     id: "mini-etiqueta-roupas",
     name: "Mini Etiqueta de Roupas",
-    category: "Tags",
+    category: "Etiquetas de Roupas",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -1374,7 +1374,7 @@ export const products: Product[] = [
     id: "etiqueta-roupas-especial",
     name: "Etiqueta de Roupas",
     subtitle: "Formato Especial",
-    category: "Tags",
+    category: "Etiquetas de Roupas",
     material: "Papel couchê 250g",
     specs: [
       "Escolha o tamanho da tag até 8,8 × 4,8 cm",
@@ -1401,7 +1401,7 @@ export const products: Product[] = [
   {
     id: "tag-lacos-tiaras-p",
     name: "Tag de Laços e Tiaras",
-    category: "Tags",
+    category: "Tags de Laços e Tiaras",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -1438,7 +1438,7 @@ export const products: Product[] = [
     id: "tag-lacos-tiaras-m",
     name: "Tag de Laços e Tiaras",
     subtitle: "15 × 4,82 cm",
-    category: "Tags",
+    category: "Tags de Laços e Tiaras",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -1466,7 +1466,7 @@ export const products: Product[] = [
     id: "tag-lacos-tiaras-g",
     name: "Tag de Laços e Tiaras",
     subtitle: "15 × 8,8 cm / 12,5 × 8,8 cm",
-    category: "Tags",
+    category: "Tags de Laços e Tiaras",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
@@ -1585,10 +1585,12 @@ export const products: Product[] = [
 
 export const categories = [
   "Todos",
-  "Tags",
-  "Cartões",
+  "Tags de Acessórios",
   "Sacolinhas",
-  "Caixinhas",
+  "Cartões",
   "Adesivos",
+  "Tags de Laços e Tiaras",
+  "Etiquetas de Roupas",
+  "Kits",
   "Outros",
 ];
