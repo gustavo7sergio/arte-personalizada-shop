@@ -19,7 +19,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative container mx-auto px-6 py-20 flex items-center justify-center">
         <div className="max-w-3xl space-y-6 text-center">
-          <img src={logoWhite} alt="GS Cartões" className="h-24 mb-4 animate-fade-in mx-auto" />
+          <img src={logoWhite} alt="GS Cartões" className="h-32 mb-4 animate-fade-in mx-auto" />
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground leading-tight animate-fade-in-up">
             Tags, cartões, sacolinhas{" "}
             <span className="italic" style={{ color: "hsl(4, 42%, 70%)" }}>e muito mais</span>{" "}

@@ -45,7 +45,7 @@ const Testimonials = () => {
                 <h3 className="font-display font-bold text-foreground mb-2">
                   {testimonial.name}
                 </h3>
-                <p className="text-muted-foreground font-body text-sm leading-relaxed italic">
+                <p className="text-muted-foreground font-body text-sm leading-relaxed">
                   "{testimonial.text}"
                 </p>
               </div>

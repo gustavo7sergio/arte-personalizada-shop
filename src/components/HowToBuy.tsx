@@ -70,11 +70,11 @@ const HowToBuy = () => {
             Pronto para começar?
           </h3>
           <p className="text-muted-foreground font-body mb-6">
-            Entre em contato conosco pelo WhatsApp e vamos ajudar você a criar os materiais gráficos perfeitos para sua marca!
+            Navegue por nossas categorias de produtos e escolha exatamente o que você precisa. Depois, envie seu pedido pelo WhatsApp e nossa equipe cuidará de todo o resto!
           </p>
-          <a href="https://api.whatsapp.com/send?phone=553584181096&text=Oi,%20Gostaria%20de%20fazer%20um%20or%c3%a7amento!" target="_blank" rel="noopener noreferrer" className="inline-block">
+          <a href="#produtos" className="inline-block">
             <button className="px-8 py-3 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 font-body font-semibold transition-colors">
-              Fale conosco no WhatsApp
+              Ver Categorias de Produtos
             </button>
           </a>
         </div>

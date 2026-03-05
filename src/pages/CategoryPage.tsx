@@ -127,10 +127,12 @@ function PriceSelector({ product }: { product: Product }) {
         </div>
       )}
 
-      <Button className="w-full rounded-full bg-primary hover:bg-primary/90 text-primary-foreground font-body gap-2">
-        <Package className="h-4 w-4" />
-        Adicionar ao carrinho
-      </Button>
+      <a href="https://api.whatsapp.com/send?phone=553584181096&text=Oi,%20Gostaria%20de%20fazer%20um%20or%c3%a7amento!" target="_blank" rel="noopener noreferrer" className="w-full">
+        <Button className="w-full rounded-full bg-primary hover:bg-primary/90 text-primary-foreground font-body gap-2">
+          <Package className="h-4 w-4" />
+          Adicionar ao carrinho
+        </Button>
+      </a>
     </div>
   );
 }
@@ -244,15 +246,8 @@ const CategoryPage = () => {
         <div className="container mx-auto px-6">
           {/* Breadcrumb */}
           <Link
-            to="/#produtos"
-            className="inline-flex items-center gap-2 text-sm font-body font-bold text-muted-foreground hover:text-foreground transition-colors mb-8 group"
-          >
-            <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
-            Voltar às categorias
-          </Link>
-          <Link
             to="/"
-            className="inline-flex items-center gap-2 text-sm font-body font-bold text-muted-foreground hover:text-foreground transition-colors mb-8 group ml-4"
+            className="inline-flex items-center gap-2 text-sm font-body font-bold text-muted-foreground hover:text-foreground transition-colors mb-8 group"
           >
             <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
             Voltar a home
@@ -288,6 +283,17 @@ const CategoryPage = () => {
           <p className="text-center text-xs font-body text-muted-foreground mt-10">
             Produtos 100% personalizados · Não trabalhamos com fidelização de cores · Mais modelos em breve
           </p>
+
+          {/* Bottom navigation */}
+          <div className="mt-16 pt-8 border-t border-border">
+            <Link
+              to="/"
+              className="inline-flex items-center gap-2 text-sm font-body font-bold text-muted-foreground hover:text-foreground transition-colors group"
+            >
+              <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
+              Voltar a home
+            </Link>
+          </div>
         </div>
       </div>
 

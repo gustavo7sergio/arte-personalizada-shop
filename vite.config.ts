@@ -5,6 +5,17 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  build: {
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name][extname]',
+        entryFileNames: 'assets/[name].js',
+        chunkFileNames: 'assets/[name].js'
+      }
+    },
+    minify: false,
+    sourcemap: false
+  },
   server: {
     host: "::",
     port: 8080,
