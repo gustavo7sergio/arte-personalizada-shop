@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { useCartStore } from "@/store/cartStore";
+import { useSimpleCart } from "@/contexts/SimpleCartContext";
 
 const formatCurrency = (value: number) =>
   value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -15,7 +15,7 @@ const formatCurrency = (value: number) =>
 function PriceSelector({ product }: { product: Product }) {
   const [activeVariant, setActiveVariant] = useState(0);
   const [selectedQtyIndex, setSelectedQtyIndex] = useState(0);
-  const { addItem } = useCartStore();
+  const { addItem } = useSimpleCart();
   const variant = product.variants[activeVariant];
   const selected = variant.prices[selectedQtyIndex];
 
