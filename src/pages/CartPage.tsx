@@ -1,15 +1,15 @@
-import { useCart } from "@/contexts/CartContext";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Trash2 } from "lucide-react";
+import { useLocalCart } from "@/hooks/useLocalCart";
 
 const formatCurrency = (value: number) =>
   value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 
 export default function CartPage() {
-  const { items, removeItem, clearCart } = useCart();
+  const { items, removeItem, clearCart } = useLocalCart();
   const navigate = useNavigate();
 
   const totalCash = items.reduce((sum, item) => sum + item.cashPrice, 0);

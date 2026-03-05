@@ -9,7 +9,7 @@ import CategoryPage from "./pages/CategoryPage";
 import CartPage from "./pages/CartPage";
 import NotFound from "./pages/NotFound";
 import { CartProvider } from "@/contexts/CartContext";
-import { CartButton } from "@/components/CartButton";
+import { FloatingCart } from "@/components/FloatingCart";
 
 
 const queryClient = new QueryClient();
@@ -39,7 +39,7 @@ const App = () => (
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
-          <CartButton />
+          <FloatingCart />
         </BrowserRouter>
       </TooltipProvider>
     </CartProvider>
