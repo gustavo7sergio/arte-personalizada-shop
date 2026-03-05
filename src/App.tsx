@@ -8,7 +8,7 @@ import Index from "./pages/Index";
 import CategoryPage from "./pages/CategoryPage";
 import NotFound from "./pages/NotFound";
 import { CartProvider } from "@/contexts/CartContext";
-import { UltraSimpleCart } from "@/components/UltraSimpleCart";
+import { Cart } from "@/components/Cart";
 
 const queryClient = new QueryClient();
 
@@ -37,7 +37,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
-        <UltraSimpleCart />
+        <Cart />
       </TooltipProvider>
     </CartProvider>
   </QueryClientProvider>
