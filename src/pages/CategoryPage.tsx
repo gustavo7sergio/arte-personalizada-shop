@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { useCart } from "@/contexts/CartContext";
 
 const formatCurrency = (value: number) =>
   value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -14,6 +15,7 @@ const formatCurrency = (value: number) =>
 function PriceSelector({ product }: { product: Product }) {
   const [activeVariant, setActiveVariant] = useState(0);
   const [selectedQtyIndex, setSelectedQtyIndex] = useState(0);
+  const { addItem, setIsOpen } = useCart();
   const variant = product.variants[activeVariant];
   const selected = variant.prices[selectedQtyIndex];
 
@@ -22,10 +24,21 @@ function PriceSelector({ product }: { product: Product }) {
     setSelectedQtyIndex(0);
   };
 
-  const whatsappMsg = encodeURIComponent(
-    `Olá! Tenho interesse em: ${product.name}${product.subtitle ? " – " + product.subtitle : ""}, ${variant.label}, ${selected.qty} unidades. Pode me passar mais informações?`
-  );
-  const whatsappUrl = `https://wa.me/553584181096?text=${whatsappMsg}`;
+  const handleAddToCart = () => {
+    const cartItem = {
+      productId: product.id,
+      productName: product.name,
+      subtitle: product.subtitle,
+      variantLabel: variant.label,
+      qty: selected.qty,
+      cashPrice: selected.cash,
+      installmentPrice: selected.installment,
+      unitPrice: selected.unitPrice,
+      image: productImages[product.id],
+    };
+    addItem(cartItem);
+    setIsOpen(true);
+  };
 
   return (
     <div className="flex flex-col gap-4">
@@ -127,12 +140,13 @@ function PriceSelector({ product }: { product: Product }) {
         </div>
       )}
 
-      <a href="https://api.whatsapp.com/send?phone=553584181096&text=Oi,%20Gostaria%20de%20fazer%20um%20or%c3%a7amento!" target="_blank" rel="noopener noreferrer" className="w-full">
-        <Button className="w-full rounded-full bg-primary hover:bg-primary/90 text-primary-foreground font-body gap-2">
-          <Package className="h-4 w-4" />
-          Adicionar ao carrinho
-        </Button>
-      </a>
+      <Button
+        onClick={handleAddToCart}
+        className="w-full rounded-full bg-primary hover:bg-primary/90 text-primary-foreground font-body gap-2"
+      >
+        <Package className="h-4 w-4" />
+        Adicionar ao carrinho
+      </Button>
     </div>
   );
 }
