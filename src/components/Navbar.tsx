@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <a href="/" className="flex items-center">
-          <img src={logo} alt="GS Cartões" className="h-10" />
+          <img src={logo} alt="GS Cartões" className="h-14" />
         </a>
 
         {/* Desktop */}
@@ -27,7 +27,7 @@ const Navbar = () => {
           <a href="#contato" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">
             Contato
           </a>
-          <a href="https://wa.me/553584181096" target="_blank" rel="noopener noreferrer">
+          <a href="https://api.whatsapp.com/send?phone=553584181096&text=Oi,%20Gostaria%20de%20fazer%20um%20or%c3%a7amento!" target="_blank" rel="noopener noreferrer">
             <Button size="sm" className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90 font-body px-6">
               Orçamento
             </Button>
@@ -55,9 +55,11 @@ const Navbar = () => {
           <a href="#contato" className="block text-sm font-body text-muted-foreground hover:text-foreground">
             Contato
           </a>
-          <Button size="sm" className="w-full rounded-full bg-primary text-primary-foreground hover:bg-primary/90 font-body">
-            Orçamento
-          </Button>
+          <a href="https://api.whatsapp.com/send?phone=553584181096&text=Oi,%20Gostaria%20de%20fazer%20um%20or%c3%a7amento!" target="_blank" rel="noopener noreferrer" className="w-full">
+            <Button size="sm" className="w-full rounded-full bg-primary text-primary-foreground hover:bg-primary/90 font-body">
+              Orçamento
+            </Button>
+          </a>
         </div>
       )}
     </nav>
