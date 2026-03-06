@@ -1,21 +1,24 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, ChevronDown, ChevronUp, MessageCircle, Package, Tag, CreditCard } from "lucide-react";
+import { ArrowLeft, ChevronDown, ChevronUp, MessageCircle, Package, Tag, CreditCard, ShoppingCart, Search } from "lucide-react";
 import { useState } from "react";
 import { products, type Product } from "@/data/products";
 import { productImages } from "@/data/productImages";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { useCart } from "@/contexts/CartContext";
+import { useToast } from "@/hooks/use-toast";
+import ImageZoom from "@/components/ImageZoom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { CartItem } from "@/App";
 
 const formatCurrency = (value: number) =>
   value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 
-function PriceSelector({ product, onAddToCart }: { product: Product; onAddToCart: (item: CartItem) => void }) {
+function PriceSelector({ product, image }: { product: Product; image?: string }) {
   const [activeVariant, setActiveVariant] = useState(0);
   const [selectedQtyIndex, setSelectedQtyIndex] = useState(0);
-  // onAddToCart will be called when adding to cart
+  const { addItem } = useCart();
+  const { toast } = useToast();
   const variant = product.variants[activeVariant];
   const selected = variant.prices[selectedQtyIndex];
 
@@ -25,13 +28,21 @@ function PriceSelector({ product, onAddToCart }: { product: Product; onAddToCart
   };
 
   const handleAddToCart = () => {
-    const cartItem = {
-      id: `${product.id}-${activeVariant}`,
-      name: `${product.name} - ${variant.label}`,
-      quantity: 1,
-      price: selected.cash,
-    };
-    onAddToCart(cartItem);
+    addItem({
+      productId: product.id,
+      productName: product.name,
+      subtitle: product.subtitle,
+      variantLabel: variant.label,
+      qty: selected.qty,
+      cashPrice: selected.cash,
+      installmentPrice: selected.installment,
+      unitPrice: selected.unitPrice,
+      image,
+    });
+    toast({
+      title: "Adicionado ao carrinho! 🛒",
+      description: `${product.name}${product.subtitle ? " – " + product.subtitle : ""} · ${selected.qty} uni`,
+    });
   };
 
   return (
@@ -129,8 +140,6 @@ function PriceSelector({ product, onAddToCart }: { product: Product; onAddToCart
               {formatCurrency(selected.installment)}
             </p>
           </div>
-
-
         </div>
       )}
 
@@ -138,7 +147,7 @@ function PriceSelector({ product, onAddToCart }: { product: Product; onAddToCart
         onClick={handleAddToCart}
         className="w-full rounded-full bg-primary hover:bg-primary/90 text-primary-foreground font-body gap-2"
       >
-        <Package className="h-4 w-4" />
+        <ShoppingCart className="h-4 w-4" />
         Adicionar ao carrinho
       </Button>
     </div>
@@ -147,19 +156,36 @@ function PriceSelector({ product, onAddToCart }: { product: Product; onAddToCart
 
 function ProductCard({ product }: { product: Product }) {
   const [expanded, setExpanded] = useState(false);
+  const [zoomOpen, setZoomOpen] = useState(false);
   const image = productImages[product.id];
 
   return (
     <div className="bg-card rounded-2xl border border-border overflow-hidden shadow-card hover:shadow-hover transition-shadow duration-300">
       {image && (
-        <div className="aspect-[4/3] overflow-hidden bg-muted/20">
-          <img
+        <>
+          <div
+            className="aspect-[4/3] overflow-hidden bg-muted/20 cursor-pointer relative group"
+            onClick={() => setZoomOpen(true)}
+          >
+            <img
+              src={image}
+              alt={product.name + (product.subtitle ? " – " + product.subtitle : "")}
+              className="w-full h-full object-contain p-4"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/5 transition-colors flex items-center justify-center">
+              <div className="bg-card/80 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                <Search className="h-5 w-5 text-foreground" />
+              </div>
+            </div>
+          </div>
+          <ImageZoom
             src={image}
             alt={product.name + (product.subtitle ? " – " + product.subtitle : "")}
-            className="w-full h-full object-contain p-4"
-            loading="lazy"
+            open={zoomOpen}
+            onOpenChange={setZoomOpen}
           />
-        </div>
+        </>
       )}
       <div className="p-6 pb-4">
         <div className="flex items-start justify-between gap-3 mb-3">
@@ -223,13 +249,13 @@ function ProductCard({ product }: { product: Product }) {
       )}
 
       <div className="p-6">
-        <PriceSelector product={product} onAddToCart={onAddToCart} />
+        <PriceSelector product={product} image={image} />
       </div>
     </div>
   );
 }
 
-const CategoryPage = ({ onAddToCart }: { onAddToCart: (item: CartItem) => void }) => {
+const CategoryPage = () => {
   const { categorySlug } = useParams<{ categorySlug: string }>();
 
   const slugToCategory: Record<string, string> = {
@@ -254,8 +280,15 @@ const CategoryPage = ({ onAddToCart }: { onAddToCart: (item: CartItem) => void }
         <div className="container mx-auto px-6">
           {/* Breadcrumb */}
           <Link
-            to="/"
+            to="/#produtos"
             className="inline-flex items-center gap-2 text-sm font-body font-bold text-muted-foreground hover:text-foreground transition-colors mb-8 group"
+          >
+            <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
+            Voltar às categorias
+          </Link>
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 text-sm font-body font-bold text-muted-foreground hover:text-foreground transition-colors mb-8 group ml-4"
           >
             <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
             Voltar a home
@@ -291,17 +324,6 @@ const CategoryPage = ({ onAddToCart }: { onAddToCart: (item: CartItem) => void }
           <p className="text-center text-xs font-body text-muted-foreground mt-10">
             Produtos 100% personalizados · Não trabalhamos com fidelização de cores · Mais modelos em breve
           </p>
-
-          {/* Bottom navigation */}
-          <div className="mt-16 pt-8 border-t border-border">
-            <Link
-              to="/"
-              className="inline-flex items-center gap-2 text-sm font-body font-bold text-muted-foreground hover:text-foreground transition-colors group"
-            >
-              <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
-              Voltar a home
-            </Link>
-          </div>
         </div>
       </div>
 

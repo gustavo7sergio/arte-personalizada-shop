@@ -1,15 +1,23 @@
 import { Link } from "react-router-dom";
+import catTagsAcessorios from "@/assets/cat-tags-acessorios.jpg";
+import catSacolinhas from "@/assets/cat-sacolinhas-new.jpg";
+import catCartoes from "@/assets/cat-cartoes-new.jpg";
+import catAdesivos from "@/assets/cat-adesivos-new.png";
+import catLacosTiaras from "@/assets/cat-lacos-tiaras.jpg";
+import catEtiquetasRoupas from "@/assets/cat-etiquetas-roupas.png";
+import catKits from "@/assets/cat-kits.png";
+import catOutros from "@/assets/cat-outros-new.png";
 import { ArrowUpRight } from "lucide-react";
 
 const categories = [
-  { name: "Tags de Acessórios", description: "Tags de brincos, anéis, colares e mais", image: "/assets/cat-tags-acessorios.jpg", slug: "tags-de-acessorios" },
-  { name: "Sacolinhas", description: "Sacolinhas de papel, plástico e caixinhas", image: "/assets/cat-sacolinhas-new.jpg", slug: "sacolinhas" },
-  { name: "Cartões", description: "Cartões de visita, garantia, agradecimento e mais", image: "/assets/cat-cartoes-new.jpg", slug: "cartoes" },
-  { name: "Adesivos", description: "Adesivos personalizados para lacre e identificação", image: "/assets/cat-adesivos-new.png", slug: "adesivos" },
-  { name: "Tags de Laços e Tiaras", description: "Tags para laços, tiaras e acessórios de cabelo", image: "/assets/cat-lacos-tiaras.jpg", slug: "tags-de-lacos-e-tiaras" },
-  { name: "Etiquetas de Roupas", description: "Etiquetas personalizadas para roupas", image: "/assets/cat-etiquetas-roupas.png", slug: "etiquetas-de-roupas" },
-  { name: "Kits", description: "Kits completos de tags com diversos formatos", image: "/assets/cat-kits.png", slug: "kits" },
-  { name: "Outros", description: "Panfletos, banners, blocos de pedido e mais", image: "/assets/cat-outros-new.png", slug: "outros" },
+  { name: "Tags de Acessórios", description: "Tags de brincos, anéis, colares e mais", image: catTagsAcessorios, slug: "tags-de-acessorios" },
+  { name: "Sacolinhas", description: "Sacolinhas de papel, plástico e caixinhas", image: catSacolinhas, slug: "sacolinhas" },
+  { name: "Cartões", description: "Cartões de visita, garantia, agradecimento e mais", image: catCartoes, slug: "cartoes" },
+  { name: "Adesivos", description: "Adesivos personalizados para lacre e identificação", image: catAdesivos, slug: "adesivos" },
+  { name: "Tags de Laços e Tiaras", description: "Tags para laços, tiaras e acessórios de cabelo", image: catLacosTiaras, slug: "tags-de-lacos-e-tiaras" },
+  { name: "Etiquetas de Roupas", description: "Etiquetas personalizadas para roupas", image: catEtiquetasRoupas, slug: "etiquetas-de-roupas" },
+  { name: "Kits", description: "Kits completos de tags com diversos formatos", image: catKits, slug: "kits" },
+  { name: "Outros", description: "Panfletos, banners, blocos de pedido e mais", image: catOutros, slug: "outros" },
 ];
 
 const Categories = () => {
