@@ -22,7 +22,7 @@ function PriceSelector({ product }: { product: Product }) {
   const whatsappMsg = encodeURIComponent(
     `Olá! Tenho interesse em: ${product.name}${product.subtitle ? " – " + product.subtitle : ""}, ${variant.label}, ${selected.qty} unidades. Pode me passar mais informações?`
   );
-  const whatsappUrl = `https://wa.me/553584181096?text=${whatsappMsg}`;
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=553584181096&text=${whatsappMsg}`;
 
   return (
     <div className="flex flex-col gap-4">

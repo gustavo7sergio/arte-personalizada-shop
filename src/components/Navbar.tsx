@@ -40,7 +40,7 @@ const Navbar = () => {
               </span>
             )}
           </button>
-          <a href="https://wa.me/553584181096" target="_blank" rel="noopener noreferrer">
+          <a href="https://api.whatsapp.com/send?phone=553584181096&text=Oi,%20Gostaria%20de%20fazer%20um%20or%C3%A7amento!" target="_blank" rel="noopener noreferrer">
             <Button size="sm" className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90 font-body px-6">
               Orçamento
             </Button>
