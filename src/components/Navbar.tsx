@@ -40,7 +40,7 @@ const Navbar = () => {
               </span>
             )}
           </button>
-          <a href="https://api.whatsapp.com/send?phone=553584181096&text=Oi,%20Gostaria%20de%20fazer%20um%20or%C3%A7amento!" target="_blank" rel="noopener noreferrer">
+          <a href="https://api.whatsapp.com/send?phone=553584181096&text=Oi,%20Gostaria%20de%20fazer%20um%20or%c3%a7amento!&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnmtqEOBJ50S8RxWQC8t6r_vwz-cvvj-erLdW1YkjjptRocv0jwiBqIm3fxKQ_aem_S2syak7ePYipUmNvaeALHQ" target="_blank" rel="noopener noreferrer">
             <Button size="sm" className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90 font-body px-6">
               Orçamento
             </Button>

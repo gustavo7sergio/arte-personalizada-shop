@@ -19,7 +19,7 @@ const CartDrawer = () => {
 
     const msg = `Olá! Gostaria de fazer o seguinte pedido:\n\n${lines.join("\n\n")}\n\n📦 Total (PIX): ${formatCurrency(totalCash)}\n💳 Total (6x): ${formatCurrency(totalInstallment)}\n\nPoderia confirmar a disponibilidade?`;
 
-    window.open(`https://api.whatsapp.com/send?phone=553584181096&text=${encodeURIComponent(msg)}`, "_blank");
+    window.open(`https://api.whatsapp.com/send?phone=553584181096&text=${encodeURIComponent(msg)}&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnmtqEOBJ50S8RxWQC8t6r_vwz-cvvj-erLdW1YkjjptRocv0jwiBqIm3fxKQ_aem_S2syak7ePYipUmNvaeALHQ`, "_blank");
   };
 
   return (
