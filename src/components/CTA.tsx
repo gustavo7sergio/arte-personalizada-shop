@@ -6,10 +6,10 @@ const CTA = () => {
     <section className="py-20 md:py-28 bg-primary">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-5xl font-display font-bold text-primary-foreground max-w-3xl mx-auto leading-tight">
-          Escolheu o produto e a quantidade?
+          Pronto para começar?
         </h2>
         <p className="text-primary-foreground/80 font-body mt-6 max-w-lg mx-auto text-lg">
-          Manda mensagem agora — a gente confirma prazo, você envia o arquivo e a gente coloca em produção.
+          Escolha seus produtos e adicione-os ao carrinho para fazermos seu pedido. É rápido e fácil!
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a href="https://wa.me/553584181096" target="_blank" rel="noopener noreferrer">
