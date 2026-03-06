@@ -7,6 +7,7 @@ import { CartProvider } from "@/contexts/CartContext";
 import CartDrawer from "@/components/CartDrawer";
 import FloatingCartButton from "@/components/FloatingCartButton";
 import Index from "./pages/Index";
+import ScrollToTop from "@/components/ScrollToTop";
 import CategoryPage from "./pages/CategoryPage";
 import NotFound from "./pages/NotFound";
 
@@ -21,6 +22,7 @@ const App = () => (
         <CartDrawer />
         <FloatingCartButton />
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/categoria/:categorySlug" element={<CategoryPage />} />

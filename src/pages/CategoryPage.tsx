@@ -280,15 +280,8 @@ const CategoryPage = () => {
         <div className="container mx-auto px-6">
           {/* Breadcrumb */}
           <Link
-            to="/#produtos"
-            className="inline-flex items-center gap-2 text-sm font-body font-bold text-muted-foreground hover:text-foreground transition-colors mb-8 group"
-          >
-            <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
-            Voltar às categorias
-          </Link>
-          <Link
             to="/"
-            className="inline-flex items-center gap-2 text-sm font-body font-bold text-muted-foreground hover:text-foreground transition-colors mb-8 group ml-4"
+            className="inline-flex items-center gap-2 text-sm font-body font-bold text-muted-foreground hover:text-foreground transition-colors mb-8 group"
           >
             <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
             Voltar a home
@@ -324,6 +317,16 @@ const CategoryPage = () => {
           <p className="text-center text-xs font-body text-muted-foreground mt-10">
             Produtos 100% personalizados · Não trabalhamos com fidelização de cores · Mais modelos em breve
           </p>
+
+          <div className="flex justify-center mt-8">
+            <Link
+              to="/"
+              className="inline-flex items-center gap-2 text-sm font-body font-bold text-muted-foreground hover:text-foreground transition-colors group"
+            >
+              <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
+              Voltar a home
+            </Link>
+          </div>
         </div>
       </div>
 
