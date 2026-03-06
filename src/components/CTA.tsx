@@ -12,7 +12,7 @@ const CTA = () => {
           Escolha seus produtos e adicione-os ao carrinho para fazermos seu pedido. É rápido e fácil!
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a href="https://wa.me/553584181096" target="_blank" rel="noopener noreferrer">
+          <a href="https://api.whatsapp.com/send?phone=553584181096&text=Oi,%20Gostaria%20de%20fazer%20um%20or%C3%A7amento!" target="_blank" rel="noopener noreferrer">
             <Button
               size="lg"
               className="hover:opacity-90 text-base px-10 py-6 rounded-full shadow-soft font-body font-semibold"
