@@ -4,7 +4,7 @@ import Categories from "@/components/Categories";
 import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
 import About from "@/components/About";
-import CTA from "@/components/CTA";
+import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -19,7 +19,7 @@ const Index = () => {
         <About />
       </div>
       <div id="contato">
-        <CTA />
+        <FAQ />
       </div>
       <Footer />
     </div>
