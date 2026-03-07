@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import catTagsAcessorios from "@/assets/cat-tags-acessorios.jpg";
 import catSacolinhas from "@/assets/cat-sacolinhas-new.jpg";
 import catCartoes from "@/assets/cat-cartoes-new.jpg";
-import catAdesivos from "@/assets/cat-adesivos-new.png";
+import catAdesivos from "@/assets/cat-adesivos-new.jpg";
 import catLacosTiaras from "@/assets/cat-lacos-tiaras.jpg";
-import catEtiquetasRoupas from "@/assets/cat-etiquetas-roupas.png";
-import catKits from "@/assets/cat-kits.png";
-import catOutros from "@/assets/cat-outros-new.png";
+import catEtiquetasRoupas from "@/assets/cat-etiquetas-roupas.jpg";
+import catKits from "@/assets/cat-kits.jpg";
+import catOutros from "@/assets/cat-outros-new.jpg";
 import { ArrowUpRight } from "lucide-react";
 
 const categories = [
