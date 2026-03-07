@@ -4,12 +4,12 @@ const steps = [
   {
     icon: ShoppingCart,
     title: "1. Escolha os produtos",
-    description: "Navegue pelo nosso catálogo e escolha os produtos na quantidade que deseja. Tags, cartões, sacolinhas e muito mais!",
+    description: "Navegue pelo nosso catálogo e adicione os produtos na quantidade que deseja ao carrinho. Todos os materiais são personalizados com sua marca.",
   },
   {
     icon: MessageCircle,
     title: "2. Envie pelo WhatsApp",
-    description: "Envie seu pedido pelo WhatsApp. Nosso time está pronto para ajudar com dúvidas e personalização.",
+    description: "Envie seu pedido pelo WhatsApp para terminarmos de concluir o seu pedido. Nosso time está pronto para ajudar com dúvidas e personalização.",
   },
   {
     icon: Palette,
