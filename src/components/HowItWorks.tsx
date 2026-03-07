@@ -24,7 +24,7 @@ const steps = [
   {
     icon: PenTool,
     title: "5. Criação e aprovação",
-    description: "Criamos as artes do seu pedido e enviamos para sua aprovação antes de iniciar a produção.",
+    description: "Criamos as artes do seu pedido 100% personalizados e enviamos para sua aprovação antes de iniciar a produção. Colocamos sua logo, cores e informações que desejar.",
   },
   {
     icon: Package,
