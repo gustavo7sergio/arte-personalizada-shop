@@ -4,12 +4,12 @@ const steps = [
   {
     icon: ShoppingCart,
     title: "1. Escolha os produtos",
-    description: "Navegue pelo nosso catálogo e escolha os produtos na quantidade que deseja. Tags, cartões, sacolinhas e muito mais!",
+    description: "Navegue pelo nosso catálogo e adicione os produtos na quantidade que deseja ao carrinho. Todos os materiais são personalizados com sua marca.",
   },
   {
     icon: MessageCircle,
     title: "2. Envie pelo WhatsApp",
-    description: "Envie seu pedido pelo WhatsApp. Nosso time está pronto para ajudar com dúvidas e personalização.",
+    description: "Envie seu pedido pelo WhatsApp para terminarmos de concluir o seu pedido. Nosso time está pronto para ajudar com dúvidas e personalização.",
   },
   {
     icon: Palette,
@@ -24,7 +24,7 @@ const steps = [
   {
     icon: PenTool,
     title: "5. Criação e aprovação",
-    description: "Criamos as artes do seu pedido e enviamos para sua aprovação antes de iniciar a produção.",
+    description: "Criamos as artes do seu pedido 100% personalizados e enviamos para sua aprovação antes de iniciar a produção. Colocamos sua logo, cores e informações que desejar.",
   },
   {
     icon: Package,
