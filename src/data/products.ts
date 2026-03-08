@@ -550,6 +550,7 @@ export const products: Product[] = [
   {
     id: "tag-anel",
     name: "Tag de Anel",
+    subtitle: "7 × 3 cm",
     category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
