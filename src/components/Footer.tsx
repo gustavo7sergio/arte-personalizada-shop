@@ -45,12 +45,12 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="text-center md:text-left">
             <h4 className="text-sm font-body font-semibold text-primary-foreground tracking-wider uppercase mb-4">
               Contato
             </h4>
             <ul className="space-y-3 font-body text-sm">
-              <li className="flex items-center gap-2 text-primary-foreground/60">
+              <li className="flex items-center justify-center md:justify-start gap-2 text-primary-foreground/60">
                 <Instagram className="h-4 w-4" />
                 <a href="https://www.instagram.com/gs_cartaodevisitas" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">
                   @gs_cartaodevisitas
