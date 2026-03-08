@@ -57,7 +57,7 @@ import kit800tags from "@/assets/products/Kitde800tags.jpg";
 import kit5mil from "@/assets/products/Kitde5miltags.jpg";
 import kit6mil from "@/assets/products/Kitde6miltags.jpg";
 
-export const productImages: Record<string, string> = {
+export const productImages: Record<string, string | string[]> = {
   // Adesivos
   "adesivo-redondo": adesivoRedondo3cm,
   "adesivo-anel": adesivoAnel,
@@ -107,8 +107,7 @@ export const productImages: Record<string, string> = {
   "tag-lacos-tiaras-g": tagLacosTiarasG1,
 
   // Tags de Pulseira
-  "tag-pulseira-88x48": tagPulseira88x48,
-  "tag-pulseira-88x48-v2": tagPulseira88x48v2,
+  "tag-pulseira-88x48": [tagPulseira88x48, tagPulseira88x48v2],
   "tag-pulseira-84x98": tagPulseira84x98,
   "tag-pulseira-88x994": tagPulseira88x994,
   "tag-pulseira-13x48": tagPulseira13x48,
