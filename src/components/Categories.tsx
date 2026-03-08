@@ -26,7 +26,7 @@ const Categories = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mt-3">
-            Escolha a categoria do seu produto
+            Escolha a categoria do seu produto personalizado
           </h2>
           <p className="text-muted-foreground mt-4 max-w-md mx-auto font-body">
             Clique na categoria e veja todos os modelos disponíveis com tabela de preços completa.
