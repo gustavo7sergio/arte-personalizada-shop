@@ -1481,9 +1481,9 @@ export const products: Product[] = [
     ],
   },
   {
-    id: "tag-lacos-tiaras-g",
+    id: "tag-lacos-tiaras-g1",
     name: "Tag de Laços e Tiaras",
-    subtitle: "15 × 8,8 cm / 12,5 × 8,8 cm",
+    subtitle: "15 × 8,8 cm",
     category: "Tags de Laços e Tiaras",
     material: "Papel couchê 250g",
     specs: [
@@ -1505,6 +1505,23 @@ export const products: Product[] = [
           { qty: 2000, installment: 819.00, cash: 737.10 },
         ],
       },
+    ],
+  },
+  {
+    id: "tag-lacos-tiaras-g2",
+    name: "Tag de Laços e Tiaras",
+    subtitle: "12,5 × 8,8 cm",
+    category: "Tags de Laços e Tiaras",
+    material: "Papel couchê 250g",
+    specs: [
+      "Papel couchê 250g",
+      "Frente e verso coloridos",
+      "Brilho total na frente",
+      "NÃO trabalhamos com fidelização de cores",
+    ],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
+    variants: [
       {
         label: "12,5 × 8,8 cm",
         prices: [
