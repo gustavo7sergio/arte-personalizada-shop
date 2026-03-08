@@ -22,7 +22,7 @@ const categories = [
 
 const Categories = () => {
   return (
-    <section id="produtos" className="py-20 md:py-28 bg-background">
+    <section id="produtos" className="py-14 md:py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-primary font-body text-sm tracking-[0.2em] uppercase">
