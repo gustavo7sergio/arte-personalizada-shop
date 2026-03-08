@@ -304,9 +304,24 @@ const CategoryPage = () => {
   };
 
   const categoryName = slugToCategory[categorySlug ?? ""] ?? categorySlug;
+  // Group similar products together by base name
+  const getGroupKey = (name: string) => {
+    const lower = name.toLowerCase();
+    if (lower.includes("trio") && lower.includes("colar")) return "05-trio-brincos-colar";
+    if (lower.includes("brincos") && lower.includes("colar")) return "04-brincos-colar";
+    if (lower.includes("trio") && lower.includes("brincos")) return "03-trio-brincos";
+    if (lower.includes("brincos")) return "02-brincos";
+    if (lower.includes("anel")) return "06-anel";
+    if (lower.includes("pulseira")) return "07-pulseira";
+    if (lower.includes("laços") || lower.includes("tiaras")) return "08-lacos";
+    if (lower.includes("semaninha")) return "09-semaninha";
+    if (lower.includes("acessórios") || lower.includes("acessorios")) return "10-acessorios";
+    return "99-" + lower;
+  };
+
   const categoryProducts = products
     .filter((p) => p.category === categoryName)
-    .sort((a, b) => a.name.localeCompare(b.name, "pt-BR"));
+    .sort((a, b) => getGroupKey(a.name).localeCompare(getGroupKey(b.name)));
 
   return (
     <div className="min-h-screen bg-background">
