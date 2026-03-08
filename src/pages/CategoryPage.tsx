@@ -352,7 +352,7 @@ const CategoryPage = () => {
               )}
             </h1>
             <p className="text-muted-foreground mt-4 max-w-lg font-body">
-              Todos os modelos disponíveis com preços à vista e parcelado. 10% de desconto no PIX e até 6x sem juros.
+              Todos os modelos disponíveis com preços à vista e parcelado.
             </p>
           </div>
 
