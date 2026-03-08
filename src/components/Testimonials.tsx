@@ -48,7 +48,7 @@ const Testimonials = () => {
       <div className="container mx-auto px-6" ref={ref}>
         <div className={`text-center mb-16 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">
-            O que nossas clientes dizem
+            O que nossos clientes dizem
           </h2>
           <p className="text-muted-foreground mt-4 max-w-xl mx-auto font-body text-lg">
             Feedbacks reais de quem confia na GS Cartões para elevar a apresentação da sua marca.
