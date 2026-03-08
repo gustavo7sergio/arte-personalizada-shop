@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const faqs = [
   {
@@ -49,10 +50,12 @@ const faqs = [
 ];
 
 const FAQ = () => {
+  const { ref, visible } = useScrollReveal();
+
   return (
     <section className="py-20 md:py-28 bg-background">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+      <div className="container mx-auto px-6" ref={ref}>
+        <div className={`text-center mb-16 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">
             Tira dúvidas
           </h2>

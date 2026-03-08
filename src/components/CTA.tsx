@@ -1,14 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const CTA = () => {
+  const { ref, visible } = useScrollReveal();
+
   return (
     <section className="py-20 md:py-28 bg-primary">
-      <div className="container mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-5xl font-display font-bold text-primary-foreground max-w-3xl mx-auto leading-tight">
+      <div className="container mx-auto px-6 text-center" ref={ref}>
+        <h2 className={`text-3xl md:text-5xl font-display font-bold text-primary-foreground max-w-3xl mx-auto leading-tight transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           Pronto para começar?
         </h2>
-        <p className="text-primary-foreground/80 font-body mt-6 max-w-lg mx-auto text-lg">
+        <p className={`text-primary-foreground/80 font-body mt-6 max-w-lg mx-auto text-lg transition-all duration-700 delay-100 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           Escolha seus produtos e adicione-os ao carrinho para fazermos seu pedido. É rápido e fácil!
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">

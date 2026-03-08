@@ -8,6 +8,7 @@ import catEtiquetasRoupas from "@/assets/cat-etiquetas-roupas.jpg";
 import catKits from "@/assets/cat-kits.jpg";
 import catOutros from "@/assets/cat-outros-new.jpg";
 import { ArrowUpRight } from "lucide-react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const categories = [
   { name: "Tags de Acessórios", description: "Tags de brincos, anéis, colares e mais", image: catTagsAcessorios, slug: "tags-de-acessorios" },
@@ -21,10 +22,12 @@ const categories = [
 ];
 
 const Categories = () => {
+  const { ref, visible } = useScrollReveal();
+
   return (
     <section id="produtos" className="py-10 md:py-14 bg-background">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+      <div className="container mx-auto px-6" ref={ref}>
+        <div className={`text-center mb-16 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mt-3">
             Escolha a categoria do seu <span style={{ color: "hsl(var(--rose))" }}>produto personalizado</span>
           </h2>

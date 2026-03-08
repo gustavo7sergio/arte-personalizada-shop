@@ -1,4 +1,5 @@
 import { ShoppingCart, MessageCircle, Palette, Truck, PenTool, Package } from "lucide-react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const steps = [
   {
@@ -34,10 +35,12 @@ const steps = [
 ];
 
 const HowItWorks = () => {
+  const { ref, visible } = useScrollReveal();
+
   return (
     <section className="py-20 md:py-28 bg-background">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+      <div className="container mx-auto px-6" ref={ref}>
+        <div className={`text-center mb-16 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">
             Como funciona a compra
           </h2>
@@ -50,7 +53,8 @@ const HowItWorks = () => {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="border-2 border-primary/20 rounded-2xl p-8 text-center bg-card hover:border-primary/40 transition-colors"
+              className={`border-2 border-primary/20 rounded-2xl p-8 text-center bg-card hover:border-primary/40 transition-all duration-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+              style={{ transitionDelay: `${index * 100 + 200}ms` }}
             >
               <div className="flex justify-center mb-5">
                 <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center">
