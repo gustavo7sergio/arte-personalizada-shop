@@ -18,21 +18,21 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative container mx-auto px-6 py-20 flex flex-col items-center text-center">
-        <img src={logoWhite} alt="GS Cartões" className="h-32 md:h-44 mb-6 animate-fade-in" />
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground leading-tight animate-fade-in-up max-w-3xl">
+        <img src={logoWhite} alt="GS Cartões" className="h-32 md:h-44 mb-6 opacity-0 animate-fade-in" style={{ animationDelay: "0.1s", animationFillMode: "forwards" }} />
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground leading-tight opacity-0 animate-fade-in max-w-3xl" style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}>
           Tags, cartões, sacolinhas{" "}
           <span className="italic" style={{ color: "hsl(4, 42%, 70%)" }}>e muito mais</span>{" "}
           com a sua marca
         </h1>
 
-        <div className="mt-8 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+        <div className="mt-8 opacity-0 animate-fade-in" style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}>
           <a href="#produtos">
-            <Button size="lg" className="text-base px-10 py-6 rounded-full shadow-soft font-body font-semibold" style={{ backgroundColor: "hsl(4, 42%, 70%)", color: "hsl(60, 20%, 97%)" }}>
+            <Button size="lg" className="text-base px-10 py-6 rounded-full shadow-soft font-body font-semibold hover:scale-105 transition-transform" style={{ backgroundColor: "hsl(4, 42%, 70%)", color: "hsl(60, 20%, 97%)" }}>
               Ver produtos
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </a>
-          <p className="mt-4 text-sm font-body text-primary-foreground/80">
+          <p className="mt-4 text-sm font-body text-primary-foreground/80 opacity-0 animate-fade-in" style={{ animationDelay: "0.9s", animationFillMode: "forwards" }}>
             📦 Receba de qualquer lugar do Brasil
           </p>
         </div>
