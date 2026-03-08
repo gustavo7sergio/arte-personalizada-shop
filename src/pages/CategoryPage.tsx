@@ -345,9 +345,11 @@ const CategoryPage = () => {
             </span>
             <h1 className="text-3xl md:text-5xl font-display font-bold text-foreground mt-3">
               {categoryName}{" "}
-              <span style={{ color: "hsl(var(--rose))" }}>
-                {["Sacolinhas", "Etiquetas de Roupas", "Tags de Acessórios", "Tags de Laços e Tiaras"].includes(categoryName) ? "Personalizadas" : "Personalizados"}
-              </span>
+              {categoryName !== "Outros" && (
+                <span style={{ color: "hsl(var(--rose))" }}>
+                  {" "}{["Sacolinhas", "Etiquetas de Roupas", "Tags de Acessórios", "Tags de Laços e Tiaras"].includes(categoryName) ? "Personalizadas" : "Personalizados"}
+                </span>
+              )}
             </h1>
             <p className="text-muted-foreground mt-4 max-w-lg font-body">
               Todos os modelos disponíveis com preços à vista e parcelado. 10% de desconto no PIX e até 6x sem juros.
