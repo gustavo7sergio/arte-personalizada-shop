@@ -57,7 +57,7 @@ import kit800tags from "@/assets/products/Kitde800tags.jpg";
 import kit5mil from "@/assets/products/Kitde5miltags.jpg";
 import kit6mil from "@/assets/products/Kitde6miltags.jpg";
 
-export const productImages: Record<string, string> = {
+export const productImages: Record<string, string | string[]> = {
   // Adesivos
   "adesivo-redondo": adesivoRedondo3cm,
   "adesivo-anel": adesivoAnel,
