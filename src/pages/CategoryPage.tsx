@@ -119,11 +119,14 @@ function PriceSelector({ product, image }: { product: Product; image?: string })
               <p className="text-2xl font-display font-bold text-primary">
                 {formatCurrency(selected.cash)}
               </p>
-              {selected.unitPrice && (
-                <p className="text-xs text-muted-foreground font-body">
-                  {formatCurrency(selected.unitPrice)} / uni
-                </p>
-              )}
+              {(() => {
+                const unit = selected.unitPrice ?? (selected.cash > 0 && selected.qty > 0 ? +(selected.cash / selected.qty).toFixed(2) : undefined);
+                return unit ? (
+                  <p className="text-xs text-muted-foreground font-body">
+                    {formatCurrency(unit)} / uni
+                  </p>
+                ) : null;
+              })()}
             </div>
           </div>
 
