@@ -103,7 +103,8 @@ export const productImages: Record<string, string | string[]> = {
   "tag-anel-padronizada-media": tagAnelMedia,
 
   // Tags de Laços e Tiaras
-  "tag-lacos-tiaras-p": tagLacosTiarasP1,
+  "tag-lacos-tiaras-p1": tagLacosTiarasP2,
+  "tag-lacos-tiaras-p2": tagLacosTiarasP1,
   "tag-lacos-tiaras-m": tagLacosTiarasM,
   "tag-lacos-tiaras-g": tagLacosTiarasG1,
 
