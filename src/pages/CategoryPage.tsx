@@ -304,7 +304,9 @@ const CategoryPage = () => {
   };
 
   const categoryName = slugToCategory[categorySlug ?? ""] ?? categorySlug;
-  const categoryProducts = products.filter((p) => p.category === categoryName);
+  const categoryProducts = products
+    .filter((p) => p.category === categoryName)
+    .sort((a, b) => a.name.localeCompare(b.name, "pt-BR"));
 
   return (
     <div className="min-h-screen bg-background">
