@@ -17,17 +17,11 @@ const Navbar = () => {
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#produtos" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">
+          <a href="/#produtos" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">
             Produtos
           </a>
-          <a href="#catalogo" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">
+          <a href="/#catalogo" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">
             Catálogo
-          </a>
-          <a href="#sobre" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">
-            Sobre
-          </a>
-          <a href="#contato" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">
-            Contato
           </a>
           <button
             onClick={() => setCartOpen(true)}
