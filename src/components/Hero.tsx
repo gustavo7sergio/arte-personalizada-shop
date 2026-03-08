@@ -32,7 +32,7 @@ const Hero = () => {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </a>
-          <p className="mt-4 text-sm font-body text-muted-foreground">
+          <p className="mt-4 text-sm font-body text-primary-foreground/80">
             📦 Receba de qualquer lugar do Brasil
           </p>
         </div>
