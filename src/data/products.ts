@@ -698,7 +698,7 @@ export const products: Product[] = [
   {
     id: "tag-brincos-m",
     name: "Tag de Brincos",
-    subtitle: "Tamanho M",
+    subtitle: "Tamanho M – 8,8 × 4,8 cm",
     category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
