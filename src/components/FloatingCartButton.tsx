@@ -7,7 +7,8 @@ const FloatingCartButton = () => {
   return (
     <button
       onClick={() => setIsOpen(true)}
-      className="fixed bottom-6 right-6 z-50 bg-pink-500 text-white rounded-full h-14 w-14 flex items-center justify-center shadow-lg hover:bg-pink-600 transition-all hover:scale-105 active:scale-95"
+      className="fixed bottom-6 right-6 z-50 rounded-full h-14 w-14 flex items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95"
+      style={{ backgroundColor: "hsl(var(--rose))", color: "hsl(var(--rose-foreground))" }}
       aria-label="Abrir carrinho"
     >
       <ShoppingCart className="h-6 w-6" />
