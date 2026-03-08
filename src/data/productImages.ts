@@ -114,6 +114,7 @@ export const productImages: Record<string, string | string[]> = {
   "tag-pulseira-13x48": tagPulseira13x48,
 
   // Tags de Acessórios
+  "tag-acessorios-grande": tagAcessoriosGrande,
   "tag-acessorios-padronizada-p": tagAcessoriosPadraoP,
   "tag-acessorios-padronizada-m": tagAcessoriosPadraoM,
   "tag-semaninha": tagSemaninha,
