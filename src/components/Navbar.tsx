@@ -17,17 +17,11 @@ const Navbar = () => {
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#produtos" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">
+          <a href="/#produtos" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">
             Produtos
           </a>
-          <a href="#catalogo" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">
+          <a href="/#catalogo" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">
             Catálogo
-          </a>
-          <a href="#sobre" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">
-            Sobre
-          </a>
-          <a href="#contato" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">
-            Contato
           </a>
           <button
             onClick={() => setCartOpen(true)}
@@ -72,14 +66,11 @@ const Navbar = () => {
       {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden bg-background border-b border-border px-6 py-6 space-y-4 animate-fade-in">
-          <a href="#produtos" className="block text-sm font-body text-muted-foreground hover:text-foreground">
+          <a href="/#produtos" className="block text-sm font-body text-muted-foreground hover:text-foreground">
             Produtos
           </a>
-          <a href="#sobre" className="block text-sm font-body text-muted-foreground hover:text-foreground">
-            Sobre
-          </a>
-          <a href="#contato" className="block text-sm font-body text-muted-foreground hover:text-foreground">
-            Contato
+          <a href="/#catalogo" className="block text-sm font-body text-muted-foreground hover:text-foreground">
+            Catálogo
           </a>
           <Button size="sm" className="w-full rounded-full bg-primary text-primary-foreground hover:bg-primary/90 font-body">
             Orçamento
