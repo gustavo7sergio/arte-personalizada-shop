@@ -66,9 +66,6 @@ const Navbar = () => {
           <a href="/#produtos" className="block text-sm font-body text-muted-foreground hover:text-foreground">
             Produtos
           </a>
-          <a href="/#catalogo" className="block text-sm font-body text-muted-foreground hover:text-foreground">
-            Catálogo
-          </a>
           <Button size="sm" className="w-full rounded-full bg-primary text-primary-foreground hover:bg-primary/90 font-body">
             Orçamento
           </Button>
