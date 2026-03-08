@@ -45,7 +45,11 @@ const Navbar = () => {
         </div>
 
         {/* Mobile right side */}
-        <div className="flex md:hidden items-center gap-3">
+        <div className="flex md:hidden items-center gap-2">
+          <span className="text-[10px] font-body text-muted-foreground flex items-center gap-1">
+            <Truck className="h-3 w-3" />
+            Todo o Brasil
+          </span>
           <button
             onClick={() => setCartOpen(true)}
             className="relative text-foreground"
