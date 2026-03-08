@@ -365,9 +365,6 @@ const CategoryPage = () => {
             </div>
           )}
 
-          <p className="text-center text-xs font-body text-muted-foreground mt-10">
-            Produtos 100% personalizados · Não trabalhamos com fidelização de cores · Mais modelos em breve
-          </p>
 
           <div className="flex justify-center mt-8">
             <Link
