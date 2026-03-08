@@ -79,9 +79,9 @@ export const products: Product[] = [
         label: "Tamanho M",
         dimensions: "7,2 x 18,5 x 13 cm (Larg × Alt × Comp)",
         prices: [
-          { qty: 25,  installment: 351.00, cash: 315.90 },
-          { qty: 50,  installment: 481.00, cash: 432.90 },
-          { qty: 100, installment: 739.00, cash: 665.10 },
+          { qty: 25,  installment: 351.00, cash: 315.90, unitPrice: 12.64 },
+          { qty: 50,  installment: 481.00, cash: 432.90, unitPrice: 8.66 },
+          { qty: 100, installment: 739.00, cash: 665.10, unitPrice: 6.65 },
         ],
       },
     ],
