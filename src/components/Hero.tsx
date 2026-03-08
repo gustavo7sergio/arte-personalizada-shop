@@ -13,7 +13,7 @@ const Hero = () => {
           alt="Materiais gráficos personalizados GS Cartões"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/65" />
       </div>
 
       {/* Content */}

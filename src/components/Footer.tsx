@@ -1,5 +1,6 @@
-import { Instagram, Mail, Phone } from "lucide-react";
+import { Instagram, Mail, Phone, MessageCircle, ShoppingBag } from "lucide-react";
 import logoWhite from "@/assets/logo-white.png";
+import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   return (
@@ -8,9 +9,23 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
             <img src={logoWhite} alt="GS Cartões" className="h-20 mb-4" />
-            <p className="text-primary-foreground/60 font-body text-sm leading-relaxed">
+            <p className="text-primary-foreground/60 font-body text-sm leading-relaxed mb-6">
               Materiais gráficos personalizados que elevam o valor percebido da sua marca de semijoias.
             </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a href="https://wa.me/553584181096?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos." target="_blank" rel="noopener noreferrer">
+                <Button className="rounded-full font-body font-semibold px-6" style={{ backgroundColor: "hsl(4, 42%, 70%)", color: "hsl(60, 20%, 97%)" }}>
+                  <MessageCircle className="mr-2 h-4 w-4" />
+                  Fale conosco
+                </Button>
+              </a>
+              <a href="#produtos">
+                <Button variant="outline" className="rounded-full font-body font-semibold px-6 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
+                  <ShoppingBag className="mr-2 h-4 w-4" />
+                  Ver produtos
+                </Button>
+              </a>
+            </div>
           </div>
 
           <div>
