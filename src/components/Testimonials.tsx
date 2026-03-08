@@ -74,7 +74,7 @@ const Testimonials = () => {
               Há mais de 5 anos atuando no mercado, a <strong className="text-foreground">GS Cartões</strong> é especializada na criação de materiais gráficos personalizados para marcas de semijoias, bijuterias e prata.
             </p>
             <p>
-              Ao longo desse tempo, já ajudamos centenas de empreendedoras a profissionalizar a apresentação da marca e valorizar seus produtos através de tags, cartões e embalagens personalizados.
+              Ao longo desse tempo, já ajudamos milhares de empreendedoras a profissionalizar a apresentação da marca e valorizar seus produtos através de tags, cartões e embalagens personalizados.
             </p>
             <p>
               Sempre com um processo simples, atendimento humano e agilidade na criação das artes e produção dos materiais.
