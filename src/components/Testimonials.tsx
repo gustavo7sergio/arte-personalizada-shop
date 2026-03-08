@@ -1,9 +1,44 @@
+import { useState, useEffect, useRef } from "react";
 import testimonial1 from "@/assets/testimonial-1.jpg";
 import testimonial2 from "@/assets/testimonial-2.jpg";
 import testimonial3 from "@/assets/testimonial-3.jpg";
 
 const testimonials = [testimonial1, testimonial2, testimonial3];
 
+function CountUp({ target, duration = 2000 }: { target: number; duration?: number }) {
+  const [count, setCount] = useState(0);
+  const [started, setStarted] = useState(false);
+  const ref = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) setStarted(true); },
+      { threshold: 0.5 }
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!started) return;
+    const steps = 60;
+    const increment = target / steps;
+    const interval = duration / steps;
+    let current = 0;
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= target) {
+        setCount(target);
+        clearInterval(timer);
+      } else {
+        setCount(Math.floor(current));
+      }
+    }, interval);
+    return () => clearInterval(timer);
+  }, [started, target, duration]);
+
+  return <span ref={ref}>{count}</span>;
+}
 const Testimonials = () => {
   return (
     <section className="py-20 md:py-28 bg-accent/30">
@@ -32,7 +67,7 @@ const Testimonials = () => {
         {/* Mini banner prova social */}
         <div className="mt-16 max-w-3xl mx-auto rounded-2xl border border-border/60 bg-card/80 backdrop-blur-sm p-8 md:p-10 text-center shadow-sm">
           <span className="inline-block font-display font-bold text-4xl md:text-5xl" style={{ color: "hsl(var(--rose))" }}>
-            +5 anos
+            +<CountUp target={5} duration={1500} /> anos
           </span>
           <p className="text-muted-foreground font-body mt-4 text-sm md:text-base leading-relaxed">
             Há mais de 5 anos atuando no mercado, a <strong className="text-foreground">GS Cartões</strong> é especializada na criação de materiais gráficos personalizados para marcas de semijoias, bijuterias e prata. Ao longo desse tempo, já ajudamos centenas de empreendedoras a profissionalizar a apresentação da marca e valorizar seus produtos através de tags, cartões e embalagens personalizados, sempre com um processo simples, atendimento humano e agilidade na criação das artes e produção dos materiais.
