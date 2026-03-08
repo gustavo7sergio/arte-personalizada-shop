@@ -24,7 +24,7 @@ const CartDrawer = () => {
 
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
-      <SheetContent className="w-full sm:max-w-md flex flex-col bg-background border-border">
+      <SheetContent className="w-[85%] sm:max-w-md flex flex-col bg-background border-border">
         <SheetHeader className="border-b border-border pb-4">
           <SheetTitle className="font-display flex items-center gap-2 text-foreground">
             <ShoppingCart className="h-5 w-5 text-primary" />
