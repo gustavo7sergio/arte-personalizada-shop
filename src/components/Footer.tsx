@@ -30,7 +30,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div>
+          <div className="text-center md:text-left">
             <h4 className="text-sm font-body font-semibold text-primary-foreground tracking-wider uppercase mb-4">
               Produtos
             </h4>
