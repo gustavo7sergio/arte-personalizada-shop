@@ -107,8 +107,8 @@ export const productImages: Record<string, string | string[]> = {
   "tag-lacos-tiaras-m": tagLacosTiarasM,
   "tag-lacos-tiaras-g": tagLacosTiarasG1,
 
-  // Tags de Pulseira
-  "tag-pulseira-88x48": [tagPulseira88x48, tagPulseira88x48v2],
+  // Tags de Pulseira / Tag de Acessórios genérica
+  "tag-acessorios": [tagPulseira88x48, tagPulseira88x48v2],
   "tag-pulseira-84x98": tagPulseira84x98,
   "tag-pulseira-88x994": tagPulseira88x994,
   "tag-pulseira-13x48": tagPulseira13x48,
