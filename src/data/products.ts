@@ -70,9 +70,9 @@ export const products: Product[] = [
         label: "Tamanho P",
         dimensions: "6 x 15,4 x 10 cm (Larg × Alt × Comp)",
         prices: [
-          { qty: 25,  installment: 309.00, cash: 278.10 },
-          { qty: 50,  installment: 399.00, cash: 359.10 },
-          { qty: 100, installment: 605.00, cash: 544.50 },
+          { qty: 25,  installment: 309.00, cash: 278.10, unitPrice: 11.12 },
+          { qty: 50,  installment: 399.00, cash: 359.10, unitPrice: 7.18 },
+          { qty: 100, installment: 605.00, cash: 544.50, unitPrice: 5.45 },
         ],
       },
       {
