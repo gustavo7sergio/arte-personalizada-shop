@@ -56,6 +56,7 @@ import kit600tags from "@/assets/products/Kitde600tags.jpg";
 import kit800tags from "@/assets/products/Kitde800tags.jpg";
 import kit5mil from "@/assets/products/Kitde5miltags.jpg";
 import kit6mil from "@/assets/products/Kitde6miltags.jpg";
+import tagAcessoriosGrande from "@/assets/products/Tagdeacessoriosformatogrande.jpg";
 
 export const productImages: Record<string, string | string[]> = {
   // Adesivos
@@ -113,6 +114,7 @@ export const productImages: Record<string, string | string[]> = {
   "tag-pulseira-13x48": tagPulseira13x48,
 
   // Tags de Acessórios
+  "tag-acessorios-grande": tagAcessoriosGrande,
   "tag-acessorios-padronizada-p": tagAcessoriosPadraoP,
   "tag-acessorios-padronizada-m": tagAcessoriosPadraoM,
   "tag-semaninha": tagSemaninha,
