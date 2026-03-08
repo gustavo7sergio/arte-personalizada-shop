@@ -69,9 +69,17 @@ const Testimonials = () => {
           <span className="inline-block font-display font-bold text-4xl md:text-5xl" style={{ color: "hsl(var(--rose))" }}>
             +<CountUp target={5} duration={1500} /> anos
           </span>
-          <p className="text-muted-foreground font-body mt-4 text-sm md:text-base leading-relaxed">
-            Há mais de 5 anos atuando no mercado, a <strong className="text-foreground">GS Cartões</strong> é especializada na criação de materiais gráficos personalizados para marcas de semijoias, bijuterias e prata. Ao longo desse tempo, já ajudamos centenas de empreendedoras a profissionalizar a apresentação da marca e valorizar seus produtos através de tags, cartões e embalagens personalizados, sempre com um processo simples, atendimento humano e agilidade na criação das artes e produção dos materiais.
-          </p>
+          <div className="text-muted-foreground font-body mt-6 text-sm md:text-base leading-relaxed space-y-4 text-left max-w-2xl mx-auto">
+            <p>
+              Há mais de 5 anos atuando no mercado, a <strong className="text-foreground">GS Cartões</strong> é especializada na criação de materiais gráficos personalizados para marcas de semijoias, bijuterias e prata.
+            </p>
+            <p>
+              Ao longo desse tempo, já ajudamos centenas de empreendedoras a profissionalizar a apresentação da marca e valorizar seus produtos através de tags, cartões e embalagens personalizados.
+            </p>
+            <p>
+              Sempre com um processo simples, atendimento humano e agilidade na criação das artes e produção dos materiais.
+            </p>
+          </div>
         </div>
       </div>
     </section>
