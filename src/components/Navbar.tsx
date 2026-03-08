@@ -11,7 +11,10 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <div className="hidden md:block w-[200px]" />
+        <span className="hidden md:flex text-xs font-body text-muted-foreground items-center gap-1.5">
+          <Truck className="h-3.5 w-3.5" />
+          Enviamos p/ todo o Brasil
+        </span>
         <a href="/" className="flex items-center">
           <img src={logo} alt="GS Cartões" className="h-20" />
         </a>
