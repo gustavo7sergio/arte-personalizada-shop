@@ -524,6 +524,7 @@ export const products: Product[] = [
     id: "mini-tag-anel",
     name: "Mini Tag de Anel",
     subtitle: "3,9 × 1,7 cm",
+    category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
       "Papel couchê 250g",
