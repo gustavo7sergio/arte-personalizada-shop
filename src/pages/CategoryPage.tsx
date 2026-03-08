@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, ChevronDown, ChevronUp, MessageCircle, Package, Tag, CreditCard, ShoppingCart, Search } from "lucide-react";
+import { ArrowLeft, ChevronDown, ChevronUp, ChevronLeft, ChevronRight, MessageCircle, Package, Tag, CreditCard, ShoppingCart, Search } from "lucide-react";
 import { useState } from "react";
 import { products, type Product } from "@/data/products";
 import { productImages } from "@/data/productImages";
