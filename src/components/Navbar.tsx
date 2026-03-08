@@ -10,8 +10,8 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
-      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="/" className="flex items-center">
+      <div className="container mx-auto px-6 py-4 flex items-center justify-center relative">
+        <a href="/" className="flex items-center absolute left-1/2 -translate-x-1/2">
           <img src={logo} alt="GS Cartões" className="h-20" />
         </a>
 
