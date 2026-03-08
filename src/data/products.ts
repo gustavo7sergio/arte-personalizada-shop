@@ -639,7 +639,7 @@ export const products: Product[] = [
   {
     id: "mini-tag-brincos-p",
     name: "Mini Tag de Brincos",
-    subtitle: "Tamanho P",
+    subtitle: "Tamanho P – 4,8 × 4,25 cm",
     category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
