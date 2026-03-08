@@ -7,10 +7,6 @@ import {
 
 const faqs = [
   {
-    question: "Quais materiais a GS Cartões faz?",
-    answer: `Trabalhamos com materiais gráficos personalizados para marcas de semijoias, bijuterias e prata.\n\nEntre os principais materiais estão:\n• Tags para acessórios (brincos, colares, anéis, conjuntos etc.)\n• Cartões de visita\n• Cartões de agradecimento\n• Certificados de garantia\n• Adesivos personalizados\n• Sacolinhas personalizadas\n• Caixinhas personalizadas\n• Etiquetas e outros materiais de apoio à venda\n\nTodos os materiais são personalizados com a identidade da sua marca.`,
-  },
-  {
     question: "Os materiais são personalizados com minha marca?",
     answer: `Sim. Todos os materiais são personalizados com a identidade da sua marca.\n\nVocê pode incluir:\n• Sua logo\n• Cores da marca\n• Redes sociais\n• Frases ou informações importantes\n\nNosso objetivo é que os materiais representem a essência da sua marca.`,
   },
@@ -39,20 +35,12 @@ const faqs = [
     answer: `O processo normalmente funciona assim:\n\n• Criação da arte: até 1 dia útil\n• Produção dos materiais: 5 a 6 dias úteis\n\nDepois disso, o pedido é enviado para entrega.`,
   },
   {
-    question: "Qual papel vocês usam nos materiais?",
-    answer: `Na maioria dos materiais utilizamos papel couchê 250g.\n\nTambém oferecemos a opção de papel couchê 300g, que é mais grosso e possui custo adicional.`,
-  },
-  {
-    question: "Quais acabamentos vocês oferecem?",
-    answer: `A maioria dos materiais possui verniz total na frente.\n\nTambém oferecemos acabamentos especiais, como:\n• Fosco\n• Fosco com verniz localizado\n• Holográfico\n• Hot stamping (dourado, prata, azul, rosa e outras opções)\n\nA disponibilidade pode variar conforme o material escolhido.`,
+    question: "Qual papel e acabamento vocês utilizam?",
+    answer: `Na maioria dos materiais utilizamos papel couchê 250g. Também oferecemos a opção de papel couchê 300g, que é mais grosso e possui custo adicional.\n\nQuanto aos acabamentos, a maioria dos materiais possui verniz total na frente. Também oferecemos acabamentos especiais, como:\n• Fosco\n• Fosco com verniz localizado\n• Holográfico\n• Hot stamping (dourado, prata, azul, rosa e outras opções)\n\nA disponibilidade pode variar conforme o material escolhido.`,
   },
   {
     question: "As cores ficam exatamente iguais à minha logo?",
     answer: `Os materiais são produzidos com base nas cores da sua identidade visual, porém não garantimos fidelização exata de cores.\n\nIsso acontece porque:\n• Diferentes tipos de papel podem reagir de formas diferentes à tinta\n• Cada material pode ter pequenas variações de impressão\n• Acabamentos também podem influenciar na percepção da cor\n\nPor isso, podem ocorrer pequenas variações de tonalidade entre materiais ou lotes diferentes.`,
-  },
-  {
-    question: "Quais são as formas de pagamento?",
-    answer: `Trabalhamos com:\n\n• Pix — 10% de desconto\n• Cartão de crédito — até 6x sem juros`,
   },
   {
     question: "Como faço para comprar pelo site?",
