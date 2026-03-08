@@ -52,15 +52,21 @@ const Footer = () => {
             <ul className="space-y-3 font-body text-sm">
               <li className="flex items-center gap-2 text-primary-foreground/60">
                 <Instagram className="h-4 w-4" />
-                @gscartoes
+                <a href="https://www.instagram.com/gs_cartaodevisitas" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">
+                  @gs_cartaodevisitas
+                </a>
               </li>
               <li className="flex items-center gap-2 text-primary-foreground/60">
                 <Mail className="h-4 w-4" />
-                contato@gscartoes.com
+                <a href="mailto:atendimento@gscartoes.com" className="hover:text-primary-foreground transition-colors">
+                  atendimento@gscartoes.com
+                </a>
               </li>
               <li className="flex items-center gap-2 text-primary-foreground/60">
                 <Phone className="h-4 w-4" />
-                WhatsApp
+                <a href="https://wa.me/553584181096" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">
+                  (35) 98418-1096
+                </a>
               </li>
             </ul>
           </div>
