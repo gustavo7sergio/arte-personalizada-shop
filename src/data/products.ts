@@ -861,7 +861,7 @@ export const products: Product[] = [
   {
     id: "tag-acessorios-dupla",
     name: "Tag de Acessórios",
-    subtitle: "Dupla – 13 × 4,8 cm",
+    subtitle: "13 × 4,8 cm",
     category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
