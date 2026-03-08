@@ -126,7 +126,9 @@ function PriceSelector({ product }: { product: Product }) {
 
 function ProductCard({ product }: { product: Product }) {
   const [expanded, setExpanded] = useState(false);
-  const image = productImages[product.id];
+  const rawImage = productImages[product.id];
+  const images = Array.isArray(rawImage) ? rawImage : rawImage ? [rawImage] : [];
+  const image = images[0];
 
   return (
     <div className="bg-card rounded-2xl border border-border overflow-hidden shadow-card hover:shadow-hover transition-shadow duration-300">

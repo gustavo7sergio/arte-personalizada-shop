@@ -157,7 +157,10 @@ function PriceSelector({ product, image }: { product: Product; image?: string })
 function ProductCard({ product }: { product: Product }) {
   const [expanded, setExpanded] = useState(false);
   const [zoomOpen, setZoomOpen] = useState(false);
-  const image = productImages[product.id];
+  const [imageIndex, setImageIndex] = useState(0);
+  const rawImage = productImages[product.id];
+  const images = Array.isArray(rawImage) ? rawImage : rawImage ? [rawImage] : [];
+  const image = images[imageIndex] || images[0];
 
   return (
     <div className="bg-card rounded-2xl border border-border overflow-hidden shadow-card hover:shadow-hover transition-shadow duration-300">
@@ -178,6 +181,34 @@ function ProductCard({ product }: { product: Product }) {
                 <Search className="h-5 w-5 text-foreground" />
               </div>
             </div>
+            {images.length > 1 && (
+              <>
+                <button
+                  onClick={(e) => { e.stopPropagation(); setImageIndex((prev) => (prev - 1 + images.length) % images.length); }}
+                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-card/80 backdrop-blur-sm rounded-full p-1.5 shadow-sm hover:bg-card transition-colors"
+                >
+                  <ChevronLeft className="h-4 w-4 text-foreground" />
+                </button>
+                <button
+                  onClick={(e) => { e.stopPropagation(); setImageIndex((prev) => (prev + 1) % images.length); }}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-card/80 backdrop-blur-sm rounded-full p-1.5 shadow-sm hover:bg-card transition-colors"
+                >
+                  <ChevronRight className="h-4 w-4 text-foreground" />
+                </button>
+                <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
+                  {images.map((_, i) => (
+                    <button
+                      key={i}
+                      onClick={(e) => { e.stopPropagation(); setImageIndex(i); }}
+                      className={cn(
+                        "w-2 h-2 rounded-full transition-colors",
+                        i === imageIndex ? "bg-primary" : "bg-foreground/20"
+                      )}
+                    />
+                  ))}
+                </div>
+              </>
+            )}
           </div>
           <ImageZoom
             src={image}
