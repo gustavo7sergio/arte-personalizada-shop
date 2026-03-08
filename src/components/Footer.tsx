@@ -6,26 +6,28 @@ const Footer = () => {
   return (
     <footer className="bg-primary py-12">
       <div className="container mx-auto px-6">
+        {/* Botões de ação no topo */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+          <a href="https://wa.me/553584181096?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos." target="_blank" rel="noopener noreferrer">
+            <Button className="rounded-full font-body font-semibold px-8 py-5 text-base" style={{ backgroundColor: "hsl(4, 42%, 70%)", color: "hsl(60, 20%, 97%)" }}>
+              <MessageCircle className="mr-2 h-5 w-5" />
+              Fale conosco
+            </Button>
+          </a>
+          <a href="#produtos">
+            <Button className="rounded-full font-body font-semibold px-8 py-5 text-base bg-white text-primary hover:bg-white/90">
+              <ShoppingBag className="mr-2 h-5 w-5" />
+              Ver produtos
+            </Button>
+          </a>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
             <img src={logoWhite} alt="GS Cartões" className="h-20 mb-4" />
-            <p className="text-primary-foreground/60 font-body text-sm leading-relaxed mb-6">
+            <p className="text-primary-foreground/60 font-body text-sm leading-relaxed">
               Materiais gráficos personalizados que elevam o valor percebido da sua marca de semijoias.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <a href="https://wa.me/553584181096?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos." target="_blank" rel="noopener noreferrer">
-                <Button className="rounded-full font-body font-semibold px-6" style={{ backgroundColor: "hsl(4, 42%, 70%)", color: "hsl(60, 20%, 97%)" }}>
-                  <MessageCircle className="mr-2 h-4 w-4" />
-                  Fale conosco
-                </Button>
-              </a>
-              <a href="#produtos">
-                <Button variant="outline" className="rounded-full font-body font-semibold px-6 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
-                  <ShoppingBag className="mr-2 h-4 w-4" />
-                  Ver produtos
-                </Button>
-              </a>
-            </div>
           </div>
 
           <div>
