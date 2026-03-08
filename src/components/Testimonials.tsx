@@ -28,6 +28,16 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
+
+        {/* Mini banner prova social */}
+        <div className="mt-16 max-w-3xl mx-auto rounded-2xl border border-border/60 bg-card/80 backdrop-blur-sm p-8 md:p-10 text-center shadow-sm">
+          <span className="inline-block font-display font-bold text-4xl md:text-5xl" style={{ color: "hsl(var(--rose))" }}>
+            +5 anos
+          </span>
+          <p className="text-muted-foreground font-body mt-4 text-sm md:text-base leading-relaxed">
+            Há mais de 5 anos atuando no mercado, a <strong className="text-foreground">GS Cartões</strong> é especializada na criação de materiais gráficos personalizados para marcas de semijoias, bijuterias e prata. Ao longo desse tempo, já ajudamos centenas de empreendedoras a profissionalizar a apresentação da marca e valorizar seus produtos através de tags, cartões e embalagens personalizados, sempre com um processo simples, atendimento humano e agilidade na criação das artes e produção dos materiais.
+          </p>
+        </div>
       </div>
     </section>
   );
