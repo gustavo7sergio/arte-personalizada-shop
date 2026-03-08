@@ -20,9 +20,6 @@ const Navbar = () => {
           <a href="/#produtos" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">
             Produtos
           </a>
-          <a href="/#catalogo" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">
-            Catálogo
-          </a>
           <button
             onClick={() => setCartOpen(true)}
             className="relative text-muted-foreground hover:text-foreground transition-colors"
