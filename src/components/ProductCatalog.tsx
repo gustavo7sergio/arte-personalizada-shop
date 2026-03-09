@@ -139,7 +139,15 @@ function ProductCard({ product }: { product: Product }) {
             src={image}
             alt={product.name + (product.subtitle ? " – " + product.subtitle : "")}
             className="w-full h-full object-contain p-4"
-            loading="lazy"
+            loading="eager"
+            decoding="async"
+            onError={(e) => {
+              const target = e.currentTarget;
+              if (!target.dataset.retried) {
+                target.dataset.retried = "true";
+                target.src = image + "?t=" + Date.now();
+              }
+            }}
           />
         </div>
       )}
