@@ -14,7 +14,7 @@ const Footer = () => {
               Fale conosco
             </Button>
           </a>
-          <a href="#produtos">
+          <a href="/#produtos">
             <Button className="rounded-full font-body font-semibold px-8 py-5 text-base bg-white text-primary hover:bg-white/90">
               <ShoppingBag className="mr-2 h-5 w-5" />
               Ver produtos
