@@ -1,4 +1,4 @@
-import { useState, useCallback, useRef } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
 import { ImageOff } from "lucide-react";
 
 interface ProductImageProps {
@@ -7,23 +7,40 @@ interface ProductImageProps {
   className?: string;
 }
 
-const MAX_RETRIES = 3;
-const RETRY_DELAYS = [500, 1500, 3000];
+const MAX_RETRIES = 5;
+const RETRY_DELAYS = [300, 800, 2000, 4000, 8000];
 
 const ProductImage = ({ src, alt, className }: ProductImageProps) => {
   const [failed, setFailed] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const retryCount = useRef(0);
   const imgRef = useRef<HTMLImageElement>(null);
+  const timerRef = useRef<ReturnType<typeof setTimeout>>();
+
+  // Reset state when src changes
+  useEffect(() => {
+    setFailed(false);
+    setLoaded(false);
+    retryCount.current = 0;
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
+  }, [src]);
 
   const handleError = useCallback(() => {
     if (retryCount.current < MAX_RETRIES) {
-      const delay = RETRY_DELAYS[retryCount.current] || 3000;
+      const delay = RETRY_DELAYS[retryCount.current] || 8000;
       retryCount.current += 1;
-      setTimeout(() => {
+      timerRef.current = setTimeout(() => {
         if (imgRef.current) {
-          // Force reload with cache-busting parameter
-          imgRef.current.src = src + (src.includes("?") ? "&" : "?") + "retry=" + retryCount.current + "&t=" + Date.now();
+          // Re-assign original src to force browser retry without cache-busting
+          // (bundled assets don't need cache-busting, they have hashed filenames)
+          const img = imgRef.current;
+          img.src = "";
+          // Use requestAnimationFrame to ensure the browser registers the src change
+          requestAnimationFrame(() => {
+            img.src = src;
+          });
         }
       }, delay);
     } else {
@@ -54,7 +71,7 @@ const ProductImage = ({ src, alt, className }: ProductImageProps) => {
         src={src}
         alt={alt}
         className={`${className || ""} ${loaded ? "" : "hidden"}`}
-        loading="eager"
+        loading="lazy"
         decoding="async"
         onLoad={() => setLoaded(true)}
         onError={handleError}
