@@ -7,14 +7,14 @@ interface ProductImageProps {
   className?: string;
 }
 
-const MAX_RETRIES = 5;
-const RETRY_DELAYS = [300, 800, 2000, 4000, 8000];
+const MAX_RETRIES = 3;
+const RETRY_DELAYS = [500, 1500, 3000];
 
 const ProductImage = ({ src, alt, className }: ProductImageProps) => {
   const [failed, setFailed] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const retryCount = useRef(0);
-  const imgRef = useRef<HTMLImageElement>(null);
+  const isRetrying = useRef(false);
   const timerRef = useRef<ReturnType<typeof setTimeout>>();
 
   // Reset state when src changes
@@ -22,25 +22,36 @@ const ProductImage = ({ src, alt, className }: ProductImageProps) => {
     setFailed(false);
     setLoaded(false);
     retryCount.current = 0;
+    isRetrying.current = false;
     return () => {
       if (timerRef.current) clearTimeout(timerRef.current);
     };
   }, [src]);
 
   const handleError = useCallback(() => {
+    // Ignore errors triggered during retry cycle (from clearing src)
+    if (isRetrying.current) return;
+
     if (retryCount.current < MAX_RETRIES) {
-      const delay = RETRY_DELAYS[retryCount.current] || 8000;
+      const delay = RETRY_DELAYS[retryCount.current] || 3000;
       retryCount.current += 1;
+      isRetrying.current = true;
       timerRef.current = setTimeout(() => {
         if (imgRef.current) {
-          // Re-assign original src to force browser retry without cache-busting
-          // (bundled assets don't need cache-busting, they have hashed filenames)
-          const img = imgRef.current;
-          img.src = "";
-          // Use requestAnimationFrame to ensure the browser registers the src change
-          requestAnimationFrame(() => {
-            img.src = src;
-          });
+          // Create a new Image to test loading without touching the DOM element
+          const testImg = new Image();
+          testImg.onload = () => {
+            isRetrying.current = false;
+            if (imgRef.current) {
+              imgRef.current.src = src;
+            }
+          };
+          testImg.onerror = () => {
+            isRetrying.current = false;
+            // Trigger handleError again for next retry
+            handleError();
+          };
+          testImg.src = src;
         }
       }, delay);
     } else {
