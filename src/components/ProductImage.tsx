@@ -15,6 +15,7 @@ const ProductImage = ({ src, alt, className }: ProductImageProps) => {
   const [loaded, setLoaded] = useState(false);
   const retryCount = useRef(0);
   const isRetrying = useRef(false);
+  const imgRef = useRef<HTMLImageElement>(null);
   const timerRef = useRef<ReturnType<typeof setTimeout>>();
 
   // Reset state when src changes
