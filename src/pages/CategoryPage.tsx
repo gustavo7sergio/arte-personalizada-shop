@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { useCart } from "@/contexts/CartContext";
 import { useToast } from "@/hooks/use-toast";
 import ImageZoom from "@/components/ImageZoom";
+import ProductImage from "@/components/ProductImage";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
