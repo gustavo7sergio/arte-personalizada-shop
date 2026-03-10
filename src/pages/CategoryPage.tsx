@@ -174,19 +174,10 @@ function ProductCard({ product }: { product: Product }) {
             className="aspect-[4/3] overflow-hidden bg-muted/20 cursor-pointer relative group"
             onClick={() => setZoomOpen(true)}
           >
-            <img
+            <ProductImage
               src={image}
               alt={product.name + (product.subtitle ? " – " + product.subtitle : "")}
               className="w-full h-full object-contain p-4"
-              loading="eager"
-              decoding="async"
-              onError={(e) => {
-                const target = e.currentTarget;
-                if (!target.dataset.retried) {
-                  target.dataset.retried = "true";
-                  target.src = image + "?t=" + Date.now();
-                }
-              }}
             />
             <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/5 transition-colors flex items-center justify-center">
               <div className="bg-card/80 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">

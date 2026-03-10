@@ -136,19 +136,10 @@ function ProductCard({ product }: { product: Product }) {
       {/* Product image */}
       {image && (
         <div className="aspect-[4/3] overflow-hidden bg-muted/20">
-          <img
+          <ProductImage
             src={image}
             alt={product.name + (product.subtitle ? " – " + product.subtitle : "")}
             className="w-full h-full object-contain p-4"
-            loading="eager"
-            decoding="async"
-            onError={(e) => {
-              const target = e.currentTarget;
-              if (!target.dataset.retried) {
-                target.dataset.retried = "true";
-                target.src = image + "?t=" + Date.now();
-              }
-            }}
           />
         </div>
       )}
