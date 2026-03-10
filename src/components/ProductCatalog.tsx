@@ -4,6 +4,7 @@ import { productImages } from "@/data/productImages";
 import { ChevronDown, ChevronUp, MessageCircle, Package, Tag, CreditCard } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import ProductImage from "@/components/ProductImage";
 
 const formatCurrency = (value: number) =>
   value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
