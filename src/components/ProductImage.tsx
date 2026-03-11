@@ -1,4 +1,4 @@
-import { useState, useCallback, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { ImageOff } from "lucide-react";
 
 interface ProductImageProps {
@@ -7,60 +7,23 @@ interface ProductImageProps {
   className?: string;
 }
 
-const MAX_RETRIES = 3;
-const RETRY_DELAYS = [500, 1500, 3000];
-
 const ProductImage = ({ src, alt, className }: ProductImageProps) => {
-  const [failed, setFailed] = useState(false);
-  const [loaded, setLoaded] = useState(false);
-  const retryCount = useRef(0);
-  const isRetrying = useRef(false);
+  const [status, setStatus] = useState<"loading" | "loaded" | "error">("loading");
   const imgRef = useRef<HTMLImageElement>(null);
-  const timerRef = useRef<ReturnType<typeof setTimeout>>();
 
-  // Reset state when src changes
+  // Reset on src change & check if already complete (cached)
   useEffect(() => {
-    setFailed(false);
-    setLoaded(false);
-    retryCount.current = 0;
-    isRetrying.current = false;
-    return () => {
-      if (timerRef.current) clearTimeout(timerRef.current);
-    };
+    setStatus("loading");
+    // Use rAF to check after the browser has painted the element
+    const raf = requestAnimationFrame(() => {
+      if (imgRef.current?.complete && imgRef.current.naturalWidth > 0) {
+        setStatus("loaded");
+      }
+    });
+    return () => cancelAnimationFrame(raf);
   }, [src]);
 
-  const handleError = useCallback(() => {
-    // Ignore errors triggered during retry cycle (from clearing src)
-    if (isRetrying.current) return;
-
-    if (retryCount.current < MAX_RETRIES) {
-      const delay = RETRY_DELAYS[retryCount.current] || 3000;
-      retryCount.current += 1;
-      isRetrying.current = true;
-      timerRef.current = setTimeout(() => {
-        if (imgRef.current) {
-          // Create a new Image to test loading without touching the DOM element
-          const testImg = new Image();
-          testImg.onload = () => {
-            isRetrying.current = false;
-            if (imgRef.current) {
-              imgRef.current.src = src;
-            }
-          };
-          testImg.onerror = () => {
-            isRetrying.current = false;
-            // Trigger handleError again for next retry
-            handleError();
-          };
-          testImg.src = src;
-        }
-      }, delay);
-    } else {
-      setFailed(true);
-    }
-  }, [src]);
-
-  if (failed) {
+  if (status === "error") {
     return (
       <div className={`flex items-center justify-center bg-muted/30 ${className || ""}`}>
         <div className="text-center text-muted-foreground/50 p-4">
@@ -73,20 +36,19 @@ const ProductImage = ({ src, alt, className }: ProductImageProps) => {
 
   return (
     <>
-      {!loaded && (
+      {status === "loading" && (
         <div className={`flex items-center justify-center bg-muted/20 animate-pulse ${className || ""}`}>
-          <div className="w-12 h-12 rounded-full border-2 border-primary/20 border-t-primary animate-spin" />
+          <div className="w-10 h-10 rounded-full border-2 border-primary/20 border-t-primary animate-spin" />
         </div>
       )}
       <img
         ref={imgRef}
         src={src}
         alt={alt}
-        className={`${className || ""} ${loaded ? "" : "hidden"}`}
+        className={`${className || ""} ${status === "loaded" ? "" : "sr-only"}`}
         loading="lazy"
-        decoding="async"
-        onLoad={() => setLoaded(true)}
-        onError={handleError}
+        onLoad={() => setStatus("loaded")}
+        onError={() => setStatus("error")}
       />
     </>
   );
