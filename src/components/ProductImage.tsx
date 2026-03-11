@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ImageOff } from "lucide-react";
 
 interface ProductImageProps {
@@ -11,15 +11,15 @@ const ProductImage = ({ src, alt, className }: ProductImageProps) => {
   const [status, setStatus] = useState<"loading" | "loaded" | "error">("loading");
   const imgRef = useRef<HTMLImageElement>(null);
 
-  // Reset on src change & check if already complete (cached)
   useEffect(() => {
     setStatus("loading");
-    // Use rAF to check after the browser has painted the element
+
     const raf = requestAnimationFrame(() => {
-      if (imgRef.current?.complete && imgRef.current.naturalWidth > 0) {
-        setStatus("loaded");
-      }
+      const img = imgRef.current;
+      if (!img || !img.complete) return;
+      setStatus(img.naturalWidth > 0 ? "loaded" : "error");
     });
+
     return () => cancelAnimationFrame(raf);
   }, [src]);
 
@@ -35,22 +35,26 @@ const ProductImage = ({ src, alt, className }: ProductImageProps) => {
   }
 
   return (
-    <>
+    <div className="relative w-full h-full">
       {status === "loading" && (
-        <div className={`flex items-center justify-center bg-muted/20 animate-pulse ${className || ""}`}>
+        <div className="absolute inset-0 flex items-center justify-center bg-muted/20">
           <div className="w-10 h-10 rounded-full border-2 border-primary/20 border-t-primary animate-spin" />
         </div>
       )}
+
       <img
         ref={imgRef}
         src={src}
         alt={alt}
-        className={`${className || ""} ${status === "loaded" ? "" : "sr-only"}`}
         loading="lazy"
+        decoding="async"
+        className={`${className || ""} absolute inset-0 transition-opacity duration-200 ${
+          status === "loaded" ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
         onLoad={() => setStatus("loaded")}
         onError={() => setStatus("error")}
       />
-    </>
+    </div>
   );
 };
 
