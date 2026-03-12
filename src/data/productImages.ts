@@ -48,8 +48,8 @@ import tagPulseira88x48v2 from "@/assets/products/Tagdepulseira8,8x4,8cmversão2
 import tagPulseira84x98 from "@/assets/products/Tagdepulseira8,4x9,8cm.jpg";
 import tagPulseira88x994 from "@/assets/products/Tagdepulseira8,8x9,94cm.jpg";
 import tagPulseira13x48 from "@/assets/products/Tagdepulseira13x4,8cm.jpg";
-import tagAcessoriosPadraoP from "@/assets/products/Tagsdeacessóriosformatopadrão1.jpg";
-import tagAcessoriosPadraoM from "@/assets/products/Tagsdeacessóriosformatopadrão2.jpg";
+import tagAcessoriosPadraoP from "@/assets/products/tags-acessorios-padronizado-p.jpg";
+import tagAcessoriosPadraoM from "@/assets/products/tags-acessorios-padronizado-m.jpg";
 import tagSemaninha from "@/assets/products/Tagsemaninha.jpg";
 import panfleto from "@/assets/products/Panfleto.jpg";
 import kit600tags from "@/assets/products/Kitde600tags.jpg";
