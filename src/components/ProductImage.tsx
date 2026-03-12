@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { ImageOff } from "lucide-react";
 
 interface ProductImageProps {
@@ -7,21 +7,69 @@ interface ProductImageProps {
   className?: string;
 }
 
+const MAX_RETRIES = 2;
+const RETRY_DELAYS_MS = [500, 1500];
+
+const appendRetryParam = (url: string, attempt: number) => {
+  const separator = url.includes("?") ? "&" : "?";
+  return `${url}${separator}retry=${attempt}-${Date.now()}`;
+};
+
 const ProductImage = ({ src, alt, className }: ProductImageProps) => {
   const [status, setStatus] = useState<"loading" | "loaded" | "error">("loading");
+  const [displaySrc, setDisplaySrc] = useState(src);
   const imgRef = useRef<HTMLImageElement>(null);
+  const retryCountRef = useRef(0);
+  const retryTimeoutRef = useRef<number | null>(null);
+  const requestTokenRef = useRef(0);
+
+  const clearRetryTimeout = () => {
+    if (retryTimeoutRef.current !== null) {
+      window.clearTimeout(retryTimeoutRef.current);
+      retryTimeoutRef.current = null;
+    }
+  };
+
+  const scheduleRetry = useCallback(() => {
+    if (retryCountRef.current >= MAX_RETRIES) {
+      setStatus("error");
+      return;
+    }
+
+    const nextAttempt = retryCountRef.current + 1;
+    retryCountRef.current = nextAttempt;
+    setStatus("loading");
+    clearRetryTimeout();
+
+    const currentToken = requestTokenRef.current;
+    retryTimeoutRef.current = window.setTimeout(() => {
+      if (requestTokenRef.current !== currentToken) return;
+      setDisplaySrc(appendRetryParam(src, nextAttempt));
+    }, RETRY_DELAYS_MS[nextAttempt - 1] ?? 2000);
+  }, [src]);
 
   useEffect(() => {
+    requestTokenRef.current += 1;
+    retryCountRef.current = 0;
+    clearRetryTimeout();
+    setDisplaySrc(src);
     setStatus("loading");
 
     const raf = requestAnimationFrame(() => {
       const img = imgRef.current;
       if (!img || !img.complete) return;
-      setStatus(img.naturalWidth > 0 ? "loaded" : "error");
+      if (img.naturalWidth > 0) {
+        setStatus("loaded");
+        return;
+      }
+      scheduleRetry();
     });
 
-    return () => cancelAnimationFrame(raf);
-  }, [src]);
+    return () => {
+      cancelAnimationFrame(raf);
+      clearRetryTimeout();
+    };
+  }, [src, scheduleRetry]);
 
   if (status === "error") {
     return (
@@ -44,18 +92,22 @@ const ProductImage = ({ src, alt, className }: ProductImageProps) => {
 
       <img
         ref={imgRef}
-        src={src}
+        src={displaySrc}
         alt={alt}
         loading="lazy"
         decoding="async"
         className={`${className || ""} absolute inset-0 transition-opacity duration-200 ${
           status === "loaded" ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
-        onLoad={() => setStatus("loaded")}
-        onError={() => setStatus("error")}
+        onLoad={() => {
+          clearRetryTimeout();
+          setStatus("loaded");
+        }}
+        onError={scheduleRetry}
       />
     </div>
   );
 };
 
 export default ProductImage;
+
