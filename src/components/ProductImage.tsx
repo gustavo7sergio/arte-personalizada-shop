@@ -7,28 +7,23 @@ interface ProductImageProps {
   className?: string;
 }
 
-const MAX_RETRIES = 2;
-const RETRY_DELAYS_MS = [500, 1500];
-
-const appendRetryParam = (url: string, attempt: number) => {
-  const separator = url.includes("?") ? "&" : "?";
-  return `${url}${separator}retry=${attempt}-${Date.now()}`;
-};
+const MAX_RETRIES = 5;
+const RETRY_DELAYS_MS = [700, 1500, 2500, 4000, 6000];
 
 const ProductImage = ({ src, alt, className }: ProductImageProps) => {
   const [status, setStatus] = useState<"loading" | "loaded" | "error">("loading");
-  const [displaySrc, setDisplaySrc] = useState(src);
+  const [retrySeed, setRetrySeed] = useState(0);
   const imgRef = useRef<HTMLImageElement>(null);
   const retryCountRef = useRef(0);
   const retryTimeoutRef = useRef<number | null>(null);
   const requestTokenRef = useRef(0);
 
-  const clearRetryTimeout = () => {
+  const clearRetryTimeout = useCallback(() => {
     if (retryTimeoutRef.current !== null) {
       window.clearTimeout(retryTimeoutRef.current);
       retryTimeoutRef.current = null;
     }
-  };
+  }, []);
 
   const scheduleRetry = useCallback(() => {
     if (retryCountRef.current >= MAX_RETRIES) {
@@ -38,38 +33,44 @@ const ProductImage = ({ src, alt, className }: ProductImageProps) => {
 
     const nextAttempt = retryCountRef.current + 1;
     retryCountRef.current = nextAttempt;
-    setStatus("loading");
     clearRetryTimeout();
 
     const currentToken = requestTokenRef.current;
     retryTimeoutRef.current = window.setTimeout(() => {
       if (requestTokenRef.current !== currentToken) return;
-      setDisplaySrc(appendRetryParam(src, nextAttempt));
-    }, RETRY_DELAYS_MS[nextAttempt - 1] ?? 2000);
-  }, [src]);
+      setStatus("loading");
+      setRetrySeed(nextAttempt);
+    }, RETRY_DELAYS_MS[nextAttempt - 1] ?? 6000);
+  }, [clearRetryTimeout]);
 
   useEffect(() => {
     requestTokenRef.current += 1;
     retryCountRef.current = 0;
     clearRetryTimeout();
-    setDisplaySrc(src);
+    setRetrySeed(0);
     setStatus("loading");
 
+    return () => {
+      clearRetryTimeout();
+    };
+  }, [src, clearRetryTimeout]);
+
+  useEffect(() => {
     const raf = requestAnimationFrame(() => {
       const img = imgRef.current;
       if (!img || !img.complete) return;
+
       if (img.naturalWidth > 0) {
+        clearRetryTimeout();
         setStatus("loaded");
         return;
       }
+
       scheduleRetry();
     });
 
-    return () => {
-      cancelAnimationFrame(raf);
-      clearRetryTimeout();
-    };
-  }, [src, scheduleRetry]);
+    return () => cancelAnimationFrame(raf);
+  }, [src, retrySeed, scheduleRetry, clearRetryTimeout]);
 
   if (status === "error") {
     return (
@@ -91,8 +92,9 @@ const ProductImage = ({ src, alt, className }: ProductImageProps) => {
       )}
 
       <img
+        key={`${src}-${retrySeed}`}
         ref={imgRef}
-        src={displaySrc}
+        src={src}
         alt={alt}
         loading="lazy"
         decoding="async"
