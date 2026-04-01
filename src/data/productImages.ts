@@ -27,7 +27,7 @@ import certificadoGarantia from "@/assets/products/certificadodegarantia8-8x4-8c
 import certificadoGarantiaDorado from "@/assets/products/certificadodegarantiacomdobra8-8x4-8cm.jpg";
 import etiquetaRoupas from "@/assets/products/etiquetaderoupas.jpg";
 import etiquetaRoupasEspecial from "@/assets/products/etiquetaderoupasformatoespecial.jpg";
-import miniEtiquetaRoupas from "@/assets/products/Minietiquetaderoupas.jpg";
+import miniEtiquetaRoupas from "@/assets/products/minietiquetaderoupas.jpg";
 import miniTagAnel from "@/assets/products/minitagdeanel3-9x1-7cm.jpg";
 import tagAnel from "@/assets/products/tagdeanel7x3cm.jpg";
 import tagAnelPequena from "@/assets/products/tagdeanel3-3x2-6cm.jpg";
