@@ -16,10 +16,6 @@ const faqs = [
     answer: `Não.\n\nVocê só precisa enviar:\n• Sua logo\n• As informações que deseja colocar no material\n\nNós criamos a arte para você.`,
   },
   {
-    question: "Vocês criam logo também?",
-    answer: `Sim.\n\nCaso você ainda não tenha logo, podemos desenvolver uma para sua marca.\n\nA criação de logo é um serviço separado, contratado à parte da produção dos materiais gráficos.`,
-  },
-  {
     question: "Posso pedir alterações na arte?",
     answer: `Sim.\n\nVocê pode solicitar alterações até que a arte fique exatamente como você imaginou.\n\nA produção dos materiais só começa depois da aprovação da arte.`,
   },
@@ -42,10 +38,6 @@ const faqs = [
   {
     question: "As cores ficam exatamente iguais à minha logo?",
     answer: `Os materiais são produzidos com base nas cores da sua identidade visual, porém não garantimos fidelização exata de cores.\n\nIsso acontece porque:\n• Diferentes tipos de papel podem reagir de formas diferentes à tinta\n• Cada material pode ter pequenas variações de impressão\n• Acabamentos também podem influenciar na percepção da cor\n\nPor isso, podem ocorrer pequenas variações de tonalidade entre materiais ou lotes diferentes.`,
-  },
-  {
-    question: "Como faço para comprar pelo site?",
-    answer: `Para comprar pelo site, basta:\n\n1. Escolher os produtos que deseja\n2. Adicionar ao carrinho nas quantidades que precisar\n3. Clicar no botão "Fechar pedido"\n\nAo clicar nesse botão, você será direcionado para o WhatsApp da GS Cartões.`,
   },
 ];
 
