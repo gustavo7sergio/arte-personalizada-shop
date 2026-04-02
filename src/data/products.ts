@@ -149,7 +149,7 @@ export const products: Product[] = [
   {
     id: "caixinha-acessorios-p",
     name: "Caixinha para Acessórios",
-    subtitle: "Tamanho P",
+    subtitle: "6,3 × 6,3 × 3 cm (L × C × A)",
     category: "Sacolinhas",
     material: "Papel cartão 300g",
     specs: [
