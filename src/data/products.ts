@@ -1135,6 +1135,7 @@ export const products: Product[] = [
   {
     id: "adesivo-redondo",
     name: "Adesivo Redondo",
+    subtitle: "3 × 3 cm / 4,8 × 4,8 cm",
     category: "Adesivos",
     material: "Papel couchê 80g",
     specs: [
