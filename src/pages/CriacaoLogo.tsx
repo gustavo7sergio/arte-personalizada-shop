@@ -309,16 +309,19 @@ Se você quer uma identidade que comunique, conecte e brilhe aos olhos do client
               <img src={pacoteCompleto} alt="Pacote Completo" className="w-full object-cover aspect-[4/5]" />
               <div className="p-8">
                 <h3 className="text-2xl font-display font-bold text-foreground mb-2">Pacote Completo</h3>
-                <p className="text-muted-foreground font-body text-sm leading-relaxed mb-4">
-                  Para quem quer uma marca completa, com todos os elementos visuais necessários.
+                <p className="text-muted-foreground font-body text-sm leading-relaxed italic mb-4">
+                  Inclui os seguintes arquivos:
                 </p>
                 <ul className="space-y-2 text-muted-foreground font-body text-sm mb-6">
-                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Tudo do Pacote Essencial</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Artes para impressos</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Templates para Stories</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Capas para destaques do Instagram</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Templates editáveis</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Mockups profissionais</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Logo principal</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Marca d'água</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Sub logo</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Paleta de cores</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Tipografias (Fontes)</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Manual de uso dos arquivos</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> 2 artes p/ impressos (Cartão, tag, sacola etc.)</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> 3 Capas para stories</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> 1 template para stories</li>
                 </ul>
                 <a
                   href="https://api.whatsapp.com/send?phone=5535984181096&text=Oi,%20tenho%20interesse%20no%20Pacote%20Completo!"
