@@ -9,6 +9,7 @@ import FloatingCartButton from "@/components/FloatingCartButton";
 import Index from "./pages/Index";
 import ScrollToTop from "@/components/ScrollToTop";
 import CategoryPage from "./pages/CategoryPage";
+import CriacaoLogo from "./pages/CriacaoLogo";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
