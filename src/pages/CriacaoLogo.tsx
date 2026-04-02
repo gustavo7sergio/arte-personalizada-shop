@@ -216,9 +216,9 @@ const CriacaoLogo = () => {
               />
             </div>
             <div className="w-full md:w-1/2">
-              <h3 className="text-sm font-body font-semibold text-primary tracking-wider uppercase mb-3">
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
                 Sobre o criador
-              </h3>
+              </h2>
               <p className="text-muted-foreground font-body text-base leading-relaxed whitespace-pre-line">
 {`Por trás de cada marca desenvolvida, existe um nome: Gustavo.
 
