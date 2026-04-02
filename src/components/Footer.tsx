@@ -1,8 +1,12 @@
-import { Instagram, Mail, Phone, ShoppingBag } from "lucide-react";
+import { Instagram, Mail, Phone, ShoppingBag, Palette } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 import logoWhite from "@/assets/logo-white.png";
 import { Button } from "@/components/ui/button";
 
 const Footer = () => {
+  const location = useLocation();
+  const isLogoPage = location.pathname === "/criacao-de-logo";
+
   return (
     <footer className="bg-primary py-12">
       <div className="container mx-auto px-6">
@@ -14,12 +18,29 @@ const Footer = () => {
               Fale conosco
             </Button>
           </a>
-          <a href="/#produtos">
-            <Button className="rounded-full font-body font-semibold px-8 py-5 text-base bg-white text-primary hover:bg-white/90">
-              <ShoppingBag className="mr-2 h-5 w-5" />
-              Ver produtos
-            </Button>
-          </a>
+          {isLogoPage ? (
+            <Link to="/">
+              <Button className="rounded-full font-body font-semibold px-8 py-5 text-base bg-white text-primary hover:bg-white/90">
+                <ShoppingBag className="mr-2 h-5 w-5" />
+                Ver materiais gráficos
+              </Button>
+            </Link>
+          ) : (
+            <>
+              <a href="/#produtos">
+                <Button className="rounded-full font-body font-semibold px-8 py-5 text-base bg-white text-primary hover:bg-white/90">
+                  <ShoppingBag className="mr-2 h-5 w-5" />
+                  Ver produtos
+                </Button>
+              </a>
+              <Link to="/criacao-de-logo">
+                <Button className="rounded-full font-body font-semibold px-8 py-5 text-base bg-white text-primary hover:bg-white/90">
+                  <Palette className="mr-2 h-5 w-5" />
+                  Criação de Logo
+                </Button>
+              </Link>
+            </>
+          )}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
