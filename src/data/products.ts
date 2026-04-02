@@ -1341,6 +1341,7 @@ export const products: Product[] = [
   {
     id: "etiqueta-roupas",
     name: "Etiqueta de Roupas",
+    subtitle: "8,8 × 4,8 cm",
     category: "Etiquetas de Roupas",
     material: "Papel couchê 250g",
     specs: [
