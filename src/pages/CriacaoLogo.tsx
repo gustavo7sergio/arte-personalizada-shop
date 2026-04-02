@@ -274,22 +274,23 @@ Se você quer uma identidade que comunique, conecte e brilhe aos olhos do client
             </h2>
           </div>
           <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto transition-all duration-700 delay-200 ${promoReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            {/* Pacote 1 */}
+            {/* Pacote Essencial */}
             <div className="border-2 border-primary/20 rounded-2xl overflow-hidden bg-card hover:border-primary/40 transition-all">
-              <img src={promo1} alt="Pacote Logo" className="w-full object-cover aspect-video" />
+              <img src={pacoteEssencial} alt="Pacote Essencial" className="w-full object-cover aspect-[4/5]" />
               <div className="p-8">
-                <h3 className="text-2xl font-display font-bold text-foreground mb-2">Pacote Logo</h3>
+                <h3 className="text-2xl font-display font-bold text-foreground mb-2">Pacote Essencial</h3>
                 <p className="text-muted-foreground font-body text-sm leading-relaxed mb-4">
                   Ideal para quem está começando e precisa de uma identidade visual profissional.
                 </p>
                 <ul className="space-y-2 text-muted-foreground font-body text-sm mb-6">
-                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Logo profissional exclusiva</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Logo principal exclusiva</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Marca d'água</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Tipografias selecionadas</li>
                   <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Paleta de cores personalizada</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Tipografia selecionada</li>
                   <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Arquivo em alta resolução</li>
                 </ul>
                 <a
-                  href="https://api.whatsapp.com/send?phone=5535984181096&text=Oi,%20tenho%20interesse%20no%20Pacote%20Logo!"
+                  href="https://api.whatsapp.com/send?phone=5535984181096&text=Oi,%20tenho%20interesse%20no%20Pacote%20Essencial!"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -300,26 +301,27 @@ Se você quer uma identidade que comunique, conecte e brilhe aos olhos do client
               </div>
             </div>
 
-            {/* Pacote 2 */}
+            {/* Pacote Completo */}
             <div className="border-2 border-primary/20 rounded-2xl overflow-hidden bg-card hover:border-primary/40 transition-all relative">
               <div className="absolute top-4 right-4 bg-primary text-primary-foreground text-xs font-body font-semibold px-3 py-1 rounded-full z-10">
                 Mais completo
               </div>
-              <img src={promo2} alt="Pacote Identidade Visual" className="w-full object-cover aspect-video" />
+              <img src={pacoteCompleto} alt="Pacote Completo" className="w-full object-cover aspect-[4/5]" />
               <div className="p-8">
-                <h3 className="text-2xl font-display font-bold text-foreground mb-2">Pacote Identidade Visual</h3>
+                <h3 className="text-2xl font-display font-bold text-foreground mb-2">Pacote Completo</h3>
                 <p className="text-muted-foreground font-body text-sm leading-relaxed mb-4">
                   Para quem quer uma marca completa, com todos os elementos visuais necessários.
                 </p>
                 <ul className="space-y-2 text-muted-foreground font-body text-sm mb-6">
-                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Tudo do Pacote Logo</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Variações da logo (horizontal, vertical, ícone)</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Manual de marca simplificado</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Elementos gráficos complementares</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Tudo do Pacote Essencial</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Artes para impressos</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Templates para Stories</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Capas para destaques do Instagram</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Templates editáveis</li>
                   <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Mockups profissionais</li>
                 </ul>
                 <a
-                  href="https://api.whatsapp.com/send?phone=5535984181096&text=Oi,%20tenho%20interesse%20no%20Pacote%20Identidade%20Visual!"
+                  href="https://api.whatsapp.com/send?phone=5535984181096&text=Oi,%20tenho%20interesse%20no%20Pacote%20Completo!"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
