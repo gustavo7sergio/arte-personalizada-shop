@@ -151,24 +151,20 @@ const CriacaoLogo = () => {
         </div>
       </section>
 
-      {/* Portfolio Slider */}
+      {/* Confira nossos trabalhos + Portfolio Slider */}
       <section className="py-10 md:py-16">
         <div className="container mx-auto px-6" ref={portfolioReveal.ref}>
-          <div className={`transition-all duration-700 ${portfolioReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+          <div className={`text-center mb-10 transition-all duration-700 ${portfolioReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-4">
+              Confira alguns dos nossos trabalhos!
+            </h2>
+            <p className="text-muted-foreground font-body text-lg max-w-2xl mx-auto">
+              Nossas criações são originais e tem como objetivo deixar o seu negócio ainda mais profissional e único através da Logo.
+            </p>
+          </div>
+          <div className={`transition-all duration-700 delay-200 ${portfolioReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <ImageSlider images={portfolioImages} />
           </div>
-        </div>
-      </section>
-
-      {/* Confira nossos trabalhos */}
-      <section className="py-12 md:py-16 bg-background">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-4">
-            Confira alguns dos nossos trabalhos!
-          </h2>
-          <p className="text-muted-foreground font-body text-lg max-w-2xl mx-auto">
-            Nossas criações são originais e tem como objetivo deixar o seu negócio ainda mais profissional e único através da Logo.
-          </p>
         </div>
       </section>
 
