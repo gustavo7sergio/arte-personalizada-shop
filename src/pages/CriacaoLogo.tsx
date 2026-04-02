@@ -266,13 +266,70 @@ Se você quer uma identidade que comunique, conecte e brilhe aos olhos do client
         </div>
       </section>
 
-      {/* Promo Images */}
-      <section className="py-10 md:py-16">
+      {/* Pacotes / Preços */}
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-6" ref={promoReveal.ref}>
-          <div className={`grid grid-cols-1 md:grid-cols-3 gap-4 transition-all duration-700 ${promoReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            <img src={promo1} alt="Trabalho GS Cartões" className="rounded-2xl w-full object-cover aspect-square" />
-            <img src={promo2} alt="Trabalho GS Cartões" className="rounded-2xl w-full object-cover aspect-square" />
-            <img src={promo3} alt="Trabalho GS Cartões" className="rounded-2xl w-full object-cover aspect-square" />
+          <div className={`text-center mb-14 transition-all duration-700 ${promoReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">
+              Nossos <span className="text-primary">Pacotes</span>
+            </h2>
+          </div>
+          <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto transition-all duration-700 delay-200 ${promoReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+            {/* Pacote 1 */}
+            <div className="border-2 border-primary/20 rounded-2xl overflow-hidden bg-card hover:border-primary/40 transition-all">
+              <img src={promo1} alt="Pacote Logo" className="w-full object-cover aspect-video" />
+              <div className="p-8">
+                <h3 className="text-2xl font-display font-bold text-foreground mb-2">Pacote Logo</h3>
+                <p className="text-muted-foreground font-body text-sm leading-relaxed mb-4">
+                  Ideal para quem está começando e precisa de uma identidade visual profissional.
+                </p>
+                <ul className="space-y-2 text-muted-foreground font-body text-sm mb-6">
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Logo profissional exclusiva</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Paleta de cores personalizada</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Tipografia selecionada</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Arquivo em alta resolução</li>
+                </ul>
+                <a
+                  href="https://api.whatsapp.com/send?phone=5535984181096&text=Oi,%20tenho%20interesse%20no%20Pacote%20Logo!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="w-full rounded-full font-body font-semibold py-5 bg-primary text-primary-foreground hover:bg-primary/90">
+                    Quero esse pacote
+                  </Button>
+                </a>
+              </div>
+            </div>
+
+            {/* Pacote 2 */}
+            <div className="border-2 border-primary/20 rounded-2xl overflow-hidden bg-card hover:border-primary/40 transition-all relative">
+              <div className="absolute top-4 right-4 bg-primary text-primary-foreground text-xs font-body font-semibold px-3 py-1 rounded-full z-10">
+                Mais completo
+              </div>
+              <img src={promo2} alt="Pacote Identidade Visual" className="w-full object-cover aspect-video" />
+              <div className="p-8">
+                <h3 className="text-2xl font-display font-bold text-foreground mb-2">Pacote Identidade Visual</h3>
+                <p className="text-muted-foreground font-body text-sm leading-relaxed mb-4">
+                  Para quem quer uma marca completa, com todos os elementos visuais necessários.
+                </p>
+                <ul className="space-y-2 text-muted-foreground font-body text-sm mb-6">
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Tudo do Pacote Logo</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Variações da logo (horizontal, vertical, ícone)</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Manual de marca simplificado</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Elementos gráficos complementares</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Mockups profissionais</li>
+                </ul>
+                <a
+                  href="https://api.whatsapp.com/send?phone=5535984181096&text=Oi,%20tenho%20interesse%20no%20Pacote%20Identidade%20Visual!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="w-full rounded-full font-body font-semibold py-5 bg-primary text-primary-foreground hover:bg-primary/90">
+                    Quero esse pacote
+                  </Button>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
