@@ -615,6 +615,7 @@ export const products: Product[] = [
   {
     id: "adesivo-anel",
     name: "Adesivo para Anel",
+    subtitle: "7 × 1,7 cm",
     category: "Adesivos",
     material: "Papel couchê 90g",
     specs: [
