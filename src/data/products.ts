@@ -733,6 +733,7 @@ export const products: Product[] = [
   {
     id: "certificado-garantia",
     name: "Certificado de Garantia",
+    subtitle: "8,8 × 4,8 cm",
     category: "Cartões",
     material: "Papel couchê 250g",
     specs: [
@@ -755,6 +756,23 @@ export const products: Product[] = [
           { qty: 3000, installment: 399.00, cash: 359.10 },
         ],
       },
+    ],
+  },
+  {
+    id: "certificado-garantia-mini",
+    name: "Mini Certificado de Garantia",
+    subtitle: "4,8 × 4,25 cm",
+    category: "Cartões",
+    material: "Papel couchê 250g",
+    specs: [
+      "Papel couchê 250g",
+      "Frente e verso coloridos",
+      "Brilho total na frente",
+      "NÃO trabalhamos com fidelização de cores",
+    ],
+    additionals: ["Papel couchê 300g", "Verniz localizado"],
+    highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
+    variants: [
       {
         label: "4,8 × 4,25 cm",
         prices: [
