@@ -279,15 +279,15 @@ Se você quer uma identidade que comunique, conecte e brilhe aos olhos do client
               <img src={pacoteEssencial} alt="Pacote Essencial" className="w-full object-cover aspect-[4/5]" />
               <div className="p-8">
                 <h3 className="text-2xl font-display font-bold text-foreground mb-2">Pacote Essencial</h3>
-                <p className="text-muted-foreground font-body text-sm leading-relaxed mb-4">
-                  Ideal para quem está começando e precisa de uma identidade visual profissional.
+                <p className="text-muted-foreground font-body text-sm leading-relaxed italic mb-4">
+                  Inclui os seguintes arquivos:
                 </p>
                 <ul className="space-y-2 text-muted-foreground font-body text-sm mb-6">
-                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Logo principal exclusiva</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Logo principal</li>
                   <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Marca d'água</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Tipografias selecionadas</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Paleta de cores personalizada</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Arquivo em alta resolução</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Paleta de cores</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Tipografias (Fontes)</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Manual de uso dos arquivos</li>
                 </ul>
                 <a
                   href="https://api.whatsapp.com/send?phone=5535984181096&text=Oi,%20tenho%20interesse%20no%20Pacote%20Essencial!"
