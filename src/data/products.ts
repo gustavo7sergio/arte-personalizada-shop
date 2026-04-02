@@ -29,6 +29,7 @@ export const products: Product[] = [
   {
     id: "sacolinha-acessorios-couche",
     name: "Sacolinha para Acessórios",
+    subtitle: "16,5 × 12 × 4,5 cm",
     category: "Sacolinhas",
     material: "Papel couchê 250g",
     specs: [
@@ -577,6 +578,7 @@ export const products: Product[] = [
   {
     id: "tag-acessorios",
     name: "Tag de Acessórios",
+    subtitle: "8,8 × 4,8 cm",
     category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
@@ -613,6 +615,7 @@ export const products: Product[] = [
   {
     id: "adesivo-anel",
     name: "Adesivo para Anel",
+    subtitle: "7 × 1,7 cm",
     category: "Adesivos",
     material: "Papel couchê 90g",
     specs: [
@@ -733,6 +736,7 @@ export const products: Product[] = [
   {
     id: "certificado-garantia",
     name: "Certificado de Garantia",
+    subtitle: "8,8 × 4,8 cm",
     category: "Cartões",
     material: "Papel couchê 250g",
     specs: [
@@ -755,6 +759,23 @@ export const products: Product[] = [
           { qty: 3000, installment: 399.00, cash: 359.10 },
         ],
       },
+    ],
+  },
+  {
+    id: "certificado-garantia-mini",
+    name: "Mini Certificado de Garantia",
+    subtitle: "4,8 × 4,25 cm",
+    category: "Cartões",
+    material: "Papel couchê 250g",
+    specs: [
+      "Papel couchê 250g",
+      "Frente e verso coloridos",
+      "Brilho total na frente",
+      "NÃO trabalhamos com fidelização de cores",
+    ],
+    additionals: ["Papel couchê 300g", "Verniz localizado"],
+    highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
+    variants: [
       {
         label: "4,8 × 4,25 cm",
         prices: [
@@ -1115,6 +1136,7 @@ export const products: Product[] = [
   {
     id: "adesivo-redondo",
     name: "Adesivo Redondo",
+    subtitle: "3 × 3 cm / 4,8 × 4,8 cm",
     category: "Adesivos",
     material: "Papel couchê 80g",
     specs: [
@@ -1151,7 +1173,7 @@ export const products: Product[] = [
   {
     id: "adesivo-fecha-sacola-couche",
     name: "Adesivo Fecha Sacola",
-    subtitle: "Papel Couchê",
+    subtitle: "Papel Couchê – 10 × 4 cm",
     category: "Adesivos",
     material: "Papel couchê 80g",
     specs: [
@@ -1180,7 +1202,7 @@ export const products: Product[] = [
   {
     id: "adesivo-fecha-sacola-sulfite",
     name: "Adesivo Fecha Sacola",
-    subtitle: "Papel Sulfite",
+    subtitle: "Papel Sulfite – 10 × 5 cm",
     category: "Adesivos",
     material: "Papel sulfite 80g",
     specs: [
@@ -1262,6 +1284,7 @@ export const products: Product[] = [
   {
     id: "cartao-visitas",
     name: "Cartão de Visitas",
+    subtitle: "8,8 × 4,8 cm",
     category: "Cartões",
     material: "Papel couchê 250g",
     specs: [
@@ -1318,6 +1341,7 @@ export const products: Product[] = [
   {
     id: "etiqueta-roupas",
     name: "Etiqueta de Roupas",
+    subtitle: "8,8 × 4,8 cm",
     category: "Etiquetas de Roupas",
     material: "Papel couchê 250g",
     specs: [
@@ -1349,6 +1373,7 @@ export const products: Product[] = [
   {
     id: "mini-etiqueta-roupas",
     name: "Mini Etiqueta de Roupas",
+    subtitle: "4,8 × 4,25 cm",
     category: "Etiquetas de Roupas",
     material: "Papel couchê 250g",
     specs: [
@@ -1541,6 +1566,7 @@ export const products: Product[] = [
   {
     id: "bloco-pedidos",
     name: "Bloco de Pedidos",
+    subtitle: "15 × 10 cm",
     category: "Outros",
     material: "Papel Sulfite 75g (P&B) / 90g (Colorido)",
     specs: [
@@ -1572,6 +1598,7 @@ export const products: Product[] = [
   {
     id: "panfleto",
     name: "Panfleto",
+    subtitle: "10 × 15 cm / 10 × 14 cm",
     category: "Outros",
     material: "Papel couchê 120g (até 500 uni) / 90g (1000+ uni)",
     specs: [
