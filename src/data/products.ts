@@ -1598,6 +1598,7 @@ export const products: Product[] = [
   {
     id: "panfleto",
     name: "Panfleto",
+    subtitle: "10 × 15 cm / 10 × 14 cm",
     category: "Outros",
     material: "Papel couchê 120g (até 500 uni) / 90g (1000+ uni)",
     specs: [

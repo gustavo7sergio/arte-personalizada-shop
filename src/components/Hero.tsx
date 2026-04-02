@@ -21,7 +21,7 @@ const Hero = () => {
         <img
           src={logoWhite}
           alt="GS Cartões"
-          className="h-32 md:h-44 mb-6 opacity-0 animate-zoom-in"
+          className="h-32 md:h-44 mb-6 mt-8 md:mt-12 opacity-0 animate-zoom-in"
           style={{ animationDelay: "0.2s" }}
         />
         <h1
