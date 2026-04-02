@@ -149,7 +149,7 @@ export const products: Product[] = [
   {
     id: "caixinha-acessorios-p",
     name: "Caixinha para Acessórios",
-    subtitle: "Tamanho P",
+    subtitle: "6,3 × 6,3 × 3 cm (L × C × A)",
     category: "Sacolinhas",
     material: "Papel cartão 300g",
     specs: [
@@ -175,7 +175,7 @@ export const products: Product[] = [
   {
     id: "caixinha-acessorios-m",
     name: "Caixinha para Acessórios",
-    subtitle: "Tamanho M",
+    subtitle: "8,3 × 8,3 × 5 cm (L × C × A)",
     category: "Sacolinhas",
     material: "Papel cartão 300g",
     specs: [
@@ -201,7 +201,7 @@ export const products: Product[] = [
   {
     id: "caixinha-acessorios-maleta",
     name: "Caixinha para Acessórios",
-    subtitle: "Modelo Maleta",
+    subtitle: "4,4 × 7,3 × 5,6 cm (L × C × A)",
     category: "Sacolinhas",
     material: "Papel couchê 250g",
     specs: [
