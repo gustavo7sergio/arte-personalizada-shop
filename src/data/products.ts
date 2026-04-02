@@ -1202,7 +1202,7 @@ export const products: Product[] = [
   {
     id: "adesivo-fecha-sacola-sulfite",
     name: "Adesivo Fecha Sacola",
-    subtitle: "Papel Sulfite",
+    subtitle: "Papel Sulfite – 10 × 5 cm",
     category: "Adesivos",
     material: "Papel sulfite 80g",
     specs: [
