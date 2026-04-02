@@ -290,7 +290,7 @@ Se você quer uma identidade que comunique, conecte e brilhe aos olhos do client
                   <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> Manual de uso dos arquivos</li>
                 </ul>
                 <div className="mb-6 text-center">
-                  <p className="text-2xl font-display font-bold text-foreground">6x de R$59,83 <span className="text-sm font-body font-normal text-muted-foreground">sem juros no cartão</span></p>
+                  <p className="text-2xl font-display font-bold text-foreground">R$359,00 em 6x de R$59,83 <span className="text-sm font-body font-normal text-muted-foreground">sem juros no cartão</span></p>
                   <p className="text-lg font-body text-primary font-semibold mt-1">ou R$323,10 à vista no Pix <span className="text-xs font-normal text-muted-foreground">(10% off)</span></p>
                 </div>
                 <a
@@ -328,7 +328,7 @@ Se você quer uma identidade que comunique, conecte e brilhe aos olhos do client
                   <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> 1 template para stories</li>
                 </ul>
                 <div className="mb-6 text-center">
-                  <p className="text-2xl font-display font-bold text-foreground">6x de R$66,50 <span className="text-sm font-body font-normal text-muted-foreground">sem juros no cartão</span></p>
+                  <p className="text-2xl font-display font-bold text-foreground">R$399,00 em 6x de R$66,50 <span className="text-sm font-body font-normal text-muted-foreground">sem juros no cartão</span></p>
                   <p className="text-lg font-body text-primary font-semibold mt-1">ou R$359,10 à vista no Pix <span className="text-xs font-normal text-muted-foreground">(10% off)</span></p>
                 </div>
                 <a
