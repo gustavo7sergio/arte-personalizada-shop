@@ -1,4 +1,5 @@
-import { Instagram, Mail, Phone, ShoppingBag } from "lucide-react";
+import { Instagram, Mail, Phone, ShoppingBag, Palette } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 import logoWhite from "@/assets/logo-white.png";
 import { Button } from "@/components/ui/button";
 
