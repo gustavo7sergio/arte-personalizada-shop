@@ -327,7 +327,7 @@ const CategoryPage = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      <div className="pt-36 pb-20 md:pt-44 md:pb-28">
+      <div className="pt-44 pb-20 md:pt-44 md:pb-28">
         <div className="container mx-auto px-6">
           {/* Breadcrumb */}
           <Link
