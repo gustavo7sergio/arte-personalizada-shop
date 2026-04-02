@@ -1284,6 +1284,7 @@ export const products: Product[] = [
   {
     id: "cartao-visitas",
     name: "Cartão de Visitas",
+    subtitle: "8,8 × 4,8 cm",
     category: "Cartões",
     material: "Papel couchê 250g",
     specs: [
