@@ -204,7 +204,7 @@ const CriacaoLogo = () => {
       </section>
 
       {/* Sobre o criador */}
-      <section className="py-16 md:py-24 bg-card">
+      <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6" ref={aboutReveal.ref}>
           <div className={`flex flex-col md:flex-row-reverse items-center gap-10 md:gap-16 transition-all duration-700 ${aboutReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <div className="w-full md:w-1/2">
