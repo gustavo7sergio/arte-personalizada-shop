@@ -201,7 +201,7 @@ export const products: Product[] = [
   {
     id: "caixinha-acessorios-maleta",
     name: "Caixinha para Acessórios",
-    subtitle: "Modelo Maleta",
+    subtitle: "4,4 × 7,3 × 5,6 cm (L × C × A)",
     category: "Sacolinhas",
     material: "Papel couchê 250g",
     specs: [
