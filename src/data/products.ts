@@ -29,6 +29,7 @@ export const products: Product[] = [
   {
     id: "sacolinha-acessorios-couche",
     name: "Sacolinha para Acessórios",
+    subtitle: "16,5 × 12 × 4,5 cm",
     category: "Sacolinhas",
     material: "Papel couchê 250g",
     specs: [
