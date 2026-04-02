@@ -1173,7 +1173,7 @@ export const products: Product[] = [
   {
     id: "adesivo-fecha-sacola-couche",
     name: "Adesivo Fecha Sacola",
-    subtitle: "Papel Couchê",
+    subtitle: "Papel Couchê – 10 × 4 cm",
     category: "Adesivos",
     material: "Papel couchê 80g",
     specs: [
