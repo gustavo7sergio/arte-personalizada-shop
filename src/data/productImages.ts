@@ -24,6 +24,7 @@ import blocoPedidos from "@/assets/products/blocodepedidos.jpg";
 import cartaoAgradecimentoG from "@/assets/products/cartaodeagradecimento8-8x9-94cm.jpg";
 import cartaoAgradecimentoP from "@/assets/products/minicartaodeagradecimento.jpg";
 import certificadoGarantia from "@/assets/products/certificadodegarantia8-8x4-8cm.jpg";
+import certificadoGarantiaMini from "@/assets/products/minicertificadodegarantia.jpg";
 import certificadoGarantiaDorado from "@/assets/products/certificadodegarantiacomdobra8-8x4-8cm.jpg";
 import etiquetaRoupas from "@/assets/products/etiquetaderoupas.jpg";
 import etiquetaRoupasEspecial from "@/assets/products/etiquetaderoupasformatoespecial.jpg";
