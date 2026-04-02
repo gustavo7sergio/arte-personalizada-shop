@@ -270,7 +270,7 @@ Se você quer uma identidade que comunique, conecte e brilhe aos olhos do client
         <div className="container mx-auto px-6" ref={promoReveal.ref}>
           <div className={`text-center mb-14 transition-all duration-700 ${promoReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">
-              Nossos <span className="text-primary">Pacotes</span>
+              Escolha o melhor <span className="text-primary">pacote</span> para você!
             </h2>
           </div>
           <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto transition-all duration-700 delay-200 ${promoReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
