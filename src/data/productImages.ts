@@ -130,6 +130,7 @@ export const productImages: Record<string, string | string[]> = {
 
   // Certificados
   "certificado-garantia": certificadoGarantia,
+  "certificado-garantia-mini": certificadoGarantiaMini,
   "certificado-garantia-dobrado": certificadoGarantiaDorado,
 
   // Etiquetas de Roupas
