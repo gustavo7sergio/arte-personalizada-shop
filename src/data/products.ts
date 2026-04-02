@@ -1566,6 +1566,7 @@ export const products: Product[] = [
   {
     id: "bloco-pedidos",
     name: "Bloco de Pedidos",
+    subtitle: "15 × 10 cm",
     category: "Outros",
     material: "Papel Sulfite 75g (P&B) / 90g (Colorido)",
     specs: [
