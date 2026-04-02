@@ -16,9 +16,8 @@ import testimonial2 from "@/assets/logo-page/testimonial-2.jpg";
 import testimonial3 from "@/assets/logo-page/testimonial-3.jpg";
 import testimonial4 from "@/assets/logo-page/testimonial-4.jpg";
 import aboutCreator from "@/assets/logo-page/about-creator.jpg";
-import promo1 from "@/assets/logo-page/promo-1.jpg";
-import promo2 from "@/assets/logo-page/promo-2.jpg";
-import promo3 from "@/assets/logo-page/promo-3.jpg";
+import pacoteEssencial from "@/assets/logo-page/pacote-essencial.png";
+import pacoteCompleto from "@/assets/logo-page/pacote-completo.png";
 
 const portfolioImages = [portfolio1, portfolio2, portfolio3, portfolio4];
 const testimonialImages = [testimonial1, testimonial2, testimonial3, testimonial4];
