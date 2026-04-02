@@ -33,6 +33,13 @@ const Hero = () => {
           com a sua marca
         </h1>
 
+        <p
+          className="text-lg md:text-xl text-primary-foreground/80 font-body mt-4 opacity-0 animate-blur-in"
+          style={{ animationDelay: "0.7s" }}
+        >
+          Tudo 100% personalizado do seu jeito!
+        </p>
+
         <div
           className="mt-8 opacity-0 animate-slide-up-fade"
           style={{ animationDelay: "0.9s" }}
