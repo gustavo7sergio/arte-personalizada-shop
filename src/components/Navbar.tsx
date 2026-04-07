@@ -14,6 +14,7 @@ const categoryLinks = [
   { name: "Etiquetas de Roupas", slug: "etiquetas-de-roupas" },
   { name: "Kits", slug: "kits" },
   { name: "Outros", slug: "outros" },
+  { name: "✨ Criação de Logo", slug: "criacao-de-logo", isPage: true },
 ];
 
 const Navbar = () => {
