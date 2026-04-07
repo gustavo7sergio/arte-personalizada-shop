@@ -14,6 +14,7 @@ const categoryLinks = [
   { name: "Etiquetas de Roupas", slug: "etiquetas-de-roupas" },
   { name: "Kits", slug: "kits" },
   { name: "Outros", slug: "outros" },
+  { name: "✨ Criação de Logo", slug: "criacao-de-logo", isPage: true },
 ];
 
 const Navbar = () => {
@@ -91,9 +92,9 @@ const Navbar = () => {
               {categoryLinks.map((cat) => (
                 <Link
                   key={cat.slug}
-                  to={`/categoria/${cat.slug}`}
+                  to={cat.isPage ? `/${cat.slug}` : `/categoria/${cat.slug}`}
                   onClick={() => setIsOpen(false)}
-                  className="text-xs font-body text-muted-foreground hover:text-foreground hover:bg-accent/50 active:bg-accent/70 transition-colors whitespace-nowrap px-3 py-2 md:py-1.5 rounded-full flex-shrink-0"
+                  className={`text-xs font-body hover:text-foreground hover:bg-accent/50 active:bg-accent/70 transition-colors whitespace-nowrap px-3 py-2 md:py-1.5 rounded-full flex-shrink-0 ${cat.isPage ? 'text-primary font-semibold' : 'text-muted-foreground'}`}
                 >
                   {cat.name}
                 </Link>
