@@ -5,7 +5,7 @@ import { useCart } from "@/contexts/CartContext";
 import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/logo-green.png";
 
-const categoryLinks = [
+const categoryLinks: { name: string; slug: string; isPage?: boolean }[] = [
   { name: "Tags de Acessórios", slug: "tags-de-acessorios" },
   { name: "Sacolinhas", slug: "sacolinhas" },
   { name: "Cartões", slug: "cartoes" },
