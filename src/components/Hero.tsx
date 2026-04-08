@@ -21,9 +21,8 @@ const Hero = () => {
         <img
           src={logoWhite}
           alt="GS Cartões"
-className="h-32 md:h-44 mb-2 mt-16 md:mt-12 opacity-0 animate-zoom-in [animation-fill-mode:forwards]"
-          style={{ animationDelay: "0.2s", "--tw-animate-opacity": "0.5" } as React.CSSProperties}
-          style={{ animationDelay: "0.2s" }}
+          className="h-32 md:h-44 mb-2 mt-16 md:mt-12 animate-zoom-in [animation-fill-mode:forwards]"
+          style={{ animationDelay: "0.2s", opacity: 0.5 }}
         />
         <h1
           className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground leading-tight opacity-0 animate-blur-in max-w-3xl"
