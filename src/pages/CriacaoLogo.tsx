@@ -114,6 +114,31 @@ const CriacaoLogo = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Criação de Logo Profissional — GS Cartões</title>
+        <meta name="description" content="Crie uma logo profissional para sua marca de semijoias e bijuterias. Pacotes Essencial e Completo, com formulário, criação e aprovação ágil." />
+        <link rel="canonical" href="/criacao-de-logo" />
+        <meta property="og:title" content="Criação de Logo Profissional — GS Cartões" />
+        <meta property="og:description" content="Pacotes de criação de logo Essencial e Completo, com processo guiado e aprovação ágil." />
+        <meta property="og:url" content="/criacao-de-logo" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: "Criação de Logo",
+          provider: { "@type": "Organization", name: "GS Cartões" },
+          areaServed: "BR",
+          description: "Criação de logo profissional para empreendedoras de semijoias, prata e bijuterias.",
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Pacotes de Logo",
+            itemListElement: [
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Pacote Essencial" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Pacote Completo" } }
+            ]
+          }
+        })}</script>
+      </Helmet>
       <Navbar />
 
       {/* Back button */}
