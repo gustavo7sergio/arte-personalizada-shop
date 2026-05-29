@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, ChevronDown, ChevronUp, ChevronLeft, ChevronRight, MessageCircle, Package, Tag, CreditCard, ShoppingCart, Search } from "lucide-react";
 import { useState } from "react";
 import { products, type Product } from "@/data/products";
@@ -323,8 +324,28 @@ const CategoryPage = () => {
     .filter((p) => p.category === categoryName)
     .sort((a, b) => getGroupKey(a.name).localeCompare(getGroupKey(b.name)));
 
+  const pageTitle = `${categoryName} Personalizados — GS Cartões`;
+  const pageDesc = `Tabela de preços de ${categoryName?.toLowerCase()} personalizados com sua marca. Envio para todo o Brasil.`;
+  const canonical = `/categoria/${categorySlug}`;
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDesc} />
+        <link rel="canonical" href={canonical} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDesc} />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: pageTitle,
+          description: pageDesc,
+          url: `https://www.gscartoes.com${canonical}`,
+        })}</script>
+      </Helmet>
       <Navbar />
 
       <div className="pt-44 pb-20 md:pt-44 md:pb-28">
