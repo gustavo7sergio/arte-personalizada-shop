@@ -12,6 +12,8 @@ const Hero = () => {
           src={heroImage}
           alt="Materiais gráficos personalizados GS Cartões"
           className="w-full h-full object-cover animate-ken-burns"
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/65" />
       </div>

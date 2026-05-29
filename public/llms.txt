@@ -1,0 +1,16 @@
+# GS Cartões
+
+> Papelaria personalizada para empreendedoras de semijoias, prata e bijuterias: tags, cartões, sacolinhas, adesivos e criação de logo. Envio para todo o Brasil.
+
+## Pages
+
+- [Home](/): Catálogo de papelaria personalizada e visão geral da marca.
+- [Criação de Logo](/criacao-de-logo): Pacotes Essencial e Completo de criação de logo profissional.
+- [Tags de Acessórios](/categoria/tags-de-acessorios): Tags personalizadas para brincos, anéis, colares e mais.
+- [Sacolinhas](/categoria/sacolinhas): Sacolinhas de papel, plástico e caixinhas personalizadas.
+- [Cartões](/categoria/cartoes): Cartões de visita, garantia, agradecimento e mais.
+- [Adesivos](/categoria/adesivos): Adesivos personalizados para lacre e identificação.
+- [Tags de Laços e Tiaras](/categoria/tags-de-lacos-e-tiaras): Tags para laços, tiaras e acessórios de cabelo.
+- [Etiquetas de Roupas](/categoria/etiquetas-de-roupas): Etiquetas personalizadas para roupas.
+- [Kits](/categoria/kits): Kits completos de tags com diversos formatos.
+- [Outros](/categoria/outros): Panfletos, banners, blocos de pedido e mais.
