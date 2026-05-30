@@ -189,12 +189,14 @@ function ProductCard({ product }: { product: Product }) {
               <>
                 <button
                   onClick={(e) => { e.stopPropagation(); setImageIndex((prev) => (prev - 1 + images.length) % images.length); }}
+                  aria-label="Imagem anterior"
                   className="absolute left-2 top-1/2 -translate-y-1/2 bg-card/80 backdrop-blur-sm rounded-full p-1.5 shadow-sm hover:bg-card transition-colors"
                 >
                   <ChevronLeft className="h-4 w-4 text-foreground" />
                 </button>
                 <button
                   onClick={(e) => { e.stopPropagation(); setImageIndex((prev) => (prev + 1) % images.length); }}
+                  aria-label="Próxima imagem"
                   className="absolute right-2 top-1/2 -translate-y-1/2 bg-card/80 backdrop-blur-sm rounded-full p-1.5 shadow-sm hover:bg-card transition-colors"
                 >
                   <ChevronRight className="h-4 w-4 text-foreground" />
@@ -204,6 +206,7 @@ function ProductCard({ product }: { product: Product }) {
                     <button
                       key={i}
                       onClick={(e) => { e.stopPropagation(); setImageIndex(i); }}
+                      aria-label={`Ir para imagem ${i + 1}`}
                       className={cn(
                         "w-2 h-2 rounded-full transition-colors",
                         i === imageIndex ? "bg-primary" : "bg-foreground/20"
