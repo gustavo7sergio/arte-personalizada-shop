@@ -41,6 +41,7 @@ const Navbar = () => {
           </a>
           <button
             onClick={() => setCartOpen(true)}
+            aria-label="Ver carrinho"
             className="relative text-muted-foreground hover:text-foreground transition-colors"
           >
             <ShoppingCart className="h-5 w-5" />
