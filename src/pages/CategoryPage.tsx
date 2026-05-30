@@ -388,6 +388,7 @@ const CategoryPage = () => {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+              <h2 className="sr-only">Produtos da categoria {categoryName}</h2>
               {categoryProducts.map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
