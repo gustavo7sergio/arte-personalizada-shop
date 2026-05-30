@@ -36,7 +36,7 @@ const CartDrawer = () => {
           <div className="flex-1 flex flex-col items-center justify-center text-center gap-3 py-12">
             <ShoppingCart className="h-12 w-12 text-muted-foreground/30" />
             <p className="text-muted-foreground font-body text-sm">Seu carrinho está vazio</p>
-            <p className="text-muted-foreground/60 font-body text-xs">Adicione produtos para montar seu pedido</p>
+            <p className="text-muted-foreground font-body text-xs">Adicione produtos para montar seu pedido</p>
           </div>
         ) : (
           <>
