@@ -47,7 +47,7 @@ const Categories = () => {
               <div className="aspect-square overflow-hidden">
                 <img
                   src={cat.image}
-                  alt={cat.name}
+                  alt={`Categoria de ${cat.name} personalizados`}
                   className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                 />
