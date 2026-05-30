@@ -67,6 +67,7 @@ const Navbar = () => {
           </span>
           <button
             onClick={() => setCartOpen(true)}
+            aria-label="Ver carrinho"
             className="relative text-foreground"
           >
             <ShoppingCart className="h-5 w-5" />
@@ -78,6 +79,8 @@ const Navbar = () => {
           </button>
           <button
             onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
+            aria-expanded={isOpen}
             className="text-foreground"
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
