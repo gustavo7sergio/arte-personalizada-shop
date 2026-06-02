@@ -247,7 +247,7 @@ function ProductCard({ product }: { product: Product }) {
             </span>
           </div>
         </div>
-        <p className="text-xs font-body text-muted-foreground">{product.material}</p>
+        
       </div>
 
       <button
