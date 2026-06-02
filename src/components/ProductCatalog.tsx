@@ -167,11 +167,6 @@ function ProductCard({ product }: { product: Product }) {
           </div>
         </div>
 
-        {/* Specs preview */}
-        <p className="text-xs font-body text-muted-foreground">
-          {product.material}
-        </p>
-      </div>
 
       {/* Expandable specs */}
       <button
