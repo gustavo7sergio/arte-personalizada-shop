@@ -19,11 +19,11 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative container mx-auto px-6 py-20 flex flex-col items-center text-center">
+      <div className="relative container mx-auto px-6 py-12 md:py-16 flex flex-col items-center text-center">
         <img
           src={logoWhite}
           alt="GS Cartões"
-          className="h-32 md:h-44 mb-0 mt-32 md:mt-12 animate-zoom-in [animation-fill-mode:forwards]"
+          className="h-32 md:h-44 mb-0 mt-16 md:mt-8 animate-zoom-in [animation-fill-mode:forwards]"
           style={{ animationDelay: "0.2s", opacity: 0.5 }}
         />
         <h1

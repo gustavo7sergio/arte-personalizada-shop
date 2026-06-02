@@ -6,7 +6,7 @@ const CTA = () => {
   const { ref, visible } = useScrollReveal();
 
   return (
-    <section className="py-20 md:py-28 bg-primary">
+    <section className="py-12 md:py-16 bg-primary">
       <div className="container mx-auto px-6 text-center" ref={ref}>
         <h2 className={`text-3xl md:text-5xl font-display font-bold text-primary-foreground max-w-3xl mx-auto leading-tight transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           Pronto para começar?
