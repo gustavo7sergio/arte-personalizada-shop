@@ -399,6 +399,19 @@ const CategoryPage = () => {
             </p>
           </div>
 
+          {/* SEO intro */}
+          {content?.intro && content.intro.length > 0 && (
+            <section className="mb-14 max-w-3xl">
+              <div className="space-y-4">
+                {content.intro.map((p, i) => (
+                  <p key={i} className="text-muted-foreground font-body leading-relaxed">
+                    {p}
+                  </p>
+                ))}
+              </div>
+            </section>
+          )}
+
           {/* Products */}
           {categoryProducts.length === 0 ? (
             <div className="text-center py-20 text-muted-foreground font-body">
@@ -413,6 +426,28 @@ const CategoryPage = () => {
               ))}
             </div>
           )}
+
+          {/* FAQ */}
+          {content?.faqs && content.faqs.length > 0 && (
+            <section className="mt-16 max-w-3xl">
+              <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-6">
+                Perguntas frequentes sobre {categoryName}
+              </h2>
+              <div className="space-y-5">
+                {content.faqs.map((f, i) => (
+                  <div key={i} className="border-b border-border/60 pb-5">
+                    <h3 className="font-display font-semibold text-lg text-foreground mb-2">
+                      {f.q}
+                    </h3>
+                    <p className="text-muted-foreground font-body leading-relaxed">
+                      {f.a}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
 
 
           <div className="flex justify-center mt-8">
