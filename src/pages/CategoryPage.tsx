@@ -383,10 +383,7 @@ const CategoryPage = () => {
 
           {/* Header */}
           <div className="mb-12">
-            <span className="text-primary font-body text-sm tracking-[0.2em] uppercase">
-              Tabela de Preços
-            </span>
-            <h1 className="text-3xl md:text-5xl font-display font-bold text-foreground mt-3">
+            <h1 className="text-3xl md:text-5xl font-display font-bold text-foreground">
               {categoryName}{" "}
               {categoryName !== "Outros" && (
                 <span style={{ color: "hsl(var(--rose))" }}>
