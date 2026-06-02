@@ -328,9 +328,33 @@ const CategoryPage = () => {
     .filter((p) => p.category === categoryName)
     .sort((a, b) => getGroupKey(a.name).localeCompare(getGroupKey(b.name)));
 
-  const pageTitle = `${categoryName} Personalizados — GS Cartões`;
-  const pageDesc = `Tabela de preços de ${categoryName?.toLowerCase()} personalizados com sua marca. Envio para todo o Brasil.`;
+  const content = categoryContent[categorySlug ?? ""];
+  const pageTitle = content?.seoTitle ?? `${categoryName} Personalizados — GS Cartões`;
+  const pageDesc =
+    content?.seoDescription ??
+    `Tabela de preços de ${categoryName?.toLowerCase()} personalizados com sua marca. Envio para todo o Brasil.`;
   const canonical = `/categoria/${categorySlug}`;
+
+  const jsonLd: Record<string, unknown>[] = [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: pageTitle,
+      description: pageDesc,
+      url: `https://www.gscartoes.com${canonical}`,
+    },
+  ];
+  if (content?.faqs?.length) {
+    jsonLd.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: content.faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    });
+  }
 
   return (
     <div className="min-h-screen bg-background">
@@ -342,13 +366,7 @@ const CategoryPage = () => {
         <meta property="og:description" content={pageDesc} />
         <meta property="og:url" content={canonical} />
         <meta property="og:type" content="website" />
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "CollectionPage",
-          name: pageTitle,
-          description: pageDesc,
-          url: `https://www.gscartoes.com${canonical}`,
-        })}</script>
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
       <Navbar />
 
