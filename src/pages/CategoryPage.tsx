@@ -12,6 +12,7 @@ import ImageZoom from "@/components/ImageZoom";
 import ProductImage from "@/components/ProductImage";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { categoryContent } from "@/data/categoryContent";
 
 const formatCurrency = (value: number) =>
   value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -327,9 +328,33 @@ const CategoryPage = () => {
     .filter((p) => p.category === categoryName)
     .sort((a, b) => getGroupKey(a.name).localeCompare(getGroupKey(b.name)));
 
-  const pageTitle = `${categoryName} Personalizados — GS Cartões`;
-  const pageDesc = `Tabela de preços de ${categoryName?.toLowerCase()} personalizados com sua marca. Envio para todo o Brasil.`;
+  const content = categoryContent[categorySlug ?? ""];
+  const pageTitle = content?.seoTitle ?? `${categoryName} Personalizados — GS Cartões`;
+  const pageDesc =
+    content?.seoDescription ??
+    `Tabela de preços de ${categoryName?.toLowerCase()} personalizados com sua marca. Envio para todo o Brasil.`;
   const canonical = `/categoria/${categorySlug}`;
+
+  const jsonLd: Record<string, unknown>[] = [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: pageTitle,
+      description: pageDesc,
+      url: `https://www.gscartoes.com${canonical}`,
+    },
+  ];
+  if (content?.faqs?.length) {
+    jsonLd.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: content.faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    });
+  }
 
   return (
     <div className="min-h-screen bg-background">
@@ -341,13 +366,7 @@ const CategoryPage = () => {
         <meta property="og:description" content={pageDesc} />
         <meta property="og:url" content={canonical} />
         <meta property="og:type" content="website" />
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "CollectionPage",
-          name: pageTitle,
-          description: pageDesc,
-          url: `https://www.gscartoes.com${canonical}`,
-        })}</script>
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
       <Navbar />
 
@@ -380,6 +399,19 @@ const CategoryPage = () => {
             </p>
           </div>
 
+          {/* SEO intro */}
+          {content?.intro && content.intro.length > 0 && (
+            <section className="mb-14 max-w-3xl">
+              <div className="space-y-4">
+                {content.intro.map((p, i) => (
+                  <p key={i} className="text-muted-foreground font-body leading-relaxed">
+                    {p}
+                  </p>
+                ))}
+              </div>
+            </section>
+          )}
+
           {/* Products */}
           {categoryProducts.length === 0 ? (
             <div className="text-center py-20 text-muted-foreground font-body">
@@ -394,6 +426,28 @@ const CategoryPage = () => {
               ))}
             </div>
           )}
+
+          {/* FAQ */}
+          {content?.faqs && content.faqs.length > 0 && (
+            <section className="mt-16 max-w-3xl">
+              <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-6">
+                Perguntas frequentes sobre {categoryName}
+              </h2>
+              <div className="space-y-5">
+                {content.faqs.map((f, i) => (
+                  <div key={i} className="border-b border-border/60 pb-5">
+                    <h3 className="font-display font-semibold text-lg text-foreground mb-2">
+                      {f.q}
+                    </h3>
+                    <p className="text-muted-foreground font-body leading-relaxed">
+                      {f.a}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
 
 
           <div className="flex justify-center mt-8">
