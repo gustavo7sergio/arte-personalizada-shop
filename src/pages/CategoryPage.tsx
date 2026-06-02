@@ -310,18 +310,6 @@ const CategoryPage = () => {
 
   const categoryName = slugToCategory[categorySlug ?? ""] ?? categorySlug;
 
-  const slugToDisplayName: Record<string, string> = {
-    "tags-de-acessorios": "Tags Personalizadas para Semijoias",
-    cartoes: "Cartões Personalizados para Semijoias",
-    sacolinhas: "Sacolinhas Personalizadas para Semijoias",
-    adesivos: "Adesivos Personalizados para Semijoias",
-    "tags-de-lacos-e-tiaras": "Tags de Laços e Tiaras Personalizadas",
-    "etiquetas-de-roupas": "Etiquetas de Roupas Personalizadas",
-    kits: "Kits de Tags para Semijoias",
-    outros: "Papelaria Personalizada",
-  };
-  const displayName = slugToDisplayName[categorySlug ?? ""] ?? categoryName;
-  // Group similar products together by base name
   const getGroupKey = (name: string) => {
     const lower = name.toLowerCase();
     if (lower.includes("trio") && lower.includes("colar")) return "05-trio-brincos-colar";
@@ -396,19 +384,7 @@ const CategoryPage = () => {
           {/* Header */}
           <div className="mb-4">
             <h1 className="text-3xl md:text-5xl font-display font-bold text-foreground">
-              {(() => {
-                const parts = displayName.split(/ (Personalizadas?|Personalizada) /);
-                if (parts.length === 3) {
-                  return (
-                    <>
-                      {parts[0]}{" "}
-                      <span style={{ color: "hsl(var(--rose))" }}>{parts[1]}</span>{" "}
-                      {parts[2]}
-                    </>
-                  );
-                }
-                return displayName;
-              })()}
+              {categoryName}
             </h1>
           </div>
 
