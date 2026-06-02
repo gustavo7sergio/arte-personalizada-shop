@@ -382,7 +382,7 @@ const CategoryPage = () => {
           </Link>
 
           {/* Header */}
-          <div className="mb-12">
+          <div className="mb-6">
             <h1 className="text-3xl md:text-5xl font-display font-bold text-foreground">
               {categoryName}{" "}
               {categoryName !== "Outros" && (
