@@ -375,14 +375,14 @@ const CategoryPage = () => {
           {/* Breadcrumb */}
           <Link
             to="/"
-            className="inline-flex items-center gap-2 text-sm font-body font-bold text-muted-foreground hover:text-foreground transition-colors mb-8 group"
+            className="inline-flex items-center gap-2 text-sm font-body font-bold text-muted-foreground hover:text-foreground transition-colors mb-3 group"
           >
             <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
             Voltar a home
           </Link>
 
           {/* Header */}
-          <div className="mb-6">
+          <div className="mb-4">
             <h1 className="text-3xl md:text-5xl font-display font-bold text-foreground">
               {categoryName}{" "}
               {categoryName !== "Outros" && (
@@ -395,7 +395,7 @@ const CategoryPage = () => {
 
           {/* SEO intro */}
           {content?.intro && content.intro.length > 0 && (
-            <section className="mb-14 max-w-3xl">
+            <section className="mb-6 max-w-3xl">
               <div className="space-y-4">
                 {content.intro.map((p, i) => (
                   <p key={i} className="text-muted-foreground font-body leading-relaxed">
