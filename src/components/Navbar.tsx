@@ -6,14 +6,14 @@ import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/logo-green.png";
 
 const categoryLinks: { name: string; slug: string; isPage?: boolean }[] = [
-  { name: "Tags para Semijoias", slug: "tags-de-acessorios" },
-  { name: "Sacolinhas", slug: "sacolinhas" },
-  { name: "Cartões", slug: "cartoes" },
-  { name: "Adesivos", slug: "adesivos" },
-  { name: "Tags de Laços e Tiaras", slug: "tags-de-lacos-e-tiaras" },
-  { name: "Etiquetas de roupas", slug: "etiquetas-de-roupas" },
-  { name: "Kits de tags", slug: "kits" },
-  { name: "Papelaria", slug: "outros" },
+  { name: "Tags para Semijoias", slug: "tags-personalizadas-para-semijoias" },
+  { name: "Sacolinhas", slug: "sacolinhas-personalizadas-para-semijoias" },
+  { name: "Cartões", slug: "cartoes-personalizados-para-semijoias" },
+  { name: "Adesivos", slug: "adesivos-personalizados-para-semijoias" },
+  { name: "Tags de Laços e Tiaras", slug: "tags-personalizadas-para-lacos-e-tiaras" },
+  { name: "Etiquetas de roupas", slug: "etiquetas-personalizadas-para-roupas" },
+  { name: "Kits de tags", slug: "kits-de-tags-para-semijoias" },
+  { name: "Papelaria", slug: "papelaria-personalizada" },
   { name: "✨ Criação de Logo", slug: "criacao-de-logo", isPage: true },
 ];
 
