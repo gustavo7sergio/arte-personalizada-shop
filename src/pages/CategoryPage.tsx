@@ -396,12 +396,19 @@ const CategoryPage = () => {
           {/* Header */}
           <div className="mb-4">
             <h1 className="text-3xl md:text-5xl font-display font-bold text-foreground">
-              {categoryName}{" "}
-              {categoryName !== "Outros" && (
-                <span style={{ color: "hsl(var(--rose))" }}>
-                  {" "}{["Sacolinhas", "Etiquetas de Roupas", "Tags de Acessórios", "Tags de Laços e Tiaras"].includes(categoryName) ? "Personalizadas" : "Personalizados"}
-                </span>
-              )}
+              {(() => {
+                const parts = displayName.split(/ (Personalizadas?|Personalizada) /);
+                if (parts.length === 3) {
+                  return (
+                    <>
+                      {parts[0]}{" "}
+                      <span style={{ color: "hsl(var(--rose))" }}>{parts[1]}</span>{" "}
+                      {parts[2]}
+                    </>
+                  );
+                }
+                return displayName;
+              })()}
             </h1>
           </div>
 
