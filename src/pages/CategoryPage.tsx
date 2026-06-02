@@ -298,17 +298,29 @@ const CategoryPage = () => {
   const { categorySlug } = useParams<{ categorySlug: string }>();
 
   const slugToCategory: Record<string, string> = {
-    "tags-de-acessorios": "Tags de Acessórios",
-    cartoes: "Cartões",
-    sacolinhas: "Sacolinhas",
-    adesivos: "Adesivos",
-    "tags-de-lacos-e-tiaras": "Tags de Laços e Tiaras",
-    "etiquetas-de-roupas": "Etiquetas de Roupas",
-    kits: "Kits",
-    outros: "Outros",
+    "tags-personalizadas-para-semijoias": "Tags de Acessórios",
+    "cartoes-personalizados-para-semijoias": "Cartões",
+    "sacolinhas-personalizadas-para-semijoias": "Sacolinhas",
+    "adesivos-personalizados-para-semijoias": "Adesivos",
+    "tags-personalizadas-para-lacos-e-tiaras": "Tags de Laços e Tiaras",
+    "etiquetas-personalizadas-para-roupas": "Etiquetas de Roupas",
+    "kits-de-tags-para-semijoias": "Kits",
+    "papelaria-personalizada": "Outros",
+  };
+
+  const slugToDisplayName: Record<string, string> = {
+    "tags-personalizadas-para-semijoias": "Tags Personalizadas para Semijoias",
+    "cartoes-personalizados-para-semijoias": "Cartões Personalizados para Semijoias",
+    "sacolinhas-personalizadas-para-semijoias": "Sacolinhas Personalizadas para Semijoias",
+    "adesivos-personalizados-para-semijoias": "Adesivos Personalizados para Semijoias",
+    "tags-personalizadas-para-lacos-e-tiaras": "Tags Personalizadas para Laços e Tiaras",
+    "etiquetas-personalizadas-para-roupas": "Etiquetas Personalizadas para Roupas",
+    "kits-de-tags-para-semijoias": "Kits de Tags para Semijoias",
+    "papelaria-personalizada": "Papelaria Personalizada",
   };
 
   const categoryName = slugToCategory[categorySlug ?? ""] ?? categorySlug;
+  const displayName = slugToDisplayName[categorySlug ?? ""] ?? categoryName;
 
   const getGroupKey = (name: string) => {
     const lower = name.toLowerCase();
@@ -329,11 +341,12 @@ const CategoryPage = () => {
     .sort((a, b) => getGroupKey(a.name).localeCompare(getGroupKey(b.name)));
 
   const content = categoryContent[categorySlug ?? ""];
-  const pageTitle = content?.seoTitle ?? `${categoryName} Personalizados — GS Cartões`;
+  const pageTitle = content?.seoTitle ?? `${displayName} | GS Cartões`;
   const pageDesc =
     content?.seoDescription ??
-    `Tabela de preços de ${categoryName?.toLowerCase()} personalizados com sua marca. Envio para todo o Brasil.`;
+    `Tabela de preços de ${displayName?.toLowerCase()} com sua marca. Envio para todo o Brasil.`;
   const canonical = `/categoria/${categorySlug}`;
+
 
   const jsonLd: Record<string, unknown>[] = [
     {
