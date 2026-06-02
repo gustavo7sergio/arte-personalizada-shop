@@ -12,6 +12,7 @@ import ImageZoom from "@/components/ImageZoom";
 import ProductImage from "@/components/ProductImage";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { categoryContent } from "@/data/categoryContent";
 
 const formatCurrency = (value: number) =>
   value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
