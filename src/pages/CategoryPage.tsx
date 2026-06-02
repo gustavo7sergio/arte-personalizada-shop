@@ -397,7 +397,7 @@ const CategoryPage = () => {
           {/* Header */}
           <div className="mb-4">
             <h1 className="text-3xl md:text-5xl font-display font-bold text-foreground">
-              {categoryName}
+              {displayName}
             </h1>
           </div>
 
