@@ -384,19 +384,7 @@ const CategoryPage = () => {
           {/* Header */}
           <div className="mb-4">
             <h1 className="text-3xl md:text-5xl font-display font-bold text-foreground">
-              {(() => {
-                const parts = displayName.split(/ (Personalizadas?|Personalizada) /);
-                if (parts.length === 3) {
-                  return (
-                    <>
-                      {parts[0]}{" "}
-                      <span style={{ color: "hsl(var(--rose))" }}>{parts[1]}</span>{" "}
-                      {parts[2]}
-                    </>
-                  );
-                }
-                return displayName;
-              })()}
+              {categoryName}
             </h1>
           </div>
 
