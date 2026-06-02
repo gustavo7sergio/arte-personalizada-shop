@@ -11,6 +11,8 @@ const Hero = () => {
         <img
           src={heroImage}
           alt="Materiais gráficos personalizados GS Cartões"
+          width={1536}
+          height={1024}
           className="w-full h-full object-cover animate-ken-burns"
           fetchPriority="high"
           decoding="async"
