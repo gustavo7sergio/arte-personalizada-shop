@@ -11,14 +11,14 @@ import { ArrowUpRight } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const categories = [
-  { name: "Tags Personalizadas para Semijoias", description: "Tags de brincos, anéis, colares e mais", image: catTagsAcessorios, slug: "tags-de-acessorios" },
-  { name: "Sacolinhas Personalizadas para Semijoias", description: "Sacolinhas de papel, plástico e caixinhas", image: catSacolinhas, slug: "sacolinhas" },
-  { name: "Cartões Personalizados para Semijoias", description: "Cartões de visita, garantia, agradecimento e mais", image: catCartoes, slug: "cartoes" },
-  { name: "Adesivos Personalizados para Semijoias", description: "Adesivos personalizados para lacre e identificação", image: catAdesivos, slug: "adesivos" },
+  { name: "Tags para Semijoias", description: "Tags de brincos, anéis, colares e mais", image: catTagsAcessorios, slug: "tags-de-acessorios" },
+  { name: "Sacolinhas", description: "Sacolinhas de papel, plástico e caixinhas", image: catSacolinhas, slug: "sacolinhas" },
+  { name: "Cartões", description: "Cartões de visita, garantia, agradecimento e mais", image: catCartoes, slug: "cartoes" },
+  { name: "Adesivos", description: "Adesivos personalizados para lacre e identificação", image: catAdesivos, slug: "adesivos" },
   { name: "Tags de Laços e Tiaras", description: "Tags para laços, tiaras e acessórios de cabelo", image: catLacosTiaras, slug: "tags-de-lacos-e-tiaras" },
-  { name: "Etiquetas de Roupas", description: "Etiquetas personalizadas para roupas", image: catEtiquetasRoupas, slug: "etiquetas-de-roupas" },
-  { name: "Kits de Tags para Semijoias", description: "Kits completos de tags com diversos formatos", image: catKits, slug: "kits" },
-  { name: "Papelaria Personalizada", description: "Panfletos, banners, blocos de pedido e mais", image: catOutros, slug: "outros" },
+  { name: "Etiquetas de roupas", description: "Etiquetas personalizadas para roupas", image: catEtiquetasRoupas, slug: "etiquetas-de-roupas" },
+  { name: "Kits de tags", description: "Kits completos de tags com diversos formatos", image: catKits, slug: "kits" },
+  { name: "Papelaria", description: "Panfletos, banners, blocos de pedido e mais", image: catOutros, slug: "outros" },
 ];
 
 const Categories = () => {
