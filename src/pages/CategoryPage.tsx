@@ -309,6 +309,18 @@ const CategoryPage = () => {
   };
 
   const categoryName = slugToCategory[categorySlug ?? ""] ?? categorySlug;
+
+  const slugToDisplayName: Record<string, string> = {
+    "tags-de-acessorios": "Tags Personalizadas para Semijoias",
+    cartoes: "Cartões Personalizados para Semijoias",
+    sacolinhas: "Sacolinhas Personalizadas para Semijoias",
+    adesivos: "Adesivos Personalizados para Semijoias",
+    "tags-de-lacos-e-tiaras": "Tags de Laços e Tiaras Personalizadas",
+    "etiquetas-de-roupas": "Etiquetas de Roupas Personalizadas",
+    kits: "Kits de Tags para Semijoias",
+    outros: "Papelaria Personalizada",
+  };
+  const displayName = slugToDisplayName[categorySlug ?? ""] ?? categoryName;
   // Group similar products together by base name
   const getGroupKey = (name: string) => {
     const lower = name.toLowerCase();
