@@ -8,8 +8,8 @@ export type CategoryContent = {
 };
 
 export const categoryContent: Record<string, CategoryContent> = {
-  "tags-de-acessorios": {
-    seoTitle: "Tags de Acessórios Personalizadas para Semijoias — GS Cartões",
+  "tags-personalizadas-para-semijoias": {
+    seoTitle: "Tags Personalizadas para Semijoias | GS Cartões",
     seoDescription:
       "Tags personalizadas para brincos, anéis, colares e pulseiras de semijoias, prata e bijuterias. Modelos exclusivos com sua logo e envio para todo o Brasil.",
     intro: [
@@ -19,8 +19,8 @@ export const categoryContent: Record<string, CategoryContent> = {
     ],
     faqs: [],
   },
-  "sacolinhas": {
-    seoTitle: "Sacolinhas Personalizadas para Semijoias — GS Cartões",
+  "sacolinhas-personalizadas-para-semijoias": {
+    seoTitle: "Sacolinhas Personalizadas para Semijoias | GS Cartões",
     seoDescription:
       "Sacolinhas personalizadas para semijoias, prata e bijuterias. Arte com logo e identidade visual da sua marca. Envio para todo o Brasil.",
     intro: [
@@ -29,8 +29,8 @@ export const categoryContent: Record<string, CategoryContent> = {
     ],
     faqs: [],
   },
-  "cartoes": {
-    seoTitle: "Cartões Personalizados para Semijoias — GS Cartões",
+  "cartoes-personalizados-para-semijoias": {
+    seoTitle: "Cartões Personalizados para Semijoias | GS Cartões",
     seoDescription:
       "Cartões de visita, agradecimento, garantia e mais para semijoias e bijuterias. Personalizados com sua logo e identidade visual.",
     intro: [
@@ -39,8 +39,8 @@ export const categoryContent: Record<string, CategoryContent> = {
     ],
     faqs: [],
   },
-  "adesivos": {
-    seoTitle: "Adesivos Personalizados para Semijoias — GS Cartões",
+  "adesivos-personalizados-para-semijoias": {
+    seoTitle: "Adesivos Personalizados para Semijoias | GS Cartões",
     seoDescription:
       "Adesivos personalizados para embalagens, sacolas e caixas de semijoias e bijuterias. Com a identidade visual da sua marca.",
     intro: [
@@ -49,8 +49,8 @@ export const categoryContent: Record<string, CategoryContent> = {
     ],
     faqs: [],
   },
-  "etiquetas-de-roupas": {
-    seoTitle: "Etiquetas de Roupas Personalizadas — GS Cartões",
+  "etiquetas-personalizadas-para-roupas": {
+    seoTitle: "Etiquetas Personalizadas para Roupas | GS Cartões",
     seoDescription:
       "Etiquetas personalizadas para roupas com logo e identidade visual da sua marca. Mais profissionalismo para o seu negócio.",
     intro: [
@@ -59,8 +59,8 @@ export const categoryContent: Record<string, CategoryContent> = {
     ],
     faqs: [],
   },
-  "kits": {
-    seoTitle: "Kits de Tags Personalizadas para Semijoias — GS Cartões",
+  "kits-de-tags-para-semijoias": {
+    seoTitle: "Kits de Tags para Semijoias | GS Cartões",
     seoDescription:
       "Kits práticos com os principais modelos de tags para semijoias, prata e bijuterias. Personalizados com a sua marca e com preço vantajoso.",
     intro: [
@@ -68,6 +68,20 @@ export const categoryContent: Record<string, CategoryContent> = {
       "Com diferentes formatos para usar em brincos, colares, anéis, pulseiras e outros acessórios, os kits ajudam a manter uma apresentação mais organizada e profissional, além de oferecer um custo mais vantajoso do que adquirir cada modelo separadamente.",
       "Todos os modelos são personalizados com a identidade visual da sua marca.",
     ],
+    faqs: [],
+  },
+  "papelaria-personalizada": {
+    seoTitle: "Papelaria Personalizada | GS Cartões",
+    seoDescription:
+      "Papelaria personalizada com a identidade visual da sua marca: panfletos, banners, blocos de pedido e mais. Envio para todo o Brasil.",
+    intro: [],
+    faqs: [],
+  },
+  "tags-personalizadas-para-lacos-e-tiaras": {
+    seoTitle: "Tags Personalizadas para Laços e Tiaras | GS Cartões",
+    seoDescription:
+      "Tags personalizadas para laços, tiaras e acessórios de cabelo, com logo e identidade visual da sua marca.",
+    intro: [],
     faqs: [],
   },
 };

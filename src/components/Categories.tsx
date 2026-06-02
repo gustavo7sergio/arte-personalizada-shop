@@ -11,14 +11,14 @@ import { ArrowUpRight } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const categories = [
-  { name: "Tags para Semijoias", description: "Tags de brincos, anéis, colares e mais", image: catTagsAcessorios, slug: "tags-de-acessorios" },
-  { name: "Sacolinhas", description: "Sacolinhas de papel, plástico e caixinhas", image: catSacolinhas, slug: "sacolinhas" },
-  { name: "Cartões", description: "Cartões de visita, garantia, agradecimento e mais", image: catCartoes, slug: "cartoes" },
-  { name: "Adesivos", description: "Adesivos personalizados para lacre e identificação", image: catAdesivos, slug: "adesivos" },
-  { name: "Tags de Laços e Tiaras", description: "Tags para laços, tiaras e acessórios de cabelo", image: catLacosTiaras, slug: "tags-de-lacos-e-tiaras" },
-  { name: "Etiquetas de roupas", description: "Etiquetas personalizadas para roupas", image: catEtiquetasRoupas, slug: "etiquetas-de-roupas" },
-  { name: "Kits de tags", description: "Kits completos de tags com diversos formatos", image: catKits, slug: "kits" },
-  { name: "Papelaria", description: "Panfletos, banners, blocos de pedido e mais", image: catOutros, slug: "outros" },
+  { name: "Tags para Semijoias", description: "Tags de brincos, anéis, colares e mais", image: catTagsAcessorios, slug: "tags-personalizadas-para-semijoias" },
+  { name: "Sacolinhas", description: "Sacolinhas de papel, plástico e caixinhas", image: catSacolinhas, slug: "sacolinhas-personalizadas-para-semijoias" },
+  { name: "Cartões", description: "Cartões de visita, garantia, agradecimento e mais", image: catCartoes, slug: "cartoes-personalizados-para-semijoias" },
+  { name: "Adesivos", description: "Adesivos personalizados para lacre e identificação", image: catAdesivos, slug: "adesivos-personalizados-para-semijoias" },
+  { name: "Tags de Laços e Tiaras", description: "Tags para laços, tiaras e acessórios de cabelo", image: catLacosTiaras, slug: "tags-personalizadas-para-lacos-e-tiaras" },
+  { name: "Etiquetas de roupas", description: "Etiquetas personalizadas para roupas", image: catEtiquetasRoupas, slug: "etiquetas-personalizadas-para-roupas" },
+  { name: "Kits de tags", description: "Kits completos de tags com diversos formatos", image: catKits, slug: "kits-de-tags-para-semijoias" },
+  { name: "Papelaria", description: "Panfletos, banners, blocos de pedido e mais", image: catOutros, slug: "papelaria-personalizada" },
 ];
 
 const Categories = () => {
