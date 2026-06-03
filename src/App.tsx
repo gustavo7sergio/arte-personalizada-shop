@@ -9,6 +9,7 @@ import FloatingCartButton from "@/components/FloatingCartButton";
 import Index from "./pages/Index";
 import ScrollToTop from "@/components/ScrollToTop";
 import CategoryPage from "./pages/CategoryPage";
+import ProductPage from "./pages/ProductPage";
 import CriacaoLogo from "./pages/CriacaoLogo";
 import NotFound from "./pages/NotFound";
 
@@ -27,6 +28,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/categoria/:categorySlug" element={<CategoryPage />} />
+            <Route path="/produto/:productSlug" element={<ProductPage />} />
             {/* 301-equivalent redirects from old slugs to new SEO-optimized slugs */}
             <Route path="/categoria/tags-de-acessorios" element={<Navigate to="/categoria/tags-personalizadas-para-semijoias" replace />} />
             <Route path="/categoria/sacolinhas" element={<Navigate to="/categoria/sacolinhas-personalizadas-para-semijoias" replace />} />
