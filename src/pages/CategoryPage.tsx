@@ -1,9 +1,10 @@
 import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { ArrowLeft, ChevronDown, ChevronUp, ChevronLeft, ChevronRight, MessageCircle, Package, Tag, CreditCard, ShoppingCart, Search } from "lucide-react";
+import { ArrowLeft, ChevronDown, ChevronUp, ChevronLeft, ChevronRight, MessageCircle, Package, Tag, CreditCard, ShoppingCart, Search, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { products, type Product } from "@/data/products";
 import { productImages } from "@/data/productImages";
+import { productPageByProductId } from "@/data/productPages";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/contexts/CartContext";
