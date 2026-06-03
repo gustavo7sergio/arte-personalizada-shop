@@ -169,128 +169,147 @@ function ProductCard({ product }: { product: Product }) {
   const images = Array.isArray(rawImage) ? rawImage : rawImage ? [rawImage] : [];
   const image = images[imageIndex] || images[0];
 
-  return (
-    <div className="bg-card rounded-2xl border border-border overflow-hidden shadow-card hover:shadow-hover transition-shadow duration-300">
-      {image && (
+  const pilotPage = productPageByProductId(product.id);
+
+  // "A partir de" — menor preço cash > 0
+  const minCash = Math.min(
+    ...product.variants.flatMap((v) => v.prices.map((r) => r.cash)).filter((n) => n > 0)
+  );
+  const hasPrice = Number.isFinite(minCash);
+
+  const mainDimension =
+    product.variants[0]?.dimensions ?? product.variants[0]?.label ?? product.subtitle;
+
+  const CardImage = (
+    <div className="aspect-[4/3] overflow-hidden bg-muted/20 relative group">
+      <ProductImage
+        src={image}
+        alt={product.name + (product.subtitle ? " – " + product.subtitle : "")}
+        className="w-full h-full object-contain p-4"
+      />
+      {!pilotPage && images.length > 1 && (
         <>
-          <div
-            className="aspect-[4/3] overflow-hidden bg-muted/20 cursor-pointer relative group"
-            onClick={() => setZoomOpen(true)}
+          <button
+            onClick={(e) => { e.preventDefault(); e.stopPropagation(); setImageIndex((p) => (p - 1 + images.length) % images.length); }}
+            aria-label="Imagem anterior"
+            className="absolute left-2 top-1/2 -translate-y-1/2 bg-card/80 backdrop-blur-sm rounded-full p-1.5 shadow-sm hover:bg-card transition-colors"
           >
-            <ProductImage
-              src={image}
-              alt={product.name + (product.subtitle ? " – " + product.subtitle : "")}
-              className="w-full h-full object-contain p-4"
-            />
-            <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/5 transition-colors flex items-center justify-center">
-              <div className="bg-card/80 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                <Search className="h-5 w-5 text-foreground" />
-              </div>
-            </div>
-            {images.length > 1 && (
-              <>
-                <button
-                  onClick={(e) => { e.stopPropagation(); setImageIndex((prev) => (prev - 1 + images.length) % images.length); }}
-                  aria-label="Imagem anterior"
-                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-card/80 backdrop-blur-sm rounded-full p-1.5 shadow-sm hover:bg-card transition-colors"
-                >
-                  <ChevronLeft className="h-4 w-4 text-foreground" />
-                </button>
-                <button
-                  onClick={(e) => { e.stopPropagation(); setImageIndex((prev) => (prev + 1) % images.length); }}
-                  aria-label="Próxima imagem"
-                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-card/80 backdrop-blur-sm rounded-full p-1.5 shadow-sm hover:bg-card transition-colors"
-                >
-                  <ChevronRight className="h-4 w-4 text-foreground" />
-                </button>
-                <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
-                  {images.map((_, i) => (
-                    <button
-                      key={i}
-                      onClick={(e) => { e.stopPropagation(); setImageIndex(i); }}
-                      aria-label={`Ir para imagem ${i + 1}`}
-                      className={cn(
-                        "w-2 h-2 rounded-full transition-colors",
-                        i === imageIndex ? "bg-primary" : "bg-foreground/20"
-                      )}
-                    />
-                  ))}
-                </div>
-              </>
-            )}
-          </div>
-          <ImageZoom
-            src={image}
-            alt={product.name + (product.subtitle ? " – " + product.subtitle : "")}
-            open={zoomOpen}
-            onOpenChange={setZoomOpen}
-          />
+            <ChevronLeft className="h-4 w-4 text-foreground" />
+          </button>
+          <button
+            onClick={(e) => { e.preventDefault(); e.stopPropagation(); setImageIndex((p) => (p + 1) % images.length); }}
+            aria-label="Próxima imagem"
+            className="absolute right-2 top-1/2 -translate-y-1/2 bg-card/80 backdrop-blur-sm rounded-full p-1.5 shadow-sm hover:bg-card transition-colors"
+          >
+            <ChevronRight className="h-4 w-4 text-foreground" />
+          </button>
         </>
       )}
-      <div className="p-6 pb-4">
-        <div className="flex items-start justify-between gap-3 mb-3">
-          <div>
-            <h3 className="font-display font-semibold text-lg text-foreground leading-tight">
-              {product.name}
+    </div>
+  );
+
+  const displayName = pilotPage?.displayName ?? product.name;
+
+  return (
+    <div className="bg-card rounded-2xl border border-border overflow-hidden shadow-card hover:shadow-hover transition-shadow duration-300 flex flex-col">
+      {image && (
+        pilotPage ? (
+          <Link to={`/produto/${pilotPage.slug}`} aria-label={`Ver ${displayName}`}>
+            {CardImage}
+          </Link>
+        ) : (
+          <>
+            <div className="cursor-zoom-in" onClick={() => setZoomOpen(true)}>{CardImage}</div>
+            <ImageZoom
+              src={image}
+              alt={product.name + (product.subtitle ? " – " + product.subtitle : "")}
+              open={zoomOpen}
+              onOpenChange={setZoomOpen}
+            />
+          </>
+        )
+      )}
+
+      <div className="p-5 flex flex-col gap-3 flex-1">
+        <div className="flex items-start justify-between gap-2">
+          <div className="min-w-0">
+            <h3 className="font-display font-semibold text-base md:text-lg text-foreground leading-tight">
+              {pilotPage ? (
+                <Link to={`/produto/${pilotPage.slug}`} className="hover:text-primary transition-colors">
+                  {displayName}
+                </Link>
+              ) : (
+                displayName
+              )}
             </h3>
-            {product.subtitle && (
-              <span className="text-sm font-body text-primary font-medium">
-                {product.subtitle}
-              </span>
+            {mainDimension && (
+              <p className="text-xs font-body text-muted-foreground mt-0.5">{mainDimension}</p>
             )}
           </div>
-          <div className="flex flex-col gap-1 shrink-0">
-            <span className="bg-primary/10 text-primary text-[10px] font-body font-bold px-2 py-0.5 rounded-full whitespace-nowrap">
-              10% PIX
-            </span>
-            <span className="bg-accent text-accent-foreground text-[10px] font-body font-bold px-2 py-0.5 rounded-full whitespace-nowrap">
-              6x s/ juros
-            </span>
-          </div>
+          <span className="bg-primary/10 text-primary text-[10px] font-body font-bold px-2 py-0.5 rounded-full whitespace-nowrap shrink-0">
+            10% PIX
+          </span>
         </div>
-        
+
+        {hasPrice && (
+          <div>
+            <p className="text-[11px] font-body text-muted-foreground uppercase tracking-wider">A partir de</p>
+            <p className="text-xl font-display font-bold text-primary leading-tight">{formatCurrency(minCash)}</p>
+          </div>
+        )}
+
+        {pilotPage ? (
+          <Button asChild className="w-full rounded-full bg-primary hover:bg-primary/90 text-primary-foreground font-body gap-2 mt-auto">
+            <Link to={`/produto/${pilotPage.slug}`}>
+              Ver produto
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </Button>
+        ) : (
+          <Button
+            onClick={() => setExpanded((e) => !e)}
+            variant={expanded ? "outline" : "default"}
+            className={cn(
+              "w-full rounded-full font-body gap-2 mt-auto",
+              !expanded && "bg-primary hover:bg-primary/90 text-primary-foreground"
+            )}
+          >
+            {expanded ? (
+              <>Recolher <ChevronUp className="h-4 w-4" /></>
+            ) : (
+              <>Ver opções e comprar <ChevronDown className="h-4 w-4" /></>
+            )}
+          </Button>
+        )}
       </div>
 
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className="w-full px-6 py-2 flex items-center justify-between text-xs font-body text-muted-foreground hover:text-foreground bg-muted/30 border-y border-border/50 transition-colors"
-      >
-        <span>Ver especificações</span>
-        {expanded ? <ChevronUp className="h-3.5 w-3.5" /> : <ChevronDown className="h-3.5 w-3.5" />}
-      </button>
-
-      {expanded && (
-        <div className="px-6 py-4 bg-accent/20 border-b border-border/50 space-y-3">
+      {!pilotPage && expanded && (
+        <div className="px-5 pb-5 pt-1 border-t border-border/60 space-y-4 bg-accent/10">
           <div>
-            <p className="text-xs font-body font-semibold text-foreground mb-1">Informações:</p>
+            <p className="text-xs font-body font-semibold text-foreground mb-1 mt-3">Informações:</p>
             <ul className="space-y-0.5">
               {product.specs.map((s, i) => (
                 <li key={i} className="text-xs font-body text-muted-foreground flex gap-1.5">
-                  <span className="text-primary mt-0.5">•</span>
-                  {s}
+                  <span className="text-primary mt-0.5">•</span>{s}
                 </li>
               ))}
             </ul>
+            {product.additionals && product.additionals.length > 0 && (
+              <>
+                <p className="text-xs font-body font-semibold text-foreground mb-1 mt-3">Adicionais:</p>
+                <ul className="space-y-0.5">
+                  {product.additionals.map((a, i) => (
+                    <li key={i} className="text-xs font-body text-muted-foreground flex gap-1.5">
+                      <span className="text-primary mt-0.5">+</span>{a}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
-          {product.additionals && product.additionals.length > 0 && (
-            <div>
-              <p className="text-xs font-body font-semibold text-foreground mb-1">Adicionais:</p>
-              <ul className="space-y-0.5">
-                {product.additionals.map((a, i) => (
-                  <li key={i} className="text-xs font-body text-muted-foreground flex gap-1.5">
-                    <span className="text-primary mt-0.5">+</span>
-                    {a}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
+          <PriceSelector product={product} image={image} />
         </div>
       )}
-
-      <div className="p-6">
-        <PriceSelector product={product} image={image} />
-      </div>
     </div>
   );
 }
