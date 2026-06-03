@@ -358,6 +358,12 @@ const CategoryPage = () => {
 
   const categoryProducts = products
     .filter((p) => p.category === categoryName)
+    .filter((p) => {
+      // Dedupe: piloto pages consolidam vários produtos em uma única página.
+      // Mantém apenas o primeiro id (representante) para não duplicar o card.
+      const page = productPageByProductId(p.id);
+      return !page || page.productIds[0] === p.id;
+    })
     .sort((a, b) => getGroupKey(a.name).localeCompare(getGroupKey(b.name)));
 
   const content = categoryContent[categorySlug ?? ""];
