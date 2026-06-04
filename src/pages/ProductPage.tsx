@@ -132,6 +132,16 @@ const ProductPage = () => {
     ],
   };
 
+  const faqJsonLd = config.faqs && config.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: config.faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  } : null;
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
@@ -145,7 +155,9 @@ const ProductPage = () => {
         {heroImage && <meta property="og:image" content={`https://www.gscartoes.com${heroImage}`} />}
         <script type="application/ld+json">{JSON.stringify(productJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbJsonLd)}</script>
+        {faqJsonLd && <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>}
       </Helmet>
+
 
       <Navbar />
 
