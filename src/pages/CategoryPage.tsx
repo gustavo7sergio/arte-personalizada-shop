@@ -177,8 +177,10 @@ function ProductCard({ product }: { product: Product }) {
   );
   const hasPrice = Number.isFinite(minCash);
 
-  const mainDimension =
+  const rawDimension =
     product.variants[0]?.dimensions ?? product.variants[0]?.label ?? product.subtitle;
+  const mainDimension = rawDimension ? rawDimension.replace(/×/g, "x") : rawDimension;
+
 
   const CardImage = (
     <div className="aspect-[4/3] overflow-hidden bg-muted/20 relative group">
