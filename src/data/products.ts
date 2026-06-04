@@ -233,7 +233,7 @@ export const products: Product[] = [
   {
     id: "tag-brincos-g",
     name: "Tag de Brincos",
-    subtitle: "Tamanho G – 6 × 6 cm",
+    subtitle: "6 × 6 cm",
     category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
@@ -644,7 +644,7 @@ export const products: Product[] = [
   {
     id: "mini-tag-brincos-p",
     name: "Mini Tag de Brincos",
-    subtitle: "Tamanho P – 4,8 × 4,25 cm",
+    subtitle: "4,8 × 4,25 cm",
     category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
@@ -672,7 +672,7 @@ export const products: Product[] = [
   {
     id: "tag-brincos-p",
     name: "Tag de Brincos",
-    subtitle: "Tamanho P – 4 × 2,5 cm",
+    subtitle: "4 × 2,5 cm",
     category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
@@ -703,7 +703,7 @@ export const products: Product[] = [
   {
     id: "tag-brincos-m",
     name: "Tag de Brincos",
-    subtitle: "Tamanho M – 8,8 × 4,8 cm",
+    subtitle: "8,8 × 4,8 cm",
     category: "Tags de Acessórios",
     material: "Papel couchê 250g",
     specs: [
