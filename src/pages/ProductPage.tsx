@@ -33,16 +33,20 @@ const ProductPage = () => {
     [config]
   );
 
+  const normalizeX = (s?: string) => (s ? s.replace(/×/g, "x") : s);
+
   const flatVariants: FlatVariant[] = useMemo(() => {
     const arr: FlatVariant[] = [];
     sourceProducts.forEach((p) => {
       p.variants.forEach((v, i) => {
         const subtitleLabel = p.subtitle && sourceProducts.length > 1 ? p.subtitle : v.label;
-        arr.push({ product: p, variantIndex: i, label: subtitleLabel, dimensions: v.dimensions });
+        arr.push({ product: p, variantIndex: i, label: normalizeX(subtitleLabel) || "", dimensions: normalizeX(v.dimensions) });
       });
     });
     return arr;
   }, [sourceProducts]);
+
+
 
   const [activeFlat, setActiveFlat] = useState(0);
   const [selectedQtyIndex, setSelectedQtyIndex] = useState(0);
@@ -128,6 +132,16 @@ const ProductPage = () => {
     ],
   };
 
+  const faqJsonLd = config.faqs && config.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: config.faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  } : null;
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
@@ -141,7 +155,9 @@ const ProductPage = () => {
         {heroImage && <meta property="og:image" content={`https://www.gscartoes.com${heroImage}`} />}
         <script type="application/ld+json">{JSON.stringify(productJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbJsonLd)}</script>
+        {faqJsonLd && <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>}
       </Helmet>
+
 
       <Navbar />
 
@@ -350,9 +366,12 @@ const ProductPage = () => {
                   <ul className="space-y-1">
                     {specs.map((s, i) => (
                       <li key={i} className="text-xs font-body text-muted-foreground flex gap-1.5">
-                        <span className="text-primary mt-0.5">•</span>{s}
+                        <span className="text-primary mt-0.5">•</span>{s.replace(/×/g, "x")}
                       </li>
                     ))}
+                    <li className="text-xs font-body text-muted-foreground flex gap-1.5">
+                      <span className="text-primary mt-0.5">•</span>Prazo de produção: 5 a 6 dias úteis após aprovação da arte
+                    </li>
                   </ul>
                 </div>
                 {additionals && additionals.length > 0 && (
@@ -361,7 +380,7 @@ const ProductPage = () => {
                     <ul className="space-y-1">
                       {additionals.map((a, i) => (
                         <li key={i} className="text-xs font-body text-muted-foreground flex gap-1.5">
-                          <span className="text-primary mt-0.5">+</span>{a}
+                          <span className="text-primary mt-0.5">+</span>{a.replace(/×/g, "x")}
                         </li>
                       ))}
                     </ul>
@@ -370,23 +389,23 @@ const ProductPage = () => {
                 )}
               </div>
 
-              {/* FAQ rápido */}
-              <div className="pt-4 space-y-3">
-                <h2 className="text-lg font-display font-semibold text-foreground">Dúvidas frequentes</h2>
-                <details className="border-b border-border/60 pb-3">
-                  <summary className="cursor-pointer text-sm font-body font-medium text-foreground">Qual o prazo de produção?</summary>
-                  <p className="text-sm font-body text-muted-foreground mt-2">O prazo médio é de 10 dias úteis após aprovação da arte, podendo variar conforme a fila de produção.</p>
-                </details>
-                <details className="border-b border-border/60 pb-3">
-                  <summary className="cursor-pointer text-sm font-body font-medium text-foreground">Vocês criam a arte da tag?</summary>
-                  <p className="text-sm font-body text-muted-foreground mt-2">Sim. Trabalhamos com criação de arte 100% personalizada para a sua marca. Atendimento e orçamento pelo WhatsApp.</p>
-                </details>
-                <details className="border-b border-border/60 pb-3">
-                  <summary className="cursor-pointer text-sm font-body font-medium text-foreground">Como funciona o pagamento?</summary>
-                  <p className="text-sm font-body text-muted-foreground mt-2">10% de desconto no PIX/à vista ou em até 6x sem juros no cartão. Finalização do pedido via WhatsApp oficial.</p>
-                </details>
-              </div>
+              {/* FAQ */}
+              {config.faqs && config.faqs.length > 0 && (
+                <div className="pt-6 space-y-3">
+                  <h2 className="text-xl font-display font-semibold text-foreground">Dúvidas frequentes</h2>
+                  {config.faqs.map((f, i) => (
+                    <details key={i} className="group border-b border-border/60 pb-3">
+                      <summary className="cursor-pointer text-sm font-body font-medium text-foreground flex items-start justify-between gap-3 list-none">
+                        <span>{f.q}</span>
+                        <ChevronRightIcon className="h-4 w-4 mt-0.5 shrink-0 transition-transform group-open:rotate-90 text-muted-foreground" />
+                      </summary>
+                      <p className="text-sm font-body text-muted-foreground mt-2 leading-relaxed">{f.a}</p>
+                    </details>
+                  ))}
+                </div>
+              )}
             </div>
+
           </div>
         </div>
       </div>
