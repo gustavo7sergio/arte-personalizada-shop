@@ -33,16 +33,20 @@ const ProductPage = () => {
     [config]
   );
 
+  const normalizeX = (s?: string) => (s ? s.replace(/×/g, "x") : s);
+
   const flatVariants: FlatVariant[] = useMemo(() => {
     const arr: FlatVariant[] = [];
     sourceProducts.forEach((p) => {
       p.variants.forEach((v, i) => {
         const subtitleLabel = p.subtitle && sourceProducts.length > 1 ? p.subtitle : v.label;
-        arr.push({ product: p, variantIndex: i, label: subtitleLabel, dimensions: v.dimensions });
+        arr.push({ product: p, variantIndex: i, label: normalizeX(subtitleLabel) || "", dimensions: normalizeX(v.dimensions) });
       });
     });
     return arr;
   }, [sourceProducts]);
+
+
 
   const [activeFlat, setActiveFlat] = useState(0);
   const [selectedQtyIndex, setSelectedQtyIndex] = useState(0);
