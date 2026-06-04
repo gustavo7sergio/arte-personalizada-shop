@@ -1,7 +1,5 @@
-// Piloto: páginas individuais de produto. Mapeia slug → produtos do catálogo + SEO.
-// Cada entrada vira uma rota /produto/:slug. Para os primeiros produtos do piloto,
-// múltiplos produtos do catálogo (mesmas linhas com tamanhos diferentes) podem ser
-// agrupados em uma única página — cada um se torna uma variante na ProductPage.
+// Páginas individuais de produto. Cada slug mapeia para 1 produto do catálogo
+// (sem consolidar tamanhos visualmente diferentes na mesma URL) + metadados de SEO.
 
 export interface ProductPageConfig {
   slug: string;
@@ -16,31 +14,45 @@ export interface ProductPageConfig {
 
 export const productPages: ProductPageConfig[] = [
   {
-    slug: "tag-de-brincos-personalizada",
-    productIds: ["tag-brincos-p", "tag-brincos-m", "tag-brincos-g"],
-    displayName: "Tag de Brincos Personalizada",
+    slug: "mini-tag-de-brincos-personalizada-4-8x4-25-cm",
+    productIds: ["mini-tag-brincos-p"],
+    displayName: "Mini Tag de Brincos Personalizada 4,8 × 4,25 cm",
     categorySlug: "tags-personalizadas-para-semijoias",
     categoryLabel: "Tags para Semijoias",
-    seoTitle: "Tag de Brincos Personalizada para Semijoias | GS Cartões",
+    seoTitle: "Mini Tag de Brincos Personalizada 4,8 × 4,25 cm | GS Cartões",
     seoDescription:
-      "Tag de Brincos personalizada nos tamanhos P, M e G. Papel couchê 250g, frente e verso coloridos, brilho total e formato sob medida para a sua marca.",
+      "Mini Tag de Brincos personalizada 4,8 × 4,25 cm em papel couchê 250g, frente e verso coloridos com brilho total. Ideal para acompanhar pares delicados de brincos.",
     longDescription: [
-      "A Tag de Brincos personalizada da GS Cartões é desenvolvida sob medida para valorizar suas semijoias, em três tamanhos (P, M e G) com layout exclusivo da sua marca.",
-      "Impressa em papel couchê 250g de alta qualidade, com frente e verso coloridos e brilho total na frente. Possibilidade de acabamentos adicionais como verniz localizado e papel 300g sob orçamento.",
+      "A Mini Tag de Brincos Personalizada 4,8 × 4,25 cm da GS Cartões é a opção compacta para acompanhar pares delicados de semijoias, sem competir visualmente com a peça.",
+      "Impressa em papel couchê 250g, frente e verso coloridos e brilho total na frente. Acabamentos adicionais (papel 300g e verniz localizado) disponíveis sob consulta.",
     ],
   },
   {
-    slug: "mini-tag-de-brincos-personalizada",
-    productIds: ["mini-tag-brincos-p"],
-    displayName: "Mini Tag de Brincos Personalizada",
+    slug: "tag-de-brincos-personalizada-4x2-5-cm",
+    productIds: ["tag-brincos-p"],
+    displayName: "Tag de Brincos Personalizada 4 × 2,5 cm",
     categorySlug: "tags-personalizadas-para-semijoias",
     categoryLabel: "Tags para Semijoias",
-    seoTitle: "Mini Tag de Brincos Personalizada para Semijoias | GS Cartões",
+    seoTitle: "Tag de Brincos Personalizada 4 × 2,5 cm | GS Cartões",
     seoDescription:
-      "Mini Tag de Brincos personalizada 4,8 × 4,25 cm. Papel couchê 250g, frente e verso coloridos com brilho total. Ideal para acompanhar pares delicados de brincos.",
+      "Tag de Brincos personalizada 4 × 2,5 cm em papel couchê 250g, frente e verso coloridos com brilho total. Formato slim para identificar brincos da sua marca de semijoias.",
     longDescription: [
-      "A Mini Tag de Brincos da GS Cartões é a opção compacta (4,8 × 4,25 cm) para acompanhar pares delicados, sem competir com a peça.",
-      "Impressa em papel couchê 250g, frente e verso coloridos e brilho total na frente. Acabamentos adicionais (papel 300g e verniz localizado) disponíveis sob consulta.",
+      "A Tag de Brincos Personalizada 4 × 2,5 cm é o formato slim ideal para identificar brincos sem ocupar muito espaço na embalagem.",
+      "Impressa em papel couchê 250g, frente e verso coloridos com brilho total na frente. Furo de pendurar, cortes especiais, papel couchê 300g e verniz localizado disponíveis sob orçamento.",
+    ],
+  },
+  {
+    slug: "tag-de-brincos-personalizada-6x6-cm",
+    productIds: ["tag-brincos-g"],
+    displayName: "Tag de Brincos Personalizada 6 × 6 cm",
+    categorySlug: "tags-personalizadas-para-semijoias",
+    categoryLabel: "Tags para Semijoias",
+    seoTitle: "Tag de Brincos Personalizada 6 × 6 cm | GS Cartões",
+    seoDescription:
+      "Tag de Brincos personalizada 6 × 6 cm em papel couchê 250g, frente e verso coloridos com brilho total. Formato quadrado amplo com destaque para a sua marca de semijoias.",
+    longDescription: [
+      "A Tag de Brincos Personalizada 6 × 6 cm da GS Cartões oferece área generosa para destacar a identidade da sua marca de semijoias junto ao produto.",
+      "Impressa em papel couchê 250g, frente e verso coloridos com brilho total na frente. Furo de pendurar, cortes especiais, papel couchê 300g e verniz localizado disponíveis sob orçamento.",
     ],
   },
 ];
