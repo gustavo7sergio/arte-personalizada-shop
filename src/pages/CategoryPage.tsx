@@ -5,6 +5,7 @@ import { useState } from "react";
 import { products, type Product } from "@/data/products";
 import { productImages } from "@/data/productImages";
 import { productPageByProductId } from "@/data/productPages";
+import { productGalleryExtras } from "@/data/productGalleries";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/contexts/CartContext";
@@ -182,6 +183,11 @@ function ProductCard({ product }: { product: Product }) {
   const mainDimension = rawDimension ? rawDimension.replace(/×/g, "x") : rawDimension;
 
 
+  const hoverImage =
+    pilotPage && productGalleryExtras[pilotPage.slug]?.[0]?.src
+      ? productGalleryExtras[pilotPage.slug][0].src
+      : undefined;
+
   const CardImage = (
     <div className="aspect-[4/3] overflow-hidden bg-muted/20 relative group">
       <ProductImage
@@ -189,6 +195,16 @@ function ProductCard({ product }: { product: Product }) {
         alt={product.name + (product.subtitle ? " – " + product.subtitle : "")}
         className="w-full h-full object-contain p-4"
       />
+      {hoverImage && (
+        <img
+          src={hoverImage}
+          alt=""
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true"
+          className="hidden md:block absolute inset-0 w-full h-full object-contain p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+        />
+      )}
       {!pilotPage && images.length > 1 && (
         <>
           <button
