@@ -200,7 +200,7 @@ const ProductPage = () => {
                   >
                     <ProductImage
                       src={heroImage}
-                      alt={config.displayName}
+                      alt={heroAlt}
                       className="w-full h-full object-contain p-6"
                     />
                     <div className="absolute top-3 right-3 bg-card/80 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -225,7 +225,7 @@ const ProductPage = () => {
                       </>
                     )}
                   </div>
-                  <ImageZoom src={heroImage} alt={config.displayName} open={zoomOpen} onOpenChange={setZoomOpen} />
+                  <ImageZoom src={heroImage} alt={heroAlt} open={zoomOpen} onOpenChange={setZoomOpen} />
 
                   {gallery.length > 1 && (
                     <div className="grid grid-cols-4 gap-2">
@@ -239,7 +239,7 @@ const ProductPage = () => {
                           )}
                           aria-label={`Ver imagem ${i + 1}`}
                         >
-                          <ProductImage src={img} alt="" className="w-full h-full object-contain p-1.5" />
+                          <ProductImage src={img.src} alt={img.alt} className="w-full h-full object-contain p-1.5" />
                         </button>
                       ))}
                     </div>
