@@ -30,6 +30,14 @@ import etiquetaRoupasEspecialMed from "@/assets/products/measures/etiqueta-perso
 import miniCartaoAgradMed from "@/assets/products/measures/mini-cartao-de-agradecimento-personalizado-4-8x4-25-cm.jpg";
 import miniCertGarantiaMed from "@/assets/products/measures/mini-certificado-de-garantia-personalizado-4-8x4-25-cm.jpg";
 import miniEtiquetaRoupasMed from "@/assets/products/measures/mini-etiqueta-personalizada-para-roupas-4-8x4-25-cm.jpg";
+import tagAnel7x3Med from "@/assets/products/measures/tag-de-anel-personalizada-7x3-cm.jpg";
+import miniTagBrincosMed from "@/assets/products/measures/mini-tag-de-brincos-personalizada-4-8x4-25-cm.jpg";
+import panfletoMed from "@/assets/products/measures/panfleto-personalizado.jpg";
+import sacolaPlasticaMed from "@/assets/products/measures/sacola-plastica-personalizada-alca-vazada.jpg";
+import sacolinhaCoucheMed from "@/assets/products/measures/sacolinha-personalizada-para-semijoias-couche-16-5x12x4-5-cm.jpg";
+import sacolinhaCartaoMMed from "@/assets/products/measures/sacolinha-personalizada-para-semijoias-papel-cartao-m.jpg";
+import sacolinhaCartaoPMed from "@/assets/products/measures/sacolinha-personalizada-para-semijoias-papel-cartao-p.jpg";
+import tagAnelPadronizadaMMed from "@/assets/products/measures/tag-de-anel-padronizada-6-5x2-3-cm.jpg";
 
 export type GalleryImageType = "mockup" | "measurement" | "front-back" | "photo" | "detail";
 
