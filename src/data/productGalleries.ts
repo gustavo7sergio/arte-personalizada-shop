@@ -107,6 +107,28 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   "mini-etiqueta-personalizada-para-roupas-4-8x4-25-cm": [
     { src: miniEtiquetaRoupasMed, type: "measurement" },
   ],
+  "tag-de-anel-personalizada-7x3-cm": [
+    { src: tagAnel7x3Med, type: "measurement" },
+  ],
+  "mini-tag-de-brincos-personalizada-4-8x4-25-cm": [
+    { src: miniTagBrincosMed, type: "measurement" },
+  ],
+  "panfleto-personalizado": [
+    { src: panfletoMed, type: "measurement" },
+  ],
+  "sacola-plastica-personalizada-alca-vazada": [
+    { src: sacolaPlasticaMed, type: "measurement", alt: "Sacola plástica personalizada — tamanhos disponíveis 16x22, 20x30, 25x35 e 30x40 cm" },
+  ],
+  "sacolinha-personalizada-para-semijoias-couche-16-5x12x4-5-cm": [
+    { src: sacolinhaCoucheMed, type: "measurement" },
+  ],
+  "sacolinha-personalizada-para-semijoias-papel-cartao": [
+    { src: sacolinhaCartaoPMed, type: "measurement", alt: "Sacolinha em papel cartão 300g tamanho P — 10x15,4x4 cm" },
+    { src: sacolinhaCartaoMMed, type: "measurement", alt: "Sacolinha em papel cartão 300g tamanho M — 13x18x7,2 cm" },
+  ],
+  "tag-de-anel-padronizada-6-5x2-3-cm": [
+    { src: tagAnelPadronizadaMMed, type: "measurement" },
+  ],
 };
 
 // Gera alt text automático para uma imagem da galeria
