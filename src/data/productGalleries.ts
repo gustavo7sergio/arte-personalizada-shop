@@ -69,6 +69,36 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   "caixinha-personalizada-para-acessorios-6-3x6-3x3-cm": [
     { src: caixinhaPMed, type: "measurement" },
   ],
+  "mini-tag-de-anel-personalizada-3-9x1-7-cm": [
+    { src: miniTagAnelMed, type: "measurement" },
+  ],
+  "cartao-de-visitas-personalizado-8-8x4-8-cm": [
+    { src: cartaoVisitasMed, type: "measurement" },
+  ],
+  "cartao-de-visitas-personalizado-verniz-localizado-8-8x5-1-cm": [
+    { src: cartaoVisitasVernizMed, type: "measurement" },
+  ],
+  "certificado-de-garantia-personalizado-8-8x4-8-cm": [
+    { src: certGarantiaMed, type: "measurement" },
+  ],
+  "certificado-de-garantia-personalizado-dobrado": [
+    { src: certGarantiaDobradoMed, type: "measurement" },
+  ],
+  "etiqueta-personalizada-para-roupas-8-8x4-8-cm": [
+    { src: etiquetaRoupasMed, type: "measurement" },
+  ],
+  "etiqueta-personalizada-para-roupas-formato-especial": [
+    { src: etiquetaRoupasEspecialMed, type: "measurement" },
+  ],
+  "mini-cartao-de-agradecimento-personalizado-4-8x4-25-cm": [
+    { src: miniCartaoAgradMed, type: "measurement" },
+  ],
+  "mini-certificado-de-garantia-personalizado-4-8x4-25-cm": [
+    { src: miniCertGarantiaMed, type: "measurement" },
+  ],
+  "mini-etiqueta-personalizada-para-roupas-4-8x4-25-cm": [
+    { src: miniEtiquetaRoupasMed, type: "measurement" },
+  ],
 };
 
 // Gera alt text automático para uma imagem da galeria
