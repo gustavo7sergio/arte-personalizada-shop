@@ -20,6 +20,16 @@ import blocoPedidosMed from "@/assets/products/measures/bloco-de-pedidos-persona
 import caixinhaMMed from "@/assets/products/measures/caixinha-personalizada-para-acessorios-8-3x8-3x5-cm.jpg";
 import caixinhaMaletaMed from "@/assets/products/measures/caixinha-personalizada-maleta-4-4x7-3x5-6-cm.jpg";
 import caixinhaPMed from "@/assets/products/measures/caixinha-personalizada-para-acessorios-6-3x6-3x3-cm.jpg";
+import miniTagAnelMed from "@/assets/products/measures/mini-tag-de-anel-personalizada-3-9x1-7-cm.jpg";
+import cartaoVisitasMed from "@/assets/products/measures/cartao-de-visitas-personalizado-8-8x4-8-cm.jpg";
+import cartaoVisitasVernizMed from "@/assets/products/measures/cartao-de-visitas-personalizado-verniz-localizado-8-8x5-1-cm.jpg";
+import certGarantiaMed from "@/assets/products/measures/certificado-de-garantia-personalizado-8-8x4-8-cm.jpg";
+import certGarantiaDobradoMed from "@/assets/products/measures/certificado-de-garantia-personalizado-dobrado.jpg";
+import etiquetaRoupasMed from "@/assets/products/measures/etiqueta-personalizada-para-roupas-8-8x4-8-cm.jpg";
+import etiquetaRoupasEspecialMed from "@/assets/products/measures/etiqueta-personalizada-para-roupas-formato-especial.jpg";
+import miniCartaoAgradMed from "@/assets/products/measures/mini-cartao-de-agradecimento-personalizado-4-8x4-25-cm.jpg";
+import miniCertGarantiaMed from "@/assets/products/measures/mini-certificado-de-garantia-personalizado-4-8x4-25-cm.jpg";
+import miniEtiquetaRoupasMed from "@/assets/products/measures/mini-etiqueta-personalizada-para-roupas-4-8x4-25-cm.jpg";
 
 export type GalleryImageType = "mockup" | "measurement" | "front-back" | "photo" | "detail";
 
