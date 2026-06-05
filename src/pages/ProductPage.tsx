@@ -5,6 +5,7 @@ import { ArrowLeft, ChevronLeft, ChevronRight, Search, ShoppingCart, Package, Ta
 import { products, type Product } from "@/data/products";
 import { productImages } from "@/data/productImages";
 import { productPageBySlug } from "@/data/productPages";
+import { buildGallery } from "@/data/productGalleries";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/contexts/CartContext";
@@ -62,12 +63,14 @@ const ProductPage = () => {
   const currentVariant = current.product.variants[current.variantIndex];
   const selected = currentVariant.prices[selectedQtyIndex] ?? currentVariant.prices[0];
 
-  // Gallery: imagens de todos os produtos da página
-  const gallery: string[] = sourceProducts.flatMap((p) => {
+  // Gallery: mockup(s) principal(is) + imagens extras (medidas, frente/verso, fotos, detalhes)
+  const mockupSources: string[] = sourceProducts.flatMap((p) => {
     const raw = productImages[p.id];
     return Array.isArray(raw) ? raw : raw ? [raw] : [];
   });
-  const heroImage = gallery[imageIndex] ?? gallery[0];
+  const gallery = buildGallery(config.slug, mockupSources, config.displayName);
+  const heroImage = gallery[imageIndex]?.src ?? gallery[0]?.src;
+  const heroAlt = gallery[imageIndex]?.alt ?? config.displayName;
 
   const minPrice = Math.min(
     ...sourceProducts.flatMap((p) => p.variants.flatMap((v) => v.prices.map((r) => r.cash))).filter((n) => n > 0)
@@ -197,7 +200,7 @@ const ProductPage = () => {
                   >
                     <ProductImage
                       src={heroImage}
-                      alt={config.displayName}
+                      alt={heroAlt}
                       className="w-full h-full object-contain p-6"
                     />
                     <div className="absolute top-3 right-3 bg-card/80 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -222,7 +225,7 @@ const ProductPage = () => {
                       </>
                     )}
                   </div>
-                  <ImageZoom src={heroImage} alt={config.displayName} open={zoomOpen} onOpenChange={setZoomOpen} />
+                  <ImageZoom src={heroImage} alt={heroAlt} open={zoomOpen} onOpenChange={setZoomOpen} />
 
                   {gallery.length > 1 && (
                     <div className="grid grid-cols-4 gap-2">
@@ -236,7 +239,7 @@ const ProductPage = () => {
                           )}
                           aria-label={`Ver imagem ${i + 1}`}
                         >
-                          <ProductImage src={img} alt="" className="w-full h-full object-contain p-1.5" />
+                          <ProductImage src={img.src} alt={img.alt} className="w-full h-full object-contain p-1.5" />
                         </button>
                       ))}
                     </div>
