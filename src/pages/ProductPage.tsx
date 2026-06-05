@@ -5,6 +5,7 @@ import { ArrowLeft, ChevronLeft, ChevronRight, Search, ShoppingCart, Package, Ta
 import { products, type Product } from "@/data/products";
 import { productImages } from "@/data/productImages";
 import { productPageBySlug } from "@/data/productPages";
+import { buildGallery } from "@/data/productGalleries";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/contexts/CartContext";
@@ -62,12 +63,14 @@ const ProductPage = () => {
   const currentVariant = current.product.variants[current.variantIndex];
   const selected = currentVariant.prices[selectedQtyIndex] ?? currentVariant.prices[0];
 
-  // Gallery: imagens de todos os produtos da página
-  const gallery: string[] = sourceProducts.flatMap((p) => {
+  // Gallery: mockup(s) principal(is) + imagens extras (medidas, frente/verso, fotos, detalhes)
+  const mockupSources: string[] = sourceProducts.flatMap((p) => {
     const raw = productImages[p.id];
     return Array.isArray(raw) ? raw : raw ? [raw] : [];
   });
-  const heroImage = gallery[imageIndex] ?? gallery[0];
+  const gallery = buildGallery(config.slug, mockupSources, config.displayName);
+  const heroImage = gallery[imageIndex]?.src ?? gallery[0]?.src;
+  const heroAlt = gallery[imageIndex]?.alt ?? config.displayName;
 
   const minPrice = Math.min(
     ...sourceProducts.flatMap((p) => p.variants.flatMap((v) => v.prices.map((r) => r.cash))).filter((n) => n > 0)
