@@ -139,6 +139,36 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   "tag-de-anel-padronizada-6-5x2-3-cm": [
     { src: tagAnelPadronizadaMMed, type: "measurement" },
   ],
+  "tag-personalizada-para-lacos-e-tiaras-15x4-82-cm": [
+    { src: tagLacos15Med, type: "measurement" },
+  ],
+  "tag-personalizada-para-lacos-e-tiaras-7-5x9-5-cm": [
+    { src: tagLacos75Med, type: "measurement" },
+  ],
+  "tag-personalizada-para-lacos-e-tiaras-9x6-5-cm": [
+    { src: tagLacos9Med, type: "measurement" },
+  ],
+  "tag-personalizada-para-lacos-e-tiaras-12-5x8-8-cm": [
+    { src: tagLacos125Med, type: "measurement" },
+  ],
+  "tag-de-brincos-personalizada-4x2-5-cm": [
+    { src: tagBrincosPMed, type: "measurement" },
+  ],
+  "tag-de-brincos-personalizada-8-8x4-8-cm": [
+    { src: tagBrincosMMed, type: "measurement" },
+  ],
+  "tag-de-brincos-personalizada-6x6-cm": [
+    { src: tagBrincosGMed, type: "measurement" },
+  ],
+  "tag-de-brincos-e-colar-personalizada-8-8x4-8-cm": [
+    { src: tagBrincosColarPMed, type: "measurement" },
+  ],
+  "tag-de-brincos-e-colar-personalizada-9-94x6-cm": [
+    { src: tagBrincosColarGMed, type: "measurement" },
+  ],
+  "tag-de-brincos-e-colar-personalizada-formato-especial": [
+    { src: tagBrincosColarEspMed, type: "measurement" },
+  ],
 };
 
 // Gera alt text automático para uma imagem da galeria
