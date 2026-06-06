@@ -38,6 +38,16 @@ import sacolinhaCoucheMed from "@/assets/products/measures/sacolinha-personaliza
 import sacolinhaCartaoMMed from "@/assets/products/measures/sacolinha-personalizada-para-semijoias-papel-cartao-m.jpg";
 import sacolinhaCartaoPMed from "@/assets/products/measures/sacolinha-personalizada-para-semijoias-papel-cartao-p.jpg";
 import tagAnelPadronizadaMMed from "@/assets/products/measures/tag-de-anel-padronizada-6-5x2-3-cm.jpg";
+import tagLacos15Med from "@/assets/products/measures/tag-personalizada-para-lacos-e-tiaras-15x4-82-cm.jpg";
+import tagLacos75Med from "@/assets/products/measures/tag-personalizada-para-lacos-e-tiaras-7-5x9-5-cm.jpg";
+import tagLacos9Med from "@/assets/products/measures/tag-personalizada-para-lacos-e-tiaras-9x6-5-cm.jpg";
+import tagLacos125Med from "@/assets/products/measures/tag-personalizada-para-lacos-e-tiaras-12-5x8-8-cm.jpg";
+import tagBrincosPMed from "@/assets/products/measures/tag-de-brincos-personalizada-4x2-5-cm.jpg";
+import tagBrincosMMed from "@/assets/products/measures/tag-de-brincos-personalizada-8-8x4-8-cm.jpg";
+import tagBrincosGMed from "@/assets/products/measures/tag-de-brincos-personalizada-6x6-cm.jpg";
+import tagBrincosColarPMed from "@/assets/products/measures/tag-de-brincos-e-colar-personalizada-8-8x4-8-cm.jpg";
+import tagBrincosColarGMed from "@/assets/products/measures/tag-de-brincos-e-colar-personalizada-9-94x6-cm.jpg";
+import tagBrincosColarEspMed from "@/assets/products/measures/tag-de-brincos-e-colar-personalizada-formato-especial.jpg";
 
 export type GalleryImageType = "mockup" | "measurement" | "front-back" | "photo" | "detail";
 
@@ -128,6 +138,36 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "tag-de-anel-padronizada-6-5x2-3-cm": [
     { src: tagAnelPadronizadaMMed, type: "measurement" },
+  ],
+  "tag-personalizada-para-lacos-e-tiaras-15x4-82-cm": [
+    { src: tagLacos15Med, type: "measurement" },
+  ],
+  "tag-personalizada-para-lacos-e-tiaras-7-5x9-5-cm": [
+    { src: tagLacos75Med, type: "measurement" },
+  ],
+  "tag-personalizada-para-lacos-e-tiaras-9x6-5-cm": [
+    { src: tagLacos9Med, type: "measurement" },
+  ],
+  "tag-personalizada-para-lacos-e-tiaras-12-5x8-8-cm": [
+    { src: tagLacos125Med, type: "measurement" },
+  ],
+  "tag-de-brincos-personalizada-4x2-5-cm": [
+    { src: tagBrincosPMed, type: "measurement" },
+  ],
+  "tag-de-brincos-personalizada-8-8x4-8-cm": [
+    { src: tagBrincosMMed, type: "measurement" },
+  ],
+  "tag-de-brincos-personalizada-6x6-cm": [
+    { src: tagBrincosGMed, type: "measurement" },
+  ],
+  "tag-de-brincos-e-colar-personalizada-8-8x4-8-cm": [
+    { src: tagBrincosColarPMed, type: "measurement" },
+  ],
+  "tag-de-brincos-e-colar-personalizada-9-94x6-cm": [
+    { src: tagBrincosColarGMed, type: "measurement" },
+  ],
+  "tag-de-brincos-e-colar-personalizada-formato-especial": [
+    { src: tagBrincosColarEspMed, type: "measurement" },
   ],
 };
 
