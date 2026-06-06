@@ -100,6 +100,7 @@ export const productImages: Record<string, string | string[]> = {
   // Tags de Anel
   "tag-anel": tagAnel,
   "mini-tag-anel": miniTagAnel,
+  "tag-anel-3-3x2-6": tagAnelPequena,
   "tag-anel-padronizada-pequena": tagAnelPequenaStd,
   "tag-anel-padronizada-media": tagAnelMedia,
 
