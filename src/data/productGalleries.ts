@@ -48,6 +48,11 @@ import tagBrincosGMed from "@/assets/products/measures/tag-de-brincos-personaliz
 import tagBrincosColarPMed from "@/assets/products/measures/tag-de-brincos-e-colar-personalizada-8-8x4-8-cm.jpg";
 import tagBrincosColarGMed from "@/assets/products/measures/tag-de-brincos-e-colar-personalizada-9-94x6-cm.jpg";
 import tagBrincosColarEspMed from "@/assets/products/measures/tag-de-brincos-e-colar-personalizada-formato-especial.jpg";
+import tagTrio8x65Med from "@/assets/products/measures/tag-de-trio-de-brincos-personalizada-8x6-5-cm.jpg";
+import tagTrio48x41Med from "@/assets/products/measures/tag-de-trio-de-brincos-personalizada-4-8x4-1-cm.jpg";
+import tagTrio55x48Med from "@/assets/products/measures/tag-de-trio-de-brincos-personalizada-5-5x4-8-cm.jpg";
+import tagTrio88x48Med from "@/assets/products/measures/tag-de-trio-de-brincos-personalizada-8-8x4-8-cm.jpg";
+import tagLacos15x88Med from "@/assets/products/measures/tag-personalizada-para-lacos-e-tiaras-15x8-8-cm.jpg";
 
 export type GalleryImageType = "mockup" | "measurement" | "front-back" | "photo" | "detail";
 
