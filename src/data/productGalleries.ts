@@ -174,6 +174,21 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   "tag-de-brincos-e-colar-personalizada-formato-especial": [
     { src: tagBrincosColarEspMed, type: "measurement" },
   ],
+  "tag-de-trio-de-brincos-personalizada-8x6-5-cm": [
+    { src: tagTrio8x65Med, type: "measurement" },
+  ],
+  "tag-de-trio-de-brincos-personalizada-4-8x4-1-cm": [
+    { src: tagTrio48x41Med, type: "measurement" },
+  ],
+  "tag-de-trio-de-brincos-personalizada-5-5x4-8-cm": [
+    { src: tagTrio55x48Med, type: "measurement" },
+  ],
+  "tag-de-trio-de-brincos-personalizada-8-8x4-8-cm": [
+    { src: tagTrio88x48Med, type: "measurement" },
+  ],
+  "tag-personalizada-para-lacos-e-tiaras-15x8-8-cm": [
+    { src: tagLacos15x88Med, type: "measurement" },
+  ],
 };
 
 // Gera alt text automático para uma imagem da galeria
