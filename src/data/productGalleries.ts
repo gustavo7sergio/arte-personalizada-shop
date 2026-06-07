@@ -53,6 +53,11 @@ import tagTrio48x41Med from "@/assets/products/measures/tag-de-trio-de-brincos-p
 import tagTrio55x48Med from "@/assets/products/measures/tag-de-trio-de-brincos-personalizada-5-5x4-8-cm.jpg";
 import tagTrio88x48Med from "@/assets/products/measures/tag-de-trio-de-brincos-personalizada-8-8x4-8-cm.jpg";
 import tagLacos15x88Med from "@/assets/products/measures/tag-personalizada-para-lacos-e-tiaras-15x8-8-cm.jpg";
+import tagPulseira88x48Med from "@/assets/products/measures/tag-de-pulseira-8-8x4-8-cm.jpg";
+import tagPulseira88x48v2Med from "@/assets/products/measures/tag-de-pulseira-8-8x4-8-cm-v2.jpg";
+import tagPulseira88x994Med from "@/assets/products/measures/tag-de-pulseira-8-8x9-94-cm.jpg";
+import tagPulseira84x98Med from "@/assets/products/measures/tag-de-pulseira-8-4x9-8-cm.jpg";
+import tagPulseira13x48Med from "@/assets/products/measures/tag-de-pulseira-13x4-8-cm.jpg";
 
 export type GalleryImageType = "mockup" | "measurement" | "front-back" | "photo" | "detail";
 
@@ -188,6 +193,19 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "tag-personalizada-para-lacos-e-tiaras-15x8-8-cm": [
     { src: tagLacos15x88Med, type: "measurement" },
+  ],
+  "tag-de-acessorios-personalizada-8-8x4-8-cm": [
+    { src: tagPulseira88x48Med, type: "measurement" },
+    { src: tagPulseira88x48v2Med, type: "measurement" },
+  ],
+  "tag-de-acessorios-personalizada-8-8x9-94-cm": [
+    { src: tagPulseira88x994Med, type: "measurement" },
+  ],
+  "tag-de-acessorios-personalizada-redonda-8-4x9-8-cm": [
+    { src: tagPulseira84x98Med, type: "measurement" },
+  ],
+  "tag-de-acessorios-personalizada-13x4-8-cm": [
+    { src: tagPulseira13x48Med, type: "measurement" },
   ],
 };
 
