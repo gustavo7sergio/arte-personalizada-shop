@@ -16,8 +16,8 @@ import cartaoVisitasVerniz from "@/assets/products/cartaodevisitascomvernizlocal
 import cartaoVisitas from "@/assets/products/cartaodevisitas.jpg";
 import adesivoRedondo3cm from "@/assets/products/adesivo3-3cm.jpg";
 import adesivoRedondo48cm from "@/assets/products/adesivo4-8x4-8cm.jpg";
-import adesivoFechaSacolaCouche from "@/assets/products/adesivofechasacola10x5cm.jpg";
-import adesivoFechaSacolaSulfite from "@/assets/products/adesivofechasacola10x4cm.jpg";
+import adesivoFechaSacolaCouche from "@/assets/products/adesivofechasacola10x4cm.jpg";
+import adesivoFechaSacolaSulfite from "@/assets/products/adesivofechasacola10x5cm.jpg";
 import adesivoAnel from "@/assets/products/adesivoparaanel.jpg";
 import banner from "@/assets/products/banner-2.jpg";
 import blocoPedidos from "@/assets/products/blocodepedidos.jpg";
