@@ -210,6 +210,15 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   "tag-de-acessorios-personalizada-13x4-8-cm": [
     { src: tagPulseira13x48Med, type: "measurement" },
   ],
+  "tag-trio-de-brincos-e-colar-personalizada-8-8x4-8-cm": [
+    { src: tagTrioColarPMed, type: "measurement" },
+  ],
+  "tag-trio-de-brincos-e-colar-personalizada-9x6-5-cm": [
+    { src: tagTrioColarGMed, type: "measurement" },
+  ],
+  "tag-semaninha-personalizada-8-8x4-8-cm": [
+    { src: tagSemaninhaMed, type: "measurement" },
+  ],
 };
 
 // Gera alt text automático para uma imagem da galeria
