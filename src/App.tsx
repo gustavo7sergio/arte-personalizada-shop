@@ -39,6 +39,7 @@ const App = () => (
             <Route path="/categoria/kits" element={<Navigate to="/categoria/kits-de-tags-para-semijoias" replace />} />
             <Route path="/categoria/outros" element={<Navigate to="/categoria/papelaria-personalizada" replace />} />
             <Route path="/produto/tag-de-anel-padronizada-3-9x1-7-cm" element={<Navigate to="/produto/tag-de-anel-personalizada-4x4-cm" replace />} />
+            <Route path="/produto/adesivo-redondo-personalizado" element={<Navigate to="/produto/adesivo-redondo-personalizado-4-8x4-8-cm" replace />} />
             <Route path="/criacao-de-logo" element={<CriacaoLogo />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
