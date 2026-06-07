@@ -62,6 +62,7 @@ import tagPulseira13x48Med from "@/assets/products/measures/tag-de-pulseira-13x4
 import tagTrioColarPMed from "@/assets/products/measures/tag-de-trio-de-brincos-e-colar-personalizada-8-8x4-8-cm.jpg";
 import tagTrioColarGMed from "@/assets/products/measures/tag-de-trio-de-brincos-e-colar-personalizada-9x6-5-cm.jpg";
 import tagSemaninhaMed from "@/assets/products/measures/tag-semaninha-personalizada-8-8x4-8-cm.jpg";
+import tagAnel4x4Med from "@/assets/products/measures/tag-de-anel-personalizada-4x4-cm.jpg";
 
 export type GalleryImageType = "mockup" | "measurement" | "front-back" | "photo" | "detail";
 
@@ -222,6 +223,9 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "tag-semaninha-personalizada-8-8x4-8-cm": [
     { src: tagSemaninhaMed, type: "measurement" },
+  ],
+  "tag-de-anel-personalizada-4x4-cm": [
+    { src: tagAnel4x4Med, type: "measurement" },
   ],
 };
 
