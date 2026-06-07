@@ -58,6 +58,9 @@ import tagPulseira88x48v2Med from "@/assets/products/measures/tag-de-pulseira-8-
 import tagPulseira88x994Med from "@/assets/products/measures/tag-de-pulseira-8-8x9-94-cm.jpg";
 import tagPulseira84x98Med from "@/assets/products/measures/tag-de-pulseira-8-4x9-8-cm.jpg";
 import tagPulseira13x48Med from "@/assets/products/measures/tag-de-pulseira-13x4-8-cm.jpg";
+import tagTrioColarPMed from "@/assets/products/measures/tag-de-trio-de-brincos-e-colar-personalizada-8-8x4-8-cm.jpg";
+import tagTrioColarGMed from "@/assets/products/measures/tag-de-trio-de-brincos-e-colar-personalizada-9x6-5-cm.jpg";
+import tagSemaninhaMed from "@/assets/products/measures/tag-semaninha-personalizada-8-8x4-8-cm.jpg";
 
 export type GalleryImageType = "mockup" | "measurement" | "front-back" | "photo" | "detail";
 
