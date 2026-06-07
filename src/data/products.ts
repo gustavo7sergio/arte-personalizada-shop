@@ -1160,9 +1160,9 @@ export const products: Product[] = [
 
   // ─── ADESIVOS (continuação) ────────────────────────────────────────
   {
-    id: "adesivo-redondo",
+    id: "adesivo-redondo-3",
     name: "Adesivo Redondo",
-    subtitle: "3 × 3 cm / 4,8 × 4,8 cm",
+    subtitle: "3 × 3 cm",
     category: "Adesivos",
     material: "Papel couchê 80g",
     specs: [
@@ -1183,6 +1183,22 @@ export const products: Product[] = [
           { qty: 2500, installment: 232.00, cash: 208.80 },
         ],
       },
+    ],
+  },
+  {
+    id: "adesivo-redondo-4-8",
+    name: "Adesivo Redondo",
+    subtitle: "4,8 × 4,8 cm",
+    category: "Adesivos",
+    material: "Papel couchê 80g",
+    specs: [
+      "Papel couchê 80g",
+      "Frente colorida",
+      "Sem brilho",
+      "NÃO trabalhamos com fidelização de cores",
+    ],
+    highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
+    variants: [
       {
         label: "4,8 × 4,8 cm",
         prices: [

@@ -61,7 +61,8 @@ import tagAcessoriosGrande from "@/assets/products/tagdeacessoriosformatogrande.
 
 export const productImages: Record<string, string | string[]> = {
   // Adesivos
-  "adesivo-redondo": adesivoRedondo3cm,
+  "adesivo-redondo-3": adesivoRedondo3cm,
+  "adesivo-redondo-4-8": adesivoRedondo48cm,
   "adesivo-anel": adesivoAnel,
   "adesivo-fecha-sacola-couche": adesivoFechaSacolaCouche,
   "adesivo-fecha-sacola-sulfite": adesivoFechaSacolaSulfite,
