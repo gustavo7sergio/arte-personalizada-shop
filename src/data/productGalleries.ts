@@ -224,6 +224,9 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   "tag-semaninha-personalizada-8-8x4-8-cm": [
     { src: tagSemaninhaMed, type: "measurement" },
   ],
+  "tag-de-anel-personalizada-4x4-cm": [
+    { src: tagAnel4x4Med, type: "measurement" },
+  ],
 };
 
 // Gera alt text automático para uma imagem da galeria
