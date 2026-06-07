@@ -13,6 +13,7 @@
 import cartaoAgradGMed from "@/assets/products/measures/cartao-de-agradecimento-personalizado-8-8x9-94-cm.jpg";
 import adesivo33Med from "@/assets/products/measures/adesivo-redondo-personalizado--3-3cm.jpg";
 import adesivo48Med from "@/assets/products/measures/adesivo-redondo-personalizado--4-8cm.jpg";
+import adesivo48Foto from "@/assets/products/photos/adesivo-redondo-personalizado-4-8x4-8-cm-foto.jpg";
 import adesFechaCoucheMed from "@/assets/products/measures/adesivo-fecha-sacola-personalizado-couche-10x4-cm.jpg";
 import adesFechaSulfiteMed from "@/assets/products/measures/adesivo-fecha-sacola-personalizado-sulfite-10x5-cm.jpg";
 import adesivoAnelMed from "@/assets/products/measures/adesivo-personalizado-para-anel-7x1-7-cm.jpg";
@@ -75,9 +76,12 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   "cartao-de-agradecimento-personalizado-8-8x9-94-cm": [
     { src: cartaoAgradGMed, type: "measurement" },
   ],
-  "adesivo-redondo-personalizado": [
-    { src: adesivo33Med, type: "measurement", alt: "Adesivo redondo personalizado 3,3 cm com medidas" },
-    { src: adesivo48Med, type: "measurement", alt: "Adesivo redondo personalizado 4,8 cm com medidas" },
+  "adesivo-redondo-personalizado-3x3-cm": [
+    { src: adesivo33Med, type: "measurement", alt: "Adesivo redondo personalizado 3x3 cm com medidas" },
+  ],
+  "adesivo-redondo-personalizado-4-8x4-8-cm": [
+    { src: adesivo48Med, type: "measurement", alt: "Adesivo redondo personalizado 4,8x4,8 cm com medidas" },
+    { src: adesivo48Foto, type: "photo", alt: "Adesivo redondo personalizado 4,8x4,8 cm — foto real do produto aplicado" },
   ],
   "adesivo-fecha-sacola-personalizado-couche-10x4-cm": [
     { src: adesFechaCoucheMed, type: "measurement" },
