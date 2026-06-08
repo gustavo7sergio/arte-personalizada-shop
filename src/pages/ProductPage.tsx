@@ -83,6 +83,10 @@ const ProductPage = () => {
   const handleVariantSwitch = (i: number) => {
     setActiveFlat(i);
     setSelectedQtyIndex(0);
+    const mapped = config.variantImageMap?.[i];
+    if (typeof mapped === "number" && mapped >= 0 && mapped < gallery.length) {
+      setImageIndex(mapped);
+    }
   };
 
   const handleAddToCart = () => {
