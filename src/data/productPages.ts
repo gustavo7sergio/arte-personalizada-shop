@@ -24,7 +24,7 @@ export interface ProductPageConfig {
 const FAQ_PRAZO: ProductFAQ = { q: "Qual o prazo de produção?", a: PRODUCTION_DEADLINE_ANSWER };
 const FAQ_ARTE: ProductFAQ = {
   q: "Vocês criam a arte personalizada?",
-  a: "Sim. Trabalhamos com criação de arte 100% personalizada para a sua marca. O atendimento, briefing e aprovação da arte são feitos pelo WhatsApp oficial da GS Cartões.",
+  a: "Sim. Trabalhamos com criação de arte 100% personalizada para a sua marca. Você pode usar sua logo, cores, redes sociais e qualquer outra informação que desejar! Essa etapa é feita após fechar o pedido conosco. O prazo é de apenas 1 dia útil para criação e depois de você aprovar essa etapa encaminhamos para a confecção dos materiais!",
 };
 const FAQ_PAGAMENTO: ProductFAQ = {
   q: "Como funciona o pagamento?",
