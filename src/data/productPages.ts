@@ -3,7 +3,7 @@
 
 export const PRODUCTION_DEADLINE_SHORT = "5 a 6 dias úteis";
 export const PRODUCTION_DEADLINE_ANSWER =
-  "O prazo de produção é de 5 a 6 dias úteis e esse prazo inicia depois da criação da arte. O prazo de entrega depende do seu cep e nós calculamos ele para você pelo nosso whatsapp!";
+  "O prazo de produção é de 5 a 6 dias úteis, e começa a contar após a criação da arte.\nO prazo de entrega depende do seu CEP, e calculamos isso para você pelo nosso WhatsApp!";
 
 export interface ProductFAQ { q: string; a: string }
 export interface ProductPageConfig {
