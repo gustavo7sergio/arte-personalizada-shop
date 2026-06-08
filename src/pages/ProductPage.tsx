@@ -406,7 +406,7 @@ const ProductPage = () => {
                         <span>{f.q}</span>
                         <ChevronRightIcon className="h-4 w-4 mt-0.5 shrink-0 transition-transform group-open:rotate-90 text-muted-foreground" />
                       </summary>
-                      <p className="text-sm font-body text-muted-foreground mt-2 leading-relaxed">{f.a}</p>
+                      <p className="text-sm font-body text-muted-foreground mt-2 leading-relaxed whitespace-pre-line">{f.a}</p>
                     </details>
                   ))}
                 </div>
