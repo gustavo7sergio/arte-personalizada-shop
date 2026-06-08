@@ -3,7 +3,7 @@
 
 export const PRODUCTION_DEADLINE_SHORT = "5 a 6 dias úteis";
 export const PRODUCTION_DEADLINE_ANSWER =
-  "O prazo médio de produção é de 5 a 6 dias úteis após a aprovação da arte, podendo variar conforme a fila de produção da gráfica.";
+  "O prazo de produção é de 5 a 6 dias úteis e esse prazo inicia depois da criação da arte. O prazo de entrega depende do seu cep e nós calculamos ele para você pelo nosso whatsapp!";
 
 export interface ProductFAQ { q: string; a: string }
 export interface ProductPageConfig {
