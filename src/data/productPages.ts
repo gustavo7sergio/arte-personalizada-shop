@@ -16,6 +16,9 @@ export interface ProductPageConfig {
   seoDescription: string;
   longDescription: string[];
   faqs: ProductFAQ[];
+  // Mapa opcional: índice da variante (flat) → índice da imagem na galeria.
+  // Quando definido, trocar de variante muda a imagem principal automaticamente.
+  variantImageMap?: number[];
 }
 
 const FAQ_PRAZO: ProductFAQ = { q: "Qual o prazo de produção?", a: PRODUCTION_DEADLINE_ANSWER };
