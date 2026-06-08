@@ -260,9 +260,6 @@ function ProductCard({ product }: { product: Product }) {
                 displayName
               )}
             </h3>
-            {mainDimension && (
-              <p className="text-xs font-body text-muted-foreground mt-0.5">{mainDimension}</p>
-            )}
           </div>
           <span className="bg-primary/10 text-primary text-[10px] font-body font-bold px-2 py-0.5 rounded-full whitespace-nowrap shrink-0">
             10% PIX
