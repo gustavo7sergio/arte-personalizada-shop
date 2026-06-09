@@ -189,11 +189,11 @@ function ProductCard({ product }: { product: Product }) {
       : undefined;
 
   const CardImage = (
-    <div className="aspect-[4/3] overflow-hidden bg-muted/20 relative group">
+    <div className="overflow-hidden bg-muted/20 relative group">
       <ProductImage
         src={image}
         alt={product.name + (product.subtitle ? " – " + product.subtitle : "")}
-        className="w-full h-full object-contain p-4"
+        className="w-full object-contain p-2"
       />
       {hoverImage && (
         <img
@@ -202,7 +202,7 @@ function ProductCard({ product }: { product: Product }) {
           loading="lazy"
           decoding="async"
           aria-hidden="true"
-          className="hidden md:block absolute inset-0 w-full h-full object-contain p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+          className="hidden md:block absolute inset-0 w-full h-full object-contain p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
         />
       )}
       {!pilotPage && images.length > 1 && (
@@ -249,27 +249,27 @@ function ProductCard({ product }: { product: Product }) {
       )}
 
       <div className="p-5 flex flex-col gap-3 flex-1">
-        <div className="flex items-start justify-between gap-2">
-          <div className="min-w-0">
-            <h3 className="font-display font-semibold text-base md:text-lg text-foreground leading-tight">
-              {pilotPage ? (
-                <Link to={`/produto/${pilotPage.slug}`} className="hover:text-primary transition-colors">
-                  {displayName}
-                </Link>
-              ) : (
-                displayName
-              )}
-            </h3>
-          </div>
-          <span className="bg-primary/10 text-primary text-[10px] font-body font-bold px-2 py-0.5 rounded-full whitespace-nowrap shrink-0">
-            10% PIX
-          </span>
+        <div className="min-w-0">
+          <h3 className="font-display font-semibold text-base md:text-lg text-foreground leading-tight">
+            {pilotPage ? (
+              <Link to={`/produto/${pilotPage.slug}`} className="hover:text-primary transition-colors">
+                {displayName}
+              </Link>
+            ) : (
+              displayName
+            )}
+          </h3>
         </div>
 
         {hasPrice && (
-          <div>
-            <p className="text-[11px] font-body text-muted-foreground uppercase tracking-wider">A partir de</p>
-            <p className="text-xl font-display font-bold text-primary leading-tight">{formatCurrency(minCash)}</p>
+          <div className="flex items-center gap-2 flex-wrap">
+            <div>
+              <p className="text-[11px] font-body text-muted-foreground uppercase tracking-wider">A partir de</p>
+              <p className="text-xl font-display font-bold text-primary leading-tight">{formatCurrency(minCash)}</p>
+            </div>
+            <span className="bg-primary/10 text-primary text-[10px] font-body font-bold px-2 py-0.5 rounded-full whitespace-nowrap shrink-0">
+              10% OFF no PIX
+            </span>
           </div>
         )}
 

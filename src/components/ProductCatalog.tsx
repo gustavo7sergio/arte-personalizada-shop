@@ -135,11 +135,11 @@ function ProductCard({ product }: { product: Product }) {
     <div className="bg-card rounded-2xl border border-border overflow-hidden shadow-card hover:shadow-hover transition-shadow duration-300">
       {/* Product image */}
       {image && (
-        <div className="aspect-[4/3] overflow-hidden bg-muted/20">
+        <div className="overflow-hidden bg-muted/20">
           <ProductImage
             src={image}
             alt={product.name + (product.subtitle ? " – " + product.subtitle : "")}
-            className="w-full h-full object-contain p-4"
+            className="w-full object-contain p-2"
           />
         </div>
       )}
@@ -159,7 +159,7 @@ function ProductCard({ product }: { product: Product }) {
           {/* Badges */}
           <div className="flex flex-col gap-1 shrink-0">
             <span className="bg-primary/10 text-primary text-[10px] font-body font-bold px-2 py-0.5 rounded-full whitespace-nowrap">
-              10% PIX
+              10% OFF no PIX
             </span>
             <span className="bg-accent text-accent-foreground text-[10px] font-body font-bold px-2 py-0.5 rounded-full whitespace-nowrap">
               6x s/ juros
