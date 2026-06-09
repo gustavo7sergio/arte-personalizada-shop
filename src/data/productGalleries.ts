@@ -14,6 +14,16 @@ import cartaoAgradGMed from "@/assets/products/measures/cartao-de-agradecimento-
 import adesivo33Med from "@/assets/products/measures/adesivo-redondo-personalizado--3-3cm.jpg";
 import adesivo48Med from "@/assets/products/measures/adesivo-redondo-personalizado--4-8cm.jpg";
 import adesivo48Foto from "@/assets/products/photos/adesivo-redondo-personalizado-4-8x4-8-cm-foto.jpg";
+import blocoPedidosFoto2 from "@/assets/products/photos/bloco-de-pedidos-15x10-cm-foto-2.jpg";
+import adesivo33Foto2 from "@/assets/products/photos/adesivo-redondo-3-3cm-foto-2.jpg";
+import adesivo33Foto3 from "@/assets/products/photos/adesivo-redondo-3-3cm-foto-3.jpg";
+import adesivo48Foto2 from "@/assets/products/photos/adesivo-redondo-4-8x4-8cm-foto-2.jpg";
+import adesivo48Foto3 from "@/assets/products/photos/adesivo-redondo-4-8x4-8cm-foto-3.jpg";
+import adesivo48Foto4 from "@/assets/products/photos/adesivo-redondo-4-8x4-8cm-foto-4.jpg";
+import adesFechaCoucheFoto2 from "@/assets/products/photos/adesivo-fecha-sacola-10x4cm-foto-2.jpg";
+import adesFechaCoucheFoto3 from "@/assets/products/photos/adesivo-fecha-sacola-10x4cm-foto-3.jpg";
+import adesFechaSulfiteFoto2 from "@/assets/products/photos/adesivo-fecha-sacola-10x5cm-foto-2.jpg";
+import adesivoAnelFoto2 from "@/assets/products/photos/adesivo-para-anel-foto-2.jpg";
 import adesFechaCoucheMed from "@/assets/products/measures/adesivo-fecha-sacola-personalizado-couche-10x4-cm.jpg";
 import adesFechaSulfiteMed from "@/assets/products/measures/adesivo-fecha-sacola-personalizado-sulfite-10x5-cm.jpg";
 import adesivoAnelMed from "@/assets/products/measures/adesivo-personalizado-para-anel-7x1-7-cm.jpg";
