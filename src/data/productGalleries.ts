@@ -116,9 +116,6 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
     { src: blocoPedidosMed, type: "measurement" },
     { src: blocoPedidosFoto2, type: "photo", alt: "Bloco de pedidos personalizado 15x10 cm — foto real" },
   ],
-  "bloco-de-pedidos-personalizado-15x10-cm": [
-    { src: blocoPedidosMed, type: "measurement" },
-  ],
   "caixinha-personalizada-para-acessorios-8-3x8-3x5-cm": [
     { src: caixinhaMMed, type: "measurement" },
   ],
