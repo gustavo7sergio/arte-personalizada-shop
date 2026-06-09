@@ -135,11 +135,11 @@ function ProductCard({ product }: { product: Product }) {
     <div className="bg-card rounded-2xl border border-border overflow-hidden shadow-card hover:shadow-hover transition-shadow duration-300">
       {/* Product image */}
       {image && (
-        <div className="aspect-[4/3] overflow-hidden bg-muted/20">
+        <div className="overflow-hidden bg-muted/20">
           <ProductImage
             src={image}
             alt={product.name + (product.subtitle ? " – " + product.subtitle : "")}
-            className="w-full h-full object-contain p-4"
+            className="w-full object-contain p-2"
           />
         </div>
       )}
