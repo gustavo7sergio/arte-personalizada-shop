@@ -189,11 +189,11 @@ function ProductCard({ product }: { product: Product }) {
       : undefined;
 
   const CardImage = (
-    <div className="aspect-[4/3] overflow-hidden bg-muted/20 relative group">
+    <div className="overflow-hidden bg-muted/20 relative group">
       <ProductImage
         src={image}
         alt={product.name + (product.subtitle ? " – " + product.subtitle : "")}
-        className="w-full h-full object-contain p-4"
+        className="w-full object-contain p-2"
       />
       {hoverImage && (
         <img
@@ -202,7 +202,7 @@ function ProductCard({ product }: { product: Product }) {
           loading="lazy"
           decoding="async"
           aria-hidden="true"
-          className="hidden md:block absolute inset-0 w-full h-full object-contain p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+          className="hidden md:block absolute inset-0 w-full h-full object-contain p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
         />
       )}
       {!pilotPage && images.length > 1 && (
