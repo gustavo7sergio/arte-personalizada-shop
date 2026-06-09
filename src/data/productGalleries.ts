@@ -89,19 +89,32 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "adesivo-redondo-personalizado-3x3-cm": [
     { src: adesivo33Med, type: "measurement", alt: "Adesivo redondo personalizado 3x3 cm com medidas" },
+    { src: adesivo33Foto2, type: "photo", alt: "Adesivo redondo personalizado 3,3 cm aplicado em sacolas kraft" },
+    { src: adesivo33Foto3, type: "photo", alt: "Adesivo redondo personalizado 3,3 cm — cartela impressa" },
   ],
   "adesivo-redondo-personalizado-4-8x4-8-cm": [
     { src: adesivo48Med, type: "measurement", alt: "Adesivo redondo personalizado 4,8x4,8 cm com medidas" },
     { src: adesivo48Foto, type: "photo", alt: "Adesivo redondo personalizado 4,8x4,8 cm — foto real do produto aplicado" },
+    { src: adesivo48Foto2, type: "photo", alt: "Adesivo redondo personalizado 4,8x4,8 cm — cartela impressa" },
+    { src: adesivo48Foto3, type: "photo", alt: "Adesivo redondo personalizado 4,8x4,8 cm preto com dourado" },
+    { src: adesivo48Foto4, type: "photo", alt: "Adesivo redondo personalizado 4,8x4,8 cm aplicado em caixa" },
   ],
   "adesivo-fecha-sacola-personalizado-couche-10x4-cm": [
     { src: adesFechaCoucheMed, type: "measurement" },
+    { src: adesFechaCoucheFoto2, type: "photo", alt: "Adesivo fecha sacola personalizado couche 10x4 cm — cartela rosa" },
+    { src: adesFechaCoucheFoto3, type: "photo", alt: "Adesivo fecha sacola personalizado couche 10x4 cm aplicado em sacola" },
   ],
   "adesivo-fecha-sacola-personalizado-sulfite-10x5-cm": [
     { src: adesFechaSulfiteMed, type: "measurement" },
+    { src: adesFechaSulfiteFoto2, type: "photo", alt: "Adesivo fecha sacola personalizado sulfite 10x5 cm aplicado em sacola kraft" },
   ],
   "adesivo-personalizado-para-anel-7x1-7-cm": [
     { src: adesivoAnelMed, type: "measurement" },
+    { src: adesivoAnelFoto2, type: "photo", alt: "Adesivo personalizado para anel 7x1,7 cm aplicado em anel dourado" },
+  ],
+  "bloco-de-pedidos-personalizado-15x10-cm": [
+    { src: blocoPedidosMed, type: "measurement" },
+    { src: blocoPedidosFoto2, type: "photo", alt: "Bloco de pedidos personalizado 15x10 cm — foto real" },
   ],
   "bloco-de-pedidos-personalizado-15x10-cm": [
     { src: blocoPedidosMed, type: "measurement" },
