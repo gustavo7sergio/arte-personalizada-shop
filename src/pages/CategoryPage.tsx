@@ -189,11 +189,11 @@ function ProductCard({ product }: { product: Product }) {
       : undefined;
 
   const CardImage = (
-    <div className="overflow-hidden bg-muted/20 relative group">
+    <div className="overflow-hidden bg-muted/20 relative group aspect-[4/3]">
       <ProductImage
         src={image}
         alt={product.name + (product.subtitle ? " – " + product.subtitle : "")}
-        className="w-full object-contain p-2"
+        className="w-full h-full object-contain p-2"
       />
       {hoverImage && (
         <img
