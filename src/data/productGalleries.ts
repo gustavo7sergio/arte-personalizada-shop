@@ -14,6 +14,16 @@ import cartaoAgradGMed from "@/assets/products/measures/cartao-de-agradecimento-
 import adesivo33Med from "@/assets/products/measures/adesivo-redondo-personalizado--3-3cm.jpg";
 import adesivo48Med from "@/assets/products/measures/adesivo-redondo-personalizado--4-8cm.jpg";
 import adesivo48Foto from "@/assets/products/photos/adesivo-redondo-personalizado-4-8x4-8-cm-foto.jpg";
+import blocoPedidosFoto2 from "@/assets/products/photos/bloco-de-pedidos-15x10-cm-foto-2.jpg";
+import adesivo33Foto2 from "@/assets/products/photos/adesivo-redondo-3-3cm-foto-2.jpg";
+import adesivo33Foto3 from "@/assets/products/photos/adesivo-redondo-3-3cm-foto-3.jpg";
+import adesivo48Foto2 from "@/assets/products/photos/adesivo-redondo-4-8x4-8cm-foto-2.jpg";
+import adesivo48Foto3 from "@/assets/products/photos/adesivo-redondo-4-8x4-8cm-foto-3.jpg";
+import adesivo48Foto4 from "@/assets/products/photos/adesivo-redondo-4-8x4-8cm-foto-4.jpg";
+import adesFechaCoucheFoto2 from "@/assets/products/photos/adesivo-fecha-sacola-10x4cm-foto-2.jpg";
+import adesFechaCoucheFoto3 from "@/assets/products/photos/adesivo-fecha-sacola-10x4cm-foto-3.jpg";
+import adesFechaSulfiteFoto2 from "@/assets/products/photos/adesivo-fecha-sacola-10x5cm-foto-2.jpg";
+import adesivoAnelFoto2 from "@/assets/products/photos/adesivo-para-anel-foto-2.jpg";
 import adesFechaCoucheMed from "@/assets/products/measures/adesivo-fecha-sacola-personalizado-couche-10x4-cm.jpg";
 import adesFechaSulfiteMed from "@/assets/products/measures/adesivo-fecha-sacola-personalizado-sulfite-10x5-cm.jpg";
 import adesivoAnelMed from "@/assets/products/measures/adesivo-personalizado-para-anel-7x1-7-cm.jpg";
@@ -79,22 +89,32 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "adesivo-redondo-personalizado-3x3-cm": [
     { src: adesivo33Med, type: "measurement", alt: "Adesivo redondo personalizado 3x3 cm com medidas" },
+    { src: adesivo33Foto2, type: "photo", alt: "Adesivo redondo personalizado 3,3 cm aplicado em sacolas kraft" },
+    { src: adesivo33Foto3, type: "photo", alt: "Adesivo redondo personalizado 3,3 cm — cartela impressa" },
   ],
   "adesivo-redondo-personalizado-4-8x4-8-cm": [
     { src: adesivo48Med, type: "measurement", alt: "Adesivo redondo personalizado 4,8x4,8 cm com medidas" },
     { src: adesivo48Foto, type: "photo", alt: "Adesivo redondo personalizado 4,8x4,8 cm — foto real do produto aplicado" },
+    { src: adesivo48Foto2, type: "photo", alt: "Adesivo redondo personalizado 4,8x4,8 cm — cartela impressa" },
+    { src: adesivo48Foto3, type: "photo", alt: "Adesivo redondo personalizado 4,8x4,8 cm preto com dourado" },
+    { src: adesivo48Foto4, type: "photo", alt: "Adesivo redondo personalizado 4,8x4,8 cm aplicado em caixa" },
   ],
   "adesivo-fecha-sacola-personalizado-couche-10x4-cm": [
     { src: adesFechaCoucheMed, type: "measurement" },
+    { src: adesFechaCoucheFoto2, type: "photo", alt: "Adesivo fecha sacola personalizado couche 10x4 cm — cartela rosa" },
+    { src: adesFechaCoucheFoto3, type: "photo", alt: "Adesivo fecha sacola personalizado couche 10x4 cm aplicado em sacola" },
   ],
   "adesivo-fecha-sacola-personalizado-sulfite-10x5-cm": [
     { src: adesFechaSulfiteMed, type: "measurement" },
+    { src: adesFechaSulfiteFoto2, type: "photo", alt: "Adesivo fecha sacola personalizado sulfite 10x5 cm aplicado em sacola kraft" },
   ],
   "adesivo-personalizado-para-anel-7x1-7-cm": [
     { src: adesivoAnelMed, type: "measurement" },
+    { src: adesivoAnelFoto2, type: "photo", alt: "Adesivo personalizado para anel 7x1,7 cm aplicado em anel dourado" },
   ],
   "bloco-de-pedidos-personalizado-15x10-cm": [
     { src: blocoPedidosMed, type: "measurement" },
+    { src: blocoPedidosFoto2, type: "photo", alt: "Bloco de pedidos personalizado 15x10 cm — foto real" },
   ],
   "caixinha-personalizada-para-acessorios-8-3x8-3x5-cm": [
     { src: caixinhaMMed, type: "measurement" },
