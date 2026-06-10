@@ -216,6 +216,10 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "mini-tag-de-brincos-personalizada-4-8x4-25-cm": [
     { src: miniTagBrincosMed, type: "measurement" },
+    { src: miniTagBrincosFoto2, type: "photo", alt: "Mini tag de brincos personalizada — modelo Nina Maria SemiJoias com argolas douradas" },
+    { src: miniTagBrincosFoto3, type: "photo", alt: "Mini tag de brincos personalizada — modelo MEIMEI Semijoias com brincos coração" },
+    { src: miniTagBrincosFoto4, type: "photo", alt: "Mini tag de brincos personalizada — modelo Stilosa Semijoias roxo com brincos de pedra rosa" },
+    { src: miniTagBrincosFoto5, type: "photo", alt: "Mini tag de brincos personalizada — modelo DiRainha Semijoias" },
   ],
   "panfleto-personalizado": [
     { src: panfletoMed, type: "measurement" },
