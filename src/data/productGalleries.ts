@@ -93,6 +93,16 @@ import cartaoVisitasFoto3 from "@/assets/products/photos/cartao-de-visitas-8-8x4
 import cartaoVisitasFoto4 from "@/assets/products/photos/cartao-de-visitas-8-8x4-8cm-foto-4.jpg";
 import cartaoVisitasFoto5 from "@/assets/products/photos/cartao-de-visitas-8-8x4-8cm-foto-5.jpg";
 import cartaoVisitasFoto6 from "@/assets/products/photos/cartao-de-visitas-8-8x4-8cm-foto-6.jpg";
+import miniTagBrincosFoto2 from "@/assets/products/photos/mini-tag-de-brincos-foto-2.jpg";
+import miniTagBrincosFoto3 from "@/assets/products/photos/mini-tag-de-brincos-foto-3.jpg";
+import miniTagBrincosFoto4 from "@/assets/products/photos/mini-tag-de-brincos-foto-4.jpg";
+import miniTagBrincosFoto5 from "@/assets/products/photos/mini-tag-de-brincos-foto-5.jpg";
+import miniCertGarantiaFoto2 from "@/assets/products/photos/mini-certificado-garantia-foto-2.jpg";
+import miniCertGarantiaFoto3 from "@/assets/products/photos/mini-certificado-garantia-foto-3.jpg";
+import miniCertGarantiaFoto4 from "@/assets/products/photos/mini-certificado-garantia-foto-4.jpg";
+import miniEtiquetaRoupasFoto2 from "@/assets/products/photos/mini-etiqueta-roupas-foto-2.jpg";
+import miniEtiquetaRoupasFoto3 from "@/assets/products/photos/mini-etiqueta-roupas-foto-3.jpg";
+import miniTagAnelFoto2 from "@/assets/products/photos/mini-tag-anel-3-9x1-7-foto-2.jpg";
 
 export type GalleryImageType = "mockup" | "measurement" | "front-back" | "photo" | "detail";
 
@@ -160,6 +170,7 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "mini-tag-de-anel-personalizada-3-9x1-7-cm": [
     { src: miniTagAnelMed, type: "measurement" },
+    { src: miniTagAnelFoto2, type: "photo", alt: "Mini tag de anel personalizada 3,9x1,7 cm — modelo Fernanda Sacilotto Semijoias" },
   ],
   "cartao-de-visitas-personalizado-8-8x4-8-cm": [
     { src: cartaoVisitasMed, type: "measurement" },
@@ -191,15 +202,24 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "mini-certificado-de-garantia-personalizado-4-8x4-25-cm": [
     { src: miniCertGarantiaMed, type: "measurement" },
+    { src: miniCertGarantiaFoto2, type: "photo", alt: "Mini certificado de garantia personalizado — modelo Ana Resende Semijoias verde com dourado" },
+    { src: miniCertGarantiaFoto3, type: "photo", alt: "Mini certificado de garantia personalizado — modelo Rita Paixão Semijoias frente e verso" },
+    { src: miniCertGarantiaFoto4, type: "photo", alt: "Mini certificado de garantia personalizado — modelo Cravo e Pimenta Semijoias preto" },
   ],
   "mini-etiqueta-personalizada-para-roupas-4-8x4-25-cm": [
     { src: miniEtiquetaRoupasMed, type: "measurement" },
+    { src: miniEtiquetaRoupasFoto2, type: "photo", alt: "Mini etiqueta personalizada para roupas — modelo Star Íntima frente e verso roxo" },
+    { src: miniEtiquetaRoupasFoto3, type: "photo", alt: "Mini etiqueta personalizada para roupas — modelo Pyetra Fashion Moda Feminina" },
   ],
   "tag-de-anel-personalizada-7x3-cm": [
     { src: tagAnel7x3Med, type: "measurement" },
   ],
   "mini-tag-de-brincos-personalizada-4-8x4-25-cm": [
     { src: miniTagBrincosMed, type: "measurement" },
+    { src: miniTagBrincosFoto2, type: "photo", alt: "Mini tag de brincos personalizada — modelo Nina Maria SemiJoias com argolas douradas" },
+    { src: miniTagBrincosFoto3, type: "photo", alt: "Mini tag de brincos personalizada — modelo MEIMEI Semijoias com brincos coração" },
+    { src: miniTagBrincosFoto4, type: "photo", alt: "Mini tag de brincos personalizada — modelo Stilosa Semijoias roxo com brincos de pedra rosa" },
+    { src: miniTagBrincosFoto5, type: "photo", alt: "Mini tag de brincos personalizada — modelo DiRainha Semijoias" },
   ],
   "panfleto-personalizado": [
     { src: panfletoMed, type: "measurement" },
