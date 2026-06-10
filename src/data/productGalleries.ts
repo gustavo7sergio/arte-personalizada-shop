@@ -125,15 +125,25 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   "bloco-de-pedidos-personalizado-15x10-cm": [
     { src: blocoPedidosMed, type: "measurement" },
     { src: blocoPedidosFoto2, type: "photo", alt: "Bloco de pedidos personalizado 15x10 cm — foto real" },
+    { src: blocoPedidosFoto3, type: "photo", alt: "Bloco de pedidos personalizado 15x10 cm — mockup com folha destacável" },
   ],
   "caixinha-personalizada-para-acessorios-8-3x8-3x5-cm": [
     { src: caixinhaMMed, type: "measurement" },
+    { src: caixinhaMFoto2, type: "photo", alt: "Caixinha personalizada para acessórios M — foto real fechada" },
+    { src: caixinhaMFoto3, type: "photo", alt: "Caixinha personalizada para acessórios M — foto real aberta com semijoias" },
   ],
   "caixinha-personalizada-maleta-4-4x7-3x5-6-cm": [
     { src: caixinhaMaletaMed, type: "measurement" },
+    { src: caixinhaMaletaFoto2, type: "photo", alt: "Caixinha personalizada modelo maleta — foto real verde" },
+    { src: caixinhaMaletaFoto3, type: "photo", alt: "Caixinha personalizada modelo maleta — foto real preta" },
+    { src: caixinhaMaletaFoto4, type: "photo", alt: "Caixinha personalizada modelo maleta — foto real mármore" },
+    { src: caixinhaMaletaFoto5, type: "photo", alt: "Caixinha personalizada modelo maleta — foto real branca com dourado" },
   ],
   "caixinha-personalizada-para-acessorios-6-3x6-3x3-cm": [
     { src: caixinhaPMed, type: "measurement" },
+    { src: caixinhaPFoto2, type: "photo", alt: "Caixinha personalizada para acessórios P — foto real preta com logo" },
+    { src: caixinhaPFoto3, type: "photo", alt: "Caixinha personalizada para acessórios P — foto real branca com logo colorido" },
+    { src: caixinhaPFoto4, type: "photo", alt: "Caixinha personalizada para acessórios P — foto real com mensagem" },
   ],
   "mini-tag-de-anel-personalizada-3-9x1-7-cm": [
     { src: miniTagAnelMed, type: "measurement" },
