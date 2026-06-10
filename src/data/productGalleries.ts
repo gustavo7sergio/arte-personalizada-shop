@@ -106,6 +106,9 @@ export interface GalleryImage {
 export const productGalleryExtras: Record<string, GalleryImage[]> = {
   "cartao-de-agradecimento-personalizado-8-8x9-94-cm": [
     { src: cartaoAgradGMed, type: "measurement" },
+    { src: cartaoAgradFoto2, type: "photo", alt: "Cartão de agradecimento personalizado 8,8x9,94 cm — modelo Camilove rosa" },
+    { src: cartaoAgradFoto3, type: "photo", alt: "Cartão de agradecimento personalizado 8,8x9,94 cm — modelo Tô Pronta com hot stamping" },
+    { src: cartaoAgradFoto4, type: "photo", alt: "Cartão de agradecimento personalizado 8,8x9,94 cm — modelo Giovanna's Store rosa" },
   ],
   "adesivo-redondo-personalizado-3x3-cm": [
     { src: adesivo33Med, type: "measurement", alt: "Adesivo redondo personalizado 3x3 cm com medidas" },
