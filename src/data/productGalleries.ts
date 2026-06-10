@@ -163,12 +163,19 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "cartao-de-visitas-personalizado-8-8x4-8-cm": [
     { src: cartaoVisitasMed, type: "measurement" },
+    { src: cartaoVisitasFoto2, type: "photo", alt: "Cartão de visitas personalizado 8,8x4,8 cm — modelo Delícias da Cleo rosa" },
+    { src: cartaoVisitasFoto3, type: "photo", alt: "Cartão de visitas personalizado 8,8x4,8 cm — modelo Lohayne Mendonça com foto" },
+    { src: cartaoVisitasFoto4, type: "photo", alt: "Cartão de visitas personalizado 8,8x4,8 cm — modelo Partyhaus preto e branco" },
+    { src: cartaoVisitasFoto5, type: "photo", alt: "Cartão de visitas personalizado 8,8x4,8 cm — modelo VP Custom preto" },
+    { src: cartaoVisitasFoto6, type: "photo", alt: "Cartão de visitas personalizado 8,8x4,8 cm — modelo Picolo Semijoias com QR" },
   ],
   "cartao-de-visitas-personalizado-verniz-localizado-8-8x5-1-cm": [
     { src: cartaoVisitasVernizMed, type: "measurement" },
   ],
   "certificado-de-garantia-personalizado-8-8x4-8-cm": [
     { src: certGarantiaMed, type: "measurement" },
+    { src: certGarantiaFoto2, type: "photo", alt: "Certificado de garantia personalizado 8,8x4,8 cm — modelo Divinità com listras douradas" },
+    { src: certGarantiaFoto3, type: "photo", alt: "Certificado de garantia personalizado 8,8x4,8 cm — modelo Dani Jóias com dourado" },
   ],
   "certificado-de-garantia-personalizado-dobrado": [
     { src: certGarantiaDobradoMed, type: "measurement" },
