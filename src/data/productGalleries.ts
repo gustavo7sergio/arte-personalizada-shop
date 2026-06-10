@@ -208,6 +208,8 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "mini-etiqueta-personalizada-para-roupas-4-8x4-25-cm": [
     { src: miniEtiquetaRoupasMed, type: "measurement" },
+    { src: miniEtiquetaRoupasFoto2, type: "photo", alt: "Mini etiqueta personalizada para roupas — modelo Star Íntima frente e verso roxo" },
+    { src: miniEtiquetaRoupasFoto3, type: "photo", alt: "Mini etiqueta personalizada para roupas — modelo Pyetra Fashion Moda Feminina" },
   ],
   "tag-de-anel-personalizada-7x3-cm": [
     { src: tagAnel7x3Med, type: "measurement" },
