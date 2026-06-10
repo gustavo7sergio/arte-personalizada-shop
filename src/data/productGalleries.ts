@@ -15,6 +15,16 @@ import adesivo33Med from "@/assets/products/measures/adesivo-redondo-personaliza
 import adesivo48Med from "@/assets/products/measures/adesivo-redondo-personalizado--4-8cm.jpg";
 import adesivo48Foto from "@/assets/products/photos/adesivo-redondo-personalizado-4-8x4-8-cm-foto.jpg";
 import blocoPedidosFoto2 from "@/assets/products/photos/bloco-de-pedidos-15x10-cm-foto-2.jpg";
+import blocoPedidosFoto3 from "@/assets/products/photos/bloco-de-pedidos-15x10-cm-foto-3.jpg";
+import caixinhaPFoto2 from "@/assets/products/photos/caixinha-p-6-3x6-3x3-foto-2.jpg";
+import caixinhaPFoto3 from "@/assets/products/photos/caixinha-p-6-3x6-3x3-foto-3.jpg";
+import caixinhaPFoto4 from "@/assets/products/photos/caixinha-p-6-3x6-3x3-foto-4.jpg";
+import caixinhaMFoto2 from "@/assets/products/photos/caixinha-m-8-3x8-3x5-foto-2.jpg";
+import caixinhaMFoto3 from "@/assets/products/photos/caixinha-m-8-3x8-3x5-foto-3.jpg";
+import caixinhaMaletaFoto2 from "@/assets/products/photos/caixinha-maleta-foto-2.jpg";
+import caixinhaMaletaFoto3 from "@/assets/products/photos/caixinha-maleta-foto-3.jpg";
+import caixinhaMaletaFoto4 from "@/assets/products/photos/caixinha-maleta-foto-4.jpg";
+import caixinhaMaletaFoto5 from "@/assets/products/photos/caixinha-maleta-foto-5.jpg";
 import adesivo33Foto2 from "@/assets/products/photos/adesivo-redondo-3-3cm-foto-2.jpg";
 import adesivo33Foto3 from "@/assets/products/photos/adesivo-redondo-3-3cm-foto-3.jpg";
 import adesivo48Foto2 from "@/assets/products/photos/adesivo-redondo-4-8x4-8cm-foto-2.jpg";
