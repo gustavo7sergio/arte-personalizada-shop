@@ -83,6 +83,16 @@ import tagTrioColarPMed from "@/assets/products/measures/tag-de-trio-de-brincos-
 import tagTrioColarGMed from "@/assets/products/measures/tag-de-trio-de-brincos-e-colar-personalizada-9x6-5-cm.jpg";
 import tagSemaninhaMed from "@/assets/products/measures/tag-semaninha-personalizada-8-8x4-8-cm.jpg";
 import tagAnel4x4Med from "@/assets/products/measures/tag-de-anel-personalizada-4x4-cm.jpg";
+import certGarantiaFoto2 from "@/assets/products/photos/certificado-de-garantia-8-8x4-8cm-foto-2.jpg";
+import certGarantiaFoto3 from "@/assets/products/photos/certificado-de-garantia-8-8x4-8cm-foto-3.jpg";
+import cartaoAgradFoto2 from "@/assets/products/photos/cartao-de-agradecimento-8-8x9-94cm-foto-2.jpg";
+import cartaoAgradFoto3 from "@/assets/products/photos/cartao-de-agradecimento-8-8x9-94cm-foto-3.jpg";
+import cartaoAgradFoto4 from "@/assets/products/photos/cartao-de-agradecimento-8-8x9-94cm-foto-4.jpg";
+import cartaoVisitasFoto2 from "@/assets/products/photos/cartao-de-visitas-8-8x4-8cm-foto-2.jpg";
+import cartaoVisitasFoto3 from "@/assets/products/photos/cartao-de-visitas-8-8x4-8cm-foto-3.jpg";
+import cartaoVisitasFoto4 from "@/assets/products/photos/cartao-de-visitas-8-8x4-8cm-foto-4.jpg";
+import cartaoVisitasFoto5 from "@/assets/products/photos/cartao-de-visitas-8-8x4-8cm-foto-5.jpg";
+import cartaoVisitasFoto6 from "@/assets/products/photos/cartao-de-visitas-8-8x4-8cm-foto-6.jpg";
 
 export type GalleryImageType = "mockup" | "measurement" | "front-back" | "photo" | "detail";
 
