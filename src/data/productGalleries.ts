@@ -93,6 +93,16 @@ import cartaoVisitasFoto3 from "@/assets/products/photos/cartao-de-visitas-8-8x4
 import cartaoVisitasFoto4 from "@/assets/products/photos/cartao-de-visitas-8-8x4-8cm-foto-4.jpg";
 import cartaoVisitasFoto5 from "@/assets/products/photos/cartao-de-visitas-8-8x4-8cm-foto-5.jpg";
 import cartaoVisitasFoto6 from "@/assets/products/photos/cartao-de-visitas-8-8x4-8cm-foto-6.jpg";
+import miniTagBrincosFoto2 from "@/assets/products/photos/mini-tag-de-brincos-foto-2.jpg";
+import miniTagBrincosFoto3 from "@/assets/products/photos/mini-tag-de-brincos-foto-3.jpg";
+import miniTagBrincosFoto4 from "@/assets/products/photos/mini-tag-de-brincos-foto-4.jpg";
+import miniTagBrincosFoto5 from "@/assets/products/photos/mini-tag-de-brincos-foto-5.jpg";
+import miniCertGarantiaFoto2 from "@/assets/products/photos/mini-certificado-garantia-foto-2.jpg";
+import miniCertGarantiaFoto3 from "@/assets/products/photos/mini-certificado-garantia-foto-3.jpg";
+import miniCertGarantiaFoto4 from "@/assets/products/photos/mini-certificado-garantia-foto-4.jpg";
+import miniEtiquetaRoupasFoto2 from "@/assets/products/photos/mini-etiqueta-roupas-foto-2.jpg";
+import miniEtiquetaRoupasFoto3 from "@/assets/products/photos/mini-etiqueta-roupas-foto-3.jpg";
+import miniTagAnelFoto2 from "@/assets/products/photos/mini-tag-anel-3-9x1-7-foto-2.jpg";
 
 export type GalleryImageType = "mockup" | "measurement" | "front-back" | "photo" | "detail";
 
