@@ -202,6 +202,9 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "mini-certificado-de-garantia-personalizado-4-8x4-25-cm": [
     { src: miniCertGarantiaMed, type: "measurement" },
+    { src: miniCertGarantiaFoto2, type: "photo", alt: "Mini certificado de garantia personalizado — modelo Ana Resende Semijoias verde com dourado" },
+    { src: miniCertGarantiaFoto3, type: "photo", alt: "Mini certificado de garantia personalizado — modelo Rita Paixão Semijoias frente e verso" },
+    { src: miniCertGarantiaFoto4, type: "photo", alt: "Mini certificado de garantia personalizado — modelo Cravo e Pimenta Semijoias preto" },
   ],
   "mini-etiqueta-personalizada-para-roupas-4-8x4-25-cm": [
     { src: miniEtiquetaRoupasMed, type: "measurement" },
