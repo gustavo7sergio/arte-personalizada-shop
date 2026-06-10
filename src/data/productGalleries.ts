@@ -58,6 +58,16 @@ import sacolaPlasticaMed from "@/assets/products/measures/sacola-plastica-person
 import sacolinhaCoucheMed from "@/assets/products/measures/sacolinha-personalizada-para-semijoias-couche-16-5x12x4-5-cm.jpg";
 import sacolinhaCartaoMMed from "@/assets/products/measures/sacolinha-personalizada-para-semijoias-papel-cartao-m.jpg";
 import sacolinhaCartaoPMed from "@/assets/products/measures/sacolinha-personalizada-para-semijoias-papel-cartao-p.jpg";
+import sacolinhaCartaoFoto2 from "@/assets/products/photos/sacolinha-papel-cartao-foto-2.jpg";
+import sacolinhaCartaoFoto3 from "@/assets/products/photos/sacolinha-papel-cartao-foto-3.jpg";
+import panfletoFoto2 from "@/assets/products/photos/panfleto-foto-2.jpg";
+import sacolaPlasticaFoto2 from "@/assets/products/photos/sacola-plastica-foto-2.jpg";
+import sacolinha250gFoto2 from "@/assets/products/photos/sacolinha-papel-250g-foto-2.jpg";
+import sacolinha250gFoto3 from "@/assets/products/photos/sacolinha-papel-250g-foto-3.jpg";
+import sacolinha250gFoto4 from "@/assets/products/photos/sacolinha-papel-250g-foto-4.jpg";
+import sacolinha250gFoto5 from "@/assets/products/photos/sacolinha-papel-250g-foto-5.jpg";
+import sacolinha250gFoto6 from "@/assets/products/photos/sacolinha-papel-250g-foto-6.jpg";
+import sacolinha250gFoto7 from "@/assets/products/photos/sacolinha-papel-250g-foto-7.jpg";
 import tagAnelPadronizadaMMed from "@/assets/products/measures/tag-de-anel-padronizada-6-5x2-3-cm.jpg";
 import tagLacos15Med from "@/assets/products/measures/tag-personalizada-para-lacos-e-tiaras-15x4-82-cm.jpg";
 import tagLacos75Med from "@/assets/products/measures/tag-personalizada-para-lacos-e-tiaras-7-5x9-5-cm.jpg";
@@ -223,16 +233,26 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "panfleto-personalizado": [
     { src: panfletoMed, type: "measurement" },
+    { src: panfletoFoto2, type: "photo", alt: "Panfleto personalizado — modelo Mércia Lingerie" },
   ],
   "sacola-plastica-personalizada-alca-vazada": [
     { src: sacolaPlasticaMed, type: "measurement", alt: "Sacola plástica personalizada — tamanhos disponíveis 16x22, 20x30, 25x35 e 30x40 cm" },
+    { src: sacolaPlasticaFoto2, type: "photo", alt: "Sacola plástica personalizada — modelo Essência Moda Feminina" },
   ],
   "sacolinha-personalizada-para-semijoias-couche-16-5x12x4-5-cm": [
     { src: sacolinhaCoucheMed, type: "measurement" },
+    { src: sacolinha250gFoto2, type: "photo", alt: "Sacolinha em papel 250g — modelo YZE Acessórios" },
+    { src: sacolinha250gFoto3, type: "photo", alt: "Sacolinha em papel 250g — modelo Eliz Semi Jóias" },
+    { src: sacolinha250gFoto4, type: "photo", alt: "Sacolinha em papel 250g — modelo Vládia Serra Semijoias de Luxo" },
+    { src: sacolinha250gFoto5, type: "photo", alt: "Sacolinha em papel 250g — modelo Joias da Ju by Juliana Pires" },
+    { src: sacolinha250gFoto6, type: "photo", alt: "Sacolinha em papel 250g — modelo Positiva Jóias" },
+    { src: sacolinha250gFoto7, type: "photo", alt: "Sacolinha em papel 250g — modelo Donatella Joias" },
   ],
   "sacolinha-personalizada-para-semijoias-papel-cartao": [
     { src: sacolinhaCartaoPMed, type: "measurement", alt: "Sacolinha em papel cartão 300g tamanho P — 10x15,4x4 cm" },
     { src: sacolinhaCartaoMMed, type: "measurement", alt: "Sacolinha em papel cartão 300g tamanho M — 13x18x7,2 cm" },
+    { src: sacolinhaCartaoFoto2, type: "photo", alt: "Sacolinha em papel cartão 300g — modelo El'ga (vista lateral)" },
+    { src: sacolinhaCartaoFoto3, type: "photo", alt: "Sacolinha em papel cartão 300g — modelo El'ga" },
   ],
   "tag-de-anel-padronizada-6-5x2-3-cm": [
     { src: tagAnelPadronizadaMMed, type: "measurement" },
