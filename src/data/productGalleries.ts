@@ -83,6 +83,16 @@ import tagTrioColarPMed from "@/assets/products/measures/tag-de-trio-de-brincos-
 import tagTrioColarGMed from "@/assets/products/measures/tag-de-trio-de-brincos-e-colar-personalizada-9x6-5-cm.jpg";
 import tagSemaninhaMed from "@/assets/products/measures/tag-semaninha-personalizada-8-8x4-8-cm.jpg";
 import tagAnel4x4Med from "@/assets/products/measures/tag-de-anel-personalizada-4x4-cm.jpg";
+import certGarantiaFoto2 from "@/assets/products/photos/certificado-de-garantia-8-8x4-8cm-foto-2.jpg";
+import certGarantiaFoto3 from "@/assets/products/photos/certificado-de-garantia-8-8x4-8cm-foto-3.jpg";
+import cartaoAgradFoto2 from "@/assets/products/photos/cartao-de-agradecimento-8-8x9-94cm-foto-2.jpg";
+import cartaoAgradFoto3 from "@/assets/products/photos/cartao-de-agradecimento-8-8x9-94cm-foto-3.jpg";
+import cartaoAgradFoto4 from "@/assets/products/photos/cartao-de-agradecimento-8-8x9-94cm-foto-4.jpg";
+import cartaoVisitasFoto2 from "@/assets/products/photos/cartao-de-visitas-8-8x4-8cm-foto-2.jpg";
+import cartaoVisitasFoto3 from "@/assets/products/photos/cartao-de-visitas-8-8x4-8cm-foto-3.jpg";
+import cartaoVisitasFoto4 from "@/assets/products/photos/cartao-de-visitas-8-8x4-8cm-foto-4.jpg";
+import cartaoVisitasFoto5 from "@/assets/products/photos/cartao-de-visitas-8-8x4-8cm-foto-5.jpg";
+import cartaoVisitasFoto6 from "@/assets/products/photos/cartao-de-visitas-8-8x4-8cm-foto-6.jpg";
 
 export type GalleryImageType = "mockup" | "measurement" | "front-back" | "photo" | "detail";
 
@@ -96,6 +106,9 @@ export interface GalleryImage {
 export const productGalleryExtras: Record<string, GalleryImage[]> = {
   "cartao-de-agradecimento-personalizado-8-8x9-94-cm": [
     { src: cartaoAgradGMed, type: "measurement" },
+    { src: cartaoAgradFoto2, type: "photo", alt: "Cartão de agradecimento personalizado 8,8x9,94 cm — modelo Camilove rosa" },
+    { src: cartaoAgradFoto3, type: "photo", alt: "Cartão de agradecimento personalizado 8,8x9,94 cm — modelo Tô Pronta com hot stamping" },
+    { src: cartaoAgradFoto4, type: "photo", alt: "Cartão de agradecimento personalizado 8,8x9,94 cm — modelo Giovanna's Store rosa" },
   ],
   "adesivo-redondo-personalizado-3x3-cm": [
     { src: adesivo33Med, type: "measurement", alt: "Adesivo redondo personalizado 3x3 cm com medidas" },
@@ -150,12 +163,19 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "cartao-de-visitas-personalizado-8-8x4-8-cm": [
     { src: cartaoVisitasMed, type: "measurement" },
+    { src: cartaoVisitasFoto2, type: "photo", alt: "Cartão de visitas personalizado 8,8x4,8 cm — modelo Delícias da Cleo rosa" },
+    { src: cartaoVisitasFoto3, type: "photo", alt: "Cartão de visitas personalizado 8,8x4,8 cm — modelo Lohayne Mendonça com foto" },
+    { src: cartaoVisitasFoto4, type: "photo", alt: "Cartão de visitas personalizado 8,8x4,8 cm — modelo Partyhaus preto e branco" },
+    { src: cartaoVisitasFoto5, type: "photo", alt: "Cartão de visitas personalizado 8,8x4,8 cm — modelo VP Custom preto" },
+    { src: cartaoVisitasFoto6, type: "photo", alt: "Cartão de visitas personalizado 8,8x4,8 cm — modelo Picolo Semijoias com QR" },
   ],
   "cartao-de-visitas-personalizado-verniz-localizado-8-8x5-1-cm": [
     { src: cartaoVisitasVernizMed, type: "measurement" },
   ],
   "certificado-de-garantia-personalizado-8-8x4-8-cm": [
     { src: certGarantiaMed, type: "measurement" },
+    { src: certGarantiaFoto2, type: "photo", alt: "Certificado de garantia personalizado 8,8x4,8 cm — modelo Divinità com listras douradas" },
+    { src: certGarantiaFoto3, type: "photo", alt: "Certificado de garantia personalizado 8,8x4,8 cm — modelo Dani Jóias com dourado" },
   ],
   "certificado-de-garantia-personalizado-dobrado": [
     { src: certGarantiaDobradoMed, type: "measurement" },
