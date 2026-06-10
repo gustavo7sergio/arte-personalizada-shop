@@ -170,6 +170,7 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "mini-tag-de-anel-personalizada-3-9x1-7-cm": [
     { src: miniTagAnelMed, type: "measurement" },
+    { src: miniTagAnelFoto2, type: "photo", alt: "Mini tag de anel personalizada 3,9x1,7 cm — modelo Fernanda Sacilotto Semijoias" },
   ],
   "cartao-de-visitas-personalizado-8-8x4-8-cm": [
     { src: cartaoVisitasMed, type: "measurement" },
