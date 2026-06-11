@@ -123,6 +123,16 @@ import tagAnel33x26Foto2 from "@/assets/products/photos/tag-de-anel-3-3x2-6-foto
 import tagAnel33x26Foto3 from "@/assets/products/photos/tag-de-anel-3-3x2-6-foto-3.jpg";
 import tagAnel4x4Foto2 from "@/assets/products/photos/tag-de-anel-4x4-foto-2.jpg";
 import tagAnel4x4Foto3 from "@/assets/products/photos/tag-de-anel-4x4-foto-3.jpg";
+import tagAnel7x3Foto3 from "@/assets/products/photos/tag-de-anel-7x3-foto-3.jpg";
+import tagAnel7x3Foto4 from "@/assets/products/photos/tag-de-anel-7x3-foto-4.jpg";
+import tagBrincosColar9946Foto2 from "@/assets/products/photos/tag-brincos-colar-9-94x6-foto-2.jpg";
+import tagBrincosColar8848Foto2 from "@/assets/products/photos/tag-brincos-colar-8-8x4-8-foto-2.jpg";
+import tagBrincosColar8848Foto3 from "@/assets/products/photos/tag-brincos-colar-8-8x4-8-foto-3.jpg";
+import tagBrincosColar8848Foto4 from "@/assets/products/photos/tag-brincos-colar-8-8x4-8-foto-4.jpg";
+import tagBrincosP25Foto2 from "@/assets/products/photos/tag-brincos-4x2-5-foto-2.jpg";
+import tagBrincosP25Foto3 from "@/assets/products/photos/tag-brincos-4x2-5-foto-3.jpg";
+import tagBrincosP25Foto4 from "@/assets/products/photos/tag-brincos-4x2-5-foto-4.jpg";
+import tagBrincosP25Foto5 from "@/assets/products/photos/tag-brincos-4x2-5-foto-5.jpg";
 
 export type GalleryImageType = "mockup" | "measurement" | "front-back" | "photo" | "detail";
 
