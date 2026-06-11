@@ -244,6 +244,8 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   "tag-de-anel-personalizada-7x3-cm": [
     { src: tagAnel7x3Med, type: "measurement" },
     { src: tagAnel7x3Foto2, type: "photo", alt: "Tag de anel personalizada 7x3 cm — modelo CL Jewels preto com anel" },
+    { src: tagAnel7x3Foto3, type: "photo", alt: "Tag de anel personalizada 7x3 cm — modelo Pratas by Kariny Freitas vinho" },
+    { src: tagAnel7x3Foto4, type: "photo", alt: "Tag de anel personalizada 7x3 cm — modelo Vigato Semijoias preto com dourado" },
   ],
   "mini-tag-de-brincos-personalizada-4-8x4-25-cm": [
     { src: miniTagBrincosMed, type: "measurement" },
