@@ -299,6 +299,10 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "tag-de-brincos-personalizada-4x2-5-cm": [
     { src: tagBrincosPMed, type: "measurement" },
+    { src: tagBrincosP25Foto2, type: "photo", alt: "Tag de brincos personalizada 4x2,5 cm — modelo Taipo Pratas rosa" },
+    { src: tagBrincosP25Foto3, type: "photo", alt: "Tag de brincos personalizada 4x2,5 cm — modelo JDS Semijoias amarelo e preto" },
+    { src: tagBrincosP25Foto4, type: "photo", alt: "Tag de brincos personalizada 4x2,5 cm — modelo Tanto Semijoias verde claro" },
+    { src: tagBrincosP25Foto5, type: "photo", alt: "Tag de brincos personalizada 4x2,5 cm — modelo Asas de Prata rosa com brincos" },
   ],
   "tag-de-brincos-personalizada-8-8x4-8-cm": [
     { src: tagBrincosMMed, type: "measurement" },
@@ -308,9 +312,13 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "tag-de-brincos-e-colar-personalizada-8-8x4-8-cm": [
     { src: tagBrincosColarPMed, type: "measurement" },
+    { src: tagBrincosColar8848Foto2, type: "photo", alt: "Tag de brincos e colar personalizada 8,8x4,8 cm — modelo MR Semijoias frente e verso" },
+    { src: tagBrincosColar8848Foto3, type: "photo", alt: "Tag de brincos e colar personalizada 8,8x4,8 cm — modelo Impacct Acessórios branco com colar" },
+    { src: tagBrincosColar8848Foto4, type: "photo", alt: "Tag de brincos e colar personalizada 8,8x4,8 cm — modelo Maia Acessórios roxo e rosa" },
   ],
   "tag-de-brincos-e-colar-personalizada-9-94x6-cm": [
     { src: tagBrincosColarGMed, type: "measurement" },
+    { src: tagBrincosColar9946Foto2, type: "photo", alt: "Tag de brincos e colar personalizada 9,94x6 cm — modelo Ellie Semijoias laranja e rosa" },
   ],
   "tag-de-brincos-e-colar-personalizada-formato-especial": [
     { src: tagBrincosColarEspMed, type: "measurement" },
