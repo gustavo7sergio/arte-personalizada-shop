@@ -113,6 +113,16 @@ import miniCertGarantiaFoto4 from "@/assets/products/photos/mini-certificado-gar
 import miniEtiquetaRoupasFoto2 from "@/assets/products/photos/mini-etiqueta-roupas-foto-2.jpg";
 import miniEtiquetaRoupasFoto3 from "@/assets/products/photos/mini-etiqueta-roupas-foto-3.jpg";
 import miniTagAnelFoto2 from "@/assets/products/photos/mini-tag-anel-3-9x1-7-foto-2.jpg";
+import tagAnel7x3Foto2 from "@/assets/products/photos/tag-de-anel-7x3-foto-2.jpg";
+import sacolinhaCartaoFoto4 from "@/assets/products/photos/sacolinha-papel-cartao-foto-4.jpg";
+import sacolinhaCartaoFoto5 from "@/assets/products/photos/sacolinha-papel-cartao-foto-5.jpg";
+import sacolinhaCartaoFoto6 from "@/assets/products/photos/sacolinha-papel-cartao-foto-6.jpg";
+import sacolinhaCartaoFoto7 from "@/assets/products/photos/sacolinha-papel-cartao-foto-7.jpg";
+import sacolinhaCartaoFoto8 from "@/assets/products/photos/sacolinha-papel-cartao-foto-8.jpg";
+import tagAnel33x26Foto2 from "@/assets/products/photos/tag-de-anel-3-3x2-6-foto-2.jpg";
+import tagAnel33x26Foto3 from "@/assets/products/photos/tag-de-anel-3-3x2-6-foto-3.jpg";
+import tagAnel4x4Foto2 from "@/assets/products/photos/tag-de-anel-4x4-foto-2.jpg";
+import tagAnel4x4Foto3 from "@/assets/products/photos/tag-de-anel-4x4-foto-3.jpg";
 
 export type GalleryImageType = "mockup" | "measurement" | "front-back" | "photo" | "detail";
 
@@ -223,6 +233,7 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "tag-de-anel-personalizada-7x3-cm": [
     { src: tagAnel7x3Med, type: "measurement" },
+    { src: tagAnel7x3Foto2, type: "photo", alt: "Tag de anel personalizada 7x3 cm — modelo CL Jewels preto com anel" },
   ],
   "mini-tag-de-brincos-personalizada-4-8x4-25-cm": [
     { src: miniTagBrincosMed, type: "measurement" },
@@ -253,6 +264,11 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
     { src: sacolinhaCartaoMMed, type: "measurement", alt: "Sacolinha em papel cartão 300g tamanho M — 13x18x7,2 cm" },
     { src: sacolinhaCartaoFoto2, type: "photo", alt: "Sacolinha em papel cartão 300g — modelo El'ga (vista lateral)" },
     { src: sacolinhaCartaoFoto3, type: "photo", alt: "Sacolinha em papel cartão 300g — modelo El'ga" },
+    { src: sacolinhaCartaoFoto4, type: "photo", alt: "Sacolinha em papel cartão 300g — modelo Flar Semi Jóias verde com dourado" },
+    { src: sacolinhaCartaoFoto5, type: "photo", alt: "Sacolinha em papel cartão 300g tamanho M — modelo Ninoni Jóias e Acessórios tiffany" },
+    { src: sacolinhaCartaoFoto6, type: "photo", alt: "Sacolinha em papel cartão 300g tamanho M — modelo Michele Spigolon Semijoias planificada" },
+    { src: sacolinhaCartaoFoto7, type: "photo", alt: "Sacolinha em papel cartão 300g tamanho M — modelo Michele Spigolon Semijoias montada" },
+    { src: sacolinhaCartaoFoto8, type: "photo", alt: "Sacolinha em papel cartão 300g tamanho M — modelo Fernanda Sacilotto Semijoias branca" },
   ],
   "tag-de-anel-padronizada-6-5x2-3-cm": [
     { src: tagAnelPadronizadaMMed, type: "measurement" },
@@ -326,6 +342,12 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "tag-de-anel-personalizada-4x4-cm": [
     { src: tagAnel4x4Med, type: "measurement" },
+    { src: tagAnel4x4Foto2, type: "photo", alt: "Tag de anel personalizada 4x4 cm — modelo Divinità Semijoias com anéis" },
+    { src: tagAnel4x4Foto3, type: "photo", alt: "Tag de anel personalizada 4x4 cm — modelo Angela's Jóias preto com dourado" },
+  ],
+  "tag-de-anel-personalizada-3-3x2-6-cm": [
+    { src: tagAnel33x26Foto2, type: "photo", alt: "Tag de anel personalizada 3,3x2,6 cm — modelo Michele Spigolon Semijoias frente e verso" },
+    { src: tagAnel33x26Foto3, type: "photo", alt: "Tag de anel personalizada 3,3x2,6 cm — modelo The Fascínio Semijoias" },
   ],
 };
 
