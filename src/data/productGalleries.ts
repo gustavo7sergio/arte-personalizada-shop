@@ -133,6 +133,16 @@ import tagBrincosP25Foto2 from "@/assets/products/photos/tag-brincos-4x2-5-foto-
 import tagBrincosP25Foto3 from "@/assets/products/photos/tag-brincos-4x2-5-foto-3.jpg";
 import tagBrincosP25Foto4 from "@/assets/products/photos/tag-brincos-4x2-5-foto-4.jpg";
 import tagBrincosP25Foto5 from "@/assets/products/photos/tag-brincos-4x2-5-foto-5.jpg";
+import tagBrincosM8848Foto2 from "@/assets/products/photos/tag-brincos-m-8-8x4-8-foto-2.jpg";
+import tagBrincosM8848Foto3 from "@/assets/products/photos/tag-brincos-m-8-8x4-8-foto-3.jpg";
+import tagBrincosG66Foto2 from "@/assets/products/photos/tag-brincos-g-6x6-foto-2.jpg";
+import tagBrincosG66Foto3 from "@/assets/products/photos/tag-brincos-g-6x6-foto-3.jpg";
+import tagBrincosColarEspFoto2 from "@/assets/products/photos/tag-brincos-colar-especial-foto-2.jpg";
+import tagBrincosColarEspFoto3 from "@/assets/products/photos/tag-brincos-colar-especial-foto-3.jpg";
+import tagBrincosColarEspFoto4 from "@/assets/products/photos/tag-brincos-colar-especial-foto-4.jpg";
+import tagBrincosColarEspFoto5 from "@/assets/products/photos/tag-brincos-colar-especial-foto-5.jpg";
+import tagBrincosColarEspFoto6 from "@/assets/products/photos/tag-brincos-colar-especial-foto-6.jpg";
+import tagBrincosColarEspFoto7 from "@/assets/products/photos/tag-brincos-colar-especial-foto-7.jpg";
 
 export type GalleryImageType = "mockup" | "measurement" | "front-back" | "photo" | "detail";
 
@@ -306,9 +316,13 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "tag-de-brincos-personalizada-8-8x4-8-cm": [
     { src: tagBrincosMMed, type: "measurement" },
+    { src: tagBrincosM8848Foto2, type: "photo", alt: "Tag de brincos personalizada 8,8x4,8 cm — modelo Asas de Prata rosa com colar" },
+    { src: tagBrincosM8848Foto3, type: "photo", alt: "Tag de brincos personalizada 8,8x4,8 cm — modelo Virginia Semijoias vermelho" },
   ],
   "tag-de-brincos-personalizada-6x6-cm": [
     { src: tagBrincosGMed, type: "measurement" },
+    { src: tagBrincosG66Foto2, type: "photo", alt: "Tag de brincos personalizada 6x6 cm — modelo MS branco" },
+    { src: tagBrincosG66Foto3, type: "photo", alt: "Tag de brincos personalizada 6x6 cm — modelo Toque de Beleza Semijoias floral" },
   ],
   "tag-de-brincos-e-colar-personalizada-8-8x4-8-cm": [
     { src: tagBrincosColarPMed, type: "measurement" },
@@ -322,6 +336,12 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "tag-de-brincos-e-colar-personalizada-formato-especial": [
     { src: tagBrincosColarEspMed, type: "measurement" },
+    { src: tagBrincosColarEspFoto2, type: "photo", alt: "Tag de brincos e colar formato especial — modelo Lacreta Acessórios hexágono preto" },
+    { src: tagBrincosColarEspFoto3, type: "photo", alt: "Tag de brincos e colar formato especial — modelo VIC Pratas e Semi Joias coração rosa" },
+    { src: tagBrincosColarEspFoto4, type: "photo", alt: "Tag de brincos e colar formato especial — modelo Mmar de Prata concha azul" },
+    { src: tagBrincosColarEspFoto5, type: "photo", alt: "Tag de brincos e colar formato especial — modelo Cherry Acessórios borboleta lilás" },
+    { src: tagBrincosColarEspFoto6, type: "photo", alt: "Tag de brincos e colar formato especial — modelo Ateliê do Cavalo cabeça de cavalo marrom" },
+    { src: tagBrincosColarEspFoto7, type: "photo", alt: "Tag de brincos e colar formato especial — modelo La Folha Acessórios folha verde" },
   ],
   "tag-de-trio-de-brincos-personalizada-8x6-5-cm": [
     { src: tagTrio8x65Med, type: "measurement" },
