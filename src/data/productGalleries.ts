@@ -133,6 +133,16 @@ import tagBrincosP25Foto2 from "@/assets/products/photos/tag-brincos-4x2-5-foto-
 import tagBrincosP25Foto3 from "@/assets/products/photos/tag-brincos-4x2-5-foto-3.jpg";
 import tagBrincosP25Foto4 from "@/assets/products/photos/tag-brincos-4x2-5-foto-4.jpg";
 import tagBrincosP25Foto5 from "@/assets/products/photos/tag-brincos-4x2-5-foto-5.jpg";
+import tagBrincosM8848Foto2 from "@/assets/products/photos/tag-brincos-m-8-8x4-8-foto-2.jpg";
+import tagBrincosM8848Foto3 from "@/assets/products/photos/tag-brincos-m-8-8x4-8-foto-3.jpg";
+import tagBrincosG66Foto2 from "@/assets/products/photos/tag-brincos-g-6x6-foto-2.jpg";
+import tagBrincosG66Foto3 from "@/assets/products/photos/tag-brincos-g-6x6-foto-3.jpg";
+import tagBrincosColarEspFoto2 from "@/assets/products/photos/tag-brincos-colar-especial-foto-2.jpg";
+import tagBrincosColarEspFoto3 from "@/assets/products/photos/tag-brincos-colar-especial-foto-3.jpg";
+import tagBrincosColarEspFoto4 from "@/assets/products/photos/tag-brincos-colar-especial-foto-4.jpg";
+import tagBrincosColarEspFoto5 from "@/assets/products/photos/tag-brincos-colar-especial-foto-5.jpg";
+import tagBrincosColarEspFoto6 from "@/assets/products/photos/tag-brincos-colar-especial-foto-6.jpg";
+import tagBrincosColarEspFoto7 from "@/assets/products/photos/tag-brincos-colar-especial-foto-7.jpg";
 
 export type GalleryImageType = "mockup" | "measurement" | "front-back" | "photo" | "detail";
 
