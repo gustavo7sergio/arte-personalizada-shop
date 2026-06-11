@@ -316,9 +316,13 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "tag-de-brincos-personalizada-8-8x4-8-cm": [
     { src: tagBrincosMMed, type: "measurement" },
+    { src: tagBrincosM8848Foto2, type: "photo", alt: "Tag de brincos personalizada 8,8x4,8 cm — modelo Asas de Prata rosa com colar" },
+    { src: tagBrincosM8848Foto3, type: "photo", alt: "Tag de brincos personalizada 8,8x4,8 cm — modelo Virginia Semijoias vermelho" },
   ],
   "tag-de-brincos-personalizada-6x6-cm": [
     { src: tagBrincosGMed, type: "measurement" },
+    { src: tagBrincosG66Foto2, type: "photo", alt: "Tag de brincos personalizada 6x6 cm — modelo MS branco" },
+    { src: tagBrincosG66Foto3, type: "photo", alt: "Tag de brincos personalizada 6x6 cm — modelo Toque de Beleza Semijoias floral" },
   ],
   "tag-de-brincos-e-colar-personalizada-8-8x4-8-cm": [
     { src: tagBrincosColarPMed, type: "measurement" },
@@ -332,6 +336,12 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "tag-de-brincos-e-colar-personalizada-formato-especial": [
     { src: tagBrincosColarEspMed, type: "measurement" },
+    { src: tagBrincosColarEspFoto2, type: "photo", alt: "Tag de brincos e colar formato especial — modelo Lacreta Acessórios hexágono preto" },
+    { src: tagBrincosColarEspFoto3, type: "photo", alt: "Tag de brincos e colar formato especial — modelo VIC Pratas e Semi Joias coração rosa" },
+    { src: tagBrincosColarEspFoto4, type: "photo", alt: "Tag de brincos e colar formato especial — modelo Mmar de Prata concha azul" },
+    { src: tagBrincosColarEspFoto5, type: "photo", alt: "Tag de brincos e colar formato especial — modelo Cherry Acessórios borboleta lilás" },
+    { src: tagBrincosColarEspFoto6, type: "photo", alt: "Tag de brincos e colar formato especial — modelo Ateliê do Cavalo cabeça de cavalo marrom" },
+    { src: tagBrincosColarEspFoto7, type: "photo", alt: "Tag de brincos e colar formato especial — modelo La Folha Acessórios folha verde" },
   ],
   "tag-de-trio-de-brincos-personalizada-8x6-5-cm": [
     { src: tagTrio8x65Med, type: "measurement" },
