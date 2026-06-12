@@ -145,8 +145,18 @@ import tagBrincosColarEspFoto6 from "@/assets/products/photos/tag-brincos-colar-
 import tagBrincosColarEspFoto7 from "@/assets/products/photos/tag-brincos-colar-especial-foto-7.jpg";
 import tagPulseira88x48Foto2 from "@/assets/products/photos/tag-pulseira-8-8x4-8-foto-2.jpg";
 import tagPulseira88x48Foto3 from "@/assets/products/photos/tag-pulseira-8-8x4-8-foto-3.jpg";
+import tagPulseira88x48Foto4 from "@/assets/products/photos/tag-pulseira-8-8x4-8-foto-4.jpg";
+import tagPulseira88x48Foto5 from "@/assets/products/photos/tag-pulseira-8-8x4-8-foto-5.jpg";
+import tagPulseira88x48Foto6 from "@/assets/products/photos/tag-pulseira-8-8x4-8-foto-6.jpg";
+import tagPulseira88x48Foto7 from "@/assets/products/photos/tag-pulseira-8-8x4-8-foto-7.jpg";
+import tagPulseira88x48Foto8 from "@/assets/products/photos/tag-pulseira-8-8x4-8-foto-8.jpg";
+import tagPulseira88x994Foto2 from "@/assets/products/photos/tag-pulseira-8-8x9-94-foto-2.jpg";
 import tagPulseira84x98Foto2 from "@/assets/products/photos/tag-pulseira-8-4x9-8-foto-2.jpg";
 import tagPulseira84x98Foto3 from "@/assets/products/photos/tag-pulseira-8-4x9-8-foto-3.jpg";
+import tagPulseira13x48Foto2 from "@/assets/products/photos/tag-pulseira-13x4-8-foto-2.jpg";
+import tagPulseira13x48Foto3 from "@/assets/products/photos/tag-pulseira-13x4-8-foto-3.jpg";
+import tagPulseira13x48Foto4 from "@/assets/products/photos/tag-pulseira-13x4-8-foto-4.jpg";
+import tagPulseira13x48Foto5 from "@/assets/products/photos/tag-pulseira-13x4-8-foto-5.jpg";
 import tagBrincosM8848Foto4 from "@/assets/products/photos/tag-brincos-m-8-8x4-8-foto-4.jpg";
 import tagLacos75Foto2 from "@/assets/products/photos/tag-lacos-7-5x9-5-foto-2.jpg";
 import tagLacos9x65Foto2 from "@/assets/products/photos/tag-lacos-9x6-5-foto-2.jpg";
@@ -379,9 +389,15 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
     { src: tagPulseira88x48v2Med, type: "measurement" },
     { src: tagPulseira88x48Foto2, type: "photo", alt: "Tag de acessórios 8,8x4,8 cm — modelo Milena Acessórios branca com logo preto" },
     { src: tagPulseira88x48Foto3, type: "photo", alt: "Tag de acessórios 8,8x4,8 cm — modelo Grazi Fiaes preta com dourado" },
+    { src: tagPulseira88x48Foto4, type: "photo", alt: "Tag de acessórios 8,8x4,8 cm — modelo Espedita Prata e Semijoias branca com logo coral" },
+    { src: tagPulseira88x48Foto5, type: "photo", alt: "Tag de acessórios 8,8x4,8 cm versão 2 — modelo Paty Doratiotto preta com logo rosa em pulseira de elos dourados" },
+    { src: tagPulseira88x48Foto6, type: "photo", alt: "Tag de acessórios 8,8x4,8 cm versão 2 — modelo Nara Santos Semijoias preta com detalhes em dourado" },
+    { src: tagPulseira88x48Foto7, type: "photo", alt: "Tag de acessórios 8,8x4,8 cm versão 2 — modelo Pratas by Kariny Freitas com fundo mármore branco" },
+    { src: tagPulseira88x48Foto8, type: "photo", alt: "Tag de acessórios 8,8x4,8 cm versão 2 — modelo WG Acessórios @wilma.gomes38 branca com borboletas e dicas de conservação no verso" },
   ],
   "tag-de-acessorios-personalizada-8-8x9-94-cm": [
     { src: tagPulseira88x994Med, type: "measurement" },
+    { src: tagPulseira88x994Foto2, type: "photo", alt: "Tag de acessórios 8,8x9,94 cm — modelo Clara Moura Semijoias preta com logo dourado e brincos de zircônia" },
   ],
   "tag-de-acessorios-personalizada-redonda-8-4x9-8-cm": [
     { src: tagPulseira84x98Med, type: "measurement" },
@@ -390,6 +406,10 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "tag-de-acessorios-personalizada-13x4-8-cm": [
     { src: tagPulseira13x48Med, type: "measurement" },
+    { src: tagPulseira13x48Foto2, type: "photo", alt: "Tag de acessórios 13x4,8 cm — modelo Doralice Boutique terracota com brincos de cadeado dourados" },
+    { src: tagPulseira13x48Foto3, type: "photo", alt: "Tag de acessórios 13x4,8 cm — modelo Madrili Acessórios branca com verso azul e dicas de conservação" },
+    { src: tagPulseira13x48Foto4, type: "photo", alt: "Tag de acessórios 13x4,8 cm — modelo Marbella Joias e Semijoias azul marinho com logo dourado" },
+    { src: tagPulseira13x48Foto5, type: "photo", alt: "Tag de acessórios 13x4,8 cm — modelo Catarina Folheados e Semijoias branca com mandalas coloridas" },
   ],
   "tag-trio-de-brincos-e-colar-personalizada-8-8x4-8-cm": [
     { src: tagTrioColarPMed, type: "measurement" },
