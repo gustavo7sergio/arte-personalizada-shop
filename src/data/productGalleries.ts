@@ -158,6 +158,16 @@ import tagPulseira13x48Foto3 from "@/assets/products/photos/tag-pulseira-13x4-8-
 import tagPulseira13x48Foto4 from "@/assets/products/photos/tag-pulseira-13x4-8-foto-4.jpg";
 import tagPulseira13x48Foto5 from "@/assets/products/photos/tag-pulseira-13x4-8-foto-5.jpg";
 import tagBrincosM8848Foto4 from "@/assets/products/photos/tag-brincos-m-8-8x4-8-foto-4.jpg";
+import tagTrio8x65Foto2 from "@/assets/products/photos/tag-trio-brincos-8x6-5-foto-2.jpg";
+import tagTrio8x65Foto3 from "@/assets/products/photos/tag-trio-brincos-8x6-5-foto-3.jpg";
+import tagPulseira13x48Foto6 from "@/assets/products/photos/tag-pulseira-13x4-8-foto-6.jpg";
+import tagTrio48x41Foto2 from "@/assets/products/photos/tag-trio-brincos-4-8x4-1-foto-2.jpg";
+import tagTrio48x41Foto3 from "@/assets/products/photos/tag-trio-brincos-4-8x4-1-foto-3.jpg";
+import tagTrio55x48Foto2 from "@/assets/products/photos/tag-trio-brincos-5-5x4-8-foto-2.jpg";
+import tagTrio55x48Foto3 from "@/assets/products/photos/tag-trio-brincos-5-5x4-8-foto-3.jpg";
+import tagTrio88x48Foto2 from "@/assets/products/photos/tag-trio-brincos-8-8x4-8-foto-2.jpg";
+import tagTrio88x48Foto3 from "@/assets/products/photos/tag-trio-brincos-8-8x4-8-foto-3.jpg";
+import tagTrio88x48Foto4 from "@/assets/products/photos/tag-trio-brincos-8-8x4-8-foto-4.jpg";
 import tagLacos75Foto2 from "@/assets/products/photos/tag-lacos-7-5x9-5-foto-2.jpg";
 import tagLacos9x65Foto2 from "@/assets/products/photos/tag-lacos-9x6-5-foto-2.jpg";
 import tagLacos9x65Foto3 from "@/assets/products/photos/tag-lacos-9x6-5-foto-3.jpg";
@@ -370,15 +380,24 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "tag-de-trio-de-brincos-personalizada-8x6-5-cm": [
     { src: tagTrio8x65Med, type: "measurement" },
+    { src: tagTrio8x65Foto2, type: "photo", alt: "Tag de trio de brincos 8x6,5 cm — modelo Encanti Semijoias branca com logo rosa e brincos de argola dourados" },
+    { src: tagTrio8x65Foto3, type: "photo", alt: "Tag de trio de brincos 8x6,5 cm — modelo Encanti Semijoias verso rosa claro com dicas de conservação" },
   ],
   "tag-de-trio-de-brincos-personalizada-4-8x4-1-cm": [
     { src: tagTrio48x41Med, type: "measurement" },
+    { src: tagTrio48x41Foto2, type: "photo", alt: "Tag de trio de brincos 4,8x4,1 cm — modelo Atena Pratas terracota com logo branco frente e verso" },
+    { src: tagTrio48x41Foto3, type: "photo", alt: "Tag de trio de brincos 4,8x4,1 cm — modelo Quiara Semijoias rosa claro com brincos dourados de zircônia" },
   ],
   "tag-de-trio-de-brincos-personalizada-5-5x4-8-cm": [
     { src: tagTrio55x48Med, type: "measurement" },
+    { src: tagTrio55x48Foto2, type: "photo", alt: "Tag de trio de brincos 5,5x4,8 cm — modelo Venere Semijoias rosa claro com círculo verde menta" },
+    { src: tagTrio55x48Foto3, type: "photo", alt: "Tag de trio de brincos 5,5x4,8 cm — modelo Gilvana Pires Semijoias branca com brincos de gotas coloridas" },
   ],
   "tag-de-trio-de-brincos-personalizada-8-8x4-8-cm": [
     { src: tagTrio88x48Med, type: "measurement" },
+    { src: tagTrio88x48Foto2, type: "photo", alt: "Tag de trio de brincos 8,8x4,8 cm — modelo Asas de Prata rosa com brincos de coração em prata" },
+    { src: tagTrio88x48Foto3, type: "photo", alt: "Tag de trio de brincos 8,8x4,8 cm — modelo GP Semijoias branca com brincos dourados de coração e zircônia" },
+    { src: tagTrio88x48Foto4, type: "photo", alt: "Tag de trio de brincos 8,8x4,8 cm — modelo Kenia Semijoias rosa com argolas cravejadas douradas" },
   ],
   "tag-personalizada-para-lacos-e-tiaras-15x8-8-cm": [
     { src: tagLacos15x88Med, type: "measurement" },
@@ -410,6 +429,7 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
     { src: tagPulseira13x48Foto3, type: "photo", alt: "Tag de acessórios 13x4,8 cm — modelo Madrili Acessórios branca com verso azul e dicas de conservação" },
     { src: tagPulseira13x48Foto4, type: "photo", alt: "Tag de acessórios 13x4,8 cm — modelo Marbella Joias e Semijoias azul marinho com logo dourado" },
     { src: tagPulseira13x48Foto5, type: "photo", alt: "Tag de acessórios 13x4,8 cm — modelo Catarina Folheados e Semijoias branca com mandalas coloridas" },
+    { src: tagPulseira13x48Foto6, type: "photo", alt: "Tag de acessórios 13x4,8 cm — modelo Rakelita Bijoux preta com logo dourado e estampa de folhas" },
   ],
   "tag-trio-de-brincos-e-colar-personalizada-8-8x4-8-cm": [
     { src: tagTrioColarPMed, type: "measurement" },
