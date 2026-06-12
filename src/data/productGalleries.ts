@@ -332,6 +332,7 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
     { src: tagBrincosMMed, type: "measurement" },
     { src: tagBrincosM8848Foto2, type: "photo", alt: "Tag de brincos personalizada 8,8x4,8 cm — modelo Asas de Prata rosa com colar" },
     { src: tagBrincosM8848Foto3, type: "photo", alt: "Tag de brincos personalizada 8,8x4,8 cm — modelo Virginia Semijoias vermelho" },
+    { src: tagBrincosM8848Foto4, type: "photo", alt: "Tag de brincos personalizada 8,8x4,8 cm — modelo M com colar de borboleta prata" },
   ],
   "tag-de-brincos-personalizada-6x6-cm": [
     { src: tagBrincosGMed, type: "measurement" },
