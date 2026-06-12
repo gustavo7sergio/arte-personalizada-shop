@@ -143,6 +143,16 @@ import tagBrincosColarEspFoto4 from "@/assets/products/photos/tag-brincos-colar-
 import tagBrincosColarEspFoto5 from "@/assets/products/photos/tag-brincos-colar-especial-foto-5.jpg";
 import tagBrincosColarEspFoto6 from "@/assets/products/photos/tag-brincos-colar-especial-foto-6.jpg";
 import tagBrincosColarEspFoto7 from "@/assets/products/photos/tag-brincos-colar-especial-foto-7.jpg";
+import tagPulseira88x48Foto2 from "@/assets/products/photos/tag-pulseira-8-8x4-8-foto-2.jpg";
+import tagPulseira88x48Foto3 from "@/assets/products/photos/tag-pulseira-8-8x4-8-foto-3.jpg";
+import tagPulseira84x98Foto2 from "@/assets/products/photos/tag-pulseira-8-4x9-8-foto-2.jpg";
+import tagPulseira84x98Foto3 from "@/assets/products/photos/tag-pulseira-8-4x9-8-foto-3.jpg";
+import tagBrincosM8848Foto4 from "@/assets/products/photos/tag-brincos-m-8-8x4-8-foto-4.jpg";
+import tagLacos75Foto2 from "@/assets/products/photos/tag-lacos-7-5x9-5-foto-2.jpg";
+import tagLacos9x65Foto2 from "@/assets/products/photos/tag-lacos-9x6-5-foto-2.jpg";
+import tagLacos9x65Foto3 from "@/assets/products/photos/tag-lacos-9x6-5-foto-3.jpg";
+import tagLacos15x482Foto2 from "@/assets/products/photos/tag-lacos-15x4-82-foto-2.jpg";
+import tagLacos15x88Foto2 from "@/assets/products/photos/tag-lacos-15x8-8-foto-2.jpg";
 
 export type GalleryImageType = "mockup" | "measurement" | "front-back" | "photo" | "detail";
 
@@ -297,12 +307,16 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "tag-personalizada-para-lacos-e-tiaras-15x4-82-cm": [
     { src: tagLacos15Med, type: "measurement" },
+    { src: tagLacos15x482Foto2, type: "photo", alt: "Tag de laços e tiaras 15x4,82 cm — modelo Bruna de Laço com laços de gorgurão xadrez amarelo, laranja e vermelho" },
   ],
   "tag-personalizada-para-lacos-e-tiaras-7-5x9-5-cm": [
     { src: tagLacos75Med, type: "measurement" },
+    { src: tagLacos75Foto2, type: "photo", alt: "Tag de laços e tiaras 7,5x9,5 cm — modelo Rosê formato nuvem rosa com selo de troca" },
   ],
   "tag-personalizada-para-lacos-e-tiaras-9x6-5-cm": [
     { src: tagLacos9Med, type: "measurement" },
+    { src: tagLacos9x65Foto2, type: "photo", alt: "Tag de laços e tiaras 9x6,5 cm — modelo MV Ma Vie Acessórios com trio de corações pink glitter" },
+    { src: tagLacos9x65Foto3, type: "photo", alt: "Tag de laços e tiaras 9x6,5 cm — modelo RP Dress com presilhas xadrez preto e branco" },
   ],
   "tag-personalizada-para-lacos-e-tiaras-12-5x8-8-cm": [
     { src: tagLacos125Med, type: "measurement" },
@@ -318,6 +332,7 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
     { src: tagBrincosMMed, type: "measurement" },
     { src: tagBrincosM8848Foto2, type: "photo", alt: "Tag de brincos personalizada 8,8x4,8 cm — modelo Asas de Prata rosa com colar" },
     { src: tagBrincosM8848Foto3, type: "photo", alt: "Tag de brincos personalizada 8,8x4,8 cm — modelo Virginia Semijoias vermelho" },
+    { src: tagBrincosM8848Foto4, type: "photo", alt: "Tag de brincos personalizada 8,8x4,8 cm — modelo M com colar de borboleta prata" },
   ],
   "tag-de-brincos-personalizada-6x6-cm": [
     { src: tagBrincosGMed, type: "measurement" },
@@ -357,16 +372,21 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "tag-personalizada-para-lacos-e-tiaras-15x8-8-cm": [
     { src: tagLacos15x88Med, type: "measurement" },
+    { src: tagLacos15x88Foto2, type: "photo", alt: "Tag de laços e tiaras 15x8,8 cm — modelo Praiô by Ariadne Perdigão azul com piranha amarela" },
   ],
   "tag-de-acessorios-personalizada-8-8x4-8-cm": [
     { src: tagPulseira88x48Med, type: "measurement" },
     { src: tagPulseira88x48v2Med, type: "measurement" },
+    { src: tagPulseira88x48Foto2, type: "photo", alt: "Tag de acessórios 8,8x4,8 cm — modelo Milena Acessórios branca com logo preto" },
+    { src: tagPulseira88x48Foto3, type: "photo", alt: "Tag de acessórios 8,8x4,8 cm — modelo Grazi Fiaes preta com dourado" },
   ],
   "tag-de-acessorios-personalizada-8-8x9-94-cm": [
     { src: tagPulseira88x994Med, type: "measurement" },
   ],
   "tag-de-acessorios-personalizada-redonda-8-4x9-8-cm": [
     { src: tagPulseira84x98Med, type: "measurement" },
+    { src: tagPulseira84x98Foto2, type: "photo", alt: "Tag de acessórios redonda 8,4x9,8 cm — modelo Catarina Folheados e Semijoias com mandala colorida" },
+    { src: tagPulseira84x98Foto3, type: "photo", alt: "Tag de acessórios redonda 8,4x9,8 cm — modelo Ahazz Acessórios rosa com brincos de folha dourados" },
   ],
   "tag-de-acessorios-personalizada-13x4-8-cm": [
     { src: tagPulseira13x48Med, type: "measurement" },
