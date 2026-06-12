@@ -372,16 +372,21 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "tag-personalizada-para-lacos-e-tiaras-15x8-8-cm": [
     { src: tagLacos15x88Med, type: "measurement" },
+    { src: tagLacos15x88Foto2, type: "photo", alt: "Tag de laços e tiaras 15x8,8 cm — modelo Praiô by Ariadne Perdigão azul com piranha amarela" },
   ],
   "tag-de-acessorios-personalizada-8-8x4-8-cm": [
     { src: tagPulseira88x48Med, type: "measurement" },
     { src: tagPulseira88x48v2Med, type: "measurement" },
+    { src: tagPulseira88x48Foto2, type: "photo", alt: "Tag de acessórios 8,8x4,8 cm — modelo Milena Acessórios branca com logo preto" },
+    { src: tagPulseira88x48Foto3, type: "photo", alt: "Tag de acessórios 8,8x4,8 cm — modelo Grazi Fiaes preta com dourado" },
   ],
   "tag-de-acessorios-personalizada-8-8x9-94-cm": [
     { src: tagPulseira88x994Med, type: "measurement" },
   ],
   "tag-de-acessorios-personalizada-redonda-8-4x9-8-cm": [
     { src: tagPulseira84x98Med, type: "measurement" },
+    { src: tagPulseira84x98Foto2, type: "photo", alt: "Tag de acessórios redonda 8,4x9,8 cm — modelo Catarina Folheados e Semijoias com mandala colorida" },
+    { src: tagPulseira84x98Foto3, type: "photo", alt: "Tag de acessórios redonda 8,4x9,8 cm — modelo Ahazz Acessórios rosa com brincos de folha dourados" },
   ],
   "tag-de-acessorios-personalizada-13x4-8-cm": [
     { src: tagPulseira13x48Med, type: "measurement" },
