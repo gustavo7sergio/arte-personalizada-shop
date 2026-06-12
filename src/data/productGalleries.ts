@@ -307,12 +307,16 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "tag-personalizada-para-lacos-e-tiaras-15x4-82-cm": [
     { src: tagLacos15Med, type: "measurement" },
+    { src: tagLacos15x482Foto2, type: "photo", alt: "Tag de laços e tiaras 15x4,82 cm — modelo Bruna de Laço com laços de gorgurão xadrez amarelo, laranja e vermelho" },
   ],
   "tag-personalizada-para-lacos-e-tiaras-7-5x9-5-cm": [
     { src: tagLacos75Med, type: "measurement" },
+    { src: tagLacos75Foto2, type: "photo", alt: "Tag de laços e tiaras 7,5x9,5 cm — modelo Rosê formato nuvem rosa com selo de troca" },
   ],
   "tag-personalizada-para-lacos-e-tiaras-9x6-5-cm": [
     { src: tagLacos9Med, type: "measurement" },
+    { src: tagLacos9x65Foto2, type: "photo", alt: "Tag de laços e tiaras 9x6,5 cm — modelo MV Ma Vie Acessórios com trio de corações pink glitter" },
+    { src: tagLacos9x65Foto3, type: "photo", alt: "Tag de laços e tiaras 9x6,5 cm — modelo RP Dress com presilhas xadrez preto e branco" },
   ],
   "tag-personalizada-para-lacos-e-tiaras-12-5x8-8-cm": [
     { src: tagLacos125Med, type: "measurement" },
