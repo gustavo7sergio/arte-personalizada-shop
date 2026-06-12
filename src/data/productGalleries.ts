@@ -143,6 +143,16 @@ import tagBrincosColarEspFoto4 from "@/assets/products/photos/tag-brincos-colar-
 import tagBrincosColarEspFoto5 from "@/assets/products/photos/tag-brincos-colar-especial-foto-5.jpg";
 import tagBrincosColarEspFoto6 from "@/assets/products/photos/tag-brincos-colar-especial-foto-6.jpg";
 import tagBrincosColarEspFoto7 from "@/assets/products/photos/tag-brincos-colar-especial-foto-7.jpg";
+import tagPulseira88x48Foto2 from "@/assets/products/photos/tag-pulseira-8-8x4-8-foto-2.jpg";
+import tagPulseira88x48Foto3 from "@/assets/products/photos/tag-pulseira-8-8x4-8-foto-3.jpg";
+import tagPulseira84x98Foto2 from "@/assets/products/photos/tag-pulseira-8-4x9-8-foto-2.jpg";
+import tagPulseira84x98Foto3 from "@/assets/products/photos/tag-pulseira-8-4x9-8-foto-3.jpg";
+import tagBrincosM8848Foto4 from "@/assets/products/photos/tag-brincos-m-8-8x4-8-foto-4.jpg";
+import tagLacos75Foto2 from "@/assets/products/photos/tag-lacos-7-5x9-5-foto-2.jpg";
+import tagLacos9x65Foto2 from "@/assets/products/photos/tag-lacos-9x6-5-foto-2.jpg";
+import tagLacos9x65Foto3 from "@/assets/products/photos/tag-lacos-9x6-5-foto-3.jpg";
+import tagLacos15x482Foto2 from "@/assets/products/photos/tag-lacos-15x4-82-foto-2.jpg";
+import tagLacos15x88Foto2 from "@/assets/products/photos/tag-lacos-15x8-8-foto-2.jpg";
 
 export type GalleryImageType = "mockup" | "measurement" | "front-back" | "photo" | "detail";
 
