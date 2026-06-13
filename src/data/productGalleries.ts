@@ -173,6 +173,12 @@ import tagLacos9x65Foto2 from "@/assets/products/photos/tag-lacos-9x6-5-foto-2.j
 import tagLacos9x65Foto3 from "@/assets/products/photos/tag-lacos-9x6-5-foto-3.jpg";
 import tagLacos15x482Foto2 from "@/assets/products/photos/tag-lacos-15x4-82-foto-2.jpg";
 import tagLacos15x88Foto2 from "@/assets/products/photos/tag-lacos-15x8-8-foto-2.jpg";
+import tagSemaninhaFoto2 from "@/assets/products/photos/tag-semaninha-foto-2.jpg";
+import tagTrio8x65Foto4 from "@/assets/products/photos/tag-trio-brincos-8x6-5-foto-4.jpg";
+import tagTrioColarPFoto2 from "@/assets/products/photos/tag-trio-colar-8-8x4-8-foto-2.jpg";
+import tagTrioColarPFoto3 from "@/assets/products/photos/tag-trio-colar-8-8x4-8-foto-3.jpg";
+import tagTrioColarGFoto2 from "@/assets/products/photos/tag-trio-colar-9x6-5-foto-2.jpg";
+import tagTrioColarGFoto3 from "@/assets/products/photos/tag-trio-colar-9x6-5-foto-3.jpg";
 
 export type GalleryImageType = "mockup" | "measurement" | "front-back" | "photo" | "detail";
 
