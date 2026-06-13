@@ -440,12 +440,17 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "tag-trio-de-brincos-e-colar-personalizada-8-8x4-8-cm": [
     { src: tagTrioColarPMed, type: "measurement" },
+    { src: tagTrioColarPFoto2, type: "photo", alt: "Tag de trio de brincos e colar 8,8x4,8 cm — modelo Wish Acessórios rosa com logo branco" },
+    { src: tagTrioColarPFoto3, type: "photo", alt: "Tag de trio de brincos e colar 8,8x4,8 cm — modelo Aimer Joias preta com logo verde" },
   ],
   "tag-trio-de-brincos-e-colar-personalizada-9x6-5-cm": [
     { src: tagTrioColarGMed, type: "measurement" },
+    { src: tagTrioColarGFoto2, type: "photo", alt: "Tag de trio de brincos e colar 9x6,5 cm — modelo Eleganzza Única semijoias e acessórios branca com logo vinho" },
+    { src: tagTrioColarGFoto3, type: "photo", alt: "Tag de trio de brincos e colar 9x6,5 cm — modelo Lucimar Semijoias e Pratas rosa com logo diamante frente e verso" },
   ],
   "tag-semaninha-personalizada-8-8x4-8-cm": [
     { src: tagSemaninhaMed, type: "measurement" },
+    { src: tagSemaninhaFoto2, type: "photo", alt: "Tag semaninha 8,8x4,8 cm — modelo Virtú Jóias em Prata roxa com dias da semana frente e verso" },
   ],
   "tag-de-anel-personalizada-4x4-cm": [
     { src: tagAnel4x4Med, type: "measurement" },
