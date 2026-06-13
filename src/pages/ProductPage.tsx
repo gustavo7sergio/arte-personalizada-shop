@@ -14,6 +14,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProductImage from "@/components/ProductImage";
 import ImageZoom from "@/components/ImageZoom";
+import ProductSuggestions from "@/components/ProductSuggestions";
+import { getRelatedProducts, getComplementaryProducts } from "@/lib/productSuggestions";
 
 const formatCurrency = (value: number) =>
   value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -414,8 +416,21 @@ const ProductPage = () => {
             </div>
 
           </div>
+
+          <ProductSuggestions
+            title="Outros modelos"
+            subtitle="Veja outros tamanhos e formatos da mesma categoria"
+            items={getRelatedProducts(config.slug, 6)}
+          />
+
+          <ProductSuggestions
+            title="Combine com"
+            subtitle="Produtos que finalizam sua identidade visual"
+            items={getComplementaryProducts(config.slug, 6)}
+          />
         </div>
       </div>
+
 
       <Footer />
     </div>
