@@ -29,8 +29,7 @@ const Hero = () => {
           style={{ animationDelay: "0.2s", opacity: 0.5 }}
         />
         <h1
-          className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground leading-tight opacity-0 animate-blur-in max-w-3xl"
-          style={{ animationDelay: "0.5s" }}
+          className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground leading-tight max-w-3xl"
         >
           Tags, cartões, sacolinhas{" "}
           <span className="italic" style={{ color: "hsl(4, 42%, 70%)" }}>e muito mais</span>{" "}
