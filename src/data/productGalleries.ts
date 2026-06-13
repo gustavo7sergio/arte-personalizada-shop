@@ -388,6 +388,7 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
     { src: tagTrio8x65Med, type: "measurement" },
     { src: tagTrio8x65Foto2, type: "photo", alt: "Tag de trio de brincos 8x6,5 cm — modelo Encanti Semijoias branca com logo rosa e brincos de argola dourados" },
     { src: tagTrio8x65Foto3, type: "photo", alt: "Tag de trio de brincos 8x6,5 cm — modelo Encanti Semijoias verso rosa claro com dicas de conservação" },
+    { src: tagTrio8x65Foto4, type: "photo", alt: "Tag de trio de brincos 8x6,5 cm — modelo Grazi Fiaes Acessórios & Bijuterias preta com logo dourado" },
   ],
   "tag-de-trio-de-brincos-personalizada-4-8x4-1-cm": [
     { src: tagTrio48x41Med, type: "measurement" },
