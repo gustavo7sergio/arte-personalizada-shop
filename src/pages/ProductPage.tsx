@@ -416,8 +416,21 @@ const ProductPage = () => {
             </div>
 
           </div>
+
+          <ProductSuggestions
+            title="Outros modelos"
+            subtitle="Veja outros tamanhos e formatos da mesma categoria"
+            items={getRelatedProducts(config.slug, 6)}
+          />
+
+          <ProductSuggestions
+            title="Combine com"
+            subtitle="Produtos que finalizam sua identidade visual"
+            items={getComplementaryProducts(config.slug, 6)}
+          />
         </div>
       </div>
+
 
       <Footer />
     </div>
