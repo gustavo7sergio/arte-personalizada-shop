@@ -173,6 +173,12 @@ import tagLacos9x65Foto2 from "@/assets/products/photos/tag-lacos-9x6-5-foto-2.j
 import tagLacos9x65Foto3 from "@/assets/products/photos/tag-lacos-9x6-5-foto-3.jpg";
 import tagLacos15x482Foto2 from "@/assets/products/photos/tag-lacos-15x4-82-foto-2.jpg";
 import tagLacos15x88Foto2 from "@/assets/products/photos/tag-lacos-15x8-8-foto-2.jpg";
+import tagSemaninhaFoto2 from "@/assets/products/photos/tag-semaninha-foto-2.jpg";
+import tagTrio8x65Foto4 from "@/assets/products/photos/tag-trio-brincos-8x6-5-foto-4.jpg";
+import tagTrioColarPFoto2 from "@/assets/products/photos/tag-trio-colar-8-8x4-8-foto-2.jpg";
+import tagTrioColarPFoto3 from "@/assets/products/photos/tag-trio-colar-8-8x4-8-foto-3.jpg";
+import tagTrioColarGFoto2 from "@/assets/products/photos/tag-trio-colar-9x6-5-foto-2.jpg";
+import tagTrioColarGFoto3 from "@/assets/products/photos/tag-trio-colar-9x6-5-foto-3.jpg";
 
 export type GalleryImageType = "mockup" | "measurement" | "front-back" | "photo" | "detail";
 
@@ -382,6 +388,7 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
     { src: tagTrio8x65Med, type: "measurement" },
     { src: tagTrio8x65Foto2, type: "photo", alt: "Tag de trio de brincos 8x6,5 cm — modelo Encanti Semijoias branca com logo rosa e brincos de argola dourados" },
     { src: tagTrio8x65Foto3, type: "photo", alt: "Tag de trio de brincos 8x6,5 cm — modelo Encanti Semijoias verso rosa claro com dicas de conservação" },
+    { src: tagTrio8x65Foto4, type: "photo", alt: "Tag de trio de brincos 8x6,5 cm — modelo Grazi Fiaes Acessórios & Bijuterias preta com logo dourado" },
   ],
   "tag-de-trio-de-brincos-personalizada-4-8x4-1-cm": [
     { src: tagTrio48x41Med, type: "measurement" },
@@ -433,12 +440,17 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   ],
   "tag-trio-de-brincos-e-colar-personalizada-8-8x4-8-cm": [
     { src: tagTrioColarPMed, type: "measurement" },
+    { src: tagTrioColarPFoto2, type: "photo", alt: "Tag de trio de brincos e colar 8,8x4,8 cm — modelo Wish Acessórios rosa com logo branco" },
+    { src: tagTrioColarPFoto3, type: "photo", alt: "Tag de trio de brincos e colar 8,8x4,8 cm — modelo Aimer Joias preta com logo verde" },
   ],
   "tag-trio-de-brincos-e-colar-personalizada-9x6-5-cm": [
     { src: tagTrioColarGMed, type: "measurement" },
+    { src: tagTrioColarGFoto2, type: "photo", alt: "Tag de trio de brincos e colar 9x6,5 cm — modelo Eleganzza Única semijoias e acessórios branca com logo vinho" },
+    { src: tagTrioColarGFoto3, type: "photo", alt: "Tag de trio de brincos e colar 9x6,5 cm — modelo Lucimar Semijoias e Pratas rosa com logo diamante frente e verso" },
   ],
   "tag-semaninha-personalizada-8-8x4-8-cm": [
     { src: tagSemaninhaMed, type: "measurement" },
+    { src: tagSemaninhaFoto2, type: "photo", alt: "Tag semaninha 8,8x4,8 cm — modelo Virtú Jóias em Prata roxa com dias da semana frente e verso" },
   ],
   "tag-de-anel-personalizada-4x4-cm": [
     { src: tagAnel4x4Med, type: "measurement" },
