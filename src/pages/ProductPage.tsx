@@ -157,11 +157,21 @@ const ProductPage = () => {
         <title>{config.seoTitle}</title>
         <meta name="description" content={config.seoDescription} />
         <link rel="canonical" href={canonical} />
+        <meta property="og:site_name" content="GS Cartões" />
+        <meta property="og:locale" content="pt_BR" />
         <meta property="og:title" content={config.seoTitle} />
         <meta property="og:description" content={config.seoDescription} />
         <meta property="og:url" content={absoluteUrl} />
         <meta property="og:type" content="product" />
         {heroImage && <meta property="og:image" content={`https://www.gscartoes.com${heroImage}`} />}
+        {heroImage && <meta property="og:image:secure_url" content={`https://www.gscartoes.com${heroImage}`} />}
+        {heroImage && <meta property="og:image:alt" content={config.displayName} />}
+        {heroImage && <meta property="og:image:width" content="1200" />}
+        {heroImage && <meta property="og:image:height" content="1200" />}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={config.seoTitle} />
+        <meta name="twitter:description" content={config.seoDescription} />
+        {heroImage && <meta name="twitter:image" content={`https://www.gscartoes.com${heroImage}`} />}
         <script type="application/ld+json">{JSON.stringify(productJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbJsonLd)}</script>
         {faqJsonLd && <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>}
