@@ -19,6 +19,9 @@ export interface ProductPageConfig {
   // Mapa opcional: índice da variante (flat) → índice da imagem na galeria.
   // Quando definido, trocar de variante muda a imagem principal automaticamente.
   variantImageMap?: number[];
+  // Override manual de sugestões. Quando definidos, substituem o algoritmo automático.
+  relatedSlugs?: string[];      // "Outros modelos"
+  crossSellSlugs?: string[];    // "Combine com"
 }
 
 const FAQ_PRAZO: ProductFAQ = { q: "Qual o prazo de produção?", a: PRODUCTION_DEADLINE_ANSWER };
