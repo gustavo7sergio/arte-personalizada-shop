@@ -11,7 +11,7 @@ export interface SuggestionItem {
   minPrice: number;
 }
 
-// Categorias complementares por categoria. Mantém coerência: tags ↔ embalagens ↔ identidade.
+// Categorias complementares por categoria.
 const COMPLEMENTARY_MAP: Record<string, string[]> = {
   "tags-personalizadas-para-semijoias": [
     "sacolinhas-personalizadas-para-semijoias",
@@ -59,10 +59,26 @@ const COMPLEMENTARY_MAP: Record<string, string[]> = {
 const STOP_TOKENS = new Set([
   "tag", "tags", "de", "do", "da", "para", "e", "com", "personalizada", "personalizado",
   "personalizadas", "personalizados", "cm", "semijoias", "semijoia", "acessorios", "acessorio",
+  "formato", "especial",
+]);
+
+// Tokens "de família" recebem peso extra na similaridade ("Outros modelos").
+const FAMILY_TOKENS = new Set([
+  "brincos", "anel", "aneis", "colar", "colares", "pulseira", "pulseiras",
+  "trio", "mini", "semaninha", "lacos", "tiaras", "redonda", "redondo",
+  "sacolinha", "sacola", "caixinha", "maleta", "certificado",
+  "agradecimento", "visitas", "fecha", "bloco", "panfleto",
 ]);
 
 const tokens = (slug: string): string[] =>
   slug.split("-").filter((t) => t && !STOP_TOKENS.has(t) && !/^\d/.test(t));
+
+// Hash determinístico simples para rotação estável por slug.
+const hash = (s: string): number => {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0;
+  return Math.abs(h);
+};
 
 const minPriceOf = (page: ProductPageConfig): number => {
   const prices = page.productIds
@@ -91,10 +107,29 @@ const toItem = (page: ProductPageConfig): SuggestionItem => ({
   minPrice: minPriceOf(page),
 });
 
-// "Outros modelos": mesma categoria, ordenado por similaridade de tokens no slug.
+const resolveSlugs = (slugs: string[]): SuggestionItem[] =>
+  slugs
+    .map((s) => productPages.find((p) => p.slug === s))
+    .filter((p): p is ProductPageConfig => Boolean(p))
+    .map(toItem);
+
+// Rotaciona um array começando em um offset baseado no hash do slug.
+const rotate = <T,>(arr: T[], seed: string): T[] => {
+  if (arr.length <= 1) return arr;
+  const off = hash(seed) % arr.length;
+  return [...arr.slice(off), ...arr.slice(0, off)];
+};
+
+// "Outros modelos": mesma categoria, prioriza tokens de família, com rotação por slug nos empates.
 export const getRelatedProducts = (currentSlug: string, limit = 6): SuggestionItem[] => {
   const current = productPages.find((p) => p.slug === currentSlug);
   if (!current) return [];
+
+  // Override manual.
+  if (current.relatedSlugs && current.relatedSlugs.length) {
+    return resolveSlugs(current.relatedSlugs).slice(0, limit);
+  }
+
   const currentTokens = new Set(tokens(current.slug));
 
   const sameCategory = productPages.filter(
@@ -103,24 +138,39 @@ export const getRelatedProducts = (currentSlug: string, limit = 6): SuggestionIt
 
   const scored = sameCategory.map((p) => {
     const t = tokens(p.slug);
-    const score = t.reduce((acc, tk) => acc + (currentTokens.has(tk) ? 1 : 0), 0);
+    const score = t.reduce((acc, tk) => {
+      if (!currentTokens.has(tk)) return acc;
+      return acc + (FAMILY_TOKENS.has(tk) ? 3 : 1);
+    }, 0);
     return { page: p, score };
   });
 
-  scored.sort((a, b) => b.score - a.score);
-  return scored.slice(0, limit).map(({ page }) => toItem(page));
+  // Empates rotacionam por hash do slug atual para evitar listas idênticas entre páginas.
+  const rotated = rotate(scored, current.slug);
+  rotated.sort((a, b) => b.score - a.score);
+
+  return rotated.slice(0, limit).map(({ page }) => toItem(page));
 };
 
-// "Combine com": categorias complementares, distribuído entre elas.
+// "Combine com": categorias complementares, distribuídas e rotacionadas por slug.
 export const getComplementaryProducts = (currentSlug: string, limit = 6): SuggestionItem[] => {
   const current = productPages.find((p) => p.slug === currentSlug);
   if (!current) return [];
+
+  // Override manual.
+  if (current.crossSellSlugs && current.crossSellSlugs.length) {
+    return resolveSlugs(current.crossSellSlugs).slice(0, limit);
+  }
+
   const compCats = COMPLEMENTARY_MAP[current.categorySlug] ?? [];
   if (!compCats.length) return [];
 
-  // pega round-robin pelas categorias complementares para garantir variedade
+  // Rotaciona o conteúdo de cada bucket por slug atual → cada página vê itens diferentes.
   const buckets = compCats.map((cat) =>
-    productPages.filter((p) => p.categorySlug === cat && p.slug !== current.slug)
+    rotate(
+      productPages.filter((p) => p.categorySlug === cat && p.slug !== current.slug),
+      current.slug + cat
+    )
   );
 
   const picked: ProductPageConfig[] = [];
@@ -129,7 +179,7 @@ export const getComplementaryProducts = (currentSlug: string, limit = 6): Sugges
     let pickedThisRound = false;
     for (let b = 0; b < buckets.length && picked.length < limit; b++) {
       const item = buckets[b][i];
-      if (item) {
+      if (item && !picked.find((p) => p.slug === item.slug)) {
         picked.push(item);
         pickedThisRound = true;
       }
