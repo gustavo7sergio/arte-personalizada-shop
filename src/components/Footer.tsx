@@ -84,6 +84,12 @@ const Footer = () => {
                 </a>
               </li>
               <li className="flex items-center justify-center md:justify-start gap-2 text-primary-foreground/90">
+                <Youtube className="h-4 w-4" />
+                <a href="https://www.youtube.com/@GScartoes" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">
+                  YouTube
+                </a>
+              </li>
+              <li className="flex items-center justify-center md:justify-start gap-2 text-primary-foreground/90">
                 <Mail className="h-4 w-4" />
                 <a href="mailto:atendimento@gscartoes.com" className="hover:text-primary-foreground transition-colors">
                   atendimento@gscartoes.com
