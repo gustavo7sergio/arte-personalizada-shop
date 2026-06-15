@@ -105,36 +105,31 @@ const RELATED_FAMILY_MAP: Record<ProductFamily, ProductFamily[]> = {
 // ---------------------------------------------------------------------------
 // Famílias complementares para "Combine com".
 // ---------------------------------------------------------------------------
-const TAG_COMP: ProductFamily[] = [
-  "sacolinhas",
-  "adesivos-redondos",
-  "cartoes-agradecimento",
-  "cartoes-visitas",
-];
-
+// Para tags: "Combine com" prioriza OUTRAS tags (kit/coleção de tags da marca),
+// não produtos de outras categorias como sacolinhas/adesivos/cartões.
 const COMPLEMENTARY_FAMILY_MAP: Record<ProductFamily, ProductFamily[]> = {
-  "tags-brincos": TAG_COMP,
-  "tags-trio-brincos": TAG_COMP,
-  "tags-aneis": TAG_COMP,
-  "tags-colares": TAG_COMP,
-  "tags-brincos-colar": TAG_COMP,
-  "tags-trio-brincos-colar": TAG_COMP,
-  "tags-pulseiras": TAG_COMP,
-  "tags-acessorios-genericas": TAG_COMP,
-  "tags-semaninha": TAG_COMP,
-  "tags-lacos-tiaras": ["sacolinhas", "adesivos-redondos", "cartoes-agradecimento"],
-  "sacolinhas": ["tags-brincos", "adesivos-fecha-sacola", "cartoes-agradecimento"],
-  "caixinhas": ["tags-brincos", "adesivos-fecha-sacola", "cartoes-agradecimento"],
-  "cartoes-visitas": ["adesivos-redondos", "sacolinhas", "tags-brincos"],
-  "cartoes-agradecimento": ["tags-brincos", "sacolinhas", "adesivos-redondos"],
-  "certificados-garantia": ["tags-brincos", "sacolinhas", "adesivos-redondos"],
-  "adesivos-redondos": ["sacolinhas", "tags-brincos", "cartoes-agradecimento"],
-  "adesivos-fecha-sacola": ["sacolinhas", "tags-brincos", "cartoes-agradecimento"],
-  "adesivos-anel": ["tags-aneis", "sacolinhas", "cartoes-visitas"],
-  "etiquetas-roupas": ["cartoes-agradecimento", "adesivos-redondos", "sacolinhas"],
-  "mini-etiquetas": ["cartoes-agradecimento", "adesivos-redondos", "sacolinhas"],
-  "kits": ["sacolinhas", "adesivos-redondos", "cartoes-agradecimento"],
-  "papelaria": ["cartoes-visitas", "tags-brincos", "sacolinhas"],
+  "tags-brincos": ["tags-aneis", "tags-pulseiras", "tags-colares", "tags-trio-brincos", "tags-brincos-colar", "tags-acessorios-genericas"],
+  "tags-trio-brincos": ["tags-brincos", "tags-trio-brincos-colar", "tags-aneis", "tags-pulseiras", "tags-colares", "tags-acessorios-genericas"],
+  "tags-aneis": ["tags-brincos", "tags-pulseiras", "tags-colares", "tags-acessorios-genericas", "tags-trio-brincos"],
+  "tags-colares": ["tags-brincos", "tags-aneis", "tags-pulseiras", "tags-brincos-colar", "tags-trio-brincos-colar", "tags-acessorios-genericas"],
+  "tags-brincos-colar": ["tags-brincos", "tags-colares", "tags-trio-brincos-colar", "tags-aneis", "tags-pulseiras", "tags-acessorios-genericas"],
+  "tags-trio-brincos-colar": ["tags-trio-brincos", "tags-brincos-colar", "tags-brincos", "tags-colares", "tags-aneis", "tags-acessorios-genericas"],
+  "tags-pulseiras": ["tags-brincos", "tags-aneis", "tags-colares", "tags-acessorios-genericas", "tags-trio-brincos"],
+  "tags-acessorios-genericas": ["tags-brincos", "tags-aneis", "tags-pulseiras", "tags-colares", "tags-trio-brincos"],
+  "tags-semaninha": ["tags-brincos", "tags-aneis", "tags-pulseiras", "tags-acessorios-genericas"],
+  "tags-lacos-tiaras": ["tags-brincos", "tags-acessorios-genericas", "tags-aneis"],
+  "sacolinhas": ["caixinhas", "adesivos-fecha-sacola", "cartoes-agradecimento"],
+  "caixinhas": ["sacolinhas", "adesivos-fecha-sacola", "cartoes-agradecimento"],
+  "cartoes-visitas": ["cartoes-agradecimento", "certificados-garantia", "adesivos-redondos"],
+  "cartoes-agradecimento": ["cartoes-visitas", "certificados-garantia", "adesivos-redondos"],
+  "certificados-garantia": ["cartoes-agradecimento", "cartoes-visitas", "adesivos-redondos"],
+  "adesivos-redondos": ["adesivos-fecha-sacola", "adesivos-anel", "sacolinhas"],
+  "adesivos-fecha-sacola": ["adesivos-redondos", "adesivos-anel", "sacolinhas"],
+  "adesivos-anel": ["adesivos-redondos", "adesivos-fecha-sacola", "tags-aneis"],
+  "etiquetas-roupas": ["mini-etiquetas", "cartoes-agradecimento", "adesivos-redondos"],
+  "mini-etiquetas": ["etiquetas-roupas", "cartoes-agradecimento", "adesivos-redondos"],
+  "kits": ["tags-brincos", "sacolinhas", "cartoes-visitas"],
+  "papelaria": ["cartoes-visitas", "cartoes-agradecimento", "tags-brincos"],
 };
 
 // ---------------------------------------------------------------------------
