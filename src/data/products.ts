@@ -164,10 +164,10 @@ export const products: Product[] = [
       {
         label: "6,3 × 6,3 × 3 cm",
         prices: [
-          { qty: 100,  installment: 609.00,  cash: 548.10,  unitPrice: 5.48 },
-          { qty: 250,  installment: 1099.00, cash: 989.10,  unitPrice: 3.96 },
-          { qty: 500,  installment: 1779.00, cash: 1601.10, unitPrice: 3.20 },
-          { qty: 1000, installment: 3159.00, cash: 2843.10, unitPrice: 2.84 },
+          { qty: 100,  installment: 779.00,  cash: 701.10,  unitPrice: 7.01 },
+          { qty: 250,  installment: 1399.00, cash: 1259.10, unitPrice: 5.04 },
+          { qty: 500,  installment: 2099.00, cash: 1889.10, unitPrice: 3.78 },
+          { qty: 1000, installment: 3799.00, cash: 3419.10, unitPrice: 3.42 },
         ],
       },
     ],
@@ -190,10 +190,10 @@ export const products: Product[] = [
       {
         label: "8,3 × 8,3 × 5 cm",
         prices: [
-          { qty: 100,  installment: 719.00,  cash: 647.10,  unitPrice: 6.47 },
-          { qty: 250,  installment: 1289.00, cash: 1160.10, unitPrice: 4.64 },
-          { qty: 500,  installment: 2129.00, cash: 1916.10, unitPrice: 3.83 },
-          { qty: 1000, installment: 3759.00, cash: 3383.10, unitPrice: 3.38 },
+          { qty: 100,  installment: 859.00,  cash: 773.10,  unitPrice: 7.73 },
+          { qty: 250,  installment: 1519.00, cash: 1367.10, unitPrice: 5.47 },
+          { qty: 500,  installment: 2309.00, cash: 2078.10, unitPrice: 4.16 },
+          { qty: 1000, installment: 4209.00, cash: 3788.10, unitPrice: 3.79 },
         ],
       },
     ],
