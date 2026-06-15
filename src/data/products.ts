@@ -164,10 +164,10 @@ export const products: Product[] = [
       {
         label: "6,3 × 6,3 × 3 cm",
         prices: [
-          { qty: 100,  installment: 609.00,  cash: 548.10,  unitPrice: 5.48 },
-          { qty: 250,  installment: 1099.00, cash: 989.10,  unitPrice: 3.96 },
-          { qty: 500,  installment: 1779.00, cash: 1601.10, unitPrice: 3.20 },
-          { qty: 1000, installment: 3159.00, cash: 2843.10, unitPrice: 2.84 },
+          { qty: 100,  installment: 779.00,  cash: 701.10,  unitPrice: 7.01 },
+          { qty: 250,  installment: 1399.00, cash: 1259.10, unitPrice: 5.04 },
+          { qty: 500,  installment: 2099.00, cash: 1889.10, unitPrice: 3.78 },
+          { qty: 1000, installment: 3799.00, cash: 3419.10, unitPrice: 3.42 },
         ],
       },
     ],
