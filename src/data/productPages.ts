@@ -6,6 +6,34 @@ export const PRODUCTION_DEADLINE_ANSWER =
   "O prazo de produção é de 5 a 6 dias úteis, e começa a contar após a criação da arte.\nO prazo de entrega depende do seu CEP, e calculamos isso para você pelo nosso WhatsApp!";
 
 export interface ProductFAQ { q: string; a: string }
+
+// Família funcional/visual do produto. Usada para sugestões coerentes em ProductPage.
+// Quando ausente em uma página, é inferida automaticamente a partir do slug
+// (ver inferProductFamily em src/lib/productSuggestions.ts).
+export type ProductFamily =
+  | "tags-brincos"
+  | "tags-trio-brincos"
+  | "tags-aneis"
+  | "tags-colares"
+  | "tags-brincos-colar"
+  | "tags-trio-brincos-colar"
+  | "tags-pulseiras"
+  | "tags-acessorios-genericas"
+  | "tags-semaninha"
+  | "tags-lacos-tiaras"
+  | "sacolinhas"
+  | "caixinhas"
+  | "cartoes-visitas"
+  | "cartoes-agradecimento"
+  | "certificados-garantia"
+  | "adesivos-redondos"
+  | "adesivos-anel"
+  | "adesivos-fecha-sacola"
+  | "etiquetas-roupas"
+  | "mini-etiquetas"
+  | "kits"
+  | "papelaria";
+
 export interface ProductPageConfig {
   slug: string;
   productIds: string[];
@@ -19,6 +47,8 @@ export interface ProductPageConfig {
   // Mapa opcional: índice da variante (flat) → índice da imagem na galeria.
   // Quando definido, trocar de variante muda a imagem principal automaticamente.
   variantImageMap?: number[];
+  // Override manual de família (caso a inferência por slug não seja precisa).
+  productFamily?: ProductFamily;
   // Override manual de sugestões. Quando definidos, substituem o algoritmo automático.
   relatedSlugs?: string[];      // "Outros modelos"
   crossSellSlugs?: string[];    // "Combine com"
