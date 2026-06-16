@@ -437,7 +437,7 @@ export const productPages: ProductPageConfig[] = [
   {
     slug: "sacolinha-personalizada-para-semijoias-papel-cartao",
     productIds: ["sacolinha-acessorios-cartao"],
-    displayName: "Sacolinha Personalizada para Semijoias em Papel Cartão",
+    displayName: "Sacolinha Personalizada para Semijoias",
     categorySlug: "sacolinhas-personalizadas-para-semijoias",
     categoryLabel: "Sacolinhas",
     seoTitle: "Sacolinha Personalizada Papel Cartão para Semijoias | GS Cartões",
