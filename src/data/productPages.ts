@@ -440,7 +440,7 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Sacolinha Personalizada para Semijoias",
     categorySlug: "sacolinhas-personalizadas-para-semijoias",
     categoryLabel: "Sacolinhas",
-    seoTitle: "Sacolinha Personalizada Papel Cartão para Semijoias | GS Cartões",
+    seoTitle: "Sacolinha Personalizada para Semijoias | GS Cartões",
     seoDescription: "Sacolinha personalizada em papel cartão 300g para semijoias. Tamanhos P e M com a identidade visual da sua marca.",
     longDescription: [
       "Versão mais encorpada das nossas sacolinhas, perfeita para marcas que buscam uma embalagem com mais estrutura e percepção de valor.",
