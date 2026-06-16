@@ -231,7 +231,7 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
     { src: caixinhaMFoto2, type: "photo", alt: "Caixinha personalizada para acessórios M — foto real fechada" },
     { src: caixinhaMFoto3, type: "photo", alt: "Caixinha personalizada para acessórios M — foto real aberta com semijoias" },
   ],
-  "caixinha-personalizada-maleta-4-4x7-3x5-6-cm": [
+  "caixinha-personalizada-para-semijoias-4-4x7-3x5-6-cm": [
     { src: caixinhaMaletaMed, type: "measurement" },
     { src: caixinhaMaletaFoto2, type: "photo", alt: "Caixinha personalizada modelo maleta — foto real verde" },
     { src: caixinhaMaletaFoto3, type: "photo", alt: "Caixinha personalizada modelo maleta — foto real preta" },
