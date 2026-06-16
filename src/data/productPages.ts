@@ -423,7 +423,7 @@ export const productPages: ProductPageConfig[] = [
   {
     slug: "sacolinha-personalizada-para-semijoias-couche-16-5x12x4-5-cm",
     productIds: ["sacolinha-acessorios-couche"],
-    displayName: "Sacolinha Personalizada para Semijoias em Couchê 16,5x12x4,5 cm",
+    displayName: "Sacolinha Personalizada para Semijoias 16,5x12x4,5 cm",
     categorySlug: "sacolinhas-personalizadas-para-semijoias",
     categoryLabel: "Sacolinhas",
     seoTitle: "Sacolinha Personalizada para Semijoias 16,5x12x4,5 cm | GS Cartões",
@@ -432,7 +432,7 @@ export const productPages: ProductPageConfig[] = [
       "Embalagem pensada para transformar a entrega das suas semijoias em uma experiência memorável, com a identidade visual da sua marca impressa do lado externo.",
       "Papel couchê 250g, externo colorido. Não acompanha laço. Disponível em arte 100% personalizada.",
     ],
-    faqs: wrapFaqs([{ q: "A sacolinha já vem com alça e laço?", a: "Não acompanha laço. A alça e o modelo de fechamento são definidos no padrão dessa embalagem." }]),
+    faqs: wrapFaqs([{ q: "A sacolinha já vem com alça e laço?", a: "Não acompanha laço." }]),
   },
   {
     slug: "sacolinha-personalizada-para-semijoias-papel-cartao",
