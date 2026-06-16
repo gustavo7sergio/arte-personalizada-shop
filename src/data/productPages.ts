@@ -462,7 +462,10 @@ export const productPages: ProductPageConfig[] = [
       "Opção prática, resistente e econômica para entregas em quantidade, mantendo o cuidado visual com a logo da sua marca impressa na frente.",
       "Polietileno PEAD 0,13mm, externo colorido, sem enobrecimento. Disponível em 16x22, 20x30, 25x35 e 30x40 cm. Impressão apenas na frente.",
     ],
-    faqs: wrapFaqs([{ q: "Posso personalizar frente e verso?", a: "Não. Esse modelo trabalha com impressão apenas na frente para manter o custo competitivo." }]),
+    faqs: wrapFaqs([
+      { q: "Quantas cores a sacolinha oferece e a logo pode ser colorida?", a: "A sacolinha está disponível em 8 cores. A impressão da sua logo é feita em apenas uma cor." },
+      { q: "Posso personalizar frente e verso?", a: "Esse modelo tem apenas impressão na frente." },
+    ]),
   },
   {
     slug: "caixinha-personalizada-para-acessorios-6-3x6-3x3-cm",
