@@ -40,6 +40,8 @@ const App = () => (
             <Route path="/categoria/outros" element={<Navigate to="/categoria/papelaria-personalizada" replace />} />
             <Route path="/produto/tag-de-anel-padronizada-3-9x1-7-cm" element={<Navigate to="/produto/tag-de-anel-personalizada-4x4-cm" replace />} />
             <Route path="/produto/adesivo-redondo-personalizado" element={<Navigate to="/produto/adesivo-redondo-personalizado-4-8x4-8-cm" replace />} />
+            <Route path="/produto/sacolinha-personalizada-para-semijoias-couche-16-5x12x4-5-cm" element={<Navigate to="/produto/sacolinha-personalizada-para-semijoias-16-5x12x4-5-cm" replace />} />
+            <Route path="/produto/sacolinha-personalizada-para-semijoias-papel-cartao" element={<Navigate to="/produto/sacolinha-personalizada-para-semijoias" replace />} />
             <Route path="/criacao-de-logo" element={<CriacaoLogo />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

@@ -421,7 +421,7 @@ export const productPages: ProductPageConfig[] = [
 
   // ─────────── SACOLINHAS ───────────
   {
-    slug: "sacolinha-personalizada-para-semijoias-couche-16-5x12x4-5-cm",
+    slug: "sacolinha-personalizada-para-semijoias-16-5x12x4-5-cm",
     productIds: ["sacolinha-acessorios-couche"],
     displayName: "Sacolinha Personalizada para Semijoias 16,5x12x4,5 cm",
     categorySlug: "sacolinhas-personalizadas-para-semijoias",
@@ -435,7 +435,7 @@ export const productPages: ProductPageConfig[] = [
     faqs: wrapFaqs([{ q: "A sacolinha já vem com alça e laço?", a: "Não acompanha laço." }]),
   },
   {
-    slug: "sacolinha-personalizada-para-semijoias-papel-cartao",
+    slug: "sacolinha-personalizada-para-semijoias",
     productIds: ["sacolinha-acessorios-cartao"],
     displayName: "Sacolinha Personalizada para Semijoias",
     categorySlug: "sacolinhas-personalizadas-para-semijoias",

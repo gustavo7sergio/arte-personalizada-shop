@@ -308,7 +308,7 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
     { src: sacolaPlasticaMed, type: "measurement", alt: "Sacola plástica personalizada — tamanhos disponíveis 16x22, 20x30, 25x35 e 30x40 cm" },
     { src: sacolaPlasticaFoto2, type: "photo", alt: "Sacola plástica personalizada — modelo Essência Moda Feminina" },
   ],
-  "sacolinha-personalizada-para-semijoias-couche-16-5x12x4-5-cm": [
+  "sacolinha-personalizada-para-semijoias-16-5x12x4-5-cm": [
     { src: sacolinhaCoucheMed, type: "measurement" },
     { src: sacolinha250gFoto2, type: "photo", alt: "Sacolinha em papel 250g — modelo YZE Acessórios" },
     { src: sacolinha250gFoto3, type: "photo", alt: "Sacolinha em papel 250g — modelo Eliz Semi Jóias" },
@@ -317,7 +317,7 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
     { src: sacolinha250gFoto6, type: "photo", alt: "Sacolinha em papel 250g — modelo Positiva Jóias" },
     { src: sacolinha250gFoto7, type: "photo", alt: "Sacolinha em papel 250g — modelo Donatella Joias" },
   ],
-  "sacolinha-personalizada-para-semijoias-papel-cartao": [
+  "sacolinha-personalizada-para-semijoias": [
     { src: sacolinhaCartaoPMed, type: "measurement", alt: "Sacolinha em papel cartão 300g tamanho P — 10x15,4x4 cm" },
     { src: sacolinhaCartaoMMed, type: "measurement", alt: "Sacolinha em papel cartão 300g tamanho M — 13x18x7,2 cm" },
     { src: sacolinhaCartaoFoto2, type: "photo", alt: "Sacolinha em papel cartão 300g — modelo El'ga (vista lateral)" },
