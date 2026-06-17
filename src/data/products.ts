@@ -1157,8 +1157,101 @@ export const products: Product[] = [
       },
     ],
   },
+  {
+    id: "kit-essencial-1",
+    name: "Kit Essencial 1",
+    subtitle: "Formatos Padronizados",
+    category: "Kits",
+    material: "Papel couchê 250g",
+    specs: [
+      "Papel couchê 250g",
+      "Frente e verso coloridos",
+      "Brilho total na frente",
+      "Arte 100% personalizada",
+      "NÃO trabalhamos com fidelização de cores",
+      "NÃO É POSSÍVEL MUDAR CORTES E FUROS NESSAS TAGS",
+      "Kit inclui: 100 uni 4,25×4,8 cm + 100 uni 8,8×4,8 cm + 100 uni 8,8×4,8 cm",
+    ],
+    highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
+    variants: [
+      {
+        label: "300 unidades (mix de formatos)",
+        prices: [{ qty: 300, installment: 435.00, cash: 391.50, unitPrice: 1.31 }],
+      },
+    ],
+  },
+  {
+    id: "kit-essencial-2",
+    name: "Kit Essencial 2",
+    subtitle: "Formatos Padronizados",
+    category: "Kits",
+    material: "Papel couchê 250g",
+    specs: [
+      "Papel couchê 250g",
+      "Frente e verso coloridos",
+      "Brilho total na frente",
+      "Arte 100% personalizada",
+      "NÃO trabalhamos com fidelização de cores",
+      "NÃO É POSSÍVEL MUDAR CORTES E FUROS NESSAS TAGS",
+      "Kit inclui: 100 uni 4,25×4,8 cm + 100 uni 4,25×4,8 cm + 100 uni 8,8×4,8 cm",
+    ],
+    highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
+    variants: [
+      {
+        label: "300 unidades (mix de formatos)",
+        prices: [{ qty: 300, installment: 409.00, cash: 368.10, unitPrice: 1.23 }],
+      },
+    ],
+  },
+  {
+    id: "kit-essencial-3",
+    name: "Kit Essencial 3",
+    subtitle: "Formatos Padronizados",
+    category: "Kits",
+    material: "Papel couchê 250g",
+    specs: [
+      "Papel couchê 250g",
+      "Frente e verso coloridos",
+      "Brilho total na frente",
+      "Arte 100% personalizada",
+      "NÃO trabalhamos com fidelização de cores",
+      "NÃO É POSSÍVEL MUDAR CORTES E FUROS NESSAS TAGS",
+      "Kit inclui: 200 uni mini tag 3,9×1,7 cm + 100 uni 4,25×4,8 cm + 100 uni 8,8×4,8 cm",
+    ],
+    highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
+    variants: [
+      {
+        label: "400 unidades (mix de formatos)",
+        prices: [{ qty: 400, installment: 409.00, cash: 368.10, unitPrice: 0.92 }],
+      },
+    ],
+  },
+  {
+    id: "kit-essencial-4",
+    name: "Kit Essencial 4",
+    subtitle: "Formatos Padronizados",
+    category: "Kits",
+    material: "Papel couchê 250g",
+    specs: [
+      "Papel couchê 250g",
+      "Frente e verso coloridos",
+      "Brilho total na frente",
+      "Arte 100% personalizada",
+      "NÃO trabalhamos com fidelização de cores",
+      "NÃO É POSSÍVEL MUDAR CORTES E FUROS NESSAS TAGS",
+      "Kit inclui: 100 uni 4,25×4,8 cm + 100 uni 4,25×4,8 cm + 100 uni 8,8×4,8 cm",
+    ],
+    highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
+    variants: [
+      {
+        label: "300 unidades (mix de formatos)",
+        prices: [{ qty: 300, installment: 409.00, cash: 368.10, unitPrice: 1.23 }],
+      },
+    ],
+  },
 
   // ─── ADESIVOS (continuação) ────────────────────────────────────────
+
   {
     id: "adesivo-redondo-3",
     name: "Adesivo Redondo",

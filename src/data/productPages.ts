@@ -855,6 +855,63 @@ export const productPages: ProductPageConfig[] = [
     ],
     faqs: wrapFaqs([{ q: "Quanto tempo esse kit costuma durar?", a: "Depende do volume de vendas, mas em média atende marcas em escala por vários meses." }]),
   },
+  {
+    slug: "kit-essencial-1-tags-personalizadas-para-semijoias",
+    productIds: ["kit-essencial-1"],
+    displayName: "Kit Essencial 1 - Tags Personalizadas para Semijoias",
+    categorySlug: "kits-de-tags-para-semijoias",
+    categoryLabel: "Kits",
+    seoTitle: "Kit Essencial 1 - Tags Personalizadas para Semijoias | GS Cartões",
+    seoDescription: "Kit Essencial 1 com 300 tags personalizadas em formatos padronizados. Combo prático e econômico para marcas de semijoias.",
+    longDescription: [
+      "Kit Essencial 1 reúne 300 tags em três formatos padronizados, ideal para quem quer começar com um mix equilibrado de tags para brincos, brincos e colar e cartelas.",
+      "Inclui 100 uni 4,25×4,8 cm + 100 uni 8,8×4,8 cm + 100 uni 8,8×4,8 cm em couchê 250g, frente e verso coloridos e brilho total na frente. Arte 100% personalizada.",
+    ],
+    faqs: wrapFaqs([{ q: "Posso escolher outros formatos no kit?", a: "Não. Os kits trabalham com formatos fixos para manter o preço otimizado. Para combinações personalizadas, peça orçamento individual." }]),
+  },
+  {
+    slug: "kit-essencial-2-tags-personalizadas-para-semijoias",
+    productIds: ["kit-essencial-2"],
+    displayName: "Kit Essencial 2 - Tags Personalizadas para Semijoias",
+    categorySlug: "kits-de-tags-para-semijoias",
+    categoryLabel: "Kits",
+    seoTitle: "Kit Essencial 2 - Tags Personalizadas para Semijoias | GS Cartões",
+    seoDescription: "Kit Essencial 2 com 300 tags personalizadas em formatos padronizados. Mix versátil para marcas de semijoias.",
+    longDescription: [
+      "Kit Essencial 2 traz 300 tags em três formatos padronizados, combinando tags de brincos, trio de brincos e brincos e colar para diversificar a apresentação das suas peças.",
+      "Inclui 100 uni 4,25×4,8 cm + 100 uni 4,25×4,8 cm + 100 uni 8,8×4,8 cm em couchê 250g, frente e verso coloridos e brilho total na frente. Arte 100% personalizada.",
+    ],
+    faqs: wrapFaqs([{ q: "Posso escolher outros formatos no kit?", a: "Não. Os kits trabalham com formatos fixos para manter o preço otimizado. Para combinações personalizadas, peça orçamento individual." }]),
+  },
+  {
+    slug: "kit-essencial-3-tags-personalizadas-para-semijoias",
+    productIds: ["kit-essencial-3"],
+    displayName: "Kit Essencial 3 - Tags Personalizadas para Semijoias",
+    categorySlug: "kits-de-tags-para-semijoias",
+    categoryLabel: "Kits",
+    seoTitle: "Kit Essencial 3 - Tags Personalizadas para Semijoias | GS Cartões",
+    seoDescription: "Kit Essencial 3 com 400 tags personalizadas, incluindo mini tags de anel. Excelente custo-benefício para marcas de semijoias.",
+    longDescription: [
+      "Kit Essencial 3 oferece 400 tags com mini tags de anel inclusas, perfeito para marcas que vendem anéis junto a outras peças e querem padronizar toda a apresentação.",
+      "Inclui 200 uni mini tag 3,9×1,7 cm + 100 uni 4,25×4,8 cm + 100 uni 8,8×4,8 cm em couchê 250g, frente e verso coloridos e brilho total na frente. Arte 100% personalizada.",
+    ],
+    faqs: wrapFaqs([{ q: "Posso escolher outros formatos no kit?", a: "Não. Os kits trabalham com formatos fixos para manter o preço otimizado. Para combinações personalizadas, peça orçamento individual." }]),
+  },
+  {
+    slug: "kit-essencial-4-tags-personalizadas-para-semijoias",
+    productIds: ["kit-essencial-4"],
+    displayName: "Kit Essencial 4 - Tags Personalizadas para Semijoias",
+    categorySlug: "kits-de-tags-para-semijoias",
+    categoryLabel: "Kits",
+    seoTitle: "Kit Essencial 4 - Tags Personalizadas para Semijoias | GS Cartões",
+    seoDescription: "Kit Essencial 4 com 300 tags personalizadas em formatos padronizados. Mix completo para marcas de semijoias.",
+    longDescription: [
+      "Kit Essencial 4 reúne 300 tags em três formatos padronizados, ideal para marcas que querem diversidade entre tags de brincos, trio de brincos e brincos e colar.",
+      "Inclui 100 uni 4,25×4,8 cm + 100 uni 4,25×4,8 cm + 100 uni 8,8×4,8 cm em couchê 250g, frente e verso coloridos e brilho total na frente. Arte 100% personalizada.",
+    ],
+    faqs: wrapFaqs([{ q: "Posso escolher outros formatos no kit?", a: "Não. Os kits trabalham com formatos fixos para manter o preço otimizado. Para combinações personalizadas, peça orçamento individual." }]),
+  },
+
 
   // ─────────── PAPELARIA ───────────
   {
