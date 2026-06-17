@@ -57,6 +57,10 @@ import kit600tags from "@/assets/products/kitde600tags.jpg";
 import kit800tags from "@/assets/products/kitde800tags.jpg";
 import kit5mil from "@/assets/products/kitde5miltags.jpg";
 import kit6mil from "@/assets/products/kitde6miltags.jpg";
+import kitEssencial1 from "@/assets/products/kitessencial1.jpg";
+import kitEssencial2 from "@/assets/products/kitessencial2.jpg";
+import kitEssencial3 from "@/assets/products/kitessencial3.jpg";
+import kitEssencial4 from "@/assets/products/kitessencial4.jpg";
 import tagAcessoriosGrande from "@/assets/products/tagdeacessoriosformatogrande.jpg";
 
 export const productImages: Record<string, string | string[]> = {
@@ -145,6 +149,10 @@ export const productImages: Record<string, string | string[]> = {
   "kit-800-materiais-g": kit800tags,
   "kit-5000-tags": kit5mil,
   "kit-6000-materiais-g": kit6mil,
+  "kit-essencial-1": kitEssencial1,
+  "kit-essencial-2": kitEssencial2,
+  "kit-essencial-3": kitEssencial3,
+  "kit-essencial-4": kitEssencial4,
 
   // Outros
   "bloco-pedidos": blocoPedidos,
