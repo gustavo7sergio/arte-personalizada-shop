@@ -42,6 +42,10 @@ const App = () => (
             <Route path="/produto/adesivo-redondo-personalizado" element={<Navigate to="/produto/adesivo-redondo-personalizado-4-8x4-8-cm" replace />} />
             <Route path="/produto/sacolinha-personalizada-para-semijoias-couche-16-5x12x4-5-cm" element={<Navigate to="/produto/sacolinha-personalizada-para-semijoias-16-5x12x4-5-cm" replace />} />
             <Route path="/produto/sacolinha-personalizada-para-semijoias-papel-cartao" element={<Navigate to="/produto/sacolinha-personalizada-para-semijoias" replace />} />
+            <Route path="/produto/kit-de-600-tags-personalizadas" element={<Navigate to="/produto/kit-basico-de-tags-1" replace />} />
+            <Route path="/produto/kit-de-800-materiais-graficos-personalizados" element={<Navigate to="/produto/kit-completo-1" replace />} />
+            <Route path="/produto/kit-de-5-mil-tags-personalizadas" element={<Navigate to="/produto/kit-basico-de-tags-2" replace />} />
+            <Route path="/produto/kit-de-6-mil-materiais-graficos-personalizados" element={<Navigate to="/produto/kit-completo-2" replace />} />
             <Route path="/criacao-de-logo" element={<CriacaoLogo />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
