@@ -186,6 +186,8 @@ function ProductCard({ product }: { product: Product }) {
   const hoverImage =
     pilotPage && productGalleryExtras[pilotPage.slug]?.[0]?.src
       ? productGalleryExtras[pilotPage.slug][0].src
+      : images[1] && images[1] !== image
+      ? images[1]
       : undefined;
 
   const CardImage = (
