@@ -61,6 +61,13 @@ import kitEssencial1 from "@/assets/products/kitessencial1.jpg";
 import kitEssencial2 from "@/assets/products/kitessencial2.jpg";
 import kitEssencial3 from "@/assets/products/kitessencial3.jpg";
 import kitEssencial4 from "@/assets/products/kitessencial4.jpg";
+import kit600tagsFoto from "@/assets/products/kit600tags-foto.jpg";
+import kit800tagsFoto from "@/assets/products/kit800tags-foto.jpg";
+import kit5milFoto from "@/assets/products/kit5miltags-foto.jpg";
+import kit6milFoto from "@/assets/products/kit6miltags-foto.jpg";
+import kitEssencial1Foto from "@/assets/products/kitessencial1-foto.jpg";
+import kitEssencial3Foto from "@/assets/products/kitessencial3-foto.jpg";
+import kitEssencial4Foto from "@/assets/products/kitessencial4-foto.jpg";
 import tagAcessoriosGrande from "@/assets/products/tagdeacessoriosformatogrande.jpg";
 
 export const productImages: Record<string, string | string[]> = {
@@ -145,14 +152,14 @@ export const productImages: Record<string, string | string[]> = {
   "mini-etiqueta-roupas": miniEtiquetaRoupas,
 
   // Kits
-  "kit-600-tags": kit600tags,
-  "kit-800-materiais-g": kit800tags,
-  "kit-5000-tags": kit5mil,
-  "kit-6000-materiais-g": kit6mil,
-  "kit-essencial-1": kitEssencial1,
+  "kit-600-tags": [kit600tagsFoto, kit600tags],
+  "kit-800-materiais-g": [kit800tagsFoto, kit800tags],
+  "kit-5000-tags": [kit5milFoto, kit5mil],
+  "kit-6000-materiais-g": [kit6milFoto, kit6mil],
+  "kit-essencial-1": [kitEssencial1Foto, kitEssencial1],
   "kit-essencial-2": kitEssencial2,
-  "kit-essencial-3": kitEssencial3,
-  "kit-essencial-4": kitEssencial4,
+  "kit-essencial-3": [kitEssencial3Foto, kitEssencial3],
+  "kit-essencial-4": [kitEssencial4Foto, kitEssencial4],
 
   // Outros
   "bloco-pedidos": blocoPedidos,
