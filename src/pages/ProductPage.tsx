@@ -15,6 +15,7 @@ import Footer from "@/components/Footer";
 import ProductImage from "@/components/ProductImage";
 import ImageZoom from "@/components/ImageZoom";
 import ProductSuggestions from "@/components/ProductSuggestions";
+import ProductVideo from "@/components/ProductVideo";
 import { getRelatedProducts, getComplementaryProducts } from "@/lib/productSuggestions";
 
 const formatCurrency = (value: number) =>
@@ -426,6 +427,13 @@ const ProductPage = () => {
             </div>
 
           </div>
+
+          {/* Vídeo do produto */}
+          {config.youtubeVideoId && (
+            <div className="mt-10 lg:mt-14">
+              <ProductVideo videoId={config.youtubeVideoId} />
+            </div>
+          )}
 
           <ProductSuggestions
             title="Outros modelos"

@@ -52,6 +52,8 @@ export interface ProductPageConfig {
   // Override manual de sugestões. Quando definidos, substituem o algoritmo automático.
   relatedSlugs?: string[];      // "Outros modelos"
   crossSellSlugs?: string[];    // "Combine com"
+  // Vídeo do YouTube embed opcional (ex: "x68ZOs2XjOU")
+  youtubeVideoId?: string;
 }
 
 const FAQ_PRAZO: ProductFAQ = { q: "Qual o prazo de produção?", a: PRODUCTION_DEADLINE_ANSWER };
@@ -81,6 +83,7 @@ export const productPages: ProductPageConfig[] = [
       "Impressa em papel couchê 250g, frente e verso coloridos e brilho total na frente. Acabamentos em papel 300g e verniz localizado disponíveis sob consulta.",
     ],
     faqs: wrapFaqs([{ q: "É possível usar esse tamanho para brincos pequenos e médios?", a: "Sim. O formato 4,8x4,25 cm acomoda muito bem brincos pequenos e médios, mantendo destaque para a sua logo." }]),
+    youtubeVideoId: "x68ZOs2XjOU",
   },
   {
     slug: "tag-de-brincos-personalizada-4x2-5-cm",
