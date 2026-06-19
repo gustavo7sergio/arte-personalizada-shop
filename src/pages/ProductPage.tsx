@@ -428,6 +428,13 @@ const ProductPage = () => {
 
           </div>
 
+          {/* Vídeo do produto */}
+          {config.youtubeVideoId && (
+            <div className="mt-10 lg:mt-14">
+              <ProductVideo videoId={config.youtubeVideoId} />
+            </div>
+          )}
+
           <ProductSuggestions
             title="Outros modelos"
             subtitle="Veja outros tamanhos e formatos da mesma categoria"
