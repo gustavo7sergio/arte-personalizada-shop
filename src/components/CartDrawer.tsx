@@ -71,7 +71,7 @@ const CartDrawer = () => {
                   </div>
                   <button
                     onClick={() => removeItem(i)}
-                    aria-label={`Remover ${item.title} do carrinho`}
+                    aria-label={`Remover ${item.productName} do carrinho`}
                     className="shrink-0 self-start p-1.5 rounded-lg hover:bg-destructive/10 text-muted-foreground hover:text-destructive transition-colors"
                   >
                     <Trash2 className="h-4 w-4" aria-hidden="true" />
