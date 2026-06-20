@@ -188,7 +188,7 @@ const CriacaoLogo = () => {
             </p>
           </div>
           <div className={`transition-all duration-700 delay-200 ${portfolioReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            <ImageSlider images={portfolioImages} />
+            <ImageSlider images={portfolioImages} altPrefix="Logo personalizada de semijoias criada pela GS Cartões" />
           </div>
         </div>
       </section>
