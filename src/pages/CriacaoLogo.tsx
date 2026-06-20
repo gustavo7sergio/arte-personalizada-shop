@@ -224,7 +224,7 @@ const CriacaoLogo = () => {
             </h2>
           </div>
           <div className={`transition-all duration-700 delay-200 ${testimonialReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            <ImageSlider images={testimonialImages} />
+            <ImageSlider images={testimonialImages} altPrefix="Depoimento de cliente sobre criação de logo" />
           </div>
         </div>
       </section>
