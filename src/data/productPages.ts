@@ -429,7 +429,7 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Sacolinha Personalizada para Semijoias 16,5x12x4,5 cm",
     categorySlug: "sacolinhas-personalizadas-para-semijoias",
     categoryLabel: "Sacolinhas",
-    seoTitle: "Sacolinha Personalizada para Semijoias 16,5x12x4,5 cm | GS Cartões",
+    seoTitle: "Sacolinha Personalizada para Semijoias 16,5x12x4,5 cm",
     seoDescription: "Sacolinha personalizada para semijoias em couchê 250g, formato 16,5x12x4,5 cm. Identidade visual da sua marca em cada entrega.",
     longDescription: [
       "Embalagem pensada para transformar a entrega das suas semijoias em uma experiência memorável, com a identidade visual da sua marca impressa do lado externo.",
@@ -478,7 +478,7 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Caixinha Personalizada para Acessórios 6,3x6,3x3 cm",
     categorySlug: "sacolinhas-personalizadas-para-semijoias",
     categoryLabel: "Sacolinhas",
-    seoTitle: "Caixinha Personalizada para Acessórios 6,3x6,3x3 cm | GS Cartões",
+    seoTitle: "Caixinha Personalizada para Acessórios 6,3x6,3x3 cm",
     seoDescription: "Caixinha personalizada para acessórios 6,3x6,3x3 cm em papel cartão 300g com laminação fosca externa.",
     longDescription: [
       "Caixinha quadrada e refinada para apresentar pares de brincos, anéis e peças pequenas com sofisticação no momento da entrega.",
@@ -492,7 +492,7 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Caixinha Personalizada para Acessórios 8,3x8,3x5 cm",
     categorySlug: "sacolinhas-personalizadas-para-semijoias",
     categoryLabel: "Sacolinhas",
-    seoTitle: "Caixinha Personalizada para Acessórios 8,3x8,3x5 cm | GS Cartões",
+    seoTitle: "Caixinha Personalizada para Acessórios 8,3x8,3x5 cm",
     seoDescription: "Caixinha personalizada 8,3x8,3x5 cm para semijoias e conjuntos. Papel cartão 300g com laminação fosca.",
     longDescription: [
       "Versão maior da nossa caixinha quadrada, ideal para conjuntos completos ou peças com volume um pouco maior, mantendo a percepção premium na entrega.",
@@ -506,8 +506,8 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Caixinha Personalizada para Semijoias 4,4 x 7,3 x 5,6 cm",
     categorySlug: "sacolinhas-personalizadas-para-semijoias",
     categoryLabel: "Sacolinhas",
-    seoTitle: "Caixinha Personalizada para Semijoias 4,4 x 7,3 x 5,6 cm | GS Cartões",
-    seoDescription: "Caixinha personalizada para semijoias no tamanho 4,4 x 7,3 x 5,6 cm. Ideal para pequenos acessórios como brincos, anéis, colares delicados e pulseiras, valorizando a apresentação da sua marca.",
+    seoTitle: "Caixinha Personalizada para Semijoias 4,4 x 7,3 x 5,6 cm",
+    seoDescription: "Caixinha personalizada para semijoias 4,4 x 7,3 x 5,6 cm. Ideal para brincos, anéis, colares e pulseiras, valorizando a apresentação da sua marca.",
     longDescription: [
       "Caixinha personalizada para semijoias no formato 4,4 x 7,3 x 5,6 cm, ideal para brincos, anéis, colares delicados e pulseiras. O tamanho compacto valoriza a apresentação da peça e reforça a percepção premium da sua marca.",
       "Papel couchê 250g, externo colorido. Sem brilho de 100 a 200 unidades; com brilho de 500 a 5000 unidades.",
@@ -523,7 +523,7 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Certificado de Garantia Personalizado 8,8x4,8 cm",
     categorySlug: "cartoes-personalizados-para-semijoias",
     categoryLabel: "Cartões",
-    seoTitle: "Certificado de Garantia Personalizado 8,8x4,8 cm | GS Cartões",
+    seoTitle: "Certificado de Garantia Personalizado 8,8x4,8 cm",
     seoDescription: "Certificado de garantia personalizado 8,8x4,8 cm para semijoias. Transmita confiança e profissionalismo em cada venda.",
     longDescription: [
       "Mais do que um cartão, um certificado de garantia transmite confiança e reforça a credibilidade da sua marca em cada venda.",
@@ -565,7 +565,7 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Cartão de Agradecimento Personalizado 8,8x9,94 cm",
     categorySlug: "cartoes-personalizados-para-semijoias",
     categoryLabel: "Cartões",
-    seoTitle: "Cartão de Agradecimento Personalizado 8,8x9,94 cm | GS Cartões",
+    seoTitle: "Cartão de Agradecimento Personalizado 8,8x9,94 cm",
     seoDescription: "Cartão de agradecimento 8,8x9,94 cm para semijoias. Toque pessoal que fideliza a cliente em cada entrega.",
     longDescription: [
       "Um simples cartão de agradecimento muda completamente a percepção da entrega. É o tipo de detalhe que fideliza a cliente e gera recomendação.",
@@ -607,7 +607,7 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Cartão de Visitas Personalizado com Verniz Localizado 8,8x5,1 cm",
     categorySlug: "cartoes-personalizados-para-semijoias",
     categoryLabel: "Cartões",
-    seoTitle: "Cartão de Visitas com Verniz Localizado 8,8x5,1 cm | GS Cartões",
+    seoTitle: "Cartão de Visitas com Verniz Localizado 8,8x5,1 cm",
     seoDescription: "Cartão de visitas premium com verniz localizado 8,8x5,1 cm. Acabamento fosco com detalhes brilhantes para uma marca de alto padrão.",
     longDescription: [
       "Linha premium com acabamento fosco e detalhes em verniz localizado para destacar logo ou elementos da arte. O resultado é refinado, com toque sofisticado.",
@@ -665,7 +665,7 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Adesivo Fecha Sacola Personalizado Couchê 10x4 cm",
     categorySlug: "adesivos-personalizados-para-semijoias",
     categoryLabel: "Adesivos",
-    seoTitle: "Adesivo Fecha Sacola Personalizado Couchê 10x4 cm | GS Cartões",
+    seoTitle: "Adesivo Fecha Sacola Personalizado Couchê 10x4 cm",
     seoDescription: "Adesivo fecha sacola personalizado em papel couchê, 10x4 cm. Acabamento prático e elegante para suas entregas.",
     longDescription: [
       "Funcional e elegante, esse adesivo lacra a sacolinha e reforça a presença da marca no exato momento do fechamento da entrega.",
@@ -825,7 +825,7 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Kit Completo de Tags 1",
     categorySlug: "kits-de-tags-para-semijoias",
     categoryLabel: "Kits",
-    seoTitle: "Kit Completo de Tags 1 - Tags e Certificados Personalizados | GS Cartões",
+    seoTitle: "Kit Completo de Tags 1 - Tags e Certificados Personalizados",
     seoDescription: "Kit Completo de Tags 1 com 800 materiais gráficos personalizados: tags e certificados de garantia. Combo completo para marcas de semijoias.",
     longDescription: [
       "Kit completo que combina tags e certificados de garantia, perfeito para marcas que querem padronizar toda a comunicação visual em uma compra única.",
@@ -853,7 +853,7 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Kit Completo de Tags 2",
     categorySlug: "kits-de-tags-para-semijoias",
     categoryLabel: "Kits",
-    seoTitle: "Kit Completo de Tags 2 - Tags e Certificados em Volume | GS Cartões",
+    seoTitle: "Kit Completo de Tags 2 - Tags e Certificados em Volume",
     seoDescription: "Kit Completo de Tags 2 com 6 mil materiais gráficos personalizados: tags e certificados de garantia em grande volume para marcas consolidadas.",
     longDescription: [
       "Kit completo e de grande volume com tags e certificados de garantia, indicado para marcas consolidadas que querem padronizar toda a apresentação por meses.",
@@ -867,7 +867,7 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Kit Essencial 1 - Tags Personalizadas para Semijoias",
     categorySlug: "kits-de-tags-para-semijoias",
     categoryLabel: "Kits",
-    seoTitle: "Kit Essencial 1 - Tags Personalizadas para Semijoias | GS Cartões",
+    seoTitle: "Kit Essencial 1 - Tags Personalizadas para Semijoias",
     seoDescription: "Kit Essencial 1 com 300 tags personalizadas em formatos padronizados. Combo prático e econômico para marcas de semijoias.",
     longDescription: [
       "Kit Essencial 1 reúne 300 tags em três formatos padronizados, ideal para quem quer começar com um mix equilibrado de tags para brincos, brincos e colar e cartelas.",
@@ -881,7 +881,7 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Kit Essencial 2 - Tags Personalizadas para Semijoias",
     categorySlug: "kits-de-tags-para-semijoias",
     categoryLabel: "Kits",
-    seoTitle: "Kit Essencial 2 - Tags Personalizadas para Semijoias | GS Cartões",
+    seoTitle: "Kit Essencial 2 - Tags Personalizadas para Semijoias",
     seoDescription: "Kit Essencial 2 com 300 tags personalizadas em formatos padronizados. Mix versátil para marcas de semijoias.",
     longDescription: [
       "Kit Essencial 2 traz 300 tags em três formatos padronizados, combinando tags de brincos, trio de brincos e brincos e colar para diversificar a apresentação das suas peças.",
@@ -895,7 +895,7 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Kit Essencial 3 - Tags Personalizadas para Semijoias",
     categorySlug: "kits-de-tags-para-semijoias",
     categoryLabel: "Kits",
-    seoTitle: "Kit Essencial 3 - Tags Personalizadas para Semijoias | GS Cartões",
+    seoTitle: "Kit Essencial 3 - Tags Personalizadas para Semijoias",
     seoDescription: "Kit Essencial 3 com 400 tags personalizadas, incluindo mini tags de anel. Excelente custo-benefício para marcas de semijoias.",
     longDescription: [
       "Kit Essencial 3 oferece 400 tags com mini tags de anel inclusas, perfeito para marcas que vendem anéis junto a outras peças e querem padronizar toda a apresentação.",
@@ -909,7 +909,7 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Kit Essencial 4 - Tags Personalizadas para Semijoias",
     categorySlug: "kits-de-tags-para-semijoias",
     categoryLabel: "Kits",
-    seoTitle: "Kit Essencial 4 - Tags Personalizadas para Semijoias | GS Cartões",
+    seoTitle: "Kit Essencial 4 - Tags Personalizadas para Semijoias",
     seoDescription: "Kit Essencial 4 com 300 tags personalizadas em formatos padronizados. Mix completo para marcas de semijoias.",
     longDescription: [
       "Kit Essencial 4 reúne 300 tags em três formatos padronizados, ideal para marcas que querem diversidade entre tags de brincos, trio de brincos e brincos e colar.",

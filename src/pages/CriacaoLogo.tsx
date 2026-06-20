@@ -23,7 +23,7 @@ import pacoteCompleto from "@/assets/logo-page/pacote-completo.png";
 const portfolioImages = [portfolio1, portfolio2, portfolio3, portfolio4];
 const testimonialImages = [testimonial1, testimonial2, testimonial3, testimonial4];
 
-function ImageSlider({ images, autoPlay = 5000 }: { images: string[]; autoPlay?: number }) {
+function ImageSlider({ images, autoPlay = 5000, altPrefix = "Slide" }: { images: string[]; autoPlay?: number; altPrefix?: string }) {
   const [current, setCurrent] = useState(0);
 
   const next = useCallback(() => setCurrent((c) => (c + 1) % images.length), [images.length]);
@@ -45,7 +45,7 @@ function ImageSlider({ images, autoPlay = 5000 }: { images: string[]; autoPlay?:
           <img
             key={i}
             src={src}
-            alt={`Slide ${i + 1}`}
+            alt={`${altPrefix} ${i + 1}`}
             className="w-full flex-shrink-0 object-cover"
             style={{ aspectRatio: "16/7" }}
           />
@@ -188,7 +188,7 @@ const CriacaoLogo = () => {
             </p>
           </div>
           <div className={`transition-all duration-700 delay-200 ${portfolioReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            <ImageSlider images={portfolioImages} />
+            <ImageSlider images={portfolioImages} altPrefix="Logo personalizada de semijoias criada pela GS Cartões" />
           </div>
         </div>
       </section>
@@ -224,7 +224,7 @@ const CriacaoLogo = () => {
             </h2>
           </div>
           <div className={`transition-all duration-700 delay-200 ${testimonialReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            <ImageSlider images={testimonialImages} />
+            <ImageSlider images={testimonialImages} altPrefix="Depoimento de cliente sobre criação de logo" />
           </div>
         </div>
       </section>
