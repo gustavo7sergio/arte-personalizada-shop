@@ -513,6 +513,7 @@ export const productPages: ProductPageConfig[] = [
       "Papel couchê 250g, externo colorido. Sem brilho de 100 a 200 unidades; com brilho de 500 a 5000 unidades.",
     ],
     faqs: wrapFaqs([{ q: "Por que o acabamento muda conforme a quantidade?", a: "Acima de 500 unidades conseguimos aplicar brilho com custo viável. Em quantidades menores, o acabamento é sem brilho para manter o preço acessível." }]),
+    youtubeVideoId: "LGti6M0NkK8",
   },
 
   // ─────────── CARTÕES ───────────
