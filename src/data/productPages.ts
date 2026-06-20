@@ -436,6 +436,7 @@ export const productPages: ProductPageConfig[] = [
       "Papel couchê 250g, externo colorido. Não acompanha laço. Disponível em arte 100% personalizada.",
     ],
     faqs: wrapFaqs([{ q: "A sacolinha já vem com alça e laço?", a: "Não acompanha laço." }]),
+    youtubeVideoId: "c7cT417IiaE",
   },
   {
     slug: "sacolinha-personalizada-para-semijoias",
@@ -452,6 +453,7 @@ export const productPages: ProductPageConfig[] = [
     faqs: wrapFaqs([{ q: "Qual tamanho devo escolher?", a: "O P serve bem para peças pequenas e únicas. O M comporta conjuntos e múltiplas peças com folga." }]),
     // Gallery: [0]=mockup, [1]=medida P, [2]=medida M
     variantImageMap: [1, 2],
+    youtubeVideoId: "c7cT417IiaE",
   },
   {
     slug: "sacola-plastica-personalizada-alca-vazada",

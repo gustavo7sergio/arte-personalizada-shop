@@ -32,7 +32,7 @@ export default function ProductVideo({ videoId, title = "Veja o produto em víde
   const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=0&rel=0&modestbranding=1&playsinline=1`;
 
   return (
-    <div ref={containerRef} className="w-full">
+    <div ref={containerRef} className="w-full md:max-w-3xl md:mx-auto">
       <h2 className="text-xl font-display font-semibold text-foreground mb-3">{title}</h2>
       <div className="relative w-full rounded-2xl overflow-hidden border border-border bg-muted/20 aspect-video">
         {loadIframe ? (
