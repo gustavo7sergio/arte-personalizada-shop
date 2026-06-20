@@ -45,7 +45,7 @@ function ImageSlider({ images, autoPlay = 5000, altPrefix = "Slide" }: { images:
           <img
             key={i}
             src={src}
-            alt={`Slide ${i + 1}`}
+            alt={`${altPrefix} ${i + 1}`}
             className="w-full flex-shrink-0 object-cover"
             style={{ aspectRatio: "16/7" }}
           />
