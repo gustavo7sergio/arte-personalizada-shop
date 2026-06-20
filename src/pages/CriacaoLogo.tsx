@@ -23,7 +23,7 @@ import pacoteCompleto from "@/assets/logo-page/pacote-completo.png";
 const portfolioImages = [portfolio1, portfolio2, portfolio3, portfolio4];
 const testimonialImages = [testimonial1, testimonial2, testimonial3, testimonial4];
 
-function ImageSlider({ images, autoPlay = 5000 }: { images: string[]; autoPlay?: number }) {
+function ImageSlider({ images, autoPlay = 5000, altPrefix = "Slide" }: { images: string[]; autoPlay?: number; altPrefix?: string }) {
   const [current, setCurrent] = useState(0);
 
   const next = useCallback(() => setCurrent((c) => (c + 1) % images.length), [images.length]);
