@@ -453,7 +453,7 @@ export const productPages: ProductPageConfig[] = [
     faqs: wrapFaqs([{ q: "Qual tamanho devo escolher?", a: "O P serve bem para peças pequenas e únicas. O M comporta conjuntos e múltiplas peças com folga." }]),
     // Gallery: [0]=mockup, [1]=medida P, [2]=medida M
     variantImageMap: [1, 2],
-    youtubeVideoId: "c7cT417IiaE",
+    youtubeVideoId: "quNu3NURs6o",
   },
   {
     slug: "sacola-plastica-personalizada-alca-vazada",
