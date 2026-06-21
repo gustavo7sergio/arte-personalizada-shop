@@ -224,6 +224,7 @@ export const productPages: ProductPageConfig[] = [
       "Couchê 250g, frente e verso coloridos e brilho total na frente. Furos e cortes especiais opcionais.",
     ],
     faqs: wrapFaqs([{ q: "Qual a diferença para o modelo 9,94x6 cm?", a: "Esse modelo é mais compacto e econômico. O 9,94x6 cm oferece mais área para a arte e acomoda conjuntos maiores com folga." }]),
+    youtubeVideoId: "z4XmNspPpVE",
   },
   {
     slug: "tag-de-brincos-e-colar-personalizada-formato-especial",
