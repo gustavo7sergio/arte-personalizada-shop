@@ -644,6 +644,7 @@ export const productPages: ProductPageConfig[] = [
       "Papel couchê 80g, frente colorida e sem brilho.",
     ],
     faqs: wrapFaqs([{ q: "Posso usar para fechar sacolinhas?", a: "Sim. É um dos usos mais comuns: aplicar como selo no fechamento da embalagem." }]),
+    youtubeVideoId: "Ektei2vCGss",
   },
   {
     slug: "adesivo-redondo-personalizado-4-8x4-8-cm",
@@ -658,6 +659,7 @@ export const productPages: ProductPageConfig[] = [
       "Papel couchê 80g, frente colorida e sem brilho.",
     ],
     faqs: wrapFaqs([{ q: "Posso usar para fechar sacolinhas?", a: "Sim. É um dos usos mais comuns: aplicar como selo no fechamento da embalagem." }]),
+    youtubeVideoId: "Ektei2vCGss",
   },
   {
     slug: "adesivo-fecha-sacola-personalizado-couche-10x4-cm",
