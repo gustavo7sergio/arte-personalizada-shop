@@ -75,7 +75,7 @@ const ProductImage = ({ src, alt, className }: ProductImageProps) => {
   if (status === "error") {
     return (
       <div className={`flex items-center justify-center bg-muted/30 ${className || ""}`}>
-        <div className="text-center text-muted-foreground/50 p-4">
+        <div className="text-center text-muted-foreground p-4">
           <ImageOff className="h-8 w-8 mx-auto mb-2" />
           <p className="text-xs font-body">Imagem indisponível</p>
         </div>
