@@ -58,6 +58,10 @@ import sacolaPlasticaMed from "@/assets/products/measures/sacola-plastica-person
 import sacolinhaCoucheMed from "@/assets/products/measures/sacolinha-personalizada-para-semijoias-couche-16-5x12x4-5-cm.jpg";
 import sacolinhaCartaoMMed from "@/assets/products/measures/sacolinha-personalizada-para-semijoias-papel-cartao-m.jpg";
 import sacolinhaCartaoPMed from "@/assets/products/measures/sacolinha-personalizada-para-semijoias-papel-cartao-p.jpg";
+import sacolaAcess21Med from "@/assets/products/measures/sacola-personalizada-para-acessorios-21x15x7-cm.jpg";
+import sacolaAcess12Med from "@/assets/products/measures/sacola-personalizada-para-acessorios-12x12x6-cm.jpg";
+import sacolaAcess21Foto2 from "@/assets/products/photos/sacola-acessorios-21x15x7-foto-2.jpg";
+import sacolaAcess12Foto2 from "@/assets/products/photos/sacola-acessorios-12x12x6-foto-2.jpg";
 import sacolinhaCartaoFoto2 from "@/assets/products/photos/sacolinha-papel-cartao-foto-2.jpg";
 import sacolinhaCartaoFoto3 from "@/assets/products/photos/sacolinha-papel-cartao-foto-3.jpg";
 import panfletoFoto2 from "@/assets/products/photos/panfleto-foto-2.jpg";
