@@ -348,7 +348,14 @@ const ProductPage = () => {
                     </div>
                     <span className="text-xs font-body text-muted-foreground font-medium">PIX / À vista <strong>10% OFF</strong></span>
                   </div>
-                  <p className="text-2xl font-display font-bold text-primary">{formatCurrency(selected.cash)}</p>
+                  <div className="text-right">
+                    <p className="text-2xl font-display font-bold text-primary">{formatCurrency(selected.cash)}</p>
+                    {selected.unitPrice && selected.unitPrice > 0 && (
+                      <p className="text-xs text-muted-foreground font-body">
+                        {formatCurrency(selected.unitPrice)} / uni
+                      </p>
+                    )}
+                  </div>
                 </div>
                 <div className="h-px bg-border/60" />
                 <div className="flex items-center justify-between">
