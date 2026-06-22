@@ -312,6 +312,14 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
     { src: sacolaPlasticaMed, type: "measurement", alt: "Sacola plástica personalizada — tamanhos disponíveis 16x22, 20x30, 25x35 e 30x40 cm" },
     { src: sacolaPlasticaFoto2, type: "photo", alt: "Sacola plástica personalizada — modelo Essência Moda Feminina" },
   ],
+  "sacola-personalizada-para-acessorios-21x15x7-cm": [
+    { src: sacolaAcess21Med, type: "measurement", alt: "Sacola personalizada para acessórios 21x15x7 cm — medidas" },
+    { src: sacolaAcess21Foto2, type: "photo", alt: "Sacola personalizada para acessórios 21x15x7 cm — modelo Bella Jóias preto e dourado" },
+  ],
+  "sacola-personalizada-para-acessorios-12x12x6-cm": [
+    { src: sacolaAcess12Med, type: "measurement", alt: "Sacola personalizada para acessórios 12x12x6 cm — medidas" },
+    { src: sacolaAcess12Foto2, type: "photo", alt: "Sacola personalizada para acessórios 12x12x6 cm — modelo Avile branca com detalhe cobre" },
+  ],
   "sacolinha-personalizada-para-semijoias-16-5x12x4-5-cm": [
     { src: sacolinhaCoucheMed, type: "measurement" },
     { src: sacolinha250gFoto2, type: "photo", alt: "Sacolinha em papel 250g — modelo YZE Acessórios" },
