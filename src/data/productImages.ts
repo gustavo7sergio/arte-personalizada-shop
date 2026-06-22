@@ -89,6 +89,8 @@ export const productImages: Record<string, string | string[]> = {
   "sacola-plastica": sacolaPlastica,
   "sacolinha-acessorios-couche": sacolinhaCouche,
   "sacolinha-acessorios-cartao": sacolinhaCartao,
+  "sacola-acessorios-21x15x7": sacolaAcessorios21,
+  "sacola-acessorios-12x12x6": sacolaAcessorios12,
 
   // Tags de Brincos
   "tag-brincos-g": tagBrincosG,
