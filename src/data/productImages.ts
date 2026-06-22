@@ -8,6 +8,8 @@ import caixinhaMaleta from "@/assets/products/caixinhaparaacessoriosmodelomaleta
 import sacolaPlastica from "@/assets/products/sacolasplasticas.jpg";
 import sacolinhaCouche from "@/assets/products/sacolinhaparaacessoriospapel250g.jpg";
 import sacolinhaCartao from "@/assets/products/sacolinhaparaacessoriospapelcartao300g.jpg";
+import sacolaAcessorios21 from "@/assets/products/sacola-acessorios-21x15x7.jpg";
+import sacolaAcessorios12 from "@/assets/products/sacola-acessorios-12x12x6.jpg";
 import tagTrioBrincosM from "@/assets/products/tagdetriodebrincos5-5x4-8cm.jpg";
 import tagTrioBrincosP from "@/assets/products/tagdetriodebrincos4-8x4-1cm.jpg";
 import tagTrioBrincosG from "@/assets/products/tagdetriodebrincos8x6-5cm.jpg";
