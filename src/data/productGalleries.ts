@@ -58,6 +58,10 @@ import sacolaPlasticaMed from "@/assets/products/measures/sacola-plastica-person
 import sacolinhaCoucheMed from "@/assets/products/measures/sacolinha-personalizada-para-semijoias-couche-16-5x12x4-5-cm.jpg";
 import sacolinhaCartaoMMed from "@/assets/products/measures/sacolinha-personalizada-para-semijoias-papel-cartao-m.jpg";
 import sacolinhaCartaoPMed from "@/assets/products/measures/sacolinha-personalizada-para-semijoias-papel-cartao-p.jpg";
+import sacolaAcess21Med from "@/assets/products/measures/sacola-personalizada-para-acessorios-21x15x7-cm.jpg";
+import sacolaAcess12Med from "@/assets/products/measures/sacola-personalizada-para-acessorios-12x12x6-cm.jpg";
+import sacolaAcess21Foto2 from "@/assets/products/photos/sacola-acessorios-21x15x7-foto-2.jpg";
+import sacolaAcess12Foto2 from "@/assets/products/photos/sacola-acessorios-12x12x6-foto-2.jpg";
 import sacolinhaCartaoFoto2 from "@/assets/products/photos/sacolinha-papel-cartao-foto-2.jpg";
 import sacolinhaCartaoFoto3 from "@/assets/products/photos/sacolinha-papel-cartao-foto-3.jpg";
 import panfletoFoto2 from "@/assets/products/photos/panfleto-foto-2.jpg";
@@ -307,6 +311,14 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   "sacola-plastica-personalizada-alca-vazada": [
     { src: sacolaPlasticaMed, type: "measurement", alt: "Sacola plástica personalizada — tamanhos disponíveis 16x22, 20x30, 25x35 e 30x40 cm" },
     { src: sacolaPlasticaFoto2, type: "photo", alt: "Sacola plástica personalizada — modelo Essência Moda Feminina" },
+  ],
+  "sacola-personalizada-para-acessorios-21x15x7-cm": [
+    { src: sacolaAcess21Med, type: "measurement", alt: "Sacola personalizada para acessórios 21x15x7 cm — medidas" },
+    { src: sacolaAcess21Foto2, type: "photo", alt: "Sacola personalizada para acessórios 21x15x7 cm — modelo Bella Jóias preto e dourado" },
+  ],
+  "sacola-personalizada-para-acessorios-12x12x6-cm": [
+    { src: sacolaAcess12Med, type: "measurement", alt: "Sacola personalizada para acessórios 12x12x6 cm — medidas" },
+    { src: sacolaAcess12Foto2, type: "photo", alt: "Sacola personalizada para acessórios 12x12x6 cm — modelo Avile branca com detalhe cobre" },
   ],
   "sacolinha-personalizada-para-semijoias-16-5x12x4-5-cm": [
     { src: sacolinhaCoucheMed, type: "measurement" },

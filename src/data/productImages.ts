@@ -8,6 +8,8 @@ import caixinhaMaleta from "@/assets/products/caixinhaparaacessoriosmodelomaleta
 import sacolaPlastica from "@/assets/products/sacolasplasticas.jpg";
 import sacolinhaCouche from "@/assets/products/sacolinhaparaacessoriospapel250g.jpg";
 import sacolinhaCartao from "@/assets/products/sacolinhaparaacessoriospapelcartao300g.jpg";
+import sacolaAcessorios21 from "@/assets/products/sacola-acessorios-21x15x7.jpg";
+import sacolaAcessorios12 from "@/assets/products/sacola-acessorios-12x12x6.jpg";
 import tagTrioBrincosM from "@/assets/products/tagdetriodebrincos5-5x4-8cm.jpg";
 import tagTrioBrincosP from "@/assets/products/tagdetriodebrincos4-8x4-1cm.jpg";
 import tagTrioBrincosG from "@/assets/products/tagdetriodebrincos8x6-5cm.jpg";
@@ -87,6 +89,8 @@ export const productImages: Record<string, string | string[]> = {
   "sacola-plastica": sacolaPlastica,
   "sacolinha-acessorios-couche": sacolinhaCouche,
   "sacolinha-acessorios-cartao": sacolinhaCartao,
+  "sacola-acessorios-21x15x7": sacolaAcessorios21,
+  "sacola-acessorios-12x12x6": sacolaAcessorios12,
 
   // Tags de Brincos
   "tag-brincos-g": tagBrincosG,
