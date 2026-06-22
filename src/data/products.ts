@@ -144,6 +144,62 @@ export const products: Product[] = [
       },
     ],
   },
+  {
+    id: "sacola-acessorios-21x15x7",
+    name: "Sacola para Acessórios",
+    subtitle: "21 × 15 × 7 cm",
+    category: "Sacolinhas",
+    material: "Papel sulfite 150g",
+    specs: [
+      "Sulfite 150g",
+      "Sem verniz",
+      "Ilhós e cordão",
+      "Colorido na parte externa",
+      "NÃO trabalhamos com fidelização de cores",
+    ],
+    highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
+    variants: [
+      {
+        label: "21 × 15 × 7 cm",
+        dimensions: "21 x 15 x 7 cm (Alt × Larg × Prof)",
+        prices: [
+          { qty: 100,  installment: 1129.00, cash: 1016.10, unitPrice: 10.16 },
+          { qty: 250,  installment: 2259.00, cash: 2033.10, unitPrice: 8.13 },
+          { qty: 500,  installment: 3499.00, cash: 3149.10, unitPrice: 6.30 },
+          { qty: 1000, installment: 4689.00, cash: 4220.10, unitPrice: 4.22 },
+        ],
+      },
+    ],
+  },
+  {
+    id: "sacola-acessorios-12x12x6",
+    name: "Sacola para Acessórios",
+    subtitle: "12 × 12 × 6 cm",
+    category: "Sacolinhas",
+    material: "Papel sulfite 150g",
+    specs: [
+      "Sulfite 150g",
+      "Sem verniz",
+      "Ilhós e cordão",
+      "Colorido na parte externa",
+      "NÃO trabalhamos com fidelização de cores",
+    ],
+    highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
+    variants: [
+      {
+        label: "12 × 12 × 6 cm",
+        dimensions: "12 x 12 x 6 cm (Alt × Larg × Prof)",
+        prices: [
+          { qty: 100,  installment: 949.00,  cash: 854.10,  unitPrice: 8.54 },
+          { qty: 250,  installment: 1899.00, cash: 1709.10, unitPrice: 6.84 },
+          { qty: 500,  installment: 3199.00, cash: 2879.10, unitPrice: 5.76 },
+          { qty: 1000, installment: 4159.00, cash: 3743.10, unitPrice: 3.74 },
+        ],
+      },
+    ],
+  },
+
+
 
   // ─── CAIXINHAS ────────────────────────────────────────────────────
   {
