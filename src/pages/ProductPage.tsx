@@ -160,6 +160,7 @@ const ProductPage = () => {
         <title>{config.seoTitle}</title>
         <meta name="description" content={config.seoDescription} />
         <link rel="canonical" href={canonical} />
+        {heroImage && <link rel="preload" as="image" href={heroImage} fetchPriority="high" />}
         <meta property="og:site_name" content="GS Cartões" />
         <meta property="og:locale" content="pt_BR" />
         <meta property="og:title" content={config.seoTitle} />
@@ -236,6 +237,7 @@ const ProductPage = () => {
                       src={heroImage}
                       alt={heroAlt}
                       className="w-full h-full object-contain p-6"
+                      priority
                     />
                     <div className="absolute top-3 right-3 bg-card/80 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
                       <Search className="h-4 w-4 text-foreground" />
