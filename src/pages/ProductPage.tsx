@@ -152,6 +152,8 @@ const ProductPage = () => {
     })),
   } : null;
 
+  const absoluteHeroImage = heroImage ? `https://www.gscartoes.com${heroImage}` : undefined;
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
@@ -164,15 +166,30 @@ const ProductPage = () => {
         <meta property="og:description" content={config.seoDescription} />
         <meta property="og:url" content={absoluteUrl} />
         <meta property="og:type" content="product" />
-        {heroImage && <meta property="og:image" content={`https://www.gscartoes.com${heroImage}`} />}
-        {heroImage && <meta property="og:image:secure_url" content={`https://www.gscartoes.com${heroImage}`} />}
-        {heroImage && <meta property="og:image:alt" content={config.displayName} />}
-        {heroImage && <meta property="og:image:width" content="1200" />}
-        {heroImage && <meta property="og:image:height" content="1200" />}
+        {absoluteHeroImage && <meta property="og:image" content={absoluteHeroImage} />}
+        {absoluteHeroImage && <meta property="og:image:secure_url" content={absoluteHeroImage} />}
+        {absoluteHeroImage && <meta property="og:image:type" content="image/jpeg" />}
+        {absoluteHeroImage && <meta property="og:image:alt" content={heroAlt} />}
+        {absoluteHeroImage && <meta property="og:image:width" content="1200" />}
+        {absoluteHeroImage && <meta property="og:image:height" content="1200" />}
+        {/* Open Graph Product (Facebook / Pinterest Rich Pins) */}
+        <meta property="product:brand" content="GS Cartões" />
+        <meta property="product:availability" content="in stock" />
+        <meta property="product:condition" content="new" />
+        <meta property="product:price:amount" content={minPrice.toFixed(2)} />
+        <meta property="product:price:currency" content="BRL" />
+        <meta property="product:category" content={config.categoryLabel} />
+        <meta property="product:retailer_item_id" content={config.slug} />
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={config.seoTitle} />
         <meta name="twitter:description" content={config.seoDescription} />
-        {heroImage && <meta name="twitter:image" content={`https://www.gscartoes.com${heroImage}`} />}
+        {absoluteHeroImage && <meta name="twitter:image" content={absoluteHeroImage} />}
+        {absoluteHeroImage && <meta name="twitter:image:alt" content={heroAlt} />}
+        {/* Pinterest */}
+        <meta name="pinterest-rich-pin" content="true" />
+        {absoluteHeroImage && <meta property="pinterest:image" content={absoluteHeroImage} />}
+        <meta name="pinterest:description" content={config.seoDescription} />
         <script type="application/ld+json">{JSON.stringify(productJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbJsonLd)}</script>
         {faqJsonLd && <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>}
