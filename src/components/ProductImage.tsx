@@ -13,7 +13,7 @@ interface ProductImageProps {
 const MAX_RETRIES = 5;
 const RETRY_DELAYS_MS = [700, 1500, 2500, 4000, 6000];
 
-const ProductImage = ({ src, alt, className }: ProductImageProps) => {
+const ProductImage = ({ src, alt, className, width = 1200, height = 1200, priority = false }: ProductImageProps) => {
   const [status, setStatus] = useState<"loading" | "loaded" | "error">("loading");
   const [retrySeed, setRetrySeed] = useState(0);
   const imgRef = useRef<HTMLImageElement>(null);
