@@ -236,6 +236,7 @@ const ProductPage = () => {
                       src={heroImage}
                       alt={heroAlt}
                       className="w-full h-full object-contain p-6"
+                      priority
                     />
                     <div className="absolute top-3 right-3 bg-card/80 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
                       <Search className="h-4 w-4 text-foreground" />
