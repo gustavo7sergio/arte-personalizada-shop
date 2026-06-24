@@ -99,8 +99,11 @@ const ProductImage = ({ src, alt, className, width = 1200, height = 1200, priori
         ref={imgRef}
         src={src}
         alt={alt}
-        loading="lazy"
+        width={width}
+        height={height}
+        loading={priority ? "eager" : "lazy"}
         decoding="async"
+        {...(priority ? { fetchPriority: "high" as const } : {})}
         className={`${className || ""} absolute inset-0 transition-opacity duration-200 ${
           status === "loaded" ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
