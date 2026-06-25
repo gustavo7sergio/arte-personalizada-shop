@@ -46,6 +46,10 @@ function ImageSlider({ images, autoPlay = 5000, altPrefix = "Slide" }: { images:
             key={i}
             src={src}
             alt={`${altPrefix} ${i + 1}`}
+            width={1600}
+            height={700}
+            loading={i === 0 ? "eager" : "lazy"}
+            decoding="async"
             className="w-full flex-shrink-0 object-cover"
             style={{ aspectRatio: "16/7" }}
           />
@@ -117,10 +121,10 @@ const CriacaoLogo = () => {
       <Helmet>
         <title>Criação de Logo Profissional — GS Cartões</title>
         <meta name="description" content="Crie uma logo profissional para sua marca de semijoias e bijuterias. Pacotes Essencial e Completo, com formulário, criação e aprovação ágil." />
-        <link rel="canonical" href="/criacao-de-logo" />
+        <link rel="canonical" href="https://www.gscartoes.com/criacao-de-logo" />
         <meta property="og:title" content="Criação de Logo Profissional — GS Cartões" />
         <meta property="og:description" content="Pacotes de criação de logo Essencial e Completo, com processo guiado e aprovação ágil." />
-        <meta property="og:url" content="/criacao-de-logo" />
+        <meta property="og:url" content="https://www.gscartoes.com/criacao-de-logo" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -160,7 +164,10 @@ const CriacaoLogo = () => {
               <img
                 src={heroImg}
                 alt="Criação de Logo profissional para semijoias"
-                className="rounded-2xl shadow-lg w-full"
+                width={1200}
+                height={1200}
+                decoding="async"
+                className="rounded-2xl shadow-lg w-full h-auto"
               />
             </div>
             <div className="w-full md:w-1/2 text-center md:text-left">
@@ -237,7 +244,11 @@ const CriacaoLogo = () => {
               <img
                 src={aboutCreator}
                 alt="Gustavo - Criador da GS Cartões"
-                className="rounded-2xl shadow-lg w-full"
+                width={1200}
+                height={1200}
+                loading="lazy"
+                decoding="async"
+                className="rounded-2xl shadow-lg w-full h-auto"
               />
             </div>
             <div className="w-full md:w-1/2">
@@ -302,7 +313,7 @@ Se você quer uma identidade que comunique, conecte e brilhe aos olhos do client
           <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto transition-all duration-700 delay-200 ${promoReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             {/* Pacote Essencial */}
             <div className="border-2 border-primary/20 rounded-2xl overflow-hidden bg-card hover:border-primary/40 transition-all">
-              <img src={pacoteEssencial} alt="Pacote Essencial" className="w-full object-cover aspect-[4/5]" />
+              <img src={pacoteEssencial} alt="Pacote Essencial" width={800} height={1000} loading="lazy" decoding="async" className="w-full object-cover aspect-[4/5]" />
               <div className="p-8">
                 <h3 className="text-2xl font-display font-bold text-foreground mb-2">Pacote Essencial</h3>
                 <p className="text-muted-foreground font-body text-sm leading-relaxed italic mb-4">
@@ -337,7 +348,7 @@ Se você quer uma identidade que comunique, conecte e brilhe aos olhos do client
               <div className="absolute top-4 right-4 bg-primary text-primary-foreground text-xs font-body font-semibold px-3 py-1 rounded-full z-10">
                 Mais completo
               </div>
-              <img src={pacoteCompleto} alt="Pacote Completo" className="w-full object-cover aspect-[4/5]" />
+              <img src={pacoteCompleto} alt="Pacote Completo" width={800} height={1000} loading="lazy" decoding="async" className="w-full object-cover aspect-[4/5]" />
               <div className="p-8">
                 <h3 className="text-2xl font-display font-bold text-foreground mb-2">Pacote Completo</h3>
                 <p className="text-muted-foreground font-body text-sm leading-relaxed italic mb-4">

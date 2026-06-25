@@ -55,7 +55,10 @@ export default function ProductVideo({ videoId, title = "Veja o produto em víde
               <img
                 src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
                 alt={title}
+                width={480}
+                height={360}
                 loading="lazy"
+                decoding="async"
                 className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
               />
             )}

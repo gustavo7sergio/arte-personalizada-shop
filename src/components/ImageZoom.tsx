@@ -21,6 +21,9 @@ const ImageZoom = ({ src, alt, open, onOpenChange }: ImageZoomProps) => {
         <img
           src={src}
           alt={alt}
+          width={1200}
+          height={1200}
+          decoding="async"
           className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
         />
       </DialogContent>

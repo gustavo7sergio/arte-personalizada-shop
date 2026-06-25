@@ -51,6 +51,10 @@ const CartDrawer = () => {
                       <img
                         src={item.image}
                         alt={item.productName}
+                        width={120}
+                        height={120}
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-contain p-1"
                       />
                     </div>

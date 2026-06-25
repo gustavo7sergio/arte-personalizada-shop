@@ -31,7 +31,7 @@ const Navbar = () => {
           Enviamos p/ todo o Brasil
         </span>
         <a href="/" className="flex items-center">
-          <img src={logo} alt="GS Cartões" className="h-20" />
+          <img src={logo} alt="GS Cartões" width={200} height={80} className="h-20 w-auto" />
         </a>
 
         {/* Desktop */}

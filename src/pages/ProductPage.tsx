@@ -159,7 +159,7 @@ const ProductPage = () => {
       <Helmet>
         <title>{config.seoTitle}</title>
         <meta name="description" content={config.seoDescription} />
-        <link rel="canonical" href={canonical} />
+        <link rel="canonical" href={absoluteUrl} />
         {heroImage && <link rel="preload" as="image" href={heroImage} fetchPriority="high" />}
         <meta property="og:site_name" content="GS Cartões" />
         <meta property="og:locale" content="pt_BR" />
