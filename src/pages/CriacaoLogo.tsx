@@ -46,6 +46,10 @@ function ImageSlider({ images, autoPlay = 5000, altPrefix = "Slide" }: { images:
             key={i}
             src={src}
             alt={`${altPrefix} ${i + 1}`}
+            width={1600}
+            height={700}
+            loading={i === 0 ? "eager" : "lazy"}
+            decoding="async"
             className="w-full flex-shrink-0 object-cover"
             style={{ aspectRatio: "16/7" }}
           />
