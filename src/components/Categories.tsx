@@ -1,24 +1,32 @@
 import { Link } from "react-router-dom";
-import catTagsAcessorios from "@/assets/cat-tags-acessorios.jpg";
-import catSacolinhas from "@/assets/cat-sacolinhas-new.jpg";
-import catCartoes from "@/assets/cat-cartoes-new.jpg";
-import catAdesivos from "@/assets/cat-adesivos-new.jpg";
-import catLacosTiaras from "@/assets/cat-lacos-tiaras.jpg";
-import catEtiquetasRoupas from "@/assets/cat-etiquetas-roupas.jpg";
-import catKits from "@/assets/cat-kits.jpg";
-import catOutros from "@/assets/cat-outros-new.jpg";
+import catTagsAcessoriosWebp from "@/assets/cat-tags-acessorios.jpg?format=webp&w=600&quality=70&imagetools";
+import catTagsAcessoriosJpg from "@/assets/cat-tags-acessorios.jpg?w=600&quality=75&imagetools";
+import catSacolinhasWebp from "@/assets/cat-sacolinhas-new.jpg?format=webp&w=600&quality=70&imagetools";
+import catSacolinhasJpg from "@/assets/cat-sacolinhas-new.jpg?w=600&quality=75&imagetools";
+import catCartoesWebp from "@/assets/cat-cartoes-new.jpg?format=webp&w=600&quality=70&imagetools";
+import catCartoesJpg from "@/assets/cat-cartoes-new.jpg?w=600&quality=75&imagetools";
+import catAdesivosWebp from "@/assets/cat-adesivos-new.jpg?format=webp&w=600&quality=70&imagetools";
+import catAdesivosJpg from "@/assets/cat-adesivos-new.jpg?w=600&quality=75&imagetools";
+import catLacosTiarasWebp from "@/assets/cat-lacos-tiaras.jpg?format=webp&w=600&quality=70&imagetools";
+import catLacosTiarasJpg from "@/assets/cat-lacos-tiaras.jpg?w=600&quality=75&imagetools";
+import catEtiquetasRoupasWebp from "@/assets/cat-etiquetas-roupas.jpg?format=webp&w=600&quality=70&imagetools";
+import catEtiquetasRoupasJpg from "@/assets/cat-etiquetas-roupas.jpg?w=600&quality=75&imagetools";
+import catKitsWebp from "@/assets/cat-kits.jpg?format=webp&w=600&quality=70&imagetools";
+import catKitsJpg from "@/assets/cat-kits.jpg?w=600&quality=75&imagetools";
+import catOutrosWebp from "@/assets/cat-outros-new.jpg?format=webp&w=600&quality=70&imagetools";
+import catOutrosJpg from "@/assets/cat-outros-new.jpg?w=600&quality=75&imagetools";
 import { ArrowUpRight } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const categories = [
-  { name: "Tags para Semijoias", description: "Tags de brincos, anéis, colares e mais", image: catTagsAcessorios, slug: "tags-personalizadas-para-semijoias" },
-  { name: "Sacolinhas", description: "Sacolinhas de papel, plástico e caixinhas", image: catSacolinhas, slug: "sacolinhas-personalizadas-para-semijoias" },
-  { name: "Cartões", description: "Cartões de visita, garantia, agradecimento e mais", image: catCartoes, slug: "cartoes-personalizados-para-semijoias" },
-  { name: "Adesivos", description: "Adesivos personalizados para lacre e identificação", image: catAdesivos, slug: "adesivos-personalizados-para-semijoias" },
-  { name: "Tags de Laços e Tiaras", description: "Tags para laços, tiaras e acessórios de cabelo", image: catLacosTiaras, slug: "tags-personalizadas-para-lacos-e-tiaras" },
-  { name: "Etiquetas de roupas", description: "Etiquetas personalizadas para roupas", image: catEtiquetasRoupas, slug: "etiquetas-personalizadas-para-roupas" },
-  { name: "Kits de tags", description: "Kits completos de tags com diversos formatos", image: catKits, slug: "kits-de-tags-para-semijoias" },
-  { name: "Papelaria", description: "Panfletos, banners, blocos de pedido e mais", image: catOutros, slug: "papelaria-personalizada" },
+  { name: "Tags para Semijoias", description: "Tags de brincos, anéis, colares e mais", webp: catTagsAcessoriosWebp, jpg: catTagsAcessoriosJpg, slug: "tags-personalizadas-para-semijoias" },
+  { name: "Sacolinhas", description: "Sacolinhas de papel, plástico e caixinhas", webp: catSacolinhasWebp, jpg: catSacolinhasJpg, slug: "sacolinhas-personalizadas-para-semijoias" },
+  { name: "Cartões", description: "Cartões de visita, garantia, agradecimento e mais", webp: catCartoesWebp, jpg: catCartoesJpg, slug: "cartoes-personalizados-para-semijoias" },
+  { name: "Adesivos", description: "Adesivos personalizados para lacre e identificação", webp: catAdesivosWebp, jpg: catAdesivosJpg, slug: "adesivos-personalizados-para-semijoias" },
+  { name: "Tags de Laços e Tiaras", description: "Tags para laços, tiaras e acessórios de cabelo", webp: catLacosTiarasWebp, jpg: catLacosTiarasJpg, slug: "tags-personalizadas-para-lacos-e-tiaras" },
+  { name: "Etiquetas de roupas", description: "Etiquetas personalizadas para roupas", webp: catEtiquetasRoupasWebp, jpg: catEtiquetasRoupasJpg, slug: "etiquetas-personalizadas-para-roupas" },
+  { name: "Kits de tags", description: "Kits completos de tags com diversos formatos", webp: catKitsWebp, jpg: catKitsJpg, slug: "kits-de-tags-para-semijoias" },
+  { name: "Papelaria", description: "Panfletos, banners, blocos de pedido e mais", webp: catOutrosWebp, jpg: catOutrosJpg, slug: "papelaria-personalizada" },
 ];
 
 const Categories = () => {
@@ -45,12 +53,18 @@ const Categories = () => {
               style={{ animationDelay: `${i * 0.1}s` }}
             >
               <div className="aspect-square overflow-hidden">
-                <img
-                  src={cat.image}
-                  alt={`Categoria de ${cat.name} personalizados`}
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
-                  loading="lazy"
-                />
+                <picture>
+                  <source type="image/webp" srcSet={cat.webp} />
+                  <img
+                    src={cat.jpg}
+                    alt={`Categoria de ${cat.name} personalizados`}
+                    width={600}
+                    height={600}
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-primary/85 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               {/* Hover content */}
