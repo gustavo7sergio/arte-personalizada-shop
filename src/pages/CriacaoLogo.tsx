@@ -313,7 +313,7 @@ Se você quer uma identidade que comunique, conecte e brilhe aos olhos do client
           <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto transition-all duration-700 delay-200 ${promoReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             {/* Pacote Essencial */}
             <div className="border-2 border-primary/20 rounded-2xl overflow-hidden bg-card hover:border-primary/40 transition-all">
-              <img src={pacoteEssencial} alt="Pacote Essencial" className="w-full object-cover aspect-[4/5]" />
+              <img src={pacoteEssencial} alt="Pacote Essencial" width={800} height={1000} loading="lazy" decoding="async" className="w-full object-cover aspect-[4/5]" />
               <div className="p-8">
                 <h3 className="text-2xl font-display font-bold text-foreground mb-2">Pacote Essencial</h3>
                 <p className="text-muted-foreground font-body text-sm leading-relaxed italic mb-4">
