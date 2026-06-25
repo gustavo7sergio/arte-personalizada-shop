@@ -417,10 +417,10 @@ const CategoryPage = () => {
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDesc} />
-        <link rel="canonical" href={canonical} />
+        <link rel="canonical" href={`https://www.gscartoes.com${canonical}`} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDesc} />
-        <meta property="og:url" content={canonical} />
+        <meta property="og:url" content={`https://www.gscartoes.com${canonical}`} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
