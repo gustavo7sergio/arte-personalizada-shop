@@ -348,7 +348,7 @@ Se você quer uma identidade que comunique, conecte e brilhe aos olhos do client
               <div className="absolute top-4 right-4 bg-primary text-primary-foreground text-xs font-body font-semibold px-3 py-1 rounded-full z-10">
                 Mais completo
               </div>
-              <img src={pacoteCompleto} alt="Pacote Completo" className="w-full object-cover aspect-[4/5]" />
+              <img src={pacoteCompleto} alt="Pacote Completo" width={800} height={1000} loading="lazy" decoding="async" className="w-full object-cover aspect-[4/5]" />
               <div className="p-8">
                 <h3 className="text-2xl font-display font-bold text-foreground mb-2">Pacote Completo</h3>
                 <p className="text-muted-foreground font-body text-sm leading-relaxed italic mb-4">
