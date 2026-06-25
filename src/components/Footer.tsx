@@ -45,7 +45,7 @@ const Footer = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="text-center md:text-left">
-            <img src={logoWhite} alt="GS Cartões" className="h-20 mb-4 mx-auto md:mx-0" />
+            <img src={logoWhite} alt="GS Cartões" width={200} height={80} className="h-20 w-auto mb-4 mx-auto md:mx-0" />
             <p className="text-primary-foreground/90 font-body text-sm leading-relaxed">
               Materiais gráficos personalizados que elevam o valor percebido da sua marca de semijoias.
             </p>
