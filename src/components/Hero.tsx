@@ -1,4 +1,7 @@
-import heroImage from "@/assets/hero-image-new.jpg";
+import heroWebp from "@/assets/hero-image-new.jpg?format=webp&w=1536&quality=72";
+import heroWebpSm from "@/assets/hero-image-new.jpg?format=webp&w=800&quality=68";
+import heroJpg from "@/assets/hero-image-new.jpg?w=1536&quality=78";
+import heroJpgSm from "@/assets/hero-image-new.jpg?w=800&quality=72";
 import logoWhite from "@/assets/logo-white.png";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -8,15 +11,27 @@ const Hero = () => {
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Materiais gráficos personalizados GS Cartões"
-          width={1536}
-          height={1024}
-          className="w-full h-full object-cover animate-ken-burns"
-          fetchPriority="high"
-          decoding="async"
-        />
+        <picture>
+          <source
+            type="image/webp"
+            srcSet={`${heroWebpSm} 800w, ${heroWebp} 1536w`}
+            sizes="100vw"
+          />
+          <source
+            type="image/jpeg"
+            srcSet={`${heroJpgSm} 800w, ${heroJpg} 1536w`}
+            sizes="100vw"
+          />
+          <img
+            src={heroJpg}
+            alt="Materiais gráficos personalizados GS Cartões"
+            width={1536}
+            height={1024}
+            className="w-full h-full object-cover animate-ken-burns"
+            fetchPriority="high"
+            decoding="async"
+          />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/65" />
       </div>
 
@@ -25,7 +40,9 @@ const Hero = () => {
         <img
           src={logoWhite}
           alt="GS Cartões"
-          className="h-32 md:h-44 mb-0 mt-16 md:mt-8 animate-zoom-in [animation-fill-mode:forwards]"
+          width={320}
+          height={320}
+          className="h-32 md:h-44 w-auto mb-0 mt-16 md:mt-8 animate-zoom-in [animation-fill-mode:forwards]"
           style={{ animationDelay: "0.2s", opacity: 0.5 }}
         />
         <h1
@@ -69,4 +86,5 @@ const Hero = () => {
   );
 };
 
+export { heroWebp, heroWebpSm };
 export default Hero;
