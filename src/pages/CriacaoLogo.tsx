@@ -244,7 +244,11 @@ const CriacaoLogo = () => {
               <img
                 src={aboutCreator}
                 alt="Gustavo - Criador da GS Cartões"
-                className="rounded-2xl shadow-lg w-full"
+                width={1200}
+                height={1200}
+                loading="lazy"
+                decoding="async"
+                className="rounded-2xl shadow-lg w-full h-auto"
               />
             </div>
             <div className="w-full md:w-1/2">
