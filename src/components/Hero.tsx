@@ -1,7 +1,7 @@
-import heroWebp from "@/assets/hero-image-new.jpg?format=webp&w=1536&quality=72";
-import heroWebpSm from "@/assets/hero-image-new.jpg?format=webp&w=800&quality=68";
-import heroJpg from "@/assets/hero-image-new.jpg?w=1536&quality=78";
-import heroJpgSm from "@/assets/hero-image-new.jpg?w=800&quality=72";
+import heroWebp from "@/assets/hero-image-new.jpg?format=webp&w=1536&quality=72&imagetools";
+import heroWebpSm from "@/assets/hero-image-new.jpg?format=webp&w=800&quality=68&imagetools";
+import heroJpg from "@/assets/hero-image-new.jpg?w=1536&quality=78&imagetools";
+import heroJpgSm from "@/assets/hero-image-new.jpg?w=800&quality=72&imagetools";
 import logoWhite from "@/assets/logo-white.png";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
