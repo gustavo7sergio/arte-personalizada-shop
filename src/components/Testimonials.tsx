@@ -61,6 +61,10 @@ const Testimonials = () => {
               <img
                 src={src}
                 alt={`Depoimento de cliente ${index + 1}`}
+                width={400}
+                height={500}
+                loading="lazy"
+                decoding="async"
                 className="w-full max-w-sm rounded-2xl shadow-lg object-cover"
               />
             </div>
