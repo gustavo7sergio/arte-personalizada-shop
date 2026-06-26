@@ -93,5 +93,5 @@ const Hero = () => {
   );
 };
 
-export { heroWebp, heroWebpSm };
+export { heroWebp, heroWebpSm, heroAvif, heroAvifSm };
 export default Hero;
