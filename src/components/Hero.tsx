@@ -15,6 +15,11 @@ const Hero = () => {
       <div className="absolute inset-0">
         <picture>
           <source
+            type="image/avif"
+            srcSet={`${heroAvifSm} 800w, ${heroAvif} 1536w`}
+            sizes="100vw"
+          />
+          <source
             type="image/webp"
             srcSet={`${heroWebpSm} 800w, ${heroWebp} 1536w`}
             sizes="100vw"
