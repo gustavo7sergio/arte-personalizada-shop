@@ -1,3 +1,5 @@
+import heroAvif from "@/assets/hero-image-new.jpg?format=avif&w=1536&quality=55&imagetools";
+import heroAvifSm from "@/assets/hero-image-new.jpg?format=avif&w=800&quality=50&imagetools";
 import heroWebp from "@/assets/hero-image-new.jpg?format=webp&w=1536&quality=72&imagetools";
 import heroWebpSm from "@/assets/hero-image-new.jpg?format=webp&w=800&quality=68&imagetools";
 import heroJpg from "@/assets/hero-image-new.jpg?w=1536&quality=78&imagetools";
@@ -12,6 +14,11 @@ const Hero = () => {
       {/* Background image */}
       <div className="absolute inset-0">
         <picture>
+          <source
+            type="image/avif"
+            srcSet={`${heroAvifSm} 800w, ${heroAvif} 1536w`}
+            sizes="100vw"
+          />
           <source
             type="image/webp"
             srcSet={`${heroWebpSm} 800w, ${heroWebp} 1536w`}
@@ -86,5 +93,5 @@ const Hero = () => {
   );
 };
 
-export { heroWebp, heroWebpSm };
+export { heroWebp, heroWebpSm, heroAvif, heroAvifSm };
 export default Hero;
