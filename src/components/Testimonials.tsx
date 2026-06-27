@@ -1,10 +1,17 @@
 import { useState, useEffect, useRef } from "react";
-import testimonial1 from "@/assets/testimonial-1.jpg";
-import testimonial2 from "@/assets/testimonial-2.jpg";
-import testimonial3 from "@/assets/testimonial-3.jpg";
+import testimonial1Webp from "@/assets/testimonial-1.jpg?format=webp&w=500&quality=72&imagetools";
+import testimonial1Jpg from "@/assets/testimonial-1.jpg?w=500&quality=75&imagetools";
+import testimonial2Webp from "@/assets/testimonial-2.jpg?format=webp&w=500&quality=72&imagetools";
+import testimonial2Jpg from "@/assets/testimonial-2.jpg?w=500&quality=75&imagetools";
+import testimonial3Webp from "@/assets/testimonial-3.jpg?format=webp&w=500&quality=72&imagetools";
+import testimonial3Jpg from "@/assets/testimonial-3.jpg?w=500&quality=75&imagetools";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
-const testimonials = [testimonial1, testimonial2, testimonial3];
+const testimonials = [
+  { webp: testimonial1Webp, jpg: testimonial1Jpg },
+  { webp: testimonial2Webp, jpg: testimonial2Jpg },
+  { webp: testimonial3Webp, jpg: testimonial3Jpg },
+];
 
 function CountUp({ target, duration = 2000 }: { target: number; duration?: number }) {
   const [count, setCount] = useState(0);
