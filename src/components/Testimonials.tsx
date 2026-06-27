@@ -63,17 +63,20 @@ const Testimonials = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {testimonials.map((src, index) => (
+          {testimonials.map((t, index) => (
             <div key={index} className="flex justify-center">
-              <img
-                src={src}
-                alt={`Depoimento de cliente ${index + 1}`}
-                width={400}
-                height={500}
-                loading="lazy"
-                decoding="async"
-                className="w-full max-w-sm rounded-2xl shadow-lg object-cover"
-              />
+              <picture>
+                <source type="image/webp" srcSet={t.webp} />
+                <img
+                  src={t.jpg}
+                  alt={`Depoimento de cliente ${index + 1}`}
+                  width={400}
+                  height={500}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full max-w-sm rounded-2xl shadow-lg object-cover"
+                />
+              </picture>
             </div>
           ))}
         </div>
