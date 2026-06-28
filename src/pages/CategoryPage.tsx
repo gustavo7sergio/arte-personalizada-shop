@@ -9,7 +9,7 @@ import { productGalleryExtras } from "@/data/productGalleries";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/contexts/CartContext";
-import { useToast } from "@/hooks/use-toast";
+import { toast } from "sonner";
 import ImageZoom from "@/components/ImageZoom";
 import ProductImage from "@/components/ProductImage";
 import Navbar from "@/components/Navbar";
@@ -23,7 +23,7 @@ function PriceSelector({ product, image }: { product: Product; image?: string })
   const [activeVariant, setActiveVariant] = useState(0);
   const [selectedQtyIndex, setSelectedQtyIndex] = useState(0);
   const { addItem } = useCart();
-  const { toast } = useToast();
+  
   const variant = product.variants[activeVariant];
   const selected = variant.prices[selectedQtyIndex];
 
@@ -44,8 +44,7 @@ function PriceSelector({ product, image }: { product: Product; image?: string })
       unitPrice: selected.unitPrice,
       image,
     });
-    toast({
-      title: "Adicionado ao carrinho! 🛒",
+    toast.success("Adicionado ao carrinho! 🛒", {
       description: `${product.name}${product.subtitle ? " – " + product.subtitle : ""} · ${selected.qty} uni`,
     });
   };

@@ -13,6 +13,9 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
+  build: {
+    cssMinify: "lightningcss",
+  },
   plugins: [
     react(),
     imagetools(),
