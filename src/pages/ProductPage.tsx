@@ -9,7 +9,7 @@ import { buildGallery } from "@/data/productGalleries";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/contexts/CartContext";
-import { useToast } from "@/hooks/use-toast";
+import { toast } from "sonner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProductImage from "@/components/ProductImage";
@@ -57,7 +57,7 @@ const ProductPage = () => {
   const [imageIndex, setImageIndex] = useState(0);
   const [zoomOpen, setZoomOpen] = useState(false);
   const { addItem } = useCart();
-  const { toast } = useToast();
+  
 
   if (!config) return <Navigate to="/" replace />;
   if (sourceProducts.length === 0) return <Navigate to={`/categoria/${config.categorySlug}`} replace />;
@@ -104,8 +104,7 @@ const ProductPage = () => {
       unitPrice: selected.unitPrice,
       image: heroImage,
     });
-    toast({
-      title: "Adicionado ao carrinho! 🛒",
+    toast.success("Adicionado ao carrinho! 🛒", {
       description: `${current.product.name} · ${currentVariant.label} · ${selected.qty} uni`,
     });
   };
