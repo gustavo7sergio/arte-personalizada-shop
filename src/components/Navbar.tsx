@@ -3,7 +3,7 @@ import { Menu, X, ShoppingCart, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/contexts/CartContext";
 import { Link, useLocation } from "react-router-dom";
-import logo from "@/assets/logo-green.png";
+const logo = "/logo/logo-green-320.webp";
 
 const categoryLinks: { name: string; slug: string; isPage?: boolean }[] = [
   { name: "Tags para Semijoias", slug: "tags-personalizadas-para-semijoias" },
@@ -24,14 +24,14 @@ const Navbar = () => {
   const isCriacaoLogo = location.pathname === "/criacao-de-logo";
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 border-b border-border/50">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <span className="hidden md:flex text-xs font-body text-muted-foreground items-center gap-1.5">
           <Truck className="h-3.5 w-3.5" />
           Enviamos p/ todo o Brasil
         </span>
         <a href="/" className="flex items-center">
-          <img src={logo} alt="GS Cartões" width={200} height={80} className="h-20 w-auto" />
+          <img src={logo} alt="GS Cartões" width={320} height={320} loading="eager" decoding="async" className="h-20 w-auto" />
         </a>
 
         {/* Desktop */}
