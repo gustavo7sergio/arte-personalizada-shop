@@ -485,6 +485,21 @@ export const productPages: ProductPageConfig[] = [
     faqs: wrapFaqs([{ q: "A sacola acompanha ilhós e cordão?", a: "Sim, acompanha ilhós e cordão para alça." }]),
   },
   {
+    slug: "ecobag-personalizada-30x30-cm",
+    productIds: ["ecobag-30x30"],
+    displayName: "Ecobag Personalizada 30x30 cm",
+    categorySlug: "sacolinhas-personalizadas-para-semijoias",
+    categoryLabel: "Sacolinhas",
+    seoTitle: "Ecobag Personalizada 30x30 cm | GS Cartões",
+    seoDescription: "Ecobag personalizada 30x30 cm em tecido microfibra, com a logo e identidade visual da sua marca de semijoias. Acabamento elegante e reutilizável.",
+    longDescription: [
+      "A Ecobag 30x30 cm em tecido microfibra é uma embalagem reutilizável e sofisticada, perfeita para entregar conjuntos completos de semijoias e fidelizar clientes que valorizam apresentação.",
+      "Estampa colorida na parte externa com a sua logo e identidade visual. Não trabalhamos com fidelização de cores — variações leves de tonalidade entre lotes são normais.",
+    ],
+    faqs: wrapFaqs([{ q: "A ecobag pode ser usada como sacola de presente?", a: "Sim. Por ser reutilizável e ter visual elegante, é muito usada como sacola de presente e ação de fidelização." }]),
+  },
+  {
+
     slug: "sacola-plastica-personalizada-alca-vazada",
     productIds: ["sacola-plastica"],
     displayName: "Sacola Plástica Personalizada Alça Vazada",
