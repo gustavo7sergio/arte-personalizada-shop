@@ -198,6 +198,36 @@ export const products: Product[] = [
       },
     ],
   },
+  {
+    id: "ecobag-30x30",
+    name: "Ecobag Personalizada",
+    subtitle: "30 × 30 cm",
+    category: "Sacolinhas",
+    material: "Tecido microfibra",
+    specs: [
+      "Tecido microfibra",
+      "Costura reforçada",
+      "Colorido na parte externa",
+      "NÃO trabalhamos com fidelização de cores",
+    ],
+    highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
+    variants: [
+      {
+        label: "30 × 30 cm",
+        dimensions: "30 x 30 cm",
+        prices: [
+          { qty: 5,  installment: 149.00, cash: 134.10, unitPrice: 26.82 },
+          { qty: 10, installment: 249.00, cash: 224.10, unitPrice: 22.41 },
+          { qty: 25, installment: 499.00, cash: 449.10, unitPrice: 17.96 },
+          { qty: 50, installment: 879.00, cash: 791.10, unitPrice: 15.82 },
+        ],
+      },
+    ],
+  },
+
+
+
+
 
 
 
@@ -1812,6 +1842,32 @@ export const products: Product[] = [
       },
     ],
   },
+  {
+    id: "display-pix-10x15",
+    name: "Display PIX Personalizado",
+    subtitle: "10 × 15 cm",
+    category: "Outros",
+    material: "Acrílico cristal 2mm",
+    specs: [
+      "Acrílico cristal 2mm",
+      "Formato L — base dobrada de 5 cm",
+      "Arte personalizada com sua logo e QR code",
+      "NÃO trabalhamos com fidelização de cores",
+    ],
+    highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
+    variants: [
+      {
+        label: "10 × 15 cm",
+        dimensions: "10 x 15 cm",
+        prices: [
+          { qty: 1,  installment: 46.00,  cash: 41.40,  unitPrice: 41.40 },
+          { qty: 5,  installment: 189.00, cash: 170.10, unitPrice: 34.02 },
+          { qty: 10, installment: 339.00, cash: 305.10, unitPrice: 30.51 },
+        ],
+      },
+    ],
+  },
+
   {
     id: "banner",
     name: "Banner",
