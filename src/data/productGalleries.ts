@@ -62,6 +62,10 @@ import sacolaAcess21Med from "@/assets/products/measures/sacola-personalizada-pa
 import sacolaAcess12Med from "@/assets/products/measures/sacola-personalizada-para-acessorios-12x12x6-cm.jpg";
 import sacolaAcess21Foto2 from "@/assets/products/photos/sacola-acessorios-21x15x7-foto-2.jpg";
 import sacolaAcess12Foto2 from "@/assets/products/photos/sacola-acessorios-12x12x6-foto-2.jpg";
+import ecobag30Med from "@/assets/products/measures/ecobag-personalizada-30x30-cm.jpg";
+import ecobag30Foto2 from "@/assets/products/photos/ecobag-30x30-foto-2.jpg";
+import displayPixMed from "@/assets/products/measures/display-pix-personalizado-10x15-cm.jpg";
+import displayPixFoto2 from "@/assets/products/photos/display-pix-10x15-foto-2.jpg";
 import sacolinhaCartaoFoto2 from "@/assets/products/photos/sacolinha-papel-cartao-foto-2.jpg";
 import sacolinhaCartaoFoto3 from "@/assets/products/photos/sacolinha-papel-cartao-foto-3.jpg";
 import panfletoFoto2 from "@/assets/products/photos/panfleto-foto-2.jpg";
@@ -319,6 +323,14 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
   "sacola-personalizada-para-acessorios-12x12x6-cm": [
     { src: sacolaAcess12Med, type: "measurement", alt: "Sacola personalizada para acessórios 12x12x6 cm — medidas" },
     { src: sacolaAcess12Foto2, type: "photo", alt: "Sacola personalizada para acessórios 12x12x6 cm — modelo Avile branca com detalhe cobre" },
+  ],
+  "ecobag-personalizada-30x30-cm": [
+    { src: ecobag30Med, type: "measurement", alt: "Ecobag personalizada 30x30 cm — medidas" },
+    { src: ecobag30Foto2, type: "photo", alt: "Ecobag personalizada 30x30 cm — modelo Lumière Semijoias em uso" },
+  ],
+  "display-pix-personalizado-10x15-cm": [
+    { src: displayPixMed, type: "measurement", alt: "Display PIX personalizado 10x15 cm — medidas" },
+    { src: displayPixFoto2, type: "photo", alt: "Display PIX personalizado 10x15 cm — modelo Lumière Semijoias em uso no balcão" },
   ],
   "sacolinha-personalizada-para-semijoias-16-5x12x4-5-cm": [
     { src: sacolinhaCoucheMed, type: "measurement" },

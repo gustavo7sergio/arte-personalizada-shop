@@ -485,6 +485,21 @@ export const productPages: ProductPageConfig[] = [
     faqs: wrapFaqs([{ q: "A sacola acompanha ilhós e cordão?", a: "Sim, acompanha ilhós e cordão para alça." }]),
   },
   {
+    slug: "ecobag-personalizada-30x30-cm",
+    productIds: ["ecobag-30x30"],
+    displayName: "Ecobag Personalizada 30x30 cm",
+    categorySlug: "sacolinhas-personalizadas-para-semijoias",
+    categoryLabel: "Sacolinhas",
+    seoTitle: "Ecobag Personalizada 30x30 cm | GS Cartões",
+    seoDescription: "Ecobag personalizada 30x30 cm em tecido microfibra, com a logo e identidade visual da sua marca de semijoias. Acabamento elegante e reutilizável.",
+    longDescription: [
+      "A Ecobag 30x30 cm em tecido microfibra é uma embalagem reutilizável e sofisticada, perfeita para entregar conjuntos completos de semijoias e fidelizar clientes que valorizam apresentação.",
+      "Estampa colorida na parte externa com a sua logo e identidade visual. Não trabalhamos com fidelização de cores — variações leves de tonalidade entre lotes são normais.",
+    ],
+    faqs: wrapFaqs([{ q: "A ecobag pode ser usada como sacola de presente?", a: "Sim. Por ser reutilizável e ter visual elegante, é muito usada como sacola de presente e ação de fidelização." }]),
+  },
+  {
+
     slug: "sacola-plastica-personalizada-alca-vazada",
     productIds: ["sacola-plastica"],
     displayName: "Sacola Plástica Personalizada Alça Vazada",
@@ -979,7 +994,22 @@ export const productPages: ProductPageConfig[] = [
     ],
     faqs: wrapFaqs([{ q: "Por que o tamanho muda conforme a quantidade?", a: "Para volumes maiores, alteramos o formato e gramatura para manter o preço acessível, sem perder qualidade visual." }]),
   },
+  {
+    slug: "display-pix-personalizado-10x15-cm",
+    productIds: ["display-pix-10x15"],
+    displayName: "Display PIX Personalizado 10x15 cm",
+    categorySlug: "papelaria-personalizada",
+    categoryLabel: "Papelaria",
+    seoTitle: "Display PIX Personalizado 10x15 cm | GS Cartões",
+    seoDescription: "Display PIX personalizado 10x15 cm em acrílico cristal 2mm, com QR code, logo e identidade visual da sua marca. Apresentação profissional no caixa.",
+    longDescription: [
+      "Display em acrílico cristal 2mm no formato L, com base dobrada de 5 cm para apoio firme em balcões, vitrines e mesas de eventos. Ideal para apresentar o QR code do PIX com a identidade visual da sua marca.",
+      "Arte 100% personalizada com sua logo, QR code, cores e detalhes da marca. Não trabalhamos com fidelização de cores — variações leves de tonalidade entre lotes são normais.",
+    ],
+    faqs: wrapFaqs([{ q: "Vocês geram o QR code do PIX?", a: "Você envia o QR code da sua chave PIX e nós aplicamos na arte, garantindo leitura perfeita pela câmera." }]),
+  },
 ];
+
 
 export const productPageBySlug = (slug: string) =>
   productPages.find((p) => p.slug === slug);
