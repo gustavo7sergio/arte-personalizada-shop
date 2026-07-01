@@ -388,7 +388,7 @@ const CategoryPage = () => {
       const page = productPageByProductId(p.id);
       return !page || page.productIds[0] === p.id;
     })
-    .sort((a, b) => getGroupKey(a.name).localeCompare(getGroupKey(b.name)));
+    .sort((a, b) => getGroupKey(a).localeCompare(getGroupKey(b)));
 
   const content = categoryContent[categorySlug ?? ""];
   const pageTitle = content?.seoTitle ?? `${displayName} | GS Cartões`;
