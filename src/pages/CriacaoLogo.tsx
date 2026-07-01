@@ -16,7 +16,7 @@ import testimonial1 from "@/assets/logo-page/testimonial-1.jpg";
 import testimonial2 from "@/assets/logo-page/testimonial-2.jpg";
 import testimonial3 from "@/assets/logo-page/testimonial-3.jpg";
 import testimonial4 from "@/assets/logo-page/testimonial-4.jpg";
-import aboutCreator from "@/assets/logo-page/about-creator.jpg";
+
 import pacoteEssencial from "@/assets/logo-page/pacote-essencial.png";
 import pacoteCompleto from "@/assets/logo-page/pacote-completo.png";
 
