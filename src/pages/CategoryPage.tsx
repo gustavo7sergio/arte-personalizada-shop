@@ -358,18 +358,26 @@ const CategoryPage = () => {
   const categoryName = slugToCategory[categorySlug ?? ""] ?? categorySlug;
   const displayName = slugToDisplayName[categorySlug ?? ""] ?? categoryName;
 
-  const getGroupKey = (name: string) => {
-    const lower = name.toLowerCase();
-    if (lower.includes("trio") && lower.includes("colar")) return "05-trio-brincos-colar";
-    if (lower.includes("brincos") && lower.includes("colar")) return "04-brincos-colar";
-    if (lower.includes("trio") && lower.includes("brincos")) return "03-trio-brincos";
-    if (lower.includes("brincos")) return "02-brincos";
-    if (lower.includes("anel")) return "06-anel";
-    if (lower.includes("pulseira")) return "07-pulseira";
-    if (lower.includes("laços") || lower.includes("tiaras")) return "08-lacos";
-    if (lower.includes("semaninha")) return "09-semaninha";
-    if (lower.includes("acessórios") || lower.includes("acessorios")) return "10-acessorios";
-    return "99-" + lower;
+  const getGroupKey = (product: Product) => {
+    const name = product.name.toLowerCase();
+    const subtitle = (product.subtitle ?? "").toLowerCase();
+    const full = name + " " + subtitle;
+
+    // Destaque: Caixinha Personalizada para Semijoias 4,4 x 7,3 x 5,6 cm.
+    if (full.includes("caixinha") && (full.includes("4,4") || full.includes("4.4")) && (full.includes("7,3") || full.includes("7.3"))) {
+      return "01-caixinha-destaque";
+    }
+
+    if (name.includes("trio") && name.includes("colar")) return "05-trio-brincos-colar";
+    if (name.includes("brincos") && name.includes("colar")) return "04-brincos-colar";
+    if (name.includes("trio") && name.includes("brincos")) return "03-trio-brincos";
+    if (name.includes("brincos")) return "02-brincos";
+    if (name.includes("anel")) return "06-anel";
+    if (name.includes("pulseira")) return "07-pulseira";
+    if (name.includes("laços") || name.includes("tiaras")) return "08-lacos";
+    if (name.includes("semaninha")) return "09-semaninha";
+    if (name.includes("acessórios") || name.includes("acessorios")) return "10-acessorios";
+    return "99-" + name;
   };
 
   const categoryProducts = products
