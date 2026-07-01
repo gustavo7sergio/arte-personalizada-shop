@@ -16,7 +16,7 @@ import testimonial1 from "@/assets/logo-page/testimonial-1.jpg";
 import testimonial2 from "@/assets/logo-page/testimonial-2.jpg";
 import testimonial3 from "@/assets/logo-page/testimonial-3.jpg";
 import testimonial4 from "@/assets/logo-page/testimonial-4.jpg";
-import aboutCreator from "@/assets/logo-page/about-creator.jpg";
+
 import pacoteEssencial from "@/assets/logo-page/pacote-essencial.png";
 import pacoteCompleto from "@/assets/logo-page/pacote-completo.png";
 
@@ -111,8 +111,8 @@ const CriacaoLogo = () => {
   const portfolioReveal = useScrollReveal();
   const videoReveal = useScrollReveal();
   const testimonialReveal = useScrollReveal();
-  const aboutReveal = useScrollReveal();
   const stepsReveal = useScrollReveal();
+
   const promoReveal = useScrollReveal();
   const ctaReveal = useScrollReveal();
 
@@ -232,40 +232,6 @@ const CriacaoLogo = () => {
           </div>
           <div className={`transition-all duration-700 delay-200 ${testimonialReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <ImageSlider images={testimonialImages} altPrefix="Depoimento de cliente sobre criação de logo" />
-          </div>
-        </div>
-      </section>
-
-      {/* Sobre o criador */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-6" ref={aboutReveal.ref}>
-          <div className={`flex flex-col md:flex-row-reverse items-center gap-10 md:gap-16 transition-all duration-700 ${aboutReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            <div className="w-full md:w-1/2">
-              <img
-                src={aboutCreator}
-                alt="Gustavo - Criador da GS Cartões"
-                width={1200}
-                height={1200}
-                loading="lazy"
-                decoding="async"
-                className="rounded-2xl shadow-lg w-full h-auto"
-              />
-            </div>
-            <div className="w-full md:w-1/2">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                Sobre o criador
-              </h2>
-              <p className="text-muted-foreground font-body text-base leading-relaxed whitespace-pre-line">
-{`Por trás de cada marca desenvolvida, existe um nome: Gustavo.
-
-Mineiro, 32 anos, designer gráfico com mais de 7 anos de experiência em construção de marcas memoráveis.
-Foi ele quem idealizou a GS Cartões, empresa de materiais gráficos personalizados e de criação de identidades visuais únicas.
-
-Gustavo não entrega apenas um logo. Ele desenvolve marcas com propósito, estética e estratégia.
-
-Se você quer uma identidade que comunique, conecte e brilhe aos olhos do cliente, você acabou de encontrar o profissional certo.`}
-              </p>
-            </div>
           </div>
         </div>
       </section>
