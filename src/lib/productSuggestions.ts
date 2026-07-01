@@ -37,7 +37,7 @@ const FAMILY_RULES: Array<{ test: (s: string) => boolean; family: ProductFamily 
 
   // Sacolinhas / caixinhas
   { test: (s) => s.includes("caixinha"), family: "caixinhas" },
-  { test: (s) => s.includes("sacolinha") || s.includes("sacola"), family: "sacolinhas" },
+  { test: (s) => s.includes("sacolinha") || s.includes("sacola") || s.includes("ecobag"), family: "sacolinhas" },
 
   // Cartões / certificados
   { test: (s) => s.includes("certificado"), family: "certificados-garantia" },
