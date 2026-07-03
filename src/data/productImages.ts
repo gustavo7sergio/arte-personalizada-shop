@@ -68,7 +68,7 @@ import kitEssencial4 from "@/assets/products/kitessencial4.jpg";
 import kit600tagsFoto from "@/assets/products/kit600tags-foto.jpg";
 import kit800tagsFoto from "@/assets/products/kit800tags-foto.jpg";
 import kit5milFoto from "@/assets/products/kit5miltags-foto.jpg";
-import kit6milFoto from "@/assets/products/kit6miltags-foto.jpg.asset.json";
+import kit6milFoto from "@/assets/products/kit6miltags-foto.jpg";
 import kitEssencial1Foto from "@/assets/products/kitessencial1-foto.jpg";
 import kitEssencial3Foto from "@/assets/products/kitessencial3-foto.jpg";
 import kitEssencial4Foto from "@/assets/products/kitessencial4-foto.jpg";
