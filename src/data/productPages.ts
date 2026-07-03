@@ -903,14 +903,10 @@ export const productPages: ProductPageConfig[] = [
     seoDescription: "Reposição de estoque em alto volume: 6.000 tags e certificados personalizados com o menor custo por unidade para marcas de semijoias que já vendem em escala.",
     longDescription: [
       "Pensado para marcas de semijoias que já giram estoque com frequência, o Kit Completo de Tags 2 concentra 6.000 materiais gráficos em um único pedido, eliminando a rotina de recomprar tags e certificados a cada campanha.",
-      "Ao consolidar toda a reposição em uma única produção, você reduz o custo por unidade ao mínimo praticado pela GS Cartões, garante padrão visual idêntico entre lotes e libera capital de giro que ficaria travado em várias compras pequenas ao longo do trimestre.",
-      "Ideal para quem: marcas com faturamento recorrente, revendedoras que atendem sacoleiras, atacadistas de semijoias, lojas físicas com giro alto e negócios online que vendem centenas de peças por mês e não podem parar por falta de identificação.",
-      "Vantagens deste kit: menor custo por unidade da linha de kits, estoque estratégico para 3 a 6 meses de operação, padronização visual entre pedidos, agilidade na expedição diária (tags sempre à mão) e economia de tempo com uma única aprovação de arte para todo o volume.",
-      "Composição: mix de tags e certificados de garantia impressos em couchê 250g, frente e verso coloridos e verniz brilho total na frente. Arte 100% personalizada com sua identidade visual, formatos padronizados e cortes fixos para manter o preço otimizado.",
+      "Ao consolidar toda a reposição em uma única produção, você reduz o custo por unidade ao mínimo praticado pela GS Cartões. Ideal para quem: marcas com faturamento recorrente",
     ],
     faqs: wrapFaqs([
-      { q: "Vale mais a pena comprar este kit ou dois Kits Completos 1?", a: "Este kit apresenta um custo por unidade menor do que somar dois Kits Completos 1, além de eliminar uma segunda aprovação de arte e um segundo prazo de produção. Para marcas que já sabem que consumirão o volume, é a opção mais econômica." },
-      { q: "Como armazenar 6.000 materiais sem estragar?", a: "Os materiais são entregues embalados por lote. Guarde em local seco, ao abrigo de luz direta e umidade. Nas condições adequadas, o couchê 250g com verniz brilho mantém cor e acabamento por anos." },
+      { q: "Esse kit é melhor se você precisa de mais quantidades de materiais, se você já vende muitas semijoias.", a: "Sim. Este kit apresenta um custo por unidade menor do que somar volumes menores, além de eliminar uma segunda aprovação de arte e um segundo prazo de produção. Para marcas que já sabem que consumirão o volume, é a opção mais econômica." },
       { q: "Posso parcelar um pedido desse porte?", a: "Sim. O kit pode ser dividido em até 6x sem juros no cartão, e há 10% de desconto para pagamento à vista via PIX. Condições especiais para pedidos recorrentes podem ser combinadas pelo WhatsApp." },
       { q: "Consigo repetir exatamente esse kit daqui a alguns meses?", a: "Sim. Mantemos sua arte aprovada em arquivo. Nas próximas reposições, basta confirmar que deseja repetir o mesmo layout e o pedido segue direto para produção, sem nova etapa de aprovação." },
     ]),
