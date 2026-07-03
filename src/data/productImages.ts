@@ -163,7 +163,7 @@ export const productImages: Record<string, string | string[]> = {
   "kit-600-tags": [kit600tagsFoto, kit600tags],
   "kit-800-materiais-g": [kit800tagsFoto, kit800tags],
   "kit-5000-tags": [kit5milFoto, kit5mil],
-  "kit-6000-materiais-g": [kit6milFoto.url, kit6mil],
+  "kit-6000-materiais-g": [kit6milFoto, kit6mil],
   "kit-essencial-1": [kitEssencial1Foto, kitEssencial1],
   "kit-essencial-2": kitEssencial2,
   "kit-essencial-3": [kitEssencial3Foto, kitEssencial3],
