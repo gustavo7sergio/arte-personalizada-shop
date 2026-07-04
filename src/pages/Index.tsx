@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Categories from "@/components/Categories";
+import MobileBanners from "@/components/MobileBanners";
 import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
 import About from "@/components/About";
