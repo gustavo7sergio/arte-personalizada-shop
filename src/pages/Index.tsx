@@ -14,6 +14,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <Categories />
+      <MobileBanners />
       <HowItWorks />
       <Testimonials />
       <div id="sobre">
