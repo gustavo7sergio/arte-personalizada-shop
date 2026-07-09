@@ -119,7 +119,7 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Tag de Brincos Personalizada 8,8x4,8 cm",
     categorySlug: "tags-personalizadas-para-semijoias",
     categoryLabel: "Tags para Semijoias",
-    seoTitle: "Tag de Brincos Personalizada 8,8x4,8 cm | GS Cartões",
+    seoTitle: "Tag de Brincos Personalizada 8,8x4,8cm | GS Cartões",
     seoDescription: "Tag de brincos personalizada 8,8x4,8 cm em papel couchê 250g, frente e verso coloridos. Ideal para destacar sua marca de semijoias.",
     longDescription: [
       "A Tag de Brincos 8,8x4,8 cm oferece área generosa para nome, slogan e instruções de cuidado, sem perder a leveza para acompanhar o par de brincos.",
@@ -130,10 +130,10 @@ export const productPages: ProductPageConfig[] = [
   {
     slug: "tag-de-trio-de-brincos-personalizada-5-5x4-8-cm",
     productIds: ["tag-trio-brincos-m"],
-    displayName: "Tag de Trio de Brincos Personalizada 5,5x4,8 cm",
+    displayName: "Tag Trio Brincos Personalizada 5,5x4,8 cm",
     categorySlug: "tags-personalizadas-para-semijoias",
     categoryLabel: "Tags para Semijoias",
-    seoTitle: "Tag de Trio de Brincos Personalizada 5,5x4,8 cm | GS Cartões",
+    seoTitle: "Tag Trio Brincos Personalizada 5,5x4,8 cm | GS Cartões",
     seoDescription: "Tag para trio de brincos 5,5x4,8 cm com 3 furos para fixar todas as peças. Arte personalizada para sua marca de semijoias.",
     longDescription: [
       "Pensada para acomodar trios de brincos em uma única tag, o formato 5,5x4,8 cm mantém a apresentação organizada e reforça o cuidado da sua marca com cada combinação.",
@@ -144,10 +144,10 @@ export const productPages: ProductPageConfig[] = [
   {
     slug: "tag-de-trio-de-brincos-personalizada-4-8x4-1-cm",
     productIds: ["tag-trio-brincos-p"],
-    displayName: "Tag de Trio de Brincos Personalizada 4,8x4,1 cm",
+    displayName: "Tag Trio Brincos Personalizada 4,8x4,1 cm",
     categorySlug: "tags-personalizadas-para-semijoias",
     categoryLabel: "Tags para Semijoias",
-    seoTitle: "Tag de Trio de Brincos Personalizada 4,8x4,1 cm | GS Cartões",
+    seoTitle: "Tag Trio Brincos Personalizada 4,8x4,1 cm | GS Cartões",
     seoDescription: "Tag de trio de brincos 4,8x4,1 cm, formato compacto e elegante para semijoias. Arte 100% personalizada da sua marca.",
     longDescription: [
       "O formato mais compacto da linha trio, ideal para marcas que preferem uma tag discreta sem perder o impacto visual da sua identidade.",
@@ -158,10 +158,10 @@ export const productPages: ProductPageConfig[] = [
   {
     slug: "tag-de-trio-de-brincos-personalizada-8x6-5-cm",
     productIds: ["tag-trio-brincos-g"],
-    displayName: "Tag de Trio de Brincos Personalizada 8x6,5 cm",
+    displayName: "Tag Trio Brincos Personalizada 8x6,5 cm",
     categorySlug: "tags-personalizadas-para-semijoias",
     categoryLabel: "Tags para Semijoias",
-    seoTitle: "Tag de Trio de Brincos Personalizada 8x6,5 cm | GS Cartões",
+    seoTitle: "Tag Trio Brincos Personalizada 8x6,5 cm | GS Cartões",
     seoDescription: "Tag para trio de brincos 8x6,5 cm com espaço amplo para combinar 3 pares. Arte exclusiva da sua marca em couchê 250g.",
     longDescription: [
       "Tag grande e versátil para trios completos, com espaço sobrando para apresentar a logo, breve descrição e instruções de uso de forma elegante.",
@@ -172,10 +172,10 @@ export const productPages: ProductPageConfig[] = [
   {
     slug: "tag-de-trio-de-brincos-personalizada-8-8x4-8-cm",
     productIds: ["tag-trio-brincos-88x48"],
-    displayName: "Tag de Trio de Brincos Personalizada 8,8x4,8 cm",
+    displayName: "Tag Trio Brincos Personalizada 8,8x4,8 cm",
     categorySlug: "tags-personalizadas-para-semijoias",
     categoryLabel: "Tags para Semijoias",
-    seoTitle: "Tag de Trio de Brincos Personalizada 8,8x4,8 cm | GS Cartões",
+    seoTitle: "Tag Trio Brincos Personalizada 8,8x4,8cm | GS Cartões",
     seoDescription: "Tag horizontal para trio de brincos 8,8x4,8 cm. Formato alongado com excelente leitura da marca em couchê 250g.",
     longDescription: [
       "O formato 8,8x4,8 cm é alongado e horizontal, oferecendo ótima leitura da logo enquanto distribui os 3 pares de brincos de forma equilibrada.",
@@ -189,7 +189,7 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Tag Semaninha Personalizada 8,8x4,8 cm",
     categorySlug: "tags-personalizadas-para-semijoias",
     categoryLabel: "Tags para Semijoias",
-    seoTitle: "Tag Semaninha Personalizada 8,8x4,8 cm | GS Cartões",
+    seoTitle: "Tag Semaninha Personalizada 8,8x4,8cm | GS Cartões",
     seoDescription: "Tag semaninha personalizada 8,8x4,8 cm para kits de brincos da semana. Arte exclusiva da sua marca em couchê 250g.",
     longDescription: [
       "Pensada para os tradicionais kits de \"brincos da semana\", a Tag Semaninha 8,8x4,8 cm organiza 7 pares de forma divertida e reforça a curadoria da sua marca.",
@@ -217,7 +217,7 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Tag de Brincos e Colar Personalizada 8,8x4,8 cm",
     categorySlug: "tags-personalizadas-para-semijoias",
     categoryLabel: "Tags para Semijoias",
-    seoTitle: "Tag de Brincos e Colar Personalizada 8,8x4,8 cm | GS Cartões",
+    seoTitle: "Tag de Brincos e Colar Personalizada 8,8x4,8cm | GS Cartões",
     seoDescription: "Tag de brincos e colar 8,8x4,8 cm em formato compacto, com arte personalizada para apresentar seus conjuntos de semijoias.",
     longDescription: [
       "Versão mais econômica e compacta para conjuntos de brincos e colar, mantendo o padrão visual da sua marca em uma única tag prática.",
@@ -302,7 +302,7 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Tag de Acessórios Personalizada 8,8x4,8 cm",
     categorySlug: "tags-personalizadas-para-semijoias",
     categoryLabel: "Tags para Semijoias",
-    seoTitle: "Tag de Acessórios Personalizada 8,8x4,8 cm | GS Cartões",
+    seoTitle: "Tag de Acessórios Personalizada 8,8x4,8cm | GS Cartões",
     seoDescription: "Tag de acessórios 8,8x4,8 cm com opção frente e verso ou só frente. Arte exclusiva da sua marca em couchê 250g.",
     longDescription: [
       "Versátil e equilibrada, a Tag de Acessórios 8,8x4,8 cm serve tanto para brincos quanto para colares e pulseiras delicadas, sendo uma das opções mais procuradas para uso geral.",
@@ -430,7 +430,7 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Sacolinha Personalizada para Semijoias 16,5x12x4,5 cm",
     categorySlug: "sacolinhas-personalizadas-para-semijoias",
     categoryLabel: "Sacolinhas",
-    seoTitle: "Sacolinha Personalizada para Semijoias 16,5x12x4,5 cm",
+    seoTitle: "Sacolinha Personalizada Semijoias 16,5x12x4,5cm",
     seoDescription: "Sacolinha personalizada para semijoias em couchê 250g, formato 16,5x12x4,5 cm. Identidade visual da sua marca em cada entrega.",
     longDescription: [
       "Embalagem pensada para transformar a entrega das suas semijoias em uma experiência memorável, com a identidade visual da sua marca impressa do lado externo.",
@@ -459,10 +459,10 @@ export const productPages: ProductPageConfig[] = [
   {
     slug: "sacola-personalizada-para-acessorios-21x15x7-cm",
     productIds: ["sacola-acessorios-21x15x7"],
-    displayName: "Sacola Personalizada para Acessórios 21x15x7 cm",
+    displayName: "Sacola Personalizada Acessórios 21x15x7 cm",
     categorySlug: "sacolinhas-personalizadas-para-semijoias",
     categoryLabel: "Sacolinhas",
-    seoTitle: "Sacola Personalizada para Acessórios 21x15x7 cm | GS Cartões",
+    seoTitle: "Sacola Personalizada Acessórios 21x15x7 cm | GS Cartões",
     seoDescription: "Sacola personalizada para acessórios em papel sulfite 150g, 21x15x7 cm, com ilhós e cordão. Acabamento sofisticado para a sua marca de semijoias.",
     longDescription: [
       "Sacola maior e elegante, ideal para entregas com mais de uma peça ou para presentear. Acabamento com ilhós e cordão e impressão colorida na parte externa.",
@@ -473,10 +473,10 @@ export const productPages: ProductPageConfig[] = [
   {
     slug: "sacola-personalizada-para-acessorios-12x12x6-cm",
     productIds: ["sacola-acessorios-12x12x6"],
-    displayName: "Sacola Personalizada para Acessórios 12x12x6 cm",
+    displayName: "Sacola Personalizada Acessórios 12x12x6 cm",
     categorySlug: "sacolinhas-personalizadas-para-semijoias",
     categoryLabel: "Sacolinhas",
-    seoTitle: "Sacola Personalizada para Acessórios 12x12x6 cm | GS Cartões",
+    seoTitle: "Sacola Personalizada Acessórios 12x12x6 cm | GS Cartões",
     seoDescription: "Sacola personalizada para acessórios em papel sulfite 150g, 12x12x6 cm, com ilhós e cordão. Tamanho compacto e elegante para semijoias.",
     longDescription: [
       "Modelo compacto e quadrado, perfeito para acomodar brincos, anéis e peças pequenas com a identidade visual da sua marca em destaque.",
@@ -519,10 +519,10 @@ export const productPages: ProductPageConfig[] = [
   {
     slug: "caixinha-personalizada-para-acessorios-6-3x6-3x3-cm",
     productIds: ["caixinha-acessorios-p"],
-    displayName: "Caixinha Personalizada para Acessórios 6,3x6,3x3 cm",
+    displayName: "Caixinha Personalizada Acessórios 6,3x6,3x3 cm",
     categorySlug: "sacolinhas-personalizadas-para-semijoias",
     categoryLabel: "Sacolinhas",
-    seoTitle: "Caixinha Personalizada para Acessórios 6,3x6,3x3 cm",
+    seoTitle: "Caixinha Personalizada Acessórios 6,3x6,3x3 cm",
     seoDescription: "Caixinha personalizada para acessórios 6,3x6,3x3 cm em papel cartão 300g com laminação fosca externa.",
     longDescription: [
       "Caixinha quadrada e refinada para apresentar pares de brincos, anéis e peças pequenas com sofisticação no momento da entrega.",
@@ -533,10 +533,10 @@ export const productPages: ProductPageConfig[] = [
   {
     slug: "caixinha-personalizada-para-acessorios-8-3x8-3x5-cm",
     productIds: ["caixinha-acessorios-m"],
-    displayName: "Caixinha Personalizada para Acessórios 8,3x8,3x5 cm",
+    displayName: "Caixinha Personalizada Acessórios 8,3x8,3x5 cm",
     categorySlug: "sacolinhas-personalizadas-para-semijoias",
     categoryLabel: "Sacolinhas",
-    seoTitle: "Caixinha Personalizada para Acessórios 8,3x8,3x5 cm",
+    seoTitle: "Caixinha Personalizada Acessórios 8,3x8,3x5 cm",
     seoDescription: "Caixinha personalizada 8,3x8,3x5 cm para semijoias e conjuntos. Papel cartão 300g com laminação fosca.",
     longDescription: [
       "Versão maior da nossa caixinha quadrada, ideal para conjuntos completos ou peças com volume um pouco maior, mantendo a percepção premium na entrega.",
