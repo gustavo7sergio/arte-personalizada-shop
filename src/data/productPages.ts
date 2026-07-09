@@ -430,7 +430,7 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Sacolinha Personalizada para Semijoias 16,5x12x4,5 cm",
     categorySlug: "sacolinhas-personalizadas-para-semijoias",
     categoryLabel: "Sacolinhas",
-    seoTitle: "Sacolinha Personalizada para Semijoias 16,5x12x4,5 cm",
+    seoTitle: "Sacolinha Personalizada Semijoias 16,5x12x4,5cm",
     seoDescription: "Sacolinha personalizada para semijoias em couchê 250g, formato 16,5x12x4,5 cm. Identidade visual da sua marca em cada entrega.",
     longDescription: [
       "Embalagem pensada para transformar a entrega das suas semijoias em uma experiência memorável, com a identidade visual da sua marca impressa do lado externo.",
