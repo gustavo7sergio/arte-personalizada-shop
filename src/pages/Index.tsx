@@ -12,6 +12,12 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <link rel="canonical" href="https://www.gscartoes.com/" />
+        <meta property="og:url" content="https://www.gscartoes.com/" />
+        <meta property="og:title" content="GS Cartões — Papelaria Personalizada para Semijoias" />
+        <meta property="og:description" content="GS Cartões: tags, cartões, sacolinhas e adesivos personalizados para empreendedoras de semijoias, prata e bijuterias. Envio para todo o Brasil." />
+      </Helmet>
       <Navbar />
       <Hero />
       <Categories />
