@@ -405,10 +405,18 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Mini Tag de Anel Personalizada 3,9x1,7 cm | GS Cartões",
     seoDescription: "Mini tag de anel personalizada 3,9x1,7 cm. Formato discreto para identificar anéis sem comprometer a peça.",
     longDescription: [
-      "Pequena, discreta e elegante, a Mini Tag de Anel é o complemento ideal para apresentar anéis com profissionalismo, sem desviar a atenção da peça.",
-      "Couchê 250g, frente e verso coloridos e brilho total na frente. Acabamentos em papel 300g e verniz localizado sob consulta.",
+      "A Mini Tag de Anel Personalizada 3,9x1,7 cm é uma excelente opção para identificar e apresentar anéis de forma prática, ocupando pouco espaço e mantendo a identidade visual da sua marca.",
+      "Por ser um modelo padrão, é possível personalizar apenas a arte da tag, incluindo sua logo, cores, informações de contato, QR Code e outros elementos da identidade da sua empresa. O formato, as medidas e a posição dos furos não podem ser alterados.",
+      "Produzida em papel couchê 250g, ela é ideal para quem procura uma solução pronta para anéis, com personalização da arte e excelente acabamento.",
     ],
-    faqs: wrapFaqs([{ q: "Posso colocar tamanho ou material no verso?", a: "Sim, o verso pode conter informações como tamanho do anel, código e material — definidos na criação da arte." }]),
+    faqs: [
+      { q: "Posso alterar o tamanho ou o formato dessa tag?", a: "Não. Esse é um modelo padrão, portanto suas medidas, formato e posição dos furos não podem ser alterados." },
+      { q: "O que posso personalizar?", a: "Você pode personalizar toda a arte da tag, incluindo logo, cores, fontes, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca." },
+      { q: "Essa tag serve para qualquer anel?", a: "Ela foi desenvolvida para acomodar a maioria dos modelos de anéis. Caso tenha alguma peça com características diferentes, entre em contato com nossa equipe para avaliarmos a melhor opção." },
+      { q: "Qual papel é utilizado?", a: "Produzimos essa tag em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
   },
   {
     slug: "tag-de-anel-personalizada-7x3-cm",
