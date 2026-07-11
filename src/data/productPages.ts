@@ -381,10 +381,20 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Tag Trio de Brincos e Colar 8,8x4,8 cm | GS Cartões",
     seoDescription: "Tag compacta para trio de brincos e colar 8,8x4,8 cm. Apresentação organizada de conjuntos com sua marca em couchê 250g.",
     longDescription: [
-      "Tag horizontal e econômica para combos completos, mantém a organização do conjunto sem ocupar muito espaço na embalagem.",
-      "Couchê 250g, frente e verso coloridos e brilho total na frente. Furos e cortes opcionais.",
+      "Ideal para quem vende conjuntos com um colar e até três pares de brincos, a Tag Trio de Brincos e Colar Personalizada 8,8x4,8 cm reúne todas as peças em uma única tag, mantendo a organização e uma boa área para personalização.",
+      "Você pode personalizar a arte com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca. Também é possível alterar a posição dos furos, modificar o corte para o colar e adicionar ou remover furos e cortes personalizados, mediante consulta.",
+      "Se precisar de um modelo com outra disposição de furos, cortes ou medidas, nossa equipe pode avaliar a melhor solução para o seu projeto.",
     ],
-    faqs: wrapFaqs([{ q: "Cabem 3 pares de brincos sem ficar apertado?", a: "Sim, o layout é montado de forma a acomodar os 3 pares e o colar com bom espaçamento." }]),
+    faqs: [
+      { q: "Quantos brincos cabem nessa tag?", a: "Esse modelo foi desenvolvido para acomodar um colar e até três pares de brincos. Caso precise de uma configuração diferente, podemos adaptar os furos e cortes conforme a necessidade da sua marca." },
+      { q: "Tenho dúvidas se esse tamanho é o ideal.", a: "Nossa equipe pode ajudar você a escolher a medida mais adequada de acordo com o tamanho das peças, da embalagem ou da forma como pretende apresentar seus produtos." },
+      { q: "Posso personalizar a arte da tag?", a: "Sim. Você pode personalizar a tag com sua logo, cores, fontes, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca." },
+      { q: "Posso alterar o tamanho da tag?", a: "Sim. Produzimos modelos em medidas personalizadas conforme a necessidade da sua marca. O menor tamanho que produzimos é de 2,5 cm." },
+      { q: "Posso alterar os furos e o corte para o colar?", a: "Sim. Podemos alterar a posição dos furos, modificar o corte onde o colar é encaixado, além de adicionar ou remover furos e cortes personalizados conforme a necessidade da sua peça. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
+      { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
   },
   {
     slug: "mini-tag-de-anel-personalizada-3-9x1-7-cm",
