@@ -308,10 +308,20 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Tag de Brincos e Colar Personalizada 8,8x4,8cm | GS Cartões",
     seoDescription: "Tag de brincos e colar 8,8x4,8 cm em formato compacto, com arte personalizada para apresentar seus conjuntos de semijoias.",
     longDescription: [
-      "Versão mais econômica e compacta para conjuntos de brincos e colar, mantendo o padrão visual da sua marca em uma única tag prática.",
-      "Couchê 250g, frente e verso coloridos e brilho total na frente. Furos e cortes especiais opcionais.",
+      "A Tag de Brincos e Colar Personalizada 8,8x4,8 cm é o nosso modelo de conjunto mais vendido. Ela foi desenvolvida para acomodar colar e brincos na mesma tag, oferecendo um excelente equilíbrio entre espaço para personalização e apresentação das peças.",
+      "Você pode personalizar o modelo com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca. Também é possível alterar a posição dos furos, modificar o corte para o colar e adicionar ou remover furos e cortes personalizados, mediante consulta.",
+      "Se você está em dúvida sobre qual modelo escolher para seus conjuntos, essa costuma ser a opção preferida das nossas clientes.",
     ],
-    faqs: wrapFaqs([{ q: "Qual a diferença para o modelo 9,94x6 cm?", a: "Esse modelo é mais compacto e econômico. O 9,94x6 cm oferece mais área para a arte e acomoda conjuntos maiores com folga." }]),
+    faqs: [
+      { q: "Por que essa é a tag de conjunto mais vendida?", a: "Ela atende muito bem a maioria dos conjuntos de semijoias, oferecendo um ótimo equilíbrio entre espaço para acomodar o colar, os brincos e a personalização da arte. Se ainda tiver dúvidas, nossa equipe pode ajudar você a escolher o modelo mais adequado para as suas peças." },
+      { q: "Tenho dúvidas se esse tamanho é o ideal.", a: "Sem problemas. Nossa equipe pode ajudar você a escolher a medida mais adequada de acordo com o tamanho das peças, da embalagem ou da forma como seus produtos serão expostos." },
+      { q: "Posso personalizar a arte da tag?", a: "Sim. Você pode personalizar a tag com sua logo, cores, fontes, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca." },
+      { q: "Posso alterar o tamanho da tag?", a: "Sim. Produzimos modelos em medidas personalizadas conforme a necessidade da sua marca. O menor tamanho que produzimos é de 2,5 cm." },
+      { q: "Posso alterar os furos e o corte para o colar?", a: "Sim. Podemos alterar a posição dos furos, modificar o corte onde o colar é encaixado, além de adicionar ou remover furos e cortes personalizados conforme a necessidade da sua peça. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
+      { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
     youtubeVideoId: "z4XmNspPpVE",
   },
   {
