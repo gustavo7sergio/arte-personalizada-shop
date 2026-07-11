@@ -357,10 +357,20 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Tag Trio de Brincos e Colar 9x6,5 cm | GS Cartões",
     seoDescription: "Tag para trio de brincos + colar 9x6,5 cm. Formato generoso para apresentar conjuntos completos com sua identidade visual.",
     longDescription: [
-      "Para conjuntos mais robustos com trios de brincos e colar, o formato 9x6,5 cm acomoda todas as peças sem perder a presença visual da sua marca.",
-      "Papel couchê 250g, frente e verso coloridos e brilho total na frente. Furos e cortes especiais sob orçamento.",
+      "A Tag Trio de Brincos e Colar Personalizada 9x6,5 cm foi desenvolvida para acomodar um colar e até três pares de brincos na mesma tag, mantendo uma apresentação organizada e prática.",
+      "Você pode personalizar a arte com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca. Também é possível alterar a posição dos furos, modificar o corte para o colar e adicionar ou remover furos e cortes personalizados, mediante consulta.",
+      "Se você vende conjuntos com mais de um par de brincos, esse modelo oferece mais espaço para acomodar as peças sem abrir mão da personalização.",
     ],
-    faqs: wrapFaqs([{ q: "Posso usar essa tag para gargantilhas curtas?", a: "Sim. Gargantilhas curtas e colares delicados se encaixam bem nesse formato." }]),
+    faqs: [
+      { q: "Essa tag comporta quantos brincos?", a: "Esse modelo foi desenvolvido para acomodar um colar e até três pares de brincos. Caso precise de uma configuração diferente de furos ou cortes, entre em contato com nossa equipe." },
+      { q: "Tenho dúvidas se esse tamanho é o ideal.", a: "Nossa equipe pode ajudar você a escolher o modelo mais adequado de acordo com o tamanho das peças, da embalagem ou da forma como pretende apresentar seus produtos." },
+      { q: "Posso personalizar a arte da tag?", a: "Sim. Você pode personalizar a tag com sua logo, cores, fontes, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca." },
+      { q: "Posso alterar o tamanho da tag?", a: "Sim. Produzimos modelos em medidas personalizadas conforme a necessidade da sua marca. O menor tamanho que produzimos é de 2,5 cm." },
+      { q: "Posso alterar os furos e o corte para o colar?", a: "Sim. Podemos alterar a posição dos furos, modificar o corte onde o colar é encaixado, além de adicionar ou remover furos e cortes personalizados conforme a necessidade da sua peça. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
+      { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
   },
   {
     slug: "tag-trio-de-brincos-e-colar-personalizada-8-8x4-8-cm",
