@@ -83,7 +83,7 @@ export const productPages: ProductPageConfig[] = [
       "Sua arte é totalmente personalizada. Você pode incluir sua logo, redes sociais, QR Code, informações da marca e escolher as cores que combinam com a identidade visual do seu negócio.",
     ],
     faqs: [
-      { q: "Essa tag serve para quais brincos?", a: "A Mini Tag é indicada para brincos pequenos e médios. Graças aos cortes laterais, também é uma excelente opção para modelos de argolas menores." },
+      { q: "Essa tag serve para quais brincos?", a: "A Mini Tag é indicada para brincos pequenos e médios, graças ao cortes de abinhas em volta do furo, também é uma excelente opção para modelos de argolas menores." },
       { q: "Tenho dúvidas se esse tamanho serve para meus brincos.", a: "Sem problemas. Envie uma foto das suas peças pelo WhatsApp e nossa equipe ajudará você a escolher o tamanho mais adequado antes da compra." },
       { q: "Posso colocar minha logo?", a: "Sim. A arte é totalmente personalizada e pode incluir logo, nome da marca, redes sociais, QR Code, informações de contato e outros elementos." },
       { q: "Posso mudar as cores?", a: "Sim. As cores são definidas conforme a identidade visual da sua marca." },
