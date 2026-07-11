@@ -103,10 +103,20 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Tag de Brincos Personalizada 4x2,5 cm | GS Cartões",
     seoDescription: "Tag de brincos personalizada 4x2,5 cm em formato slim para semijoias. Arte exclusiva, couchê 250g e brilho total na frente.",
     longDescription: [
-      "A Tag de Brincos 4x2,5 cm tem formato slim, perfeito para identificar brincos sem ocupar muito espaço na embalagem e dando destaque para o nome da sua marca.",
-      "Produzida em papel couchê 250g, frente e verso coloridos e brilho total na frente. Furos, cortes especiais, papel 300g e verniz localizado disponíveis sob orçamento.",
+      "A Tag para Brincos Personalizada 4x2,5 cm é uma das menores opções da nossa linha, sendo ideal para brincos pequenos e delicados. Também é muito procurada por marcas que utilizam caixinhas, maletas e outras embalagens compactas para semijoias, onde o espaço interno é mais reduzido.",
+      "A arte é totalmente personalizada. Você pode incluir sua logo, nome da marca, redes sociais, QR Code, informações de contato e escolher as cores que representam a identidade visual do seu negócio. Caso precise de outra medida, também produzimos tags personalizadas conforme a sua necessidade.",
     ],
-    faqs: wrapFaqs([{ q: "É possível adicionar furo para pendurar?", a: "Sim. Furos e cortes especiais são opcionais e podem ser orçados junto com seu pedido pelo WhatsApp." }]),
+    faqs: wrapFaqs([
+      { q: "Essa tag serve para quais brincos?", a: "Este modelo é indicado principalmente para brincos pequenos e delicados. Caso trabalhe com brincos médios, grandes ou argolas maiores, recomendamos um tamanho maior para proporcionar um melhor encaixe e apresentação da peça." },
+      { q: "Tenho dúvidas se esse tamanho é o ideal.", a: "Sem problemas. Envie uma foto dos seus brincos pelo WhatsApp e nossa equipe ajudará você a escolher o tamanho mais adequado para as suas peças." },
+      { q: "Posso colocar minha logo?", a: "Sim. A arte é totalmente personalizada e pode incluir sua logo, nome da marca, redes sociais, QR Code, telefone e outras informações." },
+      { q: "Posso escolher as cores?", a: "Sim. A personalização é feita de acordo com a identidade visual da sua marca." },
+      { q: "Posso alterar o tamanho da tag?", a: "Sim. Nos modelos personalizados podemos produzir em outras medidas conforme a sua necessidade.\n\nO menor tamanho que conseguimos fabricar é 2,5 cm. Para medidas maiores, não há limite máximo.\n\nAs tags padrão não permitem alteração de tamanho." },
+      { q: "Posso alterar a posição dos furos?", a: "Sim. Nos modelos personalizados podemos alterar a posição dos furos para que a tag fique mais adequada ao seu tipo de brinco.\n\nNas tags padrão essa alteração não é possível." },
+      { q: "Posso adicionar ou remover furos e cortes?", a: "Sim. Nos modelos personalizados é possível adicionar ou remover furos e cortes conforme a necessidade da sua marca.\n\nDependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
+      { q: "Vocês criam a arte?", a: "Sim. Nossa equipe desenvolve a arte personalizada utilizando sua logo, cores e demais informações da marca." },
+      { q: "Qual papel é utilizado?", a: "Produzimos as tags em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papel e acabamento sob consulta." },
+    ]),
   },
   {
     slug: "tag-de-brincos-personalizada-6x6-cm",
