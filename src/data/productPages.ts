@@ -524,10 +524,19 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Tag de Acessórios Padronizada Pequena | GS Cartões",
     seoDescription: "Tag de acessórios padronizada com formatos 4,25x4,8 / 4x4 / 4x3 cm. Custo reduzido e ótima qualidade.",
     longDescription: [
-      "Linha econômica para marcas que querem manter qualidade e identidade visual com um investimento menor. Você escolhe entre os formatos padronizados disponíveis.",
-      "Papel couchê 250g, frente e verso coloridos e brilho total na frente. Não permite alteração de cortes e furos.",
+      "As Tags des Acessórios Padronizada reúne diferentes modelos pequenos prontos para quem procura uma solução prática para apresentar brincos, colares, pulseiras, correntes e outros acessórios.",
+      "Você pode escolher o modelo que melhor atende às suas peças e personalizar a arte com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca.",
+      "Por se tratar de uma linha padronizada, não é possível alterar o formato, as medidas, a posição dos furos ou os cortes da tag. A personalização é realizada apenas na arte.",
     ],
-    faqs: wrapFaqs([{ q: "Posso pedir um formato fora dos padrões dessa linha?", a: "Não. Essa linha trabalha apenas com os formatos 4,25x4,8 / 4x4 / 4x3 cm para manter o preço reduzido. Para formatos exclusivos, use as tags sob medida." }]),
+    faqs: [
+      { q: "Posso escolher o modelo da tag?", a: "Sim. Você deve escolher entre os modelos disponíveis para encontrar a opção que melhor atende aos acessórios da sua marca." },
+      { q: "O que posso personalizar?", a: "Você pode personalizar toda a arte da tag, incluindo logo, cores, fontes, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca." },
+      { q: "Posso alterar o tamanho, o formato ou os furos?", a: "Não. Como essa é uma linha de tags padronizadas, não é possível alterar as medidas, o formato, os furos ou os cortes." },
+      { q: "Para quais acessórios essa tag pode ser utilizada?", a: "Ela pode ser utilizada para diversos tipos de acessórios. Caso tenha dúvidas sobre qual modelo escolher, nossa equipe pode ajudar você a encontrar a opção mais adequada." },
+      { q: "Qual papel é utilizado?", a: "Produzimos essa tag em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
   },
   {
     slug: "tag-de-acessorios-padronizada-media",
