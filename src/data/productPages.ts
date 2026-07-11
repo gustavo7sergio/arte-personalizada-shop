@@ -333,10 +333,20 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Tag de Brincos e Colar Formato Especial | GS Cartões",
     seoDescription: "Tag personalizada em formato especial para conjuntos de brincos e colar, dentro do limite de 8,8x4,8 cm. Liberdade total de criação.",
     longDescription: [
-      "Para marcas que querem fugir do retangular tradicional, essa opção permite criar formatos exclusivos dentro do limite de 8,8x4,8 cm, com cortes personalizados que reforçam sua identidade.",
-      "Papel couchê 250g, frente e verso coloridos e brilho total na frente. Corte especial incluso. Outros acabamentos sob consulta.",
+      "A Tag de Brincos e Colar Personalizada Formato Especial é ideal para marcas que desejam fugir dos formatos tradicionais e criar uma apresentação ainda mais exclusiva para suas semijoias.",
+      "Produzimos modelos em formatos personalizados, como borboletas, diamantes, corações, flores e diversos outros formatos desenvolvidos conforme a identidade visual da sua marca. Você também pode personalizar a arte com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos.",
+      "Além do formato da tag, também é possível alterar a posição dos furos, modificar o corte para o colar e adicionar ou remover furos e cortes personalizados, mediante consulta.",
     ],
-    faqs: wrapFaqs([{ q: "Posso enviar um formato exclusivo?", a: "Sim. Você envia a referência ou ideia do formato pelo WhatsApp e nossa equipe valida a viabilidade dentro das medidas." }]),
+    faqs: [
+      { q: "Posso criar um formato exclusivo para minha marca?", a: "Sim. Produzimos tags em diversos formatos personalizados. Caso tenha uma ideia específica, nossa equipe pode avaliar a viabilidade e desenvolver um modelo exclusivo para a sua marca." },
+      { q: "Posso escolher qualquer formato?", a: "Na maioria dos casos, sim. Antes da produção avaliamos se o formato é compatível com o tamanho da peça e com o processo de corte para garantir um bom resultado." },
+      { q: "Posso personalizar a arte da tag?", a: "Sim. Você pode personalizar a tag com sua logo, cores, fontes, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca." },
+      { q: "Posso alterar o tamanho da tag?", a: "Sim. Produzimos modelos em medidas personalizadas conforme a necessidade da sua marca. O menor tamanho que produzimos é de 2,5 cm." },
+      { q: "Posso alterar os furos e o corte para o colar?", a: "Sim. Podemos alterar a posição dos furos, modificar o corte onde o colar é encaixado, além de adicionar ou remover furos e cortes personalizados conforme a necessidade da sua peça. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
+      { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
   },
   {
     slug: "tag-trio-de-brincos-e-colar-personalizada-9x6-5-cm",
