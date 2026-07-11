@@ -198,10 +198,20 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Tag Trio Brincos Personalizada 4,8x4,1 cm | GS Cartões",
     seoDescription: "Tag de trio de brincos 4,8x4,1 cm, formato compacto e elegante para semijoias. Arte 100% personalizada da sua marca.",
     longDescription: [
-      "O formato mais compacto da linha trio, ideal para marcas que preferem uma tag discreta sem perder o impacto visual da sua identidade.",
-      "Papel couchê 250g, frente e verso coloridos e brilho total na frente. Furos para os brincos, cortes especiais e acabamentos sob consulta.",
+      "A Tag Trio de Brincos Personalizada 4,8x4,1 cm é uma opção compacta para organizar e apresentar até três pares de brincos de forma prática.",
+      "Seu tamanho reduzido é ideal para quem utiliza embalagens menores ou deseja aproveitar melhor o espaço sem abrir mão da personalização. Você pode incluir sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca.",
+      "Também é possível alterar a posição dos furos, adicionar ou remover furos e criar cortes personalizados conforme a necessidade da sua peça, mediante consulta.",
     ],
-    faqs: wrapFaqs([{ q: "Esse modelo cabe trios de brincos pequenos?", a: "Sim, foi pensado especificamente para trios delicados, mantendo a tag proporcional aos brincos." }]),
+    faqs: [
+      { q: "Para quais trios de brincos essa tag é indicada?", a: "Esse modelo é indicado principalmente para trios de brincos pequenos. Caso utilize peças maiores ou queira mais espaço entre os brincos, podemos indicar outros modelos." },
+      { q: "Tenho dúvidas se esse tamanho é o ideal.", a: "Nossa equipe pode ajudar você a escolher o tamanho mais adequado de acordo com o tipo de brinco, embalagem ou forma como seus produtos serão expostos." },
+      { q: "Posso personalizar a arte da tag?", a: "Sim. Você pode personalizar a tag com sua logo, cores, fontes, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca." },
+      { q: "Posso alterar o tamanho da tag?", a: "Sim. Produzimos modelos em medidas personalizadas conforme a necessidade da sua marca. O menor tamanho que produzimos é de 2,5 cm." },
+      { q: "Posso alterar os furos e cortes da tag?", a: "Sim. Podemos alterar a posição dos furos, adicionar ou remover furos e criar cortes personalizados conforme a necessidade da sua peça. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
+      { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
   },
   {
     slug: "tag-de-trio-de-brincos-personalizada-8x6-5-cm",
