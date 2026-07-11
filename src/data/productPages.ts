@@ -284,10 +284,20 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Tag de Brincos e Colar Personalizada 9,94x6 cm | GS Cartões",
     seoDescription: "Tag para conjunto de brincos e colar 9,94x6 cm. Formato amplo para apresentar a peça completa com a sua marca.",
     longDescription: [
-      "Ideal para conjuntos completos, a tag 9,94x6 cm acomoda brincos e colar na mesma peça, dando ao kit uma apresentação mais profissional na vitrine e na entrega.",
-      "Papel couchê 250g, frente e verso coloridos e brilho total na frente. Furos, cortes e acabamentos especiais sob consulta.",
+      "A Tag de Brincos e Colar Personalizada 9,94x6 cm foi desenvolvida para apresentar conjuntos de semijoias de forma organizada, acomodando o colar e os brincos na mesma tag.",
+      "Você pode personalizar o layout com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca. Também é possível alterar a posição dos furos e do corte para o colar, além de adicionar ou remover furos e cortes conforme a necessidade da peça, mediante consulta.",
+      "É uma ótima opção para quem busca uma apresentação prática, sem abrir mão da personalização.",
     ],
-    faqs: wrapFaqs([{ q: "É possível adaptar a tag para conjuntos com pulseira?", a: "Em muitos casos sim, dependendo do tamanho das peças. Envie o modelo pelo WhatsApp para confirmar a viabilidade." }]),
+    faqs: [
+      { q: "Essa tag serve para qualquer conjunto de colar e brincos?", a: "Ela atende a maioria dos conjuntos de semijoias. Caso utilize correntes mais grossas, gargantilhas ou pingentes maiores, nossa equipe pode indicar um modelo mais adequado." },
+      { q: "Tenho dúvidas se esse tamanho é o ideal.", a: "Sem problemas. Podemos ajudar você a escolher a medida mais indicada de acordo com o tamanho do colar, dos brincos, da embalagem ou da forma como seus produtos serão expostos." },
+      { q: "Posso personalizar a arte da tag?", a: "Sim. Você pode personalizar a tag com sua logo, cores, fontes, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca." },
+      { q: "Posso alterar o tamanho da tag?", a: "Sim. Produzimos modelos em medidas personalizadas conforme a necessidade da sua marca. O menor tamanho que produzimos é de 2,5 cm." },
+      { q: "Posso alterar os furos e o corte para o colar?", a: "Sim. Podemos alterar a posição dos furos, modificar o corte onde o colar é encaixado, além de adicionar ou remover furos e cortes personalizados conforme a necessidade da sua peça. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
+      { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
   },
   {
     slug: "tag-de-brincos-e-colar-personalizada-8-8x4-8-cm",
