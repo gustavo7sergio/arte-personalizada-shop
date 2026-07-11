@@ -79,10 +79,19 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Mini Tag de Brincos Personalizada 4,8x4,25 cm | GS Cartões",
     seoDescription: "Mini tag de brincos personalizada 4,8x4,25 cm para semijoias. Arte exclusiva da sua marca, frente e verso coloridos e brilho total na frente.",
     longDescription: [
-      "Compacta e elegante, a Mini Tag de Brincos 4,8x4,25 cm valoriza pares delicados de semijoias sem competir visualmente com a peça. É a escolha ideal para marcas que querem uma apresentação clean e profissional.",
-      "Impressa em papel couchê 250g, frente e verso coloridos e brilho total na frente. Acabamentos em papel 300g e verniz localizado disponíveis sob consulta.",
+      "A Mini Tag para Brincos 4,8 × 4,25 cm é indicada para brincos pequenos e médios, sendo uma ótima opção para quem busca uma apresentação delicada sem ocupar muito espaço. O modelo possui cortes laterais que acomodam brincos de argola, oferecendo mais versatilidade para diferentes tipos de peças.",
+      "Sua arte é totalmente personalizada. Você pode incluir sua logo, redes sociais, QR Code, informações da marca e escolher as cores que combinam com a identidade visual do seu negócio.",
     ],
-    faqs: wrapFaqs([{ q: "É possível usar esse tamanho para brincos pequenos e médios?", a: "Sim. O formato 4,8x4,25 cm acomoda muito bem brincos pequenos e médios, mantendo destaque para a sua logo." }]),
+    faqs: [
+      { q: "Essa tag serve para quais brincos?", a: "A Mini Tag é indicada para brincos pequenos e médios. Graças aos cortes laterais, também é uma excelente opção para modelos de argolas menores." },
+      { q: "Tenho dúvidas se esse tamanho serve para meus brincos.", a: "Sem problemas. Envie uma foto das suas peças pelo WhatsApp e nossa equipe ajudará você a escolher o tamanho mais adequado antes da compra." },
+      { q: "Posso colocar minha logo?", a: "Sim. A arte é totalmente personalizada e pode incluir logo, nome da marca, redes sociais, QR Code, informações de contato e outros elementos." },
+      { q: "Posso mudar as cores?", a: "Sim. As cores são definidas conforme a identidade visual da sua marca." },
+      { q: "Posso alterar a posição dos furos e cortes?", a: "Sim. Nos modelos personalizados podemos alterar a posição dos furos e cortes para atender ao seu tipo de semijoia.\n\nNas tags padrão essa alteração não é possível." },
+      { q: "Posso adicionar ou remover furos e cortes?", a: "Sim. Nos modelos personalizados é possível adicionar ou remover furos e cortes conforme sua necessidade.\n\nAlgumas alterações podem gerar custo adicional. Nossa equipe informará os valores antes da produção." },
+      { q: "Vocês criam a arte?", a: "Sim. Desenvolvemos a arte da sua tag com base na identidade visual da sua marca." },
+      { q: "Qual papel é utilizado?", a: "As tags são produzidas em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de acabamento sob consulta." },
+    ],
     youtubeVideoId: "x68ZOs2XjOU",
   },
   {
