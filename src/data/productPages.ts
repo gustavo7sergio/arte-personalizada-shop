@@ -484,10 +484,19 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Tag de Acessórios Personalizada 13x4,8 cm | GS Cartões",
     seoDescription: "Tag horizontal alongada 13x4,8 cm para acessórios. Ideal para colares e peças com mais comprimento.",
     longDescription: [
-      "Tag alongada e horizontal, perfeita para colares, gargantilhas e peças que pedem mais comprimento na apresentação.",
-      "Couchê 250g, com frente e verso ou só frente, brilho total na frente. Furos e cortes especiais sob orçamento.",
+      "A Tag de Acessórios Personalizada 13x4,8 cm é uma ótima opção para quem procura uma tag versátil para diferentes tipos de acessórios. Seu formato alongado e o corte lateral facilitam a acomodação das peças, sendo muito utilizada para colares, correntes, pulseiras e diversos outros acessórios.",
+      "Você pode personalizar a arte com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca. Também é possível alterar a posição dos furos, adicionar ou remover furos e modificar os cortes conforme a necessidade da sua peça, mediante consulta.",
+      "Caso precise de um modelo com outras medidas ou uma configuração diferente, nossa equipe pode desenvolver uma versão personalizada para a sua marca.",
     ],
-    faqs: wrapFaqs([{ q: "Posso dobrar essa tag ao meio?", a: "Sim. Esse formato funciona bem como tag dobrada, dependendo da arte e da posição do furo." }]),
+    faqs: [
+      { q: "Para quais acessórios essa tag é indicada?", a: "Esse modelo pode ser utilizado para diversos tipos de acessórios, como colares, correntes, pulseiras, brincos e outras peças. Caso tenha dúvidas sobre a compatibilidade com o seu produto, nossa equipe pode ajudar na escolha." },
+      { q: "Posso personalizar a arte da tag?", a: "Sim. Você pode personalizar a tag com sua logo, cores, fontes, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca." },
+      { q: "Posso alterar o tamanho da tag?", a: "Sim. Produzimos modelos em medidas personalizadas conforme a necessidade da sua marca. O menor tamanho que produzimos é de 2,5 cm." },
+      { q: "Posso alterar os furos e cortes?", a: "Sim. Podemos alterar a posição dos furos, adicionar ou remover furos e modificar os cortes conforme a necessidade da sua peça. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
+      { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
   },
   {
     slug: "tag-de-acessorios-padronizada-pequena",
