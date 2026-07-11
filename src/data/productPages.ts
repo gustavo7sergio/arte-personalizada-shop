@@ -571,10 +571,19 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Tag de Anel Personalizada 3,3x2,6 cm | GS Cartões",
     seoDescription: "Tag de anel personalizada 3,3x2,6 cm. Formato compacto com cantos arredondados, arte 100% personalizada em couchê 250g.",
     longDescription: [
-      "Tag de anel compacta no formato 3,3x2,6 cm, com cantos arredondados e furo para apresentação delicada dos seus anéis.",
-      "Couchê 250g, frente e verso coloridos e brilho total na frente. Acabamentos em papel 300g e verniz localizado sob consulta.",
+      "A Tag de Anel Personalizada 3,3x2,6 cm é ideal para apresentar anéis de forma organizada, oferecendo espaço para personalizar a identidade visual da sua marca sem ocupar mais espaço do que o necessário.",
+      "Você pode personalizar a arte com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca. Também é possível alterar as medidas, a posição do furo e outros detalhes do modelo conforme a necessidade do seu projeto.",
+      "Se precisar de uma configuração diferente, nossa equipe pode desenvolver uma tag personalizada para atender às características da sua marca.",
     ],
-    faqs: wrapFaqs([{ q: "Posso colocar tamanho ou material no verso?", a: "Sim, o verso pode conter informações como tamanho do anel, código e material — definidos na criação da arte." }]),
+    faqs: [
+      { q: "Essa tag serve para qualquer tipo de anel?", a: "Ela atende a maioria dos modelos de anéis. Caso tenha alguma necessidade específica, nossa equipe pode ajudar você a escolher o modelo mais adequado." },
+      { q: "Posso personalizar a arte da tag?", a: "Sim. Você pode personalizar a tag com sua logo, cores, fontes, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca." },
+      { q: "Posso alterar o tamanho da tag?", a: "Sim. Produzimos modelos em medidas personalizadas conforme a necessidade da sua marca. O menor tamanho que produzimos é de 2,5 cm." },
+      { q: "Posso fazer adaptações nesse modelo?", a: "Sim. Podemos alterar as medidas, a posição do furo e adaptar outros detalhes do modelo conforme a necessidade da sua marca. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar as possibilidades." },
+      { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
   },
   {
     slug: "tag-de-anel-personalizada-4x4-cm",
