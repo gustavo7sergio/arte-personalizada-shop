@@ -547,10 +547,20 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Tag de Acessórios Padronizada Média | GS Cartões",
     seoDescription: "Tag de acessórios padronizada nos formatos 8,7x4,8 / 8,8x4,8 / 7x4,8 cm. Custo reduzido com excelente acabamento.",
     longDescription: [
-      "Tags padronizadas no tamanho mais usado pelas marcas de semijoias, com preço otimizado para quem quer escalar a produção sem perder qualidade.",
-      "Couchê 250g, frente e verso coloridos e brilho total na frente. Não permite alteração de cortes e furos.",
+      "As Tags de Acessórios Padronizadas Média reúne modelos prontos para quem procura mais opções de formatos e configurações para apresentar diferentes tipos de acessórios.",
+      "Você pode escolher o modelo que melhor atende às suas peças e personalizar a arte com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca.",
+      "Por se tratar de uma linha de tags padronizadas, não é possível alterar o formato, as medidas, a posição dos furos ou os cortes da tag. A personalização é realizada apenas na arte.",
     ],
-    faqs: wrapFaqs([{ q: "Posso receber a tag com furo?", a: "Esse modelo não permite alteração de cortes e furos. Para furos personalizados, consulte as linhas sob medida." }]),
+    faqs: [
+      { q: "Qual a diferença entre as tags padronizadas pequenas e médias?", a: "A principal diferença está nas medidas e nos modelos disponíveis. As tags médias oferecem mais opções de formatos e podem atender melhor determinados tipos de acessórios. Se tiver dúvidas sobre qual escolher, nossa equipe pode ajudar." },
+      { q: "Posso escolher o modelo da tag?", a: "Sim. Você pode escolher entre os modelos disponíveis para encontrar a opção que melhor atende aos acessórios da sua marca." },
+      { q: "O que posso personalizar?", a: "Você pode personalizar toda a arte da tag, incluindo logo, cores, fontes, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca." },
+      { q: "Posso alterar o tamanho, o formato ou os furos?", a: "Não. Como essa é uma linha de tags padronizadas, não é possível alterar as medidas, o formato, os furos ou os cortes." },
+      { q: "Para quais acessórios essa tag pode ser utilizada?", a: "Ela pode ser utilizada para diversos tipos de acessórios. Caso tenha dúvidas sobre qual modelo escolher, nossa equipe pode ajudar você a encontrar a opção mais adequada." },
+      { q: "Qual papel é utilizado?", a: "Produzimos essa tag em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
   },
   {
     slug: "tag-de-anel-personalizada-3-3x2-6-cm",
