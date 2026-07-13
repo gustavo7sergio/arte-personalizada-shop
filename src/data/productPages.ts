@@ -773,10 +773,19 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Caixinha Personalizada para Semijoias 4,4 x 7,3 x 5,6 cm",
     seoDescription: "Caixinha personalizada para semijoias 4,4 x 7,3 x 5,6 cm. Ideal para brincos, anéis, colares e pulseiras, valorizando a apresentação da sua marca.",
     longDescription: [
-      "Caixinha personalizada para semijoias no formato 4,4 x 7,3 x 5,6 cm, ideal para brincos, anéis, colares delicados e pulseiras. O tamanho compacto valoriza a apresentação da peça e reforça a percepção premium da sua marca.",
-      "Papel couchê 250g, externo colorido. Sem brilho de 100 a 200 unidades; com brilho de 500 a 5000 unidades.",
+      "A Caixinha Personalizada para Semijoias 4,4 x 7,3 x 5,6 cm é indicada para embalar brincos, colares, pulseiras e outros acessórios de menor volume. Por ser um modelo compacto, ela se adapta melhor a tags e cartões menores, proporcionando uma apresentação organizada das peças.",
+      "Produzida em papel couchê 250g, a caixinha é enviada desmontada para facilitar o transporte e reduzir o custo do frete. A montagem é simples e rápida, sem necessidade de cola.",
+      "A arte é totalmente personalizada com a identidade visual da sua marca, permitindo incluir logo, cores, informações de contato, QR Code e outros elementos.",
+      "Caso tenha dúvidas se este modelo atende aos acessórios que você vende, a página conta com um vídeo demonstrando diferentes formas de utilização da caixinha, facilitando a visualização da capacidade interna.",
     ],
-    faqs: wrapFaqs([{ q: "Por que o acabamento muda conforme a quantidade?", a: "Acima de 500 unidades conseguimos aplicar brilho com custo viável. Em quantidades menores, o acabamento é sem brilho para manter o preço acessível." }]),
+    faqs: [
+      { q: "Quais acessórios cabem nessa caixinha?", a: "Ela é indicada para brincos, colares, pulseiras e outros acessórios de menor volume. Como o tamanho das peças pode variar, recomendamos assistir ao vídeo disponível na página para visualizar melhor a capacidade da caixinha." },
+      { q: "A caixinha vai montada?", a: "Não. Ela é enviada desmontada para facilitar o transporte e reduzir o custo do frete. A montagem é simples e rápida, sem necessidade de cola." },
+      { q: "Posso personalizar a caixinha?", a: "Sim. A arte é totalmente personalizada na parte externa com sua logo, cores, fontes, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca." },
+      { q: "Qual o material da caixinha?", a: "Produzimos esse modelo em papel couchê 250g, com impressão colorida e excelente acabamento." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
     youtubeVideoId: "LGti6M0NkK8",
   },
 
