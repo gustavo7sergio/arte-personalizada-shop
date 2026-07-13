@@ -577,6 +577,7 @@ export const productPages: ProductPageConfig[] = [
     ],
     faqs: [
       { q: "Essa tag serve para qualquer tipo de anel?", a: "Ela atende a maioria dos modelos de anéis. Caso tenha alguma necessidade específica, nossa equipe pode ajudar você a escolher o modelo mais adequado." },
+      { q: "Preciso de algum acessório para prender o anel na tag?", a: "Sim. Para utilizar este modelo é necessário o uso de uma presilha para anel, responsável por fixar a peça na tag. A presilha não acompanha este produto." },
       { q: "Posso personalizar a arte da tag?", a: "Sim. Você pode personalizar a tag com sua logo, cores, fontes, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca." },
       { q: "Posso alterar o tamanho da tag?", a: "Sim. Produzimos modelos em medidas personalizadas conforme a necessidade da sua marca. O menor tamanho que produzimos é de 2,5 cm." },
       { q: "Posso fazer adaptações nesse modelo?", a: "Sim. Podemos alterar as medidas, a posição do furo e adaptar outros detalhes do modelo conforme a necessidade da sua marca. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar as possibilidades." },
