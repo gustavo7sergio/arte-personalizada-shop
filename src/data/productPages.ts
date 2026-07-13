@@ -270,10 +270,20 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Tag Semaninha Personalizada 8,8x4,8cm | GS Cartões",
     seoDescription: "Tag semaninha personalizada 8,8x4,8 cm para kits de brincos da semana. Arte exclusiva da sua marca em couchê 250g.",
     longDescription: [
-      "Pensada para os tradicionais kits de \"brincos da semana\", a Tag Semaninha 8,8x4,8 cm organiza 7 pares de forma divertida e reforça a curadoria da sua marca.",
-      "Papel couchê 250g, frente e verso coloridos e brilho total na frente. Furos para encaixe dos brincos sob orçamento.",
+      "A Tag Semaninha Personalizada 8,8x4,8 cm é ideal para quem vende kits com sete pares de brincos em uma única embalagem. Ela mantém as peças organizadas e ainda oferece um excelente espaço para personalizar a identidade visual da sua marca.",
+      "Você pode personalizar a arte com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua empresa. Também é possível alterar as medidas, a posição dos furos e adaptar outros detalhes do modelo conforme a necessidade do seu projeto.",
+      "Se precisar de uma configuração diferente, nossa equipe pode desenvolver uma tag personalizada para atender às características da sua marca.",
     ],
-    faqs: wrapFaqs([{ q: "A arte já vem com os dias da semana?", a: "Sim. A arte é montada já incluindo os dias da semana, alinhada à identidade visual da sua marca." }]),
+    faqs: [
+      { q: "Quantos pares de brincos cabem nessa tag?", a: "Esse modelo foi desenvolvido para acomodar sete pares de brincos, sendo uma excelente opção para kits conhecidos como \"semaninha\"." },
+      { q: "Posso personalizar a arte da tag?", a: "Sim. Você pode personalizar a tag com sua logo, cores, fontes, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca." },
+      { q: "Posso alterar o tamanho da tag?", a: "Sim. Produzimos modelos em medidas personalizadas conforme a necessidade da sua marca. O menor tamanho que produzimos é de 2,5 cm." },
+      { q: "Posso fazer adaptações nesse modelo?", a: "Sim. Podemos alterar as medidas, a posição dos furos e adaptar outros detalhes do modelo conforme a necessidade da sua marca. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar as possibilidades." },
+      { q: "Essa tag serve apenas para brincos?", a: "Ela foi desenvolvida para kits com sete pares de brincos, mas, dependendo das peças que você vende, nossa equipe pode orientar sobre possíveis adaptações ou indicar o modelo mais adequado." },
+      { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
   },
   {
     slug: "tag-de-brincos-e-colar-personalizada-9-94x6-cm",
