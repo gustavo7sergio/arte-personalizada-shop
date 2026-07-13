@@ -618,10 +618,19 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Tag de Anel Padronizada 6,5x2,3 cm | GS Cartões",
     seoDescription: "Tag de anel padronizada 6,5x2,3 cm com formato alongado e ótimo destaque para a marca.",
     longDescription: [
-      "Formato alongado padronizado para anéis, com mais área para a sua logo e informações da marca, mantendo a discrição na exposição.",
-      "Papel couchê 250g, frente e verso coloridos e brilho total na frente. Não permite alteração de cortes e furos.",
+      "A Tag de Anel Padronizada 6,5x2,3 cm é uma solução prática para apresentar anéis de forma organizada, mantendo a identidade visual da sua marca.",
+      "Por se tratar de um modelo padronizado, você pode escolher esse formato e personalizar apenas a arte da tag com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca. Não é possível alterar as medidas, o formato ou o corte deste modelo.",
+      "O encaixe do anel é feito diretamente no corte em \"X\" da tag, dispensando o uso de presilhas ou outros acessórios.",
     ],
-    faqs: wrapFaqs([{ q: "Esse modelo cabe em embalagens pequenas?", a: "Sim. Por ser alongado e fino, encaixa bem em sacolinhas pequenas e caixinhas." }]),
+    faqs: [
+      { q: "O que posso personalizar nessa tag?", a: "Você pode personalizar toda a arte da tag, incluindo logo, cores, fontes, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca." },
+      { q: "Posso alterar o tamanho ou o formato dessa tag?", a: "Não. Como este é um modelo padronizado, não é possível alterar as medidas, o formato ou o corte da tag." },
+      { q: "Preciso de algum acessório para prender o anel?", a: "Não. Neste modelo o encaixe do anel é feito diretamente no corte em \"cruz\" da própria tag, dispensando o uso de presilhas." },
+      { q: "Essa tag serve para qualquer tipo de anel?", a: "Ela atende a maioria dos modelos de anéis. Caso tenha dúvidas sobre a compatibilidade com a sua peça, nossa equipe pode orientar você na escolha do modelo mais adequado." },
+      { q: "Qual papel é utilizado?", a: "Produzimos essa tag em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
   },
 
   // ─────────── SACOLINHAS ───────────
