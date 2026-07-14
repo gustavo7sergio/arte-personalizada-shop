@@ -653,10 +653,20 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Sacolinha Personalizada Semijoias 16,5x12x4,5cm",
     seoDescription: "Sacolinha personalizada para semijoias em couchê 250g, formato 16,5x12x4,5 cm. Identidade visual da sua marca em cada entrega.",
     longDescription: [
-      "Embalagem pensada para transformar a entrega das suas semijoias em uma experiência memorável, com a identidade visual da sua marca impressa do lado externo.",
-      "Papel couchê 250g, externo colorido. Não acompanha laço. Disponível em arte 100% personalizada.",
+      "A Sacolinha Personalizada para Semijoias 16,5 x 12 x 4,5 cm é uma excelente opção para entregar brincos, colares, pulseiras, conjuntos e outros acessórios de forma prática e organizada.",
+      "Produzida em papel couchê 250g, ela é enviada desmontada para facilitar o transporte, mas sua montagem é simples e rápida, sem necessidade de cola.",
+      "A arte é totalmente personalizada com a identidade visual da sua marca, permitindo incluir sua logo, cores, informações de contato, QR Code e outros elementos personalizados.",
+      "Caso tenha dúvidas se este tamanho atende aos produtos que você vende, nossa equipe pode ajudar você a escolher o modelo mais adequado.",
     ],
-    faqs: wrapFaqs([{ q: "A sacolinha já vem com alça e laço?", a: "Não acompanha laço." }]),
+    faqs: [
+      { q: "Quais produtos cabem nessa sacolinha?", a: "Ela é indicada para transportar brincos, colares, pulseiras, conjuntos e outros acessórios. Caso tenha dúvidas sobre o tamanho ideal para os seus produtos, nossa equipe pode orientar você." },
+      { q: "A sacolinha é enviada montada?", a: "Não. Ela é enviada desmontada para facilitar o transporte e reduzir o volume no envio. A montagem é simples, rápida e não necessita de cola." },
+      { q: "Posso personalizar toda a sacolinha?", a: "Sim. A arte é totalmente personalizada com sua logo, cores, fontes, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca." },
+      { q: "Qual o material da sacolinha?", a: "Produzimos esse modelo em papel couchê 250g, com impressão colorida na parte externa e excelente acabamento." },
+      { q: "A sacolinha acompanha laço?", a: "Não. Este modelo não acompanha laço." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
     youtubeVideoId: "c7cT417IiaE",
   },
   {
