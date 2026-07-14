@@ -678,10 +678,20 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Sacolinha Personalizada para Semijoias | GS Cartões",
     seoDescription: "Sacolinha personalizada em papel cartão 300g para semijoias. Tamanhos P e M com a identidade visual da sua marca.",
     longDescription: [
-      "Versão mais encorpada das nossas sacolinhas, perfeita para marcas que buscam uma embalagem com mais estrutura e percepção de valor.",
-      "Papel cartão 300g, externo colorido, sem enobrecimento. Disponível nos tamanhos P (6x15,4x10 cm) e M (7,2x18,5x13 cm).",
+      "A Sacolinha Personalizada para Semijoias é uma opção mais estruturada, ideal para quem procura uma embalagem firme e resistente para entregar seus produtos.",
+      "Disponível nos tamanhos P e M, ela pode ser utilizada para transportar diferentes tipos de semijoias e acessórios, conforme o volume das peças.",
+      "Produzida em papel cartão 300g, é enviada desmontada para facilitar o transporte. Sua montagem é simples, rápida e não necessita de cola.",
+      "A arte é totalmente personalizada com a identidade visual da sua marca, permitindo incluir logo, cores, informações de contato, QR Code e outros elementos personalizados.",
     ],
-    faqs: wrapFaqs([{ q: "Qual tamanho devo escolher?", a: "O P serve bem para peças pequenas e únicas. O M comporta conjuntos e múltiplas peças com folga." }]),
+    faqs: [
+      { q: "Qual a diferença entre os tamanhos P e M?", a: "Os dois modelos possuem o mesmo formato, mudando apenas as dimensões. Caso tenha dúvidas sobre qual tamanho atende melhor aos seus produtos, nossa equipe pode ajudar na escolha." },
+      { q: "A sacolinha é enviada montada?", a: "Não. Ela é enviada desmontada para facilitar o transporte e reduzir o volume no envio. A montagem é simples e rápida, sem necessidade de cola." },
+      { q: "Posso personalizar toda a sacolinha?", a: "Sim. A arte é totalmente personalizada com sua logo, cores, fontes, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca." },
+      { q: "Qual o material da sacolinha?", a: "Este modelo é produzido em papel cartão 300g, proporcionando uma estrutura mais firme para a embalagem." },
+      { q: "A sacolinha acompanha laço?", a: "Não. Este modelo não acompanha laço." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
     // Gallery: [0]=mockup, [1]=medida P, [2]=medida M
     variantImageMap: [1, 2],
     youtubeVideoId: "quNu3NURs6o",
