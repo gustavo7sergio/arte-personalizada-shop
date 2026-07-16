@@ -909,10 +909,18 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Cartão de Agradecimento Personalizado 8,8x9,94 cm",
     seoDescription: "Cartão de agradecimento 8,8x9,94 cm para semijoias. Toque pessoal que fideliza a cliente em cada entrega.",
     longDescription: [
-      "Um simples cartão de agradecimento muda completamente a percepção da entrega. É o tipo de detalhe que fideliza a cliente e gera recomendação.",
-      "Papel couchê 250g, frente e verso coloridos e brilho total na frente. Acabamentos em 300g e furo de pendurar opcionais.",
+      "O Cartão de Agradecimento Personalizado 8,8x9,94 cm é uma forma simples de fortalecer o relacionamento com seus clientes e tornar cada entrega ainda mais especial. Além de transmitir cuidado e profissionalismo, ele pode ser utilizado para agradecer pela compra, incentivar uma nova compra ou divulgar suas redes sociais.",
+      "A arte é desenvolvida conforme a identidade visual da sua marca, permitindo incluir sua logo, mensagem, QR Code, informações de contato e outros elementos personalizados.",
+      "Produzido em papel couchê 250g, conta com impressão colorida frente e verso e brilho total na frente. Também oferecemos opções de papel couchê 300g e furo para pendurar, mediante consulta.",
     ],
-    faqs: wrapFaqs([{ q: "Posso usar mensagens diferentes para cada lote?", a: "Sim. A cada novo pedido podemos ajustar mensagens, datas e detalhes da arte." }]),
+    faqs: [
+      { q: "Posso escrever qualquer mensagem no cartão?", a: "Sim. O conteúdo é totalmente personalizado e pode conter mensagens de agradecimento, instruções de uso, redes sociais, QR Code, cupons de desconto ou outras informações da sua marca." },
+      { q: "Posso personalizar frente e verso?", a: "Sim. A impressão é colorida na frente e no verso, permitindo aproveitar todo o espaço do cartão." },
+      { q: "Posso adicionar um furo para pendurar?", a: "Sim. Caso deseje utilizar o cartão pendurado em produtos ou embalagens, é possível solicitar a opção com furo. Consulte nossa equipe para verificar disponibilidade e valores." },
+      { q: "Quais acabamentos estão disponíveis?", a: "O modelo padrão é produzido em papel couchê 250g. Também oferecemos a opção em papel couchê 300g, mediante consulta." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
   },
   {
     slug: "mini-cartao-de-agradecimento-personalizado-4-8x4-25-cm",
