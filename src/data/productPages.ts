@@ -879,7 +879,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso enviar minha própria arte?", a: "Sim. Se você já possui a arte pronta, basta enviá-la conforme as orientações da nossa equipe. Caso não tenha, desenvolvemos a arte conforme a identidade visual da sua marca." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
       { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
-    ]), use exact same code as before, just remove the leading spaces before the closing bracket and comma to match the original file's indentation. Wait, I need to provide exact old_content. Let me re-read the file first to get the exact content.
+    ]),
   },
   {
     slug: "mini-certificado-de-garantia-personalizado-4-8x4-25-cm",
