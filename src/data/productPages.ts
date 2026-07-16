@@ -978,7 +978,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso personalizar frente e verso?", a: "Sim. A impressão é colorida na frente e no verso, permitindo aproveitar todo o espaço disponível no cartão." },
       { q: "Quais informações posso colocar no cartão?", a: "Você pode incluir logo, nome, telefone, WhatsApp, redes sociais, QR Code, endereço, site e outras informações importantes para o seu negócio." },
       { q: "Quais acabamentos estão disponíveis?", a: "O modelo padrão é produzido em papel couchê 250g com acabamento fosco e verniz localizado. Também oferecemos a opção em papel couchê 300g, mediante consulta." },
-      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após aprovação da arte." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
       { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
     ],
   },
