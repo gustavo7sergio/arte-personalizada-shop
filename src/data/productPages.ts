@@ -871,15 +871,15 @@ export const productPages: ProductPageConfig[] = [
       "A arte é desenvolvida conforme a identidade visual da sua marca, permitindo incluir logo, informações da empresa, regras de garantia, instruções de conservação, QR Code e outros elementos personalizados.",
       "Produzido em papel couchê 250g, conta com impressão colorida frente e verso e brilho total na frente. Também oferecemos opções em papel couchê 300g e verniz localizado, mediante consulta.",
     ],
-    faqs: [
-      "Quais informações posso colocar no certificado? O conteúdo é totalmente personalizado. Você pode incluir, por exemplo: Logo da empresa; Condições de garantia; Prazo de garantia; Instruções de conservação; Informações de contato; Redes sociais; QR Code; Outras informações importantes para seus clientes.",
-      "Posso personalizar frente e verso? Sim. A impressão é colorida na frente e no verso, permitindo aproveitar todo o espaço disponível.",
-      "O texto da garantia é personalizado? Sim. Você pode enviar o texto que já utiliza na sua empresa ou solicitar alterações para atender à necessidade do seu negócio.",
-      "Posso produzir o certificado em papel fosco? Sim. Também oferecemos opções com acabamento fosco e verniz localizado. Consulte nossa equipe para conhecer as opções disponíveis e os valores.",
-      "Posso enviar minha própria arte? Sim. Se você já possui a arte pronta, basta enviá-la conforme as orientações da nossa equipe. Caso não tenha, desenvolvemos a arte conforme a identidade visual da sua marca.",
-      "Qual o prazo de produção? O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte.",
-      "Como funciona o pagamento? Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX.",
-    ],
+    faqs: wrapFaqs([
+      { q: "Quais informações posso colocar no certificado?", a: "O conteúdo é totalmente personalizado. Você pode incluir, por exemplo: Logo da empresa; Condições de garantia; Prazo de garantia; Instruções de conservação; Informações de contato; Redes sociais; QR Code; Outras informações importantes para seus clientes." },
+      { q: "Posso personalizar frente e verso?", a: "Sim. A impressão é colorida na frente e no verso, permitindo aproveitar todo o espaço disponível." },
+      { q: "O texto da garantia é personalizado?", a: "Sim. Você pode enviar o texto que já utiliza na sua empresa ou solicitar alterações para atender à necessidade do seu negócio." },
+      { q: "Posso produzir o certificado em papel fosco?", a: "Sim. Também oferecemos opções com acabamento fosco e verniz localizado. Consulte nossa equipe para conhecer as opções disponíveis e os valores." },
+      { q: "Posso enviar minha própria arte?", a: "Sim. Se você já possui a arte pronta, basta enviá-la conforme as orientações da nossa equipe. Caso não tenha, desenvolvemos a arte conforme a identidade visual da sua marca." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ]), use exact same code as before, just remove the leading spaces before the closing bracket and comma to match the original file's indentation. Wait, I need to provide exact old_content. Let me re-read the file first to get the exact content.
   },
   {
     slug: "mini-certificado-de-garantia-personalizado-4-8x4-25-cm",
