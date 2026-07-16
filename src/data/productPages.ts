@@ -963,10 +963,19 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Cartão de Visitas Personalizado 8,8x4,8 cm | GS Cartões",
     seoDescription: "Cartão de visitas personalizado 8,8x4,8 cm para semijoias. Apresentação profissional para a sua marca.",
     longDescription: [
-      "Indispensável para qualquer marca, o cartão de visitas mantém você presente na rotina da cliente e facilita indicações boca a boca.",
-      "Papel couchê 250g, frente e verso coloridos e brilho total na frente. Acabamento em 300g opcional.",
+      "O Cartão de Visitas Personalizado 8,8x4,8 cm continua sendo uma das formas mais práticas de divulgar sua marca e facilitar o contato com clientes. Ele pode ser entregue junto aos pedidos, distribuído em eventos, utilizado na loja ou sempre que você quiser apresentar seu negócio de forma profissional.",
+      "A arte é desenvolvida conforme a identidade visual da sua marca, permitindo incluir logo, nome, telefone, redes sociais, QR Code, endereço e outras informações importantes para o seu negócio.",
+      "Produzido em papel couchê 250g, conta com impressão colorida frente e verso e brilho total na frente. Também oferecemos a opção em papel couchê 300g, mediante consulta.",
     ],
-    faqs: wrapFaqs([{ q: "Posso pedir versões diferentes para sócios?", a: "Sim. Podemos imprimir várias versões com dados diferentes dentro do mesmo pedido." }]),
+    faqs: [
+      { q: "Quais informações posso colocar no cartão?", a: "Você pode personalizar o cartão com as informações que desejar, como:\n\n• Logo da empresa.\n• Nome.\n• Telefone e WhatsApp.\n• Instagram e outras redes sociais.\n• Endereço.\n• Site.\n• QR Code.\n• Horário de atendimento.\n• Outras informações da sua marca." },
+      { q: "Posso personalizar frente e verso?", a: "Sim. A impressão é colorida na frente e no verso, permitindo aproveitar todo o espaço do cartão." },
+      { q: "Posso enviar minha própria arte?", a: "Sim. Se você já possui a arte pronta, basta enviá-la no formato solicitado pela nossa equipe. Caso não tenha, desenvolvemos a arte conforme a identidade visual da sua marca." },
+      { q: "Quais acabamentos estão disponíveis?", a: "O modelo padrão é produzido em papel couchê 250g. Também oferecemos a opção em papel couchê 300g, mediante consulta." },
+      { q: "O cartão serve apenas para lojas de semijoias?", a: "Não. O cartão pode ser utilizado por empresas e profissionais de diversos segmentos." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
   },
   {
     slug: "cartao-de-visitas-personalizado-verniz-localizado-8-8x5-1-cm",
