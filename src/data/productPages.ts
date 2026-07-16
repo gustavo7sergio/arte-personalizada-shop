@@ -867,10 +867,19 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Certificado de Garantia Personalizado 8,8x4,8 cm",
     seoDescription: "Certificado de garantia personalizado 8,8x4,8 cm para semijoias. Transmita confiança e profissionalismo em cada venda.",
     longDescription: [
-      "Mais do que um cartão, um certificado de garantia transmite confiança e reforça a credibilidade da sua marca em cada venda.",
-      "Papel couchê 250g, frente e verso coloridos e brilho total na frente. Acabamentos em 300g e verniz localizado sob consulta.",
+      "O Certificado de Garantia Personalizado 8,8x4,8 cm é uma forma prática de informar as condições de garantia dos seus produtos e transmitir mais segurança aos seus clientes. Além de reforçar a credibilidade da sua marca, ele também pode incluir orientações de conservação e outras informações importantes para o pós-venda.",
+      "A arte é desenvolvida conforme a identidade visual da sua marca, permitindo incluir logo, informações da empresa, regras de garantia, instruções de conservação, QR Code e outros elementos personalizados.",
+      "Produzido em papel couchê 250g, conta com impressão colorida frente e verso e brilho total na frente. Também oferecemos opções em papel couchê 300g e verniz localizado, mediante consulta.",
     ],
-    faqs: wrapFaqs([{ q: "Posso adicionar QR Code do meu WhatsApp?", a: "Sim. QR Codes, redes sociais e dados de contato podem entrar na arte conforme sua necessidade." }]),
+    faqs: [
+      "Quais informações posso colocar no certificado? O conteúdo é totalmente personalizado. Você pode incluir, por exemplo: Logo da empresa; Condições de garantia; Prazo de garantia; Instruções de conservação; Informações de contato; Redes sociais; QR Code; Outras informações importantes para seus clientes.",
+      "Posso personalizar frente e verso? Sim. A impressão é colorida na frente e no verso, permitindo aproveitar todo o espaço disponível.",
+      "O texto da garantia é personalizado? Sim. Você pode enviar o texto que já utiliza na sua empresa ou solicitar alterações para atender à necessidade do seu negócio.",
+      "Posso produzir o certificado em papel fosco? Sim. Também oferecemos opções com acabamento fosco e verniz localizado. Consulte nossa equipe para conhecer as opções disponíveis e os valores.",
+      "Posso enviar minha própria arte? Sim. Se você já possui a arte pronta, basta enviá-la conforme as orientações da nossa equipe. Caso não tenha, desenvolvemos a arte conforme a identidade visual da sua marca.",
+      "Qual o prazo de produção? O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte.",
+      "Como funciona o pagamento? Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX.",
+    ],
   },
   {
     slug: "mini-certificado-de-garantia-personalizado-4-8x4-25-cm",
