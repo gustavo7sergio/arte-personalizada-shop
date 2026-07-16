@@ -931,10 +931,19 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Mini Cartão de Agradecimento 4,8x4,25 cm | GS Cartões",
     seoDescription: "Mini cartão de agradecimento 4,8x4,25 cm. Toque charmoso e elegante para acompanhar suas peças.",
     longDescription: [
-      "Versão pequena e elegante do cartão de agradecimento, perfeito quando o espaço da embalagem é limitado, mas o carinho com a cliente é prioridade.",
-      "Couchê 250g, frente e verso coloridos e brilho total na frente. Acabamentos opcionais sob consulta.",
+      "O Mini Cartão de Agradecimento Personalizado 4,8x4,25 cm é uma excelente opção para quem deseja incluir uma mensagem especial na entrega sem ocupar muito espaço na embalagem. Seu formato compacto combina perfeitamente com caixas, sacolas e embalagens menores.",
+      "A arte é desenvolvida conforme a identidade visual da sua marca, permitindo incluir sua logo, mensagem, QR Code, informações de contato e outros elementos personalizados.",
+      "Produzido em papel couchê 250g, conta com impressão colorida frente e verso e brilho total na frente. Também oferecemos opções em papel couchê 300g e com furo para pendurar, mediante consulta.",
     ],
-    faqs: wrapFaqs([{ q: "Cabe em sacolinhas pequenas?", a: "Sim, é o tamanho ideal para sacolinhas P e caixinhas." }]),
+    faqs: [
+      { q: "O que posso colocar no meu mini cartão de agradecimento?", a: "Você pode personalizar o cartão com diferentes informações, como: mensagem de agradecimento, logo da sua marca, QR Code, redes sociais, WhatsApp ou outras formas de contato, cupom de desconto, instruções de conservação das peças, informações sobre garantia e convite para uma nova compra." },
+      { q: "Posso personalizar frente e verso?", a: "Sim. A impressão é colorida na frente e no verso, permitindo aproveitar todo o espaço disponível." },
+      { q: "Posso adicionar um furo para pendurar?", a: "Sim. Caso deseje utilizar o cartão pendurado em produtos ou embalagens, é possível solicitar a opção com furo. Consulte nossa equipe para verificar disponibilidade e valores." },
+      { q: "Quais acabamentos estão disponíveis?", a: "O modelo padrão é produzido em papel couchê 250g. Também oferecemos a opção em papel couchê 300g, mediante consulta." },
+      { q: "Esse modelo substitui o cartão de agradecimento maior?", a: "Depende da sua necessidade. O mini cartão é ideal para embalagens menores ou quando você deseja transmitir uma mensagem mais objetiva. Se precisar de mais espaço para textos ou informações, recomendamos o cartão de agradecimento 8,8x9,94 cm." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
   },
   {
     slug: "cartao-de-visitas-personalizado-8-8x4-8-cm",
