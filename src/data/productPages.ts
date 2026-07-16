@@ -968,10 +968,19 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Cartão de Visitas com Verniz Localizado 8,8x5,1 cm",
     seoDescription: "Cartão de visitas premium com verniz localizado 8,8x5,1 cm. Acabamento fosco com detalhes brilhantes para uma marca de alto padrão.",
     longDescription: [
-      "Linha premium com acabamento fosco e detalhes em verniz localizado para destacar logo ou elementos da arte. O resultado é refinado, com toque sofisticado.",
-      "Papel couchê 250g, fosco com verniz localizado. Frente e verso coloridos. Acabamento em 300g opcional.",
+      "O Cartão de Visitas Personalizado com Verniz Localizado 8,8x5,1 cm é indicado para quem deseja transmitir uma imagem mais sofisticada da marca. O verniz localizado cria um efeito de brilho em áreas específicas da arte, destacando elementos como a logo, o nome da empresa ou outros detalhes importantes.",
+      "A arte é desenvolvida conforme a identidade visual da sua marca, permitindo incluir logo, nome, telefone, redes sociais, QR Code, endereço e outras informações importantes para o seu negócio.",
+      "Produzido em papel couchê 250g com acabamento fosco e verniz localizado, conta com impressão colorida frente e verso. Também oferecemos a opção em papel couchê 300g, mediante consulta.",
     ],
-    faqs: wrapFaqs([{ q: "O verniz localizado pode destacar qualquer elemento?", a: "Sim. Definimos em conjunto na criação da arte quais elementos vão receber o verniz brilhante." }]),
+    faqs: [
+      { q: "O que é o verniz localizado?", a: "O verniz localizado é um acabamento aplicado apenas em partes da arte, criando um efeito de brilho que destaca elementos específicos, como a logo, textos ou outros detalhes do cartão." },
+      { q: "Posso escolher onde será aplicado o verniz?", a: "Sim. O verniz localizado é aplicado conforme o layout aprovado da sua arte, valorizando os elementos que você deseja destacar. O verniz localizado pode ser aplicado tanto na frente quanto no verso" },
+      { q: "Posso personalizar frente e verso?", a: "Sim. A impressão é colorida na frente e no verso, permitindo aproveitar todo o espaço disponível no cartão." },
+      { q: "Quais informações posso colocar no cartão?", a: "Você pode incluir logo, nome, telefone, WhatsApp, redes sociais, QR Code, endereço, site e outras informações importantes para o seu negócio." },
+      { q: "Quais acabamentos estão disponíveis?", a: "O modelo padrão é produzido em papel couchê 250g com acabamento fosco e verniz localizado. Também oferecemos a opção em papel couchê 300g, mediante consulta." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
   },
 
   // ─────────── ADESIVOS ───────────
