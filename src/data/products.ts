@@ -328,7 +328,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -355,7 +355,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -381,7 +381,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -407,7 +407,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -433,7 +433,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -459,7 +459,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -485,7 +485,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -512,7 +512,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -540,7 +540,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -567,7 +567,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -593,7 +593,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -619,7 +619,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -647,7 +647,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -674,7 +674,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -740,7 +740,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -768,11 +768,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: [
-      "Furo de pendurar e cortes",
-      "Papel couchê 300g",
-      "Verniz localizado",
-    ],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -799,11 +795,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: [
-      "Furos e cortes",
-      "Papel couchê 300g",
-      "Verniz localizado",
-    ],
+    additionals: ["Furos e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -832,7 +824,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -860,7 +852,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -887,7 +879,7 @@ export const products: Product[] = [
       "Fechado: 8,8 × 4,8 cm",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -914,7 +906,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -947,7 +939,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -980,7 +972,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -1015,7 +1007,7 @@ export const products: Product[] = [
       "NÃO É POSSÍVEL MUDAR CORTES E FUROS NESSAS TAGS",
       "Formatos disponíveis: 4,25×4,8cm / 4×4cm / 4×3cm",
     ],
-    additionals: ["Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -1045,7 +1037,7 @@ export const products: Product[] = [
       "NÃO É POSSÍVEL MUDAR CORTES E FUROS NESSAS TAGS",
       "Formatos disponíveis: 8,7×4,8cm / 8,8×4,8cm / 7×4,8cm",
     ],
-    additionals: ["Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -1074,7 +1066,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -1101,7 +1093,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -1129,7 +1121,7 @@ export const products: Product[] = [
       "NÃO trabalhamos com fidelização de cores",
       "NÃO É POSSÍVEL MUDAR CORTES E FUROS NESSAS TAGS",
     ],
-    additionals: ["Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -1461,7 +1453,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Papel couchê 300g", "Furo de pendurar"],
+    additionals: ["Furo de pendurar", "Papel couchê 300g", "Acabamento fosco"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -1488,7 +1480,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Papel couchê 300g", "Furo de pendurar"],
+    additionals: ["Furo de pendurar", "Papel couchê 300g", "Acabamento fosco"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -1515,7 +1507,7 @@ export const products: Product[] = [
       "8,8 × 4,8 cm",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Papel couchê 300g"],
+    additionals: ["Papel couchê 300g", "Acabamento fosco"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -1544,7 +1536,7 @@ export const products: Product[] = [
       "8,8 × 5,1 cm",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Papel couchê 300g"],
+    additionals: ["Papel couchê 300g", "Acabamento fosco"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -1572,7 +1564,7 @@ export const products: Product[] = [
       "8,8 × 4,8 cm",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -1604,7 +1596,7 @@ export const products: Product[] = [
       "4,8 × 4,25 cm",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -1631,7 +1623,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -1658,7 +1650,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -1685,7 +1677,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -1713,7 +1705,7 @@ export const products: Product[] = [
       "15 × 4,82 cm",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -1740,7 +1732,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
@@ -1767,7 +1759,7 @@ export const products: Product[] = [
       "Brilho total na frente",
       "NÃO trabalhamos com fidelização de cores",
     ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Verniz localizado"],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
       {
