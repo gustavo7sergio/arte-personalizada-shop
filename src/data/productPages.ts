@@ -1092,10 +1092,19 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Adesivo Redondo Personalizado 4,8x4,8 cm | GS Cartões",
     seoDescription: "Adesivo redondo personalizado 4,8x4,8 cm com sua marca em destaque. Ideal para fechar sacolas e caixinhas de semijoias.",
     longDescription: [
-      "Maior e com mais espaço para a logo, o adesivo redondo 4,8x4,8 cm dá destaque total à identidade da marca no fechamento da embalagem.",
-      "Papel couchê 80g, frente colorida e sem brilho.",
+      "O Adesivo Redondo Personalizado 4,8x4,8 cm é uma ótima opção para destacar a identidade da sua marca em embalagens, sacolas, caixas, envelopes e diversos outros materiais. Seu tamanho oferece espaço suficiente para incluir a logo e outras informações importantes, criando um acabamento mais profissional na entrega dos seus produtos.",
+      "A arte é desenvolvida conforme a identidade visual da sua marca, permitindo incluir logo, redes sociais, QR Code, informações de contato e outros elementos personalizados.",
+      "Produzido em papel couchê adesivo 80g, conta com impressão colorida na frente e acabamento sem brilho.",
     ],
-    faqs: wrapFaqs([{ q: "Posso usar para fechar sacolinhas?", a: "Sim. É um dos usos mais comuns: aplicar como selo no fechamento da embalagem." }]),
+    faqs: [
+      { q: "Onde posso utilizar esse adesivo?", a: "Ele pode ser aplicado em caixas, sacolas, envelopes, embalagens, papel de seda, cartões e diversos outros materiais." },
+      { q: "Posso personalizar toda a arte?", a: "Sim. O adesivo é totalmente personalizado com a identidade visual da sua marca, incluindo logo, cores, textos, QR Code e outros elementos gráficos." },
+      { q: "Qual o material do adesivo?", a: "Este modelo é produzido em papel couchê adesivo 80g, com impressão colorida e acabamento sem brilho." },
+      { q: "O adesivo é resistente à água?", a: "Não. Este modelo é produzido em papel couchê adesivo e não é resistente à água. Para manter a qualidade da impressão, recomendamos utilizá-lo em superfícies secas e evitar contato com umidade." },
+      { q: "Posso fazer esse adesivo em outro tamanho ou formato?", a: "Sim. Caso você precise de outro tamanho ou formato, consulte nossa equipe. Temos outras opções de adesivos personalizados que podem atender melhor ao seu projeto." },
+      { q: "Qual o prazo de produção?", a: PRODUCTION_DEADLINE_ANSWER },
+      { q: "Como funciona o pagamento?", a: FAQ_PAGAMENTO.a },
+    ],
     youtubeVideoId: "Ektei2vCGss",
   },
   {
