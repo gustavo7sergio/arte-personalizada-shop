@@ -80,7 +80,7 @@ export const productPages: ProductPageConfig[] = [
     seoDescription: "Mini tag de brincos personalizada 4,8x4,25 cm para semijoias. Arte exclusiva da sua marca, frente e verso coloridos e brilho total na frente.",
     longDescription: [
       "A Mini Tag para Brincos 4,8 × 4,25 cm é indicada para brincos pequenos e médios, sendo uma ótima opção para quem busca uma apresentação delicada sem ocupar muito espaço. O modelo possui cortes laterais que acomodam brincos de argola, oferecendo mais versatilidade para diferentes tipos de peças.",
-      "Sua arte é totalmente personalizada. Você pode incluir sua logo, redes sociais, QR Code, informações da marca e escolher as cores que combinam com a identidade visual do seu negócio.",,
+      "Sua arte é totalmente personalizada. Você pode incluir sua logo, redes sociais, QR Code, informações da marca e escolher as cores que combinam com a identidade visual do seu negócio.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: [
@@ -91,7 +91,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso alterar a posição dos furos e cortes?", a: "Sim. Nos modelos personalizados podemos alterar a posição dos furos e cortes para atender ao seu tipo de semijoia.\n\nNas tags padrão essa alteração não é possível." },
       { q: "Posso adicionar ou remover furos e cortes?", a: "Sim. Nos modelos personalizados é possível adicionar ou remover furos e cortes conforme sua necessidade.\n\nAlgumas alterações podem gerar custo adicional. Nossa equipe informará os valores antes da produção." },
       { q: "Vocês criam a arte?", a: "Sim. Desenvolvemos a arte da sua tag com base na identidade visual da sua marca." },
-      { q: "Qual papel é utilizado?", a: "As tags são produzidas em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de acabamento sob consulta." },,
+      { q: "Qual papel é utilizado?", a: "As tags são produzidas em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de acabamento sob consulta." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ],
     youtubeVideoId: "x68ZOs2XjOU",
@@ -106,7 +106,7 @@ export const productPages: ProductPageConfig[] = [
     seoDescription: "Tag de brincos personalizada 4x2,5 cm em formato slim para semijoias. Arte exclusiva, couchê 250g e brilho total na frente.",
     longDescription: [
       "A Tag para Brincos Personalizada 4x2,5 cm é uma das menores opções da nossa linha, sendo ideal para brincos pequenos e delicados. Também é muito procurada por marcas que utilizam caixinhas, maletas e outras embalagens compactas para semijoias, onde o espaço interno é mais reduzido.",
-      "A arte é totalmente personalizada. Você pode incluir sua logo, nome da marca, redes sociais, QR Code, informações de contato e escolher as cores que representam a identidade visual do seu negócio. Caso precise de outra medida, também produzimos tags personalizadas conforme a sua necessidade.",,
+      "A arte é totalmente personalizada. Você pode incluir sua logo, nome da marca, redes sociais, QR Code, informações de contato e escolher as cores que representam a identidade visual do seu negócio. Caso precise de outra medida, também produzimos tags personalizadas conforme a sua necessidade.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: wrapFaqs([
@@ -118,7 +118,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso alterar a posição dos furos?", a: "Sim. Nos modelos personalizados podemos alterar a posição dos furos para que a tag fique mais adequada ao seu tipo de brinco.\n\nNas tags padrão essa alteração não é possível." },
       { q: "Posso adicionar ou remover furos e cortes?", a: "Sim. Nos modelos personalizados é possível adicionar ou remover furos e cortes conforme a necessidade da sua marca.\n\nDependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
       { q: "Vocês criam a arte?", a: "Sim. Nossa equipe desenvolve a arte personalizada utilizando sua logo, cores e demais informações da marca." },
-      { q: "Qual papel é utilizado?", a: "Produzimos as tags em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papel e acabamento sob consulta." },,
+      { q: "Qual papel é utilizado?", a: "Produzimos as tags em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papel e acabamento sob consulta." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ]),
   },
@@ -132,7 +132,7 @@ export const productPages: ProductPageConfig[] = [
     seoDescription: "Tag de brincos personalizada 6x6 cm com formato quadrado amplo. Arte exclusiva da sua marca, couchê 250g e brilho total na frente.",
     longDescription: [
       "A Tag para Brincos Personalizada 6x6 cm oferece uma área maior para acomodar diferentes modelos de brincos e destacar ainda mais a identidade visual da sua marca. É uma excelente opção para quem procura mais espaço para a apresentação da peça e para incluir informações personalizadas na tag.",
-      "A arte é totalmente personalizada. Você pode incluir sua logo, redes sociais, QR Code, informações de contato e escolher as cores que representam a identidade visual do seu negócio. Caso precise de outra medida, também produzimos tags personalizadas conforme a sua necessidade.",,
+      "A arte é totalmente personalizada. Você pode incluir sua logo, redes sociais, QR Code, informações de contato e escolher as cores que representam a identidade visual do seu negócio. Caso precise de outra medida, também produzimos tags personalizadas conforme a sua necessidade.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: wrapFaqs([
@@ -143,7 +143,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso alterar a posição dos furos?", a: "Sim. Podemos alterar a posição dos furos para que a tag fique mais adequada ao seu tipo de brinco." },
       { q: "Posso adicionar ou remover furos e cortes?", a: "Sim. É possível adicionar ou remover furos e cortes conforme a necessidade da sua marca.\n\nDependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores antes da produção." },
       { q: "Eu já tenho a arte. Posso enviar?", a: "Sim. Caso você já tenha a arte pronta, basta enviá-la para nossa equipe. Se preferir, também podemos desenvolver uma arte personalizada para a sua marca." },
-      { q: "Qual papel é utilizado?", a: "Produzimos as tags em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papel e acabamento sob consulta." },,
+      { q: "Qual papel é utilizado?", a: "Produzimos as tags em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papel e acabamento sob consulta." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ]),
   },
@@ -158,7 +158,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "A Tag de Brincos Personalizada 8,8x4,8 cm oferece mais espaço para destacar sua marca e adicionar informações importantes sem comprometer a organização da peça.",
       "Além da personalização com sua logo, cores e identidade visual, esse modelo é ideal para quem deseja incluir instruções de conservação, garantia, redes sociais, espaço para preço ou outras informações que agregam valor ao atendimento.",
-      "Os furos e os cortes podem ser adaptados conforme a necessidade do seu produto. Também é possível adicionar ou remover furos e cortes personalizados mediante consulta.",,
+      "Os furos e os cortes podem ser adaptados conforme a necessidade do seu produto. Também é possível adicionar ou remover furos e cortes personalizados mediante consulta.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: wrapFaqs([
@@ -169,7 +169,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso alterar os furos e cortes da tag?", a: "Sim. Podemos alterar a posição dos furos, adicionar ou remover furos e criar cortes personalizados conforme a necessidade da sua peça. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
       { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ]),
   },
@@ -184,7 +184,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "A Tag Trio de Brincos Personalizada 5,5x4,8 cm foi desenvolvida para acomodar até três pares de brincos de forma organizada, mantendo uma apresentação limpa e funcional.",
       "Você pode personalizar a tag com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca. Os furos e cortes também podem ser adaptados conforme a necessidade da peça, mediante consulta.",
-      "É uma excelente opção para quem procura uma tag compacta para trios de brincos, sem abrir mão de uma boa área para personalização.",,
+      "É uma excelente opção para quem procura uma tag compacta para trios de brincos, sem abrir mão de uma boa área para personalização.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: wrapFaqs([
@@ -195,7 +195,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso alterar os furos e cortes da tag?", a: "Sim. Podemos alterar a posição dos furos, adicionar ou remover furos e criar cortes personalizados conforme a necessidade da sua peça. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
       { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ]),
   },
@@ -210,7 +210,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "A Tag Trio de Brincos Personalizada 4,8x4,1 cm é uma opção compacta para organizar e apresentar até três pares de brincos de forma prática.",
       "Seu tamanho reduzido é ideal para quem utiliza embalagens menores ou deseja aproveitar melhor o espaço sem abrir mão da personalização. Você pode incluir sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca.",
-      "Também é possível alterar a posição dos furos, adicionar ou remover furos e criar cortes personalizados conforme a necessidade da sua peça, mediante consulta.",,
+      "Também é possível alterar a posição dos furos, adicionar ou remover furos e criar cortes personalizados conforme a necessidade da sua peça, mediante consulta.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: [
@@ -221,7 +221,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso alterar os furos e cortes da tag?", a: "Sim. Podemos alterar a posição dos furos, adicionar ou remover furos e criar cortes personalizados conforme a necessidade da sua peça. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
       { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ],
   },
@@ -236,7 +236,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "A Tag Trio de Brincos Personalizada 8x6,5 cm é indicada para quem busca mais espaço tanto para acomodar três pares de brincos quanto para destacar a identidade da marca.",
       "O tamanho maior proporciona uma apresentação mais organizada para brincos maiores ou com formatos variados, além de oferecer uma área mais ampla para personalização com logo, cores, informações de contato, redes sociais, QR Code e outros elementos da sua identidade visual.",
-      "Também é possível alterar a posição dos furos, adicionar ou remover furos e criar cortes personalizados conforme a necessidade da sua peça, mediante consulta.",,
+      "Também é possível alterar a posição dos furos, adicionar ou remover furos e criar cortes personalizados conforme a necessidade da sua peça, mediante consulta.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: [
@@ -247,7 +247,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso alterar os furos e cortes da tag?", a: "Sim. Podemos alterar a posição dos furos, adicionar ou remover furos e criar cortes personalizados conforme a necessidade da sua peça. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
       { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ],
   },
@@ -262,7 +262,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "A Tag Trio de Brincos Personalizada 8,8x4,8 cm combina um formato horizontal com uma excelente área para personalização, sendo uma ótima opção para apresentar até três pares de brincos de forma organizada.",
       "Além de acomodar os brincos com conforto, esse modelo permite destacar sua marca com mais equilíbrio, oferecendo espaço para logo, informações de contato, redes sociais, QR Code e outros elementos da identidade visual.",
-      "Também é possível alterar a posição dos furos, adicionar ou remover furos e criar cortes personalizados conforme a necessidade da sua peça, mediante consulta.",,
+      "Também é possível alterar a posição dos furos, adicionar ou remover furos e criar cortes personalizados conforme a necessidade da sua peça, mediante consulta.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: [
@@ -273,7 +273,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso alterar os furos e cortes da tag?", a: "Sim. Podemos alterar a posição dos furos, adicionar ou remover furos e criar cortes personalizados conforme a necessidade da sua peça. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
       { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ],
   },
@@ -288,7 +288,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "A Tag Semaninha Personalizada 8,8x4,8 cm é ideal para quem vende kits com sete pares de brincos em uma única embalagem. Ela mantém as peças organizadas e ainda oferece um excelente espaço para personalizar a identidade visual da sua marca.",
       "Você pode personalizar a arte com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua empresa. Também é possível alterar as medidas, a posição dos furos e adaptar outros detalhes do modelo conforme a necessidade do seu projeto.",
-      "Se precisar de uma configuração diferente, nossa equipe pode desenvolver uma tag personalizada para atender às características da sua marca.",,
+      "Se precisar de uma configuração diferente, nossa equipe pode desenvolver uma tag personalizada para atender às características da sua marca.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: [
@@ -299,7 +299,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Essa tag serve apenas para brincos?", a: "Ela foi desenvolvida para kits com sete pares de brincos, mas, dependendo das peças que você vende, nossa equipe pode orientar sobre possíveis adaptações ou indicar o modelo mais adequado." },
       { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ],
   },
@@ -314,7 +314,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "A Tag de Brincos e Colar Personalizada 9,94x6 cm foi desenvolvida para apresentar conjuntos de semijoias de forma organizada, acomodando o colar e os brincos na mesma tag.",
       "Você pode personalizar o layout com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca. Também é possível alterar a posição dos furos e do corte para o colar, além de adicionar ou remover furos e cortes conforme a necessidade da peça, mediante consulta.",
-      "É uma ótima opção para quem busca uma apresentação prática, sem abrir mão da personalização.",,
+      "É uma ótima opção para quem busca uma apresentação prática, sem abrir mão da personalização.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: [
@@ -325,7 +325,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso alterar os furos e o corte para o colar?", a: "Sim. Podemos alterar a posição dos furos, modificar o corte onde o colar é encaixado, além de adicionar ou remover furos e cortes personalizados conforme a necessidade da sua peça. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
       { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ],
   },
@@ -340,7 +340,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "A Tag de Brincos e Colar Personalizada 8,8x4,8 cm é o nosso modelo de conjunto mais vendido. Ela foi desenvolvida para acomodar colar e brincos na mesma tag, oferecendo um excelente equilíbrio entre espaço para personalização e apresentação das peças.",
       "Você pode personalizar o modelo com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca. Também é possível alterar a posição dos furos, modificar o corte para o colar e adicionar ou remover furos e cortes personalizados, mediante consulta.",
-      "Se você está em dúvida sobre qual modelo escolher para seus conjuntos, essa costuma ser a opção preferida das nossas clientes.",,
+      "Se você está em dúvida sobre qual modelo escolher para seus conjuntos, essa costuma ser a opção preferida das nossas clientes.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: [
@@ -351,7 +351,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso alterar os furos e o corte para o colar?", a: "Sim. Podemos alterar a posição dos furos, modificar o corte onde o colar é encaixado, além de adicionar ou remover furos e cortes personalizados conforme a necessidade da sua peça. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
       { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ],
     youtubeVideoId: "z4XmNspPpVE",
@@ -367,7 +367,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "A Tag de Brincos e Colar Personalizada Formato Especial é ideal para marcas que desejam fugir dos formatos tradicionais e criar uma apresentação ainda mais exclusiva para suas semijoias.",
       "Produzimos modelos em formatos personalizados, como borboletas, diamantes, corações, flores e diversos outros formatos desenvolvidos conforme a identidade visual da sua marca. Você também pode personalizar a arte com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos.",
-      "Além do formato da tag, também é possível alterar a posição dos furos, modificar o corte para o colar e adicionar ou remover furos e cortes personalizados, mediante consulta.",,
+      "Além do formato da tag, também é possível alterar a posição dos furos, modificar o corte para o colar e adicionar ou remover furos e cortes personalizados, mediante consulta.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: [
@@ -378,7 +378,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso alterar os furos e o corte para o colar?", a: "Sim. Podemos alterar a posição dos furos, modificar o corte onde o colar é encaixado, além de adicionar ou remover furos e cortes personalizados conforme a necessidade da sua peça. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
       { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ],
   },
@@ -393,7 +393,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "A Tag Trio de Brincos e Colar Personalizada 9x6,5 cm foi desenvolvida para acomodar um colar e até três pares de brincos na mesma tag, mantendo uma apresentação organizada e prática.",
       "Você pode personalizar a arte com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca. Também é possível alterar a posição dos furos, modificar o corte para o colar e adicionar ou remover furos e cortes personalizados, mediante consulta.",
-      "Se você vende conjuntos com mais de um par de brincos, esse modelo oferece mais espaço para acomodar as peças sem abrir mão da personalização.",,
+      "Se você vende conjuntos com mais de um par de brincos, esse modelo oferece mais espaço para acomodar as peças sem abrir mão da personalização.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: [
@@ -404,7 +404,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso alterar os furos e o corte para o colar?", a: "Sim. Podemos alterar a posição dos furos, modificar o corte onde o colar é encaixado, além de adicionar ou remover furos e cortes personalizados conforme a necessidade da sua peça. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
       { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ],
   },
@@ -419,7 +419,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "Ideal para quem vende conjuntos com um colar e até três pares de brincos, a Tag Trio de Brincos e Colar Personalizada 8,8x4,8 cm reúne todas as peças em uma única tag, mantendo a organização e uma boa área para personalização.",
       "Você pode personalizar a arte com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca. Também é possível alterar a posição dos furos, modificar o corte para o colar e adicionar ou remover furos e cortes personalizados, mediante consulta.",
-      "Se precisar de um modelo com outra disposição de furos, cortes ou medidas, nossa equipe pode avaliar a melhor solução para o seu projeto.",,
+      "Se precisar de um modelo com outra disposição de furos, cortes ou medidas, nossa equipe pode avaliar a melhor solução para o seu projeto.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: [
@@ -430,7 +430,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso alterar os furos e o corte para o colar?", a: "Sim. Podemos alterar a posição dos furos, modificar o corte onde o colar é encaixado, além de adicionar ou remover furos e cortes personalizados conforme a necessidade da sua peça. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
       { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ],
   },
@@ -445,7 +445,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "A Mini Tag de Anel Personalizada 3,9x1,7 cm é uma excelente opção para identificar e apresentar anéis de forma prática, ocupando pouco espaço e mantendo a identidade visual da sua marca.",
       "Por ser um modelo padrão, é possível personalizar apenas a arte da tag, incluindo sua logo, cores, informações de contato, QR Code e outros elementos da identidade da sua empresa. O formato, as medidas e a posição dos furos não podem ser alterados.",
-      "Produzida em papel couchê 250g, ela é ideal para quem procura uma solução pronta para anéis, com personalização da arte e excelente acabamento.",,
+      "Produzida em papel couchê 250g, ela é ideal para quem procura uma solução pronta para anéis, com personalização da arte e excelente acabamento.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: [
@@ -454,7 +454,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Essa tag serve para qualquer anel?", a: "Ela foi desenvolvida para acomodar a maioria dos modelos de anéis. Caso tenha alguma peça com características diferentes, entre em contato com nossa equipe para avaliarmos a melhor opção." },
       { q: "Qual papel é utilizado?", a: "Produzimos essa tag em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ],
   },
@@ -483,7 +483,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "A Tag de Acessórios Personalizada 8,8x4,8 cm é uma opção versátil para quem trabalha com diferentes tipos de acessórios. Seu formato permite acomodar diversas peças, como brincos, colares, pulseiras, correntes e outros acessórios, adaptando-se à necessidade da sua marca.",
       "Você pode personalizar a arte com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade visual da sua empresa. Também é possível alterar a posição dos furos, adicionar ou remover furos e modificar os cortes conforme a necessidade da peça, mediante consulta.",
-      "Caso precise de outro tamanho ou de uma configuração diferente, nossa equipe pode desenvolver uma versão personalizada para o seu projeto.",,
+      "Caso precise de outro tamanho ou de uma configuração diferente, nossa equipe pode desenvolver uma versão personalizada para o seu projeto.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: [
@@ -493,7 +493,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso alterar os furos e cortes?", a: "Sim. Podemos alterar a posição dos furos, adicionar ou remover furos e modificar os cortes conforme a necessidade da sua peça. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
       { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ],
   },
@@ -522,7 +522,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "A Tag de Acessórios Personalizada Redonda 8,4x9,8 cm é uma excelente opção para quem busca um modelo versátil, podendo ser utilizada para diversos tipos de acessórios, como brincos, colares, pulseiras, correntes e muito mais.",
       "Seu formato diferenciado oferece bastante espaço para personalização, permitindo incluir sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca.",
-      "Também é possível alterar a posição dos furos, adicionar ou remover furos e cortes personalizados conforme a necessidade das peças. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar as possibilidades.",,
+      "Também é possível alterar a posição dos furos, adicionar ou remover furos e cortes personalizados conforme a necessidade das peças. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar as possibilidades.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: [
@@ -532,7 +532,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso alterar os furos e cortes?", a: "Sim. Podemos alterar a posição dos furos, adicionar ou remover furos e criar cortes personalizados conforme a necessidade da sua peça. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
       { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ],
   },
@@ -547,7 +547,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "A Tag de Acessórios Personalizada 13x4,8 cm é uma ótima opção para quem procura uma tag versátil para diferentes tipos de acessórios. Seu formato alongado e o corte lateral facilitam a acomodação das peças, sendo muito utilizada para colares, correntes, pulseiras e diversos outros acessórios.",
       "Você pode personalizar a arte com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca. Também é possível alterar a posição dos furos, adicionar ou remover furos e modificar os cortes conforme a necessidade da sua peça, mediante consulta.",
-      "Caso precise de um modelo com outras medidas ou uma configuração diferente, nossa equipe pode desenvolver uma versão personalizada para a sua marca.",,
+      "Caso precise de um modelo com outras medidas ou uma configuração diferente, nossa equipe pode desenvolver uma versão personalizada para a sua marca.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: [
@@ -557,7 +557,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso alterar os furos e cortes?", a: "Sim. Podemos alterar a posição dos furos, adicionar ou remover furos e modificar os cortes conforme a necessidade da sua peça. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores." },
       { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ],
   },
@@ -572,7 +572,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "As Tags des Acessórios Padronizada reúne diferentes modelos pequenos prontos para quem procura uma solução prática para apresentar brincos, colares, pulseiras, correntes e outros acessórios.",
       "Você pode escolher o modelo que melhor atende às suas peças e personalizar a arte com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca.",
-      "Por se tratar de uma linha padronizada, não é possível alterar o formato, as medidas, a posição dos furos ou os cortes da tag. A personalização é realizada apenas na arte.",,
+      "Por se tratar de uma linha padronizada, não é possível alterar o formato, as medidas, a posição dos furos ou os cortes da tag. A personalização é realizada apenas na arte.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: [
@@ -582,7 +582,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Para quais acessórios essa tag pode ser utilizada?", a: "Ela pode ser utilizada para diversos tipos de acessórios. Caso tenha dúvidas sobre qual modelo escolher, nossa equipe pode ajudar você a encontrar a opção mais adequada." },
       { q: "Qual papel é utilizado?", a: "Produzimos essa tag em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ],
   },
@@ -597,7 +597,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "As Tags de Acessórios Padronizadas Média reúne modelos prontos para quem procura mais opções de formatos e configurações para apresentar diferentes tipos de acessórios.",
       "Você pode escolher o modelo que melhor atende às suas peças e personalizar a arte com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca.",
-      "Por se tratar de uma linha de tags padronizadas, não é possível alterar o formato, as medidas, a posição dos furos ou os cortes da tag. A personalização é realizada apenas na arte.",,
+      "Por se tratar de uma linha de tags padronizadas, não é possível alterar o formato, as medidas, a posição dos furos ou os cortes da tag. A personalização é realizada apenas na arte.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: [
@@ -608,7 +608,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Para quais acessórios essa tag pode ser utilizada?", a: "Ela pode ser utilizada para diversos tipos de acessórios. Caso tenha dúvidas sobre qual modelo escolher, nossa equipe pode ajudar você a encontrar a opção mais adequada." },
       { q: "Qual papel é utilizado?", a: "Produzimos essa tag em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ],
   },
@@ -623,7 +623,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "A Tag de Anel Personalizada 3,3x2,6 cm é ideal para apresentar anéis de forma organizada, oferecendo espaço para personalizar a identidade visual da sua marca sem ocupar mais espaço do que o necessário.",
       "Você pode personalizar a arte com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca. Também é possível alterar as medidas, a posição do furo e outros detalhes do modelo conforme a necessidade do seu projeto.",
-      "Se precisar de uma configuração diferente, nossa equipe pode desenvolver uma tag personalizada para atender às características da sua marca.",,
+      "Se precisar de uma configuração diferente, nossa equipe pode desenvolver uma tag personalizada para atender às características da sua marca.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: [
@@ -634,7 +634,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso fazer adaptações nesse modelo?", a: "Sim. Podemos alterar as medidas, a posição do furo e adaptar outros detalhes do modelo conforme a necessidade da sua marca. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar as possibilidades." },
       { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ],
   },
@@ -649,7 +649,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "A Tag de Anel Personalizada 4x4 cm é uma excelente opção para quem procura uma tag com mais espaço para personalização, sem deixar de valorizar a apresentação dos anéis.",
       "Você pode personalizar a arte com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca. Também é possível alterar as medidas, a posição do furo e adaptar outros detalhes do modelo conforme a necessidade do seu projeto.",
-      "Se precisar de uma configuração diferente, nossa equipe pode desenvolver uma tag personalizada para atender às características da sua marca.",,
+      "Se precisar de uma configuração diferente, nossa equipe pode desenvolver uma tag personalizada para atender às características da sua marca.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: [
@@ -659,7 +659,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso fazer adaptações nesse modelo?", a: "Sim. Podemos alterar as medidas, a posição do furo e adaptar outros detalhes do modelo conforme a necessidade da sua marca. Dependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar as possibilidades." },
       { q: "Qual papel é utilizado?", a: "Produzimos em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos outras opções de papéis e acabamentos sob consulta." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ],
   },
@@ -674,7 +674,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "A Tag de Anel Padronizada 6,5x2,3 cm é uma solução prática para apresentar anéis de forma organizada, mantendo a identidade visual da sua marca.",
       "Por se tratar de um modelo padronizado, você pode escolher esse formato e personalizar apenas a arte da tag com sua logo, cores, informações de contato, redes sociais, QR Code e outros elementos da identidade da sua marca. Não é possível alterar as medidas, o formato ou o corte deste modelo.",
-      "O encaixe do anel é feito diretamente no corte em \"X\" da tag, dispensando o uso de presilhas ou outros acessórios.",,
+      "O encaixe do anel é feito diretamente no corte em \"X\" da tag, dispensando o uso de presilhas ou outros acessórios.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
     ],
     faqs: [
@@ -684,7 +684,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Essa tag serve para qualquer tipo de anel?", a: "Ela atende a maioria dos modelos de anéis. Caso tenha dúvidas sobre a compatibilidade com a sua peça, nossa equipe pode orientar você na escolha do modelo mais adequado." },
       { q: "Qual papel é utilizado?", a: "Produzimos essa tag em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
     ],
   },
@@ -966,7 +966,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "O Cartão de Agradecimento Personalizado 8,8x9,94 cm é uma forma simples de fortalecer o relacionamento com seus clientes e tornar cada entrega ainda mais especial. Além de transmitir cuidado e profissionalismo, ele pode ser utilizado para agradecer pela compra, incentivar uma nova compra ou divulgar suas redes sociais.",
       "A arte é desenvolvida conforme a identidade visual da sua marca, permitindo incluir sua logo, mensagem, QR Code, informações de contato e outros elementos personalizados.",
-      "Produzido em papel couchê 250g, conta com impressão colorida frente e verso e brilho total na frente. Também oferecemos opções de papel couchê 300g e furo para pendurar, mediante consulta.",,
+      "Produzido em papel couchê 250g, conta com impressão colorida frente e verso e brilho total na frente. Também oferecemos opções de papel couchê 300g e furo para pendurar, mediante consulta.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta."
     ],
     faqs: [
@@ -975,7 +975,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Posso adicionar um furo para pendurar?", a: "Sim. Caso deseje utilizar o cartão pendurado em produtos ou embalagens, é possível solicitar a opção com furo. Consulte nossa equipe para verificar disponibilidade e valores." },
       { q: "Quais acabamentos estão disponíveis?", a: "O modelo padrão é produzido em papel couchê 250g. Também oferecemos a opção em papel couchê 300g, mediante consulta." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta." }
     ],
   },
@@ -990,7 +990,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "O Mini Cartão de Agradecimento Personalizado 4,8x4,25 cm é uma excelente opção para quem deseja incluir uma mensagem especial na entrega sem ocupar muito espaço na embalagem. Seu formato compacto combina perfeitamente com caixas, sacolas e embalagens menores.",
       "A arte é desenvolvida conforme a identidade visual da sua marca, permitindo incluir sua logo, mensagem, QR Code, informações de contato e outros elementos personalizados.",
-      "Produzido em papel couchê 250g, conta com impressão colorida frente e verso e brilho total na frente. Também oferecemos opções em papel couchê 300g e com furo para pendurar, mediante consulta.",,
+      "Produzido em papel couchê 250g, conta com impressão colorida frente e verso e brilho total na frente. Também oferecemos opções em papel couchê 300g e com furo para pendurar, mediante consulta.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta."
     ],
     faqs: [
@@ -1000,7 +1000,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Quais acabamentos estão disponíveis?", a: "O modelo padrão é produzido em papel couchê 250g. Também oferecemos a opção em papel couchê 300g, mediante consulta." },
       { q: "Esse modelo substitui o cartão de agradecimento maior?", a: "Depende da sua necessidade. O mini cartão é ideal para embalagens menores ou quando você deseja transmitir uma mensagem mais objetiva. Se precisar de mais espaço para textos ou informações, recomendamos o cartão de agradecimento 8,8x9,94 cm." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta." }
     ],
   },
@@ -1015,7 +1015,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "O Cartão de Visitas Personalizado 8,8x4,8 cm continua sendo uma das formas mais práticas de divulgar sua marca e facilitar o contato com clientes. Ele pode ser entregue junto aos pedidos, distribuído em eventos, utilizado na loja ou sempre que você quiser apresentar seu negócio de forma profissional.",
       "A arte é desenvolvida conforme a identidade visual da sua marca, permitindo incluir logo, nome, telefone, redes sociais, QR Code, endereço e outras informações importantes para o seu negócio.",
-      "Produzido em papel couchê 250g, conta com impressão colorida frente e verso e brilho total na frente. Também oferecemos a opção em papel couchê 300g, mediante consulta.",,
+      "Produzido em papel couchê 250g, conta com impressão colorida frente e verso e brilho total na frente. Também oferecemos a opção em papel couchê 300g, mediante consulta.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta."
     ],
     faqs: [
@@ -1025,7 +1025,7 @@ export const productPages: ProductPageConfig[] = [
       { q: "Quais acabamentos estão disponíveis?", a: "O modelo padrão é produzido em papel couchê 250g. Também oferecemos a opção em papel couchê 300g, mediante consulta." },
       { q: "O cartão serve apenas para lojas de semijoias?", a: "Não. O cartão pode ser utilizado por empresas e profissionais de diversos segmentos." },
       { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
-      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },,
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
       { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta." }
     ],
   },
