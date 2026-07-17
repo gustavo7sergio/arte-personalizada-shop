@@ -950,10 +950,19 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Certificado de Garantia Dobrado Personalizado | GS Cartões",
     seoDescription: "Certificado de garantia dobrado personalizado. Fechado 8,8x4,8 cm e aberto 8,8x9,6 cm. Mais espaço para informações da sua marca.",
     longDescription: [
-      "Com formato dobrado, esse certificado oferece o dobro de área para informações, termos de garantia, cuidados e mensagens especiais da sua marca.",
-      "Papel couchê 250g, frente e verso coloridos e brilho total na frente. Fechado: 8,8x4,8 cm. Aberto: 8,8x9,6 cm.",
+      "O Certificado de Garantia Personalizado Dobrado é a escolha ideal para quem precisa incluir mais informações sem aumentar o tamanho da peça quando fechada. Seu formato oferece mais espaço para condições de garantia, instruções de conservação, recomendações de uso e outras informações importantes para seus clientes.",
+      "A arte é desenvolvida conforme a identidade visual da sua marca, permitindo incluir logo, regras de garantia, informações da empresa, QR Code, orientações de conservação e outros elementos personalizados.",
+      "Produzido em papel couchê 250g, conta com impressão colorida frente e verso e brilho total na frente. No formato fechado, mede 8,8x4,8 cm. Aberto, oferece uma área de 8,8x9,6 cm para distribuir melhor o conteúdo. Também pode ser produzido em papel 300g, com acabamento fosco ou verniz localizado, mediante consulta."
     ],
-    faqs: wrapFaqs([{ q: "A dobra já vem pronta?", a: "Sim. Os certificados são entregues com a dobra de fábrica, prontos para uso." }]),
+    faqs: [
+      { q: "Quando vale a pena escolher o certificado dobrado?", a: "Esse modelo é indicado para quem precisa incluir mais informações do que cabem em um certificado tradicional, como regras de garantia, instruções de conservação, orientações de uso e outras informações importantes para o cliente." },
+      { q: "Quais informações posso colocar no certificado?", a: "O conteúdo é totalmente personalizado. Você pode incluir:\n\n Logo da empresa.\n\n Condições e prazo de garantia.\n\n Instruções de conservação.\n\n Informações de contato.\n\n Redes sociais.\n\n QR Code.\n\n Outras informações importantes para seus clientes." },
+      { q: "Posso personalizar frente e verso?", a: "Sim. Todo o certificado pode ser personalizado, aproveitando as quatro faces do modelo dobrado para distribuir melhor o conteúdo." },
+      { q: "Posso escolher entre acabamento com brilho ou fosco?", a: "Sim. O modelo padrão é produzido com brilho total na frente, mas também é possível solicitar acabamento fosco ou verniz localizado. Consulte nossa equipe para conhecer as opções disponíveis e os valores." },
+      { q: "Posso enviar minha própria arte?", a: "Sim. Se você já possui a arte pronta, basta enviá-la conforme as orientações da nossa equipe. Caso não tenha, desenvolvemos a arte conforme a identidade visual da sua marca." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." }
+    ],
   },
   {
     slug: "cartao-de-agradecimento-personalizado-8-8x9-94-cm",
