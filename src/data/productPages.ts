@@ -1140,13 +1140,22 @@ export const productPages: ProductPageConfig[] = [
     displayName: "Adesivo Fecha Sacola Personalizado Couchê 10x4 cm",
     categorySlug: "adesivos-personalizados-para-semijoias",
     categoryLabel: "Adesivos",
-    seoTitle: "Adesivo Fecha Sacola Personalizado Couchê 10x4 cm",
-    seoDescription: "Adesivo fecha sacola personalizado em papel couchê, 10x4 cm. Acabamento prático e elegante para suas entregas.",
+    seoTitle: "Adesivo Fecha Sacola Personalizado Couchê 10x4 cm | GS Cartões",
+    seoDescription: "Adesivo fecha sacola personalizado em papel couchê 10x4 cm. Lacre elegante para sacolas de papel com a sua marca.",
     longDescription: [
-      "Funcional e elegante, esse adesivo lacra a sacolinha e reforça a presença da marca no exato momento do fechamento da entrega.",
-      "Papel couchê 80g, frente colorida e sem brilho. Tamanho aberto: 10x4 cm.",
+      "O Adesivo Fecha Sacola Personalizado Couchê 10x4 cm foi desenvolvido para lacrar sacolas de papel de forma prática e elegante, agregando identidade visual à sua marca no momento da entrega.",
+      "Seu formato permite que cada extremidade fique fixada em um lado da sacola, proporcionando um fechamento seguro e um acabamento diferenciado. A arte é desenvolvida conforme a identidade visual da sua marca, permitindo incluir logo, redes sociais, QR Code e outros elementos personalizados.",
+      "Produzido em papel couchê adesivo 80g, conta com impressão colorida na frente e acabamento sem brilho."
     ],
-    faqs: wrapFaqs([{ q: "Qual a diferença para a versão em sulfite?", a: "O couchê tem acabamento mais nobre. A versão sulfite é mais simples e levemente maior (10x5 cm)." }]),
+    faqs: [
+      { q: "Como funciona o adesivo fecha sacola?", a: "Esse modelo foi desenvolvido para unir as duas abas da sacola, funcionando como um lacre. Além de fechar a embalagem, ele valoriza a apresentação da marca e proporciona um acabamento mais profissional." },
+      { q: "Posso personalizar toda a arte?", a: "Sim. O adesivo é totalmente personalizado com a identidade visual da sua marca, incluindo logo, cores, textos, QR Code e outros elementos gráficos." },
+      { q: "Qual o material do adesivo?", a: "Este modelo é produzido em papel couchê adesivo 80g, com impressão colorida na frente e acabamento sem brilho." },
+      { q: "O adesivo é resistente à água?", a: "Não. Este modelo é produzido em papel couchê adesivo e não é resistente à água. Para manter a qualidade da impressão, recomendamos utilizá-lo em superfícies secas e evitar contato com umidade." },
+      { q: "Posso fazer esse adesivo em outro tamanho?", a: "Sim. Caso você precise de outro tamanho ou formato, consulte nossa equipe. Podemos avaliar a melhor opção para o seu projeto." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." }
+    ],
   },
   {
     slug: "adesivo-fecha-sacola-personalizado-sulfite-10x5-cm",
