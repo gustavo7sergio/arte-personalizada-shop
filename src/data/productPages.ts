@@ -1121,7 +1121,7 @@ export const productPages: ProductPageConfig[] = [
     longDescription: [
       "O Adesivo Redondo Personalizado 4,8x4,8 cm é uma ótima opção para destacar a identidade da sua marca em embalagens, sacolas, caixas, envelopes e diversos outros materiais. Seu tamanho oferece espaço suficiente para incluir a logo e outras informações importantes, criando um acabamento mais profissional na entrega dos seus produtos.",
       "A arte é desenvolvida conforme a identidade visual da sua marca, permitindo incluir logo, redes sociais, QR Code, informações de contato e outros elementos personalizados.",
-      "Produzido em papel couchê adesivo 80g, conta com impressão colorida na frente e acabamento sem brilho.",
+      "Produzido em papel couchê adesivo 80g, conta com impressão colorida na frente e acabamento sem brilho."
     ],
     faqs: [
       { q: "Onde posso utilizar esse adesivo?", a: "Ele pode ser aplicado em caixas, sacolas, envelopes, embalagens, papel de seda, cartões e diversos outros materiais." },
@@ -1129,8 +1129,8 @@ export const productPages: ProductPageConfig[] = [
       { q: "Qual o material do adesivo?", a: "Este modelo é produzido em papel couchê adesivo 80g, com impressão colorida e acabamento sem brilho." },
       { q: "O adesivo é resistente à água?", a: "Não. Este modelo é produzido em papel couchê adesivo e não é resistente à água. Para manter a qualidade da impressão, recomendamos utilizá-lo em superfícies secas e evitar contato com umidade." },
       { q: "Posso fazer esse adesivo em outro tamanho ou formato?", a: "Sim. Caso você precise de outro tamanho ou formato, consulte nossa equipe. Temos outras opções de adesivos personalizados que podem atender melhor ao seu projeto." },
-      { q: "Qual o prazo de produção?", a: PRODUCTION_DEADLINE_ANSWER },
-      { q: "Como funciona o pagamento?", a: FAQ_PAGAMENTO.a },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." }
     ],
     youtubeVideoId: "Ektei2vCGss",
   },
