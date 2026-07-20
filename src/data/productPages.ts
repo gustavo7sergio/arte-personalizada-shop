@@ -1157,10 +1157,19 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Adesivo Fecha Sacola Sulfite 10x5 cm | GS Cartões",
     seoDescription: "Adesivo fecha sacola em papel sulfite 80g, 10x5 cm. Solução prática e econômica para fechar embalagens com a sua marca.",
     longDescription: [
-      "Opção mais econômica para fechar embalagens com a identidade da sua marca, sem abrir mão da personalização.",
-      "Papel sulfite 80g, frente colorida e sem brilho. Tamanho aberto: 10x5 cm.",
+      "O Adesivo Fecha Sacola Personalizado Sulfite 10x5 cm é uma solução prática para fechar sacolas e embalagens, agregando identidade visual à sua marca e proporcionando uma apresentação mais organizada na entrega dos produtos.",
+      "Sua área permite incluir logo, redes sociais, QR Code, informações de contato e outros elementos personalizados, tornando cada embalagem uma oportunidade de fortalecer sua marca.",
+      "Produzido em papel sulfite adesivo 80g, conta com impressão colorida na frente e acabamento sem brilho."
     ],
-    faqs: wrapFaqs([{ q: "Esse adesivo cola bem em sacolinhas plásticas?", a: "Sim, funciona bem em sacolinhas de papel e plásticas. Para superfícies muito lisas, recomendamos pressionar com firmeza." }]),
+    faqs: [
+      { q: "Onde posso utilizar esse adesivo?", a: "Ele é ideal para fechar sacolas de papel, embalagens, envelopes, papel de seda e diversos outros tipos de embalagem." },
+      { q: "Posso personalizar toda a arte?", a: "Sim. O adesivo é totalmente personalizado com a identidade visual da sua marca, incluindo logo, cores, textos, QR Code e outros elementos gráficos." },
+      { q: "Qual o material do adesivo?", a: "Este modelo é produzido em papel sulfite adesivo 80g, com impressão colorida na frente e acabamento sem brilho." },
+      { q: "O adesivo é resistente à água?", a: "Não. Este modelo é produzido em papel sulfite adesivo e não é resistente à água. Para manter a qualidade da impressão, recomendamos utilizá-lo em superfícies secas e evitar contato com umidade." },
+      { q: "Posso fazer esse adesivo em outro tamanho?", a: "Sim. Caso você precise de outro tamanho, consulte nossa equipe. Podemos avaliar a melhor opção para o seu projeto." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." }
+    ],
   },
 
   // ─────────── ETIQUETAS DE ROUPAS ───────────
