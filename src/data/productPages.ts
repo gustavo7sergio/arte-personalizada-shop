@@ -1095,10 +1095,19 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Adesivo Redondo Personalizado 3x3 cm | GS Cartões",
     seoDescription: "Adesivo redondo personalizado 3x3 cm para fechar embalagens, decorar cartões e reforçar a marca em sacolas e caixinhas.",
     longDescription: [
-      "Compacto e versátil, o adesivo redondo 3x3 cm é perfeito para selar embalagens menores, etiquetar acessórios e reforçar a marca em vários pontos da entrega.",
-      "Papel couchê 80g, frente colorida e sem brilho.",
+      "O Adesivo Redondo Personalizado 3x3 cm é uma excelente opção para quem busca uma identificação discreta e elegante para embalagens e produtos. Seu tamanho compacto é ideal para aplicações em caixas, sacolas, papel de seda, envelopes e outros materiais, valorizando a apresentação da sua marca.",
+      "A arte é desenvolvida conforme a identidade visual da sua marca, permitindo incluir logo, redes sociais, QR Code e outros elementos personalizados.",
+      "Produzido em papel couchê adesivo 80g, conta com impressão colorida na frente e acabamento sem brilho.",
     ],
-    faqs: wrapFaqs([{ q: "Posso usar para fechar sacolinhas?", a: "Sim. É um dos usos mais comuns: aplicar como selo no fechamento da embalagem." }]),
+    faqs: [
+      { q: "Onde posso utilizar esse adesivo?", a: "Ele pode ser aplicado em caixas, sacolas, envelopes, papel de seda, embalagens, cartões e diversos outros materiais." },
+      { q: "O que muda em relação ao adesivo redondo 4,8x4,8 cm?", a: "O modelo 3x3 cm ocupa menos espaço e é ideal para embalagens menores ou quando você deseja uma identificação mais discreta da marca. Já o modelo 4,8x4,8 cm oferece uma área maior para destacar a logo e incluir mais informações." },
+      { q: "Posso personalizar toda a arte?", a: "Sim. O adesivo é totalmente personalizado com a identidade visual da sua marca, incluindo logo, cores, textos, QR Code e outros elementos gráficos." },
+      { q: "O adesivo é resistente à água?", a: "Não. Este modelo é produzido em papel couchê adesivo e não é resistente à água. Para manter a qualidade da impressão, recomendamos utilizá-lo em superfícies secas e evitar contato com umidade." },
+      { q: "Posso fazer esse adesivo em outro tamanho ou formato?", a: "Sim. Caso você precise de outro tamanho ou formato, consulte nossa equipe. Temos outras opções de adesivos personalizados que podem atender melhor ao seu projeto." },
+      { q: "Qual o prazo de produção?", a: PRODUCTION_DEADLINE_ANSWER },
+      { q: "Como funciona o pagamento?", a: FAQ_PAGAMENTO.a },
+    ],
     youtubeVideoId: "Ektei2vCGss",
   },
   {
