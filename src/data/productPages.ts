@@ -936,10 +936,19 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Mini Certificado de Garantia 4,8x4,25 cm | GS Cartões",
     seoDescription: "Mini certificado de garantia 4,8x4,25 cm para semijoias. Formato compacto, ideal para embalagens menores.",
     longDescription: [
-      "Versão compacta do certificado de garantia, perfeita para sacolinhas pequenas e embalagens onde o espaço é limitado.",
-      "Couchê 250g, frente e verso coloridos e brilho total na frente. Acabamentos extras sob consulta.",
+      "O Mini Certificado de Garantia Personalizado 4,8x4,25 cm é uma excelente opção para quem deseja entregar informações sobre garantia sem ocupar muito espaço na embalagem. Seu formato compacto combina perfeitamente com caixinhas, sacolas e embalagens menores, mantendo uma apresentação organizada.",
+      "A arte é desenvolvida conforme a identidade visual da sua marca, permitindo incluir logo, informações da empresa, condições de garantia, QR Code, redes sociais e outras informações importantes para seus clientes.",
+      "Produzido em papel couchê 250g, conta com impressão colorida frente e verso e brilho total na frente. Também pode ser produzido em papel 300g, com acabamento fosco ou verniz localizado, mediante consulta."
     ],
-    faqs: wrapFaqs([{ q: "Esse formato cabe em sacolinhas P?", a: "Sim, foi pensado justamente para encaixar bem em sacolinhas pequenas e caixinhas." }]),
+    faqs: [
+      { q: "Quais informações posso colocar no mini certificado?", a: "O conteúdo é totalmente personalizado. Você pode incluir:\n\n Logo da empresa.\n\n Condições de garantia.\n\n Prazo de garantia.\n\n Instruções de conservação.\n\n Informações de contato.\n\n Redes sociais.\n\n QR Code.\n\n Outras informações importantes para seus clientes." },
+      { q: "Posso personalizar frente e verso?", a: "Sim. A impressão é colorida na frente e no verso, permitindo aproveitar todo o espaço disponível." },
+      { q: "Quando vale a pena escolher o mini certificado?", a: "Esse modelo é indicado para quem deseja incluir informações de garantia em embalagens menores ou quando um certificado tradicional ocuparia muito espaço." },
+      { q: "Posso escolher entre acabamento com brilho ou fosco?", a: "Sim. O modelo padrão é produzido com brilho total na frente, mas também é possível solicitar acabamento fosco ou verniz localizado. Consulte nossa equipe para conhecer as opções disponíveis e os valores." },
+      { q: "Posso enviar minha própria arte?", a: "Sim. Se você já possui a arte pronta, basta enviá-la conforme as orientações da nossa equipe. Caso não tenha, desenvolvemos a arte conforme a identidade visual da sua marca." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." }
+    ],
   },
   {
     slug: "certificado-de-garantia-personalizado-dobrado",
