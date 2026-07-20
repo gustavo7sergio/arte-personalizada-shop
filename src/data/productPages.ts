@@ -1161,7 +1161,7 @@ export const productPages: ProductPageConfig[] = [
       "Sua área permite incluir logo, redes sociais, QR Code, informações de contato e outros elementos personalizados, tornando cada embalagem uma oportunidade de fortalecer sua marca.",
       "Produzido em papel sulfite adesivo 80g, conta com impressão colorida na frente e acabamento sem brilho."
     ],
-    fa3faqs: [
+    faqs: [
       { q: "Onde posso utilizar esse adesivo?", a: "Ele é ideal para fechar sacolas de papel, embalagens, envelopes, papel de seda e diversos outros tipos de embalagem." },
       { q: "Posso personalizar toda a arte?", a: "Sim. O adesivo é totalmente personalizado com a identidade visual da sua marca, incluindo logo, cores, textos, QR Code e outros elementos gráficos." },
       { q: "Qual o material do adesivo?", a: "Este modelo é produzido em papel sulfite adesivo 80g, com impressão colorida na frente e acabamento sem brilho." },
