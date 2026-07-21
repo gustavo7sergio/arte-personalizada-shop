@@ -1244,10 +1244,20 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Tag para Laços e Tiaras 9x6,5 cm | GS Cartões",
     seoDescription: "Tag personalizada para laços e tiaras 9x6,5 cm. Apresentação encantadora para sua marca de acessórios de cabelo.",
     longDescription: [
-      "Pensada para marcas de acessórios de cabelo, essa tag valoriza laços e tiaras com uma apresentação que encanta e fideliza.",
-      "Couchê 250g, frente e verso coloridos e brilho total na frente. Furos, cortes e acabamentos sob consulta.",
+      "A Tag Personalizada para Laços e Tiaras 9x6,5 cm foi desenvolvida para valorizar a apresentação de laços, tiaras e outros acessórios de cabelo. Além de organizar a exposição das peças, ela fortalece a identidade visual da sua marca e proporciona uma apresentação mais profissional.",
+      "A arte é desenvolvida conforme a identidade visual da sua marca, permitindo incluir logo, redes sociais, QR Code, informações de contato, instruções de conservação e outros elementos personalizados.",
+      "Produzida em papel couchê 250g, conta com impressão colorida frente e verso e brilho total na frente. Também pode ser produzida em papel 300g, com acabamento fosco e outros acabamentos opcionais, mediante consulta."
     ],
-    faqs: wrapFaqs([{ q: "Posso adaptar para laços maiores?", a: "Sim. Esse tamanho é versátil e atende a maior parte dos modelos. Para laços muito grandes, consulte os formatos 12,5x8,8 ou 15x8,8 cm." }]),
+    faqs: [
+      { q: "Quais acessórios posso utilizar nessa tag?", a: "Ela é indicada para laços, tiaras e diversos outros acessórios de cabelo que possam ser fixados nos cortes da tag." },
+      { q: "Posso personalizar frente e verso?", a: "Sim. A impressão é colorida na frente e no verso, permitindo aproveitar todo o espaço disponível para a identidade visual da sua marca." },
+      { q: "Quando vale a pena escolher o papel 300g?", a: "Se você trabalha com laços, tiaras ou acessórios maiores e mais pesados, recomendamos a produção em papel couchê 300g. Por ser mais rígido, ele oferece maior resistência e ajuda a evitar que a tag dobre ou rasgue durante o manuseio." },
+      { q: "Posso escolher entre acabamento com brilho ou fosco?", a: "Sim. O modelo padrão é produzido com brilho total na frente, mas também é possível solicitar acabamento fosco. Consulte nossa equipe para conhecer as opções disponíveis e os valores." },
+      { q: "Posso alterar os furos e cortes da tag?", a: "Sim. Os furos e cortes podem ser adaptados conforme o tipo de acessório que será utilizado. Consulte nossa equipe para verificar as possibilidades para o seu projeto." },
+      { q: "Posso enviar minha própria arte?", a: "Sim. Se você já possui a arte pronta, basta enviá-la conforme as orientações da nossa equipe. Caso não tenha, desenvolvemos a arte conforme a identidade visual da sua marca." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." }
+    ],
   },
   {
     slug: "tag-personalizada-para-lacos-e-tiaras-7-5x9-5-cm",
