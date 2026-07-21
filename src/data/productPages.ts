@@ -1081,10 +1081,19 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Adesivo Personalizado para Anel 7x1,7 cm | GS Cartões",
     seoDescription: "Adesivo personalizado para anel 7x1,7 cm com alça de 2,35 cm. Identificação prática e elegante para sua marca.",
     longDescription: [
-      "Forma prática e elegante de identificar anéis com a logo da sua marca, sem precisar usar uma tag tradicional.",
-      "Papel couchê 90g, frente colorida, sem brilho. Tamanho 7x1,7 cm com alça de 2,35 cm.",
+      "O Adesivo Personalizado para Anel 7x1,7 cm é uma forma prática de identificar anéis sem a necessidade de utilizar uma tag tradicional. Seu formato envolve a peça, permitindo destacar a identidade visual da sua marca de forma elegante e organizada.",
+      "A arte é desenvolvida conforme a identidade visual da sua marca, permitindo incluir logo, redes sociais, QR Code e outros elementos personalizados.",
+      "Produzido em papel couchê adesivo 90g, conta com impressão colorida na frente e acabamento sem brilho.",
     ],
-    faqs: wrapFaqs([{ q: "O adesivo cola bem no anel?", a: "Sim, o adesivo é desenvolvido para fixar com firmeza, mas também permite remoção sem danificar a peça." }]),
+    faqs: [
+      { q: "Como esse adesivo é utilizado?", a: "O adesivo é aplicado envolvendo o aro do anel, identificando a peça e valorizando sua apresentação no momento da venda." },
+      { q: "Posso personalizar toda a arte?", a: "Sim. O adesivo é totalmente personalizado com a identidade visual da sua marca, incluindo logo, cores, textos, QR Code e outros elementos gráficos." },
+      { q: "Qual o material do adesivo?", a: "Este modelo é produzido em papel couchê adesivo 90g, com impressão colorida na frente e acabamento sem brilho." },
+      { q: "O adesivo é resistente à água?", a: "Não. Este modelo é produzido em papel couchê adesivo e não é resistente à água. Para manter a qualidade da impressão, recomendamos utilizá-lo em superfícies secas e evitar contato com umidade." },
+      { q: "Esse adesivo substitui a tag de anel?", a: "Depende da forma como você apresenta seus produtos. O adesivo é uma alternativa prática para identificar anéis diretamente na peça, enquanto a tag oferece mais espaço para informações e pode agregar ainda mais valor à apresentação." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
   },
   {
     slug: "adesivo-redondo-personalizado-3x3-cm",
