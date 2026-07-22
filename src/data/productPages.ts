@@ -1398,10 +1398,20 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Kit Básico de Tags 1 - Formatos Padronizados | GS Cartões",
     seoDescription: "Kit Básico de Tags 1 com 600 tags personalizadas em formatos padronizados. Solução prática e econômica para marcas iniciantes de semijoias.",
     longDescription: [
-      "Kit ideal para marcas iniciantes que querem ter os principais formatos de tag em uma única compra, com economia em relação a pedir cada modelo separadamente.",
-      "Inclui mix de formatos padronizados em couchê 250g, frente e verso coloridos e brilho total na frente. Arte 100% personalizada. Não permite alteração de cortes e furos.",
+      "O Kit Básico de Tags 1 é a opção ideal para quem está iniciando sua marca e quer adquirir os principais modelos de tags em um único pedido, com excelente custo-benefício.",
+      "O kit reúne os formatos mais utilizados para brincos, anéis e acessórios, mantendo uma identidade visual padronizada em toda a linha de produtos.",
+      "Todas as artes são desenvolvidas de forma personalizada para a sua marca, garantindo um resultado exclusivo e profissional em todos os modelos do kit.",
+      "As tags são produzidas em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente.",
+      "Informações Técnicas:\n\n• Papel couchê 250g\n• Impressão colorida frente e verso\n• Brilho total na frente\n• Arte 100% personalizada para a sua marca\n• A mesma identidade visual é aplicada em todos os modelos do kit\n• Não trabalhamos com fidelização de cores\n• Não é possível alterar cortes, furos ou substituir modelos das tags\n• Composição do kit:\n  - 100 Tags 4,25 × 4,8 cm (2 furos)\n  - 100 Tags 8,8 × 4,8 cm (2 furos)\n  - 100 Mini Tags 3,9 × 1,7 cm\n  - 200 Tags 8,8 × 4,8 cm (6 furos)\n  - 100 Tags 4,25 × 4,8 cm\n• Total: 600 tags\n• Prazo de produção: 5 a 6 dias úteis após a aprovação da arte",
     ],
-    faqs: wrapFaqs([{ q: "Posso escolher outros formatos no kit?", a: "Não. Os kits trabalham com formatos fixos para manter o preço otimizado. Para combinações personalizadas, peça orçamento individual." }]),
+    faqs: [
+      { q: "As tags são personalizadas com a minha marca?", a: "Sim. Todas as tags do kit são produzidas com uma arte exclusiva desenvolvida para a identidade visual da sua marca." },
+      { q: "Posso trocar um dos modelos do kit?", a: "Não. Os modelos que compõem o kit são fixos e não podem ser substituídos." },
+      { q: "Posso alterar os furos ou cortes das tags?", a: "Não. Os cortes e furos seguem o padrão de cada modelo e não podem ser modificados." },
+      { q: "Cada modelo pode ter uma arte diferente?", a: "Não. Todo o kit utiliza a mesma identidade visual para manter a padronização da sua marca em todos os formatos." },
+      { q: "Posso produzir esse kit em papel 300g ou acabamento fosco?", a: "Não. Este kit é produzido exclusivamente em papel couchê 250g com brilho total na frente." },
+      { q: "Qual o prazo de produção?", a: "O prazo é de 5 a 6 dias úteis após a aprovação da arte." },
+    ],
   },
   {
     slug: "kit-completo-de-tags-1",
