@@ -1224,10 +1224,20 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Mini Etiqueta para Roupas 4,8x4,25 cm | GS Cartões",
     seoDescription: "Mini etiqueta para roupas 4,8x4,25 cm. Tag compacta e elegante para peças mais delicadas.",
     longDescription: [
-      "Versão compacta da etiqueta de roupas, ideal para acessórios de moda, peças infantis e marcas que preferem um visual minimalista.",
-      "Couchê 250g, frente e verso coloridos e brilho total na frente. Acabamentos opcionais sob consulta.",
+      "A Mini Etiqueta Personalizada para Roupas 4,8x4,25 cm é ideal para peças menores ou marcas que preferem uma apresentação mais discreta. Ela pode ser utilizada em roupas infantis, moda íntima, acessórios, camisetas, bonés e diversos outros produtos do vestuário.",
+      "Mesmo em um formato compacto, é possível incluir informações importantes como logo, tamanho, preço, QR Code, redes sociais e outros dados da sua marca.",
+      "Produzida em papel couchê 250g, possui impressão colorida frente e verso e brilho total na frente. Também pode ser produzida em papel 300g, acabamento fosco e verniz localizado, mediante consulta.",
     ],
-    faqs: wrapFaqs([{ q: "Funciona bem em peças infantis?", a: "Sim. Por ser compacta, é uma das opções preferidas de marcas de roupa infantil." }]),
+    faqs: [
+      { q: "Para quais produtos essa etiqueta é indicada?", a: "Ela é indicada para roupas infantis, moda íntima, camisetas, acessórios, bonés e outras peças que pedem uma etiqueta menor e mais discreta." },
+      { q: "Posso personalizar frente e verso?", a: "Sim. A impressão é colorida na frente e no verso, permitindo incluir logo, tabela de tamanhos, composição, preço, QR Code, redes sociais e outras informações da sua marca." },
+      { q: "Posso escolher entre acabamento com brilho ou fosco?", a: "Sim. O modelo padrão possui brilho total na frente, mas também pode ser produzido com acabamento fosco. Consulte nossa equipe para conhecer as opções disponíveis." },
+      { q: "Quando vale a pena escolher o papel 300g?", a: "Se você procura uma etiqueta mais rígida e com maior percepção de qualidade, o papel couchê 300g é uma excelente opção. Ele oferece mais resistência e um acabamento ainda mais premium." },
+      { q: "Posso alterar os furos e cortes da etiqueta?", a: "Sim. Os furos e cortes podem ser personalizados conforme a necessidade do seu produto. Consulte nossa equipe para verificar as opções disponíveis." },
+      { q: "Posso enviar minha própria arte?", a: "Sim. Caso já tenha a arte pronta, basta enviá-la seguindo nossas orientações. Se preferir, nossa equipe também pode desenvolver uma arte personalizada para sua marca." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
   },
   {
     slug: "etiqueta-personalizada-para-roupas-formato-especial",
