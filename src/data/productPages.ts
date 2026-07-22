@@ -1238,10 +1238,21 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Etiqueta para Roupas Formato Especial | GS Cartões",
     seoDescription: "Etiqueta para roupas em formato especial, até 8,8x4,8 cm. Liberdade total de criação para sua marca.",
     longDescription: [
-      "Para marcas de moda que querem fugir do padrão, essa opção permite criar etiquetas em formatos exclusivos dentro do limite de 8,8x4,8 cm.",
-      "Couchê 250g, frente e verso coloridos e brilho total na frente. Corte especial incluso.",
+      "A Etiqueta Personalizada para Roupas em Formato Especial é ideal para marcas que desejam criar uma apresentação diferenciada para suas peças. O corte personalizado permite desenvolver etiquetas em formatos exclusivos, tornando a identidade da sua marca ainda mais marcante.",
+      "É uma excelente opção para camisetas, vestidos, moda infantil, moda fitness, moda íntima e diversos outros produtos do vestuário, agregando valor à apresentação da peça.",
+      "Produzida em papel couchê 250g, possui impressão colorida frente e verso e brilho total na frente. Também pode ser produzida em papel 300g, acabamento fosco e verniz localizado, mediante consulta.",
     ],
-    faqs: wrapFaqs([{ q: "Posso enviar um formato inspirado em alguma referência?", a: "Sim. Você envia a referência pelo WhatsApp e validamos a viabilidade dentro do limite de tamanho." }]),
+    faqs: [
+      { q: "O que é uma etiqueta em formato especial?", a: "É uma etiqueta produzida com corte personalizado. Em vez do formato retangular tradicional, ela pode seguir um desenho exclusivo, deixando a apresentação da sua marca muito mais diferenciada." },
+      { q: "Posso criar qualquer formato?", a: "Sim. Desenvolvemos etiquetas com cortes personalizados em diversos formatos. O tamanho padrão deste produto é de até 8,8 x 4,8 cm, mas, se você precisar de uma etiqueta maior ou em um formato diferenciado, também podemos produzir. Nesse caso, basta entrar em contato com nossa equipe para solicitar um orçamento personalizado." },
+      { q: "Para quais produtos essa etiqueta é indicada?", a: "Ela é indicada para camisetas, vestidos, calças, moda infantil, moda fitness, moda íntima e diversos outros produtos do vestuário." },
+      { q: "Posso personalizar frente e verso?", a: "Sim. A impressão é colorida na frente e no verso, permitindo incluir logo, tabela de tamanhos, composição, preço, QR Code, redes sociais, informações da marca e outros dados." },
+      { q: "Posso escolher entre acabamento com brilho ou fosco?", a: "Sim. O modelo padrão possui brilho total na frente, mas também pode ser produzido com acabamento fosco. Consulte nossa equipe para conhecer as opções disponíveis." },
+      { q: "Quando vale a pena escolher o papel 300g?", a: "Se você procura uma etiqueta mais rígida e com maior percepção de qualidade, o papel couchê 300g é uma excelente opção. Ele oferece mais resistência e um acabamento ainda mais premium." },
+      { q: "Posso enviar minha própria arte?", a: "Sim. Caso já tenha a arte pronta, basta enviá-la seguindo nossas orientações. Se preferir, nossa equipe também pode desenvolver uma arte personalizada para sua marca." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." }
+    ],
   },
 
   // ─────────── TAGS LAÇOS E TIARAS ───────────
