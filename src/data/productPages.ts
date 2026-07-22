@@ -1341,10 +1341,20 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Tag para Laços e Tiaras 12,5x8,8 cm | GS Cartões",
     seoDescription: "Tag 12,5x8,8 cm para laços e tiaras. Formato equilibrado entre destaque e tamanho da peça.",
     longDescription: [
-      "Formato equilibrado entre os modelos grande e médio, ideal para marcas que querem destaque visual sem exagerar no tamanho da tag.",
-      "Couchê 250g, frente e verso coloridos e brilho total na frente. Furos e cortes opcionais.",
+      "A Tag Personalizada para Laços e Tiaras 12,5x8,8 cm é ideal para quem deseja expor dois laços na mesma tag, criando uma apresentação mais organizada e atrativa para a cliente. Também pode ser utilizada com tiaras e outros acessórios de cabelo, oferecendo praticidade e valorizando suas peças no display.",
+      "A arte é totalmente personalizada com a identidade visual da sua marca, podendo incluir logo, redes sociais, QR Code, informações de contato e outros elementos.",
+      "Produzida em papel couchê 250g, possui impressão colorida frente e verso e brilho total na frente. Também pode ser produzida em papel 300g, acabamento fosco e verniz localizado, mediante consulta.",
     ],
-    faqs: wrapFaqs([{ q: "Qual a diferença para o modelo 15x8,8 cm?", a: "É um pouco menor em largura, o que dá um visual mais proporcional para laços médios." }]),
+    faqs: [
+      { q: "Para quais produtos essa tag é indicada?", a: "Ela é indicada para laços, tiaras, faixas e outros acessórios de cabelo. Seu formato também é excelente para apresentar dois laços pequenos ou médios na mesma tag." },
+      { q: "Posso personalizar frente e verso?", a: "Sim. A impressão é colorida na frente e no verso, permitindo incluir logo, redes sociais, QR Code, informações da marca, cuidados com o produto e outros elementos da sua identidade visual." },
+      { q: "Quando vale a pena escolher o papel 300g?", a: "Se você trabalha com peças maiores ou mais pesadas, recomendamos produzir a tag em papel couchê 300g. A gramatura maior oferece mais rigidez e ajuda a evitar que a tag dobre ou rasgue durante o manuseio." },
+      { q: "Posso escolher entre acabamento com brilho ou fosco?", a: "Sim. O modelo padrão possui brilho total na frente, mas também pode ser produzido com acabamento fosco. Consulte nossa equipe para conhecer as opções disponíveis." },
+      { q: "Posso alterar os furos e cortes da tag?", a: "Sim. Os furos e cortes podem ser adaptados conforme o tipo de acessório que será utilizado. Consulte nossa equipe para verificar as possibilidades." },
+      { q: "Posso enviar minha própria arte?", a: "Sim. Caso já tenha a arte pronta, basta enviá-la seguindo nossas orientações. Se preferir, nossa equipe também pode desenvolver uma arte personalizada para sua marca." },
+      { q: "Qual o prazo de produção?", a: "O prazo de produção é de 5 a 6 dias úteis após a aprovação da arte." },
+      { q: "Como funciona o pagamento?", a: "Você pode pagar em até 6x sem juros no cartão ou aproveitar 10% de desconto no pagamento via PIX." },
+    ],
   },
 
   // ─────────── KITS ───────────
