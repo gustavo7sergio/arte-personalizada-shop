@@ -1422,10 +1422,17 @@ export const productPages: ProductPageConfig[] = [
     seoTitle: "Kit Completo de Tags 1 - Tags e Certificados Personalizados",
     seoDescription: "Kit Completo de Tags 1 com 800 materiais gráficos personalizados: tags e certificados de garantia. Combo completo para marcas de semijoias.",
     longDescription: [
-      "Kit completo que combina tags e certificados de garantia, perfeito para marcas que querem padronizar toda a comunicação visual em uma compra única.",
-      "Mix de formatos padronizados em couchê 250g, frente e verso coloridos e brilho total na frente. Arte 100% personalizada.",
+      "O Kit Completo de Tags 1 reúne os principais modelos de tags e certificados para quem deseja manter um estoque completo de materiais gráficos com excelente custo-benefício.",
+      "Todos os materiais são produzidos com artes 100% personalizadas, permitindo que cada modelo tenha uma arte diferente, de acordo com a necessidade da sua marca. O kit mantém apenas os formatos, medidas, cortes e furos pré-definidos.",
+      "Produzido em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente, é uma solução prática para quem busca padronização, economia e agilidade na reposição dos materiais.",
+      "Informações Técnicas:\n\n• Papel couchê 250g\n• Impressão colorida frente e verso\n• Brilho total na frente\n• Arte 100% personalizada em todos os materiais\n• Cada modelo pode receber uma arte diferente, sem custo adicional\n• Não trabalhamos com fidelização de cores\n• Não é possível alterar os formatos, medidas, cortes ou furos dos modelos que compõem o kit\n• Composição do kit:\n  - 100 Tags 4,25 × 4,8 cm (2 furos)\n  - 200 Certificados 4,25 × 4,8 cm\n  - 200 Tags 8,8 × 4,8 cm (2 furos)\n  - 100 Mini Tags 3,9 × 1,7 cm\n  - 100 Tags 8,8 × 4,8 cm (6 furos)\n  - 100 Tags 4,25 × 4,8 cm\n• Prazo de produção: 5 a 6 dias úteis após a aprovação da arte",
     ],
-    faqs: wrapFaqs([{ q: "Quais formatos vêm nesse kit?", a: "O kit inclui combinações de tags 4,25x4,8 / 8,8x4,8 / mini tag 3,9x1,7 cm e certificados. Confira a lista detalhada na ficha técnica do produto." }]),
+    faqs: [
+      { q: "As artes são personalizadas?", a: "Sim. Todos os materiais do kit são produzidos com artes 100% personalizadas." },
+      { q: "Cada modelo pode ter uma arte diferente?", a: "Sim. Você pode utilizar uma arte diferente para cada modelo do kit, sem custo adicional." },
+      { q: "Posso alterar os tamanhos das tags?", a: "Não. Os tamanhos são fixos e fazem parte da composição do kit." },
+      { q: "Posso alterar os cortes ou furos das tags?", a: "Não. Os cortes e furos seguem o padrão de cada modelo e não podem ser modificados." },
+    ],
   },
   {
     slug: "kit-basico-de-tags-2",
