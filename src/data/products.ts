@@ -1783,10 +1783,14 @@ export const products: Product[] = [
     category: "Outros",
     material: "Papel Sulfite 75g (P&B) / 90g (Colorido)",
     specs: [
-      "Impressão na frente",
-      "100 folhas por bloco",
-      "15 × 10 cm",
+      "Tamanho: 15 × 10 cm",
+      "100 folhas destacáveis por bloco",
+      "Impressão somente na frente",
+      "Arte 100% personalizada",
+      "Versão colorida em papel sulfite 90g",
+      "Versão preto e branco em papel sulfite 75g",
       "NÃO trabalhamos com fidelização de cores",
+      "Prazo de produção: 5 a 6 dias úteis após a aprovação da arte",
     ],
     highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
     variants: [
