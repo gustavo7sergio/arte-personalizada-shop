@@ -1635,7 +1635,7 @@ export const productPages: ProductPageConfig[] = [
       "Até 500 unidades: 10 × 15 cm",
       "Papel couché 120g",
       "Impressão colorida na frente",
-      "Sem braté 1.000 unidades: 10 × 14 cm",
+      "A partir de 1.000 unidades: 10 × 14 cm",
       "Papel couché 90g",
       "Impressão colorida na frente",
       "Frete grátis para pedidos a partir de 1.000 unidades",
