@@ -5,6 +5,9 @@ import { ChevronDown, ChevronUp, MessageCircle, Package, Tag, CreditCard } from 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import ProductImage from "@/components/ProductImage";
+import BestSellerBadge from "@/components/BestSellerBadge";
+import { isBestSeller } from "@/data/bestSellers";
+
 
 const formatCurrency = (value: number) =>
   value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -135,7 +138,8 @@ function ProductCard({ product }: { product: Product }) {
     <div className="bg-card rounded-2xl border border-border overflow-hidden shadow-card hover:shadow-hover transition-shadow duration-300">
       {/* Product image */}
       {image && (
-        <div className="overflow-hidden bg-muted/20">
+        <div className="overflow-hidden bg-muted/20 relative">
+          {isBestSeller(product.id) && <BestSellerBadge overlay />}
           <ProductImage
             src={image}
             alt={product.name + (product.subtitle ? " – " + product.subtitle : "")}
@@ -143,6 +147,7 @@ function ProductCard({ product }: { product: Product }) {
           />
         </div>
       )}
+
       {/* Header */}
       <div className="p-6 pb-4">
         <div className="flex items-start justify-between gap-3 mb-3">

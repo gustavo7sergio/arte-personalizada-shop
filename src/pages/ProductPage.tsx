@@ -13,6 +13,9 @@ import { toast } from "sonner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProductImage from "@/components/ProductImage";
+import BestSellerBadge from "@/components/BestSellerBadge";
+import { hasBestSeller } from "@/data/bestSellers";
+
 import ImageZoom from "@/components/ImageZoom";
 import ProductSuggestions from "@/components/ProductSuggestions";
 import ProductVideo from "@/components/ProductVideo";
@@ -292,6 +295,12 @@ const ProductPage = () => {
                 <h1 className="text-3xl md:text-4xl font-display font-bold text-foreground mt-2 leading-tight">
                   {config.displayName}
                 </h1>
+                {hasBestSeller(config.productIds) && (
+                  <div className="mt-3">
+                    <BestSellerBadge />
+                  </div>
+                )}
+
                 <p className="text-sm font-body text-muted-foreground mt-2">
                   A partir de <strong className="text-primary">{formatCurrency(minPrice)}</strong> no PIX
                 </p>

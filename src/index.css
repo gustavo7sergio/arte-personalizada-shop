@@ -51,6 +51,10 @@
     --rose: 4 42% 70%;
     --rose-foreground: 158 41% 12%;
 
+    --bestseller: 148 73% 36%;
+    --bestseller-foreground: 0 0% 100%;
+
+
     --shadow-soft: 0 4px 20px -4px hsl(158 41% 12% / 0.08);
     --shadow-card: 0 2px 12px -2px hsl(158 41% 12% / 0.06);
     --shadow-hover: 0 8px 30px -6px hsl(158 41% 12% / 0.12);
