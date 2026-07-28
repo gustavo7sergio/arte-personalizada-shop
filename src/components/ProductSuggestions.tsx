@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import ProductImage from "@/components/ProductImage";
+import ProductBadges from "@/components/ProductBadges";
 import type { SuggestionItem } from "@/lib/productSuggestions";
 
 const formatCurrency = (value: number) =>
@@ -85,7 +86,8 @@ const ProductSuggestions = ({ title, subtitle, items }: ProductSuggestionsProps)
                 to={`/produto/${item.slug}`}
                 className="group block rounded-xl border border-border bg-card hover:border-primary/60 hover:shadow-sm transition-all overflow-hidden h-full"
               >
-                <div className="aspect-square bg-muted/20 overflow-hidden">
+                <div className="aspect-square bg-muted/20 overflow-hidden relative">
+                  <ProductBadges productIds={item.productIds} overlay size="sm" />
                   {item.image ? (
                     <ProductImage
                       src={item.image}

@@ -13,6 +13,7 @@ export interface SuggestionItem {
   categorySlug: string;
   image?: string;
   minPrice: number;
+  productIds: string[];
 }
 
 // ---------------------------------------------------------------------------
@@ -166,6 +167,7 @@ const toItem = (page: ProductPageConfig): SuggestionItem => ({
   categorySlug: page.categorySlug,
   image: heroImageOf(page),
   minPrice: minPriceOf(page),
+  productIds: page.productIds,
 });
 
 const resolveSlugs = (slugs: string[]): SuggestionItem[] =>
