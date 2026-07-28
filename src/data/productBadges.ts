@@ -5,6 +5,7 @@ export type ProductBadgeKey = "best-seller" | "best-value";
 // Produtos marcados com o selo "💰 Melhor custo-benefício".
 // Lista curada — não adicionar itens sem solicitação explícita.
 export const BEST_VALUE_PRODUCT_IDS = [
+  "mini-tag-brincos-p",           // Mini Tag de Brincos 4,8 × 4,25 cm
   "tag-trio-brincos-p",           // Tag Trio de Brincos 4,8 × 4,1 cm
   "tag-brincos-colar-p",          // Tag de Brincos e Colar 8,8 × 4,8 cm
   "mini-tag-anel",                // Mini Tag de Anel 3,9 × 1,7 cm
