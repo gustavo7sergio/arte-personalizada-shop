@@ -138,7 +138,7 @@ function ProductCard({ product }: { product: Product }) {
       {/* Product image */}
       {image && (
         <div className="overflow-hidden bg-muted/20 relative">
-          {isBestSeller(product.id) && <BestSellerBadge overlay />}
+          <ProductBadges productId={product.id} overlay />
           <ProductImage
             src={image}
             alt={product.name + (product.subtitle ? " – " + product.subtitle : "")}
