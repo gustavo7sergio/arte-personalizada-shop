@@ -12,8 +12,7 @@ import { useCart } from "@/contexts/CartContext";
 import { toast } from "sonner";
 import ImageZoom from "@/components/ImageZoom";
 import ProductImage from "@/components/ProductImage";
-import BestSellerBadge from "@/components/BestSellerBadge";
-import { isBestSeller } from "@/data/bestSellers";
+import ProductBadges from "@/components/ProductBadges";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -194,7 +193,7 @@ function ProductCard({ product }: { product: Product }) {
 
   const CardImage = (
     <div className="overflow-hidden bg-muted/20 relative group aspect-[4/3]">
-      {isBestSeller(product.id) && <BestSellerBadge overlay />}
+      <ProductBadges productId={product.id} overlay />
       <ProductImage
         src={image}
         alt={product.name + (product.subtitle ? " – " + product.subtitle : "")}

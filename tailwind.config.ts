@@ -55,6 +55,10 @@ export default {
           DEFAULT: "hsl(var(--bestseller))",
           foreground: "hsl(var(--bestseller-foreground))",
         },
+        bestvalue: {
+          DEFAULT: "hsl(var(--bestvalue))",
+          foreground: "hsl(var(--bestvalue-foreground))",
+        },
 
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",

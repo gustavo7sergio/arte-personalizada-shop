@@ -5,8 +5,7 @@ import { ChevronDown, ChevronUp, MessageCircle, Package, Tag, CreditCard } from 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import ProductImage from "@/components/ProductImage";
-import BestSellerBadge from "@/components/BestSellerBadge";
-import { isBestSeller } from "@/data/bestSellers";
+import ProductBadges from "@/components/ProductBadges";
 
 
 const formatCurrency = (value: number) =>
@@ -139,7 +138,7 @@ function ProductCard({ product }: { product: Product }) {
       {/* Product image */}
       {image && (
         <div className="overflow-hidden bg-muted/20 relative">
-          {isBestSeller(product.id) && <BestSellerBadge overlay />}
+          <ProductBadges productId={product.id} overlay />
           <ProductImage
             src={image}
             alt={product.name + (product.subtitle ? " – " + product.subtitle : "")}
