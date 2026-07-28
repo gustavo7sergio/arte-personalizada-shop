@@ -11,6 +11,11 @@ export const BEST_SELLER_PRODUCT_IDS = [
   "certificado-garantia",      // Certificado de Garantia 8,8 × 4,8 cm
   "certificado-garantia-mini", // Mini Certificado de Garantia 4,8 × 4,25 cm
   "etiqueta-roupas",           // Etiqueta de Roupas 8,8 × 4,8 cm
+  "tag-brincos-colar-p",       // Tag de Brincos e Colar 8,8 × 4,8 cm
+  "tag-anel-3-3x2-6",          // Tag de Anel 3,3 × 2,6 cm
+  "tag-acessorios",            // Tag de Acessórios 8,8 × 4,8 cm
+  "adesivo-redondo-3",         // Adesivo Redondo 3 × 3 cm
+  "adesivo-anel",              // Adesivo para Anel 7 × 1,7 cm
 ] as const;
 
 const BEST_SELLER_SET = new Set<string>(BEST_SELLER_PRODUCT_IDS);
