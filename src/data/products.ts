@@ -293,7 +293,7 @@ export const products: Product[] = [
     specs: [
       "Papel couchê 250g",
       "Colorido externamente",
-      "Sem brilho de 100 a 200 unidades",
+      "Sem brilho de 100 a 300 unidades",
       "Com brilho de 500 a 5000 unidades",
       "NÃO trabalhamos com fidelização de cores",
     ],
