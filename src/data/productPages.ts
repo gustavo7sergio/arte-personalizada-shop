@@ -3,7 +3,7 @@
 
 export const PRODUCTION_DEADLINE_SHORT = "5 a 6 dias úteis";
 export const PRODUCTION_DEADLINE_ANSWER =
-  "O prazo de produção é de 5 a 6 dias úteis, e começa a contar após a criação da arte.\nO prazo de entrega depende do seu CEP, e calculamos isso para você pelo nosso WhatsApp!";
+  "A arte personalizada fica pronta em apenas 1 dia útil para aprovação. Após a aprovação da arte, a produção dos materiais leva de 5 a 6 dias úteis. O prazo de entrega varia de acordo com o CEP e a modalidade de frete escolhida.";
 
 export interface ProductFAQ { q: string; a: string }
 
@@ -68,7 +68,7 @@ const FAQ_PAGAMENTO: ProductFAQ = {
 
 const wrapFaqs = (extras: ProductFAQ[]): ProductFAQ[] => [FAQ_PRAZO, FAQ_ARTE, ...extras, FAQ_PAGAMENTO];
 
-export const productPages: ProductPageConfig[] = [
+const productPagesRaw: ProductPageConfig[] = [
   // ─────────── TAGS DE ACESSÓRIOS ───────────
   {
     slug: "mini-tag-de-brincos-personalizada-4-8x4-25-cm",
@@ -1673,6 +1673,17 @@ export const productPages: ProductPageConfig[] = [
   },
 ];
 
+
+// Garante que "Qual o prazo de produção?" seja sempre a primeira FAQ de qualquer produto.
+const ensurePrazoFirst = (faqs: ProductFAQ[] = []): ProductFAQ[] => [
+  FAQ_PRAZO,
+  ...faqs.filter((f) => f.q.trim().toLowerCase() !== FAQ_PRAZO.q.toLowerCase()),
+];
+
+export const productPages: ProductPageConfig[] = productPagesRaw.map((p) => ({
+  ...p,
+  faqs: ensurePrazoFirst(p.faqs),
+}));
 
 export const productPageBySlug = (slug: string) =>
   productPages.find((p) => p.slug === slug);
