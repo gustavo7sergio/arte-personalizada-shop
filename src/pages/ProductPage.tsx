@@ -17,6 +17,8 @@ import ProductBadges from "@/components/ProductBadges";
 
 import ImageZoom from "@/components/ImageZoom";
 import ProductSuggestions from "@/components/ProductSuggestions";
+import SocialProofSection from "@/components/SocialProofSection";
+
 import ProductVideo from "@/components/ProductVideo";
 import { getRelatedProducts, getComplementaryProducts } from "@/lib/productSuggestions";
 
@@ -464,7 +466,10 @@ const ProductPage = () => {
             </div>
           )}
 
+          <SocialProofSection />
+
           <ProductSuggestions
+
             title="Outros modelos"
             subtitle="Veja outros tamanhos e formatos da mesma categoria"
             items={getRelatedProducts(config.slug, 6)}
