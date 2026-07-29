@@ -374,11 +374,19 @@ const ProductPage = () => {
                   </div>
                   <div className="text-right">
                     <p className="text-2xl font-display font-bold text-primary">{formatCurrency(selected.cash)}</p>
-                    {selected.unitPrice && selected.unitPrice > 0 && (
-                      <p className="text-xs text-muted-foreground font-body">
-                        {formatCurrency(selected.unitPrice)} / uni
-                      </p>
-                    )}
+                    {(() => {
+                      const unit =
+                        selected.unitPrice && selected.unitPrice > 0
+                          ? selected.unitPrice
+                          : selected.qty > 0
+                            ? selected.cash / selected.qty
+                            : 0;
+                      return unit > 0 ? (
+                        <p className="text-xs text-muted-foreground font-body">
+                          {formatCurrency(unit)} / unidade
+                        </p>
+                      ) : null;
+                    })()}
                   </div>
                 </div>
                 <div className="h-px bg-border/60" />
