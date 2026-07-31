@@ -15,13 +15,15 @@ import Footer from "@/components/Footer";
 import ProductImage from "@/components/ProductImage";
 import ProductBadges from "@/components/ProductBadges";
 
-import ImageZoom from "@/components/ImageZoom";
+
 import DeferUntilVisible from "@/components/DeferUntilVisible";
 
 const ProductSuggestions = lazy(() => import("@/components/ProductSuggestions"));
 const SocialProofSection = lazy(() => import("@/components/SocialProofSection"));
+const ImageZoom = lazy(() => import("@/components/ImageZoom"));
+const ProductVideo = lazy(() => import("@/components/ProductVideo"));
 
-import ProductVideo from "@/components/ProductVideo";
+
 import { getRelatedProducts, getComplementaryProducts } from "@/lib/productSuggestions";
 
 const formatCurrency = (value: number) =>
@@ -472,7 +474,9 @@ const ProductPage = () => {
           {/* Vídeo do produto */}
           {config.youtubeVideoId && (
             <div className="mt-10 lg:mt-14">
-              <ProductVideo videoId={config.youtubeVideoId} />
+              <DeferUntilVisible minHeight={360}>
+                <ProductVideo videoId={config.youtubeVideoId} />
+              </DeferUntilVisible>
             </div>
           )}
 
