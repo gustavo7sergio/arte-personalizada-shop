@@ -21,7 +21,7 @@ const banners: Banner[] = [
 // Aspect ratio of the banners (1080x1350 => 4:5). Used to reserve space and avoid CLS.
 const BANNER_ASPECT = "4 / 5";
 
-const BannerCard = ({ banner, className = "" }: { banner: Banner; className?: string }) => {
+const BannerCard = memo(({ banner, className = "" }: { banner: Banner; className?: string }) => {
   const content = (
     <img
       src={banner.src}
@@ -60,7 +60,8 @@ const BannerCard = ({ banner, className = "" }: { banner: Banner; className?: st
       {content}
     </button>
   );
-};
+});
+BannerCard.displayName = "BannerCard";
 
 const PromoBanners = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel(
