@@ -268,7 +268,12 @@ const ProductPage = () => {
                       </>
                     )}
                   </div>
-                  <ImageZoom src={heroImage} alt={heroAlt} open={zoomOpen} onOpenChange={setZoomOpen} />
+                  {zoomOpen && (
+                    <Suspense fallback={null}>
+                      <ImageZoom src={heroImage} alt={heroAlt} open={zoomOpen} onOpenChange={setZoomOpen} />
+                    </Suspense>
+                  )}
+
 
                   {gallery.length > 1 && (
                     <div className="grid grid-cols-4 gap-2">
