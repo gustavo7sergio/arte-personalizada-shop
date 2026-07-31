@@ -134,4 +134,4 @@ const PromoBanners = () => {
   );
 };
 
-export default memo(PromoBanners);
+export default PromoBanners;

@@ -1,4 +1,3 @@
-import { memo } from "react";
 import { Instagram, Mail, Phone, ShoppingBag, Palette, Youtube } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logoWhite from "@/assets/logo-white.png";
@@ -116,4 +115,4 @@ const Footer = () => {
   );
 };
 
-export default memo(Footer);
+export default Footer;
