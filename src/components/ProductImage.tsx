@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState , memo} from "react";
 import { ImageOff } from "lucide-react";
 
 interface ProductImageProps {
@@ -117,5 +117,5 @@ const ProductImage = ({ src, alt, className, width = 1200, height = 1200, priori
   );
 };
 
-export default ProductImage;
+export default memo(ProductImage);
 

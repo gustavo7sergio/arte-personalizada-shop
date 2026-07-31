@@ -1,6 +1,6 @@
 import { useParams, Link, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { useState, useMemo } from "react";
+import { lazy, Suspense, useState, useMemo } from "react";
 import { ArrowLeft, ChevronLeft, ChevronRight, Search, ShoppingCart, Package, Tag, CreditCard, ChevronRight as ChevronRightIcon } from "lucide-react";
 import { products, type Product } from "@/data/products";
 import { productImages } from "@/data/productImages";
@@ -15,11 +15,15 @@ import Footer from "@/components/Footer";
 import ProductImage from "@/components/ProductImage";
 import ProductBadges from "@/components/ProductBadges";
 
-import ImageZoom from "@/components/ImageZoom";
-import ProductSuggestions from "@/components/ProductSuggestions";
-import SocialProofSection from "@/components/SocialProofSection";
 
-import ProductVideo from "@/components/ProductVideo";
+import DeferUntilVisible from "@/components/DeferUntilVisible";
+
+const ProductSuggestions = lazy(() => import("@/components/ProductSuggestions"));
+const SocialProofSection = lazy(() => import("@/components/SocialProofSection"));
+const ImageZoom = lazy(() => import("@/components/ImageZoom"));
+const ProductVideo = lazy(() => import("@/components/ProductVideo"));
+
+
 import { getRelatedProducts, getComplementaryProducts } from "@/lib/productSuggestions";
 
 const formatCurrency = (value: number) =>
@@ -264,7 +268,12 @@ const ProductPage = () => {
                       </>
                     )}
                   </div>
-                  <ImageZoom src={heroImage} alt={heroAlt} open={zoomOpen} onOpenChange={setZoomOpen} />
+                  {zoomOpen && (
+                    <Suspense fallback={null}>
+                      <ImageZoom src={heroImage} alt={heroAlt} open={zoomOpen} onOpenChange={setZoomOpen} />
+                    </Suspense>
+                  )}
+
 
                   {gallery.length > 1 && (
                     <div className="grid grid-cols-4 gap-2">
@@ -470,24 +479,31 @@ const ProductPage = () => {
           {/* Vídeo do produto */}
           {config.youtubeVideoId && (
             <div className="mt-10 lg:mt-14">
-              <ProductVideo videoId={config.youtubeVideoId} />
+              <DeferUntilVisible minHeight={360}>
+                <ProductVideo videoId={config.youtubeVideoId} />
+              </DeferUntilVisible>
             </div>
           )}
 
-          <SocialProofSection />
+          <DeferUntilVisible minHeight={560}>
+            <SocialProofSection />
+          </DeferUntilVisible>
 
-          <ProductSuggestions
+          <DeferUntilVisible minHeight={420}>
+            <ProductSuggestions
+              title="Outros modelos"
+              subtitle="Veja outros tamanhos e formatos da mesma categoria"
+              items={getRelatedProducts(config.slug, 6)}
+            />
+          </DeferUntilVisible>
 
-            title="Outros modelos"
-            subtitle="Veja outros tamanhos e formatos da mesma categoria"
-            items={getRelatedProducts(config.slug, 6)}
-          />
-
-          <ProductSuggestions
-            title="Combine com"
-            subtitle="Produtos que finalizam sua identidade visual"
-            items={getComplementaryProducts(config.slug, 6)}
-          />
+          <DeferUntilVisible minHeight={420}>
+            <ProductSuggestions
+              title="Combine com"
+              subtitle="Produtos que finalizam sua identidade visual"
+              items={getComplementaryProducts(config.slug, 6)}
+            />
+          </DeferUntilVisible>
         </div>
       </div>
 

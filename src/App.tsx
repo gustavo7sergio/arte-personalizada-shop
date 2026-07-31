@@ -1,24 +1,31 @@
-import { Toaster as Sonner } from "@/components/ui/sonner";
+import { lazy, Suspense } from "react";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { CartProvider } from "@/contexts/CartContext";
-import CartDrawer from "@/components/CartDrawer";
 import FloatingCartButton from "@/components/FloatingCartButton";
 import Index from "./pages/Index";
 import ScrollToTop from "@/components/ScrollToTop";
-import CategoryPage from "./pages/CategoryPage";
-import ProductPage from "./pages/ProductPage";
-import CriacaoLogo from "./pages/CriacaoLogo";
-import NotFound from "./pages/NotFound";
+
+// Non-critical / route-level chunks: keep the initial main-thread work small.
+const Sonner = lazy(() => import("@/components/ui/sonner").then((m) => ({ default: m.Toaster })));
+const CartDrawer = lazy(() => import("@/components/CartDrawer"));
+const CategoryPage = lazy(() => import("./pages/CategoryPage"));
+const ProductPage = lazy(() => import("./pages/ProductPage"));
+const CriacaoLogo = lazy(() => import("./pages/CriacaoLogo"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 const App = () => (
   <TooltipProvider>
     <CartProvider>
-      <Sonner />
-      <CartDrawer />
+      <Suspense fallback={null}>
+        <Sonner />
+        <CartDrawer />
+      </Suspense>
       <FloatingCartButton />
       <BrowserRouter>
+
         <ScrollToTop />
+        <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/categoria/:categorySlug" element={<CategoryPage />} />
@@ -46,6 +53,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        </Suspense>
       </BrowserRouter>
     </CartProvider>
   </TooltipProvider>
