@@ -71,7 +71,7 @@ const Hero = () => {
             <Button
               size="lg"
               className="text-base px-10 py-6 rounded-full shadow-soft font-body font-semibold hover:scale-105 transition-transform duration-300"
-              style={{ backgroundColor: "hsl(4, 42%, 70%)", color: "hsl(60, 20%, 97%)" }}
+              style={{ backgroundColor: "hsl(4, 42%, 70%)", color: "hsl(var(--rose-foreground))" }}
             >
               Ver produtos
               <ArrowRight className="ml-2 h-5 w-5" />

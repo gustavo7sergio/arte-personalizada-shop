@@ -83,7 +83,7 @@ const Testimonials = () => {
 
         {/* Mini banner prova social */}
         <div className="mt-16 max-w-3xl mx-auto rounded-2xl border border-border/60 bg-card/80 backdrop-blur-sm p-8 md:p-10 text-center shadow-sm">
-          <span className="inline-block font-display font-bold text-4xl md:text-5xl" style={{ color: "hsl(var(--rose))" }}>
+          <span className="inline-block font-display font-bold text-4xl md:text-5xl" style={{ color: "hsl(var(--rose-deep))" }}>
             +<CountUp target={5} duration={1500} /> anos
           </span>
           <div className="text-muted-foreground font-body mt-6 text-sm md:text-base leading-relaxed space-y-4 text-left max-w-2xl mx-auto">
