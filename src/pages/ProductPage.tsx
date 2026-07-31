@@ -1,6 +1,6 @@
 import { useParams, Link, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { lazy, useState, useMemo } from "react";
+import { lazy, Suspense, useState, useMemo } from "react";
 import { ArrowLeft, ChevronLeft, ChevronRight, Search, ShoppingCart, Package, Tag, CreditCard, ChevronRight as ChevronRightIcon } from "lucide-react";
 import { products, type Product } from "@/data/products";
 import { productImages } from "@/data/productImages";
