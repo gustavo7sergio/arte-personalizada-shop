@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Link } from "react-router-dom";
 import catTagsAcessoriosWebp from "@/assets/cat-tags-acessorios.jpg?format=webp&w=600&quality=70&imagetools";
 import catTagsAcessoriosJpg from "@/assets/cat-tags-acessorios.jpg?w=600&quality=75&imagetools";
@@ -95,4 +96,4 @@ const Categories = () => {
   );
 };
 
-export default Categories;
+export default memo(Categories);

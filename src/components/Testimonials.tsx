@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef , memo} from "react";
 import testimonial1Webp from "@/assets/testimonial-1.jpg?format=webp&w=500&quality=72&imagetools";
 import testimonial1Jpg from "@/assets/testimonial-1.jpg?w=500&quality=75&imagetools";
 import testimonial2Webp from "@/assets/testimonial-2.jpg?format=webp&w=500&quality=72&imagetools";
@@ -103,4 +103,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default memo(Testimonials);

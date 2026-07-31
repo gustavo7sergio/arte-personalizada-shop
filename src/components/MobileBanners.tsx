@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState , memo} from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import banner1 from "@/assets/banners/banner-mobile-1.jpg.asset.json";
@@ -133,4 +133,4 @@ const PromoBanners = () => {
   );
 };
 
-export default PromoBanners;
+export default memo(PromoBanners);

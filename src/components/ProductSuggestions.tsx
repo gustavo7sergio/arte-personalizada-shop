@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef , memo} from "react";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
@@ -123,4 +123,4 @@ const ProductSuggestions = ({ title, subtitle, items }: ProductSuggestionsProps)
   );
 };
 
-export default ProductSuggestions;
+export default memo(ProductSuggestions);
