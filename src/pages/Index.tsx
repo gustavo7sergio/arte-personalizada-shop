@@ -17,6 +17,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
+        <title>GS Cartões — Papelaria Personalizada para Semijoias</title>
+        <meta name="description" content="GS Cartões: tags, cartões, sacolinhas e adesivos personalizados para empreendedoras de semijoias, prata e bijuterias. Envio para todo o Brasil." />
         <link rel="canonical" href="https://www.gscartoes.com/" />
         <meta property="og:url" content="https://www.gscartoes.com/" />
         <meta property="og:title" content="GS Cartões — Papelaria Personalizada para Semijoias" />
