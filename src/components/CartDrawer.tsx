@@ -14,10 +14,10 @@ const CartDrawer = () => {
       const name = item.subtitle
         ? `${item.productName} – ${item.subtitle}`
         : item.productName;
-      return `${i + 1}. ${name}\n   Tamanho: ${item.variantLabel}\n   Quantidade: ${item.qty} uni\n   Valor (PIX): ${formatCurrency(item.cashPrice)}`;
+      return `${i + 1}. ${name}\n   Tamanho: ${item.variantLabel}\n   Quantidade: ${item.qty} uni\n   Valor (6x sem juros): ${formatCurrency(item.installmentPrice)}\n   Valor (PIX): ${formatCurrency(item.cashPrice)}`;
     });
 
-    const msg = `Olá! Gostaria de fazer o seguinte pedido:\n\n${lines.join("\n\n")}\n\n📦 Total (PIX): ${formatCurrency(totalCash)}\n💳 Total (6x): ${formatCurrency(totalInstallment)}\n\nPoderia confirmar a disponibilidade?`;
+    const msg = `Olá! Gostaria de fazer o seguinte pedido:\n\n${lines.join("\n\n")}\n\n💳 Total (6x sem juros): ${formatCurrency(totalInstallment)}\n📦 Total (PIX): ${formatCurrency(totalCash)}\n\nPoderia calcular o frete desse pedido, por favor?`;
 
     window.open(`https://wa.me/553584181096?text=${encodeURIComponent(msg)}`, "_blank");
   };
