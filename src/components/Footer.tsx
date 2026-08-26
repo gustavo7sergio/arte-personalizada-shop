@@ -109,6 +109,9 @@ const Footer = () => {
           <p className="text-primary-foreground/80 text-sm font-body">
             © 2026 GS Cartões. Todos os direitos reservados.
           </p>
+          <p className="text-primary-foreground/60 text-xs font-body mt-2">
+            CNPJ: 41.483.628/0001-72 — GS Mídias e Serviços LTDA
+          </p>
         </div>
       </div>
     </footer>
