@@ -31,7 +31,7 @@ const SocialProofSection = () => {
           O que nossas clientes dizem
         </h2>
         <p className="mt-4 text-muted-foreground font-body text-sm md:text-base max-w-2xl mx-auto">
-          Há mais de 5 anos ajudando empreendedores a fortalecer suas marcas.
+          Há mais de 6 anos ajudando empreendedores a fortalecer suas marcas.
         </p>
         <p className="mt-1 text-muted-foreground font-body text-sm md:text-base">
           ⭐ Mais de 2.000 clientes atendidos em todo o Brasil.
