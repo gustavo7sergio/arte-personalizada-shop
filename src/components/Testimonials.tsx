@@ -88,7 +88,7 @@ const Testimonials = () => {
           </span>
           <div className="text-muted-foreground font-body mt-6 text-sm md:text-base leading-relaxed space-y-4 text-left max-w-2xl mx-auto">
             <p>
-              Há mais de 5 anos atuando no mercado, a <strong className="text-foreground">GS Cartões</strong> é especializada na criação de <strong className="text-foreground">materiais gráficos personalizados</strong> para marcas de <strong className="text-foreground">semijoias, bijuterias e prata</strong>.
+              Há mais de 6 anos atuando no mercado, a <strong className="text-foreground">GS Cartões</strong> é especializada na criação de <strong className="text-foreground">materiais gráficos personalizados</strong> para marcas de <strong className="text-foreground">semijoias, bijuterias e prata</strong>.
             </p>
             <p>
               Ao longo desse tempo, já ajudamos <strong className="text-foreground">milhares de empreendedoras</strong> a profissionalizar a apresentação da marca e <strong className="text-foreground">valorizar seus produtos</strong> através de tags, cartões e embalagens personalizados.
