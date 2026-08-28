@@ -2,21 +2,30 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <!-- LCP hero image: discovered as the first resource in the document head.
+         Media-based preloads avoid relying on imagesrcset and never duplicate the download. -->
+    <link
+      rel="preload"
+      as="image"
+      href="/hero/hero-1536.avif"
+      type="image/avif"
+      fetchpriority="high"
+      media="(min-width: 801px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/hero/hero-800.avif"
+      type="image/avif"
+      fetchpriority="high"
+      media="(max-width: 800px)"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GS Cartões — Papelaria Personalizada para Semijoias</title>
     <meta name="description" content="GS Cartões: tags, cartões, sacolinhas e adesivos personalizados para empreendedoras de semijoias, prata e bijuterias. Envio para todo o Brasil.">
     <meta name="author" content="GS Cartões" />
     <meta name="google-site-verification" content="xq6BWPz3JnnJYkZqJ1beElkp2GZQgcnWzoAsoyW4w3o" />
 
-    <link
-      rel="preload"
-      as="image"
-      href="/hero/hero-800.avif"
-      imagesrcset="/hero/hero-800.avif 800w, /hero/hero-1536.avif 1536w"
-      imagesizes="100vw"
-      type="image/avif"
-      fetchpriority="high"
-    />
 
 
     <meta property="og:type" content="website" />
