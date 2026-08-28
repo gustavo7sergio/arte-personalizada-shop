@@ -1,12 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
-const HERO_AVIF = "/hero/hero-800.avif";
-const HERO_AVIF_LG = "/hero/hero-1536.avif";
-const HERO_WEBP = "/hero/hero-800.webp";
-const HERO_WEBP_LG = "/hero/hero-1536.webp";
-const HERO_JPG = "/hero/hero-800.jpg";
-const HERO_JPG_LG = "/hero/hero-1536.jpg";
+// Single hero URL per format: keeps the <picture> pick identical to the
+// <link rel="preload"> in index.html so the LCP image is requested immediately.
+const HERO_AVIF = "/hero/hero-1536.avif";
+const HERO_WEBP = "/hero/hero-1536.webp";
+const HERO_JPG = "/hero/hero-1536.jpg";
 const LOGO_WHITE = "/logo/logo-white-320.webp";
 
 const Hero = () => {
@@ -15,21 +14,9 @@ const Hero = () => {
       {/* Background image */}
       <div className="absolute inset-0">
         <picture>
-          <source
-            type="image/avif"
-            srcSet={`${HERO_AVIF} 800w, ${HERO_AVIF_LG} 1536w`}
-            sizes="100vw"
-          />
-          <source
-            type="image/webp"
-            srcSet={`${HERO_WEBP} 800w, ${HERO_WEBP_LG} 1536w`}
-            sizes="100vw"
-          />
-          <source
-            type="image/jpeg"
-            srcSet={`${HERO_JPG} 800w, ${HERO_JPG_LG} 1536w`}
-            sizes="100vw"
-          />
+          <source type="image/avif" srcSet={HERO_AVIF} />
+          <source type="image/webp" srcSet={HERO_WEBP} />
+          <source type="image/jpeg" srcSet={HERO_JPG} />
           <img
             src={HERO_JPG}
             alt="Materiais gráficos personalizados GS Cartões"
@@ -41,6 +28,7 @@ const Hero = () => {
             loading="eager"
           />
         </picture>
+
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/65" />
       </div>
 
