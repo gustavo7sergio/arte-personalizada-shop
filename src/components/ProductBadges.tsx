@@ -3,6 +3,11 @@ import { cn } from "@/lib/utils";
 import { getProductBadges, getBadgesForProductIds, type ProductBadgeKey } from "@/data/productBadges";
 
 const BADGE_CONFIG: Record<ProductBadgeKey, { icon: string; label: string; className: string }> = {
+  "new-launch": {
+    icon: "✨",
+    label: "Lançamento",
+    className: "bg-newlaunch text-newlaunch-foreground",
+  },
   "best-seller": {
     icon: "🏆",
     label: "Mais vendido",

@@ -1,6 +1,6 @@
 import { BEST_SELLER_PRODUCT_IDS } from "@/data/bestSellers";
 
-export type ProductBadgeKey = "best-seller" | "best-value";
+export type ProductBadgeKey = "best-seller" | "best-value" | "new-launch";
 
 // Produtos marcados com o selo "💰 Melhor custo-benefício".
 // Lista curada — não adicionar itens sem solicitação explícita.
@@ -22,6 +22,15 @@ export const BEST_VALUE_PRODUCT_IDS = [
   "kit-6000-materiais-g",         // Kit Completo de Tags 2
 ] as const;
 
+// Produtos marcados com o selo "✨ Lançamento".
+export const NEW_LAUNCH_PRODUCT_IDS = [
+  "sacola-acessorios-21x15x7", // Sacola Personalizada 21 × 15 × 7 cm
+  "sacola-acessorios-12x12x6", // Sacola Personalizada 12 × 12 × 6 cm
+  "ecobag-30x30",              // Ecobag Personalizada 30 × 30 cm
+  "embalagem-almofada",        // Embalagem Almofada 8 × 8,5 cm
+] as const;
+
+const NEW_LAUNCH_SET = new Set<string>(NEW_LAUNCH_PRODUCT_IDS);
 const BEST_SELLER_SET = new Set<string>(BEST_SELLER_PRODUCT_IDS);
 const BEST_VALUE_SET = new Set<string>(BEST_VALUE_PRODUCT_IDS);
 
@@ -29,6 +38,7 @@ const BEST_VALUE_SET = new Set<string>(BEST_VALUE_PRODUCT_IDS);
 export const getProductBadges = (productId?: string): ProductBadgeKey[] => {
   if (!productId) return [];
   const badges: ProductBadgeKey[] = [];
+  if (NEW_LAUNCH_SET.has(productId)) badges.push("new-launch");
   if (BEST_SELLER_SET.has(productId)) badges.push("best-seller");
   if (BEST_VALUE_SET.has(productId)) badges.push("best-value");
   return badges;
@@ -37,6 +47,7 @@ export const getProductBadges = (productId?: string): ProductBadgeKey[] => {
 /** Badges agregadas de uma página que agrupa vários produtos. */
 export const getBadgesForProductIds = (productIds: string[] = []): ProductBadgeKey[] => {
   const badges: ProductBadgeKey[] = [];
+  if (productIds.some((id) => NEW_LAUNCH_SET.has(id))) badges.push("new-launch");
   if (productIds.some((id) => BEST_SELLER_SET.has(id))) badges.push("best-seller");
   if (productIds.some((id) => BEST_VALUE_SET.has(id))) badges.push("best-value");
   return badges;

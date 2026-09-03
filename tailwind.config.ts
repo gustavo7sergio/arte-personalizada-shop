@@ -55,6 +55,10 @@ export default {
           DEFAULT: "hsl(var(--bestseller))",
           foreground: "hsl(var(--bestseller-foreground))",
         },
+        newlaunch: {
+          DEFAULT: "hsl(var(--newlaunch))",
+          foreground: "hsl(var(--newlaunch-foreground))",
+        },
         bestvalue: {
           DEFAULT: "hsl(var(--bestvalue))",
           foreground: "hsl(var(--bestvalue-foreground))",
