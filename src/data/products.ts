@@ -195,6 +195,8 @@ export const products: Product[] = [
           { qty: 500,  installment: 3199.00, cash: 2879.10, unitPrice: 5.76 },
           { qty: 1000, installment: 4159.00, cash: 3743.10, unitPrice: 3.74 },
         ],
+      },
+    ],
   },
   {
     id: "embalagem-almofada",
@@ -224,8 +226,6 @@ export const products: Product[] = [
     ],
   },
 
-    ],
-  },
   {
     id: "ecobag-30x30",
     name: "Ecobag Personalizada",
