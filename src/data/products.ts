@@ -195,7 +195,35 @@ export const products: Product[] = [
           { qty: 500,  installment: 3199.00, cash: 2879.10, unitPrice: 5.76 },
           { qty: 1000, installment: 4159.00, cash: 3743.10, unitPrice: 3.74 },
         ],
+  },
+  {
+    id: "embalagem-almofada",
+    name: "Embalagem Almofada",
+    subtitle: "8 × 8,5 cm",
+    category: "Sacolinhas",
+    material: "Papel couchê 300g",
+    specs: [
+      "Papel couchê 300g",
+      "Colorido na parte externa",
+      "Sem enobrecimento",
+      "NÃO trabalhamos com fidelização de cores",
+    ],
+    highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
+    variants: [
+      {
+        label: "8 × 8,5 cm",
+        dimensions: "8 x 8,5 cm",
+        prices: [
+          { qty: 100,  installment: 319.00,  cash: 287.10,  unitPrice: 2.87 },
+          { qty: 250,  installment: 519.00,  cash: 467.10,  unitPrice: 1.87 },
+          { qty: 500,  installment: 979.00,  cash: 881.10,  unitPrice: 1.76 },
+          { qty: 1000, installment: 1079.00, cash: 971.10,  unitPrice: 0.97 },
+          { qty: 2000, installment: 1709.00, cash: 1538.10, unitPrice: 0.77 },
+        ],
       },
+    ],
+  },
+
     ],
   },
   {
