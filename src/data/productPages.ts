@@ -805,6 +805,28 @@ const productPagesRaw: ProductPageConfig[] = [
     faqs: wrapFaqs([{ q: "A ecobag pode ser usada como sacola de presente?", a: "Sim. Por ser reutilizável e ter visual elegante, é muito usada como sacola de presente e ação de fidelização." }]),
   },
   {
+    slug: "embalagem-almofada-personalizada-8x8-5-cm",
+    productIds: ["embalagem-almofada"],
+    displayName: "Embalagem Almofada Personalizada 8x8,5 cm",
+    categorySlug: "sacolinhas-personalizadas-para-semijoias",
+    categoryLabel: "Sacolinhas",
+    seoTitle: "Embalagem Almofada Personalizada 8x8,5 cm | GS Cartões",
+    seoDescription: "Embalagem almofada personalizada 8x8,5 cm em papel couchê 300g, colorida na parte externa. Apresentação sofisticada para semijoias e acessórios.",
+    longDescription: [
+      "A Embalagem Almofada Personalizada 8x8,5 cm é uma opção prática e elegante para entregar brincos, anéis, pulseiras e outros acessórios com a identidade visual da sua marca.",
+      "Produzida em papel couchê 300g, com impressão colorida na parte externa, ela tem formato compacto e montagem simples, ocupando pouco espaço no estoque e valorizando a experiência de unboxing.",
+      "A arte é 100% personalizada: você pode incluir logo, cores, padronagem, redes sociais, QR Code e demais informações da sua marca.",
+      "Não trabalhamos com fidelização de cores, portanto pequenas variações de tonalidade entre lotes são normais no processo de impressão.",
+    ],
+    faqs: wrapFaqs([
+      { q: "Quais produtos cabem nessa embalagem?", a: "Ela é indicada para brincos, anéis, pulseiras e acessórios de pequeno volume. Se tiver dúvidas sobre a capacidade, nossa equipe ajuda você a escolher o modelo ideal." },
+      { q: "Qual o material da embalagem almofada?", a: "É produzida em papel couchê 300g, com impressão colorida na parte externa e sem enobrecimento." },
+      { q: "A embalagem vem montada?", a: "Ela é entregue plana e a montagem é feita de forma simples, dobrando as abas laterais no momento da embalagem do pedido." },
+      { q: "Posso personalizar toda a embalagem?", a: "Sim. A arte é totalmente personalizada com logo, cores, fontes, padronagem, redes sociais e QR Code da sua marca." },
+    ]),
+  },
+
+  {
 
     slug: "sacola-plastica-personalizada-alca-vazada",
     productIds: ["sacola-plastica"],
