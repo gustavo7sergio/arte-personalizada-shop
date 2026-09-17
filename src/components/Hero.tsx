@@ -63,7 +63,7 @@ const Hero = () => {
       <div className="relative z-10 flex w-full flex-col items-start bg-background px-6 py-7 text-left sm:px-8 sm:py-8 md:absolute md:left-[6%] md:top-1/2 md:w-[41%] md:max-w-[660px] md:-translate-y-1/2 md:bg-transparent md:px-0 md:py-0 lg:left-[8%]">
         <h1 className="text-3xl leading-tight sm:text-4xl md:text-4xl md:leading-[1.08] lg:text-5xl xl:text-6xl font-display font-bold text-primary">
           Tags, cartões, sacolinhas{" "}
-          <span className="text-rose-deep md:italic">e muito mais</span>{" "}
+          <span className="text-rose-deep">e muito mais</span>{" "}
           com a sua marca
         </h1>
 
