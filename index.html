@@ -2,13 +2,21 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <!-- LCP hero image: first resource in the document head, single URL for every
-         viewport so the preload always matches the <picture> pick (no duplicate download). -->
+    <!-- Responsive LCP hero preloads mirror the <picture> media query. -->
     <link
       rel="preload"
       as="image"
-      href="/hero/hero-1536.avif"
-      type="image/avif"
+      href="/__l5e/assets-v1/c659db1f-116a-4da3-8637-0ac21d738c65/hero-ge-desktop.jpg"
+      type="image/jpeg"
+      media="(min-width: 768px)"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/__l5e/assets-v1/dd921584-787a-4251-8641-3fb54410441a/hero-ge-mobile.jpg"
+      type="image/jpeg"
+      media="(max-width: 767px)"
       fetchpriority="high"
     />
 
