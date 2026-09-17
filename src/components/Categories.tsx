@@ -33,7 +33,7 @@ const Categories = () => {
   const { ref, visible } = useScrollReveal();
 
   return (
-    <section id="produtos" className="py-10 md:py-14 bg-background">
+    <section id="produtos" className="pb-10 pt-5 md:py-14 bg-background">
       <div className="container mx-auto px-6" ref={ref}>
         <div className={`text-center mb-8 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mt-3">

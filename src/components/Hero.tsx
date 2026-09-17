@@ -63,7 +63,7 @@ const Hero = () => {
       <div className="relative z-10 flex w-full flex-col items-start bg-background px-6 py-7 text-left sm:px-8 sm:py-8 md:absolute md:left-[6%] md:top-1/2 md:w-[41%] md:max-w-[660px] md:-translate-y-1/2 md:bg-transparent md:px-0 md:py-0 lg:left-[8%]">
         <h1 className="text-3xl leading-tight sm:text-4xl md:text-4xl md:leading-[1.08] lg:text-5xl xl:text-6xl font-display font-bold text-primary">
           Tags, cartões, sacolinhas{" "}
-          <span className="italic text-rose-deep">e muito mais</span>{" "}
+          <span className="text-rose-deep md:italic">e muito mais</span>{" "}
           com a sua marca
         </h1>
 
@@ -75,7 +75,7 @@ const Hero = () => {
       </div>
 
       {/* Banner image */}
-      <div className="relative aspect-[960/1710] w-full overflow-hidden md:absolute md:inset-0 md:h-full md:aspect-auto">
+      <div className="relative aspect-[960/1520] w-full overflow-hidden md:absolute md:inset-0 md:h-full md:aspect-auto">
         <picture className="block w-full md:h-full">
           <source media="(min-width: 768px)" srcSet={HERO_DESKTOP} />
           <img
@@ -83,7 +83,7 @@ const Hero = () => {
             alt={HERO_ALT}
             width={960}
             height={1920}
-            className="block h-auto w-full md:h-full md:object-contain"
+            className="block h-auto w-full -translate-y-[9%] md:h-full md:translate-y-0 md:object-contain"
             fetchPriority="high"
             decoding="async"
             loading="eager"
