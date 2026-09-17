@@ -58,7 +58,7 @@ const Testimonials = () => {
             O que nossos clientes dizem
           </h2>
           <p className="text-muted-foreground mt-4 max-w-xl mx-auto font-body text-lg">
-            Feedbacks reais de quem confia na GS Cartões para elevar a apresentação da sua marca.
+            Experiências reais de quem já fez seu pedido com a GS Cartões.
           </p>
         </div>
 
@@ -83,18 +83,21 @@ const Testimonials = () => {
 
         {/* Mini banner prova social */}
         <div className="mt-16 max-w-3xl mx-auto rounded-2xl border border-border/60 bg-card/80 backdrop-blur-sm p-8 md:p-10 text-center shadow-sm">
-          <span className="inline-block font-display font-bold text-4xl md:text-5xl" style={{ color: "hsl(var(--rose-deep))" }}>
-            +<CountUp target={6} duration={1500} /> anos
-          </span>
+          <h2 className="inline-block font-display font-bold text-4xl md:text-5xl" style={{ color: "hsl(var(--rose-deep))" }}>
+            Especialistas em materiais para semijoias desde 2020
+          </h2>
           <div className="text-muted-foreground font-body mt-6 text-sm md:text-base leading-relaxed space-y-4 text-left max-w-2xl mx-auto">
             <p>
-              Há mais de 6 anos atuando no mercado, a <strong className="text-foreground">GS Cartões</strong> é especializada na criação de <strong className="text-foreground">materiais gráficos personalizados</strong> para marcas de <strong className="text-foreground">semijoias, bijuterias e prata</strong>.
+              A GS Cartões cria tags para semijoias, cartões personalizados, sacolinhas, embalagens e outros materiais gráficos para marcas de semijoias, prata 925 e bijuterias desde 2020.
             </p>
             <p>
-              Ao longo desse tempo, já ajudamos <strong className="text-foreground">milhares de empreendedoras</strong> a profissionalizar a apresentação da marca e <strong className="text-foreground">valorizar seus produtos</strong> através de tags, cartões e embalagens personalizados.
+              São diferentes modelos, medidas, formatos e possibilidades de personalização para você escolher de acordo com as peças que vende e com o que precisa no momento.
             </p>
             <p>
-              Sempre com um <strong className="text-foreground">processo simples</strong>, <strong className="text-foreground">atendimento humano</strong> e <strong className="text-foreground">agilidade</strong> na criação das artes e produção dos materiais.
+              E se surgir dúvida sobre tamanho, papel, acabamento, furos, cortes ou quantidade, a gente te ajuda a entender as opções antes de fazer o pedido.
+            </p>
+            <p>
+              Tudo com atendimento humano, criação personalizada e acompanhamento desde a escolha até a produção dos materiais.
             </p>
           </div>
         </div>

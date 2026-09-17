@@ -47,7 +47,7 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <img src={logoWhite} alt="GS Cartões" width={200} height={80} className="h-20 w-auto mb-4 mx-auto md:mx-0" loading="lazy" decoding="async" />
             <p className="text-primary-foreground/90 font-body text-sm leading-relaxed">
-              Materiais gráficos personalizados que elevam o valor percebido da sua marca de semijoias.
+              Tags, cartões e embalagens personalizadas para marcas de semijoias. Atendemos todo o Brasil.
             </p>
           </div>
 
