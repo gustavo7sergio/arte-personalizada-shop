@@ -1,5 +1,6 @@
 import { ShoppingCart, MessageCircle, Palette, Truck, PenTool, Package } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import MascotImage from "@/components/MascotImage";
 
 const steps = [
   {
@@ -40,13 +41,16 @@ const HowItWorks = () => {
   return (
     <section className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-6" ref={ref}>
-        <div className={`text-center mb-8 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-          <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">
-            Como funciona a compra
-          </h2>
-          <p className="text-muted-foreground font-body mt-4 max-w-2xl mx-auto text-lg">
-            Escolha seus materiais pelo site e envie o pedido para a gente pelo WhatsApp. A partir daí, conferimos os detalhes com você antes da criação e da produção.
-          </p>
+        <div className={`mx-auto mb-8 flex max-w-4xl flex-col items-center justify-center gap-2 transition-all duration-700 md:flex-row md:gap-8 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+          <div className="text-center md:max-w-2xl md:text-left">
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">
+              Como funciona a compra
+            </h2>
+            <p className="text-muted-foreground font-body mt-4 text-lg">
+              Escolha seus materiais pelo site e envie o pedido para a gente pelo WhatsApp. A partir daí, conferimos os detalhes com você antes da criação e da produção.
+            </p>
+          </div>
+          <MascotImage pose="checklist" className="w-28 shrink-0 md:w-44" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">

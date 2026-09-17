@@ -14,6 +14,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProductImage from "@/components/ProductImage";
 import ProductBadges from "@/components/ProductBadges";
+import MascotImage from "@/components/MascotImage";
 
 
 import DeferUntilVisible from "@/components/DeferUntilVisible";
@@ -430,17 +431,22 @@ const ProductPage = () => {
               {/* Especificações */}
               <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="rounded-xl border border-border bg-card/50 p-4">
-                  <p className="text-xs font-body font-semibold text-foreground mb-2 uppercase tracking-wider">Informações técnicas</p>
-                  <ul className="space-y-1">
-                    {specs.map((s, i) => (
-                      <li key={i} className="text-xs font-body text-muted-foreground flex gap-1.5">
-                        <span className="text-primary mt-0.5">•</span>{s.replace(/×/g, "x")}
-                      </li>
-                    ))}
-                    <li className="text-xs font-body text-muted-foreground flex gap-1.5">
-                      <span className="text-primary mt-0.5">•</span>Prazo de produção: 5 a 6 dias úteis após aprovação da arte
-                    </li>
-                  </ul>
+                  <div className="flex items-end gap-2">
+                    <div className="min-w-0 flex-1">
+                      <p className="text-xs font-body font-semibold text-foreground mb-2 uppercase tracking-wider">Informações técnicas</p>
+                      <ul className="space-y-1">
+                        {specs.map((s, i) => (
+                          <li key={i} className="text-xs font-body text-muted-foreground flex gap-1.5">
+                            <span className="text-primary mt-0.5">•</span>{s.replace(/×/g, "x")}
+                          </li>
+                        ))}
+                        <li className="text-xs font-body text-muted-foreground flex gap-1.5">
+                          <span className="text-primary mt-0.5">•</span>Prazo de produção: 5 a 6 dias úteis após aprovação da arte
+                        </li>
+                      </ul>
+                    </div>
+                    <MascotImage pose="caminhao" className="w-20 shrink-0 sm:w-24" />
+                  </div>
                 </div>
                 {additionals && additionals.length > 0 && (
                   <div className="rounded-xl border border-border bg-card/50 p-4">
