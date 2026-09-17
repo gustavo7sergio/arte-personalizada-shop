@@ -10,52 +10,35 @@ const HERO_ALT = "Gê, mascote da GS Cartões, com tags, cartões e embalagens p
 
 const Hero = () => {
   return (
-    <section className="relative mt-[162px] aspect-[1/2] w-full overflow-hidden md:mt-[158px] md:aspect-[2/1]">
-      {/* Background image */}
-      <div className="absolute inset-0">
-        <picture className="block h-full w-full">
-          <source media="(min-width: 768px)" srcSet={HERO_DESKTOP} />
-          <img
-            src={HERO_MOBILE}
-            alt={HERO_ALT}
-            width={960}
-            height={1920}
-            className="h-full w-full object-contain"
-            fetchPriority="high"
-            decoding="async"
-            loading="eager"
-          />
-        </picture>
-      </div>
-
+    <section className="relative w-full overflow-hidden pt-[162px] md:mt-[158px] md:aspect-[2/1] md:pt-0">
       {/* Content */}
-      <div className="absolute left-4 top-[2%] flex w-[52%] max-w-[230px] flex-col items-start text-left sm:left-8 sm:max-w-[270px] md:left-[6%] md:top-1/2 md:w-[41%] md:max-w-[660px] md:-translate-y-1/2 lg:left-[8%]">
-        <h1 className="text-[1.45rem] leading-[1.08] sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold text-primary">
+      <div className="relative z-10 flex w-full flex-col items-start bg-background px-6 py-8 text-left sm:px-8 sm:py-10 md:absolute md:left-[6%] md:top-1/2 md:w-[41%] md:max-w-[660px] md:-translate-y-1/2 md:bg-transparent md:px-0 md:py-0 lg:left-[8%]">
+        <h1 className="text-3xl leading-tight sm:text-4xl md:text-4xl md:leading-[1.08] lg:text-5xl xl:text-6xl font-display font-bold text-primary">
           Tags, cartões, sacolinhas{" "}
           <span className="italic text-rose-deep">e muito mais</span>{" "}
           com a sua marca
         </h1>
 
-        <p className="mt-2 text-xs font-body font-medium text-foreground/80 sm:text-sm md:mt-4 md:text-base lg:text-xl">
+        <p className="mt-3 text-base font-body font-medium text-foreground/80 md:mt-4 md:text-base lg:text-xl">
           Tudo 100% personalizado do seu jeito!
         </p>
 
-        <div className="mt-3 flex flex-col items-start gap-2 sm:mt-4 md:mt-7 md:flex-row md:items-center md:gap-3">
-          <a href="#produtos">
+        <div className="mt-6 flex w-full flex-col items-stretch gap-3 md:mt-7 md:w-auto md:flex-row md:items-center md:gap-3">
+          <a href="#produtos" className="w-full md:w-auto">
             <Button
               size="lg"
-              className="h-9 rounded-full px-4 text-xs shadow-soft font-body font-semibold hover:scale-105 transition-transform duration-300 sm:h-10 sm:px-5 sm:text-sm md:h-auto md:px-8 md:py-5 md:text-base"
+              className="h-12 w-full rounded-full px-6 text-sm shadow-soft font-body font-semibold hover:scale-105 transition-transform duration-300 md:h-auto md:w-auto md:px-8 md:py-5 md:text-base"
               style={{ backgroundColor: "hsl(4, 42%, 70%)", color: "hsl(var(--rose-foreground))" }}
             >
               Ver produtos
               <ArrowRight className="ml-1.5 h-4 w-4 md:h-5 md:w-5" />
             </Button>
           </a>
-          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="w-full md:w-auto">
             <Button
               size="lg"
               variant="outline"
-              className="h-9 rounded-full border-primary bg-background/90 px-4 text-xs font-body font-semibold text-primary hover:bg-background hover:text-primary sm:h-10 sm:px-5 sm:text-sm md:h-auto md:px-8 md:py-5 md:text-base"
+              className="h-12 w-full rounded-full border-primary bg-background/90 px-6 text-sm font-body font-semibold text-primary hover:bg-background hover:text-primary md:h-auto md:w-auto md:px-8 md:py-5 md:text-base"
             >
               Fale conosco
               <MessageCircle className="ml-1.5 h-4 w-4 md:h-5 md:w-5" />
@@ -63,6 +46,21 @@ const Hero = () => {
           </a>
         </div>
       </div>
+
+      {/* Banner image */}
+      <picture className="block w-full md:absolute md:inset-0 md:h-full">
+        <source media="(min-width: 768px)" srcSet={HERO_DESKTOP} />
+        <img
+          src={HERO_MOBILE}
+          alt={HERO_ALT}
+          width={960}
+          height={1920}
+          className="block h-auto w-full md:h-full md:object-contain"
+          fetchPriority="high"
+          decoding="async"
+          loading="eager"
+        />
+      </picture>
     </section>
   );
 };
