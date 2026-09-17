@@ -1,73 +1,66 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
+import heroDesktopAsset from "@/assets/hero/hero-ge-desktop.jpg.asset.json";
+import heroMobileAsset from "@/assets/hero/hero-ge-mobile.jpg.asset.json";
 
-// Single hero URL per format: keeps the <picture> pick identical to the
-// <link rel="preload"> in index.html so the LCP image is requested immediately.
-const HERO_AVIF = "/hero/hero-1536.avif";
-const HERO_WEBP = "/hero/hero-1536.webp";
-const HERO_JPG = "/hero/hero-1536.jpg";
-const LOGO_WHITE = "/logo/logo-white-320.webp";
+const HERO_DESKTOP = heroDesktopAsset.url;
+const HERO_MOBILE = heroMobileAsset.url;
+const WHATSAPP_URL = "https://wa.me/553584181096?text=Oi%2C%20Gostaria%20de%20fazer%20um%20or%C3%A7amento!";
+const HERO_ALT = "Gê, mascote da GS Cartões, com tags, cartões e embalagens personalizadas para semijoias";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+    <section className="relative aspect-[1/2] w-full overflow-hidden md:aspect-[2/1]">
       {/* Background image */}
       <div className="absolute inset-0">
-        <picture>
-          <source type="image/avif" srcSet={HERO_AVIF} />
-          <source type="image/webp" srcSet={HERO_WEBP} />
-          <source type="image/jpeg" srcSet={HERO_JPG} />
+        <picture className="block h-full w-full">
+          <source media="(min-width: 768px)" srcSet={HERO_DESKTOP} />
           <img
-            src={HERO_JPG}
-            alt="Materiais gráficos personalizados GS Cartões"
-            width={1536}
-            height={1024}
-            className="w-full h-full object-cover"
+            src={HERO_MOBILE}
+            alt={HERO_ALT}
+            width={960}
+            height={1920}
+            className="h-full w-full object-contain"
             fetchPriority="high"
             decoding="async"
             loading="eager"
           />
         </picture>
-
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/65" />
       </div>
 
       {/* Content */}
-      <div className="relative container mx-auto px-6 py-12 md:py-16 flex flex-col items-center text-center">
-        <img
-          src={LOGO_WHITE}
-          alt="GS Cartões"
-          width={320}
-          height={320}
-          loading="eager"
-          decoding="async"
-          className="h-32 md:h-44 w-auto mb-0 mt-16 md:mt-8"
-          style={{ opacity: 0.9 }}
-        />
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground leading-tight max-w-3xl">
+      <div className="absolute left-4 top-[17%] flex w-[52%] max-w-[230px] flex-col items-start text-left sm:left-8 sm:max-w-[270px] md:left-[6%] md:top-1/2 md:w-[41%] md:max-w-[660px] md:-translate-y-1/2 lg:left-[8%]">
+        <h1 className="text-[1.45rem] leading-[1.08] sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold text-primary">
           Tags, cartões, sacolinhas{" "}
-          <span className="italic" style={{ color: "hsl(4, 42%, 70%)" }}>e muito mais</span>{" "}
+          <span className="italic text-rose-deep">e muito mais</span>{" "}
           com a sua marca
         </h1>
 
-        <p className="text-lg md:text-xl text-primary-foreground/80 font-body mt-4">
+        <p className="mt-2 text-xs font-body font-medium text-foreground/80 sm:text-sm md:mt-4 md:text-base lg:text-xl">
           Tudo 100% personalizado do seu jeito!
         </p>
 
-        <div className="mt-8">
+        <div className="mt-3 flex flex-col items-start gap-2 sm:mt-4 md:mt-7 md:flex-row md:items-center md:gap-3">
           <a href="#produtos">
             <Button
               size="lg"
-              className="text-base px-10 py-6 rounded-full shadow-soft font-body font-semibold hover:scale-105 transition-transform duration-300"
+              className="h-9 rounded-full px-4 text-xs shadow-soft font-body font-semibold hover:scale-105 transition-transform duration-300 sm:h-10 sm:px-5 sm:text-sm md:h-auto md:px-8 md:py-5 md:text-base"
               style={{ backgroundColor: "hsl(4, 42%, 70%)", color: "hsl(var(--rose-foreground))" }}
             >
               Ver produtos
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <ArrowRight className="ml-1.5 h-4 w-4 md:h-5 md:w-5" />
             </Button>
           </a>
-          <p className="mt-4 text-sm font-body text-primary-foreground/80">
-            📦 Receba de qualquer lugar do Brasil
-          </p>
+          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+            <Button
+              size="lg"
+              variant="outline"
+              className="h-9 rounded-full border-primary bg-background/90 px-4 text-xs font-body font-semibold text-primary hover:bg-background hover:text-primary sm:h-10 sm:px-5 sm:text-sm md:h-auto md:px-8 md:py-5 md:text-base"
+            >
+              Fale conosco
+              <MessageCircle className="ml-1.5 h-4 w-4 md:h-5 md:w-5" />
+            </Button>
+          </a>
         </div>
       </div>
     </section>
