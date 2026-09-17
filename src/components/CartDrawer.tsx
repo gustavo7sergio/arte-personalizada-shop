@@ -2,6 +2,7 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sh
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/contexts/CartContext";
 import { ShoppingCart, Trash2, MessageCircle, X } from "lucide-react";
+import MascotImage from "@/components/MascotImage";
 
 const formatCurrency = (value: number) =>
   value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -34,7 +35,7 @@ const CartDrawer = () => {
 
         {items.length === 0 ? (
           <div className="flex-1 flex flex-col items-center justify-center text-center gap-3 py-12">
-            <ShoppingCart className="h-12 w-12 text-muted-foreground/30" />
+            <MascotImage pose="pensativo" className="w-32" />
             <p className="text-muted-foreground font-body text-sm">Seu carrinho está vazio</p>
             <p className="text-muted-foreground font-body text-xs">Adicione produtos para montar seu pedido</p>
           </div>
@@ -85,15 +86,18 @@ const CartDrawer = () => {
             </div>
 
             <div className="border-t border-border pt-4 space-y-3">
-              <div className="space-y-1">
-                <div className="flex justify-between items-center">
-                  <span className="text-sm font-body text-muted-foreground">Total (PIX)</span>
-                  <span className="text-lg font-display font-bold text-primary">{formatCurrency(totalCash)}</span>
+              <div className="flex items-end gap-3">
+                <div className="min-w-0 flex-1 space-y-1">
+                  <div className="flex justify-between items-center gap-2">
+                    <span className="text-sm font-body text-muted-foreground">Total (PIX)</span>
+                    <span className="text-lg font-display font-bold text-primary">{formatCurrency(totalCash)}</span>
+                  </div>
+                  <div className="flex justify-between items-center gap-2">
+                    <span className="text-xs font-body text-muted-foreground">Total (6x sem juros)</span>
+                    <span className="text-sm font-body font-semibold text-foreground">{formatCurrency(totalInstallment)}</span>
+                  </div>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-xs font-body text-muted-foreground">Total (6x sem juros)</span>
-                  <span className="text-sm font-body font-semibold text-foreground">{formatCurrency(totalInstallment)}</span>
-                </div>
+                <MascotImage pose="notebook" className="w-20 shrink-0 sm:w-24" />
               </div>
 
               <Button

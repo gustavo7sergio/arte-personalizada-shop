@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
+import MascotImage from "@/components/MascotImage";
 
 const NotFound = () => {
   const location = useLocation();
@@ -20,6 +21,7 @@ const NotFound = () => {
         <meta name="robots" content="noindex, follow" />
       </Helmet>
       <div className="text-center">
+        <MascotImage pose="pensativo" className="mx-auto mb-3 w-32 md:w-44" />
         <h1 className="mb-4 text-4xl font-bold">404</h1>
         <p className="mb-4 text-xl text-muted-foreground">Oops! Página não encontrada</p>
         <a href="/" className="text-primary underline hover:text-primary/90">

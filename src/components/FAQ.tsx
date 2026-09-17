@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import MascotImage from "@/components/MascotImage";
 
 const faqs = [
   {
@@ -47,13 +48,16 @@ const FAQ = () => {
   return (
     <section className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-6" ref={ref}>
-        <div className={`text-center mb-8 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-          <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">
-            Tira dúvidas
-          </h2>
-          <p className="text-muted-foreground font-body mt-4 max-w-2xl mx-auto text-lg">
-            Ficou com alguma dúvida antes de pedir? Reunimos aqui as respostas para as perguntas mais frequentes.
-          </p>
+        <div className={`mx-auto mb-8 flex max-w-4xl items-center justify-center gap-2 transition-all duration-700 md:gap-8 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+          <div className="min-w-0 text-left md:max-w-2xl md:text-center">
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">
+              Tira dúvidas
+            </h2>
+            <p className="text-muted-foreground font-body mt-4 text-base md:text-lg">
+              Ficou com alguma dúvida antes de pedir? Reunimos aqui as respostas para as perguntas mais frequentes.
+            </p>
+          </div>
+          <MascotImage pose="lupa" className="w-24 shrink-0 md:w-40" />
         </div>
 
         <div className="max-w-3xl mx-auto">
