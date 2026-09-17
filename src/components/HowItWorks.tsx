@@ -5,32 +5,32 @@ const steps = [
   {
     icon: ShoppingCart,
     title: "1. Escolha os produtos",
-    description: "Navegue pelo nosso catálogo e adicione os produtos na quantidade que deseja ao carrinho. Todos os materiais são personalizados com sua marca.",
+    description: "Navegue pelo catálogo, escolha o modelo e a quantidade e adicione os produtos ao carrinho. Em cada página você encontra as principais informações daquela opção.",
   },
   {
     icon: MessageCircle,
     title: "2. Envie pelo WhatsApp",
-    description: "Envie seu pedido pelo WhatsApp para terminarmos de concluir o seu pedido. Nosso time está pronto para ajudar com dúvidas e personalização.",
+    description: "Envie seu carrinho pelo WhatsApp para confirmarmos os itens, tirar dúvidas e seguir com o pedido.",
   },
   {
     icon: Palette,
     title: "3. Acabamentos e detalhes",
-    description: "Discuta opções de acabamento como couchê 300g, papel fosco, verniz localizado e outros detalhes especiais.",
+    description: "Se o produto tiver opções de papel, acabamento, furos, cortes ou outras alterações, a gente apresenta as possibilidades disponíveis para aquele modelo.",
   },
   {
     icon: Truck,
-    title: "4. Cálculo de frete",
-    description: "Calculamos o frete para sua localização e fechamos o pedido com o valor total e forma de pagamento.",
+    title: "4. Frete e pagamento",
+    description: "Calculamos o frete para o seu CEP e confirmamos o valor total e as formas de pagamento antes de fechar o pedido.",
   },
   {
     icon: PenTool,
     title: "5. Criação e aprovação",
-    description: "Criamos as artes do seu pedido 100% personalizados e enviamos para sua aprovação antes de iniciar a produção. Colocamos sua logo, cores e informações que desejar.",
+    description: "Aplicamos sua logo, cores, textos e informações no material escolhido. Você recebe a arte para conferir e aprovar antes da produção. A arte é personalizada de acordo com a identidade e as preferências da sua marca.",
   },
   {
     icon: Package,
-    title: "6. Produção e entrega",
-    description: "Produzimos seu pedido em 5 a 6 dias úteis e realizamos a entrega dentro do prazo combinado.",
+    title: "6. Produção e envio",
+    description: "Depois da aprovação, seu pedido entra em produção. O prazo de produção é, em média, de 5 a 6 dias úteis. Após o envio, o prazo de transporte varia conforme o CEP.",
   },
 ];
 
@@ -45,7 +45,7 @@ const HowItWorks = () => {
             Como funciona a compra
           </h2>
           <p className="text-muted-foreground font-body mt-4 max-w-2xl mx-auto text-lg">
-            Nosso processo é simples e transparente. Desde a escolha dos produtos até a entrega, acompanhamos cada etapa para garantir sua satisfação.
+            Escolha seus materiais pelo site e envie o pedido para a gente pelo WhatsApp. A partir daí, conferimos os detalhes com você antes da criação e da produção.
           </p>
         </div>
 

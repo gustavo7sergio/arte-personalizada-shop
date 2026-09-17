@@ -52,7 +52,7 @@ const FAQ = () => {
             Tira dúvidas
           </h2>
           <p className="text-muted-foreground font-body mt-4 max-w-2xl mx-auto text-lg">
-            Confira as respostas para as perguntas mais frequentes dos nossos clientes.
+            Ficou com alguma dúvida antes de pedir? Reunimos aqui as respostas para as perguntas mais frequentes.
           </p>
         </div>
 

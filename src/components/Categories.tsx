@@ -37,10 +37,10 @@ const Categories = () => {
       <div className="container mx-auto px-6" ref={ref}>
         <div className={`text-center mb-8 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mt-3">
-            Escolha a categoria do seu <span style={{ color: "hsl(var(--rose))" }}>produto personalizado</span>
+            Encontre o material que você procura
           </h2>
           <p className="text-muted-foreground mt-4 max-w-md mx-auto font-body">
-            Clique na categoria e veja todos os modelos disponíveis com tabela de preços completa.
+            Veja os modelos disponíveis, medidas, quantidades e preços de cada opção.
           </p>
         </div>
 
