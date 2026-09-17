@@ -10,7 +10,7 @@ const HERO_ALT = "Gê, mascote da GS Cartões, com tags, cartões e embalagens p
 
 const Hero = () => {
   return (
-    <section className="relative aspect-[1/2] w-full overflow-hidden md:aspect-[2/1]">
+    <section className="relative mt-[162px] aspect-[1/2] w-full overflow-hidden md:mt-[158px] md:aspect-[2/1]">
       {/* Background image */}
       <div className="absolute inset-0">
         <picture className="block h-full w-full">
@@ -29,7 +29,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="absolute left-4 top-[17%] flex w-[52%] max-w-[230px] flex-col items-start text-left sm:left-8 sm:max-w-[270px] md:left-[6%] md:top-1/2 md:w-[41%] md:max-w-[660px] md:-translate-y-1/2 lg:left-[8%]">
+      <div className="absolute left-4 top-[2%] flex w-[52%] max-w-[230px] flex-col items-start text-left sm:left-8 sm:max-w-[270px] md:left-[6%] md:top-1/2 md:w-[41%] md:max-w-[660px] md:-translate-y-1/2 lg:left-[8%]">
         <h1 className="text-[1.45rem] leading-[1.08] sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold text-primary">
           Tags, cartões, sacolinhas{" "}
           <span className="italic text-rose-deep">e muito mais</span>{" "}
