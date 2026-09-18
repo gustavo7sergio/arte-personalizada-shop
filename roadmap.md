@@ -5,4 +5,4 @@
 - [x] Aplicar notebook e pensativo no carrinho
 - [x] Aplicar pensativo na página 404
 - [x] Aplicar caminhão no bloco de prazo dos produtos
-- [ ] Validar compilação e telas responsivas
+- [x] Validar compilação e telas responsivas
