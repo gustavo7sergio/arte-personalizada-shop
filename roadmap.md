@@ -1,8 +1,6 @@
-# Mascote Gê
+# Ajustes da Home
 
-- [x] Armazenar as cinco poses originais em WebP
-- [x] Aplicar checklist e lupa na Home
-- [x] Aplicar notebook e pensativo no carrinho
-- [x] Aplicar pensativo na página 404
-- [x] Aplicar caminhão no bloco de prazo dos produtos
-- [x] Validar compilação e telas responsivas
+- [ ] Remover a seção dos três banners promocionais da renderização
+- [ ] Alinhar à esquerda os textos e contatos do rodapé no mobile
+- [ ] Preservar o rodapé desktop e validar links, ícones e espaçamentos
+- [ ] Validar Home em mobile, tablet e desktop
