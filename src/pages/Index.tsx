@@ -1,4 +1,3 @@
-import { lazy } from "react";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -9,9 +8,6 @@ import Testimonials from "@/components/Testimonials";
 import About from "@/components/About";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
-import DeferUntilVisible from "@/components/DeferUntilVisible";
-
-const MobileBanners = lazy(() => import("@/components/MobileBanners"));
 
 const Index = () => {
   return (
@@ -27,9 +23,6 @@ const Index = () => {
       <Navbar />
       <Hero />
       <Categories />
-      <DeferUntilVisible minHeight={520}>
-        <MobileBanners />
-      </DeferUntilVisible>
       <HowItWorks />
       <Testimonials />
       <div id="sobre">
