@@ -1,13 +1,14 @@
 import { Helmet } from "react-helmet-async";
+import { lazy, Suspense } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Categories from "@/components/Categories";
 
-import HowItWorks from "@/components/HowItWorks";
-import Testimonials from "@/components/Testimonials";
-import About from "@/components/About";
-import FAQ from "@/components/FAQ";
-import Footer from "@/components/Footer";
+const HowItWorks = lazy(() => import("@/components/HowItWorks"));
+const Testimonials = lazy(() => import("@/components/Testimonials"));
+const About = lazy(() => import("@/components/About"));
+const FAQ = lazy(() => import("@/components/FAQ"));
+const Footer = lazy(() => import("@/components/Footer"));
 
 const Index = () => {
   return (
@@ -23,15 +24,17 @@ const Index = () => {
       <Navbar />
       <Hero />
       <Categories />
-      <HowItWorks />
-      <Testimonials />
-      <div id="sobre">
-        <About />
-      </div>
-      <div id="contato">
-        <FAQ />
-      </div>
-      <Footer />
+      <Suspense fallback={<div className="h-20" />}>
+        <HowItWorks />
+        <Testimonials />
+        <div id="sobre">
+          <About />
+        </div>
+        <div id="contato">
+          <FAQ />
+        </div>
+        <Footer />
+      </Suspense>
     </div>
   );
 };
