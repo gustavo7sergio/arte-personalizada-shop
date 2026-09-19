@@ -1,6 +1,9 @@
-# Ajustes da Home
+# Otimização de performance da Home
 
-- [x] Remover a seção dos três banners promocionais da renderização
-- [x] Alinhar à esquerda os textos e contatos do rodapé no mobile
-- [x] Preservar o rodapé desktop e validar links, ícones e espaçamentos
-- [x] Validar Home em mobile, tablet e desktop
+- [ ] Otimizar descoberta e variantes responsivas do hero/LCP
+- [ ] Criar e aplicar imagens responsivas para mascotes prioritários
+- [ ] Revisar categorias e logos sem alteração visual
+- [ ] Otimizar carregamento das fontes usadas
+- [ ] Reduzir JavaScript inicial com carregamento sob demanda seguro
+- [ ] Adicionar o ponto de referência semântico principal
+- [ ] Validar visual, rede, CLS, links, tipos e compilação
