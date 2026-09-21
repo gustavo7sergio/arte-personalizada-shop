@@ -6,4 +6,4 @@
 - [x] Otimizar carregamento das fontes usadas
 - [x] Reduzir JavaScript inicial com carregamento sob demanda seguro
 - [x] Adicionar o ponto de referência semântico principal
-- [ ] Validar visual, rede, CLS, links, tipos e compilação
+- [x] Validar visual, rede, CLS, links, tipos e compilação
