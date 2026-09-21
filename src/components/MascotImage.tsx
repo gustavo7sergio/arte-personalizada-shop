@@ -1,30 +1,25 @@
-import checklistAsset from "@/assets/mascote/ge-checklist.webp.asset.json";
-import lupaAsset from "@/assets/mascote/ge-lupa.webp.asset.json";
-import caminhaoAsset from "@/assets/mascote/ge-caminhao.webp.asset.json";
-import notebookAsset from "@/assets/mascote/ge-notebook.webp.asset.json";
-import pensativoAsset from "@/assets/mascote/ge-pensativo.webp.asset.json";
 import { cn } from "@/lib/utils";
 
 const mascotImages = {
   checklist: {
-    src: checklistAsset.url,
     alt: "Gê, mascote da GS Cartões, com checklist",
+    sizes: "(min-width: 768px) 176px, 112px",
   },
   lupa: {
-    src: lupaAsset.url,
     alt: "Gê, mascote da GS Cartões, usando uma lupa",
+    sizes: "(min-width: 768px) 160px, 96px",
   },
   caminhao: {
-    src: caminhaoAsset.url,
     alt: "Gê, mascote da GS Cartões, com caminhão de entrega",
+    sizes: "96px",
   },
   notebook: {
-    src: notebookAsset.url,
     alt: "Gê, mascote da GS Cartões, usando notebook",
+    sizes: "96px",
   },
   pensativo: {
-    src: pensativoAsset.url,
     alt: "Gê, mascote da GS Cartões, pensativo",
+    sizes: "(min-width: 768px) 176px, 128px",
   },
 } as const;
 
@@ -38,7 +33,9 @@ const MascotImage = ({ pose, className }: MascotImageProps) => {
 
   return (
     <img
-      src={image.src}
+      src={`/mascote/ge-${pose}-192.webp`}
+      srcSet={`/mascote/ge-${pose}-192.webp 192w, /mascote/ge-${pose}-384.webp 384w`}
+      sizes={image.sizes}
       alt={image.alt}
       width={1254}
       height={1254}
