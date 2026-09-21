@@ -1,10 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageCircle } from "lucide-react";
-import heroDesktopAsset from "@/assets/hero/hero-ge-desktop.jpg.asset.json";
-import heroMobileAsset from "@/assets/hero/hero-ge-mobile.jpg.asset.json";
 
-const HERO_DESKTOP = heroDesktopAsset.url;
-const HERO_MOBILE = heroMobileAsset.url;
+const HERO_DESKTOP_SRCSET = "/hero/hero-ge-desktop-960.webp 960w, /hero/hero-ge-desktop-1440.webp 1440w, /hero/hero-ge-desktop-1920.webp 1920w";
+const HERO_MOBILE_SRCSET = "/hero/hero-ge-mobile-480.webp 480w, /hero/hero-ge-mobile-768.webp 768w, /hero/hero-ge-mobile-960.webp 960w";
+const HERO_MOBILE = "/hero/hero-ge-mobile-480.webp";
 const WHATSAPP_URL = "https://wa.me/553584181096?text=Oi%2C%20Gostaria%20de%20fazer%20um%20or%C3%A7amento!";
 const HERO_ALT = "Gê, mascote da GS Cartões, com tags, cartões e embalagens personalizadas para semijoias";
 
@@ -77,9 +76,18 @@ const Hero = () => {
       {/* Banner image */}
       <div className="relative aspect-[960/1520] w-full overflow-hidden md:absolute md:inset-0 md:h-full md:aspect-auto">
         <picture className="block w-full md:h-full">
-          <source media="(min-width: 768px)" srcSet={HERO_DESKTOP} />
+          <source
+            media="(min-width: 768px)"
+            type="image/webp"
+            srcSet={HERO_DESKTOP_SRCSET}
+            sizes="100vw"
+            width={1920}
+            height={960}
+          />
           <img
             src={HERO_MOBILE}
+            srcSet={HERO_MOBILE_SRCSET}
+            sizes="100vw"
             alt={HERO_ALT}
             width={960}
             height={1920}

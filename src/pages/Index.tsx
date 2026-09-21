@@ -22,17 +22,21 @@ const Index = () => {
         <meta property="og:description" content="GS Cartões: tags, cartões, sacolinhas e adesivos personalizados para empreendedoras de semijoias, prata e bijuterias. Envio para todo o Brasil." />
       </Helmet>
       <Navbar />
-      <Hero />
-      <Categories />
-      <Suspense fallback={<div className="h-20" />}>
-        <HowItWorks />
-        <Testimonials />
-        <div id="sobre">
-          <About />
-        </div>
-        <div id="contato">
-          <FAQ />
-        </div>
+      <main>
+        <Hero />
+        <Categories />
+        <Suspense fallback={null}>
+          <HowItWorks />
+          <Testimonials />
+          <div id="sobre">
+            <About />
+          </div>
+          <div id="contato">
+            <FAQ />
+          </div>
+        </Suspense>
+      </main>
+      <Suspense fallback={null}>
         <Footer />
       </Suspense>
     </div>
