@@ -708,19 +708,21 @@ export const products: Product[] = [
       {
         label: "Frente e verso – 8,8 × 4,8 cm",
         prices: [
-          { qty: 200,  installment: 227.00, cash: 204.30 },
-          { qty: 500,  installment: 235.00, cash: 211.50 },
-          { qty: 1000, installment: 263.00, cash: 236.70 },
-          { qty: 3000, installment: 638.00, cash: 574.20 },
+          { qty: 100,  installment: 175.00, cash: 157.50 },
+          { qty: 250,  installment: 209.00, cash: 188.10 },
+          { qty: 500,  installment: 255.00, cash: 229.50 },
+          { qty: 1000, installment: 275.00, cash: 247.50 },
+          { qty: 3000, installment: 658.00, cash: 592.20 },
         ],
       },
       {
         label: "Apenas frente – 8,8 × 4,8 cm",
         prices: [
-          { qty: 200,  installment: 205.00, cash: 184.50 },
-          { qty: 500,  installment: 215.00, cash: 193.50 },
-          { qty: 1000, installment: 249.00, cash: 224.10 },
-          { qty: 3000, installment: 595.00, cash: 535.50 },
+          { qty: 100,  installment: 169.00, cash: 152.10 },
+          { qty: 250,  installment: 205.00, cash: 184.50 },
+          { qty: 500,  installment: 235.00, cash: 211.50 },
+          { qty: 1000, installment: 265.00, cash: 238.50 },
+          { qty: 3000, installment: 619.00, cash: 557.10 },
         ],
       },
     ],
@@ -913,6 +915,8 @@ export const products: Product[] = [
       {
         label: "8,8 × 4,8 cm (aberto: 8,8 × 9,6 cm)",
         prices: [
+          { qty: 100,  installment: 163.00, cash: 146.70 },
+          { qty: 250,  installment: 189.00, cash: 170.10 },
           { qty: 500,  installment: 208.00, cash: 187.20 },
           { qty: 1000, installment: 234.00, cash: 210.60 },
           { qty: 3000, installment: 555.00, cash: 499.50 },
@@ -940,16 +944,20 @@ export const products: Product[] = [
       {
         label: "Frente e verso – 8,8 × 9,94 cm",
         prices: [
-          { qty: 500,  installment: 271.00, cash: 243.90 },
-          { qty: 1000, installment: 348.00, cash: 313.20 },
+          { qty: 100,  installment: 195.00, cash: 175.50 },
+          { qty: 250,  installment: 225.00, cash: 202.50 },
+          { qty: 500,  installment: 277.00, cash: 249.30 },
+          { qty: 1000, installment: 355.00, cash: 319.50 },
           { qty: 2000, installment: 679.00, cash: 611.10 },
         ],
       },
       {
         label: "Apenas frente – 8,8 × 9,94 cm",
         prices: [
+          { qty: 100,  installment: 183.00, cash: 164.70 },
+          { qty: 250,  installment: 215.00, cash: 193.50 },
           { qty: 500,  installment: 253.00, cash: 227.70 },
-          { qty: 1000, installment: 315.00, cash: 283.50 },
+          { qty: 1000, installment: 319.00, cash: 287.10 },
           { qty: 2000, installment: 605.00, cash: 544.50 },
         ],
       },
@@ -973,16 +981,20 @@ export const products: Product[] = [
       {
         label: "Frente e verso – 8,4 × 9,8 cm",
         prices: [
-          { qty: 500,  installment: 289.00, cash: 260.10 },
-          { qty: 1000, installment: 363.00, cash: 326.70 },
+          { qty: 100,  installment: 219.00, cash: 197.10 },
+          { qty: 250,  installment: 249.00, cash: 224.10 },
+          { qty: 500,  installment: 305.00, cash: 274.50 },
+          { qty: 1000, installment: 375.00, cash: 337.50 },
           { qty: 2000, installment: 699.00, cash: 629.10 },
         ],
       },
       {
         label: "Apenas frente – 8,4 × 9,8 cm",
         prices: [
-          { qty: 500,  installment: 269.00, cash: 242.10 },
-          { qty: 1000, installment: 336.00, cash: 302.40 },
+          { qty: 100,  installment: 209.00, cash: 188.10 },
+          { qty: 250,  installment: 239.00, cash: 215.10 },
+          { qty: 500,  installment: 278.00, cash: 250.20 },
+          { qty: 1000, installment: 349.00, cash: 314.10 },
           { qty: 2000, installment: 627.00, cash: 564.30 },
         ],
       },
@@ -1006,17 +1018,21 @@ export const products: Product[] = [
       {
         label: "Frente e verso – 13 × 4,8 cm",
         prices: [
-          { qty: 500,  installment: 285.00, cash: 256.50 },
-          { qty: 1000, installment: 399.00, cash: 359.10 },
-          { qty: 2000, installment: 769.00, cash: 692.10 },
+          { qty: 100,  installment: 215.00, cash: 193.50 },
+          { qty: 250,  installment: 249.00, cash: 224.10 },
+          { qty: 500,  installment: 305.00, cash: 274.50 },
+          { qty: 1000, installment: 412.00, cash: 370.80 },
+          { qty: 2000, installment: 785.00, cash: 706.50 },
         ],
       },
       {
         label: "Apenas frente – 13 × 4,8 cm",
         prices: [
-          { qty: 500,  installment: 263.00, cash: 236.70 },
-          { qty: 1000, installment: 335.00, cash: 301.50 },
-          { qty: 2000, installment: 632.00, cash: 568.80 },
+          { qty: 100,  installment: 207.00, cash: 186.30 },
+          { qty: 250,  installment: 238.00, cash: 214.20 },
+          { qty: 500,  installment: 275.00, cash: 247.50 },
+          { qty: 1000, installment: 343.00, cash: 308.70 },
+          { qty: 2000, installment: 639.00, cash: 575.10 },
         ],
       },
     ],
