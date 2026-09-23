@@ -1,19 +1,19 @@
 import { Link } from "react-router-dom";
-import catTagsAcessoriosWebp from "@/assets/cat-tags-acessorios.jpg?format=webp&w=300;450;600&quality=70&as=srcset&imagetools";
+import catTagsAcessoriosWebp from "@/assets/cat-tags-acessorios.jpg?format=webp&w=192;256;384;600&quality=70&as=srcset&imagetools";
 import catTagsAcessoriosJpg from "@/assets/cat-tags-acessorios.jpg?w=600&quality=75&imagetools";
-import catSacolinhasWebp from "@/assets/cat-sacolinhas-new.jpg?format=webp&w=300;450;600&quality=70&as=srcset&imagetools";
+import catSacolinhasWebp from "@/assets/cat-sacolinhas-new.jpg?format=webp&w=192;256;384;600&quality=70&as=srcset&imagetools";
 import catSacolinhasJpg from "@/assets/cat-sacolinhas-new.jpg?w=600&quality=75&imagetools";
-import catCartoesWebp from "@/assets/cat-cartoes-new.jpg?format=webp&w=300;450;600&quality=70&as=srcset&imagetools";
+import catCartoesWebp from "@/assets/cat-cartoes-new.jpg?format=webp&w=192;256;384;600&quality=70&as=srcset&imagetools";
 import catCartoesJpg from "@/assets/cat-cartoes-new.jpg?w=600&quality=75&imagetools";
-import catAdesivosWebp from "@/assets/cat-adesivos-new.jpg?format=webp&w=300;450;600&quality=70&as=srcset&imagetools";
+import catAdesivosWebp from "@/assets/cat-adesivos-new.jpg?format=webp&w=192;256;384;600&quality=70&as=srcset&imagetools";
 import catAdesivosJpg from "@/assets/cat-adesivos-new.jpg?w=600&quality=75&imagetools";
-import catLacosTiarasWebp from "@/assets/cat-lacos-tiaras.jpg?format=webp&w=300;450;600&quality=70&as=srcset&imagetools";
+import catLacosTiarasWebp from "@/assets/cat-lacos-tiaras.jpg?format=webp&w=192;256;384;600&quality=70&as=srcset&imagetools";
 import catLacosTiarasJpg from "@/assets/cat-lacos-tiaras.jpg?w=600&quality=75&imagetools";
-import catEtiquetasRoupasWebp from "@/assets/cat-etiquetas-roupas.jpg?format=webp&w=300;450;600&quality=70&as=srcset&imagetools";
+import catEtiquetasRoupasWebp from "@/assets/cat-etiquetas-roupas.jpg?format=webp&w=192;256;384;600&quality=70&as=srcset&imagetools";
 import catEtiquetasRoupasJpg from "@/assets/cat-etiquetas-roupas.jpg?w=600&quality=75&imagetools";
-import catKitsWebp from "@/assets/cat-kits.jpg?format=webp&w=300;450;600&quality=70&as=srcset&imagetools";
+import catKitsWebp from "@/assets/cat-kits.jpg?format=webp&w=192;256;384;600&quality=70&as=srcset&imagetools";
 import catKitsJpg from "@/assets/cat-kits.jpg?w=600&quality=75&imagetools";
-import catOutrosWebp from "@/assets/cat-outros-new.jpg?format=webp&w=300;450;600&quality=70&as=srcset&imagetools";
+import catOutrosWebp from "@/assets/cat-outros-new.jpg?format=webp&w=192;256;384;600&quality=70&as=srcset&imagetools";
 import catOutrosJpg from "@/assets/cat-outros-new.jpg?w=600&quality=75&imagetools";
 import { ArrowUpRight } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
@@ -61,7 +61,8 @@ const Categories = () => {
                     width={600}
                     height={600}
                     className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
-                    loading="lazy"
+                    loading={i < 4 ? "eager" : "lazy"}
+                    fetchPriority="low"
                     decoding="async"
                   />
                 </picture>
