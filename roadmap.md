@@ -7,3 +7,11 @@
 - [x] Reduzir JavaScript inicial com carregamento sob demanda seguro
 - [x] Adicionar o ponto de referência semântico principal
 - [x] Validar visual, rede, CLS, links, tipos e compilação
+
+# Segunda rodada de otimização da Home
+
+- [x] Auditar LCP, Speed Index, cache, imagens, CSS, JavaScript e fontes
+- [x] Versionar assets públicos e alinhar preloads responsivos do hero
+- [x] Refinar variantes responsivas de mascotes, categorias e logo
+- [x] Remover dependências globais e pacotes de fonte sem uso
+- [ ] Validar visual, rede, CLS, SEO, acessibilidade, interações, tipos e compilação

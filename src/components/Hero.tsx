@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageCircle } from "lucide-react";
 
-const HERO_DESKTOP_SRCSET = "/hero/hero-ge-desktop-960.webp 960w, /hero/hero-ge-desktop-1440.webp 1440w, /hero/hero-ge-desktop-1920.webp 1920w";
-const HERO_MOBILE_SRCSET = "/hero/hero-ge-mobile-480.webp 480w, /hero/hero-ge-mobile-768.webp 768w, /hero/hero-ge-mobile-960.webp 960w";
-const HERO_MOBILE = "/hero/hero-ge-mobile-480.webp";
+const HERO_DESKTOP_SRCSET = "/hero/hero-ge-desktop-960.1fdadc18.webp 960w, /hero/hero-ge-desktop-1440.c0c210eb.webp 1440w, /hero/hero-ge-desktop-1920.01dffb96.webp 1920w";
+const HERO_MOBILE_SRCSET = "/hero/hero-ge-mobile-480.503cb35f.webp 480w, /hero/hero-ge-mobile-768.612018fb.webp 768w, /hero/hero-ge-mobile-960.82485a9c.webp 960w";
+const HERO_MOBILE = "/hero/hero-ge-mobile-480.503cb35f.webp";
 const WHATSAPP_URL = "https://wa.me/553584181096?text=Oi%2C%20Gostaria%20de%20fazer%20um%20or%C3%A7amento!";
 const HERO_ALT = "Gê, mascote da GS Cartões, com tags, cartões e embalagens personalizadas para semijoias";
 

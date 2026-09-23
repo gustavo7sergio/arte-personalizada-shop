@@ -23,6 +23,14 @@ const mascotImages = {
   },
 } as const;
 
+const mascotHashes = {
+  checklist: ["1e4d425c", "9610031d"],
+  lupa: ["7fd62ee5", "31adf0d7"],
+  caminhao: ["5e42a1e6", "00ebea9f"],
+  notebook: ["6b8798ca", "4488041f"],
+  pensativo: ["46453bf3", "1150e825"],
+} as const;
+
 interface MascotImageProps {
   pose: keyof typeof mascotImages;
   className?: string;
@@ -33,8 +41,8 @@ const MascotImage = ({ pose, className }: MascotImageProps) => {
 
   return (
     <img
-      src={`/mascote/ge-${pose}-192.webp`}
-      srcSet={`/mascote/ge-${pose}-192.webp 192w, /mascote/ge-${pose}-384.webp 384w`}
+      src={`/mascote/ge-${pose}-128.${mascotHashes[pose][0]}.webp`}
+      srcSet={`/mascote/ge-${pose}-128.${mascotHashes[pose][0]}.webp 128w, /mascote/ge-${pose}-256.${mascotHashes[pose][1]}.webp 256w`}
       sizes={image.sizes}
       alt={image.alt}
       width={1254}

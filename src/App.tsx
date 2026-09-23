@@ -1,5 +1,4 @@
 import { lazy, Suspense } from "react";
-import { TooltipProvider } from "@/components/ui/tooltip";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { CartProvider } from "@/contexts/CartContext";
 import FloatingCartButton from "@/components/FloatingCartButton";
@@ -15,8 +14,7 @@ const CriacaoLogo = lazy(() => import("./pages/CriacaoLogo"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const App = () => (
-  <TooltipProvider>
-    <CartProvider>
+  <CartProvider>
       <Suspense fallback={null}>
         <Sonner />
         <CartDrawer />
@@ -55,8 +53,7 @@ const App = () => (
         </Routes>
         </Suspense>
       </BrowserRouter>
-    </CartProvider>
-  </TooltipProvider>
+  </CartProvider>
 );
 
 export default App;

@@ -3,7 +3,7 @@ import { Menu, X, ShoppingCart, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/contexts/CartContext";
 import { Link, useLocation } from "react-router-dom";
-const logo = "/logo/logo-green-320.webp";
+const logo = "/logo/logo-green-160.9d35e900.webp";
 
 const categoryLinks: { name: string; slug: string; isPage?: boolean }[] = [
   { name: "Tags para Semijoias", slug: "tags-personalizadas-para-semijoias" },
@@ -31,7 +31,17 @@ const Navbar = () => {
           Enviamos p/ todo o Brasil
         </span>
         <a href="/" className="flex items-center">
-          <img src={logo} alt="GS Cartões" width={320} height={320} loading="eager" decoding="async" className="h-20 w-auto" />
+          <img
+            src={logo}
+            srcSet="/logo/logo-green-160.9d35e900.webp 160w, /logo/logo-green-320.d51645d4.webp 320w"
+            sizes="80px"
+            alt="GS Cartões"
+            width={160}
+            height={160}
+            loading="eager"
+            decoding="async"
+            className="h-20 w-auto"
+          />
         </a>
 
         {/* Desktop */}
