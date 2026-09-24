@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { CartProvider } from "@/contexts/CartContext";
+import { useCart } from "@/contexts/CartContext";
 import FloatingCartButton from "@/components/FloatingCartButton";
 import Index from "./pages/Index";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -13,11 +14,14 @@ const ProductPage = lazy(() => import("./pages/ProductPage"));
 const CriacaoLogo = lazy(() => import("./pages/CriacaoLogo"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
-const App = () => (
-  <CartProvider>
+const AppContent = () => {
+  const { isOpen } = useCart();
+
+  return (
+    <>
       <Suspense fallback={null}>
         <Sonner />
-        <CartDrawer />
+        {isOpen ? <CartDrawer /> : null}
       </Suspense>
       <FloatingCartButton />
       <BrowserRouter>
@@ -53,6 +57,13 @@ const App = () => (
         </Routes>
         </Suspense>
       </BrowserRouter>
+    </>
+  );
+};
+
+const App = () => (
+  <CartProvider>
+    <AppContent />
   </CartProvider>
 );
 
