@@ -45,8 +45,8 @@ const MascotImage = ({ pose, className }: MascotImageProps) => {
       srcSet={`/mascote/ge-${pose}-128.${mascotHashes[pose][0]}.webp 128w, /mascote/ge-${pose}-256.${mascotHashes[pose][1]}.webp 256w`}
       sizes={image.sizes}
       alt={image.alt}
-      width={1254}
-      height={1254}
+      width={256}
+      height={256}
       loading="lazy"
       decoding="async"
       className={cn("block h-auto object-contain", className)}

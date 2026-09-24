@@ -16,7 +16,6 @@ import catKitsJpg from "@/assets/cat-kits.jpg?w=600&quality=75&imagetools";
 import catOutrosWebp from "@/assets/cat-outros-new.jpg?format=webp&w=192;256;384;600&quality=70&as=srcset&imagetools";
 import catOutrosJpg from "@/assets/cat-outros-new.jpg?w=600&quality=75&imagetools";
 import { ArrowUpRight } from "lucide-react";
-import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const categories = [
   { name: "Tags para Semijoias", description: "Tags de brincos, anéis, colares e mais", webp: catTagsAcessoriosWebp, jpg: catTagsAcessoriosJpg, slug: "tags-personalizadas-para-semijoias" },
@@ -30,12 +29,10 @@ const categories = [
 ];
 
 const Categories = () => {
-  const { ref, visible } = useScrollReveal();
-
   return (
     <section id="produtos" className="pb-10 pt-5 md:py-14 bg-background">
-      <div className="container mx-auto px-6" ref={ref}>
-        <div className={`text-center mb-8 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mt-3">
             Encontre o material que você procura
           </h2>

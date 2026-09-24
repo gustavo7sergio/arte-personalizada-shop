@@ -14,4 +14,4 @@
 - [x] Versionar assets públicos e alinhar preloads responsivos do hero
 - [x] Refinar variantes responsivas de mascotes, categorias e logo
 - [x] Remover dependências globais e pacotes de fonte sem uso
-- [ ] Validar visual, rede, CLS, SEO, acessibilidade, interações, tipos e compilação
+- [x] Validar visual, rede, CLS, SEO, acessibilidade, interações, tipos e compilação
