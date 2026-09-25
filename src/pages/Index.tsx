@@ -3,10 +3,10 @@ import { lazy, Suspense } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Categories from "@/components/Categories";
+import DeferUntilVisible from "@/components/DeferUntilVisible";
 
 const HowItWorks = lazy(() => import("@/components/HowItWorks"));
 const Testimonials = lazy(() => import("@/components/Testimonials"));
-const About = lazy(() => import("@/components/About"));
 const FAQ = lazy(() => import("@/components/FAQ"));
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -25,20 +25,30 @@ const Index = () => {
       <main>
         <Hero />
         <Categories />
-        <Suspense fallback={null}>
+        <DeferUntilVisible
+          minHeight={0}
+          rootMargin="300px 0px"
+          placeholderClassName="min-h-[2241px] md:min-h-[1282px] xl:min-h-[1001px]"
+        >
           <HowItWorks />
+        </DeferUntilVisible>
+        <DeferUntilVisible
+          minHeight={0}
+          rootMargin="500px 0px"
+          placeholderClassName="min-h-[1070px] md:min-h-[1271px] xl:min-h-[1472px]"
+        >
           <Testimonials />
-          <div id="sobre">
-            <About />
-          </div>
-          <div id="contato">
+        </DeferUntilVisible>
+        <div id="sobre" />
+        <div id="contato">
+          <DeferUntilVisible minHeight={900} rootMargin="500px 0px">
             <FAQ />
-          </div>
-        </Suspense>
+          </DeferUntilVisible>
+        </div>
       </main>
-      <Suspense fallback={null}>
+      <DeferUntilVisible minHeight={480} rootMargin="500px 0px">
         <Footer />
-      </Suspense>
+      </DeferUntilVisible>
     </div>
   );
 };

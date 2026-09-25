@@ -29,20 +29,16 @@ function CountUp({ target, duration = 2000 }: { target: number; duration?: numbe
 
   useEffect(() => {
     if (!started) return;
-    const steps = 60;
-    const increment = target / steps;
-    const interval = duration / steps;
-    let current = 0;
-    const timer = setInterval(() => {
-      current += increment;
-      if (current >= target) {
-        setCount(target);
-        clearInterval(timer);
-      } else {
-        setCount(Math.floor(current));
-      }
-    }, interval);
-    return () => clearInterval(timer);
+    let frame = 0;
+    let startTime: number | undefined;
+    const tick = (time: number) => {
+      startTime ??= time;
+      const progress = Math.min((time - startTime) / duration, 1);
+      setCount(Math.floor(target * progress));
+      if (progress < 1) frame = requestAnimationFrame(tick);
+    };
+    frame = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frame);
   }, [started, target, duration]);
 
   return <span ref={ref}>{count}</span>;
