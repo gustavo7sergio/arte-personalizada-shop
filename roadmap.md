@@ -15,3 +15,10 @@
 - [x] Refinar variantes responsivas de mascotes, categorias e logo
 - [x] Remover dependências globais e pacotes de fonte sem uso
 - [x] Validar visual, rede, CLS, SEO, acessibilidade, interações, tipos e compilação
+
+# Correção da regressão de performance da Home
+
+- [x] Auditar tarefas longas, módulos iniciais e possíveis refluxos forçados
+- [x] Adiar notificações e seções fora da tela sem alterar a aparência
+- [x] Evitar leituras diretas de largura da janela e reduzir atualizações dos contadores
+- [ ] Validar visual, rede, CLS, SEO, interações, tipos, testes e compilação

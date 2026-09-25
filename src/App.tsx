@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { CartProvider } from "@/contexts/CartContext";
 import { useCart } from "@/contexts/CartContext";
 import FloatingCartButton from "@/components/FloatingCartButton";
@@ -16,18 +16,18 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 
 const AppContent = () => {
   const { isOpen } = useCart();
+  const { pathname } = useLocation();
+  const notificationsEnabled = pathname !== "/";
 
   return (
     <>
       <Suspense fallback={null}>
-        <Sonner />
+        {notificationsEnabled ? <Sonner /> : null}
         {isOpen ? <CartDrawer /> : null}
       </Suspense>
       <FloatingCartButton />
-      <BrowserRouter>
-
-        <ScrollToTop />
-        <Suspense fallback={null}>
+      <ScrollToTop />
+      <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/categoria/:categorySlug" element={<CategoryPage />} />
@@ -55,15 +55,16 @@ const AppContent = () => {
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
-        </Suspense>
-      </BrowserRouter>
+      </Suspense>
     </>
   );
 };
 
 const App = () => (
   <CartProvider>
-    <AppContent />
+    <BrowserRouter>
+      <AppContent />
+    </BrowserRouter>
   </CartProvider>
 );
 

@@ -7,6 +7,8 @@ interface DeferUntilVisibleProps {
   /** How far ahead of the viewport the content starts mounting. */
   rootMargin?: string;
   className?: string;
+  /** Responsive reserved-height classes used only while content is deferred. */
+  placeholderClassName?: string;
 }
 
 /**
@@ -19,6 +21,7 @@ const DeferUntilVisible = ({
   minHeight = 320,
   rootMargin = "400px 0px",
   className,
+  placeholderClassName,
 }: DeferUntilVisibleProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const [show, setShow] = useState(false);
@@ -47,7 +50,11 @@ const DeferUntilVisible = ({
   }, [show, rootMargin]);
 
   return (
-    <div ref={ref} className={className} style={show ? undefined : { minHeight }}>
+    <div
+      ref={ref}
+      className={[className, show ? undefined : placeholderClassName].filter(Boolean).join(" ") || undefined}
+      style={show || minHeight === 0 ? undefined : { minHeight }}
+    >
       {show ? <Suspense fallback={null}>{children}</Suspense> : null}
     </div>
   );
