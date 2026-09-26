@@ -35,18 +35,26 @@ const Index = () => {
         <DeferUntilVisible
           minHeight={0}
           rootMargin="500px 0px"
-          placeholderClassName="min-h-[1070px] md:min-h-[1271px] xl:min-h-[1472px]"
+          placeholderClassName="min-h-[3332px] md:min-h-[1271px] xl:min-h-[1472px]"
         >
           <Testimonials />
         </DeferUntilVisible>
         <div id="sobre" />
         <div id="contato">
-          <DeferUntilVisible minHeight={900} rootMargin="500px 0px">
+          <DeferUntilVisible
+            minHeight={0}
+            rootMargin="500px 0px"
+            placeholderClassName="min-h-[1024px] md:min-h-[948px]"
+          >
             <FAQ />
           </DeferUntilVisible>
         </div>
       </main>
-      <DeferUntilVisible minHeight={480} rootMargin="500px 0px">
+      <DeferUntilVisible
+        minHeight={0}
+        rootMargin="500px 0px"
+        placeholderClassName="min-h-[979px] md:min-h-[480px] xl:min-h-[477px]"
+      >
         <Footer />
       </DeferUntilVisible>
     </div>
