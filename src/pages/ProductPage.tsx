@@ -6,6 +6,7 @@ import { products, type Product } from "@/data/products";
 import { productImages } from "@/data/productImages";
 import { productPageBySlug } from "@/data/productPages";
 import { buildGallery } from "@/data/productGalleries";
+import { getProductResponsiveImage } from "@/data/productResponsiveImages";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/contexts/CartContext";
@@ -83,6 +84,9 @@ const ProductPage = () => {
   const gallery = buildGallery(config.slug, mockupSources, config.displayName);
   const heroImage = gallery[imageIndex]?.src ?? gallery[0]?.src;
   const heroAlt = gallery[imageIndex]?.alt ?? config.displayName;
+  const firstGalleryImage = gallery[0];
+  const firstResponsiveImage = firstGalleryImage ? getProductResponsiveImage(firstGalleryImage.src) : undefined;
+  const heroResponsiveImage = heroImage ? getProductResponsiveImage(heroImage) : undefined;
 
   const minPrice = Math.min(
     ...sourceProducts.flatMap((p) => p.variants.flatMap((v) => v.prices.map((r) => r.cash))).filter((n) => n > 0)
@@ -129,7 +133,7 @@ const ProductPage = () => {
     brand: { "@type": "Brand", name: "GS Cartões" },
     category: config.categoryLabel,
     material,
-    image: heroImage ? [`https://www.gscartoes.com${heroImage}`] : undefined,
+    image: firstGalleryImage ? [`https://www.gscartoes.com${firstGalleryImage.src}`] : undefined,
     offers: {
       "@type": "AggregateOffer",
       priceCurrency: "BRL",
@@ -160,7 +164,8 @@ const ProductPage = () => {
     })),
   } : null;
 
-  const absoluteHeroImage = heroImage ? `https://www.gscartoes.com${heroImage}` : undefined;
+  const absoluteHeroImage = firstGalleryImage ? `https://www.gscartoes.com${firstGalleryImage.src}` : undefined;
+  const socialImageAlt = firstGalleryImage?.alt ?? config.displayName;
 
   return (
     <div className="min-h-screen bg-background">
@@ -168,7 +173,16 @@ const ProductPage = () => {
         <title>{config.seoTitle}</title>
         <meta name="description" content={config.seoDescription} />
         <link rel="canonical" href={absoluteUrl} />
-        {heroImage && <link rel="preload" as="image" href={heroImage} fetchPriority="high" />}
+        {firstGalleryImage && (
+          <link
+            rel="preload"
+            as="image"
+            href={firstGalleryImage.src}
+            imageSrcSet={firstResponsiveImage?.mainSrcSet}
+            imageSizes="(min-width: 1024px) 45vw, calc(100vw - 3rem)"
+            fetchPriority="high"
+          />
+        )}
         <meta property="og:site_name" content="GS Cartões" />
         <meta property="og:locale" content="pt_BR" />
         <meta property="og:title" content={config.seoTitle} />
@@ -178,7 +192,7 @@ const ProductPage = () => {
         {absoluteHeroImage && <meta property="og:image" content={absoluteHeroImage} />}
         {absoluteHeroImage && <meta property="og:image:secure_url" content={absoluteHeroImage} />}
         {absoluteHeroImage && <meta property="og:image:type" content="image/jpeg" />}
-        {absoluteHeroImage && <meta property="og:image:alt" content={heroAlt} />}
+        {absoluteHeroImage && <meta property="og:image:alt" content={socialImageAlt} />}
         {absoluteHeroImage && <meta property="og:image:width" content="1200" />}
         {absoluteHeroImage && <meta property="og:image:height" content="1200" />}
         {/* Open Graph Product (Facebook / Pinterest Rich Pins) */}
@@ -194,7 +208,7 @@ const ProductPage = () => {
         <meta name="twitter:title" content={config.seoTitle} />
         <meta name="twitter:description" content={config.seoDescription} />
         {absoluteHeroImage && <meta name="twitter:image" content={absoluteHeroImage} />}
-        {absoluteHeroImage && <meta name="twitter:image:alt" content={heroAlt} />}
+        {absoluteHeroImage && <meta name="twitter:image:alt" content={socialImageAlt} />}
         {/* Pinterest */}
         <meta name="pinterest-rich-pin" content="true" />
         {absoluteHeroImage && <meta property="pinterest:image" content={absoluteHeroImage} />}
@@ -245,7 +259,9 @@ const ProductPage = () => {
                       src={heroImage}
                       alt={heroAlt}
                       className="w-full h-full object-contain p-6"
-                      priority
+                      priority={imageIndex === 0}
+                      srcSet={heroResponsiveImage?.mainSrcSet}
+                      sizes="(min-width: 1280px) 544px, (min-width: 1024px) calc(45vw - 3rem), calc(100vw - 3rem)"
                     />
                     <div className="absolute top-3 right-3 bg-card/80 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
                       <Search className="h-4 w-4 text-foreground" />
@@ -288,7 +304,15 @@ const ProductPage = () => {
                           )}
                           aria-label={`Ver imagem ${i + 1}`}
                         >
-                          <ProductImage src={img.src} alt={img.alt} className="w-full h-full object-contain p-1.5" />
+                          <ProductImage
+                            src={img.src}
+                            srcSet={getProductResponsiveImage(img.src)?.thumbnailSrcSet}
+                            sizes="(min-width: 1280px) 130px, (min-width: 1024px) 11vw, calc((100vw - 4.5rem) / 4)"
+                            alt={img.alt}
+                            width={240}
+                            height={240}
+                            className="w-full h-full object-contain p-1.5"
+                          />
                         </button>
                       ))}
                     </div>

@@ -8,12 +8,23 @@ interface ProductImageProps {
   width?: number;
   height?: number;
   priority?: boolean;
+  srcSet?: string;
+  sizes?: string;
 }
 
 const MAX_RETRIES = 5;
 const RETRY_DELAYS_MS = [700, 1500, 2500, 4000, 6000];
 
-const ProductImage = ({ src, alt, className, width = 1200, height = 1200, priority = false }: ProductImageProps) => {
+const ProductImage = ({
+  src,
+  alt,
+  className,
+  width = 1200,
+  height = 1200,
+  priority = false,
+  srcSet,
+  sizes,
+}: ProductImageProps) => {
   const [status, setStatus] = useState<"loading" | "loaded" | "error">("loading");
   const [retrySeed, setRetrySeed] = useState(0);
   const imgRef = useRef<HTMLImageElement>(null);
@@ -98,12 +109,14 @@ const ProductImage = ({ src, alt, className, width = 1200, height = 1200, priori
         key={`${src}-${retrySeed}`}
         ref={imgRef}
         src={src}
+        srcSet={srcSet}
+        sizes={sizes}
         alt={alt}
         width={width}
         height={height}
         loading={priority ? "eager" : "lazy"}
         decoding="async"
-        {...(priority ? { fetchPriority: "high" as const } : {})}
+        fetchPriority={priority ? "high" : "low"}
         className={`${className || ""} absolute inset-0 transition-opacity duration-200 ${
           status === "loaded" ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
