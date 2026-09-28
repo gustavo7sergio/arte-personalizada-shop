@@ -22,3 +22,10 @@
 - [x] Adiar notificações e seções fora da tela sem alterar a aparência
 - [x] Evitar leituras diretas de largura da janela e reduzir atualizações dos contadores
 - [x] Validar visual, rede, CLS, SEO, interações, tipos, testes e compilação
+
+# Otimização global das páginas de produto
+
+- [x] Auditar galeria, LCP, cache, JavaScript, SEO e acessibilidade do modelo global
+- [x] Gerar variantes WebP responsivas para imagens principais e miniaturas
+- [x] Limitar prioridade alta e preload à primeira imagem
+- [ ] Validar galeria, zoom, carrinho, rede, CLS, SEO, tipos, testes e compilação
