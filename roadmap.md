@@ -28,4 +28,4 @@
 - [x] Auditar galeria, LCP, cache, JavaScript, SEO e acessibilidade do modelo global
 - [x] Gerar variantes WebP responsivas para imagens principais e miniaturas
 - [x] Limitar prioridade alta e preload à primeira imagem
-- [ ] Validar galeria, zoom, carrinho, rede, CLS, SEO, tipos, testes e compilação
+- [x] Validar galeria, zoom, carrinho, rede, CLS, SEO, tipos, testes e compilação
