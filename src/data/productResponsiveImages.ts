@@ -3,14 +3,12 @@ export interface ProductResponsiveImage {
   thumbnailSrcSet: string;
 }
 
-const productImagePattern = "/src/assets/products/**/*.{jpg,jpeg,png,webp}";
-
-const originalModules = import.meta.glob(productImagePattern, {
+const originalModules = import.meta.glob("/src/assets/products/**/*.{jpg,jpeg,png,webp}", {
   eager: true,
   import: "default",
 }) as Record<string, string>;
 
-const mainModules = import.meta.glob(productImagePattern, {
+const mainModules = import.meta.glob("/src/assets/products/**/*.{jpg,jpeg,png,webp}", {
   eager: true,
   import: "default",
   query: {
@@ -22,7 +20,7 @@ const mainModules = import.meta.glob(productImagePattern, {
   },
 }) as Record<string, string>;
 
-const thumbnailModules = import.meta.glob(productImagePattern, {
+const thumbnailModules = import.meta.glob("/src/assets/products/**/*.{jpg,jpeg,png,webp}", {
   eager: true,
   import: "default",
   query: {
