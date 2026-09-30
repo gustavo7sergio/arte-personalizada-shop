@@ -5,14 +5,15 @@ import { useCart } from "@/contexts/CartContext";
 import FloatingCartButton from "@/components/FloatingCartButton";
 import Index from "./pages/Index";
 import ScrollToTop from "@/components/ScrollToTop";
+import { lazyWithReload } from "@/lib/lazyWithReload";
 
 // Non-critical / route-level chunks: keep the initial main-thread work small.
 const Sonner = lazy(() => import("@/components/ui/sonner").then((m) => ({ default: m.Toaster })));
 const CartDrawer = lazy(() => import("@/components/CartDrawer"));
-const CategoryPage = lazy(() => import("./pages/CategoryPage"));
-const ProductPage = lazy(() => import("./pages/ProductPage"));
-const CriacaoLogo = lazy(() => import("./pages/CriacaoLogo"));
-const NotFound = lazy(() => import("./pages/NotFound"));
+const CategoryPage = lazyWithReload(() => import("./pages/CategoryPage"));
+const ProductPage = lazyWithReload(() => import("./pages/ProductPage"));
+const CriacaoLogo = lazyWithReload(() => import("./pages/CriacaoLogo"));
+const NotFound = lazyWithReload(() => import("./pages/NotFound"));
 
 const AppContent = () => {
   const { isOpen } = useCart();
