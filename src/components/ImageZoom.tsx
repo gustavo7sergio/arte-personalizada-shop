@@ -14,6 +14,7 @@ const ImageZoom = ({ src, alt, open, onOpenChange }: ImageZoomProps) => {
       <DialogContent className="max-w-3xl w-[95vw] p-2 bg-card border-border">
         <button
           onClick={() => onOpenChange(false)}
+          aria-label="Fechar imagem ampliada"
           className="absolute top-3 right-3 z-10 rounded-full bg-card/80 backdrop-blur-sm p-1.5 text-muted-foreground hover:text-foreground transition-colors"
         >
           <X className="h-5 w-5" />

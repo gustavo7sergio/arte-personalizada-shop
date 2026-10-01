@@ -17,24 +17,59 @@
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
-  for = "/hero/*"
+  for = "/hero/hero-ge-desktop-960.1fdadc18.webp"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
-  for = "/logo/*"
+  for = "/hero/hero-ge-desktop-1440.c0c210eb.webp"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
-  for = "/mascote/*"
+  for = "/hero/hero-ge-desktop-1920.01dffb96.webp"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
-  for = "/fonts/*"
+  for = "/hero/hero-ge-mobile-480.503cb35f.webp"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/hero/hero-ge-mobile-768.612018fb.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/hero/hero-ge-mobile-960.82485a9c.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/logo/logo-green-160.9d35e900.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/logo/logo-green-320.d51645d4.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/mascote/*.????????.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/*.????????.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 
 [[headers]]

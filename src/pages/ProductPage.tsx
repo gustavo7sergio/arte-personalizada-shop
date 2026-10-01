@@ -221,7 +221,7 @@ const ProductPage = () => {
 
       <Navbar />
 
-      <div className="pt-32 md:pt-36 pb-16 md:pb-24">
+      <main className="pt-32 md:pt-36 pb-16 md:pb-24">
         <div className="container mx-auto px-6">
           {/* Breadcrumb */}
           <nav aria-label="breadcrumb" className="mb-4">
@@ -298,6 +298,7 @@ const ProductPage = () => {
                         <button
                           key={i}
                           onClick={() => setImageIndex(i)}
+                          aria-pressed={i === imageIndex}
                           className={cn(
                             "aspect-square bg-muted/20 rounded-lg overflow-hidden border-2 transition-colors",
                             i === imageIndex ? "border-primary" : "border-border hover:border-primary/50"
@@ -353,8 +354,9 @@ const ProductPage = () => {
                       <button
                         key={i}
                         onClick={() => handleVariantSwitch(i)}
+                        aria-pressed={activeFlat === i}
                         className={cn(
-                          "px-3 py-2 rounded-lg text-sm font-body font-medium transition-all border",
+                          "px-3 py-2 rounded-lg text-sm font-body font-medium transition-all border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
                           activeFlat === i
                             ? "bg-primary text-primary-foreground border-primary shadow-sm"
                             : "bg-card text-foreground border-border hover:border-primary/60"
@@ -384,8 +386,9 @@ const ProductPage = () => {
                     <button
                       key={i}
                       onClick={() => setSelectedQtyIndex(i)}
+                      aria-pressed={selectedQtyIndex === i}
                       className={cn(
-                        "px-3 py-2 rounded-lg text-sm font-body font-medium transition-all border",
+                        "px-3 py-2 rounded-lg text-sm font-body font-medium transition-all border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
                         selectedQtyIndex === i
                           ? "bg-primary text-primary-foreground border-primary shadow-sm"
                           : "bg-card text-foreground border-border hover:border-primary/60"
@@ -535,7 +538,7 @@ const ProductPage = () => {
             />
           </DeferUntilVisible>
         </div>
-      </div>
+      </main>
 
 
       <Footer />

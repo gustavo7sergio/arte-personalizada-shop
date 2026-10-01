@@ -59,8 +59,9 @@ function PriceSelector({ product, image }: { product: Product; image?: string })
             <button
               key={i}
               onClick={() => handleVariantChange(i)}
+              aria-pressed={activeVariant === i}
               className={cn(
-                "px-3 py-1.5 rounded-full text-xs font-body font-medium transition-all border",
+                "px-3 py-1.5 rounded-full text-xs font-body font-medium transition-all border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
                 activeVariant === i
                   ? "bg-primary text-primary-foreground border-primary"
                   : "bg-transparent text-muted-foreground border-border hover:border-primary/50"
@@ -89,8 +90,9 @@ function PriceSelector({ product, image }: { product: Product; image?: string })
               <button
                 key={i}
                 onClick={() => setSelectedQtyIndex(i)}
+                aria-pressed={selectedQtyIndex === i}
                 className={cn(
-                  "px-3 py-2 rounded-lg text-sm font-body font-medium transition-all border",
+                  "px-3 py-2 rounded-lg text-sm font-body font-medium transition-all border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
                   selectedQtyIndex === i
                     ? "bg-primary text-primary-foreground border-primary shadow-sm"
                     : "bg-card text-foreground border-border hover:border-primary/60 hover:bg-accent/30"
@@ -288,6 +290,7 @@ function ProductCard({ product }: { product: Product }) {
         ) : (
           <Button
             onClick={() => setExpanded((e) => !e)}
+            aria-expanded={expanded}
             variant={expanded ? "outline" : "default"}
             className={cn(
               "w-full rounded-full font-body gap-2 mt-auto",
@@ -437,7 +440,7 @@ const CategoryPage = () => {
       </Helmet>
       <Navbar />
 
-      <div className="pt-44 pb-20 md:pt-44 md:pb-28">
+      <main className="pt-44 pb-20 md:pt-44 md:pb-28">
         <div className="container mx-auto px-6">
           {/* Breadcrumb */}
           <Link
@@ -516,7 +519,7 @@ const CategoryPage = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </main>
 
       <Footer />
     </div>

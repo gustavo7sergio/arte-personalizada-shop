@@ -36,8 +36,9 @@ function PriceSelector({ product }: { product: Product }) {
             <button
               key={i}
               onClick={() => handleVariantChange(i)}
+              aria-pressed={activeVariant === i}
               className={cn(
-                "px-3 py-1.5 rounded-full text-xs font-body font-medium transition-all border",
+                "px-3 py-1.5 rounded-full text-xs font-body font-medium transition-all border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
                 activeVariant === i
                   ? "bg-primary text-primary-foreground border-primary"
                   : "bg-transparent text-muted-foreground border-border hover:border-primary/50"
@@ -67,8 +68,9 @@ function PriceSelector({ product }: { product: Product }) {
             <button
               key={i}
               onClick={() => setSelectedQtyIndex(i)}
+              aria-pressed={selectedQtyIndex === i}
               className={cn(
-                "px-3 py-2 rounded-lg text-sm font-body font-medium transition-all border",
+                "px-3 py-2 rounded-lg text-sm font-body font-medium transition-all border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
                 selectedQtyIndex === i
                   ? "bg-primary text-primary-foreground border-primary shadow-sm"
                   : "bg-card text-foreground border-border hover:border-primary/60 hover:bg-accent/30"
@@ -175,6 +177,7 @@ function ProductCard({ product }: { product: Product }) {
       {/* Expandable specs */}
       <button
         onClick={() => setExpanded(!expanded)}
+        aria-expanded={expanded}
         className="w-full px-6 py-2 flex items-center justify-between text-xs font-body text-muted-foreground hover:text-foreground bg-muted/30 border-y border-border/50 transition-colors"
       >
         <span>Ver especificações</span>

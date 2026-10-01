@@ -29,3 +29,12 @@
 - [x] Gerar variantes WebP responsivas para imagens principais e miniaturas
 - [x] Limitar prioridade alta e preload à primeira imagem
 - [x] Validar galeria, zoom, carrinho, rede, CLS, SEO, tipos, testes e compilação
+
+# Ajustes finais e conservadores de performance
+
+- [x] Restringir cache imutável aos assets efetivamente versionados
+- [x] Confirmar pesos, preloads e `font-display` sem alterar tipografia
+- [x] Preservar CSS crítico e evitar uma fragmentação com risco de flash visual
+- [x] Manter JavaScript funcional sem refatorações de baixo retorno
+- [ ] Corrigir e validar landmarks, estados e nomes acessíveis
+- [ ] Validar visual, interações, tipos, testes e compilação
