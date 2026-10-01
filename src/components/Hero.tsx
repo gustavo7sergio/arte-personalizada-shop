@@ -19,39 +19,41 @@ const HeroButtons = ({ mobileOverlay = false }: HeroButtonsProps) => (
         : "mt-7 hidden items-center gap-3 md:flex"
     }
   >
-    <a href="#produtos" className={mobileOverlay ? "w-full" : undefined}>
-      <Button
-        size="lg"
-        className={
-          mobileOverlay
-            ? "h-11 w-full rounded-full px-5 text-sm shadow-soft font-body font-semibold hover:scale-105 transition-transform duration-300"
-            : "h-auto rounded-full px-8 py-5 text-base shadow-soft font-body font-semibold hover:scale-105 transition-transform duration-300"
-        }
-        style={{ backgroundColor: "hsl(4, 42%, 70%)", color: "hsl(var(--rose-foreground))" }}
-      >
-        Ver produtos
-        <ArrowRight className="ml-1.5 h-4 w-4 md:h-5 md:w-5" />
-      </Button>
-    </a>
-    <a
-      href={WHATSAPP_URL}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={mobileOverlay ? "w-full" : undefined}
+    <Button
+      asChild
+      size="lg"
+      className={
+        mobileOverlay
+          ? "h-11 w-full rounded-full px-5 text-sm shadow-soft font-body font-semibold hover:scale-105 transition-transform duration-300"
+          : "h-auto rounded-full px-8 py-5 text-base shadow-soft font-body font-semibold hover:scale-105 transition-transform duration-300"
+      }
+      style={{ backgroundColor: "hsl(4, 42%, 70%)", color: "hsl(var(--rose-foreground))" }}
     >
-      <Button
-        size="lg"
-        variant="outline"
-        className={
-          mobileOverlay
-            ? "h-11 w-full rounded-full border-primary bg-background/90 px-5 text-sm font-body font-semibold text-primary hover:bg-background hover:text-primary"
-            : "h-auto rounded-full border-primary bg-background/90 px-8 py-5 text-base font-body font-semibold text-primary hover:bg-background hover:text-primary"
-        }
+      <a href="#produtos" className={mobileOverlay ? "w-full" : undefined}>
+        Ver produtos
+        <ArrowRight className="ml-1.5 h-4 w-4 md:h-5 md:w-5" aria-hidden="true" />
+      </a>
+    </Button>
+    <Button
+      asChild
+      size="lg"
+      variant="outline"
+      className={
+        mobileOverlay
+          ? "h-11 w-full rounded-full border-primary bg-background/90 px-5 text-sm font-body font-semibold text-primary hover:bg-background hover:text-primary"
+          : "h-auto rounded-full border-primary bg-background/90 px-8 py-5 text-base font-body font-semibold text-primary hover:bg-background hover:text-primary"
+      }
+    >
+      <a
+        href={WHATSAPP_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={mobileOverlay ? "w-full" : undefined}
       >
         Fale conosco
-        <MessageCircle className="ml-1.5 h-4 w-4 md:h-5 md:w-5" />
-      </Button>
-    </a>
+        <MessageCircle className="ml-1.5 h-4 w-4 md:h-5 md:w-5" aria-hidden="true" />
+      </a>
+    </Button>
   </div>
 );
 
