@@ -217,14 +217,14 @@ function ProductCard({ product }: { product: Product }) {
           <button
             onClick={(e) => { e.preventDefault(); e.stopPropagation(); setImageIndex((p) => (p - 1 + images.length) % images.length); }}
             aria-label="Imagem anterior"
-            className="absolute left-2 top-1/2 -translate-y-1/2 bg-card/80 backdrop-blur-sm rounded-full p-1.5 shadow-sm hover:bg-card transition-colors"
+            className="absolute z-20 left-2 top-1/2 -translate-y-1/2 bg-card/80 backdrop-blur-sm rounded-full p-1.5 shadow-sm hover:bg-card transition-colors"
           >
             <ChevronLeft className="h-4 w-4 text-foreground" />
           </button>
           <button
             onClick={(e) => { e.preventDefault(); e.stopPropagation(); setImageIndex((p) => (p + 1) % images.length); }}
             aria-label="Próxima imagem"
-            className="absolute right-2 top-1/2 -translate-y-1/2 bg-card/80 backdrop-blur-sm rounded-full p-1.5 shadow-sm hover:bg-card transition-colors"
+            className="absolute z-20 right-2 top-1/2 -translate-y-1/2 bg-card/80 backdrop-blur-sm rounded-full p-1.5 shadow-sm hover:bg-card transition-colors"
           >
             <ChevronRight className="h-4 w-4 text-foreground" />
           </button>
@@ -244,7 +244,15 @@ function ProductCard({ product }: { product: Product }) {
           </Link>
         ) : (
           <>
-            <div className="cursor-zoom-in" onClick={() => setZoomOpen(true)}>{CardImage}</div>
+            <div className="relative">
+              {CardImage}
+              <button
+                type="button"
+                onClick={() => setZoomOpen(true)}
+                aria-label={`Ampliar imagem de ${displayName}`}
+                className="absolute inset-0 z-10 cursor-zoom-in focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset"
+              />
+            </div>
             <ImageZoom
               src={image}
               alt={product.name + (product.subtitle ? " – " + product.subtitle : "")}
