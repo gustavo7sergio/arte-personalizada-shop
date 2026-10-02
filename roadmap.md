@@ -36,5 +36,5 @@
 - [x] Confirmar pesos, preloads e `font-display` sem alterar tipografia
 - [x] Preservar CSS crítico e evitar uma fragmentação com risco de flash visual
 - [x] Manter JavaScript funcional sem refatorações de baixo retorno
-- [ ] Corrigir e validar landmarks, estados e nomes acessíveis
-- [ ] Validar visual, interações, tipos, testes e compilação
+- [x] Corrigir e validar landmarks, estados e nomes acessíveis
+- [x] Validar visual, interações, tipos, testes e compilação

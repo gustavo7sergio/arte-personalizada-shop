@@ -57,12 +57,87 @@
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
-  for = "/mascote/*.????????.webp"
+  for = "/mascote/ge-checklist-128.1e4d425c.webp"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
-  for = "/fonts/*.????????.woff2"
+  for = "/mascote/ge-checklist-256.9610031d.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/mascote/ge-lupa-128.7fd62ee5.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/mascote/ge-lupa-256.31adf0d7.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/mascote/ge-caminhao-128.5e42a1e6.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/mascote/ge-caminhao-256.00ebea9f.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/mascote/ge-notebook-128.6b8798ca.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/mascote/ge-notebook-256.4488041f.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/mascote/ge-pensativo-128.46453bf3.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/mascote/ge-pensativo-256.1150e825.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/dm-sans-latin-400-italic.5da946c1.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/dm-sans-latin-400-normal.4ab51eb2.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/dm-sans-latin-500-normal.19bf1984.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/dm-sans-latin-600-normal.6bb2b264.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/dm-sans-latin-700-normal.35c5efa0.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/playfair-display-latin-600-normal.5d228694.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/playfair-display-latin-700-normal.28453852.woff2"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
