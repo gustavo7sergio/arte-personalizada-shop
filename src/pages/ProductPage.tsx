@@ -252,8 +252,7 @@ const ProductPage = () => {
               {heroImage && (
                 <>
                   <div
-                    className="aspect-square bg-muted/20 rounded-2xl overflow-hidden border border-border cursor-zoom-in relative group"
-                    onClick={() => setZoomOpen(true)}
+                    className="aspect-square bg-muted/20 rounded-2xl overflow-hidden border border-border relative group"
                   >
                     <ProductImage
                       src={heroImage}
@@ -266,19 +265,25 @@ const ProductPage = () => {
                     <div className="absolute top-3 right-3 bg-card/80 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
                       <Search className="h-4 w-4 text-foreground" />
                     </div>
+                    <button
+                      type="button"
+                      onClick={() => setZoomOpen(true)}
+                      aria-label={`Ampliar imagem de ${config.displayName}`}
+                      className="absolute inset-0 z-10 cursor-zoom-in focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset"
+                    />
                     {gallery.length > 1 && (
                       <>
                         <button
                           onClick={(e) => { e.stopPropagation(); setImageIndex((i) => (i - 1 + gallery.length) % gallery.length); }}
                           aria-label="Imagem anterior"
-                          className="absolute left-3 top-1/2 -translate-y-1/2 bg-card/80 backdrop-blur-sm rounded-full p-2 hover:bg-card"
+                          className="absolute z-20 left-3 top-1/2 -translate-y-1/2 bg-card/80 backdrop-blur-sm rounded-full p-2 hover:bg-card"
                         >
                           <ChevronLeft className="h-4 w-4" />
                         </button>
                         <button
                           onClick={(e) => { e.stopPropagation(); setImageIndex((i) => (i + 1) % gallery.length); }}
                           aria-label="Próxima imagem"
-                          className="absolute right-3 top-1/2 -translate-y-1/2 bg-card/80 backdrop-blur-sm rounded-full p-2 hover:bg-card"
+                          className="absolute z-20 right-3 top-1/2 -translate-y-1/2 bg-card/80 backdrop-blur-sm rounded-full p-2 hover:bg-card"
                         >
                           <ChevronRight className="h-4 w-4" />
                         </button>
