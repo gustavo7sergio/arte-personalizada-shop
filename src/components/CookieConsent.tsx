@@ -2,27 +2,26 @@ import { useEffect, useState } from "react";
 import "@fontsource-variable/montserrat/wght.css";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { advertisingChoice, CONSENT_NOTICE, CONSENT_SUMMARY, OPEN_COOKIE_SETTINGS, readConsent, requiresConsent, resolveAdvertisingRegion, saveConsent, subscribeConsent } from "@/lib/advertisingConsent";
+import { advertisingChoice, CONSENT_NOTICE, CONSENT_SUMMARY, OPEN_COOKIE_SETTINGS, readConsent, saveConsent, subscribeConsent } from "@/lib/advertisingConsent";
 
 export default function CookieConsent() {
   const decisions = readConsent()?.decisions;
   const lastDecision = decisions?.[decisions.length - 1];
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(() => advertisingChoice() === undefined);
   const [settings, setSettings] = useState(false);
   const [privacy, setPrivacy] = useState(false);
   const [error, setError] = useState(false);
   const [marketing, setMarketing] = useState(advertisingChoice() === true);
   const openSettings = () => { setMarketing(advertisingChoice() === true); setSettings(true); };
   useEffect(() => {
-    let active = true;
-    const update = () => { if (active) setVisible(requiresConsent() && advertisingChoice() === undefined); };
+    const update = () => setVisible(advertisingChoice() === undefined);
     const open = () => { setMarketing(advertisingChoice() === true); setSettings(true); };
     const openPrivacy = () => setPrivacy(true);
     const unsubscribe = subscribeConsent(update);
-    void resolveAdvertisingRegion().then(update);
+    update();
     window.addEventListener(OPEN_COOKIE_SETTINGS, open);
     window.addEventListener("gs-open-privacy", openPrivacy);
-    return () => { active = false; unsubscribe(); window.removeEventListener(OPEN_COOKIE_SETTINGS, open); window.removeEventListener("gs-open-privacy", openPrivacy); };
+    return () => { unsubscribe(); window.removeEventListener(OPEN_COOKIE_SETTINGS, open); window.removeEventListener("gs-open-privacy", openPrivacy); };
   }, []);
   const choose = (accepted: boolean) => {
     if (!saveConsent(accepted)) { setError(true); return; }
