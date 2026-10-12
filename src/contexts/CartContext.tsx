@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from "react";
+import { trackCartAddition } from "@/lib/metaPixel";
 
 export interface CartItem {
   productId: string;
@@ -43,6 +44,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const addItem = useCallback((item: CartItem) => {
     setItems((prev) => [...prev, item]);
     setIsOpen(true);
+    trackCartAddition(item);
   }, []);
 
   const removeItem = useCallback((index: number) => {

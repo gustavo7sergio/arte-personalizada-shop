@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { useCart } from "@/contexts/CartContext";
 import { ShoppingCart, Trash2, MessageCircle, X } from "lucide-react";
 import MascotImage from "@/components/MascotImage";
+import { trackCartQuote } from "@/lib/metaPixel";
 
 const formatCurrency = (value: number) =>
   value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -20,6 +21,7 @@ const CartDrawer = () => {
 
     const msg = `Olá! Gostaria de fazer o seguinte pedido:\n\n${lines.join("\n\n")}\n\n💳 Total (6x sem juros): ${formatCurrency(totalInstallment)}\n📦 Total (PIX): ${formatCurrency(totalCash)}\n\nPoderia calcular o frete desse pedido, por favor?`;
 
+    trackCartQuote(items);
     window.open(`https://wa.me/553584181096?text=${encodeURIComponent(msg)}`, "_blank");
   };
 

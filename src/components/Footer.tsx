@@ -2,6 +2,7 @@ import { Instagram, Mail, Phone, ShoppingBag, Palette, Youtube } from "lucide-re
 import { Link, useLocation } from "react-router-dom";
 import logoWhite from "@/assets/logo-white.png?format=webp&w=240&imagetools";
 import { Button } from "@/components/ui/button";
+import { OPEN_COOKIE_SETTINGS } from "@/lib/advertisingConsent";
 
 const Footer = () => {
   const location = useLocation();
@@ -112,6 +113,10 @@ const Footer = () => {
           <p className="text-primary-foreground/85 text-xs font-body mt-2">
             CNPJ: 41.483.628/0001-72 — GS Mídias e Serviços LTDA
           </p>
+          <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 md:justify-center">
+            <Button variant="link" className="h-auto p-0 text-xs text-primary-foreground" onClick={() => window.dispatchEvent(new Event("gs-open-privacy"))}>Política de privacidade</Button>
+            <Button variant="link" className="h-auto p-0 text-xs text-primary-foreground" onClick={() => window.dispatchEvent(new Event(OPEN_COOKIE_SETTINGS))}>Configurações de cookies</Button>
+          </div>
         </div>
       </div>
     </footer>
