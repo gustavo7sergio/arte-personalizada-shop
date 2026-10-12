@@ -16,8 +16,15 @@ export default {
       fontFamily: {
         display: ['Playfair Display', 'serif'],
         body: ['DM Sans', 'sans-serif'],
+        consent: ['Montserrat Variable', 'sans-serif'],
       },
       colors: {
+        cookie: {
+          brand: "hsl(var(--cookie-brand))",
+          surface: "hsl(var(--cookie-surface))",
+          ink: "hsl(var(--cookie-ink))",
+          border: "hsl(var(--cookie-border))",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

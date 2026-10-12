@@ -36,7 +36,7 @@ export function saveConsent(advertising: boolean): boolean {
     visitorId: previous?.visitorId ?? crypto.randomUUID(),
     decisions: [...(previous?.decisions ?? []), {
       advertising, at: new Date().toISOString(), noticeVersion: NOTICE_VERSION,
-      notice: CONSENT_NOTICE, choices: ["Aceitar publicidade", "Recusar publicidade"],
+      notice: CONSENT_NOTICE, choices: ["Aceitar", "Recusar", "Personalizar"],
     }],
   };
   try {
@@ -52,14 +52,15 @@ let region: string | undefined;
 let regionRequest: Promise<void> | undefined;
 
 export function requiresConsent(): boolean {
-  return !region || region === "XX" || region === "T1" || CONSENT_COUNTRIES.has(region);
+  // GS Cartões requires explicit marketing acceptance worldwide.
+  return true;
 }
 
 export function advertisingAllowed(): boolean {
   const choice = advertisingChoice();
   const privacy = navigator as Navigator & { globalPrivacyControl?: boolean };
   if (choice === false || privacy.globalPrivacyControl || navigator.doNotTrack === "1") return false;
-  return choice === true || !requiresConsent();
+  return choice === true;
 }
 
 export function resolveAdvertisingRegion(): Promise<void> {
