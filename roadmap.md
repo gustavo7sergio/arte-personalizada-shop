@@ -2,6 +2,8 @@
 
 # Meta Pixel GS Cartões
 
+- [x] Desvincular aviso de espera assíncrona e testar tempo, rolagem, navegação, preferências e carrinho em celular/computador (25 testes; navegador em 393px e 1280px)
+
 - [x] Refinar aviso com identidade visual e opções Aceitar, Recusar e Personalizar
 - [x] Exigir consentimento explícito mundial e preservar histórico de preferências
 - [x] Verificar computadores, celulares e eventos do produto/carrinho/WhatsApp (transporte simulado; biblioteca real carregada)
