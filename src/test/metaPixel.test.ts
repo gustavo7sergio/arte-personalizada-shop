@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { advertisingAllowed, CONSENT_KEY, CONSENT_NOTICE, readConsent, saveConsent } from "@/lib/advertisingConsent";
+import { advertisingAllowed, CONSENT_KEY, CONSENT_NOTICE, readConsent, saveConsent, resolveAdvertisingRegion } from "@/lib/advertisingConsent";
 import { cartEventParams, META_PIXEL_ID, safeTrackingUrl, syncPixelConsent, trackCartAddition, trackCartQuote, trackMetaEvent, trackWhatsAppLink } from "@/lib/metaPixel";
 import type { CartItem } from "@/contexts/CartContext";
 
@@ -12,6 +12,15 @@ beforeEach(() => {
 
 describe("GS Cartões Meta consent and events", () => {
   it("uses the user's existing Pixel ID", () => { expect(META_PIXEL_ID).toBe("303131834616940"); });
+  it("requires explicit marketing consent even outside regulated regions", async () => {
+    vi.stubGlobal("fetch", vi.fn().mockResolvedValue({ ok: true, text: async () => "loc=US" }));
+    await resolveAdvertisingRegion();
+    expect(advertisingAllowed()).toBe(false);
+    expect(trackMetaEvent("ViewContent")).toBe(false);
+    saveConsent(true);
+    expect(advertisingAllowed()).toBe(true);
+    vi.unstubAllGlobals();
+  });
   it("blocks all Meta events and script loading before advertising acceptance", () => {
     expect(advertisingAllowed()).toBe(false);
     expect(trackMetaEvent("PageView")).toBe(false);

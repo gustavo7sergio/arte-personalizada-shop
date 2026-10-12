@@ -3,6 +3,7 @@ export const CONSENT_CHANGED = "gs-advertising-consent-changed";
 export const OPEN_COOKIE_SETTINGS = "gs-open-cookie-settings";
 export const NOTICE_VERSION = "2026-10-12-v1";
 export const CONSENT_NOTICE = "Usamos cookies necessários para manter seu carrinho. Com sua autorização, o Meta Pixel compartilha com a Meta visitas, produtos visualizados, adições ao carrinho e cliques de orçamento pelo WhatsApp, além de dados técnicos como IP, navegador e identificadores de cookies, para medir e otimizar anúncios. Não enviamos mensagens, nome, e-mail ou telefone de clientes. Você pode aceitar ou recusar a publicidade e mudar sua escolha em Configurações de cookies.";
+export const CONSENT_SUMMARY = "Usamos cookies para manter seu carrinho. Só com sua autorização, compartilhamos com a Meta visitas, produtos e cliques no WhatsApp para medir e otimizar anúncios.";
 
 interface ConsentDecision {
   advertising: boolean;
@@ -10,6 +11,7 @@ interface ConsentDecision {
   noticeVersion: typeof NOTICE_VERSION;
   notice: string;
   choices: string[];
+  bannerNotice?: string;
 }
 export interface ConsentRecord {
   visitorId: string;
@@ -36,7 +38,8 @@ export function saveConsent(advertising: boolean): boolean {
     visitorId: previous?.visitorId ?? crypto.randomUUID(),
     decisions: [...(previous?.decisions ?? []), {
       advertising, at: new Date().toISOString(), noticeVersion: NOTICE_VERSION,
-      notice: CONSENT_NOTICE, choices: ["Aceitar publicidade", "Recusar publicidade"],
+      notice: CONSENT_NOTICE, choices: ["Aceitar", "Recusar", "Personalizar"],
+      bannerNotice: CONSENT_SUMMARY,
     }],
   };
   try {
@@ -46,33 +49,21 @@ export function saveConsent(advertising: boolean): boolean {
   } catch { return false; }
 }
 
-// Conservative consent regions, including Brazil; unresolved locations also require consent.
-const CONSENT_COUNTRIES = new Set("BR AT BE BG HR CY CZ DK EE FI FR DE GR HU IS IE IT LV LI LT LU MT NL NO PL PT RO SK SI ES SE GB CH AD MC SM VA AX FO GL GG JE IM CA AU NZ ZA JP KR IN TH SG TR IL AR CO PE CL EC MX UY".split(" "));
-let region: string | undefined;
-let regionRequest: Promise<void> | undefined;
-
 export function requiresConsent(): boolean {
-  return !region || region === "XX" || region === "T1" || CONSENT_COUNTRIES.has(region);
+  // GS Cartões requires explicit marketing acceptance worldwide.
+  return true;
 }
 
 export function advertisingAllowed(): boolean {
   const choice = advertisingChoice();
   const privacy = navigator as Navigator & { globalPrivacyControl?: boolean };
   if (choice === false || privacy.globalPrivacyControl || navigator.doNotTrack === "1") return false;
-  return choice === true || !requiresConsent();
+  return choice === true;
 }
 
 export function resolveAdvertisingRegion(): Promise<void> {
-  regionRequest ??= (async () => {
-    const controller = new AbortController();
-    const timeout = window.setTimeout(() => controller.abort(), 2000);
-    try {
-      const response = await fetch("/cdn-cgi/trace", { signal: controller.signal, credentials: "same-origin", cache: "no-store" });
-      if (response.ok) region = (await response.text()).match(/^loc=([A-Z]{2})$/m)?.[1];
-    } catch { /* Unknown region: consent required. */ }
-    finally { window.clearTimeout(timeout); }
-  })();
-  return regionRequest;
+  // Kept as a readiness hook for existing consumers; geography cannot grant consent.
+  return Promise.resolve();
 }
 
 export function subscribeConsent(callback: () => void): () => void {
