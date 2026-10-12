@@ -26,6 +26,16 @@ describe("GS Cartões Meta consent and events", () => {
     expect(trackMetaEvent("PageView")).toBe(false);
     expect(document.getElementById("gs-meta-pixel")).toBeNull();
   });
+  it("shows the exact marketing notice and keeps refusal blocking every Meta event", () => {
+    expect(CONSENT_SUMMARY).toBe("Utilizamos recursos essenciais para o funcionamento do site e do carrinho. Com sua autorização, usamos cookies de marketing para entender quais produtos despertam interesse e melhorar nossos anúncios.");
+    saveConsent(false);
+    expect(readConsent()?.decisions[0].bannerNotice).toBe(CONSENT_SUMMARY);
+    expect(advertisingAllowed()).toBe(false);
+    expect(trackMetaEvent("PageView")).toBe(false);
+    trackCartAddition(item);
+    expect(window.fbq).toBeUndefined();
+    expect(document.getElementById("gs-meta-pixel")).toBeNull();
+  });
   it("records acceptance evidence and preserves it after withdrawal", () => {
     saveConsent(true); saveConsent(false);
     const record = readConsent();
