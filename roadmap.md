@@ -2,6 +2,10 @@
 
 # Meta Pixel GS Cartões
 
+- [ ] Refinar aviso com identidade visual e opções Aceitar, Recusar e Personalizar
+- [ ] Exigir consentimento explícito mundial e preservar histórico de preferências
+- [ ] Verificar computadores, celulares e eventos do produto/carrinho/WhatsApp
+
 - [x] Verificar instalações existentes e decidir consentimento
 - [x] Instalar Pixel e eventos sem duplicação e sem compras fictícias
 - [x] Adicionar consentimento revogável e política de privacidade
