@@ -3,6 +3,7 @@ import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { CartProvider, useCart } from "@/contexts/CartContext";
 import { CartContext } from "@/contexts/cartState";
 import { useContext } from "react";
+import { advertisingAllowed, saveConsent } from "@/lib/advertisingConsent";
 
 vi.mock("@/lib/metaPixel", () => ({ trackCartAddition: vi.fn() }));
 afterEach(() => { cleanup(); localStorage.clear(); });
@@ -27,4 +28,15 @@ it("provider and consumers use the same stable context and retain working cart a
   expect(screen.getByLabelText("cart total")).toHaveTextContent("90");
   expect(screen.getByLabelText("cart open")).toHaveTextContent("true");
   expect(JSON.parse(localStorage.getItem("gs-cart") ?? "[]")).toHaveLength(1);
+});
+
+it("keeps the cart working when marketing cookies are refused", () => {
+  saveConsent(false);
+  render(<CartProvider><Consumer /></CartProvider>);
+  fireEvent.click(screen.getByText("Add"));
+  expect(screen.getByLabelText("cart count")).toHaveTextContent("1");
+  expect(screen.getByLabelText("cart total")).toHaveTextContent("90");
+  expect(screen.getByLabelText("cart open")).toHaveTextContent("true");
+  expect(JSON.parse(localStorage.getItem("gs-cart") ?? "[]")).toHaveLength(1);
+  expect(advertisingAllowed()).toBe(false);
 });

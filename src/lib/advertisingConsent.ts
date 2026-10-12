@@ -3,7 +3,7 @@ export const CONSENT_CHANGED = "gs-advertising-consent-changed";
 export const OPEN_COOKIE_SETTINGS = "gs-open-cookie-settings";
 export const NOTICE_VERSION = "2026-10-12-v1";
 export const CONSENT_NOTICE = "Usamos cookies necessários para manter seu carrinho. Com sua autorização, o Meta Pixel compartilha com a Meta visitas, produtos visualizados, adições ao carrinho e cliques de orçamento pelo WhatsApp, além de dados técnicos como IP, navegador e identificadores de cookies, para medir e otimizar anúncios. Não enviamos mensagens, nome, e-mail ou telefone de clientes. Você pode aceitar ou recusar a publicidade e mudar sua escolha em Configurações de cookies.";
-export const CONSENT_SUMMARY = "Usamos cookies para manter seu carrinho. Só com sua autorização, compartilhamos com a Meta visitas, produtos e cliques no WhatsApp para medir e otimizar anúncios.";
+export const CONSENT_SUMMARY = "Utilizamos recursos essenciais para o funcionamento do site e do carrinho. Com sua autorização, usamos cookies de marketing para entender quais produtos despertam interesse e melhorar nossos anúncios.";
 
 interface ConsentDecision {
   advertising: boolean;
