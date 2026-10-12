@@ -16,6 +16,7 @@ import Footer from "@/components/Footer";
 import ProductImage from "@/components/ProductImage";
 import ProductBadges from "@/components/ProductBadges";
 import MascotImage from "@/components/MascotImage";
+import { ProductViewTracking } from "@/components/MetaTracking";
 
 
 import DeferUntilVisible from "@/components/DeferUntilVisible";
@@ -169,6 +170,7 @@ const ProductPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <ProductViewTracking ids={config.productIds} name={config.displayName} />
       <Helmet>
         <title>{config.seoTitle}</title>
         <meta name="description" content={config.seoDescription} />

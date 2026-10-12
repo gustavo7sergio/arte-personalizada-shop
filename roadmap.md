@@ -1,5 +1,14 @@
 # Otimização de performance da Home
 
+# Meta Pixel GS Cartões
+
+- [x] Verificar instalações existentes e decidir consentimento
+- [x] Instalar Pixel e eventos sem duplicação e sem compras fictícias
+- [x] Adicionar consentimento revogável e política de privacidade
+- [x] Validar eventos, recusa, retirada e fluxo do carrinho (14 testes; navegador com transporte simulado)
+- [x] Explicar teste na Meta e necessidade de republicação
+- [ ] Confirmar recebimento em Testar eventos no domínio publicado — depende de republicação e acesso ao Gerenciador de Eventos; script/config Meta carregam no teste local, mas transmissão não foi observada
+
 - [x] Otimizar descoberta e variantes responsivas do hero/LCP
 - [x] Criar e aplicar imagens responsivas para mascotes prioritários
 - [x] Revisar categorias e logos sem alteração visual

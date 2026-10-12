@@ -6,6 +6,8 @@ import FloatingCartButton from "@/components/FloatingCartButton";
 import Index from "./pages/Index";
 import ScrollToTop from "@/components/ScrollToTop";
 import { lazyWithReload } from "@/lib/lazyWithReload";
+import MetaTracking from "@/components/MetaTracking";
+import CookieConsent from "@/components/CookieConsent";
 
 // Non-critical / route-level chunks: keep the initial main-thread work small.
 const Sonner = lazy(() => import("@/components/ui/sonner").then((m) => ({ default: m.Toaster })));
@@ -22,6 +24,8 @@ const AppContent = () => {
 
   return (
     <>
+      <MetaTracking />
+      <CookieConsent />
       <Suspense fallback={null}>
         {notificationsEnabled ? <Sonner /> : null}
         {isOpen ? <CartDrawer /> : null}
