@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import "@fontsource-variable/montserrat/latin.css";
 import { Button } from "@/components/ui/button";
-import { Switch } from "@/components/ui/switch";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { advertisingChoice, CONSENT_NOTICE, CONSENT_SUMMARY, OPEN_COOKIE_SETTINGS, readConsent, requiresConsent, resolveAdvertisingRegion, saveConsent, subscribeConsent } from "@/lib/advertisingConsent";
 
@@ -49,7 +48,7 @@ export default function CookieConsent() {
       <DialogContent className="max-h-[85dvh] w-[calc(100%_-_2rem)] overflow-y-auto rounded-lg border-cookie-border bg-cookie-surface font-consent text-cookie-ink">
         <DialogHeader><DialogTitle className="font-consent text-cookie-ink">Configurações de cookies</DialogTitle><DialogDescription className="text-cookie-ink">{CONSENT_NOTICE}</DialogDescription></DialogHeader>
         <div className="flex items-center justify-between gap-4 border-b border-cookie-border pb-3"><div><p className="text-sm font-semibold">Cookies necessários</p><p className="text-xs">Mantêm seu carrinho e suas preferências.</p></div><span className="text-xs font-medium">Sempre ativos</span></div>
-        <div className="flex items-center justify-between gap-4"><label htmlFor="cookie-marketing" className="text-sm font-semibold">Publicidade da Meta</label><Switch id="cookie-marketing" checked={marketing} onCheckedChange={setMarketing} className="data-[state=checked]:bg-cookie-brand" /></div>
+        <div className="flex items-center justify-between gap-4"><label htmlFor="cookie-marketing" className="text-sm font-semibold">Publicidade da Meta</label><Button id="cookie-marketing" role="switch" aria-checked={marketing} aria-label="Publicidade da Meta" variant="outline" onClick={() => setMarketing(!marketing)} className={`${actionClass} max-w-24 ${marketing ? "border-cookie-brand bg-cookie-brand" : ""}`}>{marketing ? "Ativada" : "Desativada"}</Button></div>
         <p className="text-sm text-muted-foreground">Recusar também retira uma autorização anterior e impede novos envios. Fechar esta janela mantém sua escolha atual.</p>
         <Button variant="link" className="justify-start p-0" onClick={() => setPrivacy(true)}>Política de privacidade</Button>
         <Button onClick={() => choose(marketing)} variant="outline" className={actionClass}>Salvar preferências</Button>
