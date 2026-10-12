@@ -1,30 +1,7 @@
-import React, { createContext, useContext, useState, useEffect, useCallback } from "react";
+import React, { useContext, useState, useEffect, useCallback } from "react";
 import { trackCartAddition } from "@/lib/metaPixel";
-
-export interface CartItem {
-  productId: string;
-  productName: string;
-  subtitle?: string;
-  variantLabel: string;
-  qty: number;
-  cashPrice: number;
-  installmentPrice: number;
-  unitPrice?: number;
-  image?: string;
-}
-
-interface CartContextType {
-  items: CartItem[];
-  addItem: (item: CartItem) => void;
-  removeItem: (index: number) => void;
-  clearCart: () => void;
-  isOpen: boolean;
-  setIsOpen: (open: boolean) => void;
-  totalCash: number;
-  totalInstallment: number;
-}
-
-const CartContext = createContext<CartContextType | undefined>(undefined);
+import { CartContext, type CartItem } from "./cartState";
+export type { CartItem } from "./cartState";
 
 export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [items, setItems] = useState<CartItem[]>(() => {

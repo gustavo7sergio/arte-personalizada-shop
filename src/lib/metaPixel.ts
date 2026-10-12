@@ -1,5 +1,5 @@
 import { advertisingAllowed } from "./advertisingConsent";
-import type { CartItem } from "@/contexts/CartContext";
+import type { CartItem } from "@/contexts/cartState";
 
 export const META_PIXEL_ID = "303131834616940";
 type PixelEvent = "PageView" | "ViewContent" | "AddToCart" | "WhatsAppQuoteClick";
