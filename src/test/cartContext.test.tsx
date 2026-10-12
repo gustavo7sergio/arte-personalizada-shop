@@ -3,6 +3,7 @@ import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { CartProvider, useCart } from "@/contexts/CartContext";
 import { CartContext } from "@/contexts/cartState";
 import { useContext } from "react";
+import { advertisingAllowed, saveConsent } from "@/lib/advertisingConsent";
 
 vi.mock("@/lib/metaPixel", () => ({ trackCartAddition: vi.fn() }));
 afterEach(() => { cleanup(); localStorage.clear(); });

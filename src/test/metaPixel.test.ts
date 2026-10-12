@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { advertisingAllowed, CONSENT_KEY, CONSENT_NOTICE, readConsent, saveConsent, resolveAdvertisingRegion } from "@/lib/advertisingConsent";
+import { advertisingAllowed, CONSENT_KEY, CONSENT_NOTICE, CONSENT_SUMMARY, readConsent, saveConsent, resolveAdvertisingRegion } from "@/lib/advertisingConsent";
 import { cartEventParams, META_PIXEL_ID, safeTrackingUrl, syncPixelConsent, trackCartAddition, trackCartQuote, trackMetaEvent, trackWhatsAppLink } from "@/lib/metaPixel";
 import type { CartItem } from "@/contexts/CartContext";
 
