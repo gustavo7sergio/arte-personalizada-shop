@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "@fontsource-variable/montserrat/latin.css";
+import "@fontsource-variable/montserrat/wght.css";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { advertisingChoice, CONSENT_NOTICE, CONSENT_SUMMARY, OPEN_COOKIE_SETTINGS, readConsent, requiresConsent, resolveAdvertisingRegion, saveConsent, subscribeConsent } from "@/lib/advertisingConsent";
