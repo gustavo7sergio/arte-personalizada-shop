@@ -2,6 +2,8 @@
 
 # Meta Pixel GS Cartões
 
+- [ ] Corrigir desaparecimento automático do aviso e testar tempo, rolagem, navegação, preferências e carrinho em celular/computador
+
 - [x] Refinar aviso com identidade visual e opções Aceitar, Recusar e Personalizar
 - [x] Exigir consentimento explícito mundial e preservar histórico de preferências
 - [x] Verificar computadores, celulares e eventos do produto/carrinho/WhatsApp (transporte simulado; biblioteca real carregada)
