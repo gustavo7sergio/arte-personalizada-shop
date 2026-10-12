@@ -19,9 +19,11 @@ export default function MetaTracking() {
   const location = useLocation();
   const revision = useAdvertisingRevision();
   const lastPage = useRef<string>();
+  // History keys also change for same-page navigation and anchors, which are not new page views.
+  const page = location.pathname + location.search;
   useEffect(() => {
-    if (lastPage.current !== location.key && trackMetaEvent("PageView")) lastPage.current = location.key;
-  }, [location.key, revision]);
+    if (lastPage.current !== page && trackMetaEvent("PageView")) lastPage.current = page;
+  }, [page, revision]);
   useEffect(() => {
     document.addEventListener("click", trackWhatsAppLink);
     document.addEventListener("auxclick", trackWhatsAppLink);

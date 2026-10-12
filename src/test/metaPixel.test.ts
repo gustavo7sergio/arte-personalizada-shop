@@ -51,7 +51,8 @@ describe("GS Cartões Meta consent and events", () => {
     expect(document.querySelectorAll("#gs-meta-pixel")).toHaveLength(1);
     const queue = window.fbq?.queue ?? [];
     expect(queue.filter((args) => args[0] === "init")).toEqual([["init", "303131834616940"]]);
-    expect(queue.filter((args) => args[0] === "trackSingle").map((args) => args[2])).toEqual(["PageView", "ViewContent", "AddToCart"]);
+    expect(queue.filter((args) => args[0] === "track")).toEqual([["track", "PageView"]]);
+    expect(queue.filter((args) => args[0] === "trackSingle").map((args) => args[2])).toEqual(["ViewContent", "AddToCart"]);
   });
   it("reports actual cart quantity and PIX value without inflating the total", () => {
     expect(cartEventParams([item])).toEqual({ content_type: "product", content_ids: ["tag-6x6"], contents: [{ id: "tag-6x6", quantity: 100, item_price: 0.9 }], num_items: 100, value: 90, currency: "BRL" });

@@ -93,7 +93,8 @@ export function syncPixelConsent(): void {
 export function trackMetaEvent(event: PixelEvent, params: Params = {}): boolean {
   const fbq = pixel();
   if (!fbq) return false;
-  fbq(event === "WhatsAppQuoteClick" ? "trackSingleCustom" : "trackSingle", META_PIXEL_ID, event, params);
+  if (event === "PageView") fbq("track", "PageView");
+  else fbq(event === "WhatsAppQuoteClick" ? "trackSingleCustom" : "trackSingle", META_PIXEL_ID, event, params);
   return true;
 }
 

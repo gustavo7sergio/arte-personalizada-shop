@@ -3,6 +3,7 @@
 - Product galleries resolve responsive WebP variants through `productResponsiveImages`; keep original asset URLs as SEO and zoom fallbacks so metadata remains stable and image quality is preserved.
 - Route-level lazy imports use `lazyWithReload` so a stale deployment chunk triggers one safe refresh instead of leaving a blank screen.
 - Meta browser reporting is centralized in `metaPixel` and gated on current advertising consent before every send; route/product effects own view events, cart actions own additions/cart quotes, and one delegated listener owns WhatsApp links to avoid duplicate reporting.
+- PageView uses Meta's standard `track` command and compares pathname plus query rather than history-entry keys; same-page navigation, anchors and consent revisions must not create duplicate views, while return visits count again.
 - Advertising consent keeps versioned notice evidence and decision history in first-party browser storage, with cross-tab withdrawal; never send customer matching data or infer purchases from WhatsApp clicks.
 - Marketing requires explicit acceptance worldwide; geographic defaults cannot grant it, keeping the site's consent promise consistent.
 - Cookie notice visibility reads the stored explicit decision synchronously, independent of readiness hooks, timers, scrolling and routes, so undecided visitors always retain the consent prompt.

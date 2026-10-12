@@ -2,6 +2,8 @@
 
 # Meta Pixel GS Cartões
 
+- [ ] Investigar classificação e duplicação de PageView, corrigir apenas problemas identificados e validar navegação e consentimento
+
 - [x] Desvincular aviso de espera assíncrona e testar tempo, rolagem, navegação, preferências e carrinho em celular/computador (25 testes; navegador em 393px e 1280px)
 
 - [x] Refinar aviso com identidade visual e opções Aceitar, Recusar e Personalizar
@@ -13,7 +15,7 @@
 - [x] Adicionar consentimento revogável e política de privacidade
 - [x] Validar eventos, recusa, retirada e fluxo do carrinho (14 testes; navegador com transporte simulado)
 - [x] Explicar teste na Meta e necessidade de republicação
-- [ ] Confirmar recebimento em Testar eventos no domínio publicado — depende de republicação e acesso ao Gerenciador de Eventos; script/config Meta carregam no teste local, mas transmissão não foi observada
+- [x] Recebimento de ViewContent, AddToCart e WhatsAppQuoteClick no domínio publicado confirmado pelo usuário
 
 - [x] Otimizar descoberta e variantes responsivas do hero/LCP
 - [x] Criar e aplicar imagens responsivas para mascotes prioritários
