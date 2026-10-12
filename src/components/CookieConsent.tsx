@@ -3,7 +3,7 @@ import "@fontsource-variable/montserrat/latin.css";
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { advertisingChoice, CONSENT_NOTICE, OPEN_COOKIE_SETTINGS, readConsent, requiresConsent, resolveAdvertisingRegion, saveConsent, subscribeConsent } from "@/lib/advertisingConsent";
+import { advertisingChoice, CONSENT_NOTICE, CONSENT_SUMMARY, OPEN_COOKIE_SETTINGS, readConsent, requiresConsent, resolveAdvertisingRegion, saveConsent, subscribeConsent } from "@/lib/advertisingConsent";
 
 export default function CookieConsent() {
   const decisions = readConsent()?.decisions;
@@ -39,7 +39,7 @@ export default function CookieConsent() {
     {visible && !settings && !privacy && <section role="region" aria-label="Consentimento de cookies" className="fixed inset-x-3 bottom-24 z-40 rounded-lg border border-cookie-border bg-cookie-surface p-4 text-cookie-ink shadow-soft sm:inset-x-auto sm:bottom-6 sm:left-6 sm:w-[440px]">
       <div className="space-y-2 font-consent">
         <h2 className="font-consent text-sm font-semibold">Sua privacidade, sua escolha</h2>
-        <p className="text-xs leading-relaxed">Usamos cookies para manter seu carrinho. Só com sua autorização, compartilhamos com a Meta visitas, produtos e cliques no WhatsApp para medir e otimizar anúncios.</p>
+        <p className="text-xs leading-relaxed">{CONSENT_SUMMARY}</p>
         <Button variant="link" className="h-auto p-0 font-consent text-xs text-cookie-ink underline" onClick={() => setPrivacy(true)}>Política de privacidade</Button>
         {choices}
         {error && <p role="alert" className="text-sm text-destructive">Não foi possível salvar sua escolha. A publicidade permanece bloqueada. Libere o armazenamento do navegador e tente novamente.</p>}
