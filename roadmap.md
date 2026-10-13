@@ -2,7 +2,7 @@
 
 # Meta Pixel GS Cartões
 
-- [ ] Investigar classificação e duplicação de PageView, corrigir apenas problemas identificados e validar navegação e consentimento
+- [x] Investigar PageView: substituir trackSingle por track padrão e deduplicar por endereço real; 30 testes passaram e navegador confirmou aceite, âncoras, produto, mesma URL e retorno sem erros. Reclassificação no Gerenciador da Meta deve ser conferida após publicação.
 
 - [x] Desvincular aviso de espera assíncrona e testar tempo, rolagem, navegação, preferências e carrinho em celular/computador (25 testes; navegador em 393px e 1280px)
 
