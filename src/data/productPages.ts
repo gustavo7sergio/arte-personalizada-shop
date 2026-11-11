@@ -7,6 +7,9 @@ export const PRODUCTION_DEADLINE_ANSWER =
 
 export interface ProductFAQ { q: string; a: string }
 
+// Amostra de cor disponível do produto (mostruário visual na página).
+export interface ProductColorOption { name: string; hex: string }
+
 // Família funcional/visual do produto. Usada para sugestões coerentes em ProductPage.
 // Quando ausente em uma página, é inferida automaticamente a partir do slug
 // (ver inferProductFamily em src/lib/productSuggestions.ts).
@@ -59,6 +62,8 @@ export interface ProductPageConfig {
   prazoAnswer?: string;
   // Linha própria de prazo no card "Informações técnicas" quando difere do padrão.
   prazoShort?: string;
+  // Mostruário de cores disponíveis, exibido como amostras visuais na página.
+  colorOptions?: ProductColorOption[];
 }
 
 const FAQ_PRAZO: ProductFAQ = { q: "Qual o prazo de produção?", a: PRODUCTION_DEADLINE_ANSWER };
