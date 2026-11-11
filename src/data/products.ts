@@ -259,6 +259,40 @@ export const products: Product[] = [
 
 
 
+  {
+    id: "fita-de-cetim",
+    name: "Fita de Cetim Personalizada",
+    subtitle: "Rolo com 50 metros",
+    category: "Sacolinhas",
+    material: "Fita de cetim",
+    specs: [
+      "Rolo com 50 metros",
+      "Larguras de 15 mm ou 22 mm",
+      "Impressão em 1 cor",
+      "Cores da logo: dourado ou prata",
+      "8 dias de produção",
+      "Não acompanha a caixa",
+      "NÃO trabalhamos com fidelização de cores",
+    ],
+    highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
+    variants: [
+      {
+        label: "15 mm",
+        dimensions: "Rolo com 50 m · 15 mm de largura",
+        prices: [
+          { qty: 1, installment: 195.00, cash: 175.50, unitPrice: 175.50 },
+        ],
+      },
+      {
+        label: "22 mm",
+        dimensions: "Rolo com 50 m · 22 mm de largura",
+        prices: [
+          { qty: 1, installment: 225.00, cash: 202.50, unitPrice: 202.50 },
+        ],
+      },
+    ],
+  },
+
   // ─── CAIXINHAS ────────────────────────────────────────────────────
   {
     id: "caixinha-acessorios-p",

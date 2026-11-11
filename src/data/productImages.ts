@@ -73,6 +73,7 @@ import kitEssencial1Foto from "@/assets/products/kitessencial1-foto.jpg";
 import kitEssencial3Foto from "@/assets/products/kitessencial3-foto.jpg";
 import kitEssencial4Foto from "@/assets/products/kitessencial4-foto.jpg";
 import embalagemAlmofada from "@/assets/products/embalagem-almofada.jpg";
+import fitaCetim from "@/assets/products/fita-de-cetim-personalizada.jpg";
 import tagAcessoriosGrande from "@/assets/products/tagdeacessoriosformatogrande.jpg";
 
 export const productImages: Record<string, string | string[]> = {
@@ -97,6 +98,7 @@ export const productImages: Record<string, string | string[]> = {
   "ecobag-30x30": ecobag30,
   "display-pix-10x15": displayPix,
   "embalagem-almofada": embalagemAlmofada,
+  "fita-de-cetim": fitaCetim,
 
   // Tags de Brincos
   "tag-brincos-g": tagBrincosG,
