@@ -4,7 +4,7 @@ import { lazy, Suspense, useState, useMemo } from "react";
 import { ArrowLeft, ChevronLeft, ChevronRight, Search, ShoppingCart, Package, Tag, CreditCard, ChevronRight as ChevronRightIcon } from "lucide-react";
 import { products, type Product } from "@/data/products";
 import { productImages } from "@/data/productImages";
-import { productPageBySlug } from "@/data/productPages";
+import { productPageBySlug, prazoShortLine } from "@/data/productPages";
 import { buildGallery } from "@/data/productGalleries";
 import { getProductResponsiveImage } from "@/data/productResponsiveImages";
 import { Button } from "@/components/ui/button";
@@ -475,7 +475,7 @@ const ProductPage = () => {
                           </li>
                         ))}
                         <li className="text-xs font-body text-muted-foreground flex gap-1.5">
-                          <span className="text-primary mt-0.5">•</span>Prazo de produção: 5 a 6 dias úteis após aprovação da arte
+                          <span className="text-primary mt-0.5">•</span>{prazoShortLine(config).replace(/×/g, "x")}
                         </li>
                       </ul>
                     </div>
