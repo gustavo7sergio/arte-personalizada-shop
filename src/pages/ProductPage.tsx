@@ -478,15 +478,6 @@ const ProductPage = () => {
                 Adicionar ao carrinho
               </Button>
 
-              {/* Descrição longa */}
-              {config.longDescription && (
-                <div className="pt-4 space-y-3">
-                  {config.longDescription.map((p, i) => (
-                    <p key={i} className="text-sm font-body text-muted-foreground leading-relaxed">{p}</p>
-                  ))}
-                </div>
-              )}
-
               {/* Mostruário de cores */}
               {(config.colorOptions?.length ?? 0) + (config.logoColorOptions?.length ?? 0) > 0 ? (
                 <div className="pt-4 space-y-4">
@@ -499,6 +490,15 @@ const ProductPage = () => {
                   <p className="text-[11px] font-body text-muted-foreground italic">As tonalidades podem variar levemente entre lotes.</p>
                 </div>
               ) : null}
+
+              {/* Descrição longa */}
+              {config.longDescription && (
+                <div className="pt-4 space-y-3">
+                  {config.longDescription.map((p, i) => (
+                    <p key={i} className="text-sm font-body text-muted-foreground leading-relaxed">{p}</p>
+                  ))}
+                </div>
+              )}
 
               {/* Especificações */}
               <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
