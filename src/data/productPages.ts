@@ -827,6 +827,54 @@ const productPagesRaw: ProductPageConfig[] = [
   },
 
   {
+    slug: "fita-de-cetim-personalizada-rolo-50-metros",
+    productIds: ["fita-de-cetim"],
+    displayName: "Fita de Cetim Personalizada 50 Metros",
+    categorySlug: "sacolinhas-personalizadas-para-semijoias",
+    categoryLabel: "Sacolinhas",
+    seoTitle: "Fita de Cetim Personalizada 50 Metros | GS Cartões",
+    seoDescription:
+      "Fita de cetim personalizada em rolo com 50 metros, 15 ou 22 mm de largura, com sua logo impressa em dourado ou prata. Acabamento elegante para embalagens de semijoias.",
+    productFamily: "sacolinhas",
+    longDescription: [
+      "A Fita de Cetim Personalizada é o acabamento que fecha a embalagem com a identidade da sua marca. O rolo vem com 50 metros de fita de cetim com brilho acetinado, pronta para amarrar caixinhas, sacolinhas, ecobags e kits de presente.",
+      "A sua logo é impressa ao longo de toda a fita, em 1 cor, com efeito metalizado nas opções dourado ou prata. O resultado é um laço com cara de marca: o nome aparece repetido na fita e fica visível assim que o pacote chega às mãos da cliente.",
+      "Você escolhe a largura que combina com a sua embalagem — 15 mm para um laço mais delicado ou 22 mm para um acabamento mais robusto — e a cor da fita entre as opções do mostruário: amarelo, azul-claro, azul-marinho, branco, bege, preto, rosa-bebê, pink, laranja, lilás, marrom, vinho, cinza, verde e vermelho.",
+      "A arte é 100% personalizada e a mesma fita pode ser usada em diferentes embalagens do seu pedido. Não acompanha a caixa ilustrada nas fotos, e não trabalhamos com fidelização de cores: pequenas variações de tonalidade entre lotes são normais no processo de impressão.",
+    ],
+    faqs: wrapFaqs([
+      {
+        q: "Quantos metros vêm no rolo?",
+        a: "Cada rolo tem 50 metros de fita de cetim, entregos em carretel e prontos para uso.",
+      },
+      {
+        q: "Qual a diferença entre a fita de 15 mm e a de 22 mm?",
+        a: "A de 15 mm resulta em um laço mais delicado, ideal para caixinhas pequenas e tags. A de 22 mm é mais larga e robusta, boa para caixinhas maiores, sacolinhas e embalagens de presente. A escolha depende do tamanho da embalagem que você usa.",
+      },
+      {
+        q: "Em qual cor a minha logo é impressa?",
+        a: "A impressão é feita em 1 cor, com efeito metalizado, nas opções dourado ou prata. Você escolhe a cor da logo e a cor da fita separadamente.",
+      },
+      {
+        q: "Quais cores de fita estão disponíveis?",
+        a: "O mostruário traz diversas opções, como amarelo, azul-claro, azul-marinho, branco, bege, preto, rosa-bebê, pink, laranja, lilás, marrom, vinho, cinza, verde e vermelho. Se tiver dúvida sobre qual combina com a sua identidade visual, nossa equipe ajuda na escolha.",
+      },
+      {
+        q: "A caixa que aparece na foto acompanha a fita?",
+        a: "Não. A caixa é apenas ilustrativa e serve para mostrar a fita aplicada como laço. O pedido inclui o rolo de fita personalizada.",
+      },
+      {
+        q: "Posso usar a fita em embalagens que já tenho?",
+        a: "Sim. A fita é vendida em rolo, então você pode usá-la nas caixinhas, sacolinhas e demais embalagens que já utiliza no seu envio.",
+      },
+      {
+        q: "A cor da fita vem exatamente igual à do mostruário?",
+        a: "Não trabalhamos com fidelização de cores, por isso pequenas variações de tonalidade entre lotes são normais. Se a cor for decisiva para o seu projeto, fale com a gente antes de fechar o pedido.",
+      },
+    ]),
+  },
+
+  {
 
     slug: "sacola-plastica-personalizada-alca-vazada",
     productIds: ["sacola-plastica"],
