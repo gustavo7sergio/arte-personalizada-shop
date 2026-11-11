@@ -11,8 +11,6 @@ export interface ProductFAQ { q: string; a: string }
 export interface ProductColorOption {
   name: string;
   hex: string;
-  // Fundo CSS alternativo (ex.: gradiente metálico) usado no lugar de hex quando presente.
-  gradient?: string;
 }
 
 // Família funcional/visual do produto. Usada para sugestões coerentes em ProductPage.
@@ -873,17 +871,10 @@ const productPagesRaw: ProductPageConfig[] = [
       { name: "Verde", hex: "#2E7D5B" },
       { name: "Vermelho", hex: "#C0392B" },
     ],
+    // Amostras extraídas dos quadradinhos "dourado" e "prata" do cartaz oficial.
     logoColorOptions: [
-      {
-        name: "Dourado",
-        hex: "#C9A227",
-        gradient: "linear-gradient(145deg, #FBF0C0 0%, #E3C158 35%, #B8873F 65%, #F3E1A0 100%)",
-      },
-      {
-        name: "Prata",
-        hex: "#BFC5CC",
-        gradient: "linear-gradient(145deg, #F5F7FA 0%, #CBD2DA 35%, #8F98A4 65%, #EAEEF3 100%)",
-      },
+      { name: "Dourado", hex: "#D0AB67" },
+      { name: "Prata", hex: "#AAABAF" },
     ],
     longDescription: [
       "A Fita de Cetim Personalizada é o acabamento que fecha a embalagem com a identidade da sua marca. O rolo vem com 50 metros de fita de cetim com brilho acetinado, pronta para amarrar caixinhas, sacolinhas, ecobags e kits de presente.",

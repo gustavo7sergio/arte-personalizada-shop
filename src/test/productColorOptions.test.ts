@@ -10,11 +10,13 @@ describe("mostruário de cores da fita de cetim", () => {
     expect(page?.logoColorOptions?.map((c) => c.name)).toEqual(["Dourado", "Prata"]);
   });
 
-  it("cada cor de logo tem cor sólida e efeito metálico", () => {
+  it("cada cor de logo é sólida e igual à amostra do cartaz oficial", () => {
     const page = productPageBySlug(FITA_SLUG);
-    for (const color of page?.logoColorOptions ?? []) {
+    const colors = page?.logoColorOptions ?? [];
+    expect(colors.map((c) => c.hex)).toEqual(["#D0AB67", "#AAABAF"]);
+    for (const color of colors) {
       expect(color.hex).toMatch(HEX);
-      expect(color.gradient).toMatch(/linear-gradient/);
+      expect("gradient" in color).toBe(false);
     }
   });
 
