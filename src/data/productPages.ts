@@ -878,7 +878,7 @@ const productPagesRaw: ProductPageConfig[] = [
     ],
     longDescription: [
       "A Fita de Cetim Personalizada é o acabamento que fecha a embalagem com a identidade da sua marca. O rolo vem com 50 metros de fita de cetim com brilho acetinado, pronta para amarrar caixinhas, sacolinhas, ecobags e kits de presente.",
-      "A sua logo é impressa ao longo de toda a fita, em 1 cor, com efeito metalizado nas opções dourado ou prata. O resultado é um laço com cara de marca: o nome aparece repetido na fita e fica visível assim que o pacote chega às mãos da cliente.",
+      "A sua logo é impressa ao longo de toda a fita, em 1 cor, nas opções dourado ou prata. O resultado é um laço com cara de marca: o nome aparece repetido na fita e fica visível assim que o pacote chega às mãos da cliente.",
       "Você escolhe a largura que combina com a sua embalagem — 15 mm para um laço mais delicado ou 22 mm para um acabamento mais robusto — e a cor da fita entre as opções do mostruário: amarelo, azul-claro, azul-marinho, branco, bege, preto, rosa-bebê, pink, laranja, lilás, marrom, vinho, cinza, verde e vermelho.",
       "A arte é 100% personalizada e a mesma fita pode ser usada em diferentes embalagens do seu pedido. Não acompanha a caixa ilustrada nas fotos, e não trabalhamos com fidelização de cores: pequenas variações de tonalidade entre lotes são normais no processo de impressão.",
     ],
@@ -893,7 +893,7 @@ const productPagesRaw: ProductPageConfig[] = [
       },
       {
         q: "Em qual cor a minha logo é impressa?",
-        a: "A impressão é feita em 1 cor, com efeito metalizado, nas opções dourado ou prata. Você escolhe a cor da logo e a cor da fita separadamente.",
+        a: "A impressão é feita em 1 cor, nas opções dourado ou prata. Você escolhe a cor da logo e a cor da fita separadamente.",
       },
       {
         q: "Quais cores de fita estão disponíveis?",
