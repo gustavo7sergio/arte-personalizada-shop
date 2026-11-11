@@ -330,7 +330,7 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
     { src: ecobag30Foto2, type: "photo", alt: "Ecobag personalizada 30x30 cm — modelo Lumière Semijoias em uso" },
   ],
   "fita-de-cetim-personalizada-rolo-50-metros": [
-    { src: fitaCetimFoto2, type: "photo", alt: "Fita de cetim personalizada — carretel com a fita desenrolada e a logo impressa" },
+    { src: fitaCetimFoto2, type: "photo", alt: "Fita de cetim personalizada — laço em caixa bege com a logo impressa" },
   ],
   "display-pix-personalizado-10x15-cm": [
     { src: displayPixMed, type: "measurement", alt: "Display PIX personalizado 10x15 cm — medidas" },
