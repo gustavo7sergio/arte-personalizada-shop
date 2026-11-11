@@ -54,7 +54,7 @@ const ColorSwatchGroup = ({
         <li key={c.name} className="flex flex-col items-center gap-1.5 w-14">
           <span
             className="h-9 w-9 rounded-full border border-border shadow-sm"
-            style={c.gradient ? { background: c.gradient } : { backgroundColor: c.hex }}
+            style={{ backgroundColor: c.hex }}
             aria-hidden="true"
           />
           <span className="text-[11px] font-body text-muted-foreground text-center leading-tight">{c.name}</span>
