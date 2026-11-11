@@ -488,24 +488,17 @@ const ProductPage = () => {
               )}
 
               {/* Mostruário de cores */}
-              {config.colorOptions && config.colorOptions.length > 0 && (
-                <div className="pt-4">
-                  <p className="text-xs font-body font-semibold text-foreground mb-3 uppercase tracking-wider">Cores disponíveis</p>
-                  <ul className="flex flex-wrap gap-x-4 gap-y-3">
-                    {config.colorOptions.map((c) => (
-                      <li key={c.name} className="flex flex-col items-center gap-1.5 w-14">
-                        <span
-                          className="h-9 w-9 rounded-full border border-border shadow-sm"
-                          style={{ backgroundColor: c.hex }}
-                          aria-hidden="true"
-                        />
-                        <span className="text-[11px] font-body text-muted-foreground text-center leading-tight">{c.name}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="text-[11px] font-body text-muted-foreground mt-3 italic">As tonalidades podem variar levemente entre lotes.</p>
+              {(config.colorOptions?.length ?? 0) + (config.logoColorOptions?.length ?? 0) > 0 ? (
+                <div className="pt-4 space-y-4">
+                  {(config.colorOptions?.length ?? 0) > 0 && (
+                    <ColorSwatchGroup title="Cores da fita" options={config.colorOptions!} />
+                  )}
+                  {(config.logoColorOptions?.length ?? 0) > 0 && (
+                    <ColorSwatchGroup title="Cores da logo" options={config.logoColorOptions!} />
+                  )}
+                  <p className="text-[11px] font-body text-muted-foreground italic">As tonalidades podem variar levemente entre lotes.</p>
                 </div>
-              )}
+              ) : null}
 
               {/* Especificações */}
               <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
