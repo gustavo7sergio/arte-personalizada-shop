@@ -64,7 +64,7 @@ import sacolaAcess21Foto2 from "@/assets/products/photos/sacola-acessorios-21x15
 import sacolaAcess12Foto2 from "@/assets/products/photos/sacola-acessorios-12x12x6-foto-2.jpg";
 import ecobag30Med from "@/assets/products/measures/ecobag-personalizada-30x30-cm.jpg";
 import ecobag30Foto2 from "@/assets/products/photos/ecobag-30x30-foto-2.jpg";
-import fitaCetimInfo from "@/assets/products/photos/fita-de-cetim-personalizada-informacoes.jpg";
+import fitaCetimFoto2 from "@/assets/products/photos/fita-de-cetim-personalizada-foto-2.jpg";
 import displayPixMed from "@/assets/products/measures/display-pix-personalizado-10x15-cm.jpg";
 import displayPixFoto2 from "@/assets/products/photos/display-pix-10x15-foto-2.jpg";
 import sacolinhaCartaoFoto2 from "@/assets/products/photos/sacolinha-papel-cartao-foto-2.jpg";
@@ -330,7 +330,7 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
     { src: ecobag30Foto2, type: "photo", alt: "Ecobag personalizada 30x30 cm — modelo Lumière Semijoias em uso" },
   ],
   "fita-de-cetim-personalizada-rolo-50-metros": [
-    { src: fitaCetimInfo, type: "measurement", alt: "Fita de cetim personalizada — informações, cores disponíveis e tabela de valores" },
+    { src: fitaCetimFoto2, type: "photo", alt: "Fita de cetim personalizada — carretel com a fita desenrolada e a logo impressa" },
   ],
   "display-pix-personalizado-10x15-cm": [
     { src: displayPixMed, type: "measurement", alt: "Display PIX personalizado 10x15 cm — medidas" },
