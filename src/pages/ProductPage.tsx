@@ -4,7 +4,7 @@ import { lazy, Suspense, useState, useMemo } from "react";
 import { ArrowLeft, ChevronLeft, ChevronRight, Search, ShoppingCart, Package, Tag, CreditCard, ChevronRight as ChevronRightIcon } from "lucide-react";
 import { products, type Product } from "@/data/products";
 import { productImages } from "@/data/productImages";
-import { productPageBySlug, prazoShortLine } from "@/data/productPages";
+import { productPageBySlug, prazoShortLine, type ProductColorOption } from "@/data/productPages";
 import { buildGallery } from "@/data/productGalleries";
 import { getProductResponsiveImage } from "@/data/productResponsiveImages";
 import { Button } from "@/components/ui/button";
@@ -38,6 +38,31 @@ interface FlatVariant {
   label: string;
   dimensions?: string;
 }
+
+// Grupo de amostras visuais de cor (mostruário) usado na página do produto.
+const ColorSwatchGroup = ({
+  title,
+  options,
+}: {
+  title: string;
+  options: ProductColorOption[];
+}) => (
+  <div>
+    <p className="text-xs font-body font-semibold text-foreground mb-3 uppercase tracking-wider">{title}</p>
+    <ul className="flex flex-wrap gap-x-4 gap-y-3">
+      {options.map((c) => (
+        <li key={c.name} className="flex flex-col items-center gap-1.5 w-14">
+          <span
+            className="h-9 w-9 rounded-full border border-border shadow-sm"
+            style={c.gradient ? { background: c.gradient } : { backgroundColor: c.hex }}
+            aria-hidden="true"
+          />
+          <span className="text-[11px] font-body text-muted-foreground text-center leading-tight">{c.name}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+);
 
 const ProductPage = () => {
   const { productSlug } = useParams<{ productSlug: string }>();
