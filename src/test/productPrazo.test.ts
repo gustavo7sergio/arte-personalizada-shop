@@ -1,6 +1,8 @@
 import { describe, expect, it } from "vitest";
 import {
   PRODUCTION_DEADLINE_ANSWER,
+  PRODUCTION_DEADLINE_SPEC_LINE,
+  prazoShortLine,
   productPageBySlug,
   productPages,
 } from "@/data/productPages";
@@ -21,6 +23,24 @@ describe("prazo de produção informado nas FAQs", () => {
     for (const page of others) {
       expect(page.faqs[0].q).toBe("Qual o prazo de produção?");
       expect(page.faqs[0].a).toBe(PRODUCTION_DEADLINE_ANSWER);
+    }
+  });
+});
+
+describe("prazo de produção no card de informações técnicas", () => {
+  it("a fita de cetim informa 8 dias", () => {
+    const page = productPageBySlug(FITA_SLUG);
+    expect(page).toBeDefined();
+    const line = prazoShortLine(page!);
+    expect(line).toContain("8 dias");
+    expect(line).not.toContain("5 a 6 dias úteis");
+  });
+
+  it("os demais produtos mantêm a linha padrão", () => {
+    const others = productPages.filter((p) => p.slug !== FITA_SLUG);
+    expect(others.length).toBeGreaterThan(0);
+    for (const page of others) {
+      expect(prazoShortLine(page)).toBe(PRODUCTION_DEADLINE_SPEC_LINE);
     }
   });
 });
