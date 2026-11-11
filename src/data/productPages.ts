@@ -54,6 +54,9 @@ export interface ProductPageConfig {
   crossSellSlugs?: string[];    // "Combine com"
   // Vídeo do YouTube embed opcional (ex: "x68ZOs2XjOU")
   youtubeVideoId?: string;
+  // Resposta própria para a FAQ "Qual o prazo de produção?" quando o prazo
+  // deste produto difere do padrão do site.
+  prazoAnswer?: string;
 }
 
 const FAQ_PRAZO: ProductFAQ = { q: "Qual o prazo de produção?", a: PRODUCTION_DEADLINE_ANSWER };
@@ -836,6 +839,8 @@ const productPagesRaw: ProductPageConfig[] = [
     seoDescription:
       "Fita de cetim personalizada em rolo com 50 metros, 15 ou 22 mm de largura, com sua logo impressa em dourado ou prata. Acabamento elegante para embalagens de semijoias.",
     productFamily: "sacolinhas",
+    prazoAnswer:
+      "A arte personalizada fica pronta em apenas 1 dia útil para aprovação. Após a aprovação da arte, a produção da fita de cetim leva 8 dias. O prazo de entrega varia de acordo com o CEP e a modalidade de frete escolhida.",
     longDescription: [
       "A Fita de Cetim Personalizada é o acabamento que fecha a embalagem com a identidade da sua marca. O rolo vem com 50 metros de fita de cetim com brilho acetinado, pronta para amarrar caixinhas, sacolinhas, ecobags e kits de presente.",
       "A sua logo é impressa ao longo de toda a fita, em 1 cor, com efeito metalizado nas opções dourado ou prata. O resultado é um laço com cara de marca: o nome aparece repetido na fita e fica visível assim que o pacote chega às mãos da cliente.",
@@ -1745,14 +1750,14 @@ const productPagesRaw: ProductPageConfig[] = [
 
 
 // Garante que "Qual o prazo de produção?" seja sempre a primeira FAQ de qualquer produto.
-const ensurePrazoFirst = (faqs: ProductFAQ[] = []): ProductFAQ[] => [
-  FAQ_PRAZO,
+const ensurePrazoFirst = (faqs: ProductFAQ[] = [], prazoAnswer?: string): ProductFAQ[] => [
+  prazoAnswer ? { q: FAQ_PRAZO.q, a: prazoAnswer } : FAQ_PRAZO,
   ...faqs.filter((f) => f.q.trim().toLowerCase() !== FAQ_PRAZO.q.toLowerCase()),
 ];
 
 export const productPages: ProductPageConfig[] = productPagesRaw.map((p) => ({
   ...p,
-  faqs: ensurePrazoFirst(p.faqs),
+  faqs: ensurePrazoFirst(p.faqs, p.prazoAnswer),
 }));
 
 export const productPageBySlug = (slug: string) =>
