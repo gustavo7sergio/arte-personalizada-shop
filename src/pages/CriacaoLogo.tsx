@@ -17,8 +17,8 @@ import testimonial2 from "@/assets/logo-page/testimonial-2.jpg";
 import testimonial3 from "@/assets/logo-page/testimonial-3.jpg";
 import testimonial4 from "@/assets/logo-page/testimonial-4.jpg";
 
-import pacoteEssencial from "@/assets/logo-page/pacote-essencial.png";
-import pacoteCompleto from "@/assets/logo-page/pacote-completo.png";
+import pacoteEssencial from "@/assets/logo-page/pacote-essencial.png.asset.json";
+import pacoteCompleto from "@/assets/logo-page/pacote-completo.png.asset.json";
 
 const portfolioImages = [portfolio1, portfolio2, portfolio3, portfolio4];
 const testimonialImages = [testimonial1, testimonial2, testimonial3, testimonial4];
@@ -279,7 +279,7 @@ const CriacaoLogo = () => {
           <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto transition-all duration-700 delay-200 ${promoReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             {/* Pacote Essencial */}
             <div className="border-2 border-primary/20 rounded-2xl overflow-hidden bg-card hover:border-primary/40 transition-all">
-              <img src={pacoteEssencial} alt="Pacote Essencial" width={800} height={1000} loading="lazy" decoding="async" className="w-full object-cover aspect-[4/5]" />
+              <img src={pacoteEssencial.url} alt="Pacote Essencial" width={800} height={1000} loading="lazy" decoding="async" className="w-full object-cover aspect-[4/5]" />
               <div className="p-8">
                 <h3 className="text-2xl font-display font-bold text-foreground mb-2">Pacote Essencial</h3>
                 <p className="text-muted-foreground font-body text-sm leading-relaxed italic mb-4">
@@ -314,7 +314,7 @@ const CriacaoLogo = () => {
               <div className="absolute top-4 right-4 bg-primary text-primary-foreground text-xs font-body font-semibold px-3 py-1 rounded-full z-10">
                 Mais completo
               </div>
-              <img src={pacoteCompleto} alt="Pacote Completo" width={800} height={1000} loading="lazy" decoding="async" className="w-full object-cover aspect-[4/5]" />
+              <img src={pacoteCompleto.url} alt="Pacote Completo" width={800} height={1000} loading="lazy" decoding="async" className="w-full object-cover aspect-[4/5]" />
               <div className="p-8">
                 <h3 className="text-2xl font-display font-bold text-foreground mb-2">Pacote Completo</h3>
                 <p className="text-muted-foreground font-body text-sm leading-relaxed italic mb-4">
