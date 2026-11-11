@@ -8,7 +8,12 @@ export const PRODUCTION_DEADLINE_ANSWER =
 export interface ProductFAQ { q: string; a: string }
 
 // Amostra de cor disponível do produto (mostruário visual na página).
-export interface ProductColorOption { name: string; hex: string }
+export interface ProductColorOption {
+  name: string;
+  hex: string;
+  // Fundo CSS alternativo (ex.: gradiente metálico) usado no lugar de hex quando presente.
+  gradient?: string;
+}
 
 // Família funcional/visual do produto. Usada para sugestões coerentes em ProductPage.
 // Quando ausente em uma página, é inferida automaticamente a partir do slug
@@ -64,6 +69,8 @@ export interface ProductPageConfig {
   prazoShort?: string;
   // Mostruário de cores disponíveis, exibido como amostras visuais na página.
   colorOptions?: ProductColorOption[];
+  // Amostras da cor de impressão da logo, exibidas junto ao mostruário de cores.
+  logoColorOptions?: ProductColorOption[];
 }
 
 const FAQ_PRAZO: ProductFAQ = { q: "Qual o prazo de produção?", a: PRODUCTION_DEADLINE_ANSWER };
@@ -866,6 +873,18 @@ const productPagesRaw: ProductPageConfig[] = [
       { name: "Verde", hex: "#2E7D5B" },
       { name: "Vermelho", hex: "#C0392B" },
     ],
+    logoColorOptions: [
+      {
+        name: "Dourado",
+        hex: "#C9A227",
+        gradient: "linear-gradient(145deg, #FBF0C0 0%, #E3C158 35%, #B8873F 65%, #F3E1A0 100%)",
+      },
+      {
+        name: "Prata",
+        hex: "#BFC5CC",
+        gradient: "linear-gradient(145deg, #F5F7FA 0%, #CBD2DA 35%, #8F98A4 65%, #EAEEF3 100%)",
+      },
+    ],
     longDescription: [
       "A Fita de Cetim Personalizada é o acabamento que fecha a embalagem com a identidade da sua marca. O rolo vem com 50 metros de fita de cetim com brilho acetinado, pronta para amarrar caixinhas, sacolinhas, ecobags e kits de presente.",
       "A sua logo é impressa ao longo de toda a fita, em 1 cor, com efeito metalizado nas opções dourado ou prata. O resultado é um laço com cara de marca: o nome aparece repetido na fita e fica visível assim que o pacote chega às mãos da cliente.",
@@ -875,7 +894,7 @@ const productPagesRaw: ProductPageConfig[] = [
     faqs: wrapFaqs([
       {
         q: "Quantos metros vêm no rolo?",
-        a: "Cada rolo tem 50 metros de fita de cetim, entregos em carretel e prontos para uso.",
+        a: "Cada rolo tem 50 metros de fita de cetim, entregues em carretel e prontos para uso.",
       },
       {
         q: "Qual a diferença entre a fita de 15 mm e a de 22 mm?",
