@@ -57,6 +57,8 @@ export interface ProductPageConfig {
   // Resposta própria para a FAQ "Qual o prazo de produção?" quando o prazo
   // deste produto difere do padrão do site.
   prazoAnswer?: string;
+  // Linha própria de prazo no card "Informações técnicas" quando difere do padrão.
+  prazoShort?: string;
 }
 
 const FAQ_PRAZO: ProductFAQ = { q: "Qual o prazo de produção?", a: PRODUCTION_DEADLINE_ANSWER };
@@ -841,6 +843,7 @@ const productPagesRaw: ProductPageConfig[] = [
     productFamily: "sacolinhas",
     prazoAnswer:
       "A arte personalizada fica pronta em apenas 1 dia útil para aprovação. Após a aprovação da arte, a produção da fita de cetim leva 8 dias. O prazo de entrega varia de acordo com o CEP e a modalidade de frete escolhida.",
+    prazoShort: "Prazo de produção: 8 dias após aprovação da arte",
     longDescription: [
       "A Fita de Cetim Personalizada é o acabamento que fecha a embalagem com a identidade da sua marca. O rolo vem com 50 metros de fita de cetim com brilho acetinado, pronta para amarrar caixinhas, sacolinhas, ecobags e kits de presente.",
       "A sua logo é impressa ao longo de toda a fita, em 1 cor, com efeito metalizado nas opções dourado ou prata. O resultado é um laço com cara de marca: o nome aparece repetido na fita e fica visível assim que o pacote chega às mãos da cliente.",
@@ -1754,6 +1757,13 @@ const ensurePrazoFirst = (faqs: ProductFAQ[] = [], prazoAnswer?: string): Produc
   prazoAnswer ? { q: FAQ_PRAZO.q, a: prazoAnswer } : FAQ_PRAZO,
   ...faqs.filter((f) => f.q.trim().toLowerCase() !== FAQ_PRAZO.q.toLowerCase()),
 ];
+
+// Linha exibida no card "Informações técnicas" quando o produto não define prazo próprio.
+export const PRODUCTION_DEADLINE_SPEC_LINE =
+  "Prazo de produção: 5 a 6 dias úteis após aprovação da arte";
+
+export const prazoShortLine = (p: ProductPageConfig): string =>
+  p.prazoShort ?? PRODUCTION_DEADLINE_SPEC_LINE;
 
 export const productPages: ProductPageConfig[] = productPagesRaw.map((p) => ({
   ...p,
