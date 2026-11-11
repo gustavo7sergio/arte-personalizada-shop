@@ -7,6 +7,9 @@ export const PRODUCTION_DEADLINE_ANSWER =
 
 export interface ProductFAQ { q: string; a: string }
 
+// Amostra de cor disponível do produto (mostruário visual na página).
+export interface ProductColorOption { name: string; hex: string }
+
 // Família funcional/visual do produto. Usada para sugestões coerentes em ProductPage.
 // Quando ausente em uma página, é inferida automaticamente a partir do slug
 // (ver inferProductFamily em src/lib/productSuggestions.ts).
@@ -59,6 +62,8 @@ export interface ProductPageConfig {
   prazoAnswer?: string;
   // Linha própria de prazo no card "Informações técnicas" quando difere do padrão.
   prazoShort?: string;
+  // Mostruário de cores disponíveis, exibido como amostras visuais na página.
+  colorOptions?: ProductColorOption[];
 }
 
 const FAQ_PRAZO: ProductFAQ = { q: "Qual o prazo de produção?", a: PRODUCTION_DEADLINE_ANSWER };
@@ -844,6 +849,23 @@ const productPagesRaw: ProductPageConfig[] = [
     prazoAnswer:
       "A arte personalizada fica pronta em apenas 1 dia útil para aprovação. Após a aprovação da arte, a produção da fita de cetim leva 8 dias. O prazo de entrega varia de acordo com o CEP e a modalidade de frete escolhida.",
     prazoShort: "Prazo de produção: 8 dias após aprovação da arte",
+    colorOptions: [
+      { name: "Amarelo", hex: "#F2C94C" },
+      { name: "Azul-claro", hex: "#A9CCE3" },
+      { name: "Azul-marinho", hex: "#1F3A5F" },
+      { name: "Branco", hex: "#FFFFFF" },
+      { name: "Bege", hex: "#E8D9C0" },
+      { name: "Preto", hex: "#1A1A1A" },
+      { name: "Rosa-bebê", hex: "#F6D5D8" },
+      { name: "Pink", hex: "#E75480" },
+      { name: "Laranja", hex: "#F2994A" },
+      { name: "Lilás", hex: "#C8A2C8" },
+      { name: "Marrom", hex: "#7B4B2A" },
+      { name: "Vinho", hex: "#7B2D43" },
+      { name: "Cinza", hex: "#9AA0A6" },
+      { name: "Verde", hex: "#2E7D5B" },
+      { name: "Vermelho", hex: "#C0392B" },
+    ],
     longDescription: [
       "A Fita de Cetim Personalizada é o acabamento que fecha a embalagem com a identidade da sua marca. O rolo vem com 50 metros de fita de cetim com brilho acetinado, pronta para amarrar caixinhas, sacolinhas, ecobags e kits de presente.",
       "A sua logo é impressa ao longo de toda a fita, em 1 cor, com efeito metalizado nas opções dourado ou prata. O resultado é um laço com cara de marca: o nome aparece repetido na fita e fica visível assim que o pacote chega às mãos da cliente.",
