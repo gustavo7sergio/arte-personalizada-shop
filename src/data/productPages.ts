@@ -165,14 +165,14 @@ const productPagesRaw: ProductPageConfig[] = [
   {
     slug: "tag-de-brincos-personalizada-gg-17-9x4-8-cm",
     productIds: ["tag-brincos-gg"],
-    displayName: "Tag de Brincos Personalizada GG 17,9x4,8 cm",
+    displayName: "Tag de Brincos Personalizada Grande 17,9x4,8 cm",
     categorySlug: "tags-personalizadas-para-semijoias",
     categoryLabel: "Tags para Semijoias",
-    seoTitle: "Tag de Brincos Personalizada GG 17,9x4,8 cm | GS Cartões",
-    seoDescription: "Tag de brincos GG personalizada 17,9x4,8 cm em couchê 250g, frente e verso coloridos. Espaço amplo para sua logo, redes sociais e QR Code.",
+    seoTitle: "Tag de Brincos Personalizada Grande 17,9x4,8 cm | GS Cartões",
+    seoDescription: "Tag de brincos grande personalizada 17,9x4,8 cm em couchê 250g, frente e verso coloridos. Espaço amplo para sua logo, redes sociais e QR Code.",
     productFamily: "tags-brincos",
     longDescription: [
-      "A Tag de Brincos Personalizada GG 17,9x4,8 cm é o maior modelo de tag para brincos do catálogo. O formato alongado oferece uma área generosa para destacar a identidade visual da sua marca e acomodar brincos maiores, argolas e peças com mais volume.",
+      "A Tag de Brincos Personalizada Grande 17,9x4,8 cm é o maior modelo de tag para brincos do catálogo. O formato alongado oferece uma área generosa para destacar a identidade visual da sua marca e acomodar brincos maiores, argolas e peças com mais volume.",
       "A arte é 100% personalizada: você pode incluir sua logo, nome da marca, redes sociais, QR Code, telefone e as cores da sua identidade visual. O verso também é impresso em cores, ideal para instruções de conservação, garantia ou informações de contato.",
       "O furo de pendurar e os cortes podem ser adaptados conforme o tipo de brinco que você vende. Também é possível adicionar ou remover furos e cortes personalizados, mediante consulta.",
       "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."

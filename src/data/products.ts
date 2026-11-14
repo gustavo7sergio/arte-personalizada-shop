@@ -903,7 +903,7 @@ export const products: Product[] = [
   },
   {
     id: "tag-brincos-gg",
-    name: "Tag de Brincos GG",
+    name: "Tag de Brincos Grande",
     subtitle: "17,9 × 4,8 cm",
     category: "Tags de Acessórios",
     material: "Papel couchê 250g",
