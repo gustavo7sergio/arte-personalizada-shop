@@ -163,6 +163,59 @@ const productPagesRaw: ProductPageConfig[] = [
     ]),
   },
   {
+    slug: "tag-de-brincos-personalizada-gg-17-9x4-8-cm",
+    productIds: ["tag-brincos-gg"],
+    displayName: "Tag de Brincos Personalizada GG 17,9x4,8 cm",
+    categorySlug: "tags-personalizadas-para-semijoias",
+    categoryLabel: "Tags para Semijoias",
+    seoTitle: "Tag de Brincos Personalizada GG 17,9x4,8 cm | GS Cartões",
+    seoDescription: "Tag de brincos GG personalizada 17,9x4,8 cm em couchê 250g, frente e verso coloridos. Espaço amplo para sua logo, redes sociais e QR Code.",
+    productFamily: "tags-brincos",
+    longDescription: [
+      "A Tag de Brincos Personalizada GG 17,9x4,8 cm é o maior modelo de tag para brincos do catálogo. O formato alongado oferece uma área generosa para destacar a identidade visual da sua marca e acomodar brincos maiores, argolas e peças com mais volume.",
+      "A arte é 100% personalizada: você pode incluir sua logo, nome da marca, redes sociais, QR Code, telefone e as cores da sua identidade visual. O verso também é impresso em cores, ideal para instruções de conservação, garantia ou informações de contato.",
+      "O furo de pendurar e os cortes podem ser adaptados conforme o tipo de brinco que você vende. Também é possível adicionar ou remover furos e cortes personalizados, mediante consulta.",
+      "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
+    ],
+    faqs: wrapFaqs([
+      { q: "Para quais brincos essa tag é indicada?", a: "Por ser o modelo maior, ela é ideal para brincos grandes, argolas, peças com volume ou para marcas que desejam uma apresentação com bastante destaque e espaço para informações." },
+      { q: "Tenho dúvidas se esse tamanho é o ideal.", a: "Sem problemas. Envie uma foto dos seus brincos pelo WhatsApp e nossa equipe ajudará você a escolher o tamanho mais adequado para as suas peças." },
+      { q: "Posso personalizar a arte da tag?", a: "Sim. A arte é totalmente personalizada. Você pode incluir sua logo, escolher as cores da sua marca, adicionar redes sociais, QR Code, telefone e outras informações que desejar." },
+      { q: "Posso alterar o tamanho da tag?", a: "Sim. Produzimos tags personalizadas em diferentes medidas para atender à necessidade de cada marca.\n\nO menor tamanho que conseguimos fabricar é 2,5 cm. Se você precisar de uma medida específica, entre em contato com nossa equipe pelo WhatsApp para avaliarmos a melhor opção para o seu projeto." },
+      { q: "Posso alterar a posição dos furos?", a: "Sim. Podemos alterar a posição dos furos para que a tag fique mais adequada ao seu tipo de brinco." },
+      { q: "Posso adicionar ou remover furos e cortes?", a: "Sim. É possível adicionar ou remover furos e cortes conforme a necessidade da sua marca.\n\nDependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores antes da produção." },
+      { q: "Eu já tenho a arte. Posso enviar?", a: "Sim. Caso você já tenha a arte pronta, basta enviá-la para nossa equipe. Se preferir, também podemos desenvolver uma arte personalizada para a sua marca." },
+      { q: "Qual papel é utilizado?", a: "Produzimos as tags em papel couchê 250g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos a opção em papel couchê 300g e outros acabamentos sob consulta." },
+      { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
+    ]),
+  },
+  {
+    slug: "tag-para-braceletes-personalizada-8x9-94-cm",
+    productIds: ["tag-braceletes"],
+    displayName: "Tag para Braceletes Personalizada 8x9,94 cm",
+    categorySlug: "tags-personalizadas-para-semijoias",
+    categoryLabel: "Tags para Semijoias",
+    seoTitle: "Tag para Braceletes Personalizada 8x9,94 cm | GS Cartões",
+    seoDescription: "Tag para braceletes personalizada 8x9,94 cm em couchê 300g, frente e verso coloridos. Cortes laterais que abraçam a peça e destacam sua marca.",
+    productFamily: "tags-pulseiras",
+    longDescription: [
+      "A Tag para Braceletes Personalizada 8x9,94 cm foi desenvolvida para apresentar braceletes e pulseiras com a identidade da sua marca. Os cortes laterais abraçam a peça e mantêm o bracelete firme e bem posicionado na tag.",
+      "A arte é 100% personalizada: você pode incluir sua logo, nome da marca, redes sociais, QR Code, telefone e as cores da sua identidade visual. O verso também é impresso em cores, com espaço para frases, instruções de conservação ou informações de contato.",
+      "Produzida em papel couchê 300g, mais encorpado, ela oferece uma apresentação firme e elegante para a peça. Os cortes podem ser adaptados conforme o modelo de bracelete que você vende, mediante consulta.",
+      "O acabamento padrão é brilho total na frente. Também é possível solicitar acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta."
+    ],
+    faqs: wrapFaqs([
+      { q: "Essa tag serve para quais tipos de bracelete?", a: "Ela é indicada para braceletes e pulseiras em geral. Os cortes laterais abraçam a peça e a mantêm firme na tag. Se o seu modelo for muito largo ou rígido, envie uma foto pelo WhatsApp para avaliarmos a melhor opção." },
+      { q: "Tenho dúvidas se esse tamanho é o ideal.", a: "Sem problemas. Envie uma foto das suas peças pelo WhatsApp e nossa equipe ajudará você a escolher o tamanho mais adequado antes da compra." },
+      { q: "Posso personalizar a arte da tag?", a: "Sim. A arte é totalmente personalizada. Você pode incluir sua logo, escolher as cores da sua marca, adicionar redes sociais, QR Code, telefone e outras informações que desejar, na frente e no verso." },
+      { q: "Posso alterar o tamanho da tag?", a: "Sim. Produzimos tags personalizadas em diferentes medidas para atender à necessidade de cada marca. Se você precisar de uma medida específica, entre em contato com nossa equipe pelo WhatsApp para avaliarmos a melhor opção para o seu projeto." },
+      { q: "Posso alterar os cortes da tag?", a: "Sim. Podemos adaptar os cortes laterais e adicionar ou remover furos e cortes conforme o modelo de bracelete que você vende.\n\nDependendo da alteração solicitada, poderá haver um custo adicional. Consulte nossa equipe para verificar os valores antes da produção." },
+      { q: "Eu já tenho a arte. Posso enviar?", a: "Sim. Caso você já tenha a arte pronta, basta enviá-la para nossa equipe. Se preferir, também podemos desenvolver uma arte personalizada para a sua marca." },
+      { q: "Qual papel é utilizado?", a: "Este modelo é produzido em papel couchê 300g, com impressão colorida frente e verso e brilho total na frente. Também oferecemos a opção em papel couchê 250g e outros acabamentos sob consulta." },
+      { q: "Quais acabamentos estão disponíveis?", a: "O acabamento padrão é brilho total na frente. Também oferecemos acabamento fosco, mediante consulta. O verniz localizado também pode ser aplicado, mediante consulta." }
+    ]),
+  },
+  {
     slug: "tag-de-brincos-personalizada-8-8x4-8-cm",
     productIds: ["tag-brincos-m"],
     displayName: "Tag de Brincos Personalizada 8,8x4,8 cm",

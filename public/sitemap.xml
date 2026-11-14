@@ -66,6 +66,16 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.gscartoes.com/produto/tag-de-brincos-personalizada-gg-17-9x4-8-cm</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.gscartoes.com/produto/tag-para-braceletes-personalizada-8x9-94-cm</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.gscartoes.com/produto/tag-de-brincos-personalizada-8-8x4-8-cm</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -202,6 +212,11 @@
   </url>
   <url>
     <loc>https://www.gscartoes.com/produto/embalagem-almofada-personalizada-8x8-5-cm</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.gscartoes.com/produto/fita-de-cetim-personalizada-rolo-50-metros</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>

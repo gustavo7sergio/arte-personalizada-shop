@@ -75,6 +75,8 @@ import kitEssencial4Foto from "@/assets/products/kitessencial4-foto.jpg";
 import embalagemAlmofada from "@/assets/products/embalagem-almofada.jpg";
 import fitaCetim from "@/assets/products/fita-de-cetim-personalizada.jpg";
 import tagAcessoriosGrande from "@/assets/products/tagdeacessoriosformatogrande.jpg";
+import tagBrincosGG from "@/assets/products/tag-de-brincos-gg.jpg";
+import tagBraceletes from "@/assets/products/tag-para-braceletes.jpg";
 
 export const productImages: Record<string, string | string[]> = {
   // Adesivos
@@ -101,6 +103,8 @@ export const productImages: Record<string, string | string[]> = {
   "fita-de-cetim": fitaCetim,
 
   // Tags de Brincos
+  "tag-brincos-gg": tagBrincosGG,
+  "tag-braceletes": tagBraceletes,
   "tag-brincos-g": tagBrincosG,
   "tag-brincos-m": tagBrincosM,
   "tag-brincos-p": tagBrincosP,

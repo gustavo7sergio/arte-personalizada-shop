@@ -406,6 +406,60 @@ export const products: Product[] = [
     ],
   },
   {
+    id: "tag-brincos-gg",
+    name: "Tag de Brincos GG",
+    subtitle: "17,9 × 4,8 cm",
+    category: "Tags de Acessórios",
+    material: "Papel couchê 250g",
+    specs: [
+      "Papel couchê 250g",
+      "Frente e verso coloridos",
+      "Brilho total na frente",
+      "NÃO trabalhamos com fidelização de cores",
+    ],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
+    highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
+    variants: [
+      {
+        label: "17,9 × 4,8 cm",
+        prices: [
+          { qty: 100,  installment: 179.00, cash: 161.10 },
+          { qty: 200,  installment: 216.00, cash: 194.40 },
+          { qty: 500,  installment: 299.00, cash: 269.10 },
+          { qty: 1000, installment: 439.00, cash: 395.10 },
+          { qty: 2000, installment: 795.00, cash: 715.50 },
+        ],
+      },
+    ],
+  },
+  {
+    id: "tag-braceletes",
+    name: "Tag para Braceletes",
+    subtitle: "8 × 9,94 cm",
+    category: "Tags de Acessórios",
+    material: "Papel couchê 300g",
+    specs: [
+      "Papel couchê 300g",
+      "Frente e verso coloridos",
+      "Brilho total na frente",
+      "NÃO trabalhamos com fidelização de cores",
+    ],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 250g", "Acabamento fosco", "Verniz localizado"],
+    highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
+    variants: [
+      {
+        label: "8 × 9,94 cm",
+        prices: [
+          { qty: 100,  installment: 179.00, cash: 161.10 },
+          { qty: 200,  installment: 216.00, cash: 194.40 },
+          { qty: 500,  installment: 299.00, cash: 269.10 },
+          { qty: 1000, installment: 439.00, cash: 395.10 },
+          { qty: 2000, installment: 795.00, cash: 715.50 },
+        ],
+      },
+    ],
+  },
+  {
     id: "tag-trio-brincos-m",
     name: "Tag de Trio de Brincos",
     subtitle: "5,5 × 4,8 cm",
