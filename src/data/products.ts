@@ -379,33 +379,6 @@ export const products: Product[] = [
 
   // ─── TAGS ─────────────────────────────────────────────────────────
   {
-    id: "tag-brincos-g",
-    name: "Tag de Brincos",
-    subtitle: "6 × 6 cm",
-    category: "Tags de Acessórios",
-    material: "Papel couchê 250g",
-    specs: [
-      "Papel couchê 250g",
-      "Frente e verso coloridos",
-      "Brilho total na frente",
-      "NÃO trabalhamos com fidelização de cores",
-    ],
-    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
-    highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
-    variants: [
-      {
-        label: "6 × 6 cm",
-        prices: [
-          { qty: 100,  installment: 184.00, cash: 165.60 },
-          { qty: 250,  installment: 219.00, cash: 197.10 },
-          { qty: 500,  installment: 285.00, cash: 256.50 },
-          { qty: 1000, installment: 365.00, cash: 328.50 },
-          { qty: 2000, installment: 669.00, cash: 602.10 },
-        ],
-      },
-    ],
-  },
-  {
     id: "tag-braceletes",
     name: "Tag para Braceletes",
     subtitle: "8 × 9,94 cm",
@@ -897,6 +870,33 @@ export const products: Product[] = [
           { qty: 500,  installment: 267.00, cash: 240.30 },
           { qty: 1000, installment: 291.00, cash: 261.90 },
           { qty: 3000, installment: 659.00, cash: 593.10 },
+        ],
+      },
+    ],
+  },
+  {
+    id: "tag-brincos-g",
+    name: "Tag de Brincos",
+    subtitle: "6 × 6 cm",
+    category: "Tags de Acessórios",
+    material: "Papel couchê 250g",
+    specs: [
+      "Papel couchê 250g",
+      "Frente e verso coloridos",
+      "Brilho total na frente",
+      "NÃO trabalhamos com fidelização de cores",
+    ],
+    additionals: ["Furo de pendurar e cortes", "Papel couchê 300g", "Acabamento fosco", "Verniz localizado"],
+    highlights: ["10% OFF NO PIX", "6x SEM JUROS"],
+    variants: [
+      {
+        label: "6 × 6 cm",
+        prices: [
+          { qty: 100,  installment: 184.00, cash: 165.60 },
+          { qty: 250,  installment: 219.00, cash: 197.10 },
+          { qty: 500,  installment: 285.00, cash: 256.50 },
+          { qty: 1000, installment: 365.00, cash: 328.50 },
+          { qty: 2000, installment: 669.00, cash: 602.10 },
         ],
       },
     ],

@@ -65,9 +65,7 @@ import sacolaAcess12Foto2 from "@/assets/products/photos/sacola-acessorios-12x12
 import ecobag30Med from "@/assets/products/measures/ecobag-personalizada-30x30-cm.jpg";
 import ecobag30Foto2 from "@/assets/products/photos/ecobag-30x30-foto-2.jpg";
 import fitaCetimFoto2 from "@/assets/products/photos/fita-de-cetim-personalizada-foto-2.jpg";
-import tagBrincosGGInfo from "@/assets/products/photos/tag-de-brincos-gg-informacoes.jpg";
 import tagBraceletesFoto2 from "@/assets/products/photos/tag-para-braceletes-foto-2.jpg";
-import tagBraceletesInfo from "@/assets/products/photos/tag-para-braceletes-informacoes.jpg";
 import displayPixMed from "@/assets/products/measures/display-pix-personalizado-10x15-cm.jpg";
 import displayPixFoto2 from "@/assets/products/photos/display-pix-10x15-foto-2.jpg";
 import sacolinhaCartaoFoto2 from "@/assets/products/photos/sacolinha-papel-cartao-foto-2.jpg";
@@ -396,12 +394,8 @@ export const productGalleryExtras: Record<string, GalleryImage[]> = {
     { src: tagBrincosG66Foto2, type: "photo", alt: "Tag de brincos personalizada 6x6 cm — modelo MS branco" },
     { src: tagBrincosG66Foto3, type: "photo", alt: "Tag de brincos personalizada 6x6 cm — modelo Toque de Beleza Semijoias floral" },
   ],
-  "tag-de-brincos-personalizada-gg-17-9x4-8-cm": [
-    { src: tagBrincosGGInfo, type: "measurement", alt: "Tag de brincos GG 17,9x4,8 cm — informações, acabamentos e tabela de preços" },
-  ],
   "tag-para-braceletes-personalizada-8x9-94-cm": [
     { src: tagBraceletesFoto2, type: "photo", alt: "Tag para braceletes personalizada — modelo Zayra Semijoias com bracelete aplicado" },
-    { src: tagBraceletesInfo, type: "measurement", alt: "Tag para braceletes 8x9,94 cm — informações, acabamentos e tabela de preços" },
   ],
   "tag-de-brincos-e-colar-personalizada-8-8x4-8-cm": [
     { src: tagBrincosColarPMed, type: "measurement" },
